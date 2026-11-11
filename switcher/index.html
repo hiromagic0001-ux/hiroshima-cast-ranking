@@ -139,7 +139,8 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
    try{const data=read(),actual=await hashPassword($("loginPw").value,data.salt);if(actual!==data.passwordHash){say("パスワードが違います。");return} $("loginPw").value="";unlock()}
    catch(e){say("認証できませんでした。もう一度お試しください。")}
  });
- document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden"&&!$("lock").hidden) return;if(document.visibilityState==="visible"&&read()&&read().passwordHash){$("lock").hidden=false;show("loginArea");$("lockText").textContent="再度、本人確認をしてください。if(read().credentialId)$("faceBtn").hidden=false;}});
+ let relockOnReturn=false;
+ document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden"&&$("lock").hidden){relockOnReturn=true;}if(document.visibilityState==="visible"&&relockOnReturn){relockOnReturn=false;$("lock").hidden=false;show("loginArea");$("lockText").textContent="再度、本人確認をしてください。";$("faceBtn").hidden=!(read()&&read().credentialId&&read().publicKey);}});
  init();
 })();
 </script>
