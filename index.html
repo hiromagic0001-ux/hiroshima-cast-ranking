@@ -20,33 +20,33 @@ a{color:#a5e2bd;text-decoration:underline;text-underline-offset:3px}.source{font
 <body>
 <header><h1>広島市キャスト情報</h1><p>公開情報をもとにした候補一覧・比較用ページ</p></header>
 <main>
-<div class="notice">この一覧は特定の比較ページに掲載された候補情報です。広島市全体の公式人気ランキングではありません。表示件数は掲載元の表示値で、本人の実績や人気を保証するものではありません。年齢・スリーサイズ・写真・本人確認済みXアカウントは、公開プロフィール等で確認できた情報だけ掲載し、未確認の場合は「未確認」と表示します。</div>
+<div class="notice">この一覧は特定の比較ページに掲載された候補情報です。広島市全体の公式人気ランキングではありません。表示件数は掲載元の表示値で、本人の実績や人気を保証するものではありません。年齢・スリーサイズは公開在籍情報で照合できたキャストのみ掲載しています。未掲載の方は、同名別人との取り違えを避けるため未確認としています。</div>
 <div class="controls"><input id="q" type="search" placeholder="キャスト名で検索" aria-label="キャスト名で検索"><select id="sort" aria-label="並び替え"><option value="count">掲載件数順</option><option value="name">名前順</option></select></div>
 <div class="meta" id="meta" aria-live="polite"></div><section class="list" id="list"></section>
-<div class="source">掲載元：<a href="https://cvnk.jp/hiroshima/hiroshima-city/delivery-health" target="_blank" rel="noopener">広島市デリヘル比較ページ</a><br>個別プロフィール・店舗所属・写真・Xアカウントは未確認のものを推測で補っていません。</div>
+<div class="source">掲載元：<a href="https://cvnk.jp/hiroshima/hiroshima-city/delivery-health" target="_blank" rel="noopener">広島市デリヘル比較ページ</a><br>年齢・スリーサイズ照合元：<a href="https://fuzoku.jp/hiroshimacoco/girllist/" target="_blank" rel="noopener">広島で評判のお店はココです！在籍一覧</a> ／ <a href="https://fuzoku.jp/hiroshimacoco/girllist/ranking/" target="_blank" rel="noopener">同店リピートランキング</a><br>掲載値は確認時点の公開情報です。本人写真・個人Xは本人と確認できたものだけ追加します。</div>
 <footer>公開情報の確認日：2026年11月12日</footer>
 </main>
 <script>
 const entries=[
-["カガミ～それいけ！加賀美さん～",152],
+["カガミ～それいけ！加賀美さん～",152,"28歳","B88(E)/W55/H85"],
 ["ーサアヤー",104],
 ["ーメイー",99],
-["ルリア～超絶ドMな未経験妻～",89],
+["ルリア～超絶ドMな未経験妻～",89,"29歳","B105(I)/W60/H89"],
 ["ーブルマー",84],
 ["ーミウー",60],
 ["ーユノハー",59],
-["ジュン～奇跡の煽情的Iカップ～",53],
-["マナミ",51],
-["マーコ",46],
+["ジュン～奇跡の煽情的Iカップ～",53,"30歳","B96(I)/W58/H89"],
+["マナミ",51,"42歳","B85(C)/W58/H84"],
+["マーコ",46,"32歳","B88(E)/W56/H86"],
 ["ーソノー",41],
 ["ーアンPlatinumー",39],
-["エミリ",38],
-["サクラコ",33],
-["アンナ",31],
+["エミリ",38,"30歳","B99(H)/W58/H89"],
+["サクラコ",33,"42歳","B85(C)/W58/H87"],
+["アンナ",31,"41歳","B88(E)/W58/H86"],
 ["ーユリー",30]
 ];
 const list=document.getElementById('list'),q=document.getElementById('q'),sort=document.getElementById('sort'),meta=document.getElementById('meta');
-function render(){let rows=entries.filter(x=>x[0].toLowerCase().includes(q.value.trim().toLowerCase()));rows.sort((a,b)=>sort.value==='name'?a[0].localeCompare(b[0],'ja'):b[1]-a[1]);meta.textContent=rows.length+'名を表示（掲載候補 '+entries.length+'名）';list.replaceChildren();rows.forEach((x,i)=>{const el=document.createElement('article');el.className='item';const rank=document.createElement('div');rank.className='rank';rank.textContent=String(i+1).padStart(2,'0');const info=document.createElement('div');const name=document.createElement('div');name.className='name';name.textContent=x[0];const sub=document.createElement('div');sub.className='sub';sub.textContent='店舗・本人プロフィール・写真・X：未確認';const details=document.createElement('div');details.className='details';details.textContent='年齢：'+(x[2]||'未確認')+'　スリーサイズ：'+(x[3]||'未確認');info.append(name,sub,details);const count=document.createElement('div');count.className='count';count.textContent='掲載表示 '+x[1];el.append(rank,info,count);list.append(el);});}
+function render(){let rows=entries.filter(x=>x[0].toLowerCase().includes(q.value.trim().toLowerCase()));rows.sort((a,b)=>sort.value==='name'?a[0].localeCompare(b[0],'ja'):b[1]-a[1]);meta.textContent=rows.length+'名を表示（掲載候補 '+entries.length+'名）';list.replaceChildren();rows.forEach((x,i)=>{const el=document.createElement('article');el.className='item';const rank=document.createElement('div');rank.className='rank';rank.textContent=String(i+1).padStart(2,'0');const info=document.createElement('div');const name=document.createElement('div');name.className='name';name.textContent=x[0];const sub=document.createElement('div');sub.className='sub';sub.textContent=x[2]?'店舗：広島で評判のお店はココです！（公開在籍情報で照合）':'店舗・本人プロフィール：未確認';const details=document.createElement('div');details.className='details';details.textContent='年齢：'+(x[2]||'未確認')+'　スリーサイズ：'+(x[3]||'未確認');info.append(name,sub,details);const count=document.createElement('div');count.className='count';count.textContent='掲載表示 '+x[1];el.append(rank,info,count);list.append(el);});}
 q.addEventListener('input',render);sort.addEventListener('change',render);render();
 </script>
 </body></html>
