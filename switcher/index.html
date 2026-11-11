@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#123d31">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="広島キャスト検索">
-<title>広島キャスト検索｜サービス選択</title>
+<meta name="apple-mobile-web-app-title" content="広島キャスト">
+<title>広島キャスト｜ロック付きサービス選択</title>
 <style>
 :root{color-scheme:dark;--bg:#0c1714;--panel:#172721;--line:#2d443b;--green:#a5e2bd;--muted:#a9b9b0}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#1a4638 0,#0c1714 56%);color:#f4f7f5;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif}
@@ -15,9 +15,38 @@ header{text-align:center;margin-bottom:26px}h1{font-size:25px;margin:0 0 9px;let
 .grid{display:grid;gap:14px}.card{display:block;text-decoration:none;color:inherit;background:linear-gradient(145deg,#1b3028,#14231d);border:1px solid #385447;border-radius:18px;padding:22px 20px;box-shadow:0 12px 30px #0005;transition:transform .12s,border-color .12s}
 .card:active{transform:scale(.985)}.tag{font-size:11px;letter-spacing:.08em;color:#a5e2bd;margin-bottom:9px}.card h2{font-size:20px;margin:0 0 8px}.card p{font-size:12px;line-height:1.7;color:#bdcec4;margin:0 0 17px}.btn{display:flex;justify-content:center;align-items:center;gap:8px;background:#a5e2bd;color:#10251b;font-weight:800;font-size:14px;border-radius:10px;padding:13px 15px}.arrow{font-size:18px;line-height:1}
 footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-height:1.7}
+#lock{position:fixed;inset:0;z-index:10;background:radial-gradient(ellipse at top,#1a4638 0,#07100d 70%);display:flex;align-items:center;justify-content:center;padding:24px}
+#lock[hidden]{display:none}.lockbox{width:min(100%,390px);background:#14231d;border:1px solid #385447;border-radius:22px;padding:26px 22px;box-shadow:0 18px 55px #0009;text-align:center}
+.lockbox h2{font-size:22px;margin:0 0 8px}.lockbox p{font-size:13px;line-height:1.7;color:#c5d7cd;margin:0 0 18px}
+#pw{width:100%;padding:14px;border:1px solid #526b5e;border-radius:10px;background:#0c1714;color:white;font-size:17px;margin:0 0 12px}
+.action{width:100%;border:0;border-radius:10px;padding:14px;background:#a5e2bd;color:#10251b;font-weight:800;font-size:15px;margin:5px 0;cursor:pointer}
+.secondary{background:#253a30;color:#e9f4ed;border:1px solid #496454}.status{min-height:22px;color:#ffd9a8;font-size:12px;margin-top:10px;white-space:pre-wrap}
+.small{font-size:11px!important;color:#93a99b!important;margin-top:14px!important}
 </style>
 </head>
-<body><main>
+<body>
+<div id="lock">
+ <div class="lockbox">
+  <h2>広島キャスト ロック</h2>
+  <p id="lockText">本人確認をしてください。</p>
+  <div id="setupArea" hidden>
+   <input id="pw" type="password" autocomplete="new-password" placeholder="パスワードを設定（6文字以上）">
+   <button class="action" id="savePw">パスワードを設定</button>
+  </div>
+  <div id="loginArea" hidden>
+   <button class="action" id="faceBtn" hidden>Face IDでロック解除</button>
+   <input id="loginPw" type="password" autocomplete="current-password" placeholder="パスワード">
+   <button class="action" id="loginBtn">パスワードでロック解除</button>
+  </div>
+  <div id="enrollArea" hidden>
+   <button class="action" id="enrollBtn">Face IDを登録する</button>
+   <button class="action secondary" id="skipEnroll">今は登録しない</button>
+  </div>
+  <div class="status" id="status" role="status"></div>
+  <p class="small">この端末のブラウザ内でロックします。サイト自体の公開設定は変更しません。</p>
+ </div>
+</div>
+<main>
 <header><h1>広島キャスト検索</h1><p>利用するサービスを選んでください。<br>それぞれ独立した一覧・口コミページが開きます。</p></header>
 <section class="grid">
 <a class="card" href="https://hiroshima-cast-ranking.onrender.com">
@@ -31,4 +60,87 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
 </a>
 </section>
 <footer>広島市の公開情報をもとにした検索ページ<br>各掲載元の情報・口コミは必ず元ページでもご確認ください。</footer>
-</main></body></html>
+</main>
+<script>
+(() => {
+ const $=id=>document.getElementById(id);
+ const STORE="hiroshimaCastLocalLockV1";
+ const enc=new TextEncoder();
+ const b64=b=>btoa(String.fromCharCode(...new Uint8Array(b))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
+ const unb64=s=>Uint8Array.from(atob(s.replace(/-/g,"+").replace(/_/g,"/")+"===".slice((s.length+3)%4)),c=>c.charCodeAt(0));
+ const random=n=>{const a=new Uint8Array(n);crypto.getRandomValues(a);return a};
+ const read=()=>{try{return JSON.parse(localStorage.getItem(STORE)||"null")}catch{return null}};
+ const write=v=>localStorage.setItem(STORE,JSON.stringify(v));
+ const say=t=>$("status").textContent=t;
+ const show=id=>{["setupArea","loginArea","enrollArea"].forEach(x=>$(x).hidden=x!==id)};
+ const unlock=()=>{$("lock").hidden=true};
+ async function hashPassword(password,salt){
+   const key=await crypto.subtle.importKey("raw",enc.encode(password),"PBKDF2",false,["deriveBits"]);
+   const bits=await crypto.subtle.deriveBits({name:"PBKDF2",salt:unb64(salt),iterations:180000,hash:"SHA-256"},key,256);
+   return b64(bits);
+ }
+ async function init(){
+   if(!window.isSecureContext||!crypto.subtle){$("lockText").textContent="この環境では安全な認証機能を利用できません。";show("setupArea");say("HTTPSのページを開いてください。");return}
+   const data=read();
+   if(!data||!data.passwordHash){$("lockText").textContent="初回設定です。まず、この端末で使うパスワードを決めてください。";show("setupArea");return}
+   $("lockText").textContent="広島キャストを開くには本人確認が必要です。";
+   show("loginArea");
+   if(data.credentialId && data.publicKey)$("faceBtn").hidden=false;
+ }
+ $("savePw").addEventListener("click",async()=>{
+   const p=$("pw").value;
+   if(p.length<6){say("6文字以上のパスワードを入力してください。");return}
+   try{const salt=b64(random(16));const passwordHash=await hashPassword(p,salt);write({salt,passwordHash});$("pw").value="";$("lockText").textContent="パスワードを設定しました。Face IDも登録しますか？";show("enrollArea");say("")}
+   catch(e){say("設定できませんでした。HTTPSで開き直してください。")}
+ });
+ $("skipEnroll").addEventListener("click",()=>unlock());
+ $("enrollBtn").addEventListener("click",async()=>{
+   if(!window.PublicKeyCredential||!navigator.credentials){say("この端末・ブラウザではFace ID登録に対応していません。パスワードで利用できます。");return}
+   try{
+     const challenge=random(32), userId=random(16);
+     const cred=await navigator.credentials.create({publicKey:{
+       challenge,rp:{name:"広島キャスト",id:location.hostname},
+       user:{id:userId,name:"hiroshima-cast-user",displayName:"広島キャスト利用者"},
+       pubKeyCredParams:[{type:"public-key",alg:-7}],
+       authenticatorSelection:{authenticatorAttachment:"platform",residentKey:"discouraged",userVerification:"required"},
+       timeout:60000,attestation:"none"
+     }});
+     if(!cred||!cred.response.getPublicKey)throw new Error("このブラウザは公開鍵の取得に対応していません");
+     const data=read();data.credentialId=b64(cred.rawId);data.publicKey=b64(cred.response.getPublicKey());data.algorithm=cred.response.getPublicKeyAlgorithm();write(data);
+     say("Face IDの登録が完了しました。");unlock();
+   }catch(e){say("Face IDを登録できませんでした。パスワードで利用できます。\n"+(e.name==="NotAllowedError"?"認証がキャンセルされました。":e.message||"もう一度お試しください。"))}
+ });
+ function derToRaw(sig){
+   const a=new Uint8Array(sig);if(a[0]!==48)return a;
+   let i=2;if(a[i++]!==2)throw new Error("署名形式エラー");let rl=a[i++];let r=a.slice(i,i+rl);i+=rl;
+   if(a[i++]!==2)throw new Error("署名形式エラー");let sl=a[i++];let s=a.slice(i,i+sl);
+   while(r.length>32&&r[0]===0)r=r.slice(1);while(s.length>32&&s[0]===0)s=s.slice(1);
+   const out=new Uint8Array(64);out.set(r,32-r.length);out.set(s,64-s.length);return out;
+ }
+ $("faceBtn").addEventListener("click",async()=>{
+   try{
+     const data=read(),challenge=random(32);
+     const assertion=await navigator.credentials.get({publicKey:{challenge,rpId:location.hostname,allowCredentials:[{type:"public-key",id:unb64(data.credentialId)}],userVerification:"required",timeout:60000}});
+     const client=JSON.parse(new TextDecoder().decode(assertion.response.clientDataJSON));
+     if(client.type!=="webauthn.get"||client.challenge!==b64(challenge)||client.origin!==location.origin)throw new Error("認証情報を確認できませんでした");
+     const auth=new Uint8Array(assertion.response.authenticatorData);
+     if(!(auth[32]&4))throw new Error("端末の本人確認が完了していません");
+     const rpHash=new Uint8Array(await crypto.subtle.digest("SHA-256",enc.encode(location.hostname)));
+     if(!rpHash.every((v,i)=>v===auth[i]))throw new Error("サイト情報が一致しません");
+     const clientHash=new Uint8Array(await crypto.subtle.digest("SHA-256",assertion.response.clientDataJSON));
+     const signed=new Uint8Array(auth.length+clientHash.length);signed.set(auth);signed.set(clientHash,auth.length);
+     const key=await crypto.subtle.importKey("spki",unb64(data.publicKey),{name:"ECDSA",namedCurve:"P-256"},false,["verify"]);
+     const ok=await crypto.subtle.verify({name:"ECDSA",hash:"SHA-256"},key,derToRaw(assertion.response.signature),signed);
+     if(!ok)throw new Error("Face IDの認証を確認できませんでした");
+     unlock();
+   }catch(e){say(e.name==="NotAllowedError"?"Face ID認証がキャンセルされました。パスワードを使ってください。":(e.message||"Face ID認証に失敗しました。パスワードを使ってください。"))}
+ });
+ $("loginBtn").addEventListener("click",async()=>{
+   try{const data=read(),actual=await hashPassword($("loginPw").value,data.salt);if(actual!==data.passwordHash){say("パスワードが違います。");return} $("loginPw").value="";unlock()}
+   catch(e){say("認証できませんでした。もう一度お試しください。")}
+ });
+ document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden"&&!$("lock").hidden) return;if(document.visibilityState==="visible"&&read()&&read().passwordHash){$("lock").hidden=false;show("loginArea");$("lockText").textContent="再度、本人確認をしてください。if(read().credentialId)$("faceBtn").hidden=false;}});
+ init();
+})();
+</script>
+</body></html>
