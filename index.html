@@ -13,14 +13,14 @@ main{max-width:760px;margin:auto;padding:14px}.notice{background:#302a18;border:
 .controls{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:12px}input,select{min-width:0;background:var(--panel);border:1px solid var(--line);color:white;border-radius:10px;padding:12px;font-size:15px}
 .meta{color:var(--muted);font-size:12px;margin:8px 2px 12px}.list{display:grid;gap:9px}
 .item{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:12px}
-.rank{font-size:18px;font-weight:800;color:var(--green);text-align:center}.name{font-weight:700;font-size:15px;line-height:1.4;overflow-wrap:anywhere}.sub{font-size:11px;color:var(--muted);margin-top:5px}.count{font-size:12px;color:var(--green);white-space:nowrap;text-align:right}
+.rank{font-size:18px;font-weight:800;color:var(--green);text-align:center}.name{font-weight:700;font-size:15px;line-height:1.4;overflow-wrap:anywhere}.sub{font-size:11px;color:var(--muted);margin-top:5px;line-height:1.6}.details{font-size:12px;color:#d7e6dd;margin-top:6px;line-height:1.6}.count{font-size:12px;color:var(--green);white-space:nowrap;text-align:right}
 a{color:#a5e2bd;text-decoration:underline;text-underline-offset:3px}.source{font-size:12px;margin-top:16px;line-height:1.9;color:var(--muted)}footer{padding:22px 0 35px;text-align:center;color:var(--muted);font-size:11px}
 </style>
 </head>
 <body>
 <header><h1>広島市キャスト情報</h1><p>公開情報をもとにした候補一覧・比較用ページ</p></header>
 <main>
-<div class="notice">この一覧は特定の比較ページに掲載された候補情報です。広島市全体の公式人気ランキングではありません。表示件数は掲載元の表示値で、本人の実績や人気を保証するものではありません。写真・本人確認済みXアカウントは、確認できたものだけ掲載します。</div>
+<div class="notice">この一覧は特定の比較ページに掲載された候補情報です。広島市全体の公式人気ランキングではありません。表示件数は掲載元の表示値で、本人の実績や人気を保証するものではありません。年齢・スリーサイズ・写真・本人確認済みXアカウントは、公開プロフィール等で確認できた情報だけ掲載し、未確認の場合は「未確認」と表示します。</div>
 <div class="controls"><input id="q" type="search" placeholder="キャスト名で検索" aria-label="キャスト名で検索"><select id="sort" aria-label="並び替え"><option value="count">掲載件数順</option><option value="name">名前順</option></select></div>
 <div class="meta" id="meta" aria-live="polite"></div><section class="list" id="list"></section>
 <div class="source">掲載元：<a href="https://cvnk.jp/hiroshima/hiroshima-city/delivery-health" target="_blank" rel="noopener">広島市デリヘル比較ページ</a><br>個別プロフィール・店舗所属・写真・Xアカウントは未確認のものを推測で補っていません。</div>
@@ -46,7 +46,7 @@ const entries=[
 ["ーユリー",30]
 ];
 const list=document.getElementById('list'),q=document.getElementById('q'),sort=document.getElementById('sort'),meta=document.getElementById('meta');
-function render(){let rows=entries.filter(x=>x[0].toLowerCase().includes(q.value.trim().toLowerCase()));rows.sort((a,b)=>sort.value==='name'?a[0].localeCompare(b[0],'ja'):b[1]-a[1]);meta.textContent=rows.length+'名を表示（掲載候補 '+entries.length+'名）';list.replaceChildren();rows.forEach((x,i)=>{const el=document.createElement('article');el.className='item';const rank=document.createElement('div');rank.className='rank';rank.textContent=String(i+1).padStart(2,'0');const info=document.createElement('div');const name=document.createElement('div');name.className='name';name.textContent=x[0];const sub=document.createElement('div');sub.className='sub';sub.textContent='店舗・本人プロフィール・写真・X：未確認';info.append(name,sub);const count=document.createElement('div');count.className='count';count.textContent='掲載表示 '+x[1];el.append(rank,info,count);list.append(el);});}
+function render(){let rows=entries.filter(x=>x[0].toLowerCase().includes(q.value.trim().toLowerCase()));rows.sort((a,b)=>sort.value==='name'?a[0].localeCompare(b[0],'ja'):b[1]-a[1]);meta.textContent=rows.length+'名を表示（掲載候補 '+entries.length+'名）';list.replaceChildren();rows.forEach((x,i)=>{const el=document.createElement('article');el.className='item';const rank=document.createElement('div');rank.className='rank';rank.textContent=String(i+1).padStart(2,'0');const info=document.createElement('div');const name=document.createElement('div');name.className='name';name.textContent=x[0];const sub=document.createElement('div');sub.className='sub';sub.textContent='店舗・本人プロフィール・写真・X：未確認';const details=document.createElement('div');details.className='details';details.textContent='年齢：'+(x[2]||'未確認')+'　スリーサイズ：'+(x[3]||'未確認');info.append(name,sub,details);const count=document.createElement('div');count.className='count';count.textContent='掲載表示 '+x[1];el.append(rank,info,count);list.append(el);});}
 q.addEventListener('input',render);sort.addEventListener('change',render);render();
 </script>
 </body></html>
