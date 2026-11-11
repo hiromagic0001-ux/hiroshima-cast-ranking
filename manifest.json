@@ -1,0 +1,11 @@
+{
+  "name": "広島市キャスト情報",
+  "short_name": "広島キャスト",
+  "lang": "ja",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0c1714",
+  "theme_color": "#123d31",
+  "description": "広島市の公開キャスト情報を比較するアプリ"
+}
