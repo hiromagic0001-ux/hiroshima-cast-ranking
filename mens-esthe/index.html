@@ -51,8 +51,8 @@ const entries=[
   // Navigate in the current top-level tab. Do not open an embedded viewer
   // or a popup, so Estama can use the iPhone browser's normal viewport width.
   // The text fragment only attempts to scroll to the PROFILE heading.
-  const target = button.dataset.profileTarget || 'PROFILEプロフィール';
-  // Aim at this therapist's exact name-and-age heading rather than the generic PROFILE label.
+  const target = 'PROFILEプロフィール';
+  // The photo gallery follows this heading, so anchor here rather than at the therapist name below the photos.
   window.location.assign(url + '#:~:text=' + encodeURIComponent(target));
  });
 })();
