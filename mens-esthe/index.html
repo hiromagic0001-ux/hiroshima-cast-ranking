@@ -48,12 +48,10 @@ const entries=[
   if (!button) return;
   const url = button.dataset.profileUrl;
   if (!url) return;
-  // Open the verified Estama profile as a full browser page.
-  // Avoid the narrow embedded iframe viewport that can force a desktop layout
-  // and place the site's top-left navigation over the cast photo on iPhone.
-  const photoTargetUrl = url + '#:~:text=PROFILE';
-  const opened = window.open(photoTargetUrl, '_blank', 'noopener,noreferrer');
-  if (!opened) window.location.assign(photoTargetUrl);
+  // Navigate in the current top-level tab. Do not open an embedded viewer
+  // or a popup, so Estama can use the iPhone browser's normal viewport width.
+  // The text fragment only attempts to scroll to the PROFILE heading.
+  window.location.assign(url + '#:~:text=PROFILE');
  });
 })();
 </script>
