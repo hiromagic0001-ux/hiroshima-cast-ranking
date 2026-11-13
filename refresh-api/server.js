@@ -77,12 +77,14 @@ const server = http.createServer(async (req, res) => {
       const href = link.attr("href") || "";
       const text = item.text().replace(/\s+/g, " ").trim();
       const rankClass = (item.find('[class*="therapist_rank_no"]').attr("class") || item.attr("class") || "").match(/therapist_rank_no(\d+)/);
-      const rankText = text.match(/^\s*(\d{1,2})\s+/);
-      const rank = rankClass ? Number(rankClass[1]) : (rankText ? Number(rankText[1]) : null);
-      const name = link.find(".cast_name").first().text().trim() || link.text().replace(/\s+/g, " ").trim();
+      const rankMatch = text.match(/(?:^|\s)(\d{1,2})\s+(?=[^\d])/);
+      const rank = rankClass ? Number(rankClass[1]) : (rankMatch ? Number(rankMatch[1]) : null);
+      const cleaned = text.replace(/^[A-G]\s*cup\s+/i, "").replace(/^\d{1,2}\s+/, "");
+      const nameMatch = cleaned.match(/^(.+?)(?:\s+T\d{2,3}\b|\s+B\d{2}\b|\s+\(\d{2}\)|\s+広島市|$)/);
+      const name = (nameMatch ? nameMatch[1] : "").trim();
       const isPR = /(?:^|\s)PR(?:\s|$)/i.test(text) || /PR/.test(item.attr("class") || "");
       const isHiroshima = /広島市/.test(text) && !/岡山市|山口市|下関市|周南市/.test(text);
-      rankingItems.push({ rank, name, href, isPR, isHiroshima, text: text.slice(0, 360) });
+      rankingItems.push({ rank, name, href, isPR, isHiroshima });
     });
     const uniqueRanked = rankingItems.filter(x => Number.isInteger(x.rank) && x.rank >= 1 && x.rank <= 30);
     const accepted = uniqueRanked.filter(x => !x.isPR && x.isHiroshima && x.name);
@@ -110,7 +112,7 @@ const server = http.createServer(async (req, res) => {
       rankTextMatches,
       prMarkers,
       records: uniqueAccepted.map(({ rank, name, href }) => ({ rank, name, href })),
-      samples: rankingItems.slice(0, 8),
+      samples: rankingItems.slice(0, 8).map(({ rank, name, href, isPR, isHiroshima }) => ({ rank, name, href, isPR, isHiroshima })),
       note: "解析構造の確認専用。順位データの公開・既存データの上書きは行いません。"
     };
     if (inspection.ok) {
