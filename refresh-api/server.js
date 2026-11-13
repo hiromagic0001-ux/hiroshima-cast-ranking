@@ -66,39 +66,40 @@ const server = http.createServer(async (req, res) => {
     if (html.length < 10000 || html.length > 5000000) throw new Error("unexpected_html_size");
     const $ = cheerio.load(html);
     const title = $("title").first().text().trim();
-    const profileLinks = $('a[href*="/shop/"][href*="/cast/"]').filter((_, el) => {
-      return /\/shop\/\d+\/cast\/\d+\/?/.test($(el).attr("href") || "");
+    const titleMatched = /セラピスト.*人気ランキング|セラピストの人気ランキング/.test(title);
+    const rankingItems = [];
+    $("ul.main_ranking_list > li").each((_, li) => {
+      const item = $(li);
+      const link = item.find('a[href*="/shop/"][href*="/cast/"]').filter((__, a) =>
+        /\/shop\/\d+\/cast\/\d+\/?/.test($(a).attr("href") || "")
+      ).first();
+      if (!link.length) return;
+      const href = link.attr("href") || "";
+      const text = item.text().replace(/\\s+/g, " ").trim();
+      const rankClass = (item.find('[class*="therapist_rank_no"]').attr("class") || item.attr("class") || "").match(/therapist_rank_no(\\d+)/);
+      const rankText = text.match(/^\\s*(\\d{1,2})\\s+/);
+      const rank = rankClass ? Number(rankClass[1]) : (rankText ? Number(rankText[1]) : null);
+      const name = link.find(".cast_name").first().text().trim() || link.text().replace(/\\s+/g, " ").trim();
+      const isPR = /(?:^|\\s)PR(?:\\s|$)/i.test(text) || /PR/.test(item.attr("class") || "");
+      const isHiroshima = /広島市/.test(text) && !/岡山市|山口市|下関市|周南市/.test(text);
+      rankingItems.push({ rank, name, href, isPR, isHiroshima, text: text.slice(0, 360) });
     });
-    const samples = [];
-    profileLinks.slice(0, 8).each((_, el) => {
-      const anchor = $(el);
-      const ancestors = [];
-      let node = anchor;
-      for (let level = 1; level <= 7; level++) {
-        node = node.parent();
-        if (!node.length) break;
-        const text = node.text().replace(/\s+/g, " ").trim();
-        ancestors.push({
-          level,
-          tag: node.get(0)?.tagName || "",
-          className: (node.attr("class") || "").slice(0, 180),
-          id: node.attr("id") || "",
-          text: text.slice(0, 650)
-        });
-      }
-      samples.push({
-        name: anchor.text().replace(/\s+/g, " ").trim(),
-        href: anchor.attr("href"),
-        ancestors
-      });
-    });
-    const rankTextMatches = (html.match(/>\s*(?:[1-9]|[12]\d|30)\s*</g) || []).length;
-    const prMarkers = (html.match(/>\s*PR\s*</gi) || []).length;
+    const uniqueRanked = rankingItems.filter(x => Number.isInteger(x.rank) && x.rank >= 1 && x.rank <= 30);
+    const accepted = uniqueRanked.filter(x => !x.isPR && x.isHiroshima && x.name);
+    const uniqueAccepted = [...new Map(accepted.map(x => [x.href, x])).values()];
+    const profileLinks = $('a[href*="/shop/"][href*="/cast/"]').filter((_, el) =>
+      /\\/shop\\/\\d+\\/cast\\/\\d+\\/?/.test($(el).attr("href") || "")
+    );
+    const rankTextMatches = uniqueRanked.length;
+    const prMarkers = rankingItems.filter(x => x.isPR).length;
     const inspection = {
-      ok: title.includes("セラピストランキング") && profileLinks.length >= 20,
+      ok: titleMatched && uniqueRanked.length >= 20 && uniqueAccepted.length >= 15,
       validation: {
-        titleMatched: title.includes("セラピストランキング"),
+        titleMatched,
         profileLinkCount: profileLinks.length,
+        rankingItemCount: rankingItems.length,
+        rankedItemCount: uniqueRanked.length,
+        acceptedHiroshimaCount: uniqueAccepted.length,
         profileLinkThreshold: 20
       },
       mode: "diagnostic-only",
@@ -110,7 +111,8 @@ const server = http.createServer(async (req, res) => {
       candidateProfileLinks: profileLinks.length,
       rankTextMatches,
       prMarkers,
-      samples,
+      records: uniqueAccepted.map(({ rank, name, href }) => ({ rank, name, href })),
+      samples: rankingItems.slice(0, 8),
       note: "解析構造の確認専用。順位データの公開・既存データの上書きは行いません。"
     };
     if (inspection.ok) {
