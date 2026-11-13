@@ -139,15 +139,15 @@ const server = http.createServer(async (req, res) => {
         const html = await response.text();
         if (html.length < 1500 || html.length > 5000000) return { ...target, ok: false, status: response.status, error: "unexpected_html_size" };
         const $ = cheerio.load(html);
-        const title = $("title").first().text().replace(/\\s+/g, " ").trim();
-        const bodyText = $("body").text().replace(/\\s+/g, " ").trim();
+        const title = $("title").first().text().replace(/\s+/g, " ").trim();
+        const bodyText = $("body").text().replace(/\s+/g, " ").trim();
         const keywordSnippets = [...bodyText.matchAll(/.{0,45}(?:口コミ|レビュー|投稿|件数|総数).{0,55}/g)]
           .slice(0, 16).map(match => match[0]);
         const countCandidates = [];
         const patterns = [
-          /口コミ(?:件数|数)?\\s*[:：]?\\s*([0-9,]+)\\s*件/g,
-          /([0-9,]+)\\s*件(?:の)?(?:口コミ|レビュー|投稿)/g,
-          /レビュー(?:件数|数)?\\s*[:：]?\\s*([0-9,]+)\\s*件/g
+          /口コミ(?:件数|数)?\s*[:：]?\s*([0-9,]+)\s*件/g,
+          /([0-9,]+)\s*件(?:の)?(?:口コミ|レビュー|投稿)/g,
+          /レビュー(?:件数|数)?\s*[:：]?\s*([0-9,]+)\s*件/g
         ];
         for (const pattern of patterns) {
           for (const match of bodyText.matchAll(pattern)) countCandidates.push({ matchedText: match[0], count: Number(match[1].replace(/,/g, "")) });
@@ -155,7 +155,7 @@ const server = http.createServer(async (req, res) => {
         const matchingElements = [];
         $("body *").each((_, el) => {
           if (matchingElements.length >= 30) return;
-          const text = $(el).children().length ? "" : $(el).text().replace(/\\s+/g, " ").trim();
+          const text = $(el).children().length ? "" : $(el).text().replace(/\s+/g, " ").trim();
           if (text && text.length <= 100 && /口コミ|レビュー|投稿|[0-9,]+件/.test(text)) {
             matchingElements.push({ tag: el.tagName, className: String($(el).attr("class") || "").slice(0, 100), text });
           }
@@ -578,17 +578,5 @@ server.listen(PORT, "0.0.0.0", () => {
       }));
     }
   }, 1200);
-  setTimeout(async () => {
-    try {
-      const response = await fetch("http://127.0.0.1:" + PORT + "/api/casts/inspect");
-      const report = await response.json();
-      console.log("CAST_SOURCE_INSPECTION " + JSON.stringify({
-        ok: report.ok, mode: report.mode, retrievedAt: report.retrievedAt,
-        groups: report.groups || [], sampleResults: report.sampleResults || [],
-        note: report.note || null
-      }));
-    } catch (error) {
-      console.log("CAST_SOURCE_INSPECTION " + JSON.stringify({ ok: false, error: String(error?.message || error) }));
-    }
-  }, 2500);
+
 });
