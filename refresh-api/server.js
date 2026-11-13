@@ -94,6 +94,11 @@ const server = http.createServer(async (req, res) => {
     const prMarkers = (html.match(/>\s*PR\s*</gi) || []).length;
     const inspection = {
       ok: title.includes("セラピストランキング") && profileLinks.length >= 20,
+      validation: {
+        titleMatched: title.includes("セラピストランキング"),
+        profileLinkCount: profileLinks.length,
+        profileLinkThreshold: 20
+      },
       mode: "diagnostic-only",
       source: SOURCE_URL,
       retrievedAt: new Date().toISOString(),
@@ -106,9 +111,10 @@ const server = http.createServer(async (req, res) => {
       samples,
       note: "解析構造の確認専用。順位データの公開・既存データの上書きは行いません。"
     };
-    if (!inspection.ok) throw new Error("source_structure_validation_failed");
-    cachedInspection = inspection;
-    lastFetchAt = now;
+    if (inspection.ok) {
+      cachedInspection = inspection;
+      lastFetchAt = now;
+    }
     return send(res, 200, inspection, origin);
   } catch (error) {
     return send(res, 502, {
