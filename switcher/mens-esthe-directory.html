@@ -39,7 +39,8 @@ async function refreshDirectory(){
     window.__hiroshimaStoreDirectory=[...merged.values()];
     render();
     const good=(data.sources||[]).filter(x=>x.ok);
-    updateStatus.textContent="独自取得："+records.length+"件の媒体別レコード／統合後 "+names.length+"店舗名。取得成功 "+good.length+"/"+(data.sources||[]).length+"媒体。各媒体の順位・口コミ指標は混合していません。";
+    const sourceCounts=(data.sources||[]).map(x=>x.label+" "+(x.parsedCount??(x.records||[]).length)+"件"+(x.ok?"":"（取得失敗）")).join("｜");
+    updateStatus.textContent="更新日時："+new Date().toLocaleString("ja-JP")+"｜媒体別店舗数："+sourceCounts+"｜取得合計 "+records.length+"件／重複整理後 "+names.length+"店舗名。各媒体の順位・口コミ指標は混合していません。";
     
     grid.querySelectorAll(".item").forEach(card=>{
       const title=card.querySelector("b")?.textContent||"",entry=window.__hiroshimaStoreDirectory.find(x=>normalized(x.name)===normalized(title));
