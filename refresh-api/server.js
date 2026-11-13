@@ -88,7 +88,7 @@ const server = http.createServer(async (req, res) => {
       });
     });
     const rankTextMatches = (html.match(/>\s*(?:[1-9]|[12]\\d|30)\\s*</g) || []).length;
-    const prMarkers = (html.match(/>\s*PR\\s*</gi) || []).length;
+    const prMarkers = (html.match(/>\s*PR\s*</gi) || []).length;
     const inspection = {
       ok: title.includes("セラピストランキング") && profileLinks.length >= 20,
       mode: "diagnostic-only",
