@@ -90,6 +90,55 @@ const server = http.createServer(async (req, res) => {
         const countMentions = [...bodyText.matchAll(/(?:全\s*)?([0-9,]+)\s*(?:店舗|店|件|口コミ)/g)]
           .slice(0, 12).map(m => m[0]);
         const headingSamples = $("h1,h2,h3").toArray().map(el => $(el).text().replace(/\s+/g, " ").trim()).filter(Boolean).slice(0, 24);
+        // Extract source-specific candidates without combining incomparable metrics.
+        let parsedRecords = [];
+        let parserValidation = {};
+        if (source.id === "salonowa") {
+          $(".c-card__body").each((_, el) => {
+            const card = $(el);
+            const ratingLink = card.find("a.c-rating--voice").first();
+            if (!ratingLink.length) return;
+            const ratingText = ratingLink.text().replace(/\s+/g, " ").trim();
+            const ratingMatch = ratingText.match(/([0-5]\.\d)\s*\(([\d,]+)件\)/);
+            const name = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim()
+              || card.text().replace(/\s+/g, " ").trim().split(/\s+(?:中電前駅|市役所前駅|本日\d+名)/)[0];
+            const href = ratingLink.attr("href") || "";
+            if (name && href) parsedRecords.push({ rank: parsedRecords.length + 1, name, href: new URL(href, source.url).href,
+              rating: ratingMatch ? Number(ratingMatch[1]) : null,
+              reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
+              metric: "また行きたい評価" });
+          });
+          parsedRecords = [...new Map(parsedRecords.map(x => [x.href, x])).values()];
+          parserValidation = { cardSelectorCount: $(".c-card__body").length, parsedCount: parsedRecords.length, expectedDisplayCount: 52 };
+        } else if (source.id === "mensesthe_rank") {
+          $("a[href*='/areas/hiroshima-hiroshima/shops/']").each((_, el) => {
+            const href = $(el).attr("href") || "";
+            if (/\/casts?\//.test(href)) return;
+            const name = $(el).text().replace(/\s+/g, " ").trim();
+            if (!name || name.length > 80) return;
+            parsedRecords.push({ rank: parsedRecords.length + 1, name, href: new URL(href, source.url).href, metric: "アクセス人気順" });
+          });
+          parsedRecords = [...new Map(parsedRecords.map(x => [x.href, x])).values()];
+          parserValidation = { parsedCount: parsedRecords.length, expectedDisplayCount: 107 };
+        } else if (source.id === "menes_note") {
+          $("a[href*='/stores/']").each((_, el) => {
+            const href = $(el).attr("href") || "";
+            if (/\/stores\/[0-9a-f-]+/i.test(href) === false || /#/.test(href)) return;
+            const anchor = $(el);
+            const rawText = anchor.text().replace(/\s+/g, " ").trim();
+            const ratingMatch = rawText.match(/([0-5]\.\d)（([\d,]+)件）/);
+            const name = anchor.find("h2,h3").first().text().replace(/\s+/g, " ").trim()
+              || rawText.match(/^(.+?)(?=中電前駅|宝町|袋町|市役所前駅|八丁堀|広島駅|日本人ルーム|ルームオイル|オイル)/)?.[1]?.trim()
+              || rawText.slice(0, 45);
+            if (!name) return;
+            parsedRecords.push({ rank: parsedRecords.length + 1, name, href: new URL(href, source.url).href,
+              rating: ratingMatch ? Number(ratingMatch[1]) : null,
+              reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
+              metric: "口コミ評価" });
+          });
+          parsedRecords = [...new Map(parsedRecords.map(x => [x.href, x])).values()];
+          parserValidation = { parsedCount: parsedRecords.length, expectedDisplayCount: 152 };
+        }
         const valid = title.length > 0 && bodyText.length > 1000 && links.size >= 10;
         return { id: source.id, label: source.label, url: source.url, ok: valid,
           httpStatus: response.status, htmlBytes: Buffer.byteLength(html), title,
