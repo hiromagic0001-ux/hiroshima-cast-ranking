@@ -207,4 +207,43 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, "0.0.0.0", () => {
   console.log("Hiroshima cast refresh API listening on " + PORT);
+  // Run one compact source-structure inspection at boot so results can be reviewed
+  // from Render logs without requiring the user to copy a large JSON response.
+  setTimeout(async () => {
+    try {
+      const response = await fetch("http://127.0.0.1:" + PORT + "/api/stores/inspect");
+      const report = await response.json();
+      const compact = {
+        event: "store_source_inspection",
+        ok: report.ok,
+        mode: report.mode,
+        retrievedAt: new Date().toISOString(),
+        sources: (report.sources || []).map(source => ({
+          id: source.id,
+          ok: source.ok,
+          httpStatus: source.httpStatus || null,
+          title: source.title || null,
+          storeLinkCount: source.storeLinkCount || 0,
+          countMentions: source.countMentions || [],
+          samples: (source.storeLinkSamples || []).slice(0, 3).map(item => ({
+            text: item.text,
+            href: item.href,
+            ancestors: (item.ancestors || []).slice(0, 3).map(node => ({
+              tag: node.tag,
+              className: node.className,
+              text: node.text.slice(0, 110)
+            }))
+          })),
+          error: source.error || null
+        }))
+      };
+      console.log("STORE_SOURCE_INSPECTION " + JSON.stringify(compact));
+    } catch (error) {
+      console.log("STORE_SOURCE_INSPECTION " + JSON.stringify({
+        event: "store_source_inspection",
+        ok: false,
+        error: String(error?.message || error)
+      }));
+    }
+  }, 1200);
 });
