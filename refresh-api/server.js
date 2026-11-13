@@ -143,7 +143,7 @@ const server = http.createServer(async (req, res) => {
           const href = $(el).attr("href") || "";
           const text = $(el).text().replace(/\\s+/g, " ").trim();
           return { text, href: new URL(href, source.url).href };
-        }).filter(x => /(?:page=|\\/page\\/|次へ|次のページ|もっと見る|load more)/i.test(x.href + " " + x.text)).slice(0, 20);
+        }).filter(x => /page=|次へ|次のページ|もっと見る|load more/i.test(x.href + " " + x.text) || x.href.includes("/page/")).slice(0, 20);
         const salonCardSamples = source.id === "salonowa" ? $(".c-card__body").toArray().slice(0, 12).map(el => {
           const card = $(el);
           return {
