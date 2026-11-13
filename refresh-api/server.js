@@ -139,12 +139,26 @@ const server = http.createServer(async (req, res) => {
           parsedRecords = [...new Map(parsedRecords.map(x => [x.href, x])).values()];
           parserValidation = { parsedCount: parsedRecords.length, expectedDisplayCount: 152 };
         }
+        const paginationLinks = $("a[href]").toArray().map(el => {
+          const href = $(el).attr("href") || "";
+          const text = $(el).text().replace(/\\s+/g, " ").trim();
+          return { text, href: new URL(href, source.url).href };
+        }).filter(x => /(?:page=|\\/page\\/|次へ|次のページ|もっと見る|load more)/i.test(x.href + " " + x.text)).slice(0, 20);
+        const salonCardSamples = source.id === "salonowa" ? $(".c-card__body").toArray().slice(0, 12).map(el => {
+          const card = $(el);
+          return {
+            text: card.text().replace(/\\s+/g, " ").trim().slice(0, 180),
+            nameCandidates: card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").toArray().map(n => $(n).text().replace(/\\s+/g, " ").trim()).filter(Boolean).slice(0, 3),
+            shopLinks: card.find("a[href*='/shop/']").toArray().map(a => ({ text: $(a).text().replace(/\\s+/g, " ").trim(), href: $(a).attr("href") })).slice(0, 3),
+            ratingText: card.find("a.c-rating--voice").first().text().replace(/\\s+/g, " ").trim()
+          };
+        }) : [];
         const valid = title.length > 0 && bodyText.length > 1000 && links.size >= 10;
         return { id: source.id, label: source.label, url: source.url, ok: valid,
           httpStatus: response.status, htmlBytes: Buffer.byteLength(html), title,
           uniqueLinkCount: links.size, countMentions, headingSamples,
           storeLinkCount: storeLinks.length, storeLinkSamples: storeLinks.slice(0, 12),
-          parserValidation, parsedCount: parsedRecords.length, parsedSamples: parsedRecords.slice(0, 5),
+          parserValidation, parsedCount: parsedRecords.length, parsedSamples: parsedRecords.slice(0, 5),\n          paginationLinks, salonCardSamples,
           candidateLinks: candidateLinks.slice(0, 8), retrievedAt: new Date().toISOString(),
           note: valid ? "店舗リンクの親要素構造を診断用に抽出。順位・件数の確定抽出は未実施です。" : "ページ構造の検証条件を満たしません。" };
       } catch (error) {
