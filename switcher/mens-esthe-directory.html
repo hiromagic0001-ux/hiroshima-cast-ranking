@@ -33,7 +33,7 @@ q.addEventListener("input",render);render();
       if(!current.sources.some(x=>x.sourceId===record.sourceId))current.sources.push({sourceId:record.sourceId,label:record.sourceLabel,href:record.href,metric:record.metric,rank:record.rank,rating:record.rating,reviewCount:record.reviewCount});
       merged.set(key,current);
     }
-    names=[...merged.values()].sort((a,b)=>a.name.localeCompare(b.name,"ja"));
+    names=[...merged.values()].map(x=>x.name).sort((a,b)=>a.localeCompare(b,"ja"));
     window.__hiroshimaStoreDirectory=[...merged.values()];
     render();
     const good=(data.sources||[]).filter(x=>x.ok);
