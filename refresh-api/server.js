@@ -537,21 +537,5 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, "0.0.0.0", () => {
   console.log("Hiroshima cast refresh API listening on " + PORT);
-  // TEMPORARY: collect one diagnostic result after deployment, then remove this block.
-  setTimeout(async () => {
-    try {
-      const response = await fetch("http://127.0.0.1:" + PORT + "/api/casts/metrics-inspect");
-      const data = await response.json();
-      console.log("CAST_METRICS_INSPECTION " + JSON.stringify({
-        ok: data.ok, groups: data.groups,
-        results: (data.results || []).map(x => ({
-          group: x.group, name: x.name, ok: x.ok, status: x.status,
-          countCandidates: x.countCandidates, keywordSnippets: x.keywordSnippets,
-          matchingElements: x.matchingElements
-        }))
-      }));
-    } catch (error) { console.log("CAST_METRICS_INSPECTION_ERROR " + String(error)); }
-  }, 2500);
-
 
 });
