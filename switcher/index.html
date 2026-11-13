@@ -152,27 +152,9 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
    }
  }
  $("faceBtn").addEventListener("click",attemptFaceID);
- // アプリに戻ったときもロックを再表示し、Face IDを自動要求
- function relockAndRequestFaceID(){
-   const data=read();
-   if(data && data.credentialId && data.publicKey){
-     $("lock").hidden=false;
-     $("lockText").textContent="広島キャストを開くには本人確認が必要です。";
-     show("loginArea");
-     $("faceBtn").hidden=false;
-     $("faceBtn").textContent="Face IDでロック解除";
-     say("");
-     setTimeout(()=>attemptFaceID(),350);
-   }
- }
- window.addEventListener("pageshow",event=>{
-   if(event.persisted)relockAndRequestFaceID();
- });
- let wasBackgrounded=false;
- document.addEventListener("visibilitychange",()=>{
-   if(document.hidden){wasBackgrounded=true;}
-   else if(wasBackgrounded){wasBackgrounded=false;relockAndRequestFaceID();}
- });
+ // 一度解除したら、このページが生きている間は再ロックしない。
+ // サービス選択先から戻った場合や、アプリをバックグラウンドから復帰した場合も
+ // Face IDを再要求せず、完全に新しく起動したときだけ init() でロックする。
  $("setupFaceBtn").addEventListener("click",async()=>{
    try{
      const data=read(),password=$("loginPw").value;
