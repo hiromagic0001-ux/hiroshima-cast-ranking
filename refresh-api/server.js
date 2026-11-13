@@ -94,32 +94,32 @@ const server = http.createServer(async (req, res) => {
         let parsedRecords = [];
         let parserValidation = {};
         if (source.id === "salonowa") {
-          $("a[href*='/shop/']").each((_, el) => {
+          const addSalonowaCards = (page$, pageUrl) => {
+            page$(".c-card__body").each((_, el) => {
+              const card = page$(el);
+              const name = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\\s+/g, " ").trim();
+              if (!name || name.length > 70 || parsedRecords.some(item => item.name === name)) return;
+              const ratingText = card.find("a.c-rating--voice").first().text().replace(/\\s+/g, " ").trim();
+              const ratingMatch = ratingText.match(/([0-5]\\.\\d)\\s*\\(([\\d,]+)件\\)/);
+              const shopAnchor = card.find("a[href*='/shop/']").first();
+              const hrefRaw = shopAnchor.attr("href") || "";
+              const href = hrefRaw ? new URL(hrefRaw, pageUrl).href : null;
+              parsedRecords.push({ rank: parsedRecords.length + 1, name, href,
+                rating: ratingMatch ? Number(ratingMatch[1]) : null,
+                reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
+                metric: "また行きたい順" });
+            });
+          };
+          addSalonowaCards($, source.url);
+          parserValidation = { cardSelectorCount: $(".c-card__body").length, parsedCount: parsedRecords.length,
+            expectedDisplayCount: 52, linkedCount: parsedRecords.filter(x => x.href).length,
+            unlinkedCount: parsedRecords.filter(x => !x.href).length };
+        } else if (source.id === "mensesthe_rank") {
+          $("a.font-bold.text-primary[href*='/areas/hiroshima-hiroshima/shops/']").each((_, el) => {
             const anchor = $(el);
             const href = anchor.attr("href") || "";
-            const absolute = new URL(href, source.url);
-            if (!/^\/shop\/[^/]+\/?$/.test(absolute.pathname)) return;
-            const card = anchor.closest(".c-card__body");
-            const headingName = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim();
-            const anchorText = anchor.text().replace(/\s+/g, " ").trim();
-            const name = headingName || anchorText.split(/\s+(?:中電前駅|比治山橋駅|市役所前駅|八丁堀駅|本日\d+名)/)[0].trim();
-            if (!name || name.length > 70) return;
-            const ratingLink = card.find("a.c-rating--voice").first();
-            const ratingText = ratingLink.text().replace(/\s+/g, " ").trim();
-            const ratingMatch = ratingText.match(/([0-5]\.\d)\s*\(([\d,]+)件\)/);
-            parsedRecords.push({ rank: parsedRecords.length + 1, name, href: absolute.href,
-              rating: ratingMatch ? Number(ratingMatch[1]) : null,
-              reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
-              metric: "また行きたい評価" });
-          });
-          parsedRecords = [...new Map(parsedRecords.map(x => [x.href, x])).values()];
-          parserValidation = { cardSelectorCount: $(".c-card__body").length, parsedCount: parsedRecords.length, expectedDisplayCount: 52,
-            ratedCount: parsedRecords.filter(x => x.rating !== null).length };
-        } else if (source.id === "mensesthe_rank") {
-          $("a[href*='/areas/hiroshima-hiroshima/shops/']").each((_, el) => {
-            const href = $(el).attr("href") || "";
-            if (/\/casts?\//.test(href)) return;
-            const name = $(el).text().replace(/\s+/g, " ").trim();
+            if (/\\/casts?\\//.test(href)) return;
+            const name = anchor.text().replace(/\\s+/g, " ").trim();
             if (!name || name.length > 80) return;
             parsedRecords.push({ rank: parsedRecords.length + 1, name, href: new URL(href, source.url).href, metric: "アクセス人気順" });
           });
@@ -171,21 +171,18 @@ const server = http.createServer(async (req, res) => {
             const page$ = cheerio.load(pageHtml);
             const beforeCount = parsedRecords.length;
             if (source.id === "salonowa") {
-              page$("a[href*='/shop/']").each((_, el) => {
-                const anchor = page$(el);
-                const absolute = new URL(anchor.attr("href") || "", pageUrl.href);
-                if (!/^\/shop\/[^/]+\/?$/.test(absolute.pathname)) return;
-                const card = anchor.closest(".c-card__body");
-                const headingName = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim();
-                const anchorText = anchor.text().replace(/\s+/g, " ").trim();
-                const name = headingName || anchorText.split(/\s+(?:中電前駅|比治山橋駅|市役所前駅|八丁堀駅|本日\d+名)/)[0].trim();
-                if (!name || name.length > 70) return;
-                const ratingText = card.find("a.c-rating--voice").first().text().replace(/\s+/g, " ").trim();
-                const ratingMatch = ratingText.match(/([0-5]\.\d)\s*\(([\d,]+)件\)/);
-                parsedRecords.push({ rank: parsedRecords.length + 1, name, href: absolute.href,
+              page$(".c-card__body").each((_, el) => {
+                const card = page$(el);
+                const name = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\\s+/g, " ").trim();
+                if (!name || name.length > 70 || parsedRecords.some(item => item.name === name)) return;
+                const ratingText = card.find("a.c-rating--voice").first().text().replace(/\\s+/g, " ").trim();
+                const ratingMatch = ratingText.match(/([0-5]\\.\\d)\\s*\\(([\\d,]+)件\\)/);
+                const shopAnchor = card.find("a[href*='/shop/']").first();
+                const hrefRaw = shopAnchor.attr("href") || "";
+                parsedRecords.push({ rank: parsedRecords.length + 1, name, href: hrefRaw ? new URL(hrefRaw, pageUrl.href).href : null,
                   rating: ratingMatch ? Number(ratingMatch[1]) : null,
                   reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
-                  metric: "また行きたい評価" });
+                  metric: "また行きたい順" });
               });
             } else {
               page$("a[href*='/stores/']").each((_, el) => {
