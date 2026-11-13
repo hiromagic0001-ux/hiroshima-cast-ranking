@@ -20,7 +20,7 @@ function send(res, status, body, origin) {
 const server = http.createServer(async (req, res) => {
   const origin = req.headers.origin || "";
   const requestUrl = new URL(req.url || "/", "http://localhost");
-  const pathname = requestUrl.pathname.replace(/\\/+$/, "") || "/";
+  const pathname = requestUrl.pathname.replace(/\/+$/, "") || "/";
   console.log(JSON.stringify({ event: "request", method: req.method, path: pathname, origin: origin || null }));
   if (req.method === "OPTIONS") {
     res.writeHead(204, {
