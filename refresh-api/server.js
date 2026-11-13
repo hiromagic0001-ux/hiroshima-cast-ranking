@@ -440,6 +440,58 @@ const server = http.createServer(async (req, res) => {
       note: "診断専用。店舗ランキングの公開・既存データの上書きは行いません。"
     }, origin);
   }
+  if (pathname === "/api/fuzoku/list-inspect" && req.method === "GET") {
+    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const source = "https://fuzoku.jp/hiroshimacoco/girllist/";
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 15000);
+    try {
+      const response = await fetch(source, { signal: controller.signal, headers: {
+        "user-agent": "Mozilla/5.0 (compatible; HiroshimaCastRefresh/1.0)",
+        "accept": "text/html,application/xhtml+xml"
+      }});
+      if (!response.ok) throw new Error("source_http_" + response.status);
+      const html = await response.text();
+      if (html.length < 5000 || html.length > 5000000) throw new Error("unexpected_html_size");
+      const $ = cheerio.load(html);
+      const title = $("title").first().text().replace(/\\s+/g, " ").trim();
+      const bodyText = $("body").text().replace(/\\s+/g, " ").trim();
+      const records = [];
+      $("a[href*='/hiroshimacoco/girl/']").each((_, el) => {
+        const anchor = $(el);
+        const href = new URL(anchor.attr("href"), source).href;
+        const name = anchor.text().replace(/\\s+/g, " ").trim();
+        if (!name || name.length > 40 || /口コミ|プロフィール|詳細/.test(name)) return;
+        let node = anchor;
+        let context = "";
+        for (let depth = 0; depth < 5 && node.length; depth++, node = node.parent()) {
+          const candidate = node.text().replace(/\\s+/g, " ").trim();
+          if (candidate.length >= name.length && candidate.length <= 500) { context = candidate; if (/口コミ/.test(candidate)) break; }
+        }
+        const countMatch = context.match(/口コミ\\s*[:：]?\\s*([0-9,]+)\\s*件/);
+        records.push({ name, href, reviewCount: countMatch ? Number(countMatch[1].replace(/,/g, "")) : null,
+          reviewCountExplicit: Boolean(countMatch), context: context.slice(0, 240) });
+      });
+      const unique = [...new Map(records.map(item => [item.href, item])).values()];
+      const activeCount = bodyText.match(/([0-9,]+)人/);
+      const pageRange = bodyText.match(/([0-9,]+)件?中?\\s*1\\s*[〜～-]\\s*50/);
+      const valid = /広島で評判のお店|広島ココ/.test(title + " " + bodyText) && unique.length >= 20;
+      return send(res, 200, { ok: valid, mode: "diagnostic-only", source,
+        retrievedAt: new Date().toISOString(), httpStatus: response.status,
+        htmlBytes: Buffer.byteLength(html), title,
+        activeCastCount: activeCount ? Number(activeCount[1].replace(/,/g, "")) : null,
+        pageRange: pageRange ? pageRange[0] : null,
+        listedCastCount: unique.length,
+        explicitReviewCountCount: unique.filter(item => item.reviewCountExplicit).length,
+        records: unique.slice(0, 60),
+        note: "一覧ページの明示された口コミ件数のみ抽出。プロフィールや一覧の未表示件数を0件と扱わず、既存データも変更しません。"
+      }, origin);
+    } catch (error) {
+      return send(res, 502, { ok: false, status: "更新未確認", source,
+        error: String(error?.message || error),
+        note: "取得または構造検証に失敗したため、既存データには触れていません。" }, origin);
+    } finally { clearTimeout(timer); }
+  }
   if (pathname !== "/api/estama/inspect" || req.method !== "GET") {
     return send(res, 404, { ok: false, error: "not_found" }, origin);
   }
