@@ -72,7 +72,7 @@ const server = http.createServer(async (req, res) => {
       for (let level = 1; level <= 7; level++) {
         node = node.parent();
         if (!node.length) break;
-        const text = node.text().replace(/\\s+/g, " ").trim();
+        const text = node.text().replace(/\s+/g, " ").trim();
         ancestors.push({
           level,
           tag: node.get(0)?.tagName || "",
@@ -82,13 +82,13 @@ const server = http.createServer(async (req, res) => {
         });
       }
       samples.push({
-        name: anchor.text().replace(/\\s+/g, " ").trim(),
+        name: anchor.text().replace(/\s+/g, " ").trim(),
         href: anchor.attr("href"),
         ancestors
       });
     });
-    const rankTextMatches = (html.match(/>\\s*(?:[1-9]|[12]\\d|30)\\s*</g) || []).length;
-    const prMarkers = (html.match(/>\\s*PR\\s*</gi) || []).length;
+    const rankTextMatches = (html.match(/>\s*(?:[1-9]|[12]\\d|30)\\s*</g) || []).length;
+    const prMarkers = (html.match(/>\s*PR\\s*</gi) || []).length;
     const inspection = {
       ok: title.includes("セラピストランキング") && profileLinks.length >= 20,
       mode: "diagnostic-only",
