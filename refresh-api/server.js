@@ -97,14 +97,19 @@ const server = http.createServer(async (req, res) => {
           const addSalonowaCards = (page$, pageUrl) => {
             page$(".c-card__body").each((_, el) => {
               const card = page$(el);
-              const name = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim();
-              if (!name || name.length > 70 || parsedRecords.some(item => item.name === name)) return;
-              const ratingText = card.find("a.c-rating--voice").first().text().replace(/\s+/g, " ").trim();
-              const ratingMatch = ratingText.match(/([0-5]\.\d)\s*\(([\d,]+)件\)/);
               const shopAnchor = card.find("a[href*='/shop/']").first();
-              const hrefRaw = shopAnchor.attr("href") || "";
+              const rawName = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text()
+                || shopAnchor.text() || "";
+              const cleanName = rawName.replace(/^\\s*\\d+位\\s*/, "").replace(/\\s+/g, " ").trim()
+                .split(/\\s+(?:[^\\s]{1,12}駅|本日\\d+名)/)[0].trim();
+              const name = cleanName;
+              if (!name || name.length > 100 || parsedRecords.some(item => item.name === name)) return;
+              const cardText = card.text().replace(/\\s+/g, " ").trim();
+              const ratingMatch = cardText.match(/また行く！?\\s*([0-5]\\.\\d)\\s*\\(([\\d,]+)件\\)/);
+              const hrefRaw = shopAnchor.attr("href") || card.closest("a[href*='/shop/']").attr("href") || "";
               const href = hrefRaw ? new URL(hrefRaw, pageUrl).href : null;
-              parsedRecords.push({ rank: parsedRecords.length + 1, name, href,
+              const rankMatch = cardText.match(/(?:^|\\s)(\\d+)位/);
+              parsedRecords.push({ rank: rankMatch ? Number(rankMatch[1]) : parsedRecords.length + 1, name, href,
                 rating: ratingMatch ? Number(ratingMatch[1]) : null,
                 reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
                 metric: "また行きたい順" });
@@ -115,17 +120,21 @@ const server = http.createServer(async (req, res) => {
             expectedDisplayCount: 52, linkedCount: parsedRecords.filter(x => x.href).length,
             unlinkedCount: parsedRecords.filter(x => !x.href).length };
         } else if (source.id === "mensesthe_rank") {
-          $("a.font-bold.text-primary[href*='/areas/hiroshima-hiroshima/shops/']").each((_, el) => {
+          $("a[href*='/areas/hiroshima-hiroshima/shops/']").each((_, el) => {
             const anchor = $(el);
             const href = anchor.attr("href") || "";
-            if (/\/casts?\//.test(href)) return;
-            const name = anchor.text().replace(/\s+/g, " ").trim();
+            if (/\\/casts?\\//.test(href)) return;
+            const raw = anchor.text().replace(/\\s+/g, " ").trim();
+            const cityIndex = raw.lastIndexOf("広島市");
+            let name = cityIndex >= 0 ? raw.slice(cityIndex + "広島市".length).trim()
+              : raw.replace(/^\\d+\\s*/, "").replace(/^MEN'S\\s*ESTHETIC\\s*/i, "").trim();
+            name = name.replace(/^広島市/, "").trim();
             if (!name || name.length > 80) return;
             parsedRecords.push({ rank: parsedRecords.length + 1, name, href: new URL(href, source.url).href, metric: "アクセス人気順" });
           });
           parsedRecords = [...new Map(parsedRecords.map(x => [x.href, x])).values()];
           parserValidation = { parsedCount: parsedRecords.length, expectedDisplayCount: 107 };
-        } else if (source.id === "menes_note") {
+        }} else if (source.id === "menes_note") {
           $("a[href*='/stores/']").each((_, el) => {
             const href = $(el).attr("href") || "";
             if (/\/stores\/[0-9a-f-]+/i.test(href) === false || /#/.test(href)) return;
@@ -173,18 +182,23 @@ const server = http.createServer(async (req, res) => {
             if (source.id === "salonowa") {
               page$(".c-card__body").each((_, el) => {
                 const card = page$(el);
-                const name = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\\s+/g, " ").trim();
-                if (!name || name.length > 70 || parsedRecords.some(item => item.name === name)) return;
-                const ratingText = card.find("a.c-rating--voice").first().text().replace(/\\s+/g, " ").trim();
-                const ratingMatch = ratingText.match(/([0-5]\\.\\d)\\s*\\(([\\d,]+)件\\)/);
                 const shopAnchor = card.find("a[href*='/shop/']").first();
-                const hrefRaw = shopAnchor.attr("href") || "";
-                parsedRecords.push({ rank: parsedRecords.length + 1, name, href: hrefRaw ? new URL(hrefRaw, pageUrl.href).href : null,
+                const rawName = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text()
+                  || shopAnchor.text() || "";
+                const name = rawName.replace(/^\\s*\\d+位\\s*/, "").replace(/\\s+/g, " ").trim()
+                  .split(/\\s+(?:[^\\s]{1,12}駅|本日\\d+名)/)[0].trim();
+                if (!name || name.length > 100 || parsedRecords.some(item => item.name === name)) return;
+                const cardText = card.text().replace(/\\s+/g, " ").trim();
+                const ratingMatch = cardText.match(/また行く！?\\s*([0-5]\\.\\d)\\s*\\(([\\d,]+)件\\)/);
+                const hrefRaw = shopAnchor.attr("href") || card.closest("a[href*='/shop/']").attr("href") || "";
+                const href = hrefRaw ? new URL(hrefRaw, pageUrl.href).href : null;
+                const rankMatch = cardText.match(/(?:^|\\s)(\\d+)位/);
+                parsedRecords.push({ rank: rankMatch ? Number(rankMatch[1]) : parsedRecords.length + 1, name, href,
                   rating: ratingMatch ? Number(ratingMatch[1]) : null,
                   reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
                   metric: "また行きたい順" });
               });
-            } else {
+            } } else {
               page$("a[href*='/stores/']").each((_, el) => {
                 const href = page$(el).attr("href") || "";
                 if (!/\/stores\/[0-9a-f-]+/i.test(new URL(href, pageUrl.href).pathname) || /#/.test(href)) return;
