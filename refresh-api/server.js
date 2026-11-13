@@ -19,6 +19,9 @@ function send(res, status, body, origin) {
 
 const server = http.createServer(async (req, res) => {
   const origin = req.headers.origin || "";
+  const requestUrl = new URL(req.url || "/", "http://localhost");
+  const pathname = requestUrl.pathname.replace(/\\/+$/, "") || "/";
+  console.log(JSON.stringify({ event: "request", method: req.method, path: pathname, origin: origin || null }));
   if (req.method === "OPTIONS") {
     res.writeHead(204, {
       "access-control-allow-origin": ALLOWED_ORIGIN,
@@ -28,10 +31,10 @@ const server = http.createServer(async (req, res) => {
     });
     return res.end();
   }
-  if (req.url === "/health" && req.method === "GET") {
+  if (pathname === "/health" && req.method === "GET") {
     return send(res, 200, { ok: true, service: "hiroshima-cast-refresh-api", mode: "diagnostic-only" }, origin);
   }
-  if (req.url !== "/api/estama/inspect" || req.method !== "GET") {
+  if (pathname !== "/api/estama/inspect" || req.method !== "GET") {
     return send(res, 404, { ok: false, error: "not_found" }, origin);
   }
   if (origin && origin !== ALLOWED_ORIGIN) {
