@@ -440,6 +440,65 @@ const server = http.createServer(async (req, res) => {
       note: "診断専用。店舗ランキングの公開・既存データの上書きは行いません。"
     }, origin);
   }
+  if (pathname === "/api/casts/alternative-inspect" && req.method === "GET") {
+    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const sources = [
+      { id: "bestcastdata", label: "BEST CAST DATA・最高キャスト選出人数", url: "https://bestcastdata.jp/hiroshima/hiroshima-city/" },
+      { id: "fuzoku_repeat", label: "風俗じゃぱん・リピートランキング", url: "https://fuzoku.jp/hiroshimacoco/girllist/ranking/" }
+    ];
+    const results = await Promise.all(sources.map(async source => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 15000);
+      try {
+        const response = await fetch(source.url, { signal: controller.signal, headers: {
+          "user-agent": "Mozilla/5.0 (compatible; HiroshimaCastRefresh/1.0)",
+          "accept": "text/html,application/xhtml+xml"
+        }});
+        if (!response.ok) throw new Error("source_http_" + response.status);
+        const html = await response.text();
+        if (html.length < 5000 || html.length > 5000000) throw new Error("unexpected_html_size");
+        const $ = cheerio.load(html);
+        const title = $("title").first().text().replace(/\\s+/g, " ").trim();
+        const bodyText = $("body").text().replace(/\\s+/g, " ").trim();
+        const links = [];
+        $("a[href]").each((_, el) => {
+          const a = $(el);
+          const href = a.attr("href") || "";
+          const text = a.text().replace(/\\s+/g, " ").trim();
+          if (!href || !text) return;
+          let absolute;
+          try { absolute = new URL(href, source.url).href; } catch { return; }
+          const ancestors = [];
+          let node = a;
+          for (let depth = 0; depth < 6 && node.length; depth++, node = node.parent()) {
+            ancestors.push({ tag: node[0]?.tagName || "", className: String(node.attr("class") || "").slice(0, 120),
+              text: node.text().replace(/\\s+/g, " ").trim().slice(0, 260) });
+          }
+          if ((source.id === "bestcastdata" && /cityheaven\\.net/.test(absolute)) ||
+              (source.id === "fuzoku_repeat" && /\\/hiroshimacoco\\/girl\\//.test(absolute))) {
+            links.push({ text, href: absolute, ancestors });
+          }
+        });
+        const validTitle = source.id === "bestcastdata" ? /最高キャスト/.test(title + " " + bodyText) :
+          /リピートランキング/.test(title + " " + bodyText);
+        return { id: source.id, label: source.label, url: source.url, ok: validTitle && links.length >= 5,
+          httpStatus: response.status, htmlBytes: Buffer.byteLength(html), title,
+          candidateCount: links.length, candidateSamples: links.slice(0, 12),
+          bodySamples: source.id === "bestcastdata" ? bodyText.match(/.{0,35}最高キャスト.{0,35}/g)?.slice(0, 12) || [] : [],
+          retrievedAt: new Date().toISOString(),
+          note: "取得・DOM構造診断のみ。順位の確定、既存データの変更・上書きは行いません。" };
+      } catch (error) {
+        return { id: source.id, label: source.label, url: source.url, ok: false,
+          status: "更新未確認", error: String(error?.message || error),
+          note: "取得失敗時は既存データを変更しません。" };
+      } finally { clearTimeout(timer); }
+    }));
+    return send(res, results.every(x => x.ok) ? 200 : 502, { ok: results.every(x => x.ok),
+      mode: "diagnostic-only",
+      metricPolicy: "最高キャスト選出人数とリピート順位は独立した指標として扱います。",
+      sources: results,
+      note: "診断専用。既存ランキングの公開・上書きは行いません。" }, origin);
+  }
   if (pathname === "/api/fuzoku/list-inspect" && req.method === "GET") {
     if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const source = "https://fuzoku.jp/hiroshimacoco/girllist/";
