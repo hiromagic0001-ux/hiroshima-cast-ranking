@@ -150,22 +150,27 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
    }
  }
  $("faceBtn").addEventListener("click",attemptFaceID);
- // キャスト検索など別ページから戻った場合もロックを再表示し、Face IDを自動要求
- window.addEventListener("pageshow",event=>{
-   if(event.persisted){
-     const data=read();
-     if(data && data.credentialId && data.publicKey){
-       $("lock").hidden=false;
-       $("lockText").textContent="広島キャストを開くには本人確認が必要です。";
-       show("loginArea");
-       $("faceBtn").hidden=false;
-       $("faceBtn").textContent="Face IDでロック解除";
-       say("");
-       setTimeout(()=>attemptFaceID(),350);
-     }
+ // アプリに戻ったときもロックを再表示し、Face IDを自動要求
+ function relockAndRequestFaceID(){
+   const data=read();
+   if(data && data.credentialId && data.publicKey){
+     $("lock").hidden=false;
+     $("lockText").textContent="広島キャストを開くには本人確認が必要です。";
+     show("loginArea");
+     $("faceBtn").hidden=false;
+     $("faceBtn").textContent="Face IDでロック解除";
+     say("");
+     setTimeout(()=>attemptFaceID(),350);
    }
+ }
+ window.addEventListener("pageshow",event=>{
+   if(event.persisted)relockAndRequestFaceID();
  });
-;
+ let wasBackgrounded=false;
+ document.addEventListener("visibilitychange",()=>{
+   if(document.hidden){wasBackgrounded=true;}
+   else if(wasBackgrounded){wasBackgrounded=false;relockAndRequestFaceID();}
+ });
  $("loginBtn").addEventListener("click",async()=>{
    try{const data=read(),actual=await hashPassword($("loginPw").value,data.salt);if(actual!==data.passwordHash){say("パスワードが違います。");return} $("loginPw").value="";unlock()}
    catch(e){say("認証できませんでした。もう一度お試しください。")}
