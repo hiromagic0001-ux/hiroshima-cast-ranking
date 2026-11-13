@@ -41,6 +41,7 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
    <button class="action" id="faceBtn" hidden>Face IDでロック解除</button>
    <input id="loginPw" type="password" autocomplete="current-password" placeholder="パスワード">
    <button class="action" id="loginBtn">パスワードでロック解除</button>
+   <button class="action secondary" id="setupFaceBtn" hidden>Face IDを登録する</button>
   </div>
   <div id="enrollArea" hidden>
    <button class="action" id="enrollBtn">Face IDを登録する</button>
@@ -91,6 +92,7 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
    if(!data||!data.passwordHash){$("lockText").textContent="初回設定です。まず、この端末で使うパスワードを決めてください。";show("setupArea");return}
    $("lockText").textContent="広島キャストを開くには本人確認が必要です。";
    show("loginArea");
+   $("setupFaceBtn").hidden=!!(data.credentialId && data.publicKey);
    if(data.credentialId && data.publicKey){
      $("faceBtn").hidden=false;
      $("faceBtn").textContent="Face IDでロック解除";
@@ -170,6 +172,18 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
  document.addEventListener("visibilitychange",()=>{
    if(document.hidden){wasBackgrounded=true;}
    else if(wasBackgrounded){wasBackgrounded=false;relockAndRequestFaceID();}
+ });
+ $("setupFaceBtn").addEventListener("click",async()=>{
+   try{
+     const data=read(),password=$("loginPw").value;
+     if(!password){say("先にパスワードを入力してください。");return}
+     const actual=await hashPassword(password,data.salt);
+     if(actual!==data.passwordHash){say("パスワードが違います。");return}
+     $("loginPw").value="";
+     $("lockText").textContent="Face IDを登録します。iPhoneで本人確認してください。";
+     show("enrollArea");
+     say("");
+   }catch(e){say("確認できませんでした。もう一度お試しください。")}
  });
  $("loginBtn").addEventListener("click",async()=>{
    try{const data=read(),actual=await hashPassword($("loginPw").value,data.salt);if(actual!==data.passwordHash){say("パスワードが違います。");return} $("loginPw").value="";unlock()}
