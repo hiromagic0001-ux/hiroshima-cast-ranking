@@ -144,6 +144,7 @@ const server = http.createServer(async (req, res) => {
           httpStatus: response.status, htmlBytes: Buffer.byteLength(html), title,
           uniqueLinkCount: links.size, countMentions, headingSamples,
           storeLinkCount: storeLinks.length, storeLinkSamples: storeLinks.slice(0, 12),
+          parserValidation, parsedCount: parsedRecords.length, parsedSamples: parsedRecords.slice(0, 5),
           candidateLinks: candidateLinks.slice(0, 8), retrievedAt: new Date().toISOString(),
           note: valid ? "店舗リンクの親要素構造を診断用に抽出。順位・件数の確定抽出は未実施です。" : "ページ構造の検証条件を満たしません。" };
       } catch (error) {
