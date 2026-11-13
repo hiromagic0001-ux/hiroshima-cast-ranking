@@ -36,6 +36,77 @@ const server = http.createServer(async (req, res) => {
   if (pathname === "/health" && req.method === "GET") {
     return send(res, 200, { ok: true, service: "hiroshima-cast-refresh-api", mode: "diagnostic-only" }, origin);
   }
+  if (pathname === "/api/casts/inspect" && req.method === "GET") {
+    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const targets = [
+      { group: "delihel", name: "カガミ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/girlid-47414845/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/reviews/?girlid=47414845" },
+      { group: "delihel", name: "サアヤ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/girlid-50354138/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=50354138" },
+      { group: "delihel", name: "メイ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/girlid-14020683/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=14020683" },
+      { group: "delihel", name: "ルリア", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/girlid-53089242/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/reviews/?girlid=53089242" },
+      { group: "delihel", name: "ユズキ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/girlid-55666630/" },
+      { group: "delihel", name: "ブルマー", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/girlid-64319837/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=64319837" },
+      { group: "delihel", name: "ミウ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/girlid-53813734/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=53813734" },
+      { group: "delihel", name: "ユノハ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/girlid-28810342/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=28810342" },
+      { group: "delihel", name: "ジュン", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/girlid-55136221/" },
+      { group: "delihel", name: "マナミ", profile: "https://fuzoku.jp/hiroshimacoco/girl/90/" },
+      { group: "delihel", name: "マーコ", profile: "https://fuzoku.jp/hiroshimacoco/girl/486/" },
+      { group: "delihel", name: "ソノ", profile: "https://ranking-deli.jp/hiroshima/area151/style2/252/4782529/maildiary/" },
+      { group: "delihel", name: "エミリ", profile: "https://fuzoku.jp/hiroshimacoco/girl/682/" },
+      { group: "delihel", name: "サクラコ", profile: "https://fuzoku.jp/hiroshimacoco/girl/741/" },
+      { group: "delihel", name: "アンナ", profile: "https://fuzoku.jp/hiroshimacoco/girl/209/" },
+      { group: "delihel", name: "ユリー", profile: "https://ranking-deli.jp/hiroshima/area151/style2/252/1837827/maildiary/" },
+      { group: "soapland", name: "ことね", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/girlid-52248528/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=52248528" },
+      { group: "soapland", name: "きらら", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/girlid-46701341/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/reviews/?girlid=46701341" },
+      { group: "soapland", name: "すず", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/girlid-50677299/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=50677299" },
+      { group: "soapland", name: "れい", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/girlid-12723960/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/reviews/?girlid=12723960" },
+      { group: "soapland", name: "イヴ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/girlid-57738554/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=57738554" },
+      { group: "soapland", name: "さや", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/girlid-50622923/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=50622923" },
+      { group: "soapland", name: "ゆめ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/girlid-54071012/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=54071012" },
+      { group: "soapland", name: "ひな", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/girlid-65602665/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=65602665" }
+    ];
+    const checkPage = async (url) => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 12000);
+      try {
+        const response = await fetch(url, { signal: controller.signal, headers: {
+          "user-agent": "Mozilla/5.0 (compatible; HiroshimaCastRefresh/1.0)",
+          "accept": "text/html,application/xhtml+xml"
+        }});
+        if (!response.ok) return { ok: false, status: response.status, url };
+        const html = await response.text();
+        if (html.length < 1500 || html.length > 5000000) return { ok: false, status: response.status, error: "unexpected_html_size", bytes: html.length, url };
+        const $ = cheerio.load(html);
+        const title = $("title").first().text().replace(/\s+/g, " ").trim();
+        const bodyText = $("body").text().replace(/\s+/g, " ").trim();
+        return { ok: Boolean(title && bodyText.length > 100), status: response.status, title: title.slice(0, 140), bytes: Buffer.byteLength(html), url };
+      } catch (error) {
+        return { ok: false, error: String(error?.message || error), url };
+      } finally { clearTimeout(timer); }
+    };
+    const results = [];
+    for (let i = 0; i < targets.length; i += 6) {
+      const batch = targets.slice(i, i + 6);
+      results.push(...await Promise.all(batch.flatMap(async target => {
+        const profile = await checkPage(target.profile);
+        const review = target.review ? await checkPage(target.review) : null;
+        return [{ group: target.group, name: target.name, type: "profile", ...profile },
+          ...(review ? [{ group: target.group, name: target.name, type: "review", ...review }] : [])];
+      })));
+    }
+    const groups = ["delihel", "soapland"].map(group => {
+      const rows = results.filter(x => x.group === group);
+      const profiles = rows.filter(x => x.type === "profile");
+      const reviews = rows.filter(x => x.type === "review");
+      return { group, expectedProfiles: group === "delihel" ? 16 : 8,
+        checkedProfiles: profiles.length, successfulProfiles: profiles.filter(x => x.ok).length,
+        reviewPagesChecked: reviews.length, successfulReviewPages: reviews.filter(x => x.ok).length,
+        failed: rows.filter(x => !x.ok).map(x => ({ name: x.name, type: x.type, status: x.status || null, error: x.error || null })) };
+    });
+    return send(res, 200, { ok: groups.every(x => x.successfulProfiles === x.expectedProfiles),
+      mode: "diagnostic-only", metricPolicy: "媒体・店舗ごとの指標を混合しません。プロフィール確認と口コミ数の比較可能性は別判定です。",
+      retrievedAt: new Date().toISOString(), groups, sampleResults: results.slice(0, 10),
+      note: "診断専用。順位や既存データの更新・上書きは行いません。" }, origin);
+  }
   if (pathname === "/api/stores/inspect" && req.method === "GET") {
     if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const sources = [
