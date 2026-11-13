@@ -97,10 +97,10 @@ const server = http.createServer(async (req, res) => {
           const addSalonowaCards = (page$, pageUrl) => {
             page$(".c-card__body").each((_, el) => {
               const card = page$(el);
-              const name = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\\s+/g, " ").trim();
+              const name = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim();
               if (!name || name.length > 70 || parsedRecords.some(item => item.name === name)) return;
-              const ratingText = card.find("a.c-rating--voice").first().text().replace(/\\s+/g, " ").trim();
-              const ratingMatch = ratingText.match(/([0-5]\\.\\d)\\s*\\(([\\d,]+)件\\)/);
+              const ratingText = card.find("a.c-rating--voice").first().text().replace(/\s+/g, " ").trim();
+              const ratingMatch = ratingText.match(/([0-5]\.\d)\s*\(([\d,]+)件\)/);
               const shopAnchor = card.find("a[href*='/shop/']").first();
               const hrefRaw = shopAnchor.attr("href") || "";
               const href = hrefRaw ? new URL(hrefRaw, pageUrl).href : null;
@@ -118,8 +118,8 @@ const server = http.createServer(async (req, res) => {
           $("a.font-bold.text-primary[href*='/areas/hiroshima-hiroshima/shops/']").each((_, el) => {
             const anchor = $(el);
             const href = anchor.attr("href") || "";
-            if (/\\/casts?\\//.test(href)) return;
-            const name = anchor.text().replace(/\\s+/g, " ").trim();
+            if (/\/casts?\//.test(href)) return;
+            const name = anchor.text().replace(/\s+/g, " ").trim();
             if (!name || name.length > 80) return;
             parsedRecords.push({ rank: parsedRecords.length + 1, name, href: new URL(href, source.url).href, metric: "アクセス人気順" });
           });
