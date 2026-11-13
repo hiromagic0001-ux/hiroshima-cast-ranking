@@ -107,6 +107,81 @@ const server = http.createServer(async (req, res) => {
       retrievedAt: new Date().toISOString(), groups, sampleResults: results.slice(0, 10),
       note: "診断専用。順位や既存データの更新・上書きは行いません。" }, origin);
   }
+  if (pathname === "/api/casts/metrics-inspect" && req.method === "GET") {
+    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const targets = [
+      { group: "delihel", name: "カガミ", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/reviews/?girlid=47414845" },
+      { group: "delihel", name: "サアヤ", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=50354138" },
+      { group: "delihel", name: "メイ", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=14020683" },
+      { group: "delihel", name: "ルリア", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/reviews/?girlid=53089242" },
+      { group: "delihel", name: "ブルマー", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=64319837" },
+      { group: "delihel", name: "ミウ", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=53813734" },
+      { group: "delihel", name: "ユノハ", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=28810342" },
+      { group: "delihel", name: "ジュン", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/reviews/?girlid=55136221" },
+      { group: "soapland", name: "ことね", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=52248528" },
+      { group: "soapland", name: "きらら", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/reviews/?girlid=46701341" },
+      { group: "soapland", name: "すず", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=50677299" },
+      { group: "soapland", name: "れい", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/reviews/?girlid=12723960" },
+      { group: "soapland", name: "イヴ", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=57738554" },
+      { group: "soapland", name: "さや", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=50622923" },
+      { group: "soapland", name: "ゆめ", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=54071012" },
+      { group: "soapland", name: "ひな", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/sherbet/reviews/?girlid=65602665" }
+    ];
+    const inspectReview = async target => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 12000);
+      try {
+        const response = await fetch(target.url, { signal: controller.signal, headers: {
+          "user-agent": "Mozilla/5.0 (compatible; HiroshimaCastRefresh/1.0)",
+          "accept": "text/html,application/xhtml+xml"
+        }});
+        if (!response.ok) return { ...target, ok: false, status: response.status };
+        const html = await response.text();
+        if (html.length < 1500 || html.length > 5000000) return { ...target, ok: false, status: response.status, error: "unexpected_html_size" };
+        const $ = cheerio.load(html);
+        const title = $("title").first().text().replace(/\\s+/g, " ").trim();
+        const bodyText = $("body").text().replace(/\\s+/g, " ").trim();
+        const keywordSnippets = [...bodyText.matchAll(/.{0,45}(?:口コミ|レビュー|投稿|件数|総数).{0,55}/g)]
+          .slice(0, 16).map(match => match[0]);
+        const countCandidates = [];
+        const patterns = [
+          /口コミ(?:件数|数)?\\s*[:：]?\\s*([0-9,]+)\\s*件/g,
+          /([0-9,]+)\\s*件(?:の)?(?:口コミ|レビュー|投稿)/g,
+          /レビュー(?:件数|数)?\\s*[:：]?\\s*([0-9,]+)\\s*件/g
+        ];
+        for (const pattern of patterns) {
+          for (const match of bodyText.matchAll(pattern)) countCandidates.push({ matchedText: match[0], count: Number(match[1].replace(/,/g, "")) });
+        }
+        const matchingElements = [];
+        $("body *").each((_, el) => {
+          if (matchingElements.length >= 30) return;
+          const text = $(el).children().length ? "" : $(el).text().replace(/\\s+/g, " ").trim();
+          if (text && text.length <= 100 && /口コミ|レビュー|投稿|[0-9,]+件/.test(text)) {
+            matchingElements.push({ tag: el.tagName, className: String($(el).attr("class") || "").slice(0, 100), text });
+          }
+        });
+        return { ...target, ok: Boolean(title && bodyText.length > 100), status: response.status,
+          title: title.slice(0, 140), bytes: Buffer.byteLength(html), bodyLength: bodyText.length,
+          countCandidates: countCandidates.slice(0, 20), keywordSnippets, matchingElements };
+      } catch (error) {
+        return { ...target, ok: false, error: String(error?.message || error) };
+      } finally { clearTimeout(timer); }
+    };
+    const results = [];
+    for (let i = 0; i < targets.length; i += 4) {
+      results.push(...await Promise.all(targets.slice(i, i + 4).map(inspectReview)));
+    }
+    const groups = ["delihel", "soapland"].map(group => {
+      const rows = results.filter(row => row.group === group);
+      return { group, expected: group === "delihel" ? 8 : 8, checked: rows.length,
+        successful: rows.filter(row => row.ok).length,
+        pagesWithCountCandidate: rows.filter(row => row.countCandidates?.length).length,
+        failures: rows.filter(row => !row.ok).map(row => ({ name: row.name, status: row.status || null, error: row.error || null })) };
+    });
+    return send(res, 200, { ok: groups.every(group => group.checked === group.expected && group.successful === group.expected),
+      mode: "diagnostic-only", metricPolicy: "口コミ件数の抽出候補を表示するだけで、順位・既存データは変更しません。",
+      retrievedAt: new Date().toISOString(), groups, results }, origin);
+  }
   if (pathname === "/api/stores/inspect" && req.method === "GET") {
     if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const sources = [
