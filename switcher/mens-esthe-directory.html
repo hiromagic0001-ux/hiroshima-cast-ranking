@@ -13,8 +13,42 @@
 <p class="foot">データ確認：2026年11月14日。初期店舗名リストはメンエスセレクトの広島市ページで公開表示された店名を基に整理。掲載元は96店と表示していますが、ページ本文から独立した店名として抽出できたのは94件です。別媒体では186店・65店・107店など異なる件数が表示されており、重複・営業状況・対象範囲の違いがあるため単純合算していません。<br><a href="https://menesu-select.com/hiroshima/hiroshima/" target="_blank" rel="noopener">掲載件数・元情報を確認</a> ／ <a href="https://mens-es.men/area/3401" target="_blank" rel="noopener">別媒体の掲載件数を確認</a></p>
 </main>
 <script>
-const names=["ナチュレ 広島","ビューティーアンドビースト","シュシュ コイン通り店","ジェンティル","シークレット","王様のきもち","花魁 広島","トリコ","Dior 五日市店","おとなすぱっ！","ENEL","マダムヘブン","ラヴィアンドスパ","みつばち","シュシュ 緑井店","リフレMoEST","スパバーニーズ","広島エステサロン お好み村","小悪魔SPA","REAL","Mrs.APHRODITE THALASSA","TISSE","a doll","ゆるりnon","BODY SPA 広島","広島人妻さん","Organic energy","Mrs.ni-na","カロン","ルル","ヴェルディ","マシェリ","アガットテイク","salon.do.ni-na","ディオール","フリーダム","モアスパ","Travis Queen","人妻スキャンダル","スタンダード","B and B","ふわもこSPA","Alive","Suu","広島メンズエステ ゆりかご","おもてなし 広島","Aroma Salon Freyja","7 Dream Este","カトレア","Luxurysalon ROMA","パート妻のプライベートサロン","グレイススパ","Palma～女神の手～","キング","Seraphi Spa","クラブいち華","フェミニン","ザ・熟女 豊満桃色倶楽部","Tonトロ五日市店","ミセスビマジョレッド","Vivienne","ディオール観音店","スパドルチェ 広島","アドール","La Paix-ラペ-","大人の隠れ家","RESORT","シャルディア","ミセスプリンセスドール","ましゅまろ","ダンディ＋","シンク","ルミエラ","You＆MeSPA～ユミスパ～","アロマミア","Refresh","既婚者 極液ラボ","Arinoa","TONARI","ソワン 広島","Mrs.ENEL","セレスト","CREA","セラフィスパ","AROMA INNOCENT","神のエステ","Angel Spa","ラドンナ","Lumiella","ハチミツ俱楽部","ヨアソビ広島","QUEEN","ヘブン","ばななすぱっ！"];
+let names=["ナチュレ 広島","ビューティーアンドビースト","シュシュ コイン通り店","ジェンティル","シークレット","王様のきもち","花魁 広島","トリコ","Dior 五日市店","おとなすぱっ！","ENEL","マダムヘブン","ラヴィアンドスパ","みつばち","シュシュ 緑井店","リフレMoEST","スパバーニーズ","広島エステサロン お好み村","小悪魔SPA","REAL","Mrs.APHRODITE THALASSA","TISSE","a doll","ゆるりnon","BODY SPA 広島","広島人妻さん","Organic energy","Mrs.ni-na","カロン","ルル","ヴェルディ","マシェリ","アガットテイク","salon.do.ni-na","ディオール","フリーダム","モアスパ","Travis Queen","人妻スキャンダル","スタンダード","B and B","ふわもこSPA","Alive","Suu","広島メンズエステ ゆりかご","おもてなし 広島","Aroma Salon Freyja","7 Dream Este","カトレア","Luxurysalon ROMA","パート妻のプライベートサロン","グレイススパ","Palma～女神の手～","キング","Seraphi Spa","クラブいち華","フェミニン","ザ・熟女 豊満桃色倶楽部","Tonトロ五日市店","ミセスビマジョレッド","Vivienne","ディオール観音店","スパドルチェ 広島","アドール","La Paix-ラペ-","大人の隠れ家","RESORT","シャルディア","ミセスプリンセスドール","ましゅまろ","ダンディ＋","シンク","ルミエラ","You＆MeSPA～ユミスパ～","アロマミア","Refresh","既婚者 極液ラボ","Arinoa","TONARI","ソワン 広島","Mrs.ENEL","セレスト","CREA","セラフィスパ","AROMA INNOCENT","神のエステ","Angel Spa","ラドンナ","Lumiella","ハチミツ俱楽部","ヨアソビ広島","QUEEN","ヘブン","ばななすぱっ！"];
 const grid=document.getElementById("grid"),q=document.getElementById("q"),count=document.getElementById("count"),empty=document.getElementById("empty"),shown=document.getElementById("shown");
 function render(){const key=q.value.trim().toLocaleLowerCase();const rows=names.filter(n=>n.toLocaleLowerCase().includes(key));grid.innerHTML=rows.map(n=>'<article class="item"><b>'+n.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))+'</b><small>広島市掲載情報から確認・営業状況未確認</small></article>').join("");count.textContent=rows.length+"件を表示";shown.textContent=rows.length;empty.style.display=rows.length?"none":"block"}
 q.addEventListener("input",render);render();
+(async function loadIndependentSources(){
+  const status=document.createElement("p");status.className="foot";status.id="liveStatus";
+  status.textContent="独自取得データを確認中…";document.querySelector("main").insertBefore(status,document.querySelector(".grid"));
+  try{
+    const response=await fetch("https://hiroshima-cast-refresh-api.onrender.com/api/stores/inspect",{headers:{Accept:"application/json"}});
+    const data=await response.json();
+    const records=(data.sources||[]).flatMap(source=>(source.records||[]).filter(r=>r&&r.name).map(r=>({...r,sourceId:source.id,sourceLabel:source.label})));
+    const normalized=v=>String(v||"").normalize("NFKC").toLowerCase().replace(/[\\s　・･()（）［］【】「」『』〜～ー\-_.]/g,"");
+    const merged=new Map();
+    for(const name of names)merged.set(normalized(name),{name,sources:[]});
+    for(const record of records){
+      const key=normalized(record.name);if(!key)continue;
+      const current=merged.get(key)||{name:record.name,sources:[]};
+      if(!current.sources.some(x=>x.sourceId===record.sourceId))current.sources.push({sourceId:record.sourceId,label:record.sourceLabel,href:record.href,metric:record.metric,rank:record.rank,rating:record.rating,reviewCount:record.reviewCount});
+      merged.set(key,current);
+    }
+    names=[...merged.values()].sort((a,b)=>a.name.localeCompare(b.name,"ja"));
+    window.__hiroshimaStoreDirectory=[...merged.values()];
+    render();
+    const good=(data.sources||[]).filter(x=>x.ok);
+    status.textContent="独自取得："+records.length+"件の媒体別レコード／統合後 "+names.length+"店舗名。取得成功 "+good.length+"/"+(data.sources||[]).length+"媒体。各媒体の順位・口コミ指標は混合していません。";
+    status.style.color=good.length?"#a5e2bd":"#e7bd8b";
+    grid.querySelectorAll(".item").forEach(card=>{
+      const title=card.querySelector("b")?.textContent||"",entry=window.__hiroshimaStoreDirectory.find(x=>normalized(x.name)===normalized(title));
+      if(!entry)return;
+      const meta=card.querySelector("small");
+      meta.textContent=entry.sources.length?entry.sources.map(x=>x.label).join(" ／ "):"初期収集名・掲載元照合待ち";
+      if(entry.sources.length){
+        const link=entry.sources.find(x=>x.href)?.href;
+        if(link){card.style.cursor="pointer";card.title="掲載元の店舗情報を確認";card.addEventListener("click",()=>window.open(link,"_blank","noopener"));}
+      }
+    });
+  }catch(error){status.textContent="独自取得APIの応答を確認できません。初期94件を表示しています。時間をおいて再読み込みしてください。";}
+})();
 </script></body></html>
