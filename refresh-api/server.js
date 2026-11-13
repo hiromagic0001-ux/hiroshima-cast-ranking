@@ -422,7 +422,7 @@ const server = http.createServer(async (req, res) => {
           httpStatus: response.status, htmlBytes: Buffer.byteLength(html), title,
           uniqueLinkCount: links.size, countMentions, headingSamples,
           storeLinkCount: storeLinks.length, storeLinkSamples: storeLinks.slice(0, 12),
-          parserValidation, parsedCount: parsedRecords.length, parsedSamples: parsedRecords.slice(0, 5),
+          parserValidation, parsedCount: parsedRecords.length, parsedSamples: parsedRecords.slice(0, 5), records: parsedRecords.map(record => ({ ...record, sourceId: source.id, sourceLabel: source.label })),
           paginationLinks, salonCardSamples, pageDiagnostics, salonowaCardNames: salonowaCardNames.slice(0, 20),
           salonUnlinkedCards, salonCardHtmlSamples, mensStoreLinkDiagnostics, mensShopHrefDiagnostics,
           candidateLinks: candidateLinks.slice(0, 8), retrievedAt: new Date().toISOString(),
