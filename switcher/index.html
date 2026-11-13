@@ -91,7 +91,12 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
    if(!data||!data.passwordHash){$("lockText").textContent="初回設定です。まず、この端末で使うパスワードを決めてください。";show("setupArea");return}
    $("lockText").textContent="広島キャストを開くには本人確認が必要です。";
    show("loginArea");
-   if(data.credentialId && data.publicKey)$("faceBtn").hidden=false;
+   if(data.credentialId && data.publicKey){
+     $("faceBtn").hidden=false;
+     $("faceBtn").textContent="Face IDでロック解除";
+     // ホーム画面から起動した直後にFace IDを自動要求する
+     setTimeout(()=>attemptFaceID(),350);
+   }
  }
  $("savePw").addEventListener("click",async()=>{
    const p=$("pw").value;
@@ -123,7 +128,7 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
    while(r.length>32&&r[0]===0)r=r.slice(1);while(s.length>32&&s[0]===0)s=s.slice(1);
    const out=new Uint8Array(64);out.set(r,32-r.length);out.set(s,64-s.length);return out;
  }
- $("faceBtn").addEventListener("click",async()=>{
+ async function attemptFaceID(){
    try{
      const data=read(),challenge=random(32);
      const assertion=await navigator.credentials.get({publicKey:{challenge,rpId:location.hostname,allowCredentials:[{type:"public-key",id:unb64(data.credentialId)}],userVerification:"required",timeout:60000}});
@@ -139,8 +144,28 @@ footer{text-align:center;color:#8fa398;font-size:11px;margin-top:24px;line-heigh
      const ok=await crypto.subtle.verify({name:"ECDSA",hash:"SHA-256"},key,derToRaw(assertion.response.signature),signed);
      if(!ok)throw new Error("Face IDの認証を確認できませんでした");
      unlock();
-   }catch(e){say(e.name==="NotAllowedError"?"Face ID認証がキャンセルされました。パスワードを使ってください。":(e.message||"Face ID認証に失敗しました。パスワードを使ってください。"))}
+   }catch(e){
+     $("faceBtn").textContent="Face IDをもう一度試す";
+     say("Face IDを完了できませんでした。もう一度試すか、パスワードを入力してください。");
+   }
+ }
+ $("faceBtn").addEventListener("click",attemptFaceID);
+ // キャスト検索など別ページから戻った場合もロックを再表示し、Face IDを自動要求
+ window.addEventListener("pageshow",event=>{
+   if(event.persisted){
+     const data=read();
+     if(data && data.credentialId && data.publicKey){
+       $("lock").hidden=false;
+       $("lockText").textContent="広島キャストを開くには本人確認が必要です。";
+       show("loginArea");
+       $("faceBtn").hidden=false;
+       $("faceBtn").textContent="Face IDでロック解除";
+       say("");
+       setTimeout(()=>attemptFaceID(),350);
+     }
+   }
  });
+;
  $("loginBtn").addEventListener("click",async()=>{
    try{const data=read(),actual=await hashPassword($("loginPw").value,data.salt);if(actual!==data.passwordHash){say("パスワードが違います。");return} $("loginPw").value="";unlock()}
    catch(e){say("認証できませんでした。もう一度お試しください。")}
