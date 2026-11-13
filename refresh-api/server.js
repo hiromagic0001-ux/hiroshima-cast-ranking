@@ -36,6 +36,57 @@ const server = http.createServer(async (req, res) => {
   if (pathname === "/health" && req.method === "GET") {
     return send(res, 200, { ok: true, service: "hiroshima-cast-refresh-api", mode: "diagnostic-only" }, origin);
   }
+  if (pathname === "/api/stores/inspect" && req.method === "GET") {
+    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const sources = [
+      { id: "salonowa", label: "サロノワ・また行きたい順", url: "https://www.salonowa.jp/area/hiroshima/hiroshima" },
+      { id: "mensesthe_rank", label: "メンズエステ情報ランキング・アクセス順", url: "https://mensesthe-rank.jp/areas/hiroshima-hiroshima" },
+      { id: "menes_note", label: "メンエスノート・口コミ情報", url: "https://men-esthe-review.com/area/%E5%BA%83%E5%B3%B6%E5%B8%82" }
+    ];
+    const results = await Promise.all(sources.map(async source => {
+      try {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 15000);
+        let response;
+        try {
+          response = await fetch(source.url, { signal: controller.signal, headers: {
+            "user-agent": "Mozilla/5.0 (compatible; HiroshimaCastRefresh/1.0)",
+            "accept": "text/html,application/xhtml+xml"
+          }});
+        } finally { clearTimeout(timer); }
+        if (!response.ok) throw new Error("source_http_" + response.status);
+        const html = await response.text();
+        if (html.length < 5000 || html.length > 5000000) throw new Error("unexpected_html_size");
+        const $ = cheerio.load(html);
+        const title = $("title").first().text().replace(/\\s+/g, " ").trim();
+        const bodyText = $("body").text().replace(/\\s+/g, " ").trim();
+        const links = new Set();
+        $("a[href]").each((_, el) => {
+          const href = $(el).attr("href") || "";
+          if (href && !href.startsWith("#") && !href.startsWith("javascript:")) {
+            try { links.add(new URL(href, source.url).origin + new URL(href, source.url).pathname); } catch {}
+          }
+        });
+        const countMentions = [...bodyText.matchAll(/(?:全\\s*)?([0-9,]+)\\s*(?:店舗|店|件|口コミ)/g)]
+          .slice(0, 12).map(m => m[0]);
+        const valid = title.length > 0 && bodyText.length > 1000 && links.size >= 10;
+        return { id: source.id, label: source.label, url: source.url, ok: valid,
+          httpStatus: response.status, htmlBytes: Buffer.byteLength(html), title,
+          uniqueLinkCount: links.size, countMentions, retrievedAt: new Date().toISOString(),
+          note: valid ? "ページ取得と基本構造を確認。順位・件数の確定抽出は次段階で検証します。" : "ページ構造の検証条件を満たしません。" };
+      } catch (error) {
+        return { id: source.id, label: source.label, url: source.url, ok: false,
+          status: "更新未確認", error: String(error?.message || error),
+          note: "取得失敗時は既存データを変更しません。" };
+      }
+    }));
+    return send(res, results.every(x => x.ok) ? 200 : 502, {
+      ok: results.every(x => x.ok), mode: "diagnostic-only",
+      metricPolicy: "媒体ごとの指標は独立して扱い、総合順位へ混合しません。",
+      sources: results,
+      note: "診断専用。店舗ランキングの公開・既存データの上書きは行いません。"
+    }, origin);
+  }
   if (pathname !== "/api/estama/inspect" || req.method !== "GET") {
     return send(res, 404, { ok: false, error: "not_found" }, origin);
   }
