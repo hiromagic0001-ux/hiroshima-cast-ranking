@@ -58,22 +58,33 @@ const server = http.createServer(async (req, res) => {
         const html = await response.text();
         if (html.length < 5000 || html.length > 5000000) throw new Error("unexpected_html_size");
         const $ = cheerio.load(html);
-        const title = $("title").first().text().replace(/\\s+/g, " ").trim();
-        const bodyText = $("body").text().replace(/\\s+/g, " ").trim();
+        const title = $("title").first().text().replace(/\s+/g, " ").trim();
+        const bodyText = $("body").text().replace(/\s+/g, " ").trim();
         const links = new Set();
+        const candidateLinks = [];
         $("a[href]").each((_, el) => {
           const href = $(el).attr("href") || "";
+          const label = $(el).text().replace(/\s+/g, " ").trim();
           if (href && !href.startsWith("#") && !href.startsWith("javascript:")) {
-            try { links.add(new URL(href, source.url).origin + new URL(href, source.url).pathname); } catch {}
+            try {
+              const absolute = new URL(href, source.url);
+              links.add(absolute.origin + absolute.pathname);
+              const parentText = $(el).parent().text().replace(/\s+/g, " ").trim();
+              if (label.length >= 2 && label.length <= 45 && parentText.length >= 8 && parentText.length <= 240) {
+                candidateLinks.push({ text: label, href: absolute.href, parentText: parentText.slice(0, 240) });
+              }
+            } catch {}
           }
         });
-        const countMentions = [...bodyText.matchAll(/(?:全\\s*)?([0-9,]+)\\s*(?:店舗|店|件|口コミ)/g)]
+        const countMentions = [...bodyText.matchAll(/(?:全\s*)?([0-9,]+)\s*(?:店舗|店|件|口コミ)/g)]
           .slice(0, 12).map(m => m[0]);
+        const headingSamples = $("h1,h2,h3").toArray().map(el => $(el).text().replace(/\s+/g, " ").trim()).filter(Boolean).slice(0, 20);
         const valid = title.length > 0 && bodyText.length > 1000 && links.size >= 10;
         return { id: source.id, label: source.label, url: source.url, ok: valid,
           httpStatus: response.status, htmlBytes: Buffer.byteLength(html), title,
-          uniqueLinkCount: links.size, countMentions, retrievedAt: new Date().toISOString(),
-          note: valid ? "ページ取得と基本構造を確認。順位・件数の確定抽出は次段階で検証します。" : "ページ構造の検証条件を満たしません。" };
+          uniqueLinkCount: links.size, countMentions, headingSamples,
+          candidateLinks: candidateLinks.slice(0, 24), retrievedAt: new Date().toISOString(),
+          note: valid ? "ページ取得と基本構造を確認。候補リンクを診断用に抽出。順位・件数の確定抽出は未実施です。" : "ページ構造の検証条件を満たしません。" };
       } catch (error) {
         return { id: source.id, label: source.label, url: source.url, ok: false,
           status: "更新未確認", error: String(error?.message || error),
