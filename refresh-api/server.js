@@ -134,7 +134,7 @@ const server = http.createServer(async (req, res) => {
           });
           parsedRecords = [...new Map(parsedRecords.map(x => [x.href, x])).values()];
           parserValidation = { parsedCount: parsedRecords.length, expectedDisplayCount: 107 };
-        }} else if (source.id === "menes_note") {
+        } else if (source.id === "menes_note") {
           $("a[href*='/stores/']").each((_, el) => {
             const href = $(el).attr("href") || "";
             if (/\/stores\/[0-9a-f-]+/i.test(href) === false || /#/.test(href)) return;
