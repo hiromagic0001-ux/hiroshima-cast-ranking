@@ -218,6 +218,13 @@ const server = http.createServer(async (req, res) => {
             salonowaCardNameCount: source.id === "salonowa" ? salonowaCardNames.length : undefined,
             expectedDisplayCount: source.id === "salonowa" ? 52 : 152 };
         }
+        const salonUnlinkedCards = source.id === "salonowa" ? $(".c-card__body").toArray().map(el => {
+          const card = $(el);
+          const name = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim();
+          const anchors = card.find("a[href]").toArray().map(a => ({ text: $(a).text().replace(/\s+/g, " ").trim().slice(0, 60), href: $(a).attr("href") })).slice(0, 5);
+          return { name, anchors };
+        }).filter(item => !item.anchors.some(a => /\/shop\//.test(a.href || ""))).slice(0, 20) : [];
+        const mensShopHrefDiagnostics = source.id === "mensesthe_rank" ? [...new Set($("a[href*='/areas/hiroshima-hiroshima/shops/']").toArray().map(a => $(a).attr("href")).filter(Boolean))].slice(-15) : [];
         const salonCardSamples = source.id === "salonowa" ? $(".c-card__body").toArray().slice(0, 12).map(el => {
           const card = $(el);
           return {
@@ -234,6 +241,7 @@ const server = http.createServer(async (req, res) => {
           storeLinkCount: storeLinks.length, storeLinkSamples: storeLinks.slice(0, 12),
           parserValidation, parsedCount: parsedRecords.length, parsedSamples: parsedRecords.slice(0, 5),
           paginationLinks, salonCardSamples, pageDiagnostics, salonowaCardNames: salonowaCardNames.slice(0, 20),
+          salonUnlinkedCards, mensShopHrefDiagnostics,
           candidateLinks: candidateLinks.slice(0, 8), retrievedAt: new Date().toISOString(),
           note: valid ? "店舗リンクの親要素構造を診断用に抽出。順位・件数の確定抽出は未実施です。" : "ページ構造の検証条件を満たしません。" };
       } catch (error) {
@@ -370,6 +378,8 @@ server.listen(PORT, "0.0.0.0", () => {
           salonCardSamples: (source.salonCardSamples || []).slice(0, 8),
           pageDiagnostics: source.pageDiagnostics || [],
           salonowaCardNames: (source.salonowaCardNames || []).slice(0, 20),
+          salonUnlinkedCards: (source.salonUnlinkedCards || []).slice(0, 20),
+          mensShopHrefDiagnostics: source.mensShopHrefDiagnostics || [],
           countMentions: source.countMentions || [],
           paginationLinks: (source.paginationLinks || []).slice(0, 12),
           salonCardSamples: (source.salonCardSamples || []).slice(0, 8),
