@@ -87,7 +87,7 @@ const server = http.createServer(async (req, res) => {
     const uniqueRanked = rankingItems.filter(x => Number.isInteger(x.rank) && x.rank >= 1 && x.rank <= 30);
     const accepted = uniqueRanked.filter(x => !x.isPR && x.isHiroshima && x.name);
     const uniqueAccepted = [...new Map(accepted.map(x => [x.href, x])).values()];
-    const profileLinks = $('a[href*="/shop/"][href*="/cast/"]').filter((_, el) =>
+    const profileLinks = $('a[href*="/shop/"][href*="/cast/"]').filter((_, el) => { const href = $(el).attr("href") || ""; return href.includes("/shop/") && href.includes("/cast/"); });
       /\\/shop\\/\\d+\\/cast\\/\\d+\\/?/.test($(el).attr("href") || "")
     );
     const rankTextMatches = uniqueRanked.length;
