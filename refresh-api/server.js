@@ -198,7 +198,7 @@ const server = http.createServer(async (req, res) => {
                   reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
                   metric: "また行きたい順" });
               });
-            } } else {
+            } else {
               page$("a[href*='/stores/']").each((_, el) => {
                 const href = page$(el).attr("href") || "";
                 if (!/\/stores\/[0-9a-f-]+/i.test(new URL(href, pageUrl.href).pathname) || /#/.test(href)) return;
