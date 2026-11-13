@@ -503,4 +503,17 @@ server.listen(PORT, "0.0.0.0", () => {
       }));
     }
   }, 1200);
+  setTimeout(async () => {
+    try {
+      const response = await fetch("http://127.0.0.1:" + PORT + "/api/casts/inspect");
+      const report = await response.json();
+      console.log("CAST_SOURCE_INSPECTION " + JSON.stringify({
+        ok: report.ok, mode: report.mode, retrievedAt: report.retrievedAt,
+        groups: report.groups || [], sampleResults: report.sampleResults || [],
+        note: report.note || null
+      }));
+    } catch (error) {
+      console.log("CAST_SOURCE_INSPECTION " + JSON.stringify({ ok: false, error: String(error?.message || error) }));
+    }
+  }, 2500);
 });
