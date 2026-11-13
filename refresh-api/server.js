@@ -149,6 +149,10 @@ const server = http.createServer(async (req, res) => {
           const text = $(el).text().replace(/\s+/g, " ").trim();
           return { text, href: new URL(href, source.url).href };
         }).filter(x => /page=|次へ|次のページ|もっと見る|load more/i.test(x.href + " " + x.text) || x.href.includes("/page/")).slice(0, 20);
+        const pageDiagnostics = [];
+        const salonowaCardNames = source.id === "salonowa"
+          ? [...new Set($(".c-card__body").toArray().map(el => $(el).find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim()).filter(Boolean))]
+          : [];
         let additionalPageCount = 0;
         const maxPage = Math.min(12, Math.max(1, ...paginationLinks.map(item => {
           try { return Number(new URL(item.href).searchParams.get("page") || 1); } catch { return 1; }
@@ -201,9 +205,17 @@ const server = http.createServer(async (req, res) => {
               });
             }
             parsedRecords = [...new Map(parsedRecords.map(item => [item.href, item])).values()];
+            const pageCardNames = source.id === "salonowa"
+              ? [...new Set(page$(".c-card__body").toArray().map(el => page$(el).find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim()).filter(Boolean))]
+              : [];
+            pageDiagnostics.push({ page: pageNo, htmlBytes: Buffer.byteLength(pageHtml),
+              cardBodyCount: source.id === "salonowa" ? page$(".c-card__body").length : null,
+              uniqueCardNameCount: pageCardNames.length, parsedBefore: beforeCount,
+              parsedAfter: parsedRecords.length, pageNameSamples: pageCardNames.slice(0, 8) });
             if (parsedRecords.length > beforeCount) additionalPageCount++;
           }
           parserValidation = { ...parserValidation, parsedCount: parsedRecords.length, additionalPageCount,
+            salonowaCardNameCount: source.id === "salonowa" ? salonowaCardNames.length : undefined,
             expectedDisplayCount: source.id === "salonowa" ? 52 : 152 };
         }
         const salonCardSamples = source.id === "salonowa" ? $(".c-card__body").toArray().slice(0, 12).map(el => {
@@ -221,7 +233,7 @@ const server = http.createServer(async (req, res) => {
           uniqueLinkCount: links.size, countMentions, headingSamples,
           storeLinkCount: storeLinks.length, storeLinkSamples: storeLinks.slice(0, 12),
           parserValidation, parsedCount: parsedRecords.length, parsedSamples: parsedRecords.slice(0, 5),
-          paginationLinks, salonCardSamples,
+          paginationLinks, salonCardSamples, pageDiagnostics, salonowaCardNames: salonowaCardNames.slice(0, 20),
           candidateLinks: candidateLinks.slice(0, 8), retrievedAt: new Date().toISOString(),
           note: valid ? "店舗リンクの親要素構造を診断用に抽出。順位・件数の確定抽出は未実施です。" : "ページ構造の検証条件を満たしません。" };
       } catch (error) {
@@ -356,6 +368,8 @@ server.listen(PORT, "0.0.0.0", () => {
           parsedSamples: (source.parsedSamples || []).slice(0, 5),
           paginationLinks: (source.paginationLinks || []).slice(0, 12),
           salonCardSamples: (source.salonCardSamples || []).slice(0, 8),
+          pageDiagnostics: source.pageDiagnostics || [],
+          salonowaCardNames: (source.salonowaCardNames || []).slice(0, 20),
           countMentions: source.countMentions || [],
           paginationLinks: (source.paginationLinks || []).slice(0, 12),
           salonCardSamples: (source.salonCardSamples || []).slice(0, 8),
