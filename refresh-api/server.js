@@ -79,7 +79,7 @@ const server = http.createServer(async (req, res) => {
       const rankClass = (item.find('[class*="therapist_rank_no"]').attr("class") || item.attr("class") || "").match(/therapist_rank_no(\d+)/);
       const rankMatch = text.match(/(?:^|\s)(\d{1,2})\s+(?=[^\d])/);
       const rank = rankClass ? Number(rankClass[1]) : (rankMatch ? Number(rankMatch[1]) : null);
-      const cleaned = text.replace(/^[A-G]\s*cup\s+/i, "").replace(/^\d{1,2}\s+/, "");
+      const cleaned = text.replace(/^[A-I]\s*cup\s+/i, "").replace(/^\d{1,2}\s+/, "");
       const nameMatch = cleaned.match(/^(.+?)(?:\s+T\d{2,3}\b|\s+B\d{2}\b|\s+\(\d{2}\)|\s+広島市|$)/);
       const name = (nameMatch ? nameMatch[1] : "").trim();
       const isPR = /(?:^|\s)PR(?:\s|$)/i.test(text) || /PR/.test(item.attr("class") || "");
