@@ -86,12 +86,12 @@ const server = http.createServer(async (req, res) => {
     const results = [];
     for (let i = 0; i < targets.length; i += 6) {
       const batch = targets.slice(i, i + 6);
-      results.push(...await Promise.all(batch.flatMap(async target => {
+      results.push(...(await Promise.all(batch.map(async target => {
         const profile = await checkPage(target.profile);
         const review = target.review ? await checkPage(target.review) : null;
         return [{ group: target.group, name: target.name, type: "profile", ...profile },
           ...(review ? [{ group: target.group, name: target.name, type: "review", ...review }] : [])];
-      })));
+      }))).flat());
     }
     const groups = ["delihel", "soapland"].map(group => {
       const rows = results.filter(x => x.group === group);
