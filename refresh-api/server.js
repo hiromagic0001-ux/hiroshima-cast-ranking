@@ -100,15 +100,15 @@ const server = http.createServer(async (req, res) => {
               const shopAnchor = card.find("a[href*='/shop/']").first();
               const rawName = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text()
                 || shopAnchor.text() || "";
-              const cleanName = rawName.replace(/^\\s*\\d+位\\s*/, "").replace(/\\s+/g, " ").trim()
-                .split(/\\s+(?:[^\\s]{1,12}駅|本日\\d+名)/)[0].trim();
+              const cleanName = rawName.replace(/^\s*\d+位\s*/, "").replace(/\s+/g, " ").trim()
+                .split(/\s+(?:[^\s]{1,12}駅|本日\d+名)/)[0].trim();
               const name = cleanName;
               if (!name || name.length > 100 || parsedRecords.some(item => item.name === name)) return;
-              const cardText = card.text().replace(/\\s+/g, " ").trim();
-              const ratingMatch = cardText.match(/また行く！?\\s*([0-5]\\.\\d)\\s*\\(([\\d,]+)件\\)/);
+              const cardText = card.text().replace(/\s+/g, " ").trim();
+              const ratingMatch = cardText.match(/また行く！?\s*([0-5]\.\d)\s*\(([\d,]+)件\)/);
               const hrefRaw = shopAnchor.attr("href") || card.closest("a[href*='/shop/']").attr("href") || "";
               const href = hrefRaw ? new URL(hrefRaw, pageUrl).href : null;
-              const rankMatch = cardText.match(/(?:^|\\s)(\\d+)位/);
+              const rankMatch = cardText.match(/(?:^|\s)(\d+)位/);
               parsedRecords.push({ rank: rankMatch ? Number(rankMatch[1]) : parsedRecords.length + 1, name, href,
                 rating: ratingMatch ? Number(ratingMatch[1]) : null,
                 reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
@@ -123,11 +123,11 @@ const server = http.createServer(async (req, res) => {
           $("a[href*='/areas/hiroshima-hiroshima/shops/']").each((_, el) => {
             const anchor = $(el);
             const href = anchor.attr("href") || "";
-            if (/\\/casts?\\//.test(href)) return;
-            const raw = anchor.text().replace(/\\s+/g, " ").trim();
+            if (/\/casts?\//.test(href)) return;
+            const raw = anchor.text().replace(/\s+/g, " ").trim();
             const cityIndex = raw.lastIndexOf("広島市");
             let name = cityIndex >= 0 ? raw.slice(cityIndex + "広島市".length).trim()
-              : raw.replace(/^\\d+\\s*/, "").replace(/^MEN'S\\s*ESTHETIC\\s*/i, "").trim();
+              : raw.replace(/^\d+\s*/, "").replace(/^MEN'S\s*ESTHETIC\s*/i, "").trim();
             name = name.replace(/^広島市/, "").trim();
             if (!name || name.length > 80) return;
             parsedRecords.push({ rank: parsedRecords.length + 1, name, href: new URL(href, source.url).href, metric: "アクセス人気順" });
@@ -185,14 +185,14 @@ const server = http.createServer(async (req, res) => {
                 const shopAnchor = card.find("a[href*='/shop/']").first();
                 const rawName = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text()
                   || shopAnchor.text() || "";
-                const name = rawName.replace(/^\\s*\\d+位\\s*/, "").replace(/\\s+/g, " ").trim()
-                  .split(/\\s+(?:[^\\s]{1,12}駅|本日\\d+名)/)[0].trim();
+                const name = rawName.replace(/^\s*\d+位\s*/, "").replace(/\s+/g, " ").trim()
+                  .split(/\s+(?:[^\s]{1,12}駅|本日\d+名)/)[0].trim();
                 if (!name || name.length > 100 || parsedRecords.some(item => item.name === name)) return;
-                const cardText = card.text().replace(/\\s+/g, " ").trim();
-                const ratingMatch = cardText.match(/また行く！?\\s*([0-5]\\.\\d)\\s*\\(([\\d,]+)件\\)/);
+                const cardText = card.text().replace(/\s+/g, " ").trim();
+                const ratingMatch = cardText.match(/また行く！?\s*([0-5]\.\d)\s*\(([\d,]+)件\)/);
                 const hrefRaw = shopAnchor.attr("href") || card.closest("a[href*='/shop/']").attr("href") || "";
                 const href = hrefRaw ? new URL(hrefRaw, pageUrl.href).href : null;
-                const rankMatch = cardText.match(/(?:^|\\s)(\\d+)位/);
+                const rankMatch = cardText.match(/(?:^|\s)(\d+)位/);
                 parsedRecords.push({ rank: rankMatch ? Number(rankMatch[1]) : parsedRecords.length + 1, name, href,
                   rating: ratingMatch ? Number(ratingMatch[1]) : null,
                   reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
