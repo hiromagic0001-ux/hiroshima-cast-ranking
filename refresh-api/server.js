@@ -62,29 +62,41 @@ const server = http.createServer(async (req, res) => {
         const bodyText = $("body").text().replace(/\s+/g, " ").trim();
         const links = new Set();
         const candidateLinks = [];
+        const storeLinks = [];
         $("a[href]").each((_, el) => {
           const href = $(el).attr("href") || "";
           const label = $(el).text().replace(/\s+/g, " ").trim();
-          if (href && !href.startsWith("#") && !href.startsWith("javascript:")) {
-            try {
-              const absolute = new URL(href, source.url);
-              links.add(absolute.origin + absolute.pathname);
-              const parentText = $(el).parent().text().replace(/\s+/g, " ").trim();
-              if (label.length >= 2 && label.length <= 45 && parentText.length >= 8 && parentText.length <= 240) {
-                candidateLinks.push({ text: label, href: absolute.href, parentText: parentText.slice(0, 240) });
-              }
-            } catch {}
+          if (!href || href.startsWith("#") || href.startsWith("javascript:")) return;
+          let absolute;
+          try { absolute = new URL(href, source.url); } catch { return; }
+          links.add(absolute.origin + absolute.pathname);
+          let node = $(el);
+          const ancestors = [];
+          for (let depth = 0; depth < 4 && node.length; depth++, node = node.parent()) {
+            ancestors.push({
+              tag: node[0]?.tagName || "",
+              className: String(node.attr("class") || "").slice(0, 120),
+              text: node.text().replace(/\s+/g, " ").trim().slice(0, 260)
+            });
+          }
+          const item = { text: label, href: absolute.href, ancestors };
+          if (label.length >= 2 && label.length <= 45) candidateLinks.push(item);
+          if ((source.id === "salonowa" && /\/shop\/[^/]+\/paid/.test(absolute.pathname)) ||
+              (source.id === "mensesthe_rank" && /\/areas\/hiroshima-hiroshima\/shops\//.test(absolute.pathname)) ||
+              (source.id === "menes_note" && /\/stores\/[0-9a-f-]+/.test(absolute.pathname))) {
+            storeLinks.push(item);
           }
         });
         const countMentions = [...bodyText.matchAll(/(?:全\s*)?([0-9,]+)\s*(?:店舗|店|件|口コミ)/g)]
           .slice(0, 12).map(m => m[0]);
-        const headingSamples = $("h1,h2,h3").toArray().map(el => $(el).text().replace(/\s+/g, " ").trim()).filter(Boolean).slice(0, 20);
+        const headingSamples = $("h1,h2,h3").toArray().map(el => $(el).text().replace(/\s+/g, " ").trim()).filter(Boolean).slice(0, 24);
         const valid = title.length > 0 && bodyText.length > 1000 && links.size >= 10;
         return { id: source.id, label: source.label, url: source.url, ok: valid,
           httpStatus: response.status, htmlBytes: Buffer.byteLength(html), title,
           uniqueLinkCount: links.size, countMentions, headingSamples,
-          candidateLinks: candidateLinks.slice(0, 24), retrievedAt: new Date().toISOString(),
-          note: valid ? "ページ取得と基本構造を確認。候補リンクを診断用に抽出。順位・件数の確定抽出は未実施です。" : "ページ構造の検証条件を満たしません。" };
+          storeLinkCount: storeLinks.length, storeLinkSamples: storeLinks.slice(0, 12),
+          candidateLinks: candidateLinks.slice(0, 8), retrievedAt: new Date().toISOString(),
+          note: valid ? "店舗リンクの親要素構造を診断用に抽出。順位・件数の確定抽出は未実施です。" : "ページ構造の検証条件を満たしません。" };
       } catch (error) {
         return { id: source.id, label: source.label, url: source.url, ok: false,
           status: "更新未確認", error: String(error?.message || error),
