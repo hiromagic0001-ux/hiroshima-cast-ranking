@@ -100,8 +100,9 @@ const server = http.createServer(async (req, res) => {
             const absolute = new URL(href, source.url);
             if (!/^\/shop\/[^/]+\/?$/.test(absolute.pathname)) return;
             const card = anchor.closest(".c-card__body");
-            const name = anchor.text().replace(/\s+/g, " ").trim()
-              || card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim();
+            const headingName = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim();
+            const anchorText = anchor.text().replace(/\s+/g, " ").trim();
+            const name = headingName || anchorText.split(/\s+(?:中電前駅|比治山橋駅|市役所前駅|八丁堀駅|本日\d+名)/)[0].trim();
             if (!name || name.length > 70) return;
             const ratingLink = card.find("a.c-rating--voice").first();
             const ratingText = ratingLink.text().replace(/\s+/g, " ").trim();
@@ -148,6 +149,63 @@ const server = http.createServer(async (req, res) => {
           const text = $(el).text().replace(/\s+/g, " ").trim();
           return { text, href: new URL(href, source.url).href };
         }).filter(x => /page=|次へ|次のページ|もっと見る|load more/i.test(x.href + " " + x.text) || x.href.includes("/page/")).slice(0, 20);
+        let additionalPageCount = 0;
+        const maxPage = Math.min(12, Math.max(1, ...paginationLinks.map(item => {
+          try { return Number(new URL(item.href).searchParams.get("page") || 1); } catch { return 1; }
+        })));
+        if (source.id === "salonowa" || source.id === "menes_note") {
+          for (let pageNo = 2; pageNo <= maxPage; pageNo++) {
+            const pageUrl = new URL(source.url);
+            pageUrl.searchParams.set("page", String(pageNo));
+            const pageResponse = await fetch(pageUrl.href, { headers: {
+              "user-agent": "Mozilla/5.0 (compatible; HiroshimaCastRefresh/1.0)",
+              "accept": "text/html,application/xhtml+xml"
+            }});
+            if (!pageResponse.ok) throw new Error(source.id + "_page_" + pageNo + "_http_" + pageResponse.status);
+            const pageHtml = await pageResponse.text();
+            if (pageHtml.length < 3000) throw new Error(source.id + "_page_" + pageNo + "_too_small");
+            const page$ = cheerio.load(pageHtml);
+            const beforeCount = parsedRecords.length;
+            if (source.id === "salonowa") {
+              page$("a[href*='/shop/']").each((_, el) => {
+                const anchor = page$(el);
+                const absolute = new URL(anchor.attr("href") || "", pageUrl.href);
+                if (!/^\/shop\/[^/]+\/?$/.test(absolute.pathname)) return;
+                const card = anchor.closest(".c-card__body");
+                const headingName = card.find("h2,h3,[class*='shop-card__name'],[class*='shop-card__title']").first().text().replace(/\s+/g, " ").trim();
+                const anchorText = anchor.text().replace(/\s+/g, " ").trim();
+                const name = headingName || anchorText.split(/\s+(?:中電前駅|比治山橋駅|市役所前駅|八丁堀駅|本日\d+名)/)[0].trim();
+                if (!name || name.length > 70) return;
+                const ratingText = card.find("a.c-rating--voice").first().text().replace(/\s+/g, " ").trim();
+                const ratingMatch = ratingText.match(/([0-5]\.\d)\s*\(([\d,]+)件\)/);
+                parsedRecords.push({ rank: parsedRecords.length + 1, name, href: absolute.href,
+                  rating: ratingMatch ? Number(ratingMatch[1]) : null,
+                  reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
+                  metric: "また行きたい評価" });
+              });
+            } else {
+              page$("a[href*='/stores/']").each((_, el) => {
+                const href = page$(el).attr("href") || "";
+                if (!/\/stores\/[0-9a-f-]+/i.test(new URL(href, pageUrl.href).pathname) || /#/.test(href)) return;
+                const anchor = page$(el);
+                const rawText = anchor.text().replace(/\s+/g, " ").trim();
+                const ratingMatch = rawText.match(/([0-5]\.\d)（([\d,]+)件）/);
+                const name = anchor.find("h2,h3").first().text().replace(/\s+/g, " ").trim()
+                  || rawText.match(/^(.+?)(?=中電前駅|宝町|袋町|市役所前駅|八丁堀|広島駅|日本人ルーム|ルームオイル|オイル)/)?.[1]?.trim()
+                  || rawText.slice(0, 45);
+                if (!name) return;
+                parsedRecords.push({ rank: parsedRecords.length + 1, name, href: new URL(href, pageUrl.href).href,
+                  rating: ratingMatch ? Number(ratingMatch[1]) : null,
+                  reviewCount: ratingMatch ? Number(ratingMatch[2].replace(/,/g, "")) : null,
+                  metric: "口コミ評価" });
+              });
+            }
+            parsedRecords = [...new Map(parsedRecords.map(item => [item.href, item])).values()];
+            if (parsedRecords.length > beforeCount) additionalPageCount++;
+          }
+          parserValidation = { ...parserValidation, parsedCount: parsedRecords.length, additionalPageCount,
+            expectedDisplayCount: source.id === "salonowa" ? 52 : 152 };
+        }
         const salonCardSamples = source.id === "salonowa" ? $(".c-card__body").toArray().slice(0, 12).map(el => {
           const card = $(el);
           return {
@@ -296,6 +354,8 @@ server.listen(PORT, "0.0.0.0", () => {
           parserValidation: source.parserValidation || {},
           parsedCount: source.parsedCount || 0,
           parsedSamples: (source.parsedSamples || []).slice(0, 5),
+          paginationLinks: (source.paginationLinks || []).slice(0, 12),
+          salonCardSamples: (source.salonCardSamples || []).slice(0, 8),
           countMentions: source.countMentions || [],
           paginationLinks: (source.paginationLinks || []).slice(0, 12),
           salonCardSamples: (source.salonCardSamples || []).slice(0, 8),
