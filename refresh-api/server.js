@@ -20,8 +20,9 @@ function send(res, status, body, origin) {
 const server = http.createServer(async (req, res) => {
   const origin = req.headers.origin || "";
   const requestUrl = new URL(req.url || "/", "http://localhost");
-  const decodedPath = decodeURIComponent(requestUrl.pathname);
-  const pathname = decodedPath.replace(/[\\u200B-\\u200D\\u2060\\uFEFF]/g, "").replace(/\\/+$/, "") || "/";
+  let pathname = decodeURIComponent(requestUrl.pathname);
+  for (const invisible of ["\u200B", "\u200C", "\u200D", "\u2060", "\uFEFF"]) pathname = pathname.split(invisible).join("");
+  while (pathname.length > 1 && pathname.endsWith("/")) pathname = pathname.slice(0, -1);
   console.log(JSON.stringify({ event: "request", method: req.method, path: pathname, origin: origin || null }));
   if (req.method === "OPTIONS") {
     res.writeHead(204, {
