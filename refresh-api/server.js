@@ -578,5 +578,21 @@ server.listen(PORT, "0.0.0.0", () => {
       }));
     }
   }, 1200);
+  setTimeout(async () => {
+    try {
+      const response = await fetch("http://127.0.0.1:" + PORT + "/api/casts/metrics-inspect");
+      const report = await response.json();
+      console.log("CAST_METRICS_INSPECTION " + JSON.stringify({
+        ok: report.ok, retrievedAt: report.retrievedAt, groups: report.groups || [],
+        results: (report.results || []).map(row => ({
+          group: row.group, name: row.name, ok: row.ok, status: row.status || null,
+          countCandidates: row.countCandidates || [], keywordSnippets: row.keywordSnippets || [],
+          matchingElements: row.matchingElements || []
+        }))
+      }));
+    } catch (error) {
+      console.log("CAST_METRICS_INSPECTION " + JSON.stringify({ ok: false, error: String(error?.message || error) }));
+    }
+  }, 2500);
 
 });
