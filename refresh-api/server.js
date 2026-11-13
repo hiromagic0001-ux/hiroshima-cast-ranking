@@ -273,6 +273,9 @@ server.listen(PORT, "0.0.0.0", () => {
           httpStatus: source.httpStatus || null,
           title: source.title || null,
           storeLinkCount: source.storeLinkCount || 0,
+          parserValidation: source.parserValidation || {},
+          parsedCount: source.parsedCount || 0,
+          parsedSamples: (source.parsedSamples || []).slice(0, 5),
           countMentions: source.countMentions || [],
           samples: (source.storeLinkSamples || []).slice(0, 3).map(item => ({
             text: item.text,
