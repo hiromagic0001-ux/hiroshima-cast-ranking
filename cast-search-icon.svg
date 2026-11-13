@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#ffb4df"/><stop offset=".48" stop-color="#ed168d"/><stop offset="1" stop-color="#65004c"/></linearGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#fff3a6"/><stop offset="1" stop-color="#f4a900"/></linearGradient>
+ <linearGradient id="skin" x2="1" y2="1"><stop stop-color="#ffe0cf"/><stop offset="1" stop-color="#d58a78"/></linearGradient>
+ <linearGradient id="hair" x2="1" y2="1"><stop stop-color="#6a2b32"/><stop offset="1" stop-color="#1e1024"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="7"/></filter>
+</defs>
+<rect width="512" height="512" rx="92" fill="url(#bg)"/>
+<g fill="#fff" opacity=".8"><circle cx="56" cy="75" r="5"/><circle cx="420" cy="82" r="7"/><circle cx="470" cy="205" r="4"/><circle cx="70" cy="250" r="4"/><path d="M70 120l7 15 15 7-15 7-7 15-7-15-15-7 15-7z"/></g>
+<circle cx="260" cy="210" r="154" fill="#ff72c4" opacity=".28"/>
+<!-- glamorous portrait -->
+<path d="M80 330Q75 190 142 105Q225 20 322 91Q424 160 397 329L370 397H120Z" fill="url(#hair)"/>
+<path d="M134 208Q136 94 256 80Q372 86 375 216L355 323Q334 390 254 394Q168 380 145 318Z" fill="url(#skin)"/>
+<path d="M122 223Q98 103 197 67Q293 22 366 104Q413 160 379 246Q363 190 331 159Q285 196 207 180Q164 175 122 223Z" fill="url(#hair)"/>
+<path d="M157 226Q177 206 211 221M290 221Q323 202 350 225" fill="none" stroke="#45212c" stroke-width="11" stroke-linecap="round"/>
+<path d="M177 250q20 15 38 0M292 250q20 15 38 0" fill="none" stroke="#552b3b" stroke-width="8" stroke-linecap="round"/>
+<ellipse cx="204" cy="248" rx="7" ry="10" fill="#251522"/><ellipse cx="314" cy="248" rx="7" ry="10" fill="#251522"/>
+<path d="M242 267q-8 28 9 30" fill="none" stroke="#bd786d" stroke-width="6" stroke-linecap="round"/>
+<path d="M221 319q35 29 71-2q-30 54-71 2" fill="#b52d65"/>
+<path d="M104 370Q140 326 188 350Q224 386 254 389Q297 386 330 349Q383 331 414 380L453 512H57Z" fill="#f6a3c8"/>
+<path d="M146 373q45 47 88 0M278 373q44 47 88 0" fill="none" stroke="#ffe4f2" stroke-width="8" opacity=".85"/>
+<!-- search lens -->
+<circle cx="390" cy="155" r="73" fill="#fff" opacity=".94" stroke="#ffd8ef" stroke-width="13"/>
+<circle cx="390" cy="155" r="58" fill="#ffb6dc"/>
+<path d="M357 183q4-42 33-48q35 5 40 48z" fill="#9b075e"/>
+<circle cx="390" cy="126" r="22" fill="#9b075e"/>
+<path d="M442 208l42 49" stroke="#fff" stroke-width="23" stroke-linecap="round"/><path d="M442 208l42 49" stroke="#b30a69" stroke-width="12" stroke-linecap="round"/>
+<!-- typography -->
+<text x="256" y="427" text-anchor="middle" font-family="sans-serif" font-size="77" font-weight="900" fill="#fff" stroke="#7b004f" stroke-width="13" paint-order="stroke" letter-spacing="-5">キャスト</text>
+<text x="256" y="493" text-anchor="middle" font-family="sans-serif" font-size="70" font-weight="900" fill="url(#gold)" stroke="#6c1742" stroke-width="11" paint-order="stroke" letter-spacing="4">検索</text>
+</svg>
