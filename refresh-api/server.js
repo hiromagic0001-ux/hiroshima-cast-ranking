@@ -454,27 +454,27 @@ const server = http.createServer(async (req, res) => {
       const html = await response.text();
       if (html.length < 5000 || html.length > 5000000) throw new Error("unexpected_html_size");
       const $ = cheerio.load(html);
-      const title = $("title").first().text().replace(/\\s+/g, " ").trim();
-      const bodyText = $("body").text().replace(/\\s+/g, " ").trim();
+      const title = $("title").first().text().replace(/\s+/g, " ").trim();
+      const bodyText = $("body").text().replace(/\s+/g, " ").trim();
       const records = [];
       $("a[href*='/hiroshimacoco/girl/']").each((_, el) => {
         const anchor = $(el);
         const href = new URL(anchor.attr("href"), source).href;
-        const name = anchor.text().replace(/\\s+/g, " ").trim();
+        const name = anchor.text().replace(/\s+/g, " ").trim();
         if (!name || name.length > 40 || /口コミ|プロフィール|詳細/.test(name)) return;
         let node = anchor;
         let context = "";
         for (let depth = 0; depth < 5 && node.length; depth++, node = node.parent()) {
-          const candidate = node.text().replace(/\\s+/g, " ").trim();
+          const candidate = node.text().replace(/\s+/g, " ").trim();
           if (candidate.length >= name.length && candidate.length <= 500) { context = candidate; if (/口コミ/.test(candidate)) break; }
         }
-        const countMatch = context.match(/口コミ\\s*[:：]?\\s*([0-9,]+)\\s*件/);
+        const countMatch = context.match(/口コミ\s*[:：]?\s*([0-9,]+)\s*件/);
         records.push({ name, href, reviewCount: countMatch ? Number(countMatch[1].replace(/,/g, "")) : null,
           reviewCountExplicit: Boolean(countMatch), context: context.slice(0, 240) });
       });
       const unique = [...new Map(records.map(item => [item.href, item])).values()];
       const activeCount = bodyText.match(/([0-9,]+)人/);
-      const pageRange = bodyText.match(/([0-9,]+)件?中?\\s*1\\s*[〜～-]\\s*50/);
+      const pageRange = bodyText.match(/([0-9,]+)件?中?\s*1\s*[〜～-]\s*50/);
       const valid = /広島で評判のお店|広島ココ/.test(title + " " + bodyText) && unique.length >= 20;
       return send(res, 200, { ok: valid, mode: "diagnostic-only", source,
         retrievedAt: new Date().toISOString(), httpStatus: response.status,
