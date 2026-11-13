@@ -120,20 +120,33 @@ const server = http.createServer(async (req, res) => {
             expectedDisplayCount: 52, linkedCount: parsedRecords.filter(x => x.href).length,
             unlinkedCount: parsedRecords.filter(x => !x.href).length };
         } else if (source.id === "mensesthe_rank") {
+          const groupRanks = { "通常店舗": 0, "アジアン店舗": 0 };
+          const seenShopUrls = new Set();
           $("a[href*='/areas/hiroshima-hiroshima/shops/']").each((_, el) => {
             const anchor = $(el);
             const href = anchor.attr("href") || "";
             if (/\/casts?\//.test(href)) return;
+            const absoluteHref = new URL(href, source.url).href;
+            if (seenShopUrls.has(absoluteHref)) return;
             const raw = anchor.text().replace(/\s+/g, " ").trim();
             const cityIndex = raw.lastIndexOf("広島市");
             let name = cityIndex >= 0 ? raw.slice(cityIndex + "広島市".length).trim()
               : raw.replace(/^\d+\s*/, "").replace(/^MEN'S\s*ESTHETIC\s*/i, "").trim();
-            name = name.replace(/^広島市/, "").trim();
+            name = name.replace(/^広島市/, "").replace(/\s*アジアン\s*$/, "").trim();
             if (!name || name.length > 80) return;
-            parsedRecords.push({ rank: parsedRecords.length + 1, name, href: new URL(href, source.url).href, metric: "アクセス人気順" });
+            const rankingGroup = /アジアン/.test(raw) ? "アジアン店舗" : "通常店舗";
+            groupRanks[rankingGroup] += 1;
+            seenShopUrls.add(absoluteHref);
+            parsedRecords.push({ rank: groupRanks[rankingGroup], rankingGroup, name, href: absoluteHref, metric: "アクセス人気順" });
           });
-          parsedRecords = [...new Map(parsedRecords.map(x => [x.href, x])).values()];
-          parserValidation = { parsedCount: parsedRecords.length, expectedDisplayCount: 107 };
+          const mainCount = groupRanks["通常店舗"];
+          const asianCount = groupRanks["アジアン店舗"];
+          const ranksContinuous = ["通常店舗", "アジアン店舗"].every(group => {
+            const ranks = parsedRecords.filter(x => x.rankingGroup === group).map(x => x.rank);
+            return ranks.every((rank, index) => rank === index + 1);
+          });
+          parserValidation = { parsedCount: parsedRecords.length, expectedDisplayCount: 107,
+            normalStoreCount: mainCount, asianStoreCount: asianCount, ranksContinuous };
         } else if (source.id === "menes_note") {
           $("a[href*='/stores/']").each((_, el) => {
             const href = $(el).attr("href") || "";
