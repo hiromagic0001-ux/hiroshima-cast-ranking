@@ -144,13 +144,24 @@ const server = http.createServer(async (req, res) => {
         const keywordSnippets = [...bodyText.matchAll(/.{0,45}(?:口コミ|レビュー|投稿|件数|総数).{0,55}/g)]
           .slice(0, 16).map(match => match[0]);
         const countCandidates = [];
+        const reviewTotalText = $(".review-total").first().text().replace(/\\s+/g, " ").trim();
+        const reviewTotalMatch = reviewTotalText.match(/([0-9,]+)\\s*件/);
+        if (reviewTotalMatch) countCandidates.push({
+          source: "DOM .review-total",
+          matchedText: reviewTotalText,
+          count: Number(reviewTotalMatch[1].replace(/,/g, ""))
+        });
         const patterns = [
-          /口コミ(?:件数|数)?\s*[:：]?\s*([0-9,]+)\s*件/g,
-          /([0-9,]+)\s*件(?:の)?(?:口コミ|レビュー|投稿)/g,
-          /レビュー(?:件数|数)?\s*[:：]?\s*([0-9,]+)\s*件/g
+          /口コミ(?:件数|数)?\\s*[:：]?\\s*([0-9,]+)\\s*件/g,
+          /([0-9,]+)\\s*件(?:の)?(?:口コミ|レビュー|投稿)/g,
+          /レビュー(?:件数|数)?\\s*[:：]?\\s*([0-9,]+)\\s*件/g
         ];
         for (const pattern of patterns) {
-          for (const match of bodyText.matchAll(pattern)) countCandidates.push({ matchedText: match[0], count: Number(match[1].replace(/,/g, "")) });
+          for (const match of bodyText.matchAll(pattern)) countCandidates.push({
+            source: "body text",
+            matchedText: match[0],
+            count: Number(match[1].replace(/,/g, ""))
+          });
         }
         const matchingElements = [];
         $("body *").each((_, el) => {
@@ -526,73 +537,5 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, "0.0.0.0", () => {
   console.log("Hiroshima cast refresh API listening on " + PORT);
-  // Run one compact source-structure inspection at boot so results can be reviewed
-  // from Render logs without requiring the user to copy a large JSON response.
-  setTimeout(async () => {
-    try {
-      const response = await fetch("http://127.0.0.1:" + PORT + "/api/stores/inspect");
-      const report = await response.json();
-      const compact = {
-        event: "store_source_inspection",
-        ok: report.ok,
-        mode: report.mode,
-        retrievedAt: new Date().toISOString(),
-        sources: (report.sources || []).map(source => ({
-          id: source.id,
-          ok: source.ok,
-          httpStatus: source.httpStatus || null,
-          title: source.title || null,
-          storeLinkCount: source.storeLinkCount || 0,
-          parserValidation: source.parserValidation || {},
-          parsedCount: source.parsedCount || 0,
-          parsedSamples: (source.parsedSamples || []).slice(0, 5),
-          paginationLinks: (source.paginationLinks || []).slice(0, 12),
-          salonCardSamples: (source.salonCardSamples || []).slice(0, 8),
-          pageDiagnostics: source.pageDiagnostics || [],
-          salonowaCardNames: (source.salonowaCardNames || []).slice(0, 20),
-          salonUnlinkedCards: (source.salonUnlinkedCards || []).slice(0, 20),
-          mensShopHrefDiagnostics: source.mensShopHrefDiagnostics || [],
-          mensStoreLinkDiagnostics: source.mensStoreLinkDiagnostics || [],
-          salonCardHtmlSamples: source.salonCardHtmlSamples || [],
-          countMentions: source.countMentions || [],
-          paginationLinks: (source.paginationLinks || []).slice(0, 12),
-          salonCardSamples: (source.salonCardSamples || []).slice(0, 8),
-          samples: (source.storeLinkSamples || []).slice(0, 3).map(item => ({
-            text: item.text,
-            href: item.href,
-            ancestors: (item.ancestors || []).slice(0, 3).map(node => ({
-              tag: node.tag,
-              className: node.className,
-              text: node.text.slice(0, 110)
-            }))
-          })),
-          error: source.error || null
-        }))
-      };
-      console.log("STORE_SOURCE_INSPECTION " + JSON.stringify(compact));
-    } catch (error) {
-      console.log("STORE_SOURCE_INSPECTION " + JSON.stringify({
-        event: "store_source_inspection",
-        ok: false,
-        error: String(error?.message || error)
-      }));
-    }
-  }, 1200);
-  setTimeout(async () => {
-    try {
-      const response = await fetch("http://127.0.0.1:" + PORT + "/api/casts/metrics-inspect");
-      const report = await response.json();
-      console.log("CAST_METRICS_INSPECTION " + JSON.stringify({
-        ok: report.ok, retrievedAt: report.retrievedAt, groups: report.groups || [],
-        results: (report.results || []).map(row => ({
-          group: row.group, name: row.name, ok: row.ok, status: row.status || null,
-          countCandidates: row.countCandidates || [], keywordSnippets: row.keywordSnippets || [],
-          matchingElements: row.matchingElements || []
-        }))
-      }));
-    } catch (error) {
-      console.log("CAST_METRICS_INSPECTION " + JSON.stringify({ ok: false, error: String(error?.message || error) }));
-    }
-  }, 2500);
 
 });
