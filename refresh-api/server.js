@@ -144,17 +144,17 @@ const server = http.createServer(async (req, res) => {
         const keywordSnippets = [...bodyText.matchAll(/.{0,45}(?:口コミ|レビュー|投稿|件数|総数).{0,55}/g)]
           .slice(0, 16).map(match => match[0]);
         const countCandidates = [];
-        const reviewTotalText = $(".review-total").first().text().replace(/\\s+/g, " ").trim();
-        const reviewTotalMatch = reviewTotalText.match(/([0-9,]+)\\s*件/);
+        const reviewTotalText = $(".review-total").first().text().replace(/\s+/g, " ").trim();
+        const reviewTotalMatch = reviewTotalText.match(/([0-9,]+)\s*件/);
         if (reviewTotalMatch) countCandidates.push({
           source: "DOM .review-total",
           matchedText: reviewTotalText,
           count: Number(reviewTotalMatch[1].replace(/,/g, ""))
         });
         const patterns = [
-          /口コミ(?:件数|数)?\\s*[:：]?\\s*([0-9,]+)\\s*件/g,
-          /([0-9,]+)\\s*件(?:の)?(?:口コミ|レビュー|投稿)/g,
-          /レビュー(?:件数|数)?\\s*[:：]?\\s*([0-9,]+)\\s*件/g
+          /口コミ(?:件数|数)?\s*[:：]?\s*([0-9,]+)\s*件/g,
+          /([0-9,]+)\s*件(?:の)?(?:口コミ|レビュー|投稿)/g,
+          /レビュー(?:件数|数)?\s*[:：]?\s*([0-9,]+)\s*件/g
         ];
         for (const pattern of patterns) {
           for (const match of bodyText.matchAll(pattern)) countCandidates.push({
@@ -537,5 +537,21 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, "0.0.0.0", () => {
   console.log("Hiroshima cast refresh API listening on " + PORT);
+  // TEMPORARY: collect one diagnostic result after deployment, then remove this block.
+  setTimeout(async () => {
+    try {
+      const response = await fetch("http://127.0.0.1:" + PORT + "/api/casts/metrics-inspect");
+      const data = await response.json();
+      console.log("CAST_METRICS_INSPECTION " + JSON.stringify({
+        ok: data.ok, groups: data.groups,
+        results: (data.results || []).map(x => ({
+          group: x.group, name: x.name, ok: x.ok, status: x.status,
+          countCandidates: x.countCandidates, keywordSnippets: x.keywordSnippets,
+          matchingElements: x.matchingElements
+        }))
+      }));
+    } catch (error) { console.log("CAST_METRICS_INSPECTION_ERROR " + String(error)); }
+  }, 2500);
+
 
 });
