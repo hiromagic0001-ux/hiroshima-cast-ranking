@@ -10,9 +10,9 @@
   "description": "広島市の公開キャスト情報を比較するアプリ",
   "icons": [
     {
-      "src": "/cast-search-icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/cast-search-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]
