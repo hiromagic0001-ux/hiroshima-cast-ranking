@@ -77,8 +77,23 @@
         }
       ],
       "officialUrl": "https://thesecret924.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "officialUrlStatus": "独立公式サイトを確認",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-and-current-listing",
+        "url": "https://thesecret924.com/",
+        "address": "広島市中区東平塚町",
+        "hours": "10:00〜LAST（受付9:30〜）",
+        "phone": "080-9328-4440",
+        "status": "店舗情報ページに公式HP・住所・電話・営業時間掲載",
+        "sources": [
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/thesecret"
+        ]
+      },
+      "verifiedAddress": "広島市中区東平塚町",
+      "verifiedHours": "10:00〜LAST（受付9:30〜）",
+      "verifiedPhone": "080-9328-4440"
     },
     {
       "name": "王様のきもち",
@@ -92,7 +107,21 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "current-listing-and-address",
+        "url": null,
+        "address": "広島県広島市中区鶴見町7-8",
+        "hours": "10:00〜翌2:00",
+        "status": "当日出勤情報・住所掲載を確認（公式HP未確認）",
+        "sources": [
+          "https://mens-es.men/shop/41552",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区鶴見町7-8",
+      "verifiedHours": "10:00〜翌2:00"
     },
     {
       "name": "花魁 広島",
@@ -106,14 +135,27 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "current-listing-and-address",
+        "url": null,
+        "address": "広島県広島市中区宝町",
+        "hours": "10:00〜翌3:00",
+        "status": "当日出勤情報・住所掲載を確認（公式HP未確認）",
+        "sources": [
+          "https://mens-es.men/shop/50643"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区宝町",
+      "verifiedHours": "10:00〜翌3:00"
     },
     {
       "name": "トリコ",
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "公式サイト・現行営業情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -121,8 +163,23 @@
         }
       ],
       "officialUrl": "https://hiroshima-toriko.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "officialUrlStatus": "独立公式サイトを確認",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-and-current-post",
+        "url": "https://hiroshima-toriko.com/",
+        "address": "広島市中区舟入町",
+        "hours": "9:00〜22:00",
+        "phone": "090-5245-2221",
+        "status": "公式サイト・直近更新・出勤情報を確認",
+        "sources": [
+          "https://hiroshima-toriko.com/"
+        ]
+      },
+      "verifiedAddress": "広島市中区舟入町",
+      "verifiedHours": "9:00〜22:00",
+      "verifiedPhone": "090-5245-2221"
     },
     {
       "name": "Dior 五日市店",
@@ -157,7 +214,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "公式サイト・現行営業情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -165,10 +222,26 @@
         }
       ],
       "officialUrl": "https://enel-official.com/",
-      "officialUrlStatus": "公式サイト確認済み",
+      "officialUrlStatus": "独立公式サイトを確認",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "enel",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-and-current-schedule",
+        "url": "https://enel-official.com/",
+        "address": "広島県広島市中区（公式サイトに複数ルーム記載）",
+        "hours": "6:00〜翌5:00",
+        "phone": "080-8244-9297",
+        "status": "公式サイト・当日出勤表を確認",
+        "sources": [
+          "https://enel-official.com/",
+          "https://enel-official.com/schedule.php"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区（公式サイトに複数ルーム記載）",
+      "verifiedHours": "6:00〜翌5:00",
+      "verifiedPhone": "080-8244-9297"
     },
     {
       "name": "マダムヘブン",
@@ -1217,14 +1290,31 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "公式サイト・現行営業情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-and-current-schedule",
+        "url": "https://mrsenel-official.com/",
+        "address": "広島市中区（詳細住所は予約案内）",
+        "hours": "9:00〜翌4:00",
+        "phone": "080-2929-0321",
+        "status": "独立公式サイト・現行出勤情報を確認",
+        "sources": [
+          "https://mrsenel-official.com/"
+        ]
+      },
+      "officialUrl": "https://mrsenel-official.com/",
+      "officialUrlStatus": "独立公式サイトを確認",
+      "verifiedAddress": "広島市中区（詳細住所は予約案内）",
+      "verifiedHours": "9:00〜翌4:00",
+      "verifiedPhone": "080-2929-0321"
     },
     {
       "name": "セレスト",
@@ -4222,6 +4312,18 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "公式サイトの現行性・所在地表示を個別確認し、ゆりかご広島の公式URLを現行ドメインへ更新。"
+    "individualVerificationNote": "公式サイトの現行性・所在地表示を個別確認し、ゆりかご広島の公式URLを現行ドメインへ更新。",
+    "individualVerificationBatch1": {
+      "checkedRecordCount": 6,
+      "verifiedRecords": [
+        "ENEL",
+        "王様のきもち",
+        "トリコ",
+        "花魁 広島",
+        "シークレット",
+        "Mrs.ENEL"
+      ],
+      "note": "個別検索で公式サイト/現行出勤情報または店舗住所を確認。公式HP未確認の2店には公式URLを付与していない。278件全体の確認完了を意味しない。"
+    }
   }
 }
