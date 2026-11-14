@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-11-14",
   "scope": "広島市内候補。広島市内の全店舗確認済みではない。",
-  "totalCandidates": 276,
+  "totalCandidates": 278,
   "records": [
     {
       "name": "ナチュレ 広島",
@@ -3730,6 +3730,46 @@
         "be ange",
         "be-ange"
       ]
+    },
+    {
+      "name": "COLORS（カラーズ）",
+      "category": "men-esthe",
+      "area": "広島市中区宝町",
+      "areaStatus": "媒体掲載住所確認・営業状況未確認",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンエスmall 店舗情報",
+          "url": "https://menesmall.jp/shop/colors"
+        }
+      ],
+      "aliases": [
+        "COLORS",
+        "カラーズ",
+        "colors hiroshima"
+      ]
+    },
+    {
+      "name": "CRADLE（クレイドル）",
+      "category": "men-esthe",
+      "area": "広島市中区鶴見町",
+      "areaStatus": "複数媒体の掲載住所情報・営業状況未確認",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "広島メンエス求人ガイド 店舗情報",
+          "url": "https://hiroshima-menes-recruit.com/store/store-046/"
+        },
+        {
+          "label": "トランセル広島 求人掲載",
+          "url": "https://trancel-inc.com/hiroshima/"
+        }
+      ],
+      "aliases": [
+        "CRADLE",
+        "クレイドル",
+        "cradle hiroshima"
+      ]
     }
   ],
   "sources": [
@@ -3823,6 +3863,13 @@
       "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
       "coverage": "広島市37店表示",
       "note": "媒体掲載件数は独自基準。別媒体の件数と合算せず、店舗単位で照合する"
+    },
+    {
+      "id": "hiroshima-menes-recruit",
+      "name": "広島メンエス求人ガイド",
+      "url": "https://hiroshima-menes-recruit.com/area/hiroshima-naka/",
+      "coverage": "広島市中区のメンズエステ掲載候補",
+      "note": "求人媒体の掲載情報。営業状況・住所・店舗公式サイトは別途確認"
     }
   ]
 }
