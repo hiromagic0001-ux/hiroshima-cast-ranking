@@ -786,7 +786,15 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "directory-listing-only",
+        "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ],
+        "note": "広島市一覧ページに店舗名の掲載は確認。ただし今回の調査では独立した店舗詳細・公式サイト・電話・住所・現行出勤情報を確認できず。営業中確証なし。"
+      }
     },
     {
       "name": "Organic energy",
@@ -898,7 +906,23 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "recent-active-listing-confirmed",
+        "sources": [
+          "https://estama.jp/shop/28719/newslist/",
+          "https://mens-est.jp/shop/hrsmverdy/",
+          "https://mens-est.jp/shop/hrsmverdy/girllist/"
+        ],
+        "address": "広島県広島市中区袋町／小網町（複数ルーム案内）",
+        "hours": "6:00〜LAST（媒体表記は6:00〜30:00）",
+        "phone": "080-9893-9031",
+        "note": "2026-11-13付の最新ニュース、当日予約案内、在籍一覧を確認。複数エリアの部屋案内があるため住所は町名レベル。"
+      },
+      "verifiedAddress": "広島県広島市中区袋町／小網町（複数ルーム案内）",
+      "verifiedHours": "6:00〜LAST（媒体表記は6:00〜30:00）",
+      "verifiedPhone": "080-9893-9031"
     },
     {
       "name": "マシェリ",
@@ -926,7 +950,21 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party-shop-detail-confirmed-current-status-not-independently-proven",
+        "sources": [
+          "https://menesmall.jp/shop/agate-take/system"
+        ],
+        "address": "広島県広島市中区八丁堀",
+        "hours": "09:00〜翌03:00",
+        "phone": "080-7308-3572",
+        "note": "メンエスmall店舗詳細で店名・業種・住所・営業時間・電話番号を確認。独立公式サイトと直近の営業実績は未確認。"
+      },
+      "verifiedAddress": "広島県広島市中区八丁堀",
+      "verifiedHours": "09:00〜翌03:00",
+      "verifiedPhone": "080-7308-3572"
     },
     {
       "name": "salon.do.ni-na",
@@ -4796,7 +4834,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件中38件に個別確認記録あり。残り240件は未完了。個別確認記録には現行情報の確認、掲載媒体のみの照合、同名衝突の調査を含み、全件が営業中確証済みという意味ではない。",
+    "individualVerificationNote": "278件中41件に個別確認記録あり。残り237件は未完了。個別確認記録には媒体掲載のみの照合や営業状況未確証の記録も含み、全件が営業中確証済みという意味ではない。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4818,7 +4856,7 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 38,
+    "individualVerifiedRecordCount": 41,
     "individualVerificationBatch3": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4884,6 +4922,15 @@
         "カロン"
       ],
       "notes": "TISSE・BODY SPA HIROSHIMA・Organic energy・Mrs.ni-naは公式サイト/掲載詳細を照合。カロンは同名の一般サロンとメンズエステ掲載候補の同一性が確認できず、誤登録を回避。"
+    },
+    "individualVerificationBatch9": {
+      "checkedAt": "2026-11-14",
+      "updated": [
+        "アガットテイク",
+        "ヴェルディ",
+        "広島人妻さん"
+      ],
+      "notes": "VERDYは2026-11-13の更新と当日予約情報を確認。Agate takeはメンエスmallの店舗詳細を確認。広島人妻さんは一覧掲載のみ確認。"
     }
   }
 }
