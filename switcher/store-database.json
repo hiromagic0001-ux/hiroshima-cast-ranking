@@ -16,9 +16,24 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "officialUrl": "https://nature4555.estama.jp/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "officialUrl": "https://nature4555.estama.jp",
+      "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://nature4555.estama.jp",
+        "address": "広島県広島市中区富士見町",
+        "hours": "10:00〜翌0:00",
+        "phone": "080-4555-3365",
+        "kind": "official-page-listed-on-estama",
+        "sources": [
+          "https://estama.jp/shop/34603/"
+        ],
+        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+      },
+      "verifiedAddress": "広島県広島市中区富士見町",
+      "verifiedHours": "10:00〜翌0:00",
+      "verifiedPhone": "080-4555-3365"
     },
     {
       "name": "ビューティーアンドビースト",
@@ -46,9 +61,26 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "officialUrl": "https://chouchou-coin.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "officialUrl": "https://estama.jp/shop/30869/",
+      "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://estama.jp/shop/30869/",
+        "address": "広島県広島市佐伯区五日市5-3-1",
+        "hours": "10:00〜翌3:00（別媒体は10:30〜翌2:00）",
+        "phone": "090-3030-5984 / 050-5526-7277",
+        "kind": "active-listing-and-details",
+        "sources": [
+          "https://estama.jp/shop/30869/",
+          "https://menesmall.jp/shop/chouchou-coin",
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/chouchouu"
+        ],
+        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+      },
+      "verifiedAddress": "広島県広島市佐伯区五日市5-3-1",
+      "verifiedHours": "10:00〜翌3:00（別媒体は10:30〜翌2:00）",
+      "verifiedPhone": "090-3030-5984 / 050-5526-7277"
     },
     {
       "name": "ジェンティル",
@@ -270,8 +302,24 @@
         }
       ],
       "officialUrl": "https://laviespa.net/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "officialUrlStatus": "独立公式サイトを掲載媒体と照合",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://laviespa.net/",
+        "address": "広島県広島市中区富士見町",
+        "hours": "10:00〜LAST（別媒体は翌2:00）",
+        "phone": "090-3049-1138",
+        "kind": "independent-official-site-and-current-listing",
+        "sources": [
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/laviespa",
+          "https://mens-es.men/shop/38201"
+        ],
+        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+      },
+      "verifiedAddress": "広島県広島市中区富士見町",
+      "verifiedHours": "10:00〜LAST（別媒体は翌2:00）",
+      "verifiedPhone": "090-3049-1138"
     },
     {
       "name": "みつばち",
@@ -299,7 +347,24 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "officialUrl": "https://estama.jp/shop/29246/",
+      "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://estama.jp/shop/29246/",
+        "address": "広島県広島市安佐南区緑井2丁目14-26",
+        "hours": "10:00〜翌3:00",
+        "phone": "080-2072-8300",
+        "kind": "recent-listing-update",
+        "sources": [
+          "https://estama.jp/shop/29246/"
+        ],
+        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+      },
+      "verifiedAddress": "広島県広島市安佐南区緑井2丁目14-26",
+      "verifiedHours": "10:00〜翌3:00",
+      "verifiedPhone": "080-2072-8300"
     },
     {
       "name": "リフレMoEST",
@@ -314,8 +379,25 @@
         }
       ],
       "officialUrl": "https://r.goope.jp/moest-hiroshima/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://r.goope.jp/moest-hiroshima/",
+        "address": "広島県広島市中区宝町（個室住所は予約後案内）",
+        "hours": "17:00〜LAST（媒体に15:00〜翌1:00の旧情報あり）",
+        "phone": "082-208-2058",
+        "kind": "official-url-and-current-listing-crosscheck",
+        "sources": [
+          "https://www.salonowa.jp/shop/moest-12205",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima/shops/rifuremoest",
+          "https://www.kking.jp/ippan/268166/"
+        ],
+        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+      },
+      "verifiedAddress": "広島県広島市中区宝町（個室住所は予約後案内）",
+      "verifiedHours": "17:00〜LAST（媒体に15:00〜翌1:00の旧情報あり）",
+      "verifiedPhone": "082-208-2058"
     },
     {
       "name": "スパバーニーズ",
@@ -358,8 +440,24 @@
         }
       ],
       "officialUrl": "https://hiroshima-synchro.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://hiroshima-synchro.com/",
+        "address": "広島県広島市中区宝町（フジグラン宝町から徒歩2分）",
+        "hours": "24時間営業",
+        "phone": "080-6083-0666",
+        "kind": "official-site-listed-and-current-listing",
+        "sources": [
+          "https://mens-es.men/shop/29324",
+          "https://mens-est.jp/shop/hsynchro/"
+        ],
+        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+      },
+      "verifiedAddress": "広島県広島市中区宝町（フジグラン宝町から徒歩2分）",
+      "verifiedHours": "24時間営業",
+      "verifiedPhone": "080-6083-0666"
     },
     {
       "name": "REAL",
@@ -378,10 +476,26 @@
         }
       ],
       "officialUrl": "https://rs-real.com/",
-      "officialUrlStatus": "公式サイト確認済み",
+      "officialUrlStatus": "独立公式サイトを掲載媒体と照合",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "real",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://rs-real.com/",
+        "address": "広島市中区東平塚町・昭和町（複数ルーム）",
+        "hours": "10:00〜翌5:00（別媒体に11:00〜LAST）",
+        "phone": "070-8367-1849",
+        "kind": "independent-official-site-and-current-listing",
+        "sources": [
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/reall",
+          "https://mens-est.jp/shop/202010013447/"
+        ],
+        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+      },
+      "verifiedAddress": "広島市中区東平塚町・昭和町（複数ルーム）",
+      "verifiedHours": "10:00〜翌5:00（別媒体に11:00〜LAST）",
+      "verifiedPhone": "070-8367-1849"
     },
     {
       "name": "Mrs.APHRODITE THALASSA",
@@ -4449,7 +4563,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件のうち15件について個別の公式サイトまたは現行店舗情報の裏付けを記録済み。残り263件は未完了。",
+    "individualVerificationNote": "278件のうち22件に個別確認記録あり。残り256件は未完了。公式サイトの存在だけで営業中と断定せず、媒体間の営業時間差は注記。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4471,7 +4585,7 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 15,
+    "individualVerifiedRecordCount": 22,
     "individualVerificationBatch3": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4483,6 +4597,19 @@
         "石庭別館"
       ],
       "note": "独立公式サイトで店舗名を照合。住所・営業時間・電話は公式サイトで確認できた項目のみ記録。"
+    },
+    "individualVerificationBatch4": {
+      "checkedRecordCount": 7,
+      "verifiedRecords": [
+        "ナチュレ 広島",
+        "シュシュ コイン通り店",
+        "シュシュ 緑井店",
+        "ラヴィアンドスパ",
+        "リフレMoEST",
+        "小悪魔SPA",
+        "REAL"
+      ],
+      "note": "公式URL・複数媒体の住所/電話/営業時間/直近掲載を照合。営業時間の相違は注記し、独立公式サイトと媒体内HP欄を区別。"
     }
   }
 }
