@@ -506,7 +506,15 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "listing-only-not-individually-confirmed",
+        "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ],
+        "note": "広島市の一覧掲載は確認。ただし今回の検索では独立した公式サイト、現行の電話・住所・営業時間を裏付ける店舗詳細を特定できず。営業中確証なし。"
+      }
     },
     {
       "name": "広島エステサロン お好み村",
@@ -624,7 +632,22 @@
       ],
       "officialUrl": "https://aphrodite-talassa.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "official-site-and-current-listing-confirmed",
+        "sources": [
+          "https://aphrodite-talassa.com/",
+          "https://estama.jp/shop/51646/"
+        ],
+        "address": "広島県広島市南区大須賀町",
+        "hours": "11:00〜翌3:00",
+        "phone": "080-9004-2543",
+        "note": "独立公式サイトと掲載媒体の店舗詳細を照合。公式サイト案内は2026-09-26広島駅近く開店。"
+      },
+      "verifiedAddress": "広島県広島市南区大須賀町",
+      "verifiedHours": "11:00〜翌3:00",
+      "verifiedPhone": "080-9004-2543"
     },
     {
       "name": "TISSE",
@@ -656,7 +679,20 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party-profile-only",
+        "sources": [
+          "https://bijo-mag.com/mei_adoll/",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ],
+        "address": "広島県広島市中区昭和町（掲載プロフィール表記）",
+        "phone": "070-9126-1805",
+        "note": "広島a dollのセラピスト紹介・店舗紹介は確認できたが、独立公式サイトの現行運営情報までは未確認。"
+      },
+      "verifiedAddress": "広島県広島市中区昭和町（掲載プロフィール表記）",
+      "verifiedPhone": "070-9126-1805"
     },
     {
       "name": "ゆるりnon",
@@ -672,7 +708,22 @@
       ],
       "officialUrl": "https://yururinon.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "current-listing-confirmed-official-site-not-crosschecked",
+        "sources": [
+          "https://yururinon.com/",
+          "https://menesth.jp/32/shop/47343/"
+        ],
+        "address": "広島県広島市中区舟入町",
+        "hours": "10:00〜翌2:00",
+        "phone": "090-5607-1122",
+        "note": "店舗詳細掲載で住所・営業時間・電話番号を確認。公式サイトURLはDB登録値を保持。"
+      },
+      "verifiedAddress": "広島県広島市中区舟入町",
+      "verifiedHours": "10:00〜翌2:00",
+      "verifiedPhone": "090-5607-1122"
     },
     {
       "name": "BODY SPA 広島",
@@ -4676,7 +4727,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件中26件に個別確認記録あり。残り252件は未完了。記録には現行店舗情報確認と名称衝突/未確証の調査メモを含むため、全26件が営業中確証済みという意味ではない。",
+    "individualVerificationNote": "278件中33件に個別確認記録あり。残り245件は未完了。掲載媒体のみの情報や名称衝突調査も記録に含むため、全件が営業中確証済みという意味ではない。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4698,7 +4749,7 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 26,
+    "individualVerifiedRecordCount": 33,
     "individualVerificationBatch3": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4743,6 +4794,16 @@
         "ナチュレ 広島"
       ],
       "note": "ジェンティルは店舗詳細・電話・営業時間を確認。ビューティーアンドビーストは同名の美容室が検索に混在し、メンズエステとの同一性未確認のためURL登録せず。おとなすぱっは複数媒体の中区掲載・営業時間を照合。"
+    },
+    "individualVerificationBatch7": {
+      "checkedAt": "2026-11-14",
+      "updated": [
+        "スパバーニーズ",
+        "Mrs.APHRODITE THALASSA",
+        "a doll",
+        "ゆるりnon"
+      ],
+      "notes": "Mrs.APHRODITE THALASSAは独立公式サイトと店舗詳細を確認。ゆるりnonは店舗詳細で基本情報を照合。a dollは第三者プロフィール情報まで。スパバーニーズは一覧掲載のみで現行詳細未確認。"
     }
   }
 }
