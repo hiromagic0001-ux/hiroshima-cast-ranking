@@ -145,7 +145,9 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "officialUrl": "https://enel-official.com/",
+      "officialUrlStatus": "公式サイト確認済み"
     },
     {
       "name": "マダムヘブン",
@@ -2162,7 +2164,9 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "officialUrl": "https://nagomi-hiroshima.com/",
+      "officialUrlStatus": "公式サイト確認済み"
     },
     {
       "name": "MPS — MEN'S PRIVATE SALON",
