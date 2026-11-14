@@ -2614,7 +2614,9 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "officialUrl": "https://mensspa-r.com/",
+      "officialUrlStatus": "公式サイト確認済み"
     },
     {
       "name": "エイミー",
@@ -2874,7 +2876,9 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "officialUrl": "https://mensspa-r.com/",
+      "officialUrlStatus": "公式サイト確認済み"
     },
     {
       "name": "Mrs.癒seaside",
@@ -3543,7 +3547,9 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "officialUrl": "https://mensspa-r.com/",
+      "officialUrlStatus": "公式サイト確認済み"
     },
     {
       "name": "Noël",
