@@ -17,7 +17,8 @@
         }
       ],
       "officialUrl": "https://nature4555.estama.jp/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "ビューティーアンドビースト",
@@ -30,7 +31,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "シュシュ コイン通り店",
@@ -45,7 +47,8 @@
         }
       ],
       "officialUrl": "https://chouchou-coin.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "ジェンティル",
@@ -58,7 +61,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "シークレット",
@@ -73,7 +77,8 @@
         }
       ],
       "officialUrl": "https://thesecret924.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "王様のきもち",
@@ -86,7 +91,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "花魁 広島",
@@ -99,7 +105,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "トリコ",
@@ -114,7 +121,8 @@
         }
       ],
       "officialUrl": "https://hiroshima-toriko.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "Dior 五日市店",
@@ -127,7 +135,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "おとなすぱっ！",
@@ -140,7 +149,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ENEL",
@@ -155,7 +165,10 @@
         }
       ],
       "officialUrl": "https://enel-official.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "enel",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "マダムヘブン",
@@ -168,7 +181,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ラヴィアンドスパ",
@@ -183,7 +197,8 @@
         }
       ],
       "officialUrl": "https://laviespa.net/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "みつばち",
@@ -196,7 +211,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "シュシュ 緑井店",
@@ -209,7 +225,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "リフレMoEST",
@@ -224,7 +241,8 @@
         }
       ],
       "officialUrl": "https://r.goope.jp/moest-hiroshima/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "スパバーニーズ",
@@ -237,7 +255,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "広島エステサロン お好み村",
@@ -250,7 +269,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "小悪魔SPA",
@@ -265,7 +285,8 @@
         }
       ],
       "officialUrl": "https://hiroshima-synchro.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "REAL",
@@ -284,7 +305,10 @@
         }
       ],
       "officialUrl": "https://rs-real.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "real",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "Mrs.APHRODITE THALASSA",
@@ -299,7 +323,8 @@
         }
       ],
       "officialUrl": "https://aphrodite-talassa.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "TISSE",
@@ -314,7 +339,10 @@
         }
       ],
       "officialUrl": "https://mens-tisse.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "tisse",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "a doll",
@@ -327,7 +355,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ゆるりnon",
@@ -342,7 +371,8 @@
         }
       ],
       "officialUrl": "https://yururinon.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "BODY SPA 広島",
@@ -357,7 +387,10 @@
         }
       ],
       "officialUrl": "https://bodyspahiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "body-spa",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "広島人妻さん",
@@ -370,7 +403,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Organic energy",
@@ -385,7 +419,8 @@
         }
       ],
       "officialUrl": "https://organic-hiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "Mrs.ni-na",
@@ -400,7 +435,8 @@
         }
       ],
       "officialUrl": "https://mrs-salon-do-ni-na.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "カロン",
@@ -413,7 +449,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ルル",
@@ -426,7 +463,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ヴェルディ",
@@ -439,7 +477,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "マシェリ",
@@ -452,7 +491,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "アガットテイク",
@@ -465,7 +505,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "salon.do.ni-na",
@@ -480,7 +521,8 @@
         }
       ],
       "officialUrl": "https://salon-do-ni-na.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "ディオール",
@@ -493,7 +535,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "フリーダム",
@@ -506,7 +549,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "モアスパ",
@@ -519,7 +563,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Travis Queen",
@@ -532,7 +577,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "人妻スキャンダル",
@@ -545,7 +591,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "スタンダード",
@@ -558,7 +605,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "B and B",
@@ -571,7 +619,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ふわもこSPA",
@@ -586,7 +635,8 @@
         }
       ],
       "officialUrl": "https://fuwamoco-spa.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "Alive",
@@ -599,7 +649,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Suu",
@@ -612,7 +663,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "広島メンズエステ ゆりかご",
@@ -627,7 +679,8 @@
         }
       ],
       "officialUrl": "https://yurikagohiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "おもてなし 広島",
@@ -640,7 +693,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Aroma Salon Freyja",
@@ -655,7 +709,8 @@
         }
       ],
       "officialUrl": "https://aromafreyja.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "7 Dream Este",
@@ -670,7 +725,8 @@
         }
       ],
       "officialUrl": "https://7dream-este.net/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "カトレア",
@@ -694,7 +750,8 @@
         "Cattleya",
         "Men’s spa Cattleya",
         "メンズスパカトレア"
-      ]
+      ],
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "Luxurysalon ROMA",
@@ -707,7 +764,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "パート妻のプライベートサロン",
@@ -720,7 +778,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "グレイススパ",
@@ -733,7 +792,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Palma～女神の手～",
@@ -748,7 +808,8 @@
         }
       ],
       "officialUrl": "https://hiroshima-palma.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "キング",
@@ -761,7 +822,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Seraphi Spa",
@@ -774,7 +836,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "クラブいち華",
@@ -787,7 +850,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "フェミニン",
@@ -800,7 +864,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ザ・熟女 豊満桃色倶楽部",
@@ -813,7 +878,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Tonトロ五日市店",
@@ -826,7 +892,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ミセスビマジョレッド",
@@ -839,7 +906,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Vivienne",
@@ -852,7 +920,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ディオール観音店",
@@ -865,7 +934,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "スパドルチェ 広島",
@@ -878,7 +948,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "アドール",
@@ -891,7 +962,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "La Paix-ラペ-",
@@ -904,7 +976,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "大人の隠れ家",
@@ -917,7 +990,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "RESORT",
@@ -940,7 +1014,8 @@
         }
       ],
       "officialUrl": "https://resort-h.site/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "シャルディア",
@@ -953,7 +1028,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ミセスプリンセスドール",
@@ -966,7 +1042,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ましゅまろ",
@@ -979,7 +1056,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ダンディ＋",
@@ -992,7 +1070,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "シンク",
@@ -1005,7 +1084,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ルミエラ",
@@ -1018,7 +1098,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "You＆MeSPA～ユミスパ～",
@@ -1031,7 +1112,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "アロマミア",
@@ -1044,7 +1126,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Refresh",
@@ -1059,7 +1142,10 @@
         }
       ],
       "officialUrl": "https://r-s-refresh-hiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "refresh",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "既婚者 極液ラボ",
@@ -1072,7 +1158,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Arinoa",
@@ -1087,7 +1174,10 @@
         }
       ],
       "officialUrl": "https://arinoa-esthe.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "arinoa",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "TONARI",
@@ -1100,7 +1190,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ソワン 広島",
@@ -1113,7 +1204,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Mrs.ENEL",
@@ -1126,7 +1218,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "セレスト",
@@ -1139,7 +1232,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "CREA",
@@ -1154,7 +1248,8 @@
         }
       ],
       "officialUrl": "https://creahiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "セラフィスパ",
@@ -1167,7 +1262,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "AROMA INNOCENT",
@@ -1180,7 +1276,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "神のエステ",
@@ -1195,7 +1292,8 @@
         }
       ],
       "officialUrl": "https://kamies.jp/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "Angel Spa",
@@ -1208,7 +1306,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ラドンナ",
@@ -1221,7 +1320,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Lumiella",
@@ -1234,7 +1334,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ハチミツ俱楽部",
@@ -1247,7 +1348,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ヨアソビ広島",
@@ -1260,7 +1362,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "QUEEN",
@@ -1273,7 +1376,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ヘブン",
@@ -1286,7 +1390,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ばななすぱっ！",
@@ -1299,7 +1404,8 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "天国にいちばん近い島 広島店",
@@ -1316,7 +1422,8 @@
           "label": "カサブランカ公式・広島店候補",
           "url": "https://www.tengoku.jp"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "五十路エステ ハイブリッド 広島店",
@@ -1333,7 +1440,8 @@
           "label": "カサブランカ公式・広島店候補",
           "url": "https://www.tengoku.jp"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "天使のゆびさき（カリビアンマッサージ）",
@@ -1350,7 +1458,8 @@
           "label": "店舗公式サイト・業態表記に揺れ",
           "url": "http://www.tenshi.tv/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "DIANA（ディアナ）",
@@ -1365,7 +1474,8 @@
         }
       ],
       "address": "〒730-0023 広島県広島市中区弥生町6-13",
-      "locationEvidence": "turn123920business6"
+      "locationEvidence": "turn123920business6",
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "EIGHT（エイト）",
@@ -1378,7 +1488,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Excellent Royal",
@@ -1391,7 +1502,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "LIGHT（ライト）",
@@ -1406,7 +1518,8 @@
         }
       ],
       "address": "〒730-0023 広島県広島市中区弥生町3-12",
-      "locationEvidence": "turn123920business14"
+      "locationEvidence": "turn123920business14",
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "PaleTTe（パレット）",
@@ -1419,7 +1532,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "STORY ここだけの物語",
@@ -1432,7 +1546,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Sherbet（シャーベット）",
@@ -1447,7 +1562,8 @@
         }
       ],
       "address": "〒730-0022 広島県広島市中区銀山町12-10",
-      "locationEvidence": "turn123920business12"
+      "locationEvidence": "turn123920business12",
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "シャーベット別館",
@@ -1462,7 +1578,8 @@
         }
       ],
       "address": "〒730-0027 広島県広島市中区薬研堀1-7",
-      "locationEvidence": "turn123920business0"
+      "locationEvidence": "turn123920business0",
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "エルミタージュ",
@@ -1475,7 +1592,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ブルームーン",
@@ -1488,7 +1606,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ブレイク",
@@ -1501,7 +1620,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ロイヤル女子寮",
@@ -1514,7 +1634,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "女子寮本館",
@@ -1527,7 +1648,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "石庭",
@@ -1542,7 +1664,8 @@
         }
       ],
       "address": "〒730-0023 広島県広島市中区弥生町6-12",
-      "locationEvidence": "turn123920business2"
+      "locationEvidence": "turn123920business2",
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "石庭別館",
@@ -1555,7 +1678,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "AGORA（アゴラ）",
@@ -1568,7 +1692,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "OASIS（オアシス）",
@@ -1581,7 +1706,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "PANTHER（パンサー）",
@@ -1594,7 +1720,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Serenity（セレニティ）",
@@ -1607,7 +1734,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ナナ",
@@ -1620,7 +1748,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "人妻専科 たま乱堂",
@@ -1633,7 +1762,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ドラゴンハンド",
@@ -1646,7 +1776,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ヘブンハンド 広島店",
@@ -1659,7 +1790,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "極楽エステ",
@@ -1672,7 +1804,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "AROMA JUNGLE（アロマジャングル）",
@@ -1685,7 +1818,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Loving Touch",
@@ -1698,7 +1832,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "OLIVE SPA",
@@ -1711,7 +1846,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "SILK SPA 広島店",
@@ -1724,7 +1860,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "廣島奥様チン電",
@@ -1737,7 +1874,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Ares（アース）",
@@ -1750,7 +1888,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "DiamondHearts",
@@ -1763,7 +1902,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ELEGANCE（エレガンス）",
@@ -1776,7 +1916,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "NATURAL",
@@ -1794,7 +1935,8 @@
         "ナチュラル",
         "なちゅらる",
         "natyuraru"
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "RUSH",
@@ -1807,7 +1949,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "TIARA（ティアラ）",
@@ -1820,7 +1963,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Vip style club",
@@ -1833,7 +1977,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "人妻アクメ",
@@ -1846,7 +1991,8 @@
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ポポロン☆広島",
@@ -1859,7 +2005,8 @@
           "label": "風俗ターミナル・広島県掲載",
           "url": "https://www.f-terminal.jp/hiroshima.html"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "人妻EXPRESS",
@@ -1872,7 +2019,8 @@
           "label": "風俗ターミナル・広島県掲載",
           "url": "https://www.f-terminal.jp/hiroshima.html"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "エッチな熟女",
@@ -1885,7 +2033,8 @@
           "label": "いちごなび・広島市掲載",
           "url": "https://www.15navi.com/hiroshima_top/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ベルベット広島",
@@ -1898,7 +2047,8 @@
           "label": "いちごなび・広島市掲載",
           "url": "https://www.15navi.com/hiroshima_top/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "人妻同窓会",
@@ -1911,7 +2061,8 @@
           "label": "いちごなび・広島市掲載",
           "url": "https://www.15navi.com/hiroshima_top/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "奥様鉄道69 広島店",
@@ -1924,7 +2075,8 @@
           "label": "りあれび・広島市一覧",
           "url": "https://www.rea-revi.com/review_category/hiroshimasi/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Serenity Oasis",
@@ -1937,7 +2089,8 @@
           "label": "りあれび・広島市一覧",
           "url": "https://www.rea-revi.com/review_category/hiroshimasi/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "摩天楼～MATENROW～広島",
@@ -1950,7 +2103,8 @@
           "label": "りあれび・広島市一覧",
           "url": "https://www.rea-revi.com/review_category/hiroshimasi/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Melty Esthe 性感回春エステ",
@@ -1963,7 +2117,8 @@
           "label": "複数媒体・広島市候補",
           "url": "https://www.15navi.com/hiroshima_top/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "広島回春性感マッサージ倶楽部",
@@ -1976,7 +2131,8 @@
           "label": "複数媒体・広島市候補",
           "url": "https://www.15navi.com/hiroshima_top/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "スパ アール",
@@ -1989,7 +2145,8 @@
           "label": "複数媒体・広島市候補",
           "url": "https://www.15navi.com/hiroshima_top/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "THINK",
@@ -2002,7 +2159,8 @@
           "label": "複数媒体・広島市候補",
           "url": "https://www.15navi.com/hiroshima_top/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "チェリーSPA広島",
@@ -2027,7 +2185,8 @@
         "CherrySpa",
         "チェリースパ",
         "チェリーSPA"
-      ]
+      ],
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "#オナクラなう 広島店",
@@ -2040,7 +2199,8 @@
           "label": "いちごなび・広島市掲載",
           "url": "https://www.15navi.com/hiroshima_top/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "カサブランカ 広島店",
@@ -2053,7 +2213,8 @@
           "label": "カサブランカ公式・広島店候補",
           "url": "https://www.casa-b.jp"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "モザイク 広島店",
@@ -2066,7 +2227,8 @@
           "label": "カサブランカ公式・広島店候補",
           "url": "https://www.casa-b.jp"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "五十路マダム 広島店",
@@ -2079,7 +2241,8 @@
           "label": "カサブランカ公式・広島店候補",
           "url": "https://www.casa-b.jp"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "秘密楽園",
@@ -2092,7 +2255,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "やさしい部屋",
@@ -2105,7 +2269,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "東京式SPA研究所「B」",
@@ -2118,7 +2283,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "アロマドール",
@@ -2131,7 +2297,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "絆～きずな～",
@@ -2144,7 +2311,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ミセス48～魔性のオイル編VOL.1～",
@@ -2157,7 +2325,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "甘い恋人",
@@ -2170,7 +2339,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ときめきSPA",
@@ -2183,7 +2353,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "蛍（ホタル）",
@@ -2196,7 +2367,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "慕色（ぼしょく）",
@@ -2209,7 +2381,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "癒しの女神",
@@ -2222,7 +2395,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "NAGOMI～和み～",
@@ -2237,7 +2411,8 @@
         }
       ],
       "officialUrl": "https://nagomi-hiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "MPS — MEN'S PRIVATE SALON",
@@ -2250,7 +2425,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Night VERDY～ヴェルディ～",
@@ -2263,7 +2439,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "高級メンズエステ IVY SPA広島",
@@ -2276,7 +2453,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "広島メンズエステクイーン",
@@ -2289,7 +2467,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "楽々",
@@ -2302,7 +2481,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "微妙な関係",
@@ -2315,7 +2495,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "会いたい",
@@ -2328,7 +2509,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Private Spa MINTIA",
@@ -2341,7 +2523,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Access Hiroshima",
@@ -2354,7 +2537,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "E～感じ",
@@ -2367,7 +2551,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "エムシェルジュ",
@@ -2380,7 +2565,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "DEAR",
@@ -2393,7 +2579,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "BUZZ",
@@ -2406,7 +2593,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "小魔女",
@@ -2419,7 +2607,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "秘蜜エステ",
@@ -2432,7 +2621,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "アロマ姫",
@@ -2445,7 +2635,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Roa～Grand～",
@@ -2458,7 +2649,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "LILY",
@@ -2471,7 +2663,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "リバーズエステ",
@@ -2484,7 +2677,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "コロン",
@@ -2497,7 +2691,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ピンクパンサー",
@@ -2510,7 +2705,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "隠れ家",
@@ -2523,7 +2719,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ラベンダー",
@@ -2536,7 +2733,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ピーチスパ",
@@ -2549,7 +2747,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "いちい",
@@ -2562,7 +2761,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "アイビースパ",
@@ -2575,7 +2775,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "りあんすぱ",
@@ -2588,7 +2789,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "天使のエプロン",
@@ -2601,7 +2803,8 @@
           "label": "メンズエステ情報ランキング・広島市掲載",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "煌き-KIRAMEKI-",
@@ -2614,7 +2817,8 @@
           "label": "パネマジチェッカー・広島市デリヘル",
           "url": "https://panecheck.com/hiroshima/hiroshima/deriheru"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "フルフル☆60分10000円☆",
@@ -2627,7 +2831,8 @@
           "label": "パネマジチェッカー・広島市デリヘル",
           "url": "https://panecheck.com/hiroshima/hiroshima/deriheru"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ぽっちゃりmateマシュマロ",
@@ -2640,7 +2845,8 @@
           "label": "パネマジチェッカー・広島市デリヘル",
           "url": "https://panecheck.com/hiroshima/hiroshima/deriheru"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "spa R（スパアール）",
@@ -2655,7 +2861,10 @@
         }
       ],
       "officialUrl": "https://mensspa-r.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "mens-spa-r",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "エイミー",
@@ -2668,7 +2877,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "アルカンジュ",
@@ -2681,7 +2891,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Rabbids",
@@ -2694,7 +2905,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "奥様Ｙシャツ倶楽部",
@@ -2707,7 +2919,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "リバーナル",
@@ -2720,7 +2933,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "エモーション",
@@ -2733,7 +2947,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ポルテ",
@@ -2746,7 +2961,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "スカーレット",
@@ -2759,7 +2975,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ルーチェ",
@@ -2772,7 +2989,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "39サロン BonBon",
@@ -2785,7 +3003,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "リアン 広島",
@@ -2798,7 +3017,8 @@
           "label": "メンズエステセレクト・広島市一覧",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "&White（アンドホワイト）",
@@ -2811,7 +3031,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Affino（アフィーノ）",
@@ -2824,7 +3045,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Bright（ブライト）",
@@ -2837,7 +3059,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "FREEDOM（フリーダム）",
@@ -2850,7 +3073,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Healing Salon Alive",
@@ -2863,7 +3087,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Jasmine（ジャスミン）",
@@ -2876,7 +3101,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Luxe 広島",
@@ -2889,7 +3115,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Men's salon 凛-rin-",
@@ -2902,7 +3129,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Men’s spa R",
@@ -2917,7 +3145,10 @@
         }
       ],
       "officialUrl": "https://mensspa-r.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "mens-spa-r",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "Mrs.癒seaside",
@@ -2930,7 +3161,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Noël（ノエル）",
@@ -2943,7 +3175,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Nuxe（ニュクス）",
@@ -2956,7 +3189,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Reflet Spa（ルフレスパ）",
@@ -2969,7 +3203,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "SPA-DOLCE",
@@ -2982,7 +3217,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "SPA商事-秘書室-",
@@ -2995,7 +3231,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "peony（ピオニー）",
@@ -3008,7 +3245,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "トップシークレット",
@@ -3021,7 +3259,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ベトナムガル",
@@ -3034,7 +3273,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "メンズエステ LOVE",
@@ -3047,7 +3287,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "少し大人のメンズエステ Paz",
@@ -3060,7 +3301,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Hitomebore～ひとめ惚れ～",
@@ -3073,7 +3315,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Labyrinth～ラビリンス～",
@@ -3086,7 +3329,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "極のエステ～Ω～",
@@ -3099,7 +3343,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "IRIS",
@@ -3112,7 +3357,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "luana",
@@ -3125,7 +3371,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "エネル 出張",
@@ -3138,7 +3385,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ラブデラックス",
@@ -3151,7 +3399,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "広島:出張マッサージ～サヤ～",
@@ -3164,7 +3413,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "広島sweet luxuryspa",
@@ -3177,7 +3427,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "華room",
@@ -3190,7 +3441,8 @@
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ベトナム子",
@@ -3203,7 +3455,8 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Toriko",
@@ -3216,7 +3469,8 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "メンズアロマ広島人妻さん",
@@ -3229,7 +3483,8 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "TONARI（トナリ）",
@@ -3242,7 +3497,8 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "TISSE（ティセ）",
@@ -3257,7 +3513,10 @@
         }
       ],
       "officialUrl": "https://mens-tisse.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "tisse",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "ENEL（エネル）",
@@ -3270,7 +3529,10 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "enel",
+      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Grace Spa",
@@ -3285,7 +3547,8 @@
         }
       ],
       "officialUrl": "https://hiroshima-grace-spa.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "お手頃価格な おもてなし",
@@ -3298,7 +3561,8 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Lavie＆Spa",
@@ -3311,7 +3575,8 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "heaven（ヘブン）",
@@ -3324,7 +3589,8 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Refresh（リフレッシュ）",
@@ -3337,7 +3603,10 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "refresh",
+      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Lumiella（ルミエラ）",
@@ -3350,7 +3619,8 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "a doll（アドール）",
@@ -3363,7 +3633,8 @@
           "label": "メンズエステ情報ランキング・広島市107店表示",
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "BODY SPA HIROSHIMA",
@@ -3378,7 +3649,10 @@
         }
       ],
       "officialUrl": "https://bodyspahiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "body-spa",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "Relaxation Salon REAL",
@@ -3391,7 +3665,10 @@
           "label": "MEN'S ES・広島市184店舗一覧",
           "url": "https://mens-es.men/area/3401"
         }
-      ]
+      ],
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "real",
+      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "出張専門高級メンズエステ IVY SPA",
@@ -3404,7 +3681,8 @@
           "label": "MEN'S ES・広島市184店舗一覧",
           "url": "https://mens-es.men/area/3401"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "チェリーSPA東平塚店",
@@ -3417,7 +3695,8 @@
           "label": "MEN'S ES・広島市184店舗一覧",
           "url": "https://mens-es.men/area/3401"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "出張メンズエステ～NAGOMI～",
@@ -3430,7 +3709,8 @@
           "label": "MEN'S ES・広島市184店舗一覧",
           "url": "https://mens-es.men/area/3401"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Arinoa～アリノア～",
@@ -3443,7 +3723,10 @@
           "label": "MEN'S ES・広島市184店舗一覧",
           "url": "https://mens-es.men/area/3401"
         }
-      ]
+      ],
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "arinoa",
+      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "ミセスママ 広島",
@@ -3456,7 +3739,8 @@
           "label": "メンエスmall・広島市内65店表示",
           "url": "https://menesmall.jp/hiroshima/124/shops"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "KING'S 広島",
@@ -3469,7 +3753,8 @@
           "label": "メンエスmall・広島市内65店表示",
           "url": "https://menesmall.jp/hiroshima/124/shops"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "KING'S",
@@ -3482,7 +3767,8 @@
           "label": "メンエスmall・広島市内65店表示",
           "url": "https://menesmall.jp/hiroshima/124/shops"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Affino",
@@ -3495,7 +3781,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Bright",
@@ -3508,7 +3795,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "FREEDOM",
@@ -3521,7 +3809,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Jasmine",
@@ -3534,7 +3823,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "LILY（リリー）",
@@ -3547,7 +3837,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Lavender（ラベンダー）",
@@ -3560,7 +3851,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "M.O.E.T（モエ）",
@@ -3573,7 +3865,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Men's spa R",
@@ -3588,7 +3881,10 @@
         }
       ],
       "officialUrl": "https://mensspa-r.com/",
-      "officialUrlStatus": "公式サイト確認済み"
+      "officialUrlStatus": "公式サイト確認済み",
+      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateGroup": "mens-spa-r",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "Noël",
@@ -3601,7 +3897,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Nuxe",
@@ -3614,7 +3911,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Reflet Spa",
@@ -3627,7 +3925,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "peony",
@@ -3640,7 +3939,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "IVY SPA",
@@ -3653,7 +3953,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Paz",
@@ -3666,7 +3967,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Hitomebore",
@@ -3679,7 +3981,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Labyrinth",
@@ -3692,7 +3995,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "極のエステ",
@@ -3705,7 +4009,8 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "Be-ange（ビアンジュ）",
@@ -3729,7 +4034,8 @@
         "ビアンジュ",
         "be ange",
         "be-ange"
-      ]
+      ],
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
     },
     {
       "name": "COLORS（カラーズ）",
@@ -3747,7 +4053,8 @@
         "COLORS",
         "カラーズ",
         "colors hiroshima"
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     },
     {
       "name": "CRADLE（クレイドル）",
@@ -3769,7 +4076,8 @@
         "CRADLE",
         "クレイドル",
         "cradle hiroshima"
-      ]
+      ],
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
     }
   ],
   "sources": [
@@ -3871,5 +4179,42 @@
       "coverage": "広島市中区のメンズエステ掲載候補",
       "note": "求人媒体の掲載情報。営業状況・住所・店舗公式サイトは別途確認"
     }
-  ]
+  ],
+  "bulkAudit": {
+    "reviewedAt": "2026-11-14",
+    "reviewedRecordCount": 278,
+    "status": "一次一括監査完了・個別確証作業は継続",
+    "method": "登録済み278レコード全件を走査し、現行掲載媒体の検索結果と照合。表記正規化、同一URL/同一ブランドの重複候補、公式URLの登録有無、所在地/営業確認状態を集計。",
+    "sourcePages": [
+      {
+        "name": "メンエスセレクト・広島市",
+        "url": "https://menesu-select.com/hiroshima/hiroshima/",
+        "displayedCount": 125
+      },
+      {
+        "name": "MEN'S ES・広島市",
+        "url": "https://mens-es.men/area/3401",
+        "displayedCount": 184
+      },
+      {
+        "name": "メンズエステ情報ランキング・広島市",
+        "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+        "displayedCount": 107
+      },
+      {
+        "name": "メンエスmall・広島市",
+        "url": "https://menesmall.jp/hiroshima/124/shops",
+        "displayedCount": 64
+      },
+      {
+        "name": "風俗マップ・広島県",
+        "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+        "displayedCount": 123
+      }
+    ],
+    "officialUrlRecordCount": 36,
+    "addressConfirmedCount": 8,
+    "duplicateReviewRecordCount": 15,
+    "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。"
+  }
 }
