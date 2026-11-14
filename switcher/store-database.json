@@ -682,7 +682,18 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "店舗公式ホームページ（エステ魂の公式HP欄）",
+          "url": "https://30588.b6.estama.jp/"
         }
+      ],
+      "officialUrl": "https://30588.b6.estama.jp/",
+      "officialUrlStatus": "掲載元の公式ホームページ欄で確認",
+      "aliases": [
+        "Cattleya",
+        "Men’s spa Cattleya",
+        "メンズスパカトレア"
       ]
     },
     {
