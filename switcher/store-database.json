@@ -3608,7 +3608,7 @@
       "name": "CityHeaven比較ページ",
       "url": "https://cvnk.jp/hiroshima/hiroshima-city",
       "coverage": "広島市5業態・合計66店舗表示。業種別表示は30/16/7/15/1で合計69となり、重複または集計定義差の照合が必要",
-      "note": "媒体掲載数。全店舗の営業確認済み数ではない"
+      "note": "広島市の業種別掲載数と合計表示に差があるため、店舗単位で照合。広島県全体の数字を市内件数に流用しない"
     },
     {
       "id": "ultimate-map",
@@ -3642,7 +3642,7 @@
       "id": "menesu-select",
       "name": "メンズエステセレクト",
       "url": "https://menesu-select.com/hiroshima/hiroshima/",
-      "coverage": "広島市メンズエステ125店表示（2026年10月更新ページ）",
+      "coverage": "広島市125店表示（2026年10月更新ページ）",
       "note": "初期候補。住所・重複・営業状況未確定"
     },
     {
@@ -3656,8 +3656,8 @@
       "id": "mensesthe-rank",
       "name": "メンズエステ情報ランキング",
       "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
-      "coverage": "広島市メンズエステ184店舗表示（2026年11月検索時点）",
-      "note": "アクセス順位は他媒体指標と混合しない"
+      "coverage": "広島市107店表示（2026年11月14日取得）",
+      "note": "検索結果に表示された現行掲載件数。過去の184店表示とは取得日・掲載定義の差があり、別媒体との合算はしない"
     },
     {
       "id": "panecheck",
