@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-11-14",
   "scope": "広島市内候補。広島市内の全店舗確認済みではない。",
-  "totalCandidates": 206,
+  "totalCandidates": 275,
   "records": [
     {
       "name": "ナチュレ 広島",
@@ -1281,14 +1281,16 @@
       "name": "DIANA（ディアナ）",
       "category": "soap",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内の所在地を地図事業者情報で確認",
+      "status": "所在地確認済み・営業状況は公式情報で要確認",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "address": "〒730-0023 広島県広島市中区弥生町6-13",
+      "locationEvidence": "turn123920business6"
     },
     {
       "name": "EIGHT（エイト）",
@@ -1320,14 +1322,16 @@
       "name": "LIGHT（ライト）",
       "category": "soap",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内の所在地を地図事業者情報で確認",
+      "status": "所在地確認済み・営業状況は公式情報で要確認",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "address": "〒730-0023 広島県広島市中区弥生町3-12",
+      "locationEvidence": "turn123920business14"
     },
     {
       "name": "PaleTTe（パレット）",
@@ -1359,27 +1363,31 @@
       "name": "Sherbet（シャーベット）",
       "category": "soap",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内の所在地を地図事業者情報で確認",
+      "status": "所在地確認済み・営業状況は公式情報で要確認",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "address": "〒730-0022 広島県広島市中区銀山町12-10",
+      "locationEvidence": "turn123920business12"
     },
     {
       "name": "シャーベット別館",
       "category": "soap",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内の所在地を地図事業者情報で確認",
+      "status": "所在地確認済み・営業状況は公式情報で要確認",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "address": "〒730-0027 広島県広島市中区薬研堀1-7",
+      "locationEvidence": "turn123920business0"
     },
     {
       "name": "エルミタージュ",
@@ -1450,14 +1458,16 @@
       "name": "石庭",
       "category": "soap",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内の所在地を地図事業者情報で確認",
+      "status": "所在地確認済み・営業状況は公式情報で要確認",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
-      ]
+      ],
+      "address": "〒730-0023 広島県広島市中区弥生町6-12",
+      "locationEvidence": "turn123920business2"
     },
     {
       "name": "石庭別館",
@@ -2693,6 +2703,903 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ]
+    },
+    {
+      "name": "&White（アンドホワイト）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Affino（アフィーノ）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Bright（ブライト）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "FREEDOM（フリーダム）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Healing Salon Alive",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Jasmine（ジャスミン）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Luxe 広島",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Men's salon 凛-rin-",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Men’s spa R",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Mrs.癒seaside",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Noël（ノエル）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Nuxe（ニュクス）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Reflet Spa（ルフレスパ）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "SPA-DOLCE",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "SPA商事-秘書室-",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "peony（ピオニー）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "トップシークレット",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "ベトナムガル",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "メンズエステ LOVE",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "少し大人のメンズエステ Paz",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Hitomebore～ひとめ惚れ～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Labyrinth～ラビリンス～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "極のエステ～Ω～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "IRIS",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "luana",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "エネル 出張",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "ラブデラックス",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "広島:出張マッサージ～サヤ～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "広島sweet luxuryspa",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "華room",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・広島市メンズエステ37店",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "ベトナム子",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Toriko",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "メンズアロマ広島人妻さん",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "TONARI（トナリ）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "TISSE（ティセ）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "ENEL（エネル）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Grace Spa",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "お手頃価格な おもてなし",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Lavie＆Spa",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "heaven（ヘブン）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Refresh（リフレッシュ）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Lumiella（ルミエラ）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "a doll（アドール）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "BODY SPA HIROSHIMA",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市107店表示",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Relaxation Salon REAL",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "MEN'S ES・広島市184店舗一覧",
+          "url": "https://mens-es.men/area/3401"
+        }
+      ]
+    },
+    {
+      "name": "出張専門高級メンズエステ IVY SPA",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "MEN'S ES・広島市184店舗一覧",
+          "url": "https://mens-es.men/area/3401"
+        }
+      ]
+    },
+    {
+      "name": "チェリーSPA東平塚店",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "MEN'S ES・広島市184店舗一覧",
+          "url": "https://mens-es.men/area/3401"
+        }
+      ]
+    },
+    {
+      "name": "出張メンズエステ～NAGOMI～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "MEN'S ES・広島市184店舗一覧",
+          "url": "https://mens-es.men/area/3401"
+        }
+      ]
+    },
+    {
+      "name": "Arinoa～アリノア～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "MEN'S ES・広島市184店舗一覧",
+          "url": "https://mens-es.men/area/3401"
+        }
+      ]
+    },
+    {
+      "name": "ミセスママ 広島",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンエスmall・広島市内65店表示",
+          "url": "https://menesmall.jp/hiroshima/124/shops"
+        }
+      ]
+    },
+    {
+      "name": "KING'S 広島",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンエスmall・広島市内65店表示",
+          "url": "https://menesmall.jp/hiroshima/124/shops"
+        }
+      ]
+    },
+    {
+      "name": "KING'S",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンエスmall・広島市内65店表示",
+          "url": "https://menesmall.jp/hiroshima/124/shops"
+        }
+      ]
+    },
+    {
+      "name": "Affino",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Bright",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "FREEDOM",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Jasmine",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "LILY（リリー）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Lavender（ラベンダー）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "M.O.E.T（モエ）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Men's spa R",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Noël",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Nuxe",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Reflet Spa",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "peony",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "IVY SPA",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Paz",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Hitomebore",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "Labyrinth",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
+    },
+    {
+      "name": "極のエステ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の広島市掲載・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "風俗マップ・メンズエステ候補",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        }
+      ]
     }
   ],
   "sources": [
@@ -2758,6 +3665,34 @@
       "url": "https://panecheck.com/hiroshima/hiroshima/deriheru",
       "coverage": "広島市デリヘル15店表示",
       "note": "CityHeaven等と掲載店・分類・件数の差異を照合"
+    },
+    {
+      "id": "mensesthe-rank-2026",
+      "name": "メンズエステ情報ランキング",
+      "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+      "coverage": "広島市107店表示（2026年11月14日取得）",
+      "note": "媒体掲載件数は独自基準。別媒体の件数と合算せず、店舗単位で照合する"
+    },
+    {
+      "id": "mens-es",
+      "name": "MEN'S ES",
+      "url": "https://mens-es.men/area/3401",
+      "coverage": "広島市184店表示（2026年11月14日取得）",
+      "note": "媒体掲載件数は独自基準。別媒体の件数と合算せず、店舗単位で照合する"
+    },
+    {
+      "id": "menesmall",
+      "name": "メンエスmall",
+      "url": "https://menesmall.jp/hiroshima/124/shops",
+      "coverage": "広島市内65店表示（掲載媒体の分類による）",
+      "note": "媒体掲載件数は独自基準。別媒体の件数と合算せず、店舗単位で照合する"
+    },
+    {
+      "id": "ultimate-men-esthe",
+      "name": "風俗マップ・メンズエステ",
+      "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+      "coverage": "広島市37店表示",
+      "note": "媒体掲載件数は独自基準。別媒体の件数と合算せず、店舗単位で照合する"
     }
   ]
 }
