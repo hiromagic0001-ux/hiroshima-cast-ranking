@@ -194,7 +194,8 @@
         "note": "店舗詳細と直近の店舗ニュース掲載を確認。独立公式サイトは未確認。"
       },
       "verifiedAddress": "広島県広島市中区鶴見町7-8",
-      "verifiedHours": "10:00～翌2:00"
+      "verifiedHours": "10:00～翌2:00",
+      "contactReviewDone": true
     },
     {
       "name": "花魁 広島",
@@ -227,7 +228,8 @@
         "note": "店舗詳細で広島市内の住所エリア・営業時間・当日出勤表示を確認。番地・電話・独立公式サイトは未確認。"
       },
       "verifiedAddress": "広島県広島市中区宝町（フジグラン広島周辺）",
-      "verifiedHours": "10:00～翌3:00"
+      "verifiedHours": "10:00～翌3:00",
+      "contactReviewDone": true
     },
     {
       "name": "トリコ",
@@ -329,7 +331,8 @@
       },
       "verifiedAddress": "広島県広島市中区舟入幸町5-10 セブンプロート舟入幸町",
       "verifiedHours": "9:00～翌4:00",
-      "verifiedPhone": "070-5056-0272"
+      "verifiedPhone": "070-5056-0272",
+      "contactReviewDone": true
     },
     {
       "name": "ENEL",
@@ -407,7 +410,8 @@
       },
       "verifiedAddress": "広島県広島市中区（部屋住所は予約後案内）",
       "verifiedHours": "10:00～翌3:00",
-      "verifiedPhone": "070-1415-6065"
+      "verifiedPhone": "070-1415-6065",
+      "contactReviewDone": true
     },
     {
       "name": "ラヴィアンドスパ",
@@ -478,7 +482,8 @@
       },
       "verifiedAddress": "広島県広島市中区鶴見町周辺（マンション住所詳細未掲載）",
       "verifiedHours": "10:00～翌3:00",
-      "verifiedPhone": "090-6403-2215"
+      "verifiedPhone": "090-6403-2215",
+      "contactReviewDone": true
     },
     {
       "name": "シュシュ 緑井店",
@@ -561,9 +566,22 @@
         "checkedAt": "2026-11-14",
         "status": "listing-only-not-individually-confirmed",
         "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/",
           "https://menesu-select.com/hiroshima/hiroshima/"
         ],
-        "note": "広島市の一覧掲載は確認。ただし今回の検索では独立した公式サイト、現行の電話・住所・営業時間を裏付ける店舗詳細を特定できず。営業中確証なし。"
+        "note": "広島市の媒体一覧掲載は確認。個別店舗詳細、住所、電話、公式サイトは確証なし。",
+        "address": null,
+        "hours": null,
+        "phone": null
+      },
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party listing checked",
+        "note": "広島市の媒体一覧掲載は確認。個別店舗詳細、住所、電話、公式サイトは確証なし。",
+        "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ]
       }
     },
     {
@@ -779,7 +797,8 @@
       },
       "verifiedAddress": "広島県広島市中区昭和町（別ルーム掲載あり）",
       "verifiedPhone": "070-9126-1805",
-      "verifiedHours": "10:00～翌2:00"
+      "verifiedHours": "10:00～翌2:00",
+      "contactReviewDone": true
     },
     {
       "name": "ゆるりnon",
@@ -883,7 +902,8 @@
       },
       "verifiedAddress": "広島市中区・田中町/宝町北バス停周辺",
       "verifiedHours": "10:00～24:00（求人媒体掲載）",
-      "verifiedPhone": "070-8461-5262"
+      "verifiedPhone": "070-8461-5262",
+      "contactReviewDone": true
     },
     {
       "name": "Organic energy",
@@ -1011,7 +1031,23 @@
           }
         ],
         "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "LuLu"
+        "nameAlias": "LuLu",
+        "address": null,
+        "hours": null,
+        "phone": null,
+        "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ],
+        "note": "媒体掲載名は確認候補。検索で見つかる同名の他業種（Lulu等）は一致根拠に採用しない。住所・電話・公式HPは未確認。"
+      },
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party listing checked",
+        "note": "媒体掲載名は確認候補。検索で見つかる同名の他業種（Lulu等）は一致根拠に採用しない。住所・電話・公式HPは未確認。",
+        "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ]
       }
     },
     {
@@ -1024,6 +1060,18 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "メンエスじゃぱん 店舗詳細",
+          "url": "https://mens-est.jp/shop/hrsmverdy/"
+        },
+        {
+          "label": "エステ魂 最新ニュース・店舗情報",
+          "url": "https://estama.jp/shop/28719/newslist/"
+        },
+        {
+          "label": "メンズエステマップ 店舗詳細",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4e5dae74be"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -1033,16 +1081,30 @@
         "sources": [
           "https://estama.jp/shop/28719/newslist/",
           "https://mens-est.jp/shop/hrsmverdy/",
-          "https://mens-est.jp/shop/hrsmverdy/girllist/"
+          "https://mens-est.jp/shop/hrsmverdy/girllist/",
+          "https://mens-est.jp/shop/hrsmverdy/",
+          "https://estama.jp/shop/28719/newslist/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4e5dae74be"
         ],
-        "address": "広島県広島市中区袋町／小網町（複数ルーム案内）",
-        "hours": "6:00〜LAST（媒体表記は6:00〜30:00）",
+        "address": "広島県広島市中区袋町／小網町（複数ルーム・予約後詳細案内）",
+        "hours": "6:00～LAST",
         "phone": "080-9893-9031",
-        "note": "2026-11-13付の最新ニュース、当日予約案内、在籍一覧を確認。複数エリアの部屋案内があるため住所は町名レベル。"
+        "note": "複数媒体で店名、電話、広島市中区の複数ルーム、営業時間の現行掲載を照合。独立公式ドメイン verdy-esthe.com は媒体上に記載があるが直接取得できず、公式リンクは未設定。"
       },
-      "verifiedAddress": "広島県広島市中区袋町／小網町（複数ルーム案内）",
-      "verifiedHours": "6:00〜LAST（媒体表記は6:00〜30:00）",
-      "verifiedPhone": "080-9893-9031"
+      "verifiedAddress": "広島県広島市中区袋町／小網町（複数ルーム・予約後詳細案内）",
+      "verifiedHours": "6:00～LAST",
+      "verifiedPhone": "080-9893-9031",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party listing checked",
+        "note": "複数媒体で店名、電話、広島市中区の複数ルーム、営業時間の現行掲載を照合。独立公式ドメイン verdy-esthe.com は媒体上に記載があるが直接取得できず、公式リンクは未設定。",
+        "sources": [
+          "https://mens-est.jp/shop/hrsmverdy/",
+          "https://estama.jp/shop/28719/newslist/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4e5dae74be"
+        ]
+      }
     },
     {
       "name": "マシェリ",
@@ -1054,6 +1116,10 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "MEN'S ES 店舗詳細",
+          "url": "https://mens-es.men/shop/24376"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -1086,7 +1152,25 @@
           }
         ],
         "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "Macheri"
+        "nameAlias": "Macheri",
+        "address": "広島県広島市中区八丁堀",
+        "hours": "10:00～翌3:00",
+        "phone": null,
+        "sources": [
+          "https://mens-es.men/shop/24376"
+        ],
+        "note": "MEN'S ESの店舗詳細で広島市中区八丁堀、営業時間、在籍者情報を確認。電話番号と独立公式HPは未確認。"
+      },
+      "verifiedAddress": "広島県広島市中区八丁堀",
+      "verifiedHours": "10:00～翌3:00",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party listing checked",
+        "note": "MEN'S ESの店舗詳細で広島市中区八丁堀、営業時間、在籍者情報を確認。電話番号と独立公式HPは未確認。",
+        "sources": [
+          "https://mens-es.men/shop/24376"
+        ]
       }
     },
     {
@@ -1099,6 +1183,10 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "メンエスmall 店舗詳細",
+          "url": "https://menesmall.jp/shop/agate-take"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -1106,16 +1194,26 @@
         "checkedAt": "2026-11-14",
         "status": "third-party-shop-detail-confirmed-current-status-not-independently-proven",
         "sources": [
-          "https://menesmall.jp/shop/agate-take/system"
+          "https://menesmall.jp/shop/agate-take/system",
+          "https://menesmall.jp/shop/agate-take"
         ],
         "address": "広島県広島市中区八丁堀",
-        "hours": "09:00〜翌03:00",
+        "hours": "9:00～翌3:00",
         "phone": "080-7308-3572",
-        "note": "メンエスmall店舗詳細で店名・業種・住所・営業時間・電話番号を確認。独立公式サイトと直近の営業実績は未確認。"
+        "note": "メンエスmall店舗詳細で名称、住所エリア、電話、営業時間を確認。掲載更新は2024-07-11のため現況は要再確認。独立公式HPは未確認。"
       },
       "verifiedAddress": "広島県広島市中区八丁堀",
-      "verifiedHours": "09:00〜翌03:00",
-      "verifiedPhone": "080-7308-3572"
+      "verifiedHours": "9:00～翌3:00",
+      "verifiedPhone": "080-7308-3572",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party listing checked",
+        "note": "メンエスmall店舗詳細で名称、住所エリア、電話、営業時間を確認。掲載更新は2024-07-11のため現況は要再確認。独立公式HPは未確認。",
+        "sources": [
+          "https://menesmall.jp/shop/agate-take"
+        ]
+      }
     },
     {
       "name": "salon.do.ni-na",
@@ -12781,6 +12879,11 @@
     "contactAndAddressReview": {
       "checkedAt": "2026-11-14",
       "updatedStores": [
+        "スパバーニーズ",
+        "ルル",
+        "ヴェルディ",
+        "マシェリ",
+        "アガットテイク",
         "王様のきもち",
         "花魁 広島",
         "おとなすぱっ！",
@@ -12789,7 +12892,7 @@
         "a doll",
         "広島人妻さん"
       ],
-      "notes": "公式HP未確認の店舗について、第三者媒体の店舗詳細・掲載連絡先・住所エリア・営業時間を補強。求人応募窓口は予約番号と区別。第三者媒体URLは公式HP欄へ登録せず、出典リンクとして表示。"
+      "notes": "第三者媒体の店舗詳細・住所・電話・営業時間を照合。独立公式サイトと媒体掲載ページを区別し、未確認の公式URLは登録していない。"
     }
   }
 }
