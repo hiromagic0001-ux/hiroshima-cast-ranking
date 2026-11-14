@@ -1193,7 +1193,20 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
-      }
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "current-cast-listing-and-directory-details-confirmed",
+        "sources": [
+          "https://www.salonowa.jp/area/hiroshima/therapists?today=1",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
+        ],
+        "address": "広島県広島市中区・比治山橋駅徒歩3分圏内",
+        "hours": "11:00〜LAST",
+        "note": "当日出勤表示と広島市中区の店舗掲載を確認。電話・独立公式サイトは未確認。"
+      },
+      "verifiedAddress": "広島県広島市中区・比治山橋駅徒歩3分圏内",
+      "verifiedHours": "11:00〜LAST"
     },
     {
       "name": "ふわもこSPA",
@@ -1390,7 +1403,23 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
-      }
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "current-third-party-listing-and-shop-details-confirmed",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+          "https://s-palette.com/hiroshima/hiroshima",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
+        ],
+        "address": "広島県広島市中区大手町5丁目",
+        "hours": "11:00〜翌5:00",
+        "phone": "090-1356-6132",
+        "note": "公式サイトURLは既存登録を維持。複数媒体の住所・電話・営業時間を照合。最新ランキングにも掲載あり。"
+      },
+      "verifiedAddress": "広島県広島市中区大手町5丁目",
+      "verifiedHours": "11:00〜翌5:00",
+      "verifiedPhone": "090-1356-6132"
     },
     {
       "name": "カトレア",
@@ -1841,7 +1870,20 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
-      }
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "current-cast-listing-and-shop-details-confirmed",
+        "sources": [
+          "https://www.salonowa.jp/area/hiroshima/therapists?today=1",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
+        ],
+        "address": "広島県広島市中区（市役所前・中電前周辺）",
+        "hours": "10:00〜翌3:00",
+        "note": "当日出勤表示と店舗詳細を確認。電話番号・番地住所・独立公式サイトは今回未確認。"
+      },
+      "verifiedAddress": "広島県広島市中区（市役所前・中電前周辺）",
+      "verifiedHours": "10:00〜翌3:00"
     },
     {
       "name": "大人の隠れ家",
@@ -2130,7 +2172,20 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
-      }
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "current-cast-listing-and-shop-details-confirmed",
+        "sources": [
+          "https://www.salonowa.jp/area/hiroshima/therapists?today=1",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
+        ],
+        "address": "広島県広島市中区・平和大通り／舟入町駅周辺",
+        "hours": "10:30〜翌2:00",
+        "note": "当日出勤表示と店舗詳細を確認。重複グループrefreshの統合は保留。"
+      },
+      "verifiedAddress": "広島県広島市中区・平和大通り／舟入町駅周辺",
+      "verifiedHours": "10:30〜翌2:00"
     },
     {
       "name": "既婚者 極液ラボ",
@@ -2184,7 +2239,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
-      }
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "current-third-party-listing-and-shop-details-confirmed",
+        "sources": [
+          "https://s-palette.com/hiroshima/hiroshima",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
+        ],
+        "address": "広島県広島市中区三川町6-7",
+        "hours": "11:00〜LAST（受付10:00〜翌2:00）",
+        "phone": "080-2517-0007",
+        "note": "独立公式サイトURLは既存登録を維持。複数媒体で住所・電話・営業時間を照合。重複グループarinoaの統合は保留。"
+      },
+      "verifiedAddress": "広島県広島市中区三川町6-7",
+      "verifiedHours": "11:00〜LAST（受付10:00〜翌2:00）",
+      "verifiedPhone": "080-2517-0007"
     },
     {
       "name": "TONARI",
@@ -2419,7 +2489,20 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
-      }
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "current-directory-shop-details-confirmed",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34",
+          "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+        ],
+        "address": "広島県広島市中区・フジグラン広島徒歩2分圏内",
+        "hours": "10:00〜翌1:00",
+        "note": "店舗詳細と当日出勤表示を確認。電話・独立公式サイトは未確認。"
+      },
+      "verifiedAddress": "広島県広島市中区・フジグラン広島徒歩2分圏内",
+      "verifiedHours": "10:00〜翌1:00"
     },
     {
       "name": "ラドンナ",
@@ -2544,7 +2627,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
-      }
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "official-site-and-current-cast-listing-confirmed",
+        "sources": [
+          "https://hiroshima-queen.com/",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ],
+        "hours": "10:00〜LAST",
+        "phone": "090-3517-1314",
+        "note": "独立公式サイトにセラピスト一覧・出勤一覧・営業時間・電話を確認。現行ランキングにも掲載。"
+      },
+      "verifiedHours": "10:00〜LAST",
+      "verifiedPhone": "090-3517-1314",
+      "officialUrl": "https://hiroshima-queen.com/",
+      "officialUrlStatus": "独立した店舗公式サイトを確認"
     },
     {
       "name": "ヘブン",
@@ -4810,7 +4908,20 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
-      }
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "current-directory-shop-details-confirmed",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ],
+        "address": "広島県広島市中区・稲荷町駅周辺",
+        "hours": "10:00〜LAST",
+        "note": "複数媒体で広島市中区の店舗詳細を照合。電話・独立公式サイトは未確認。"
+      },
+      "verifiedAddress": "広島県広島市中区・稲荷町駅周辺",
+      "verifiedHours": "10:00〜LAST"
     },
     {
       "name": "LILY",
@@ -6401,7 +6512,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
-      }
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "current-business-listing-confirmed",
+        "sources": [
+          "https://s-palette.com/hiroshima/hiroshima",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ],
+        "address": "広島県広島市中区富士見町7-11 TOSOKU 301",
+        "hours": "10:00〜翌2:00",
+        "phone": "090-7373-9222",
+        "note": "店舗詳細と予約制ルーム案内を確認。独立公式サイトURLは既存登録を維持。"
+      },
+      "verifiedAddress": "広島県広島市中区富士見町7-11 TOSOKU 301",
+      "verifiedHours": "10:00〜翌2:00",
+      "verifiedPhone": "090-7373-9222"
     },
     {
       "name": "お手頃価格な おもてなし",
@@ -7455,7 +7581,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件中44件に個別確認記録あり。残り234件は未完了。掲載媒体のみの確認や営業状況未確証も含むため、全件が営業中確証済みという意味ではない。",
+    "individualVerificationNote": "278件中53件に個別確認記録あり。残り225件は未完了。確認記録には公式サイト確認、当日出勤掲載、第三者店舗詳細の照合を含む。媒体掲載だけの店舗は営業中確証と区別。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -7477,7 +7603,7 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 44,
+    "individualVerifiedRecordCount": 53,
     "individualVerificationBatch3": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -7591,6 +7717,21 @@
         }
       ],
       "policy": "一覧との一括名称照合であり、営業中・市内住所・独立公式サイト・重複解消を個別確証したものではない。抜粋にない名称も不存在とは判定しない。"
+    },
+    "individualVerificationBatch11": {
+      "checkedAt": "2026-11-14",
+      "updated": [
+        "7 Dream Este",
+        "Arinoa",
+        "La Paix-ラペ-",
+        "B and B",
+        "QUEEN",
+        "Angel Spa",
+        "Grace Spa",
+        "Refresh",
+        "Roa～Grand～"
+      ],
+      "notes": "名称一致候補から9件を優先して公式サイト/当日出勤/店舗詳細を確認。重複グループは自動統合せず保留。"
     }
   }
 }
