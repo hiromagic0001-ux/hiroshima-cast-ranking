@@ -1118,6 +1118,17 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "現行の広島市メンズエステ一覧に掲載を確認。独立公式サイト・住所・電話・営業時間は今回の取得情報だけでは未確証。",
+        "evidence": [
+          {
+            "source": "広島市メンズエステ情報ランキング",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載確認・営業詳細未確証"
       }
     },
     {
@@ -1376,6 +1387,25 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市内一覧に掲載。サロノワ本日出勤一覧に同店セラピストの本日出勤表示を確認。公式サイトURLは既存登録を維持。住所・電話は今回未確認。",
+        "evidence": [
+          {
+            "source": "サロノワ本日出勤一覧",
+            "url": "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          },
+          {
+            "source": "サロノワ広島市一覧",
+            "url": "https://www.salonowa.jp/area/hiroshima/hiroshima"
+          },
+          {
+            "source": "公式サイト（既存登録）",
+            "url": "https://aromafreyja.com/"
+          }
+        ],
+        "status": "本日出勤掲載確認・詳細項目一部未確認"
       }
     },
     {
@@ -1480,6 +1510,21 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "サロノワ広島市一覧で新規オープン告知を確認し、本日出勤一覧に同店セラピストの出勤表示あり。住所・電話・独立公式URLは今回未確認。",
+        "evidence": [
+          {
+            "source": "サロノワ広島市一覧",
+            "url": "https://www.salonowa.jp/area/hiroshima/hiroshima"
+          },
+          {
+            "source": "サロノワ本日出勤一覧",
+            "url": "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          }
+        ],
+        "status": "新規掲載・本日出勤掲載確認"
       }
     },
     {
@@ -1616,6 +1661,21 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "サロノワ本日出勤一覧に同店セラピストの本日出勤表示を確認。独立公式サイト・住所・電話は今回未確認。",
+        "evidence": [
+          {
+            "source": "サロノワ本日出勤一覧",
+            "url": "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          },
+          {
+            "source": "広島市メンズエステ情報ランキング",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "本日出勤掲載確認・詳細項目未確認"
       }
     },
     {
@@ -1766,6 +1826,21 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市メンズエステ情報ランキングおよびサロノワ広島市一覧に掲載を確認。現行の出勤掲載・独立公式サイト・所在地の個別確証は未取得。",
+        "evidence": [
+          {
+            "source": "広島市メンズエステ情報ランキング",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          },
+          {
+            "source": "サロノワ広島市一覧",
+            "url": "https://www.salonowa.jp/area/hiroshima/hiroshima"
+          }
+        ],
+        "status": "複数媒体掲載確認・営業詳細未確証"
       }
     },
     {
@@ -2118,6 +2193,17 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市メンズエステ情報ランキングの現行一覧に掲載を確認。公式サイト・所在地・電話・営業時間・本日出勤は今回の取得情報だけでは未確証。",
+        "evidence": [
+          {
+            "source": "広島市メンズエステ情報ランキング",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載確認・営業詳細未確証"
       }
     },
     {
@@ -7581,7 +7667,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件中53件に個別確認記録あり。残り225件は未完了。確認記録には公式サイト確認、当日出勤掲載、第三者店舗詳細の照合を含む。媒体掲載だけの店舗は営業中確証と区別。",
+    "individualVerificationNote": "278件中59件に個別確認記録あり。残り219件は未完了。確認記録は公式サイト確認、当日出勤掲載、第三者媒体の個別店舗掲載など根拠の種類を区別し、媒体掲載だけの店舗を営業中確証として扱わない。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -7603,7 +7689,7 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 53,
+    "individualVerifiedRecordCount": 59,
     "individualVerificationBatch3": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -7732,6 +7818,18 @@
         "Roa～Grand～"
       ],
       "notes": "名称一致候補から9件を優先して公式サイト/当日出勤/店舗詳細を確認。重複グループは自動統合せず保留。"
+    },
+    "individualVerificationBatch12": {
+      "checkedAt": "2026-11-14",
+      "updated": [
+        "Travis Queen",
+        "Vivienne",
+        "Aroma Salon Freyja",
+        "Luxurysalon ROMA",
+        "Seraphi Spa",
+        "You＆MeSPA～ユミスパ～"
+      ],
+      "notes": "名称一致候補から6件を追加照合。サロノワの本日出勤表示は出勤掲載確認として記録し、住所・電話・営業時間・独立公式サイトが未確認の項目は未確証のまま保持。"
     }
   }
 }
