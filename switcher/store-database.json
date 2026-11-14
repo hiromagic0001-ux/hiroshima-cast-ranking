@@ -980,7 +980,23 @@
       ],
       "officialUrl": "https://salon-do-ni-na.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "official-site-and-current-cast-schedule-confirmed",
+        "sources": [
+          "https://salon-do-ni-na.com/",
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/salondo",
+          "https://estama.jp/shop/28377/"
+        ],
+        "address": "広島県広島市中区富士見町13-17、鶴見町4-10、富士見町4-29、竹屋町8-14、宝町（複数ルーム）",
+        "hours": "10:00〜翌3:00",
+        "phone": "070-2368-2727",
+        "note": "独立公式サイトに最新ニュース・出勤一覧あり。複数の店舗案内で住所・電話・営業時間を照合。現行のキャスト出勤表示を確認。"
+      },
+      "verifiedAddress": "広島県広島市中区富士見町13-17、鶴見町4-10、富士見町4-29、竹屋町8-14、宝町（複数ルーム）",
+      "verifiedHours": "10:00〜翌3:00",
+      "verifiedPhone": "070-2368-2727"
     },
     {
       "name": "ディオール",
@@ -1094,7 +1110,23 @@
       ],
       "officialUrl": "https://fuwamoco-spa.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "official-site-and-current-cast-listing-confirmed",
+        "sources": [
+          "https://fuwamoko-spa.com/access/",
+          "https://fuwamoko-spa.com/reserve/",
+          "https://mens-es.men/shop/43874"
+        ],
+        "address": "広島県広島市中区富士見町4-30",
+        "hours": "11:00〜翌5:00（公式FAQ）",
+        "phone": "090-9307-1323",
+        "note": "独立公式サイトに住所・電話・営業時間・予約フォームを確認。第三者媒体にも本日出勤情報と在籍一覧の掲載あり。"
+      },
+      "verifiedAddress": "広島県広島市中区富士見町4-30",
+      "verifiedHours": "11:00〜翌5:00（公式FAQ）",
+      "verifiedPhone": "090-9307-1323"
     },
     {
       "name": "Alive",
@@ -1143,7 +1175,22 @@
         "https://yurikagohiroshima.com/"
       ],
       "officialUrlVerifiedAt": "2026-11-14",
-      "officialUrlVerificationNote": "公式サイトに広島市内8エリア、営業時間10:00〜翌2:00、電話番号を掲載。予約ルームの詳細住所は予約時案内。旧ドメインにも店舗情報・直近の出勤情報を確認。"
+      "officialUrlVerificationNote": "公式サイトに広島市内8エリア、営業時間10:00〜翌2:00、電話番号を掲載。予約ルームの詳細住所は予約時案内。旧ドメインにも店舗情報・直近の出勤情報を確認。",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "official-site-and-current-listing-confirmed",
+        "sources": [
+          "https://yurikago-hiroshima.jp/",
+          "https://ore-aroma.jp/shop/S-yurikago-hiroshima/"
+        ],
+        "address": "広島県広島市内8エリア（部屋住所は予約時案内）",
+        "hours": "10:00〜翌2:00",
+        "phone": "090-8517-0792",
+        "note": "独立公式サイトに本日の出勤・空き状況導線、8エリア案内、営業時間、電話を確認。第三者掲載でも当日出勤・最新ニュースあり。"
+      },
+      "verifiedAddress": "広島県広島市内8エリア（部屋住所は予約時案内）",
+      "verifiedHours": "10:00〜翌2:00",
+      "verifiedPhone": "090-8517-0792"
     },
     {
       "name": "おもてなし 広島",
@@ -4834,7 +4881,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件中41件に個別確認記録あり。残り237件は未完了。個別確認記録には媒体掲載のみの照合や営業状況未確証の記録も含み、全件が営業中確証済みという意味ではない。",
+    "individualVerificationNote": "278件中44件に個別確認記録あり。残り234件は未完了。掲載媒体のみの確認や営業状況未確証も含むため、全件が営業中確証済みという意味ではない。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4856,7 +4903,7 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 41,
+    "individualVerifiedRecordCount": 44,
     "individualVerificationBatch3": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4931,6 +4978,15 @@
         "広島人妻さん"
       ],
       "notes": "VERDYは2026-11-13の更新と当日予約情報を確認。Agate takeはメンエスmallの店舗詳細を確認。広島人妻さんは一覧掲載のみ確認。"
+    },
+    "individualVerificationBatch10": {
+      "checkedAt": "2026-11-14",
+      "updated": [
+        "salon.do.ni-na",
+        "ふわもこSPA",
+        "広島メンズエステ ゆりかご"
+      ],
+      "notes": "salon.do.ni-na、ふわもこSPA、ゆりかご広島は独立公式サイトと店舗情報を照合。現行の出勤・予約導線も確認。"
     }
   }
 }
