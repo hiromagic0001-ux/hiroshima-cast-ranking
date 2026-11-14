@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-11-14",
   "scope": "広島市内候補。広島市内の全店舗確認済みではない。",
-  "totalCandidates": 151,
+  "totalCandidates": 191,
   "records": [
     {
       "name": "ナチュレ 広島",
@@ -1978,6 +1978,526 @@
           "url": "https://www.casa-b.jp"
         }
       ]
+    },
+    {
+      "name": "秘密楽園",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "やさしい部屋",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "東京式SPA研究所「B」",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "アロマドール",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "絆～きずな～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "ミセス48～魔性のオイル編VOL.1～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "甘い恋人",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "ときめきSPA",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "蛍（ホタル）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "慕色（ぼしょく）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "癒しの女神",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "NAGOMI～和み～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "MPS — MEN'S PRIVATE SALON",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Night VERDY～ヴェルディ～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "高級メンズエステ IVY SPA広島",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "広島メンズエステクイーン",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "楽々",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "微妙な関係",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "会いたい",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Private Spa MINTIA",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Access Hiroshima",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "E～感じ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "エムシェルジュ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "DEAR",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "BUZZ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "小魔女",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "秘蜜エステ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "アロマ姫",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "Roa～Grand～",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "LILY",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "リバーズエステ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "コロン",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "ピンクパンサー",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "隠れ家",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "ラベンダー",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "ピーチスパ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "いちい",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "アイビースパ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "りあんすぱ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
+    },
+    {
+      "name": "天使のエプロン",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステ情報ランキング・広島市掲載",
+          "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        }
+      ]
     }
   ],
   "sources": [
@@ -1985,7 +2505,7 @@
       "id": "cityheaven",
       "name": "CityHeaven比較ページ",
       "url": "https://cvnk.jp/hiroshima/hiroshima-city",
-      "coverage": "広島市・業態別66店舗と表示",
+      "coverage": "広島市5業態・合計66店舗表示。業種別表示は30/16/7/15/1で合計69となり、重複または集計定義差の照合が必要",
       "note": "媒体掲載数。全店舗の営業確認済み数ではない"
     },
     {
@@ -2020,7 +2540,7 @@
       "id": "menesu-select",
       "name": "メンズエステセレクト",
       "url": "https://menesu-select.com/hiroshima/hiroshima/",
-      "coverage": "既存メンズエステ候補リスト",
+      "coverage": "広島市メンズエステ125店表示（2026年10月更新ページ）",
       "note": "初期候補。住所・重複・営業状況未確定"
     },
     {
@@ -2034,7 +2554,7 @@
       "id": "mensesthe-rank",
       "name": "メンズエステ情報ランキング",
       "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
-      "coverage": "メンズエステ掲載元",
+      "coverage": "広島市メンズエステ184店舗表示（2026年11月検索時点）",
       "note": "アクセス順位は他媒体指標と混合しない"
     }
   ]
