@@ -458,13 +458,13 @@ const server = http.createServer(async (req, res) => {
         const html = await response.text();
         if (html.length < 5000 || html.length > 5000000) throw new Error("unexpected_html_size");
         const $ = cheerio.load(html);
-        const title = $("title").first().text().replace(/\\s+/g, " ").trim();
-        const bodyText = $("body").text().replace(/\\s+/g, " ").trim();
+        const title = $("title").first().text().replace(/\s+/g, " ").trim();
+        const bodyText = $("body").text().replace(/\s+/g, " ").trim();
         const links = [];
         $("a[href]").each((_, el) => {
           const a = $(el);
           const href = a.attr("href") || "";
-          const text = a.text().replace(/\\s+/g, " ").trim();
+          const text = a.text().replace(/\s+/g, " ").trim();
           if (!href || !text) return;
           let absolute;
           try { absolute = new URL(href, source.url).href; } catch { return; }
@@ -472,10 +472,10 @@ const server = http.createServer(async (req, res) => {
           let node = a;
           for (let depth = 0; depth < 6 && node.length; depth++, node = node.parent()) {
             ancestors.push({ tag: node[0]?.tagName || "", className: String(node.attr("class") || "").slice(0, 120),
-              text: node.text().replace(/\\s+/g, " ").trim().slice(0, 260) });
+              text: node.text().replace(/\s+/g, " ").trim().slice(0, 260) });
           }
-          if ((source.id === "bestcastdata" && /cityheaven\\.net/.test(absolute)) ||
-              (source.id === "fuzoku_repeat" && /\\/hiroshimacoco\\/girl\\//.test(absolute))) {
+          if ((source.id === "bestcastdata" && /cityheaven\.net/.test(absolute)) ||
+              (source.id === "fuzoku_repeat" && /\/hiroshimacoco\/girl\//.test(absolute))) {
             links.push({ text, href: absolute, ancestors });
           }
         });
