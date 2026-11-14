@@ -6,16 +6,16 @@
 <header><h1>広島市メンズエステ 独自店舗検索</h1><p>外部の一覧ページへ飛ばすだけでなく、広島キャスト内で店舗名を検索できる独自ページです。</p></header>
 <main><a class="back" href="/stores.html#mens">← 店舗ホームページ一覧へ戻る</a>
 <section class="summary">公開されている複数の店舗掲載情報を照合するための初期データです。現時点では、広島市の掲載店として読み取れた店舗名を独自の検索画面に整理しています。閉店・重複・市外扱い・出張専門の判定は未完了のため、「全店舗の営業確認済み」とは表示しません。</section>
-<div class="stats"><div class="stat"><b id="shown">94</b>検索対象の店舗名</div><div class="stat"><b>96店</b>掲載元の表示件数</div><div class="stat"><b>186店</b>別媒体の表示件数</div></div>
+<div class="stats"><div class="stat"><b id="shown">96</b>検索対象の店舗名</div><div class="stat"><b>96店</b>掲載元の表示件数</div><div class="stat"><b>186店</b>別媒体の表示件数</div></div>
 <button id="manualUpdate" class="updateBtn" type="button">掲載元データを手動更新</button>
 <div id="updateStatus" class="tools" aria-live="polite">更新ボタンを押すと、掲載元の店舗数と掲載状況を確認します。</div>
 <input id="q" class="search" type="search" placeholder="店舗名で検索（例：CREA、ゆりかご）" autocomplete="off">
-<div class="tools"><span id="count">94件を表示</span><span>店名順・独自一覧</span></div>
+<div class="tools"><span id="count">96件を表示</span><span>店名順・独自一覧</span></div>
 <div id="grid" class="grid"></div><div id="empty" class="empty">該当する店舗がありません。</div>
-<p class="foot">データ確認：2026年11月14日。初期店舗名リストはメンエスセレクトの広島市ページで公開表示された店名を基に整理。掲載元は96店と表示していますが、ページ本文から独立した店名として抽出できたのは94件です。別媒体では186店・65店・107店など異なる件数が表示されており、重複・営業状況・対象範囲の違いがあるため単純合算していません。<br><a href="https://menesu-select.com/hiroshima/hiroshima/" target="_blank" rel="noopener">掲載件数・元情報を確認</a> ／ <a href="https://mens-es.men/area/3401" target="_blank" rel="noopener">別媒体の掲載件数を確認</a></p>
+<p class="foot">データ確認：2026年11月14日。初期店舗名リストはメンエスセレクトの広島市ページで公開表示された店名を基に整理。カサブランカグループ公式掲載の性感エステ2店も追加。掲載元は96店と表示していますが、ページ本文から独立した店名として抽出できたのは94件です。別媒体では186店・65店・107店など異なる件数が表示されており、重複・営業状況・対象範囲の違いがあるため単純合算していません。<br><a href="https://menesu-select.com/hiroshima/hiroshima/" target="_blank" rel="noopener">掲載件数・元情報を確認</a> ／ <a href="https://mens-es.men/area/3401" target="_blank" rel="noopener">別媒体の掲載件数を確認</a></p>
 </main>
 <script>
-let names=["ナチュレ 広島","ビューティーアンドビースト","シュシュ コイン通り店","ジェンティル","シークレット","王様のきもち","花魁 広島","トリコ","Dior 五日市店","おとなすぱっ！","ENEL","マダムヘブン","ラヴィアンドスパ","みつばち","シュシュ 緑井店","リフレMoEST","スパバーニーズ","広島エステサロン お好み村","小悪魔SPA","REAL","Mrs.APHRODITE THALASSA","TISSE","a doll","ゆるりnon","BODY SPA 広島","広島人妻さん","Organic energy","Mrs.ni-na","カロン","ルル","ヴェルディ","マシェリ","アガットテイク","salon.do.ni-na","ディオール","フリーダム","モアスパ","Travis Queen","人妻スキャンダル","スタンダード","B and B","ふわもこSPA","Alive","Suu","広島メンズエステ ゆりかご","おもてなし 広島","Aroma Salon Freyja","7 Dream Este","カトレア","Luxurysalon ROMA","パート妻のプライベートサロン","グレイススパ","Palma～女神の手～","キング","Seraphi Spa","クラブいち華","フェミニン","ザ・熟女 豊満桃色倶楽部","Tonトロ五日市店","ミセスビマジョレッド","Vivienne","ディオール観音店","スパドルチェ 広島","アドール","La Paix-ラペ-","大人の隠れ家","RESORT","シャルディア","ミセスプリンセスドール","ましゅまろ","ダンディ＋","シンク","ルミエラ","You＆MeSPA～ユミスパ～","アロマミア","Refresh","既婚者 極液ラボ","Arinoa","TONARI","ソワン 広島","Mrs.ENEL","セレスト","CREA","セラフィスパ","AROMA INNOCENT","神のエステ","Angel Spa","ラドンナ","Lumiella","ハチミツ俱楽部","ヨアソビ広島","QUEEN","ヘブン","ばななすぱっ！"];
+let names=["ナチュレ 広島","ビューティーアンドビースト","シュシュ コイン通り店","ジェンティル","シークレット","王様のきもち","花魁 広島","トリコ","Dior 五日市店","おとなすぱっ！","ENEL","マダムヘブン","ラヴィアンドスパ","みつばち","シュシュ 緑井店","リフレMoEST","スパバーニーズ","広島エステサロン お好み村","小悪魔SPA","REAL","Mrs.APHRODITE THALASSA","TISSE","a doll","ゆるりnon","BODY SPA 広島","広島人妻さん","Organic energy","Mrs.ni-na","カロン","ルル","ヴェルディ","マシェリ","アガットテイク","salon.do.ni-na","ディオール","フリーダム","モアスパ","Travis Queen","人妻スキャンダル","スタンダード","B and B","ふわもこSPA","Alive","Suu","広島メンズエステ ゆりかご","おもてなし 広島","Aroma Salon Freyja","7 Dream Este","カトレア","Luxurysalon ROMA","パート妻のプライベートサロン","グレイススパ","Palma～女神の手～","キング","Seraphi Spa","クラブいち華","フェミニン","ザ・熟女 豊満桃色倶楽部","Tonトロ五日市店","ミセスビマジョレッド","Vivienne","ディオール観音店","スパドルチェ 広島","アドール","La Paix-ラペ-","大人の隠れ家","RESORT","シャルディア","ミセスプリンセスドール","ましゅまろ","ダンディ＋","シンク","ルミエラ","You＆MeSPA～ユミスパ～","アロマミア","Refresh","既婚者 極液ラボ","Arinoa","TONARI","ソワン 広島","Mrs.ENEL","セレスト","CREA","セラフィスパ","AROMA INNOCENT","神のエステ","Angel Spa","ラドンナ","Lumiella","ハチミツ俱楽部","ヨアソビ広島","QUEEN","ヘブン","ばななすぱっ！","天国にいちばん近い島 広島店","五十路エステ ハイブリッド 広島店"];
 const updateButton=document.getElementById("manualUpdate"),updateStatus=document.getElementById("updateStatus");
 const grid=document.getElementById("grid"),q=document.getElementById("q"),count=document.getElementById("count"),empty=document.getElementById("empty"),shown=document.getElementById("shown");
 function render(){const key=q.value.trim().toLocaleLowerCase();const rows=names.filter(n=>n.toLocaleLowerCase().includes(key));grid.innerHTML=rows.map(n=>'<article class="item"><b>'+n.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))+'</b><small>広島市掲載情報から確認・営業状況未確認</small></article>').join("");count.textContent=rows.length+"件を表示";shown.textContent=rows.length;empty.style.display=rows.length?"none":"block"}
@@ -52,7 +52,7 @@ async function refreshDirectory(){
         if(link){card.style.cursor="pointer";card.title="掲載元の店舗情報を確認";card.addEventListener("click",()=>window.open(link,"_blank","noopener"));}
       }
     });
-  }catch(error){updateStatus.textContent="独自取得APIの応答を確認できません。初期94件を表示しています。時間をおいて再読み込みしてください。";}
+  }catch(error){updateStatus.textContent="独自取得APIの応答を確認できません。初期96件を表示しています。時間をおいて再読み込みしてください。";}
   finally{updateButton.disabled=false;updateButton.textContent="掲載元データを手動更新";}
 }
 updateButton.addEventListener("click",refreshDirectory);
