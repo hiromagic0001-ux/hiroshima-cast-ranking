@@ -670,17 +670,22 @@
       "name": "広島メンズエステ ゆりかご",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "公式サイトで広島市内8エリアを明記・個別ルーム住所は予約時案内",
+      "status": "公式サイト・営業情報確認済み（所在地詳細は予約時案内）",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "officialUrl": "https://yurikagohiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "officialUrl": "https://yurikago-hiroshima.jp/",
+      "officialUrlStatus": "現行公式サイトを確認（旧ドメインも店舗情報掲載あり）",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "previousOfficialUrls": [
+        "https://yurikagohiroshima.com/"
+      ],
+      "officialUrlVerifiedAt": "2026-11-14",
+      "officialUrlVerificationNote": "公式サイトに広島市内8エリア、営業時間10:00〜翌2:00、電話番号を掲載。予約ルームの詳細住所は予約時案内。旧ドメインにも店舗情報・直近の出勤情報を確認。"
     },
     {
       "name": "おもてなし 広島",
@@ -4215,6 +4220,8 @@
     "officialUrlRecordCount": 36,
     "addressConfirmedCount": 5,
     "duplicateReviewRecordCount": 15,
-    "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。"
+    "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
+    "individualVerificationUpdatedAt": "2026-11-14",
+    "individualVerificationNote": "公式サイトの現行性・所在地表示を個別確認し、ゆりかご広島の公式URLを現行ドメインへ更新。"
   }
 }
