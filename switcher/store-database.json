@@ -892,7 +892,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ヴェルディ",
@@ -936,7 +947,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "アガットテイク",
@@ -1010,7 +1032,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "フリーダム",
@@ -1024,7 +1057,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "モアスパ",
@@ -1038,7 +1082,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Travis Queen",
@@ -1052,7 +1107,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "人妻スキャンダル",
@@ -1066,7 +1132,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "スタンダード",
@@ -1080,7 +1157,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "B and B",
@@ -1094,7 +1182,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "ふわもこSPA",
@@ -1140,7 +1239,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Suu",
@@ -1154,7 +1264,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "広島メンズエステ ゆりかご",
@@ -1204,7 +1325,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Aroma Salon Freyja",
@@ -1220,7 +1352,18 @@
       ],
       "officialUrl": "https://aromafreyja.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "7 Dream Este",
@@ -1236,7 +1379,18 @@
       ],
       "officialUrl": "https://7dream-este.net/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "カトレア",
@@ -1261,7 +1415,18 @@
         "Men’s spa Cattleya",
         "メンズスパカトレア"
       ],
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Luxurysalon ROMA",
@@ -1275,7 +1440,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "パート妻のプライベートサロン",
@@ -1289,7 +1465,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "グレイススパ",
@@ -1364,7 +1551,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Seraphi Spa",
@@ -1378,7 +1576,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "クラブいち華",
@@ -1392,7 +1601,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "フェミニン",
@@ -1406,7 +1626,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ザ・熟女 豊満桃色倶楽部",
@@ -1420,7 +1651,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Tonトロ五日市店",
@@ -1434,7 +1676,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ミセスビマジョレッド",
@@ -1448,7 +1701,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Vivienne",
@@ -1462,7 +1726,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ディオール観音店",
@@ -1505,7 +1780,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "アドール",
@@ -1519,7 +1805,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "La Paix-ラペ-",
@@ -1533,7 +1830,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "大人の隠れ家",
@@ -1547,7 +1855,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "RESORT",
@@ -1571,7 +1890,18 @@
       ],
       "officialUrl": "https://resort-h.site/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "シャルディア",
@@ -1585,7 +1915,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ミセスプリンセスドール",
@@ -1599,7 +1940,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ましゅまろ",
@@ -1613,7 +1965,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ダンディ＋",
@@ -1627,7 +1990,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "シンク",
@@ -1641,7 +2015,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ルミエラ",
@@ -1655,7 +2040,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "You＆MeSPA～ユミスパ～",
@@ -1669,7 +2065,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "アロマミア",
@@ -1683,7 +2090,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Refresh",
@@ -1701,7 +2119,18 @@
       "officialUrlStatus": "公式サイト確認済み",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "refresh",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "既婚者 極液ラボ",
@@ -1715,7 +2144,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Arinoa",
@@ -1733,7 +2173,18 @@
       "officialUrlStatus": "公式サイト確認済み",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "arinoa",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "TONARI",
@@ -1747,7 +2198,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ソワン 広島",
@@ -1761,7 +2223,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Mrs.ENEL",
@@ -1806,7 +2279,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "CREA",
@@ -1822,7 +2306,18 @@
       ],
       "officialUrl": "https://creahiroshima.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "セラフィスパ",
@@ -1836,7 +2331,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "AROMA INNOCENT",
@@ -1850,7 +2356,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "神のエステ",
@@ -1866,7 +2383,18 @@
       ],
       "officialUrl": "https://kamies.jp/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Angel Spa",
@@ -1880,7 +2408,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "ラドンナ",
@@ -1894,7 +2433,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Lumiella",
@@ -1908,7 +2458,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ハチミツ俱楽部",
@@ -1922,7 +2483,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ヨアソビ広島",
@@ -1936,7 +2508,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "QUEEN",
@@ -1950,7 +2533,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "ヘブン",
@@ -1964,7 +2558,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ばななすぱっ！",
@@ -1978,7 +2583,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "天国にいちばん近い島 広島店",
@@ -1996,7 +2612,18 @@
           "url": "https://www.tengoku.jp"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "五十路エステ ハイブリッド 広島店",
@@ -2014,7 +2641,18 @@
           "url": "https://www.tengoku.jp"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "天使のゆびさき（カリビアンマッサージ）",
@@ -2032,7 +2670,18 @@
           "url": "http://www.tenshi.tv/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "DIANA（ディアナ）",
@@ -2048,7 +2697,18 @@
       ],
       "address": "〒730-0023 広島県広島市中区弥生町6-13",
       "locationEvidence": "turn123920business6",
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "EIGHT（エイト）",
@@ -2092,7 +2752,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "LIGHT（ライト）",
@@ -2108,7 +2779,18 @@
       ],
       "address": "〒730-0023 広島県広島市中区弥生町3-12",
       "locationEvidence": "turn123920business14",
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "PaleTTe（パレット）",
@@ -2122,7 +2804,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "STORY ここだけの物語",
@@ -2136,7 +2829,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Sherbet（シャーベット）",
@@ -2214,7 +2918,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ブルームーン",
@@ -2228,7 +2943,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ブレイク",
@@ -2242,7 +2968,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ロイヤル女子寮",
@@ -2256,7 +2993,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "女子寮本館",
@@ -2357,7 +3105,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "OASIS（オアシス）",
@@ -2371,7 +3130,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "PANTHER（パンサー）",
@@ -2385,7 +3155,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Serenity（セレニティ）",
@@ -2399,7 +3180,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ナナ",
@@ -2413,7 +3205,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "人妻専科 たま乱堂",
@@ -2427,7 +3230,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ドラゴンハンド",
@@ -2441,7 +3255,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ヘブンハンド 広島店",
@@ -2455,7 +3280,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "極楽エステ",
@@ -2469,7 +3305,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "AROMA JUNGLE（アロマジャングル）",
@@ -2483,7 +3330,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Loving Touch",
@@ -2497,7 +3355,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "OLIVE SPA",
@@ -2511,7 +3380,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "SILK SPA 広島店",
@@ -2525,7 +3405,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "廣島奥様チン電",
@@ -2539,7 +3430,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Ares（アース）",
@@ -2553,7 +3455,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "DiamondHearts",
@@ -2567,7 +3480,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ELEGANCE（エレガンス）",
@@ -2581,7 +3505,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "NATURAL",
@@ -2600,7 +3535,18 @@
         "なちゅらる",
         "natyuraru"
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "RUSH",
@@ -2614,7 +3560,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "TIARA（ティアラ）",
@@ -2628,7 +3585,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Vip style club",
@@ -2642,7 +3610,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "人妻アクメ",
@@ -2656,7 +3635,18 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ポポロン☆広島",
@@ -2670,7 +3660,18 @@
           "url": "https://www.f-terminal.jp/hiroshima.html"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "人妻EXPRESS",
@@ -2684,7 +3685,18 @@
           "url": "https://www.f-terminal.jp/hiroshima.html"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "エッチな熟女",
@@ -2698,7 +3710,18 @@
           "url": "https://www.15navi.com/hiroshima_top/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ベルベット広島",
@@ -2712,7 +3735,18 @@
           "url": "https://www.15navi.com/hiroshima_top/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "人妻同窓会",
@@ -2726,7 +3760,18 @@
           "url": "https://www.15navi.com/hiroshima_top/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "奥様鉄道69 広島店",
@@ -2740,7 +3785,18 @@
           "url": "https://www.rea-revi.com/review_category/hiroshimasi/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Serenity Oasis",
@@ -2754,7 +3810,18 @@
           "url": "https://www.rea-revi.com/review_category/hiroshimasi/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "摩天楼～MATENROW～広島",
@@ -2768,7 +3835,18 @@
           "url": "https://www.rea-revi.com/review_category/hiroshimasi/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Melty Esthe 性感回春エステ",
@@ -2782,7 +3860,18 @@
           "url": "https://www.15navi.com/hiroshima_top/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "広島回春性感マッサージ倶楽部",
@@ -2796,7 +3885,18 @@
           "url": "https://www.15navi.com/hiroshima_top/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "スパ アール",
@@ -2810,7 +3910,18 @@
           "url": "https://www.15navi.com/hiroshima_top/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "THINK",
@@ -2824,7 +3935,18 @@
           "url": "https://www.15navi.com/hiroshima_top/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "チェリーSPA広島",
@@ -2850,7 +3972,18 @@
         "チェリースパ",
         "チェリーSPA"
       ],
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "#オナクラなう 広島店",
@@ -2864,7 +3997,18 @@
           "url": "https://www.15navi.com/hiroshima_top/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "カサブランカ 広島店",
@@ -2878,7 +4022,18 @@
           "url": "https://www.casa-b.jp"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "モザイク 広島店",
@@ -2892,7 +4047,18 @@
           "url": "https://www.casa-b.jp"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "五十路マダム 広島店",
@@ -2906,7 +4072,18 @@
           "url": "https://www.casa-b.jp"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "秘密楽園",
@@ -2920,7 +4097,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "やさしい部屋",
@@ -2934,7 +4122,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "東京式SPA研究所「B」",
@@ -2948,7 +4147,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "アロマドール",
@@ -2962,7 +4172,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "絆～きずな～",
@@ -2976,7 +4197,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ミセス48～魔性のオイル編VOL.1～",
@@ -2990,7 +4222,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "甘い恋人",
@@ -3004,7 +4247,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ときめきSPA",
@@ -3018,7 +4272,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "蛍（ホタル）",
@@ -3032,7 +4297,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "慕色（ぼしょく）",
@@ -3046,7 +4322,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "癒しの女神",
@@ -3060,7 +4347,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "NAGOMI～和み～",
@@ -3076,7 +4374,18 @@
       ],
       "officialUrl": "https://nagomi-hiroshima.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "MPS — MEN'S PRIVATE SALON",
@@ -3090,7 +4399,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Night VERDY～ヴェルディ～",
@@ -3104,7 +4424,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "高級メンズエステ IVY SPA広島",
@@ -3118,7 +4449,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "広島メンズエステクイーン",
@@ -3132,7 +4474,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "楽々",
@@ -3146,7 +4499,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "微妙な関係",
@@ -3160,7 +4524,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "会いたい",
@@ -3174,7 +4549,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Private Spa MINTIA",
@@ -3188,7 +4574,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Access Hiroshima",
@@ -3202,7 +4599,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "E～感じ",
@@ -3216,7 +4624,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "エムシェルジュ",
@@ -3230,7 +4649,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "DEAR",
@@ -3244,7 +4674,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "BUZZ",
@@ -3258,7 +4699,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "小魔女",
@@ -3272,7 +4724,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "秘蜜エステ",
@@ -3286,7 +4749,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "アロマ姫",
@@ -3300,7 +4774,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Roa～Grand～",
@@ -3314,7 +4799,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "LILY",
@@ -3328,7 +4824,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "リバーズエステ",
@@ -3342,7 +4849,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "コロン",
@@ -3356,7 +4874,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ピンクパンサー",
@@ -3370,7 +4899,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "隠れ家",
@@ -3384,7 +4924,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ラベンダー",
@@ -3398,7 +4949,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "ピーチスパ",
@@ -3412,7 +4974,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "いちい",
@@ -3426,7 +4999,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "アイビースパ",
@@ -3440,7 +5024,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "りあんすぱ",
@@ -3454,7 +5049,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "天使のエプロン",
@@ -3468,7 +5074,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "煌き-KIRAMEKI-",
@@ -3482,7 +5099,18 @@
           "url": "https://panecheck.com/hiroshima/hiroshima/deriheru"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "フルフル☆60分10000円☆",
@@ -3496,7 +5124,18 @@
           "url": "https://panecheck.com/hiroshima/hiroshima/deriheru"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ぽっちゃりmateマシュマロ",
@@ -3510,7 +5149,18 @@
           "url": "https://panecheck.com/hiroshima/hiroshima/deriheru"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "spa R（スパアール）",
@@ -3528,7 +5178,18 @@
       "officialUrlStatus": "公式サイト確認済み",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "mens-spa-r",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "エイミー",
@@ -3542,7 +5203,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "アルカンジュ",
@@ -3556,7 +5228,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Rabbids",
@@ -3570,7 +5253,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "奥様Ｙシャツ倶楽部",
@@ -3584,7 +5278,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "リバーナル",
@@ -3598,7 +5303,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "エモーション",
@@ -3612,7 +5328,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ポルテ",
@@ -3626,7 +5353,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "スカーレット",
@@ -3640,7 +5378,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ルーチェ",
@@ -3654,7 +5403,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "39サロン BonBon",
@@ -3668,7 +5428,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "リアン 広島",
@@ -3682,7 +5453,18 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "&White（アンドホワイト）",
@@ -3696,7 +5478,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Affino（アフィーノ）",
@@ -3710,7 +5503,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Bright（ブライト）",
@@ -3724,7 +5528,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "FREEDOM（フリーダム）",
@@ -3738,7 +5553,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Healing Salon Alive",
@@ -3752,7 +5578,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Jasmine（ジャスミン）",
@@ -3766,7 +5603,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Luxe 広島",
@@ -3780,7 +5628,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Men's salon 凛-rin-",
@@ -3794,7 +5653,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Men’s spa R",
@@ -3812,7 +5682,18 @@
       "officialUrlStatus": "公式サイト確認済み",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "mens-spa-r",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Mrs.癒seaside",
@@ -3826,7 +5707,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Noël（ノエル）",
@@ -3840,7 +5732,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Nuxe（ニュクス）",
@@ -3854,7 +5757,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Reflet Spa（ルフレスパ）",
@@ -3868,7 +5782,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "SPA-DOLCE",
@@ -3882,7 +5807,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "SPA商事-秘書室-",
@@ -3896,7 +5832,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "peony（ピオニー）",
@@ -3910,7 +5857,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "トップシークレット",
@@ -3924,7 +5882,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "ベトナムガル",
@@ -3938,7 +5907,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "メンズエステ LOVE",
@@ -3952,7 +5932,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "少し大人のメンズエステ Paz",
@@ -3966,7 +5957,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Hitomebore～ひとめ惚れ～",
@@ -3980,7 +5982,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Labyrinth～ラビリンス～",
@@ -3994,7 +6007,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "極のエステ～Ω～",
@@ -4008,7 +6032,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "IRIS",
@@ -4022,7 +6057,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "luana",
@@ -4036,7 +6082,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "エネル 出張",
@@ -4050,7 +6107,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "ラブデラックス",
@@ -4064,7 +6132,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "広島:出張マッサージ～サヤ～",
@@ -4078,7 +6157,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "広島sweet luxuryspa",
@@ -4092,7 +6182,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "華room",
@@ -4106,7 +6207,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "ベトナム子",
@@ -4120,7 +6232,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Toriko",
@@ -4134,7 +6257,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "メンズアロマ広島人妻さん",
@@ -4148,7 +6282,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "TONARI（トナリ）",
@@ -4162,7 +6307,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "TISSE（ティセ）",
@@ -4180,7 +6336,18 @@
       "officialUrlStatus": "公式サイト確認済み",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "tisse",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "ENEL（エネル）",
@@ -4196,7 +6363,18 @@
       ],
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "enel",
-      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Grace Spa",
@@ -4212,7 +6390,18 @@
       ],
       "officialUrl": "https://hiroshima-grace-spa.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "お手頃価格な おもてなし",
@@ -4226,7 +6415,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Lavie＆Spa",
@@ -4240,7 +6440,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "heaven（ヘブン）",
@@ -4254,7 +6465,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Refresh（リフレッシュ）",
@@ -4270,7 +6492,18 @@
       ],
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "refresh",
-      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Lumiella（ルミエラ）",
@@ -4284,7 +6517,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "a doll（アドール）",
@@ -4298,7 +6542,18 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "BODY SPA HIROSHIMA",
@@ -4316,7 +6571,18 @@
       "officialUrlStatus": "公式サイト確認済み",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "body-spa",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Relaxation Salon REAL",
@@ -4332,7 +6598,18 @@
       ],
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "real",
-      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "出張専門高級メンズエステ IVY SPA",
@@ -4346,7 +6623,18 @@
           "url": "https://mens-es.men/area/3401"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "チェリーSPA東平塚店",
@@ -4360,7 +6648,18 @@
           "url": "https://mens-es.men/area/3401"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "出張メンズエステ～NAGOMI～",
@@ -4374,7 +6673,18 @@
           "url": "https://mens-es.men/area/3401"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Arinoa～アリノア～",
@@ -4390,7 +6700,18 @@
       ],
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "arinoa",
-      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "ミセスママ 広島",
@@ -4404,7 +6725,18 @@
           "url": "https://menesmall.jp/hiroshima/124/shops"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "KING'S 広島",
@@ -4418,7 +6750,18 @@
           "url": "https://menesmall.jp/hiroshima/124/shops"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "KING'S",
@@ -4432,7 +6775,18 @@
           "url": "https://menesmall.jp/hiroshima/124/shops"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Affino",
@@ -4446,7 +6800,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Bright",
@@ -4460,7 +6825,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "FREEDOM",
@@ -4474,7 +6850,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Jasmine",
@@ -4488,7 +6875,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "LILY（リリー）",
@@ -4502,7 +6900,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Lavender（ラベンダー）",
@@ -4516,7 +6925,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "M.O.E.T（モエ）",
@@ -4530,7 +6950,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Men's spa R",
@@ -4548,7 +6979,18 @@
       "officialUrlStatus": "公式サイト確認済み",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "mens-spa-r",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "Noël",
@@ -4562,7 +7004,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Nuxe",
@@ -4576,7 +7029,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Reflet Spa",
@@ -4590,7 +7054,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "peony",
@@ -4604,7 +7079,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "IVY SPA",
@@ -4618,7 +7104,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Paz",
@@ -4632,7 +7129,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Hitomebore",
@@ -4646,7 +7154,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Labyrinth",
@@ -4660,7 +7179,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "極のエステ",
@@ -4674,7 +7204,18 @@
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "name-match-in-current-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      }
     },
     {
       "name": "Be-ange（ビアンジュ）",
@@ -4699,7 +7240,18 @@
         "be ange",
         "be-ange"
       ],
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "COLORS（カラーズ）",
@@ -4718,7 +7270,18 @@
         "カラーズ",
         "colors hiroshima"
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     },
     {
       "name": "CRADLE（クレイドル）",
@@ -4741,7 +7304,18 @@
         "クレイドル",
         "cradle hiroshima"
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkCrossCheck": {
+        "checkedAt": "2026-11-14",
+        "status": "not-confirmed-in-visible-directory-snapshot",
+        "sources": [
+          "Ultimate Map 広島県一覧（199件・広島市中区101件等）",
+          "メンエスmall 広島（広島75店・広島市内65店と表示）",
+          "メンエスパーク 広島（15店・2026-11-13更新）",
+          "エステランキング 広島市内（メンズエステ48店表示）"
+        ],
+        "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      }
     }
   ],
   "sources": [
@@ -4987,6 +7561,36 @@
         "広島メンズエステ ゆりかご"
       ],
       "notes": "salon.do.ni-na、ふわもこSPA、ゆりかご広島は独立公式サイトと店舗情報を照合。現行の出勤・予約導線も確認。"
+    },
+    "latestOnePassCrossCheck": {
+      "checkedAt": "2026-11-14",
+      "candidateCount": 278,
+      "individuallyAuditedCount": 44,
+      "batchCrossCheckedCount": 234,
+      "nameMatchesInVisibleSourceSnapshots": 73,
+      "sources": [
+        {
+          "name": "Ultimate Map",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+          "scope": "広島県199店、広島市中区101店を表示"
+        },
+        {
+          "name": "メンエスmall",
+          "url": "https://menesmall.jp/hiroshima",
+          "scope": "広島75店、広島市内65店を表示"
+        },
+        {
+          "name": "メンエスパーク",
+          "url": "https://menespark.com/hiroshima/hiroshima/",
+          "scope": "広島15店、最終更新2026-11-13"
+        },
+        {
+          "name": "全国メンズエステランキング",
+          "url": "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/",
+          "scope": "広島市内メンズエステ48店を表示"
+        }
+      ],
+      "policy": "一覧との一括名称照合であり、営業中・市内住所・独立公式サイト・重複解消を個別確証したものではない。抜粋にない名称も不存在とは判定しない。"
     }
   }
 }
