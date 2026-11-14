@@ -17,7 +17,7 @@
         }
       ],
       "officialUrl": "https://nature4555.estama.jp",
-      "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
+      "officialUrlStatus": "掲載媒体の公式HP欄でURLを確認（独立ドメインとは区別）",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "individualAudit": {
         "checkedAt": "2026-11-14",
@@ -25,11 +25,11 @@
         "address": "広島県広島市中区富士見町",
         "hours": "10:00〜翌0:00",
         "phone": "080-4555-3365",
-        "kind": "official-page-listed-on-estama",
+        "kind": "listing-detail-confirmed",
         "sources": [
           "https://estama.jp/shop/34603/"
         ],
-        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+        "note": "公式HP欄、住所、営業時間、電話番号、2026-10-23新着メッセージを確認。"
       },
       "verifiedAddress": "広島県広島市中区富士見町",
       "verifiedHours": "10:00〜翌0:00",
@@ -47,7 +47,20 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": null,
+        "address": null,
+        "hours": null,
+        "phone": null,
+        "kind": "name-collision-investigation",
+        "sources": [
+          "https://bap-holdings.co.jp/salon_area/hiroshima/",
+          "https://bap-holdings.co.jp/salon/"
+        ],
+        "note": "同名検索では美容室beauty:beastの広島市内店舗が公式確認できたが、メンズエステ店舗との同一性を示す証拠なし。誤リンク防止のため公式URLは設定せず、業種/同名衝突の要確認候補として保持。"
+      }
     },
     {
       "name": "シュシュ コイン通り店",
@@ -94,7 +107,25 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://estama.jp/shop/51166/",
+        "address": "広島県広島市中区（個室住所は予約時案内）",
+        "hours": "10:00〜翌2:00",
+        "phone": "080-8522-3707",
+        "kind": "listing-detail-and-active-listing",
+        "sources": [
+          "https://estama.jp/shop/51166/",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ],
+        "note": "店舗型として掲載。料金・営業時間・電話番号を掲載媒体で照合。"
+      },
+      "officialUrl": "https://estama.jp/shop/51166/",
+      "officialUrlStatus": "掲載媒体の公式HP欄でURLを確認（独立ドメインとは区別）",
+      "verifiedAddress": "広島県広島市中区（個室住所は予約時案内）",
+      "verifiedHours": "10:00〜翌2:00",
+      "verifiedPhone": "080-8522-3707"
     },
     {
       "name": "シークレット",
@@ -257,7 +288,22 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": null,
+        "address": "広島県広島市中区",
+        "hours": "9:00〜翌4:00",
+        "phone": null,
+        "kind": "listing-crosscheck",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ],
+        "note": "複数媒体に広島市中区の店舗として掲載、営業時間表記を照合。独立公式サイト・電話番号・番地住所は未確認。"
+      },
+      "verifiedAddress": "広島県広島市中区",
+      "verifiedHours": "9:00〜翌4:00"
     },
     {
       "name": "ENEL",
@@ -4630,7 +4676,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件中22件に個別確認記録あり。残り256件は未完了。公式サイトと媒体掲載ページを区別し、確認できない項目は空欄のまま。",
+    "individualVerificationNote": "278件中26件に個別確認記録あり。残り252件は未完了。記録には現行店舗情報確認と名称衝突/未確証の調査メモを含むため、全26件が営業中確証済みという意味ではない。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4652,7 +4698,7 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 22,
+    "individualVerifiedRecordCount": 26,
     "individualVerificationBatch3": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4687,6 +4733,16 @@
         "みつばち"
       ],
       "note": "Dior五日市店は11月の当日予約/セラピスト掲載を確認。マダムヘブン・みつばちは所在地エリア・電話・営業時間を掲載媒体で照合。お好み村は現行店舗ページと出勤情報を確認。"
+    },
+    "individualVerificationBatch6": {
+      "checkedRecordCount": 4,
+      "verifiedRecords": [
+        "ジェンティル",
+        "ビューティーアンドビースト",
+        "おとなすぱっ！",
+        "ナチュレ 広島"
+      ],
+      "note": "ジェンティルは店舗詳細・電話・営業時間を確認。ビューティーアンドビーストは同名の美容室が検索に混在し、メンズエステとの同一性未確認のためURL登録せず。おとなすぱっは複数媒体の中区掲載・営業時間を照合。"
     }
   }
 }
