@@ -222,7 +222,9 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "officialUrl": "https://r.goope.jp/moest-hiroshima/",
+      "officialUrlStatus": "公式サイト確認済み"
     },
     {
       "name": "スパバーニーズ",
@@ -576,7 +578,9 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "officialUrl": "https://fuwamoco-spa.com/",
+      "officialUrlStatus": "公式サイト確認済み"
     },
     {
       "name": "Alive",
@@ -643,7 +647,9 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "officialUrl": "https://aromafreyja.com/",
+      "officialUrlStatus": "公式サイト確認済み"
     },
     {
       "name": "7 Dream Este",
@@ -656,7 +662,9 @@
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
-      ]
+      ],
+      "officialUrl": "https://7dream-este.net/",
+      "officialUrlStatus": "公式サイト確認済み"
     },
     {
       "name": "カトレア",
