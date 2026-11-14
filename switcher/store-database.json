@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-11-14",
   "scope": "広島市内候補。広島市内の全店舗確認済みではない。",
-  "totalCandidates": 275,
+  "totalCandidates": 276,
   "records": [
     {
       "name": "ナチュレ 広島",
@@ -3682,6 +3682,30 @@
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
+      ]
+    },
+    {
+      "name": "Be-ange（ビアンジュ）",
+      "category": "men-esthe",
+      "area": "広島市中区宝町",
+      "areaStatus": "掲載住所確認・営業状況の照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "エステ魂（店舗情報）",
+          "url": "https://estama.jp/shop/38980/"
+        },
+        {
+          "label": "公式ホームページ",
+          "url": "https://beange.men-este.net/"
+        }
+      ],
+      "officialUrl": "https://beange.men-este.net/",
+      "officialUrlStatus": "公式サイト確認済み",
+      "aliases": [
+        "ビアンジュ",
+        "be ange",
+        "be-ange"
       ]
     }
   ],
