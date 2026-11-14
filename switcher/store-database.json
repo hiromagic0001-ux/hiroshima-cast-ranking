@@ -162,56 +162,72 @@
       "name": "王様のきもち",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
+      "areaStatus": "媒体掲載住所・所在地情報あり（公式住所/営業状況は未確証）",
       "status": "媒体掲載・未確定",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "MEN'S ES 店舗詳細",
+          "url": "https://mens-es.men/shop/41552"
+        },
+        {
+          "label": "エステ魂 最新ニュース・店舗情報",
+          "url": "https://estama.jp/shop/41552/newslist/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
         "checkedAt": "2026-11-14",
-        "kind": "current-listing-and-address",
+        "kind": "third-party-current-listing-crosscheck",
         "url": null,
         "address": "広島県広島市中区鶴見町7-8",
-        "hours": "10:00〜翌2:00",
-        "status": "当日出勤情報・住所掲載を確認（公式HP未確認）",
+        "hours": "10:00～翌2:00",
+        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
         "sources": [
           "https://mens-es.men/shop/41552",
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-        ]
+          "https://estama.jp/shop/41552/newslist/"
+        ],
+        "phone": null,
+        "note": "店舗詳細と直近の店舗ニュース掲載を確認。独立公式サイトは未確認。"
       },
       "verifiedAddress": "広島県広島市中区鶴見町7-8",
-      "verifiedHours": "10:00〜翌2:00"
+      "verifiedHours": "10:00～翌2:00"
     },
     {
       "name": "花魁 広島",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
+      "areaStatus": "媒体掲載住所・所在地情報あり（公式住所/営業状況は未確証）",
       "status": "媒体掲載・未確定",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "MEN'S ES 店舗詳細",
+          "url": "https://mens-es.men/shop/50643"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
         "checkedAt": "2026-11-14",
-        "kind": "current-listing-and-address",
+        "kind": "third-party-current-listing-crosscheck",
         "url": null,
-        "address": "広島県広島市中区宝町",
-        "hours": "10:00〜翌3:00",
-        "status": "当日出勤情報・住所掲載を確認（公式HP未確認）",
+        "address": "広島県広島市中区宝町（フジグラン広島周辺）",
+        "hours": "10:00～翌3:00",
+        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
         "sources": [
           "https://mens-es.men/shop/50643"
-        ]
+        ],
+        "phone": null,
+        "note": "店舗詳細で広島市内の住所エリア・営業時間・当日出勤表示を確認。番地・電話・独立公式サイトは未確認。"
       },
-      "verifiedAddress": "広島県広島市中区宝町",
-      "verifiedHours": "10:00〜翌3:00"
+      "verifiedAddress": "広島県広島市中区宝町（フジグラン広島周辺）",
+      "verifiedHours": "10:00～翌3:00"
     },
     {
       "name": "トリコ",
@@ -280,30 +296,40 @@
       "name": "おとなすぱっ！",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
+      "areaStatus": "媒体掲載住所・所在地情報あり（公式住所/営業状況は未確証）",
       "status": "媒体掲載・未確定",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "エステ魂 店舗詳細",
+          "url": "https://estama.jp/shop/43343/"
+        },
+        {
+          "label": "エステ番長 店舗一覧",
+          "url": "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C5"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
         "checkedAt": "2026-11-14",
         "url": null,
-        "address": "広島県広島市中区",
-        "hours": "9:00〜翌4:00",
-        "phone": null,
-        "kind": "listing-crosscheck",
+        "address": "広島県広島市中区舟入幸町5-10 セブンプロート舟入幸町",
+        "hours": "9:00～翌4:00",
+        "phone": "070-5056-0272",
+        "kind": "third-party-current-listing-crosscheck",
         "sources": [
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
-          "https://menesu-select.com/hiroshima/hiroshima/"
+          "https://estama.jp/shop/43343/",
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C5"
         ],
-        "note": "複数媒体に広島市中区の店舗として掲載、営業時間表記を照合。独立公式サイト・電話番号・番地住所は未確認。"
+        "note": "求人・店舗掲載ページで住所、電話、営業時間を照合。独立公式サイトは未確認。",
+        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）"
       },
-      "verifiedAddress": "広島県広島市中区",
-      "verifiedHours": "9:00〜翌4:00"
+      "verifiedAddress": "広島県広島市中区舟入幸町5-10 セブンプロート舟入幸町",
+      "verifiedHours": "9:00～翌4:00",
+      "verifiedPhone": "070-5056-0272"
     },
     {
       "name": "ENEL",
@@ -348,29 +374,39 @@
       "name": "マダムヘブン",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
+      "areaStatus": "媒体掲載住所・所在地情報あり（公式住所/営業状況は未確証）",
       "status": "媒体掲載・未確定",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "メンズエステマップ 店舗詳細",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r0831a95adb"
+        },
+        {
+          "label": "エスタマ求人 店舗情報",
+          "url": "https://esjob.jp/shop/50894/faq/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
         "checkedAt": "2026-11-14",
         "url": null,
-        "address": "広島市中区（部屋住所は予約後案内）",
-        "hours": "10:00〜翌3:00",
+        "address": "広島県広島市中区（部屋住所は予約後案内）",
+        "hours": "10:00～翌3:00",
         "phone": "070-1415-6065",
-        "kind": "current-listing-details",
+        "kind": "third-party-current-listing-crosscheck",
         "sources": [
-          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r0831a95adb"
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r0831a95adb",
+          "https://esjob.jp/shop/50894/faq/"
         ],
-        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。"
+        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
+        "note": "店舗詳細で広島市中区、営業時間、電話を照合。ルームの番地住所は予約後案内。"
       },
-      "verifiedAddress": "広島市中区（部屋住所は予約後案内）",
-      "verifiedHours": "10:00〜翌3:00",
+      "verifiedAddress": "広島県広島市中区（部屋住所は予約後案内）",
+      "verifiedHours": "10:00～翌3:00",
       "verifiedPhone": "070-1415-6065"
     },
     {
@@ -409,30 +445,39 @@
       "name": "みつばち",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
+      "areaStatus": "媒体掲載住所・所在地情報あり（公式住所/営業状況は未確証）",
       "status": "媒体掲載・未確定",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "ZUKAN 店舗詳細",
+          "url": "https://zukan-esthe.com/store.php?id=700"
+        },
+        {
+          "label": "エステ番長 店舗一覧",
+          "url": "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C0"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
         "checkedAt": "2026-11-14",
         "url": null,
-        "address": "広島駅周辺（詳細ルーム住所は予約時案内）",
-        "hours": "10:00〜翌3:00",
+        "address": "広島県広島市中区鶴見町周辺（マンション住所詳細未掲載）",
+        "hours": "10:00～翌3:00",
         "phone": "090-6403-2215",
-        "kind": "current-listing-details",
+        "kind": "third-party-current-listing-crosscheck",
         "sources": [
-          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C0",
-          "https://zukan-esthe.com/store.php?id=700"
+          "https://zukan-esthe.com/store.php?id=700",
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C0"
         ],
-        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。"
+        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
+        "note": "複数媒体で店名、営業時間、電話、広島市内の掲載エリアを照合。番地住所は未確認。"
       },
-      "verifiedAddress": "広島駅周辺（詳細ルーム住所は予約時案内）",
-      "verifiedHours": "10:00〜翌3:00",
+      "verifiedAddress": "広島県広島市中区鶴見町周辺（マンション住所詳細未掲載）",
+      "verifiedHours": "10:00～翌3:00",
       "verifiedPhone": "090-6403-2215"
     },
     {
@@ -701,28 +746,40 @@
       "name": "a doll",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
+      "areaStatus": "媒体掲載住所・所在地情報あり（公式住所/営業状況は未確証）",
       "status": "媒体掲載・未確定",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "エストワ 店舗情報（公式HP欄のリンク先はエステ魂）",
+          "url": "https://estowa.net/shop/S-yayouwutian-com/"
+        },
+        {
+          "label": "ビジョマガ 店舗紹介",
+          "url": "https://bijo-mag.com/mei_adoll/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
         "checkedAt": "2026-11-14",
-        "status": "third-party-profile-only",
+        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
         "sources": [
-          "https://bijo-mag.com/mei_adoll/",
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          "https://estowa.net/shop/S-yayouwutian-com/",
+          "https://bijo-mag.com/mei_adoll/"
         ],
-        "address": "広島県広島市中区昭和町（掲載プロフィール表記）",
+        "address": "広島県広島市中区昭和町（別ルーム掲載あり）",
         "phone": "070-9126-1805",
-        "note": "広島a dollのセラピスト紹介・店舗紹介は確認できたが、独立公式サイトの現行運営情報までは未確認。"
+        "note": "店舗情報媒体で電話・住所エリア・営業時間を照合。独立公式サイトの真正性は未確認。",
+        "url": null,
+        "hours": "10:00～翌2:00",
+        "kind": "third-party-current-listing-crosscheck"
       },
-      "verifiedAddress": "広島県広島市中区昭和町（掲載プロフィール表記）",
-      "verifiedPhone": "070-9126-1805"
+      "verifiedAddress": "広島県広島市中区昭和町（別ルーム掲載あり）",
+      "verifiedPhone": "070-9126-1805",
+      "verifiedHours": "10:00～翌2:00"
     },
     {
       "name": "ゆるりnon",
@@ -798,23 +855,35 @@
       "name": "広島人妻さん",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
+      "areaStatus": "媒体掲載住所・所在地情報あり（公式住所/営業状況は未確証）",
       "status": "媒体掲載・未確定",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "エステクイーン 求人・店舗情報",
+          "url": "https://www.e-q.jp/48870/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
         "checkedAt": "2026-11-14",
-        "status": "directory-listing-only",
+        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
         "sources": [
-          "https://menesu-select.com/hiroshima/hiroshima/"
+          "https://www.e-q.jp/48870/"
         ],
-        "note": "広島市一覧ページに店舗名の掲載は確認。ただし今回の調査では独立した店舗詳細・公式サイト・電話・住所・現行出勤情報を確認できず。営業中確証なし。"
-      }
+        "note": "求人媒体の店舗欄で電話・時間・エリアを確認。電話は求人応募窓口として掲載されており、予約用番号・現行営業情報とは未確証。",
+        "url": null,
+        "address": "広島市中区・田中町/宝町北バス停周辺",
+        "hours": "10:00～24:00（求人媒体掲載）",
+        "phone": "070-8461-5262",
+        "kind": "third-party-current-listing-crosscheck"
+      },
+      "verifiedAddress": "広島市中区・田中町/宝町北バス停周辺",
+      "verifiedHours": "10:00～24:00（求人媒体掲載）",
+      "verifiedPhone": "070-8461-5262"
     },
     {
       "name": "Organic energy",
@@ -12708,6 +12777,19 @@
         "mens-spa-r"
       ],
       "notes": "各グループの公式HPリンクを現行の店舗ページ/掲載情報と照合。Arinoaは第三者媒体の公式HP欄による確認のため確度を分けて記録。"
+    },
+    "contactAndAddressReview": {
+      "checkedAt": "2026-11-14",
+      "updatedStores": [
+        "王様のきもち",
+        "花魁 広島",
+        "おとなすぱっ！",
+        "マダムヘブン",
+        "みつばち",
+        "a doll",
+        "広島人妻さん"
+      ],
+      "notes": "公式HP未確認の店舗について、第三者媒体の店舗詳細・掲載連絡先・住所エリア・営業時間を補強。求人応募窓口は予約番号と区別。第三者媒体URLは公式HP欄へ登録せず、出典リンクとして表示。"
     }
   }
 }
