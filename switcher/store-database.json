@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generatedAt": "2026-11-14",
   "scope": "広島市内候補。広島市内の全店舗確認済みではない。",
-  "totalCandidates": 191,
+  "totalCandidates": 206,
   "records": [
     {
       "name": "ナチュレ 広島",
@@ -2498,6 +2498,201 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ]
+    },
+    {
+      "name": "煌き-KIRAMEKI-",
+      "category": "delivery",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "パネマジチェッカー・広島市デリヘル",
+          "url": "https://panecheck.com/hiroshima/hiroshima/deriheru"
+        }
+      ]
+    },
+    {
+      "name": "フルフル☆60分10000円☆",
+      "category": "delivery",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "パネマジチェッカー・広島市デリヘル",
+          "url": "https://panecheck.com/hiroshima/hiroshima/deriheru"
+        }
+      ]
+    },
+    {
+      "name": "ぽっちゃりmateマシュマロ",
+      "category": "delivery",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "パネマジチェッカー・広島市デリヘル",
+          "url": "https://panecheck.com/hiroshima/hiroshima/deriheru"
+        }
+      ]
+    },
+    {
+      "name": "spa R（スパアール）",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "エイミー",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "アルカンジュ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "Rabbids",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "奥様Ｙシャツ倶楽部",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "リバーナル",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "エモーション",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "ポルテ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "スカーレット",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "ルーチェ",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "39サロン BonBon",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
+    },
+    {
+      "name": "リアン 広島",
+      "category": "men-esthe",
+      "area": "広島市候補",
+      "areaStatus": "媒体の市内表示・住所照合待ち",
+      "status": "媒体掲載・未確定",
+      "sources": [
+        {
+          "label": "メンズエステセレクト・広島市一覧",
+          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        }
+      ]
     }
   ],
   "sources": [
@@ -2556,6 +2751,13 @@
       "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
       "coverage": "広島市メンズエステ184店舗表示（2026年11月検索時点）",
       "note": "アクセス順位は他媒体指標と混合しない"
+    },
+    {
+      "id": "panecheck",
+      "name": "パネマジチェッカー",
+      "url": "https://panecheck.com/hiroshima/hiroshima/deriheru",
+      "coverage": "広島市デリヘル15店表示",
+      "note": "CityHeaven等と掲載店・分類・件数の差異を照合"
     }
   ]
 }
