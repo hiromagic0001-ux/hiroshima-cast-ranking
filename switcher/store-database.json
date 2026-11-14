@@ -225,7 +225,25 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "officialUrl": "https://estama.jp/shop/41469/",
+      "officialUrlStatus": "掲載媒体の店舗HP欄・店舗詳細URLを確認（独立ドメイン公式サイトとは区別）",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://estama.jp/shop/41469/",
+        "address": "広島県広島市佐伯区美の里1丁目8番",
+        "hours": "11:00〜24:00（受付10:00〜24:00）",
+        "phone": "080-2747-9617",
+        "kind": "current-booking-page-and-active-cast",
+        "sources": [
+          "https://estama.jp/shop/41469/cast/646319/",
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/06a0c16b-ba7d-4e79-b22e-1f06b0a45dd1/"
+        ],
+        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。"
+      },
+      "verifiedAddress": "広島県広島市佐伯区美の里1丁目8番",
+      "verifiedHours": "11:00〜24:00（受付10:00〜24:00）",
+      "verifiedPhone": "080-2747-9617"
     },
     {
       "name": "おとなすぱっ！",
@@ -287,7 +305,22 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": null,
+        "address": "広島市中区（部屋住所は予約後案内）",
+        "hours": "10:00〜翌3:00",
+        "phone": "070-1415-6065",
+        "kind": "current-listing-details",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r0831a95adb"
+        ],
+        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。"
+      },
+      "verifiedAddress": "広島市中区（部屋住所は予約後案内）",
+      "verifiedHours": "10:00〜翌3:00",
+      "verifiedPhone": "070-1415-6065"
     },
     {
       "name": "ラヴィアンドスパ",
@@ -333,7 +366,23 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": null,
+        "address": "広島駅周辺（詳細ルーム住所は予約時案内）",
+        "hours": "10:00〜翌3:00",
+        "phone": "090-6403-2215",
+        "kind": "current-listing-details",
+        "sources": [
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C0",
+          "https://zukan-esthe.com/store.php?id=700"
+        ],
+        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。"
+      },
+      "verifiedAddress": "広島駅周辺（詳細ルーム住所は予約時案内）",
+      "verifiedHours": "10:00〜翌3:00",
+      "verifiedPhone": "090-6403-2215"
     },
     {
       "name": "シュシュ 緑井店",
@@ -425,7 +474,25 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "officialUrl": "https://estama.jp/shop/43255/",
+      "officialUrlStatus": "掲載媒体の店舗HP欄・店舗詳細URLを確認（独立ドメイン公式サイトとは区別）",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "url": "https://estama.jp/shop/43255/",
+        "address": "広島市内・広島駅周辺（個別ルーム住所は媒体上非公開）",
+        "hours": "11:00〜LAST",
+        "phone": "070-2400-4545",
+        "kind": "current-listing-and-therapist-schedule",
+        "sources": [
+          "https://estama.jp/shop/43255/cast/800033/",
+          "https://esjob.jp/etc/hiroshima/"
+        ],
+        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。"
+      },
+      "verifiedAddress": "広島市内・広島駅周辺（個別ルーム住所は媒体上非公開）",
+      "verifiedHours": "11:00〜LAST",
+      "verifiedPhone": "070-2400-4545"
     },
     {
       "name": "小悪魔SPA",
@@ -4563,7 +4630,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件のうち22件に個別確認記録あり。残り256件は未完了。公式サイトの存在だけで営業中と断定せず、媒体間の営業時間差は注記。",
+    "individualVerificationNote": "278件中22件に個別確認記録あり。残り256件は未完了。公式サイトと媒体掲載ページを区別し、確認できない項目は空欄のまま。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4610,6 +4677,16 @@
         "REAL"
       ],
       "note": "公式URL・複数媒体の住所/電話/営業時間/直近掲載を照合。営業時間の相違は注記し、独立公式サイトと媒体内HP欄を区別。"
+    },
+    "individualVerificationBatch5": {
+      "checkedRecordCount": 4,
+      "verifiedRecords": [
+        "Dior 五日市店",
+        "マダムヘブン",
+        "広島エステサロン お好み村",
+        "みつばち"
+      ],
+      "note": "Dior五日市店は11月の当日予約/セラピスト掲載を確認。マダムヘブン・みつばちは所在地エリア・電話・営業時間を掲載媒体で照合。お好み村は現行店舗ページと出勤情報を確認。"
     }
   }
 }
