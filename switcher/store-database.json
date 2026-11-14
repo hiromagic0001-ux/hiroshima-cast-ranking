@@ -318,8 +318,8 @@
         }
       ],
       "officialUrl": "https://enel-official.com/",
-      "officialUrlStatus": "独立公式サイトを確認",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "公式サイト表示確認済み（ENEL表記・電話番号・広島市情報を照合）",
+      "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "enel",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "individualAudit": {
@@ -337,7 +337,12 @@
       },
       "verifiedAddress": "広島県広島市中区（公式サイトに複数ルーム記載）",
       "verifiedHours": "6:00〜翌5:00",
-      "verifiedPhone": "080-8244-9297"
+      "verifiedPhone": "080-8244-9297",
+      "duplicateRole": "primary",
+      "duplicateCanonicalName": "ENEL",
+      "aliases": [
+        "ENEL（エネル）"
+      ]
     },
     {
       "name": "マダムヘブン",
@@ -597,8 +602,8 @@
         }
       ],
       "officialUrl": "https://rs-real.com/",
-      "officialUrlStatus": "独立公式サイトを掲載媒体と照合",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "公式サイト表示確認済み（REAL表記・電話番号・複数ルーム情報を照合）",
+      "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "real",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "individualAudit": {
@@ -616,7 +621,12 @@
       },
       "verifiedAddress": "広島市中区東平塚町・昭和町（複数ルーム）",
       "verifiedHours": "10:00〜翌5:00（別媒体に11:00〜LAST）",
-      "verifiedPhone": "070-8367-1849"
+      "verifiedPhone": "070-8367-1849",
+      "duplicateRole": "primary",
+      "duplicateCanonicalName": "REAL",
+      "aliases": [
+        "Relaxation Salon REAL"
+      ]
     },
     {
       "name": "Mrs.APHRODITE THALASSA",
@@ -662,8 +672,8 @@
         }
       ],
       "officialUrl": "https://mens-tisse.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "公式サイト表示確認済み（ミセスTISSE表記・電話番号・広島市中区情報を照合）",
+      "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "tisse",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "individualAudit": {
@@ -680,7 +690,12 @@
       },
       "verifiedAddress": "広島県広島市中区橋本町4-（部屋番号等は予約時案内）",
       "verifiedHours": "9:00〜24:00（公式案内）",
-      "verifiedPhone": "090-1582-0866"
+      "verifiedPhone": "090-1582-0866",
+      "duplicateRole": "primary",
+      "duplicateCanonicalName": "TISSE",
+      "aliases": [
+        "TISSE（ティセ）"
+      ]
     },
     {
       "name": "a doll",
@@ -753,8 +768,8 @@
         }
       ],
       "officialUrl": "https://bodyspahiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "公式サイト表示確認済み（BODY SPA HIROSHIMA表記・電話番号・広島市情報を照合）",
+      "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "body-spa",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "individualAudit": {
@@ -772,7 +787,12 @@
       },
       "verifiedAddress": "広島県広島市中区東平塚町11-19（複数ルーム情報あり）",
       "verifiedHours": "10:00〜LAST",
-      "verifiedPhone": "090-1414-4850"
+      "verifiedPhone": "090-1414-4850",
+      "duplicateRole": "primary",
+      "duplicateCanonicalName": "BODY SPA 広島",
+      "aliases": [
+        "BODY SPA HIROSHIMA"
+      ]
     },
     {
       "name": "広島人妻さん",
@@ -2820,8 +2840,8 @@
         }
       ],
       "officialUrl": "https://r-s-refresh-hiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "公式サイト表示確認済み（Refresh表記・電話番号・営業時間を照合）",
+      "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "refresh",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
@@ -2847,7 +2867,12 @@
         "note": "当日出勤表示と店舗詳細を確認。重複グループrefreshの統合は保留。"
       },
       "verifiedAddress": "広島県広島市中区・平和大通り／舟入町駅周辺",
-      "verifiedHours": "10:30〜翌2:00"
+      "verifiedHours": "10:30〜翌2:00",
+      "duplicateRole": "primary",
+      "duplicateCanonicalName": "Refresh",
+      "aliases": [
+        "Refresh（リフレッシュ）"
+      ]
     },
     {
       "name": "既婚者 極液ラボ",
@@ -2907,8 +2932,8 @@
         }
       ],
       "officialUrl": "https://arinoa-esthe.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "第三者媒体の公式HP欄でURL一致を確認。公式ドメインの最新内容は追加確認対象",
+      "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "arinoa",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
@@ -2936,7 +2961,12 @@
       },
       "verifiedAddress": "広島県広島市中区三川町6-7",
       "verifiedHours": "11:00〜LAST（受付10:00〜翌2:00）",
-      "verifiedPhone": "080-2517-0007"
+      "verifiedPhone": "080-2517-0007",
+      "duplicateRole": "primary",
+      "duplicateCanonicalName": "Arinoa",
+      "aliases": [
+        "Arinoa～アリノア～"
+      ]
     },
     {
       "name": "TONARI",
@@ -8008,8 +8038,8 @@
         }
       ],
       "officialUrl": "https://mensspa-r.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "公式サイト表示確認済み（Mens spa R表記・店舗情報を照合）",
+      "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "mens-spa-r",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
@@ -8044,7 +8074,13 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "DB登録URLあり・公式性/リンク先は別途再検証",
         "operatingStatus": "営業中の個別確証なし"
-      }
+      },
+      "duplicateRole": "primary",
+      "duplicateCanonicalName": "spa R（スパアール）",
+      "aliases": [
+        "Men’s spa R",
+        "Men's spa R"
+      ]
     },
     {
       "name": "エイミー",
@@ -8976,8 +9012,8 @@
         }
       ],
       "officialUrl": "https://mensspa-r.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "統合先店舗の公式HPリンク（spa R（スパアール））",
+      "duplicateReview": "同一店舗の別表記候補。通常表示では統合先にまとめる。全件表示で別表記も確認可能。",
       "duplicateGroup": "mens-spa-r",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
@@ -9016,7 +9052,12 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "DB登録URLあり・公式性と遷移先は別途再検証",
         "operatingStatus": "営業中の個別確証なし"
-      }
+      },
+      "duplicateRole": "alias",
+      "duplicateCanonicalName": "spa R（スパアール）",
+      "aliases": [
+        "spa R（スパアール）"
+      ]
     },
     {
       "name": "Mrs.癒seaside",
@@ -10306,8 +10347,8 @@
         }
       ],
       "officialUrl": "https://mens-tisse.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "統合先店舗の公式HPリンク（TISSE）",
+      "duplicateReview": "同一店舗の別表記候補。通常表示では統合先にまとめる。全件表示で別表記も確認可能。",
       "duplicateGroup": "tisse",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
@@ -10346,7 +10387,12 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "DB登録URLあり・公式性と遷移先は別途再検証",
         "operatingStatus": "営業中の個別確証なし"
-      }
+      },
+      "duplicateRole": "alias",
+      "duplicateCanonicalName": "TISSE",
+      "aliases": [
+        "TISSE"
+      ]
     },
     {
       "name": "ENEL（エネル）",
@@ -10360,7 +10406,7 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateReview": "同一店舗の別表記候補。通常表示では統合先にまとめる。全件表示で別表記も確認可能。",
       "duplicateGroup": "enel",
       "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち",
       "bulkCrossCheck": {
@@ -10399,7 +10445,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
-      }
+      },
+      "duplicateRole": "alias",
+      "duplicateCanonicalName": "ENEL",
+      "officialUrl": "https://enel-official.com/",
+      "officialUrlStatus": "統合先店舗の公式HPリンク（ENEL）",
+      "aliases": [
+        "ENEL"
+      ]
     },
     {
       "name": "Grace Spa",
@@ -10608,7 +10661,7 @@
           "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         }
       ],
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateReview": "同一店舗の別表記候補。通常表示では統合先にまとめる。全件表示で別表記も確認可能。",
       "duplicateGroup": "refresh",
       "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち",
       "bulkCrossCheck": {
@@ -10647,7 +10700,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
-      }
+      },
+      "duplicateRole": "alias",
+      "duplicateCanonicalName": "Refresh",
+      "officialUrl": "https://r-s-refresh-hiroshima.com/",
+      "officialUrlStatus": "統合先店舗の公式HPリンク（Refresh）",
+      "aliases": [
+        "Refresh"
+      ]
     },
     {
       "name": "Lumiella（ルミエラ）",
@@ -10764,8 +10824,8 @@
         }
       ],
       "officialUrl": "https://bodyspahiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "統合先店舗の公式HPリンク（BODY SPA 広島）",
+      "duplicateReview": "同一店舗の別表記候補。通常表示では統合先にまとめる。全件表示で別表記も確認可能。",
       "duplicateGroup": "body-spa",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
@@ -10804,7 +10864,12 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "DB登録URLあり・公式性と遷移先は別途再検証",
         "operatingStatus": "営業中の個別確証なし"
-      }
+      },
+      "duplicateRole": "alias",
+      "duplicateCanonicalName": "BODY SPA 広島",
+      "aliases": [
+        "BODY SPA 広島"
+      ]
     },
     {
       "name": "Relaxation Salon REAL",
@@ -10818,7 +10883,7 @@
           "url": "https://mens-es.men/area/3401"
         }
       ],
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateReview": "同一店舗の別表記候補。通常表示では統合先にまとめる。全件表示で別表記も確認可能。",
       "duplicateGroup": "real",
       "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち",
       "bulkCrossCheck": {
@@ -10857,7 +10922,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
-      }
+      },
+      "duplicateRole": "alias",
+      "duplicateCanonicalName": "REAL",
+      "officialUrl": "https://rs-real.com/",
+      "officialUrlStatus": "統合先店舗の公式HPリンク（REAL）",
+      "aliases": [
+        "REAL"
+      ]
     },
     {
       "name": "出張専門高級メンズエステ IVY SPA",
@@ -11024,7 +11096,7 @@
           "url": "https://mens-es.men/area/3401"
         }
       ],
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "duplicateReview": "同一店舗の別表記候補。通常表示では統合先にまとめる。全件表示で別表記も確認可能。",
       "duplicateGroup": "arinoa",
       "bulkAuditStatus": "重複候補・公式HP/所在地/営業状況の個別確認待ち",
       "bulkCrossCheck": {
@@ -11063,7 +11135,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
-      }
+      },
+      "duplicateRole": "alias",
+      "duplicateCanonicalName": "Arinoa",
+      "officialUrl": "https://arinoa-esthe.com/",
+      "officialUrlStatus": "統合先店舗の公式HPリンク（Arinoa）",
+      "aliases": [
+        "Arinoa"
+      ]
     },
     {
       "name": "ミセスママ 広島",
@@ -11516,8 +11595,8 @@
         }
       ],
       "officialUrl": "https://mensspa-r.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
+      "officialUrlStatus": "統合先店舗の公式HPリンク（spa R（スパアール））",
+      "duplicateReview": "同一店舗の別表記候補。通常表示では統合先にまとめる。全件表示で別表記も確認可能。",
       "duplicateGroup": "mens-spa-r",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
@@ -11544,7 +11623,12 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "DB登録URLあり。公式性・リンク先の最新性は継続検証対象",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
-      }
+      },
+      "duplicateRole": "alias",
+      "duplicateCanonicalName": "spa R（スパアール）",
+      "aliases": [
+        "spa R（スパアール）"
+      ]
     },
     {
       "name": "Noël",
@@ -12606,6 +12690,24 @@
         "CRADLE（クレイドル）"
       ],
       "notes": "残り19件を確認。広島市37店掲載一覧に16件の名称一致、Be-angeとCOLORSは個別店舗ページを確認、CRADLEは今回の取得媒体内で一致未確証。全件の調査記録付与を完了。"
+    },
+    "duplicateReviewUpdatedAt": "2026-11-14",
+    "duplicateGroupsReviewed": 7,
+    "duplicateAliasRecordCount": 8,
+    "uniqueCandidateCountAfterMerge": 270,
+    "duplicatePolicy": "原レコードは削除せず、同一店舗の別表記をprimary/aliasとして紐付け。標準表示はprimaryのみ、全件表示で別表記も確認可能。",
+    "officialUrlReview": {
+      "checkedAt": "2026-11-14",
+      "reviewedGroups": [
+        "enel",
+        "real",
+        "tisse",
+        "body-spa",
+        "refresh",
+        "arinoa",
+        "mens-spa-r"
+      ],
+      "notes": "各グループの公式HPリンクを現行の店舗ページ/掲載情報と照合。Arinoaは第三者媒体の公式HP欄による確認のため確度を分けて記録。"
     }
   }
 }
