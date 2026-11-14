@@ -871,14 +871,29 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "current-listing-and-business-details",
+        "address": "広島県広島市中区鶴見町13-19",
+        "hours": "10:00〜翌2:00",
+        "phone": "090-7373-9222",
+        "url": null,
+        "status": "当日更新の店舗ページ・出勤予定・所在地を確認（公式HPリンクは未取得）",
+        "sources": [
+          "https://menesmall.jp/shop/grace-spa"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区鶴見町13-19",
+      "verifiedHours": "10:00〜翌2:00",
+      "verifiedPhone": "090-7373-9222"
     },
     {
       "name": "Palma～女神の手～",
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "公式サイト・現行営業情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -886,8 +901,24 @@
         }
       ],
       "officialUrl": "https://hiroshima-palma.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "officialUrlStatus": "独立公式サイトを確認",
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "current-listing-and-business-details",
+        "address": "広島市中区（詳細住所は予約時案内）",
+        "hours": "10:00〜翌2:30",
+        "phone": "070-1068-7357",
+        "url": "https://hiroshima-palma.com/",
+        "status": "独立公式サイト・現行掲載・予約連絡先を確認",
+        "sources": [
+          "https://hiroshima-palma.com/",
+          "https://menesmall.jp/shop/palma"
+        ]
+      },
+      "verifiedAddress": "広島市中区（詳細住所は予約時案内）",
+      "verifiedHours": "10:00〜翌2:30",
+      "verifiedPhone": "070-1068-7357"
     },
     {
       "name": "キング",
@@ -1013,7 +1044,22 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "current-listing-and-business-details",
+        "address": "広島市（観音ルーム・五日市ルーム）",
+        "hours": "11:00〜翌2:00",
+        "phone": "090-5818-3970",
+        "url": null,
+        "status": "当日更新メッセージ・予約可・営業時間・電話を確認（公式HP未確認）",
+        "sources": [
+          "https://estama.jp/shop/34319/"
+        ]
+      },
+      "verifiedAddress": "広島市（観音ルーム・五日市ルーム）",
+      "verifiedHours": "11:00〜翌2:00",
+      "verifiedPhone": "090-5818-3970"
     },
     {
       "name": "スパドルチェ 広島",
@@ -4312,7 +4358,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "公式サイトの現行性・所在地表示を個別確認し、ゆりかご広島の公式URLを現行ドメインへ更新。",
+    "individualVerificationNote": "278件のうち9件について個別の公式サイトまたは現行店舗情報の裏付けを記録済み。残り269件は未完了。媒体掲載のみで営業中と断定しない。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4324,6 +4370,16 @@
         "Mrs.ENEL"
       ],
       "note": "個別検索で公式サイト/現行出勤情報または店舗住所を確認。公式HP未確認の2店には公式URLを付与していない。278件全体の確認完了を意味しない。"
-    }
+    },
+    "individualVerificationBatch2": {
+      "checkedRecordCount": 3,
+      "verifiedRecords": [
+        "Palma～女神の手～",
+        "グレイススパ",
+        "ディオール観音店"
+      ],
+      "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
+    },
+    "individualVerifiedRecordCount": 9
   }
 }
