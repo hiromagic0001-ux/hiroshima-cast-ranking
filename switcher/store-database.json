@@ -1298,6 +1298,10 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "メンズエステマップ 店舗詳細",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=raf3fba35d7"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -1330,7 +1334,26 @@
           }
         ],
         "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "Freedom"
+        "nameAlias": "Freedom",
+        "address": "広島県広島市（市役所前駅周辺・部屋住所は予約後案内）",
+        "hours": "10:00～LAST",
+        "phone": "070-8499-1534",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=raf3fba35d7"
+        ],
+        "note": "広島市内のルーム型店舗として店名、電話、営業時間、最寄り駅を確認。部屋の番地住所と独立公式HPは未確認。"
+      },
+      "verifiedAddress": "広島県広島市（市役所前駅周辺・部屋住所は予約後案内）",
+      "verifiedHours": "10:00～LAST",
+      "verifiedPhone": "070-8499-1534",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party listing cross-check",
+        "note": "広島市内のルーム型店舗として店名、電話、営業時間、最寄り駅を確認。部屋の番地住所と独立公式HPは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=raf3fba35d7"
+        ]
       }
     },
     {
@@ -1388,6 +1411,14 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "メンエスmall 店舗詳細・利用案内",
+          "url": "https://web2-mall.menesmall.jp/shop/travisqueen/flow"
+        },
+        {
+          "label": "メンズエステワークス 店舗情報",
+          "url": "https://www.esthe-works.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -1411,7 +1442,28 @@
             "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           }
         ],
-        "status": "媒体掲載確認・営業詳細未確証"
+        "status": "媒体掲載確認・営業詳細未確証",
+        "address": "広島県広島市中区東平塚町",
+        "hours": "9:00～翌6:00",
+        "phone": "090-1093-1100",
+        "sources": [
+          "https://web2-mall.menesmall.jp/shop/travisqueen/flow",
+          "https://www.esthe-works.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/"
+        ],
+        "note": "複数媒体で住所、電話、営業時間を照合。hiroshimatravisqueen.comは媒体上で店舗URLとして掲載されているが、直接取得不能のため公式HPリンクには未設定。"
+      },
+      "verifiedAddress": "広島県広島市中区東平塚町",
+      "verifiedHours": "9:00～翌6:00",
+      "verifiedPhone": "090-1093-1100",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party listing cross-check",
+        "note": "複数媒体で住所、電話、営業時間を照合。hiroshimatravisqueen.comは媒体上で店舗URLとして掲載されているが、直接取得不能のため公式HPリンクには未設定。",
+        "sources": [
+          "https://web2-mall.menesmall.jp/shop/travisqueen/flow",
+          "https://www.esthe-works.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/"
+        ]
       }
     },
     {
@@ -1424,6 +1476,14 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "メンエスパーク 広島店舗一覧",
+          "url": "https://menespark.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "エステ番長 店舗詳細",
+          "url": "https://es-ban.com/shop/5335"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -1456,7 +1516,28 @@
           }
         ],
         "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null
+        "nameAlias": null,
+        "address": "広島県広島市（舟入幸町駅周辺）",
+        "hours": "9:00～翌4:00",
+        "phone": "070-5056-0272",
+        "sources": [
+          "https://menespark.com/hiroshima/hiroshima/",
+          "https://es-ban.com/shop/5335"
+        ],
+        "note": "複数媒体で広島市・舟入幸町駅、電話、営業時間を照合。ただし同じ電話番号が別店舗「おとなすぱっ！」にも掲載されているため、電話番号の店舗帰属は要再確認。住所番地と独立公式HPは未確認。"
+      },
+      "verifiedAddress": "広島県広島市（舟入幸町駅周辺）",
+      "verifiedHours": "9:00～翌4:00",
+      "verifiedPhone": "070-5056-0272",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party listing cross-check",
+        "note": "複数媒体で広島市・舟入幸町駅、電話、営業時間を照合。ただし同じ電話番号が別店舗「おとなすぱっ！」にも掲載されているため、電話番号の店舗帰属は要再確認。住所番地と独立公式HPは未確認。",
+        "sources": [
+          "https://menespark.com/hiroshima/hiroshima/",
+          "https://es-ban.com/shop/5335"
+        ]
       }
     },
     {
@@ -1469,6 +1550,10 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "エステ魂 店舗詳細",
+          "url": "https://estama.jp/shop/50597/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -1501,7 +1586,26 @@
           }
         ],
         "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null
+        "nameAlias": null,
+        "address": "広島県広島市中区鶴見町",
+        "hours": "10:00～翌2:00",
+        "phone": "070-9513-0369",
+        "sources": [
+          "https://estama.jp/shop/50597/"
+        ],
+        "note": "店舗詳細で店名、広島市中区鶴見町、電話、営業時間、直近ニュースを確認。独立公式HPは未確認。"
+      },
+      "verifiedAddress": "広島県広島市中区鶴見町",
+      "verifiedHours": "10:00～翌2:00",
+      "verifiedPhone": "070-9513-0369",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-14",
+        "status": "third-party listing cross-check",
+        "note": "店舗詳細で店名、広島市中区鶴見町、電話、営業時間、直近ニュースを確認。独立公式HPは未確認。",
+        "sources": [
+          "https://estama.jp/shop/50597/"
+        ]
       }
     },
     {
@@ -12879,20 +12983,12 @@
     "contactAndAddressReview": {
       "checkedAt": "2026-11-14",
       "updatedStores": [
-        "スパバーニーズ",
-        "ルル",
-        "ヴェルディ",
-        "マシェリ",
-        "アガットテイク",
-        "王様のきもち",
-        "花魁 広島",
-        "おとなすぱっ！",
-        "マダムヘブン",
-        "みつばち",
-        "a doll",
-        "広島人妻さん"
+        "フリーダム",
+        "Travis Queen",
+        "人妻スキャンダル",
+        "スタンダード"
       ],
-      "notes": "第三者媒体の店舗詳細・住所・電話・営業時間を照合。独立公式サイトと媒体掲載ページを区別し、未確認の公式URLは登録していない。"
+      "notes": "第三者媒体の店舗詳細を照合。電話番号の店舗帰属に矛盾がある場合は未確証として注記。独立公式サイトが直接確認できないURLは公式URLへ登録しない。"
     }
   }
 }
