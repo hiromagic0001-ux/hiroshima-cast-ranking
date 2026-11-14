@@ -2014,7 +2014,19 @@
         {
           "label": "複数媒体・広島市候補",
           "url": "https://www.15navi.com/hiroshima_top/"
+        },
+        {
+          "label": "店舗公式ホームページ",
+          "url": "https://cherryspahiroshima.com/"
         }
+      ],
+      "officialUrl": "https://cherryspahiroshima.com/",
+      "officialUrlStatus": "独立した店舗公式サイトを確認",
+      "aliases": [
+        "Cherry SPA",
+        "CherrySpa",
+        "チェリースパ",
+        "チェリーSPA"
       ]
     },
     {
