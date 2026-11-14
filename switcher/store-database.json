@@ -1630,7 +1630,23 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "officialUrl": "https://www.eight-hiroshima.com/",
+      "officialUrlStatus": "独立公式サイトを確認",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-confirmed",
+        "status": "独立公式サイトを確認",
+        "address": "広島市中区薬研堀4-4",
+        "hours": "9:00〜24:00前",
+        "phone": "082-247-1000",
+        "sources": [
+          "https://www.eight-hiroshima.com/"
+        ]
+      },
+      "verifiedAddress": "広島市中区薬研堀4-4",
+      "verifiedHours": "9:00〜24:00前",
+      "verifiedPhone": "082-247-1000"
     },
     {
       "name": "Excellent Royal",
@@ -1704,7 +1720,23 @@
       ],
       "address": "〒730-0022 広島県広島市中区銀山町12-10",
       "locationEvidence": "turn123920business12",
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "officialUrl": "https://www.sherbet-hiroshima.com/",
+      "officialUrlStatus": "独立公式サイトを確認",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-confirmed",
+        "status": "独立公式サイトを確認",
+        "address": "広島県広島市中区銀山町12-10 藤観ビル3F",
+        "hours": "6:00〜24:00",
+        "phone": "082-236-3378",
+        "sources": [
+          "https://www.sherbet-hiroshima.com/"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区銀山町12-10 藤観ビル3F",
+      "verifiedHours": "6:00〜24:00",
+      "verifiedPhone": "082-236-3378"
     },
     {
       "name": "シャーベット別館",
@@ -1720,7 +1752,23 @@
       ],
       "address": "〒730-0027 広島県広島市中区薬研堀1-7",
       "locationEvidence": "turn123920business0",
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "officialUrl": "https://sherbet-bekkan.net/",
+      "officialUrlStatus": "独立公式サイトを確認",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-confirmed",
+        "status": "独立公式サイトを確認",
+        "address": "広島県広島市中区薬研堀1-7",
+        "hours": "9:00〜24:00（土日祝6:00〜）",
+        "phone": "082-567-4404",
+        "sources": [
+          "https://sherbet-bekkan.net/"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区薬研堀1-7",
+      "verifiedHours": "9:00〜24:00（土日祝6:00〜）",
+      "verifiedPhone": "082-567-4404"
     },
     {
       "name": "エルミタージュ",
@@ -1790,7 +1838,24 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "officialUrl": "https://www.zyosiryouhonkan.com/",
+      "officialUrlStatus": "独立公式サイトを確認",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-confirmed",
+        "status": "独立公式サイトを確認",
+        "address": "広島県広島市中区薬研堀5-3",
+        "hours": "9:00〜24:00",
+        "phone": "082-240-9577",
+        "sources": [
+          "https://www.zyosiryouhonkan.com/",
+          "https://www.zyosiryouhonkan.com/top/schedule"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区薬研堀5-3",
+      "verifiedHours": "9:00〜24:00",
+      "verifiedPhone": "082-240-9577"
     },
     {
       "name": "石庭",
@@ -1806,7 +1871,20 @@
       ],
       "address": "〒730-0023 広島県広島市中区弥生町6-12",
       "locationEvidence": "turn123920business2",
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "officialUrl": "https://www.sekitei-hiroshima.com/",
+      "officialUrlStatus": "独立公式サイトを確認",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-confirmed",
+        "status": "独立公式サイトを確認",
+        "address": null,
+        "hours": null,
+        "phone": null,
+        "sources": [
+          "https://www.sekitei-hiroshima.com/"
+        ]
+      }
     },
     {
       "name": "石庭別館",
@@ -1820,7 +1898,20 @@
           "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "officialUrl": "https://www.sekitei-bekkan.com/",
+      "officialUrlStatus": "独立公式サイトを確認",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "kind": "official-site-confirmed",
+        "status": "独立公式サイトを確認",
+        "address": null,
+        "hours": null,
+        "phone": null,
+        "sources": [
+          "https://www.sekitei-bekkan.com/"
+        ]
+      }
     },
     {
       "name": "AGORA（アゴラ）",
@@ -4358,7 +4449,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件のうち9件について個別の公式サイトまたは現行店舗情報の裏付けを記録済み。残り269件は未完了。媒体掲載のみで営業中と断定しない。",
+    "individualVerificationNote": "278件のうち15件について個別の公式サイトまたは現行店舗情報の裏付けを記録済み。残り263件は未完了。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4380,6 +4471,18 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 9
+    "individualVerifiedRecordCount": 15,
+    "individualVerificationBatch3": {
+      "checkedRecordCount": 6,
+      "verifiedRecords": [
+        "Sherbet（シャーベット）",
+        "シャーベット別館",
+        "EIGHT（エイト）",
+        "女子寮本館",
+        "石庭",
+        "石庭別館"
+      ],
+      "note": "独立公式サイトで店舗名を照合。住所・営業時間・電話は公式サイトで確認できた項目のみ記録。"
+    }
   }
 }
