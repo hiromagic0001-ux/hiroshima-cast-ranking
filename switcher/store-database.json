@@ -665,7 +665,22 @@
       "officialUrlStatus": "公式サイト確認済み",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "tisse",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "official-site-and-current-business-listing-confirmed",
+        "sources": [
+          "https://mens-tisse.com/",
+          "https://mensesthe-ranking.net/hiroshima/hiroshima/"
+        ],
+        "address": "広島県広島市中区橋本町4-（部屋番号等は予約時案内）",
+        "hours": "9:00〜24:00（公式案内）",
+        "phone": "090-1582-0866",
+        "note": "独立公式サイト、電話、営業時間を確認。地図事業者情報も橋本町で一致。重複グループtisseの別表記候補があるため統合は保留。"
+      },
+      "verifiedAddress": "広島県広島市中区橋本町4-（部屋番号等は予約時案内）",
+      "verifiedHours": "9:00〜24:00（公式案内）",
+      "verifiedPhone": "090-1582-0866"
     },
     {
       "name": "a doll",
@@ -741,7 +756,23 @@
       "officialUrlStatus": "公式サイト確認済み",
       "duplicateReview": "同一店舗の重複候補・統合前の照合待ち",
       "duplicateGroup": "body-spa",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "official-site-and-current-listing-confirmed",
+        "sources": [
+          "https://bodyspahiroshima.com/",
+          "https://www.es-king.jp/area/hiroshima/",
+          "https://esthe-ranking.jp/hiroshima/ippan/powder-massage/"
+        ],
+        "address": "広島県広島市中区東平塚町11-19（複数ルーム情報あり）",
+        "hours": "10:00〜LAST",
+        "phone": "090-1414-4850",
+        "note": "独立公式サイトURLと複数掲載媒体の店舗情報を照合。市役所前駅周辺との表記差があるため、番地は事業者情報の住所として記録。duplicateGroup=body-spaは統合保留。"
+      },
+      "verifiedAddress": "広島県広島市中区東平塚町11-19（複数ルーム情報あり）",
+      "verifiedHours": "10:00〜LAST",
+      "verifiedPhone": "090-1414-4850"
     },
     {
       "name": "広島人妻さん",
@@ -771,7 +802,22 @@
       ],
       "officialUrl": "https://organic-hiroshima.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "official-site-and-current-site-content-confirmed",
+        "sources": [
+          "https://organic-hiroshima.com/",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ],
+        "address": "広島県広島市中区富士見町（中心部・ヒルトン広島徒歩3分の案内）",
+        "hours": "11:00〜LAST",
+        "phone": "070-6690-1788",
+        "note": "独立公式サイトに店舗情報・料金・セラピスト一覧を確認。公式ページ上の出勤は未定表示のため、営業中と出勤中は区別。"
+      },
+      "verifiedAddress": "広島県広島市中区富士見町（中心部・ヒルトン広島徒歩3分の案内）",
+      "verifiedHours": "11:00〜LAST",
+      "verifiedPhone": "070-6690-1788"
     },
     {
       "name": "Mrs.ni-na",
@@ -787,7 +833,22 @@
       ],
       "officialUrl": "https://mrs-salon-do-ni-na.com/",
       "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象"
+      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "official-site-link-and-current-third-party-shop-details-confirmed",
+        "sources": [
+          "https://mrs-salon-do-ni-na.com/",
+          "https://menesmall.jp/shop/mrs-ni-na"
+        ],
+        "address": "広島県広島市中区宝町",
+        "hours": "10:00〜翌2:00",
+        "phone": "090-2637-2007",
+        "note": "公式HP欄のURLとメンエスmall店舗詳細を照合。市内中心部4拠点・18ルームとの案内あり。住所は宝町表記で、各ルームの詳細住所は予約時案内。"
+      },
+      "verifiedAddress": "広島県広島市中区宝町",
+      "verifiedHours": "10:00〜翌2:00",
+      "verifiedPhone": "090-2637-2007"
     },
     {
       "name": "カロン",
@@ -801,7 +862,15 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち"
+      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "status": "same-name-business-collision-not-same-store-confirmed",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ],
+        "note": "広島市メンズエステ一覧にはKalon/カロンの掲載候補がある一方、地図検索で見つかったCalonは女性専用の一般アロマサロン（大手町）で、同一店舗を示す根拠なし。誤った住所・公式リンクを付けず、同名衝突として記録。"
+      }
     },
     {
       "name": "ルル",
@@ -4727,7 +4796,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件中33件に個別確認記録あり。残り245件は未完了。掲載媒体のみの情報や名称衝突調査も記録に含むため、全件が営業中確証済みという意味ではない。",
+    "individualVerificationNote": "278件中38件に個別確認記録あり。残り240件は未完了。個別確認記録には現行情報の確認、掲載媒体のみの照合、同名衝突の調査を含み、全件が営業中確証済みという意味ではない。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4749,7 +4818,7 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 33,
+    "individualVerifiedRecordCount": 38,
     "individualVerificationBatch3": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -4804,6 +4873,17 @@
         "ゆるりnon"
       ],
       "notes": "Mrs.APHRODITE THALASSAは独立公式サイトと店舗詳細を確認。ゆるりnonは店舗詳細で基本情報を照合。a dollは第三者プロフィール情報まで。スパバーニーズは一覧掲載のみで現行詳細未確認。"
+    },
+    "individualVerificationBatch8": {
+      "checkedAt": "2026-11-14",
+      "updated": [
+        "TISSE",
+        "BODY SPA 広島",
+        "Organic energy",
+        "Mrs.ni-na",
+        "カロン"
+      ],
+      "notes": "TISSE・BODY SPA HIROSHIMA・Organic energy・Mrs.ni-naは公式サイト/掲載詳細を照合。カロンは同名の一般サロンとメンズエステ掲載候補の同一性が確認できず、誤登録を回避。"
     }
   }
 }
