@@ -176,6 +176,10 @@
         {
           "label": "エステ魂 最新ニュース・店舗情報",
           "url": "https://estama.jp/shop/41552/newslist/"
+        },
+        {
+          "label": "エステ魂 店舗詳細（店舗・予約情報）",
+          "url": "https://estama.jp/shop/41552/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -188,10 +192,11 @@
         "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
         "sources": [
           "https://mens-es.men/shop/41552",
-          "https://estama.jp/shop/41552/newslist/"
+          "https://estama.jp/shop/41552/newslist/",
+          "https://estama.jp/shop/41552/"
         ],
         "phone": null,
-        "note": "店舗詳細と直近の店舗ニュース掲載を確認。独立公式サイトは未確認。"
+        "note": "エステ魂の店舗詳細ページ（/shop/41552/）とニュース一覧を区別して登録。住所・営業時間は第三者媒体掲載情報であり、独立公式サイトは未確認。"
       },
       "verifiedAddress": "広島県広島市中区鶴見町7-8",
       "verifiedHours": "10:00～翌2:00",
