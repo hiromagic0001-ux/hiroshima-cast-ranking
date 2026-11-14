@@ -903,6 +903,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "LuLu"
       }
     },
     {
@@ -958,6 +978,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "Macheri"
       }
     },
     {
@@ -1043,6 +1083,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          }
+        ],
+        "status": "個別照合実施・一致未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1068,6 +1124,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "Freedom"
       }
     },
     {
@@ -1093,6 +1169,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1154,6 +1250,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1179,6 +1295,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1274,6 +1410,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1299,6 +1455,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1360,6 +1536,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1485,6 +1681,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1550,6 +1766,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1636,6 +1872,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1701,6 +1957,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1726,6 +2002,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1751,6 +2047,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1776,6 +2092,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "Tonトロ五日市店"
       }
     },
     {
@@ -1801,6 +2137,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1895,6 +2251,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1920,6 +2296,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -1983,6 +2379,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2018,6 +2434,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "RESORT"
       }
     },
     {
@@ -2043,6 +2479,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2068,6 +2524,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2093,6 +2569,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2118,6 +2614,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2143,6 +2659,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2168,6 +2704,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2229,6 +2785,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "Aroma Mia"
       }
     },
     {
@@ -2296,6 +2872,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2365,6 +2961,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2390,6 +3006,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2446,6 +3082,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "Celeste"
       }
     },
     {
@@ -2473,6 +3129,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "CREA"
       }
     },
     {
@@ -2498,6 +3174,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "Seraphi Spa"
       }
     },
     {
@@ -2523,6 +3219,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          }
+        ],
+        "status": "個別照合実施・一致未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2550,6 +3262,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "神のエステ"
       }
     },
     {
@@ -2613,6 +3345,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2638,6 +3390,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "Lumiella"
       }
     },
     {
@@ -2663,6 +3435,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2688,6 +3480,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "YOASOBI広島"
       }
     },
     {
@@ -2753,6 +3565,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": "heaven"
       }
     },
     {
@@ -2778,6 +3610,26 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          },
+          {
+            "label": "メンズエステ情報ランキング・広島市内一覧",
+            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          }
+        ],
+        "status": "媒体掲載一致・営業詳細未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2807,6 +3659,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          }
+        ],
+        "status": "個別照合実施・一致未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2836,6 +3704,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          }
+        ],
+        "status": "個別照合実施・一致未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2865,6 +3749,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          }
+        ],
+        "status": "個別照合実施・一致未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2892,6 +3792,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          }
+        ],
+        "status": "個別照合実施・一致未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2947,6 +3863,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          }
+        ],
+        "status": "個別照合実施・一致未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2974,6 +3906,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          }
+        ],
+        "status": "個別照合実施・一致未確証",
+        "nameAlias": null
       }
     },
     {
@@ -2999,6 +3947,22 @@
           "エステランキング 広島市内（メンズエステ48店表示）"
         ],
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
+      },
+      "individualAudit": {
+        "checkedAt": "2026-11-14",
+        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "evidence": [
+          {
+            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
+            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          }
+        ],
+        "status": "個別照合実施・一致未確証",
+        "nameAlias": null
       }
     },
     {
@@ -7667,7 +8631,7 @@
     "duplicateReviewRecordCount": 15,
     "caveat": "各媒体の掲載数は広島市/広島県の範囲、業種、掲載条件が異なるため合算不可。候補278件は営業中の実店舗278店を意味しない。検索結果だけで営業中・閉店・公式サイト到達を断定しない。",
     "individualVerificationUpdatedAt": "2026-11-14",
-    "individualVerificationNote": "278件中59件に個別確認記録あり。残り219件は未完了。確認記録は公式サイト確認、当日出勤掲載、第三者媒体の個別店舗掲載など根拠の種類を区別し、媒体掲載だけの店舗を営業中確証として扱わない。",
+    "individualVerificationNote": "278件中109件に個別調査記録あり。残り169件。個別調査記録には媒体掲載照合・公式サイト確認・当日出勤掲載等の根拠区分を含む。媒体掲載一致のみを営業中確証と扱わない。",
     "individualVerificationBatch1": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -7689,7 +8653,7 @@
       ],
       "note": "公式サイトまたは当日更新の店舗情報・所在地・営業時間・電話を個別照合。公式HP未取得店舗には媒体URLを公式URLとして登録していない。"
     },
-    "individualVerifiedRecordCount": 59,
+    "individualVerifiedRecordCount": 109,
     "individualVerificationBatch3": {
       "checkedRecordCount": 6,
       "verifiedRecords": [
@@ -7830,6 +8794,63 @@
         "You＆MeSPA～ユミスパ～"
       ],
       "notes": "名称一致候補から6件を追加照合。サロノワの本日出勤表示は出勤掲載確認として記録し、住所・電話・営業時間・独立公式サイトが未確認の項目は未確証のまま保持。"
+    },
+    "individualVerificationBatch13": {
+      "checkedAt": "2026-11-14",
+      "batchSize": 50,
+      "updated": [
+        "ルル",
+        "マシェリ",
+        "ディオール",
+        "フリーダム",
+        "モアスパ",
+        "人妻スキャンダル",
+        "スタンダード",
+        "Alive",
+        "Suu",
+        "おもてなし 広島",
+        "カトレア",
+        "パート妻のプライベートサロン",
+        "キング",
+        "クラブいち華",
+        "フェミニン",
+        "ザ・熟女 豊満桃色倶楽部",
+        "Tonトロ五日市店",
+        "ミセスビマジョレッド",
+        "スパドルチェ 広島",
+        "アドール",
+        "大人の隠れ家",
+        "RESORT",
+        "シャルディア",
+        "ミセスプリンセスドール",
+        "ましゅまろ",
+        "ダンディ＋",
+        "シンク",
+        "ルミエラ",
+        "アロマミア",
+        "既婚者 極液ラボ",
+        "TONARI",
+        "ソワン 広島",
+        "セレスト",
+        "CREA",
+        "セラフィスパ",
+        "AROMA INNOCENT",
+        "神のエステ",
+        "ラドンナ",
+        "Lumiella",
+        "ハチミツ俱楽部",
+        "ヨアソビ広島",
+        "ヘブン",
+        "ばななすぱっ！",
+        "天国にいちばん近い島 広島店",
+        "五十路エステ ハイブリッド 広島店",
+        "天使のゆびさき（カリビアンマッサージ）",
+        "DIANA（ディアナ）",
+        "Excellent Royal",
+        "LIGHT（ライト）",
+        "PaleTTe（パレット）"
+      ],
+      "notes": "未調査先頭50件を一括照合。メンエスセレクト広島市一覧・メンズエステマップ広島県一覧・広島市ランキング一覧の取得表示を使用。名称一致と未確証を分離し、営業時間・電話・公式HP・営業中は未確認のまま保持。"
     }
   }
 }
