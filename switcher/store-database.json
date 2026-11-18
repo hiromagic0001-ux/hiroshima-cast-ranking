@@ -434,23 +434,25 @@
         }
       ],
       "officialUrl": "https://laviespa.net/",
-      "officialUrlStatus": "独立公式サイトを掲載媒体と照合",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "officialUrlStatus": "独立公式サイトのページ内容・店舗名・電話・広島市中区情報を確認（2026-11-19）",
+      "bulkAuditStatus": "独立公式サイトと複数掲載媒体の店舗詳細を照合済み・営業状況は継続確認",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "url": "https://laviespa.net/",
-        "address": "広島県広島市中区富士見町",
-        "hours": "10:00〜LAST（別媒体は翌2:00）",
+        "address": "広島市中区富士見町",
+        "hours": "10:00〜LAST（掲載媒体に10:00〜翌2:00表記あり）",
         "phone": "090-3049-1138",
-        "kind": "independent-official-site-and-current-listing",
+        "kind": "independent-official-site-and-current-listing-crosscheck",
         "sources": [
-          "https://menes-style.jp/chugoku_shikoku/hiroshima/laviespa",
-          "https://mens-es.men/shop/38201"
+          "https://laviespa.net/",
+          "https://laviespa.net/access/",
+          "https://mens-est.jp/shop/Laviespa/",
+          "https://menesth.jp/32/shop/41032/"
         ],
-        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+        "status": "独立公式ドメインの店舗紹介・アクセス情報を確認。メンエスじゃぱん等の掲載情報と店名・電話・広島市中区住所を照合。掲載媒体間で営業時間表記に差があるため併記し、営業継続の確証とは分ける。"
       },
-      "verifiedAddress": "広島県広島市中区富士見町",
-      "verifiedHours": "10:00〜LAST（別媒体は翌2:00）",
+      "verifiedAddress": "広島市中区富士見町（掲載媒体情報）",
+      "verifiedHours": "10:00〜LAST（媒体に10:00〜翌2:00表記あり）",
       "verifiedPhone": "090-3049-1138"
     },
     {
@@ -1667,23 +1669,25 @@
         }
       ],
       "officialUrl": "https://fuwamoco-spa.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "officialUrlStatus": "独立公式サイトのアクセス・予約ページと店舗情報を確認（2026-11-19）",
+      "bulkAuditStatus": "独立公式サイトと複数掲載媒体の店舗詳細を照合済み・営業状況は継続確認",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "official-site-and-current-cast-listing-confirmed",
-        "sources": [
-          "https://fuwamoko-spa.com/access/",
-          "https://fuwamoko-spa.com/reserve/",
-          "https://mens-es.men/shop/43874"
-        ],
-        "address": "広島県広島市中区富士見町4-30",
-        "hours": "11:00〜翌5:00（公式FAQ）",
+        "checkedAt": "2026-11-19",
+        "url": "https://fuwamoco-spa.com/",
+        "address": "広島市中区富士見町4-30",
+        "hours": "11:00〜LAST（公式FAQでは翌5:00までの案内あり）",
         "phone": "090-9307-1323",
-        "note": "独立公式サイトに住所・電話・営業時間・予約フォームを確認。第三者媒体にも本日出勤情報と在籍一覧の掲載あり。"
+        "kind": "independent-official-site-and-current-listing-crosscheck",
+        "sources": [
+          "https://fuwamoco-spa.com/access/",
+          "https://fuwamoco-spa.com/reserve/",
+          "https://mens-es.men/shop/43874",
+          "https://estama.jp/shop/43874/"
+        ],
+        "status": "独立公式ドメインのアクセス・予約ページ、店舗名・住所・電話を確認。掲載媒体にも店舗詳細・11月17日更新のセラピスト投稿あり。営業時間は媒体表記に差があるため公式FAQの案内と媒体表示を区別。営業継続の確証とは分ける。"
       },
-      "verifiedAddress": "広島県広島市中区富士見町4-30",
-      "verifiedHours": "11:00〜翌5:00（公式FAQ）",
+      "verifiedAddress": "広島市中区富士見町4-30（公式サイト・掲載媒体情報）",
+      "verifiedHours": "11:00〜LAST（公式FAQでは翌5:00までの案内あり）",
       "verifiedPhone": "090-9307-1323"
     },
     {
