@@ -3208,10 +3208,10 @@
         }
       ],
       "officialUrl": "https://arinoa-esthe.com/",
-      "officialUrlStatus": "第三者媒体の公式HP欄でURL一致を確認。公式ドメインの最新内容は追加確認対象",
+      "officialUrlStatus": "第三者媒体の公式HP欄でURL一致を確認。独立ドメインへの直接アクセスは2026-11-19タイムアウト・稼働未確認",
       "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "arinoa",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "掲載媒体の最新店舗情報は確認・独立公式ドメインの直接応答は未確認",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
         "status": "name-match-in-current-directory-snapshot",
@@ -3224,20 +3224,21 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "current-third-party-listing-and-shop-details-confirmed",
-        "sources": [
-          "https://s-palette.com/hiroshima/hiroshima",
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
-        ],
-        "address": "広島県広島市中区三川町6-7",
-        "hours": "11:00〜LAST（受付10:00〜翌2:00）",
+        "checkedAt": "2026-11-19",
+        "kind": "official-domain-timeout-and-current-listing-crosscheck",
+        "url": "https://arinoa-esthe.com/",
+        "address": "広島市中区（ルーム住所は予約後案内）",
+        "hours": "11:00〜LAST",
         "phone": "080-2517-0007",
-        "note": "独立公式サイトURLは既存登録を維持。複数媒体で住所・電話・営業時間を照合。重複グループarinoaの統合は保留。"
+        "status": "独立ドメインへの直接アクセスはタイムアウト。メンエスじゃぱんの2026-11-19出勤一覧に店舗情報・当日出勤欄・電話・公式HP URLが掲載され、Ultimate Mapにも広島市中区の店舗情報あり。公式ドメインの稼働や営業実態を直接確証した扱いにはしない。",
+        "sources": [
+          "https://mens-est.jp/shop/arinoahrsm/schedule/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r8cf07b58dd"
+        ]
       },
-      "verifiedAddress": "広島県広島市中区三川町6-7",
-      "verifiedHours": "11:00〜LAST（受付10:00〜翌2:00）",
-      "verifiedPhone": "080-2517-0007",
+      "verifiedAddress": "広島市中区（掲載媒体情報・ルーム住所は予約後案内）",
+      "verifiedHours": "11:00〜LAST（掲載媒体情報）",
+      "verifiedPhone": "080-2517-0007（掲載媒体情報）",
       "duplicateRole": "primary",
       "duplicateCanonicalName": "Arinoa",
       "aliases": [
