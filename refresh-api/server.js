@@ -573,7 +573,8 @@ const server = http.createServer(async (req, res) => {
     }
   }
   // Read/write app datasets through the server-side secret. Browser never receives the D1 token.
-  const storageDataMatch = pathname.match(/^\\/api\\/storage\\/data\\/([a-z_]+)$/);
+  const storageDataPrefix = "/api/storage/data/";
+  const storageDataMatch = pathname.startsWith(storageDataPrefix) ? pathname.slice(storageDataPrefix.length).match(/^([a-z_]+)$/) : null;
   if (storageDataMatch && ["GET", "PUT"].includes(req.method)) {
     if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const key = storageDataMatch[1];
