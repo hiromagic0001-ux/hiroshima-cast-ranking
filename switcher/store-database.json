@@ -12274,13 +12274,13 @@
         }
       ],
       "officialUrl": "https://beange.men-este.net/",
-      "officialUrlStatus": "公式サイト確認済み",
+      "officialUrlStatus": "登録独立URLは404（2026-11-19確認）。掲載媒体の店舗ページは確認済み・独立公式URLは再確認待ち",
       "aliases": [
         "ビアンジュ",
         "be ange",
         "be-ange"
       ],
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "登録URLのリンク切れ確認・代替の独立公式URLは未確認",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
         "status": "not-confirmed-in-visible-directory-snapshot",
@@ -12293,23 +12293,18 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市中区宝町の店舗として、エステ魂とメンエスmallの掲載情報で店名・所在地・連絡先・営業時間を照合。DB登録の公式HP URLも掲載媒体記載と一致。現時点の当日受付は未確認。",
-        "status": "広島市媒体掲載・店舗情報確認",
-        "evidence": [
-          {
-            "source": "エステ魂 Be-ange店舗情報",
-            "url": "https://estama.jp/shop/38980/"
-          },
-          {
-            "source": "メンエスmall Be-ange店舗情報",
-            "url": "https://menesmall.jp/shop/be-ange"
-          }
-        ],
-        "scope": "広島市の店舗名・掲載情報の照合",
-        "officialSiteStatus": "DB登録URLあり。公式性・リンク先の最新性は継続検証対象",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
-      }
+        "checkedAt": "2026-11-19",
+        "kind": "official-url-error-and-listing-crosscheck",
+        "url": "https://beange.men-este.net/",
+        "status": "登録URLは404 Not Found。メンズエステmallとエステ魂の店舗詳細でBe-ange、広島市中区宝町、営業時間11:00〜翌3:00、電話090-9251-0678を照合。掲載媒体の公式HP欄も同じ404 URLのため独立公式サイトの稼働は未確認。",
+        "sources": [
+          "https://menesmall.jp/shop/be-ange",
+          "https://estama.jp/shop/38980/"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区宝町（掲載媒体情報）",
+      "verifiedHours": "11:00〜翌3:00（掲載媒体情報）",
+      "verifiedPhone": "090-9251-0678（掲載媒体情報）"
     },
     {
       "name": "COLORS（カラーズ）",
