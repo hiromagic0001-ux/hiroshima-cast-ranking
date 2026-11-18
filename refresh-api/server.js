@@ -27,7 +27,7 @@ const server = http.createServer(async (req, res) => {
   if (req.method === "OPTIONS") {
     res.writeHead(204, {
       "access-control-allow-origin": ALLOWED_ORIGIN,
-      "access-control-allow-methods": "GET, OPTIONS",
+      "access-control-allow-methods": "GET, POST, OPTIONS",
       "access-control-allow-headers": "Content-Type",
       "access-control-max-age": "600"
     });
