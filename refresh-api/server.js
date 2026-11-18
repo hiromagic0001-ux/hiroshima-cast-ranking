@@ -566,7 +566,7 @@ const server = http.createServer(async (req, res) => {
         signal: AbortSignal.timeout(10000)
       });
       const summary = await summaryResponse.json();
-      if (!summaryResponse.ok || !summary.ok) return send(res, 502, { ok: false, error: "storage_auth_or_summary_failed" }, origin);
+      if (!summaryResponse.ok || !summary.ok) return send(res, 502, { ok: false, error: "storage_auth_or_summary_failed", upstreamStatus: summaryResponse.status, upstreamError: summary?.error || "summary_failed" }, origin);
       return send(res, 200, { ok: true, service: health.service, database: health.database, storedKeys: summary.records || [] }, origin);
     } catch (error) {
       return send(res, 502, { ok: false, error: "storage_connection_failed", detail: String(error?.message || error) }, origin);
