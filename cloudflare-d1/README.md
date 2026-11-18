@@ -3,18 +3,15 @@
 This is an isolated storage Worker for the Hiroshima Cast Search app.
 It does not change the existing Render services or other apps.
 
-## 1. Create the database
+## 1. Database
 
-In Cloudflare Dashboard:
-1. Open Workers & Pages > D1 SQL Database.
-2. Create a database named `hiroshima-cast-storage`.
-3. Open the database Console and run all SQL in `schema.sql`.
-4. Copy the database ID.
+The D1 database has already been created as `hiroshima-cast-db`.
+Its schema has already been applied from `schema.sql`.
+The database binding and ID are configured in `wrangler.toml`.
 
 ## 2. Configure the Worker
 
-Replace `REPLACE_WITH_D1_DATABASE_ID` in `wrangler.toml` with the database ID.
-Connect this repository to a Worker using `cloudflare-d1` as the root directory.
+Connect this repository to a Cloudflare Worker using `cloudflare-d1` as the root directory.
 The Worker name must be `hiroshima-cast-storage`.
 
 After the first deployment, add a secret named `API_TOKEN` in Worker Settings > Variables and Secrets.
