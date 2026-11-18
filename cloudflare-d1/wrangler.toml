@@ -4,5 +4,5 @@ compatibility_date = "2026-11-18"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "hiroshima-cast-storage"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_name = "hiroshima-cast-db"
+database_id = "20479db0-5316-4b21-b5da-f526a950294a"
