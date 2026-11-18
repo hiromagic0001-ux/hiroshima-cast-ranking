@@ -551,6 +551,55 @@ const server = http.createServer(async (req, res) => {
         note: "取得または構造検証に失敗したため、既存データには触れていません。" }, origin);
     } finally { clearTimeout(timer); }
   }
+  // Cloudflare D1 storage bridge. Secrets remain on this server; never expose them to browsers.
+  if (pathname === "/api/storage/status" && req.method === "GET") {
+    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const storageUrl = process.env.CAST_STORAGE_URL;
+    const storageToken = process.env.CAST_STORAGE_API_TOKEN;
+    if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
+    try {
+      const healthResponse = await fetch(new URL("/health", storageUrl), { signal: AbortSignal.timeout(10000) });
+      const health = await healthResponse.json();
+      if (!healthResponse.ok || !health.ok) return send(res, 502, { ok: false, error: "storage_unavailable", health }, origin);
+      const summaryResponse = await fetch(new URL("/v1/summary", storageUrl), {
+        headers: { authorization: `Bearer ${storageToken}` },
+        signal: AbortSignal.timeout(10000)
+      });
+      const summary = await summaryResponse.json();
+      if (!summaryResponse.ok || !summary.ok) return send(res, 502, { ok: false, error: "storage_auth_or_summary_failed" }, origin);
+      return send(res, 200, { ok: true, service: health.service, database: health.database, storedKeys: summary.records || [] }, origin);
+    } catch (error) {
+      return send(res, 502, { ok: false, error: "storage_connection_failed", detail: String(error?.message || error) }, origin);
+    }
+  }
+  if (pathname === "/api/storage/refresh-runs" && req.method === "POST") {
+    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const storageUrl = process.env.CAST_STORAGE_URL;
+    const storageToken = process.env.CAST_STORAGE_API_TOKEN;
+    if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
+    let raw = "";
+    for await (const chunk of req) {
+      raw += chunk;
+      if (raw.length > 200000) return send(res, 413, { ok: false, error: "payload_too_large" }, origin);
+    }
+    let run;
+    try { run = JSON.parse(raw); } catch { return send(res, 400, { ok: false, error: "invalid_json" }, origin); }
+    if (!run || !["completed", "partial", "failed"].includes(run.status)) {
+      return send(res, 400, { ok: false, error: "invalid_refresh_status" }, origin);
+    }
+    try {
+      const response = await fetch(new URL("/v1/refresh-runs", storageUrl), {
+        method: "POST",
+        headers: { authorization: `Bearer ${storageToken}`, "content-type": "application/json" },
+        body: JSON.stringify(run),
+        signal: AbortSignal.timeout(10000)
+      });
+      const result = await response.json();
+      return send(res, response.status, result, origin);
+    } catch (error) {
+      return send(res, 502, { ok: false, error: "storage_write_failed", detail: String(error?.message || error) }, origin);
+    }
+  }
   if (pathname !== "/api/estama/inspect" || req.method !== "GET") {
     return send(res, 404, { ok: false, error: "not_found" }, origin);
   }
