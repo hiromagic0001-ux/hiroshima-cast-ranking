@@ -72,28 +72,31 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "エステ魂・店舗詳細（公式HP欄で独立ドメインを確認）",
+          "url": "https://estama.jp/shop/30869/"
         }
       ],
-      "officialUrl": "https://estama.jp/shop/30869/",
-      "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "officialUrl": "https://chouchou-coin.com/",
+      "officialUrlStatus": "独立公式ドメインを掲載媒体の公式ホームページ欄で確認（2026-11-19）。店舗ページの最新更新・出勤情報も掲載媒体で確認",
+      "bulkAuditStatus": "独立公式URL登録済み・住所/営業状況の照合は継続",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "url": "https://estama.jp/shop/30869/",
+        "checkedAt": "2026-11-19",
+        "url": "https://chouchou-coin.com/",
         "address": "広島県広島市佐伯区五日市5-3-1",
-        "hours": "10:00〜翌3:00（別媒体は10:30〜翌2:00）",
-        "phone": "090-3030-5984 / 050-5526-7277",
-        "kind": "active-listing-and-details",
+        "hours": "10:00〜翌3:00",
+        "phone": "090-3030-5984",
+        "kind": "independent-official-url-confirmed-by-listing-and-current-store-page",
         "sources": [
           "https://estama.jp/shop/30869/",
-          "https://menesmall.jp/shop/chouchou-coin",
-          "https://menes-style.jp/chugoku_shikoku/hiroshima/chouchouu"
+          "https://chouchou-coin.com/"
         ],
-        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+        "status": "エステ魂の店舗詳細に独立公式ホームページ https://chouchou-coin.com/ を明示。店舗ページに2026-11-04のニュースとセラピスト情報を確認。住所・電話・営業時間は掲載媒体の記載。独立サイトへのアクセス確認と現在営業の確証は別扱い。"
       },
-      "verifiedAddress": "広島県広島市佐伯区五日市5-3-1",
-      "verifiedHours": "10:00〜翌3:00（別媒体は10:30〜翌2:00）",
-      "verifiedPhone": "090-3030-5984 / 050-5526-7277"
+      "verifiedAddress": "広島県広島市佐伯区五日市5-3-1（掲載媒体情報）",
+      "verifiedHours": "10:00〜翌3:00（掲載媒体情報）",
+      "verifiedPhone": "090-3030-5984（掲載媒体情報）"
     },
     {
       "name": "ジェンティル",
@@ -502,24 +505,24 @@
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkAuditStatus": "掲載媒体の店舗ページ確認済み・独立公式URLは未確認",
       "officialUrl": "https://estama.jp/shop/29246/",
-      "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
+      "officialUrlStatus": "エステ魂の店舗詳細URL（掲載媒体）。独立公式ドメインは未確認",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "url": "https://estama.jp/shop/29246/",
         "address": "広島県広島市安佐南区緑井2丁目14-26",
         "hours": "10:00〜翌3:00",
         "phone": "080-2072-8300",
-        "kind": "recent-listing-update",
+        "kind": "listing-page-only-no-independent-domain",
         "sources": [
           "https://estama.jp/shop/29246/"
         ],
-        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+        "status": "エステ魂の店舗詳細に住所・営業時間・電話・2026-10-27のニュースおよびセラピスト情報を確認。公式ホームページ欄に独立ドメインの掲載なし。店舗掲載ページを独立公式サイトと混同しない。"
       },
-      "verifiedAddress": "広島県広島市安佐南区緑井2丁目14-26",
-      "verifiedHours": "10:00〜翌3:00",
-      "verifiedPhone": "080-2072-8300"
+      "verifiedAddress": "広島県広島市安佐南区緑井2丁目14-26（掲載媒体情報）",
+      "verifiedHours": "10:00〜翌3:00（掲載媒体情報）",
+      "verifiedPhone": "080-2072-8300（掲載媒体情報）"
     },
     {
       "name": "リフレMoEST",
@@ -1960,13 +1963,13 @@
         }
       ],
       "officialUrl": "https://30588.b6.estama.jp/",
-      "officialUrlStatus": "掲載元の公式ホームページ欄で確認",
+      "officialUrlStatus": "エステ魂の店舗管理サブドメイン（掲載媒体内の店舗ページ）。独立ドメインとは区別",
       "aliases": [
         "Cattleya",
         "Men’s spa Cattleya",
         "メンズスパカトレア"
       ],
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "掲載媒体内の店舗ページで2026-11-09更新・出勤情報確認。独立公式ドメインは未確認",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
         "status": "not-confirmed-in-visible-directory-snapshot",
@@ -1979,25 +1982,22 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
+        "checkedAt": "2026-11-19",
+        "url": "https://30588.b6.estama.jp/",
+        "address": "広島県広島市西区大宮1丁目",
+        "hours": "9:30〜25:00（受付9:00〜25:00）",
+        "phone": "070-4221-3357 / 080-8244-3848",
+        "kind": "platform-hosted-store-page-current-updates",
+        "sources": [
+          "https://30588.b6.estama.jp/",
+          "https://30588.b6.estama.jp/access/",
+          "https://30588.b6.estama.jp/therapist/"
         ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null
-      }
+        "status": "エステ魂の店舗管理サブドメイン上で店舗名・住所・電話・営業時間・2026-11-09ニュース・当日出勤欄を確認。店舗専用ページとしては稼働中だが、独立ドメインの公式サイトではない。"
+      },
+      "verifiedAddress": "広島県広島市西区大宮1丁目（店舗ページ記載）",
+      "verifiedHours": "9:30〜25:00（受付9:00〜25:00）",
+      "verifiedPhone": "070-4221-3357 / 080-8244-3848"
     },
     {
       "name": "Luxurysalon ROMA",
