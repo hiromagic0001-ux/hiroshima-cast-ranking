@@ -551,6 +551,39 @@ const server = http.createServer(async (req, res) => {
         note: "取得または構造検証に失敗したため、既存データには触れていません。" }, origin);
     } finally { clearTimeout(timer); }
   }
+  // One-time, non-destructive import of the existing Hiroshima 278-store candidate database.
+  // The route seeds D1 only when the stores key is absent; it never replaces existing data.
+  if (pathname === "/api/storage/import-initial-stores" && req.method === "GET") {
+    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const storageUrl = process.env.CAST_STORAGE_URL;
+    const storageToken = process.env.CAST_STORAGE_API_TOKEN;
+    if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
+    try {
+      const headers = { authorization: `Bearer ${storageToken}` };
+      const existingResponse = await fetch(new URL("/v1/data/stores", storageUrl), { headers, signal: AbortSignal.timeout(15000) });
+      const existing = await existingResponse.json();
+      if (!existingResponse.ok || !existing.ok) return send(res, 502, { ok: false, error: "storage_read_before_import_failed", upstreamStatus: existingResponse.status }, origin);
+      if (existing.found) return send(res, 200, { ok: true, imported: false, reason: "stores_key_already_exists", existingRecordCount: Array.isArray(existing.value?.records) ? existing.value.records.length : null }, origin);
+      const sourceUrl = "https://raw.githubusercontent.com/hiromagic0001-ux/hiroshima-cast-ranking/main/switcher/store-database.json";
+      const sourceResponse = await fetch(sourceUrl, { signal: AbortSignal.timeout(20000) });
+      if (!sourceResponse.ok) return send(res, 502, { ok: false, error: "source_database_unavailable", sourceStatus: sourceResponse.status }, origin);
+      const raw = await sourceResponse.text();
+      if (Buffer.byteLength(raw) > 1_500_000) return send(res, 413, { ok: false, error: "source_database_too_large" }, origin);
+      let database;
+      try { database = JSON.parse(raw); } catch { return send(res, 502, { ok: false, error: "source_database_invalid_json" }, origin); }
+      if (!Array.isArray(database.records) || database.records.length !== 278 || database.totalCandidates !== 278) {
+        return send(res, 409, { ok: false, error: "source_database_validation_failed", totalCandidates: database.totalCandidates ?? null, recordCount: Array.isArray(database.records) ? database.records.length : null }, origin);
+      }
+      const writeResponse = await fetch(new URL("/v1/data/stores", storageUrl), {
+        method: "PUT", headers: { ...headers, "content-type": "application/json" }, body: JSON.stringify(database), signal: AbortSignal.timeout(20000)
+      });
+      const write = await writeResponse.json();
+      if (!writeResponse.ok || !write.ok) return send(res, 502, { ok: false, error: "store_import_write_failed", upstreamStatus: writeResponse.status, upstreamError: write.error || null }, origin);
+      return send(res, 200, { ok: true, imported: true, key: "stores", recordCount: database.records.length, totalCandidates: database.totalCandidates, updatedAt: write.updatedAt, bytes: write.bytes, source: sourceUrl }, origin);
+    } catch (error) {
+      return send(res, 502, { ok: false, error: "store_import_failed", detail: String(error?.message || error) }, origin);
+    }
+  }
   // Cloudflare D1 storage bridge. Secrets remain on this server; never expose them to browsers.
   if (pathname === "/api/storage/status" && req.method === "GET") {
     if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
