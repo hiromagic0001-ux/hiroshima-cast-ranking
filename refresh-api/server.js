@@ -27,7 +27,7 @@ const server = http.createServer(async (req, res) => {
   if (req.method === "OPTIONS") {
     res.writeHead(204, {
       "access-control-allow-origin": ALLOWED_ORIGIN,
-      "access-control-allow-methods": "GET, POST, OPTIONS",
+      "access-control-allow-methods": "GET, POST, PUT, OPTIONS",
       "access-control-allow-headers": "Content-Type",
       "access-control-max-age": "600"
     });
@@ -570,6 +570,39 @@ const server = http.createServer(async (req, res) => {
       return send(res, 200, { ok: true, service: health.service, database: health.database, storedKeys: summary.records || [] }, origin);
     } catch (error) {
       return send(res, 502, { ok: false, error: "storage_connection_failed", detail: String(error?.message || error) }, origin);
+    }
+  }
+  // Read/write app datasets through the server-side secret. Browser never receives the D1 token.
+  const storageDataMatch = pathname.match(/^\\/api\\/storage\\/data\\/([a-z_]+)$/);
+  if (storageDataMatch && ["GET", "PUT"].includes(req.method)) {
+    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const key = storageDataMatch[1];
+    const allowedKeys = new Set(["stores", "casts", "source_status", "ranking_state", "refresh_status", "settings"]);
+    if (!allowedKeys.has(key)) return send(res, 400, { ok: false, error: "invalid_key" }, origin);
+    const storageUrl = process.env.CAST_STORAGE_URL;
+    const storageToken = process.env.CAST_STORAGE_API_TOKEN;
+    if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
+    try {
+      const options = {
+        method: req.method,
+        headers: { authorization: `Bearer ${storageToken}` },
+        signal: AbortSignal.timeout(15000)
+      };
+      if (req.method === "PUT") {
+        let raw = "";
+        for await (const chunk of req) {
+          raw += chunk;
+          if (raw.length > 2_000_000) return send(res, 413, { ok: false, error: "payload_too_large" }, origin);
+        }
+        try { JSON.parse(raw); } catch { return send(res, 400, { ok: false, error: "invalid_json" }, origin); }
+        options.headers["content-type"] = "application/json";
+        options.body = raw;
+      }
+      const response = await fetch(new URL(`/v1/data/${key}`, storageUrl), options);
+      const result = await response.json();
+      return send(res, response.status, result, origin);
+    } catch (error) {
+      return send(res, 502, { ok: false, error: "storage_data_request_failed", detail: String(error?.message || error) }, origin);
     }
   }
   if (pathname === "/api/storage/refresh-runs" && req.method === "POST") {
