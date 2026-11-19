@@ -1612,9 +1612,9 @@
     {
       "name": "人妻スキャンダル",
       "category": "men-esthe",
-      "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "area": "広島市舟入幸町駅周辺（マンション型・番地非公開）",
+      "areaStatus": "舟入幸町駅周辺と複数媒体で一致。部屋住所・番地は未確認",
+      "status": "複数媒体で広島市内掲載・当日出勤表示あり（電話番号の店舗帰属に重複疑義）",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1642,46 +1642,36 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null,
-        "address": "広島県広島市（舟入幸町駅周辺）",
-        "hours": "9:00～翌4:00",
-        "phone": "070-5056-0272",
+        "checkedAt": "2026-11-19",
+        "status": "multiple directory listings corroborated; same-day attendance count displayed; phone attribution conflict remains",
+        "area": "広島市・舟入幸町駅周辺、マンション型。番地・部屋住所は非公開/未確認。",
+        "phone": "070-5056-0272。メンエスパーク・エステ魂で人妻スキャンダルに掲載される一方、おとなすぱっ！にも同じ番号が掲載されており、店舗帰属は要確認。",
+        "hours": "メンエスパーク・エステ魂とも9:00〜翌4:00。エステ番長は9:00〜LAST（受付8:00〜翌2:00）と表示。",
+        "sameDay": "メンエスパークの本日クロール表示で「本日出勤 14セラピスト」。当日の個別予約枠までは保証しない。",
         "sources": [
           "https://menespark.com/hiroshima/hiroshima/",
-          "https://es-ban.com/shop/5335"
+          "https://estama.jp/shop/44130/cast/745751/",
+          "https://es-ban.com/shop/5335",
+          "https://mens-es.men/area/3401"
         ],
-        "note": "複数媒体で広島市・舟入幸町駅、電話、営業時間を照合。ただし同じ電話番号が別店舗「おとなすぱっ！」にも掲載されているため、電話番号の店舗帰属は要再確認。住所番地と独立公式HPは未確認。"
+        "note": "独立公式サイトは確認できず。媒体上の在籍・当日出勤表示は確認したが、電話番号が別店舗にも重複掲載されるため確定電話として扱わない。住所番地は未確認。"
       },
       "verifiedAddress": "広島県広島市（舟入幸町駅周辺）",
-      "verifiedHours": "9:00～翌4:00",
-      "verifiedPhone": "070-5056-0272",
+      "verifiedHours": "9:00〜翌4:00（複数媒体）",
+      "verifiedPhone": "070-5056-0272（別店舗「おとなすぱっ！」にも同番号掲載のため帰属要確認）",
       "contactReviewDone": true,
       "contactReview": {
-        "checkedAt": "2026-11-14",
-        "status": "third-party listing cross-check",
-        "note": "複数媒体で広島市・舟入幸町駅、電話、営業時間を照合。ただし同じ電話番号が別店舗「おとなすぱっ！」にも掲載されているため、電話番号の店舗帰属は要再確認。住所番地と独立公式HPは未確認。",
+        "checkedAt": "2026-11-19",
+        "status": "multiple third-party sources cross-checked; contact ownership ambiguity",
         "sources": [
           "https://menespark.com/hiroshima/hiroshima/",
+          "https://estama.jp/shop/44130/cast/745751/",
           "https://es-ban.com/shop/5335"
-        ]
-      }
+        ],
+        "note": "舟入幸町駅周辺、9:00〜翌4:00は複数媒体で一致。本日出勤14名表示。ただし070-5056-0272はおとなすぱっ！にも掲載され、電話帰属に疑義。独立公式HPと番地は未確認。"
+      },
+      "officialUrl": null,
+      "officialUrlStatus": "独立公式ドメイン未確認。エステ魂・メンエスパーク・エステ番長の媒体掲載を確認"
     },
     {
       "name": "スタンダード",
