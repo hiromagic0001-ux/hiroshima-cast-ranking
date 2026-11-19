@@ -866,7 +866,7 @@ const server = http.createServer(async (req, res) => {
       }
       const results = new Array(queue.length);
       let cursor = 0;
-      // Pace Salonowa requests to avoid triggering its HTTP 429 rate limit.
+      // Keep Salonowa requests slow and honor its Retry-After response when rate-limited.
       let salonowaNextStart = 0;
       let salonowaQueue = Promise.resolve();
       const waitForSalonowaSlot = async () => {
@@ -876,8 +876,20 @@ const server = http.createServer(async (req, res) => {
         await previous;
         const waitMs = Math.max(0, salonowaNextStart - Date.now());
         if (waitMs > 0) await new Promise(resolve => setTimeout(resolve, waitMs));
-        salonowaNextStart = Date.now() + 1200;
+        salonowaNextStart = Date.now() + 5000;
         release();
+      };
+      const applySalonowaRateLimit = response => {
+        const retryAfter = response.headers.get("retry-after");
+        let retryMs = 60000;
+        if (retryAfter) {
+          const seconds = Number(retryAfter);
+          const retryDate = Date.parse(retryAfter);
+          if (Number.isFinite(seconds) && retryAfter.trim() !== "") retryMs = seconds * 1000;
+          else if (Number.isFinite(retryDate)) retryMs = retryDate - Date.now();
+        }
+        retryMs = Math.max(5000, Math.min(600000, retryMs));
+        salonowaNextStart = Math.max(salonowaNextStart, Date.now() + retryMs);
       };
       const worker = async () => {
         while (true) {
@@ -907,6 +919,7 @@ const server = http.createServer(async (req, res) => {
             const finalUrl = new URL(response.url || url.href);
             const safeFinal = finalUrl.protocol === "https:" && allowedHosts[item.sourceId].has(finalUrl.hostname);
             const statusCode = response.status;
+            if (item.sourceId === "salonowa" && statusCode === 429) applySalonowaRateLimit(response);
             try { await response.body?.cancel(); } catch {}
             let status = "応答エラー";
             if (!safeFinal) status = "転送先要確認";
