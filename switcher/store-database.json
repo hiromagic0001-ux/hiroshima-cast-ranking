@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14",
+  "generatedAt": "2026-11-19",
   "scope": "広島市内候補。広島市内の全店舗確認済みではない。",
   "totalCandidates": 278,
   "records": [
@@ -3368,12 +3368,25 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市の一覧候補として名称掲載は確認できるが、今回の検索で電話・住所・営業時間・独立公式サイトを個別確認できず。媒体掲載候補のまま保留。",
+        "batch": "重複候補の追加照合",
+        "status": "求人媒体の「スパドルチェ 広島」は舟入南駅・電話090-6385-5485を掲載。SPA-DOLCE公式サイトの電話番号と一致し、別の口コミ媒体も同名と舟入南駅を掲載。SPA-DOLCEとの重複可能性が高いが、運営主体の直接証明は未取得。2件とも候補レコードを保持し統合保留。",
         "sources": [
-          "https://menesu-select.com/hiroshima/hiroshima/",
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          "https://men-esthe-job.men-esthe.mixh.jp/area.php?id=112&p=3",
+          "https://spadolce.ponohana4087.com/",
+          "https://men-esthe-review.com/area/%E5%91%89?page=4"
         ]
+      },
+      "duplicateReview": {
+        "checkedAt": "2026-11-19",
+        "group": "SPA-DOLCE / スパドルチェ 広島",
+        "status": "重複の可能性が高い・統合未実施",
+        "rationale": "求人媒体の「スパドルチェ 広島」は舟入南駅・電話090-6385-5485を掲載。SPA-DOLCEの独立公式サイトも電話090-6385-5485を掲載し、第三者の口コミページも「スパドルチェ 広島」と舟入南駅を掲載。名称表記・電話・最寄り駅が一致するため同一店舗の可能性が高い。ただし、求人媒体と公式サイト間の運営主体の直接証明は未取得。",
+        "sources": [
+          "https://men-esthe-job.men-esthe.mixh.jp/area.php?id=112&p=3",
+          "https://spadolce.ponohana4087.com/",
+          "https://men-esthe-review.com/area/%E5%91%89?page=4"
+        ],
+        "policy": "候補レコード2件を保持。削除・統合・primary/alias変更は行わない。"
       }
     },
     {
@@ -5296,8 +5309,8 @@
       },
       "individualAudit": {
         "checkedAt": "2026-11-19",
-        "status": "official-domain-link-listed-but-site-unreachable-phone-conflict",
-        "result": "R-30の店舗求人ページに店名「カリビアンマッサージ 天使のゆびさき」、地域・勤務地「広島／広島市」、オフィシャルHP http://www.tenshi.tv/（httpsへ遷移）と記載。公式サイト本体は今回のアクセス確認で取得できず、サイト内容・運営主体の直接照合は未完了。別媒体の風俗マップには同名店・広島・9:30〜LAST・電話082-258-2748が掲載される一方、R-30は080-2933-3298を掲載しており電話番号が不一致。住所は非公開/広島市表記のみ。営業中とは断定しない。",
+        "status": "業種はデリヘル掲載が複数媒体で一致するが、電話番号不一致・運営主体未確定のため未分類維持",
+        "result": "R-30の店舗求人ページに店名「カリビアンマッサージ 天使のゆびさき」、地域・勤務地「広島／広島市」、オフィシャルHP http://www.tenshi.tv/（httpsへ遷移）と記載。公式サイト本体は今回のアクセス確認で取得できず、サイト内容・運営主体の直接照合は未完了。別媒体の風俗マップには同名店・広島・9:30〜LAST・電話082-258-2748が掲載される一方、R-30は080-2933-3298を掲載しており電話番号が不一致。住所は非公開/広島市表記のみ。営業中とは断定しない。 追加照合：風俗マップと求人媒体の双方が同店をデリヘルとして掲載。風俗マップは082-258-2748、求人媒体は080-2933-3298で電話番号不一致。住所非公開のため、業種の掲載傾向は確認できたが店舗同一性・連絡先の確定は保留。",
         "evidence": [
           {
             "label": "R-30 店舗求人情報（2026-09-01店長NEWS表示、公式HP欄・電話080-2933-3298・広島市）",
@@ -5310,6 +5323,14 @@
           {
             "label": "公式HPリンク（アクセス不可）",
             "url": "https://www.tenshi.tv/"
+          },
+          {
+            "label": "風俗マップ・カリビアンマッサージ天使のゆびさき（デリヘル・082-258-2748）",
+            "url": "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=be0755e93f"
+          },
+          {
+            "label": "求人媒体・カリビアンマッサージ天使のゆびさき（デリヘル・080-2933-3298）",
+            "url": "https://xn--x8junwbxdg1096bm0e4m5d9j0a.jp/shop/6561326620/recruit/11826/"
           }
         ],
         "address": "広島県広島市（番地・所在地非公開）",
@@ -5329,11 +5350,11 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "今回の公開検索では同名店舗の広島市内住所・電話・公式ページを確実に特定できず。候補として保留し、営業実態・市内所在地とも未確認。",
+        "batch": "業種分類・電話番号の再照合",
+        "status": "公開ディレクトリと求人媒体の双方で「カリビアンマッサージ 天使のゆびさき」を広島市のデリヘルとして掲載。風俗マップは082-258-2748・9:30〜LAST、求人媒体は080-2933-3298と掲載し電話番号が不一致。住所非公開。デリヘル分類を示す根拠は複数あるが、電話・運営主体の一致は未確定のため、現行category=unclassifiedを維持して分類変更を保留。",
         "sources": [
-          "https://menespark.com/hiroshima/hiroshima/",
-          "https://s-palette.com/hiroshima"
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=be0755e93f",
+          "https://xn--x8junwbxdg1096bm0e4m5d9j0a.jp/shop/6561326620/recruit/11826/"
         ]
       }
     },
@@ -12020,7 +12041,19 @@
       "verifiedPhone": "090-6385-5485（公式サイト記載）",
       "verifiedHours": "12:00〜24:00（公式サイト・複数媒体）",
       "officialUrl": "https://spadolce.ponohana4087.com/",
-      "officialUrlStatus": "独立ドメインの店舗公式サイトを直接確認（2026-11-19）。電話・営業時間・中区吉島西1丁目のアクセス案内を掲載。サイト上の当日出勤予定なし・ニュース記事なし"
+      "officialUrlStatus": "独立ドメインの店舗公式サイトを直接確認（2026-11-19）。電話・営業時間・中区吉島西1丁目のアクセス案内を掲載。サイト上の当日出勤予定なし・ニュース記事なし",
+      "duplicateReview": {
+        "checkedAt": "2026-11-19",
+        "group": "SPA-DOLCE / スパドルチェ 広島",
+        "status": "重複の可能性が高い・統合未実施",
+        "rationale": "求人媒体の「スパドルチェ 広島」は舟入南駅・電話090-6385-5485を掲載。SPA-DOLCEの独立公式サイトも電話090-6385-5485を掲載し、第三者の口コミページも「スパドルチェ 広島」と舟入南駅を掲載。名称表記・電話・最寄り駅が一致するため同一店舗の可能性が高い。ただし、求人媒体と公式サイト間の運営主体の直接証明は未取得。",
+        "sources": [
+          "https://men-esthe-job.men-esthe.mixh.jp/area.php?id=112&p=3",
+          "https://spadolce.ponohana4087.com/",
+          "https://men-esthe-review.com/area/%E5%91%89?page=4"
+        ],
+        "policy": "候補レコード2件を保持。削除・統合・primary/alias変更は行わない。"
+      }
     },
     {
       "name": "SPA商事-秘書室-",
@@ -16205,9 +16238,9 @@
   },
   "duplicateAuditSummary": {
     "checkedAt": "2026-11-19",
-    "groupsReviewed": 7,
-    "groupsWithLikelySameStore": 6,
-    "recordsAnnotated": 15,
+    "groupsReviewed": 8,
+    "groupsWithLikelySameStore": 7,
+    "recordsAnnotated": 17,
     "policy": "照合メモの追加のみ。レコード削除・統合・primary/alias変更なし。所在地・営業状況を確定扱いしない。"
   }
 }
