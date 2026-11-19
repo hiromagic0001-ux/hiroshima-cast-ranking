@@ -1541,8 +1541,8 @@
       "name": "Travis Queen",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区東平塚町（複数媒体掲載・詳細住所未確定）",
+      "status": "第三者媒体掲載確認・独立公式サイト未確認・営業時間に媒体差あり",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1570,35 +1570,31 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "現行の広島市メンズエステ一覧に掲載を確認。独立公式サイト・住所・電話・営業時間は今回の取得情報だけでは未確証。",
-        "evidence": [
-          {
-            "source": "広島市メンズエステ情報ランキング",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載確認・営業詳細未確証",
+        "checkedAt": "2026-11-19",
+        "result": "複数の第三者媒体で店名・電話・中区東平塚町を照合。独立公式ドメインは未確認。営業時間は媒体間で9:00〜LASTと9:00〜翌6:00の差があるため確定扱いしない。",
+        "status": "第三者媒体掲載確認・独立公式サイト未確認・営業時間要確認",
         "address": "広島県広島市中区東平塚町",
-        "hours": "9:00～翌6:00",
+        "hours": "9:00〜LAST／9:00〜翌6:00（媒体差あり）",
         "phone": "090-1093-1100",
         "sources": [
           "https://web2-mall.menesmall.jp/shop/travisqueen/flow",
-          "https://www.esthe-works.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/"
+          "https://estama.jp/shop/42837/",
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/"
         ],
-        "note": "複数媒体で住所、電話、営業時間を照合。hiroshimatravisqueen.comは媒体上で店舗URLとして掲載されているが、直接取得不能のため公式HPリンクには未設定。"
+        "note": "エステ魂とメンエスmall等で電話・住所を照合。エステ魂は9:00〜LAST、メンエスmallは09:00〜翌06:00。hiroshimatravisqueen.comは媒体上のHP掲載があるが直接取得できず、独立公式サイトとして登録しない。"
       },
       "verifiedAddress": "広島県広島市中区東平塚町",
-      "verifiedHours": "9:00～翌6:00",
+      "verifiedHours": "媒体差あり：9:00〜LAST／9:00〜翌6:00（要店舗確認）",
       "verifiedPhone": "090-1093-1100",
       "contactReviewDone": true,
       "contactReview": {
-        "checkedAt": "2026-11-14",
-        "status": "third-party listing cross-check",
-        "note": "複数媒体で住所、電話、営業時間を照合。hiroshimatravisqueen.comは媒体上で店舗URLとして掲載されているが、直接取得不能のため公式HPリンクには未設定。",
+        "checkedAt": "2026-11-19",
+        "status": "third-party listing cross-check; independent official site unconfirmed",
+        "note": "電話と中区東平塚町は複数媒体で一致。営業時間は媒体差あり。独立公式ドメインの直接確認はできていない。",
         "sources": [
           "https://web2-mall.menesmall.jp/shop/travisqueen/flow",
-          "https://www.esthe-works.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/"
+          "https://estama.jp/shop/42837/",
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/"
         ]
       }
     },
