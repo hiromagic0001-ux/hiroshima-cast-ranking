@@ -376,8 +376,8 @@
       "name": "ENEL",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "公式サイト・現行営業情報確認済み",
+      "areaStatus": "広島市中区の複数ルームを公式アクセスページで確認（番地非公開）",
+      "status": "独立公式サイト・2026-11-19出勤情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -385,24 +385,27 @@
         }
       ],
       "officialUrl": "https://enel-official.com/",
-      "officialUrlStatus": "公式サイト表示確認済み（ENEL表記・電話番号・広島市情報を照合）",
+      "officialUrlStatus": "独立ドメインの公式サイトを直接確認済み",
       "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "enel",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "独立公式サイト・当日出勤表・第三者媒体の照合済み",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "kind": "official-site-and-current-schedule",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-domain-directly-verified-current-schedule-and-cross-listing",
         "url": "https://enel-official.com/",
-        "address": "広島県広島市中区（公式サイトに複数ルーム記載）",
+        "address": "広島県広島市中区（公式アクセスページに中区・昭和町・竹屋の3ルーム案内。番地・部屋番号は非公開）",
         "hours": "6:00〜翌5:00",
         "phone": "080-8244-9297",
-        "status": "公式サイト・当日出勤表を確認",
         "sources": [
           "https://enel-official.com/",
-          "https://enel-official.com/schedule.php"
-        ]
+          "https://enel-official.com/schedule.php",
+          "https://enel-official.com/map.php",
+          "https://web2-mall.menesmall.jp/shop/enel/free_space/254",
+          "https://ranking-mensesthe.jp/shop/28094/shopdata/"
+        ],
+        "status": "独立ドメイン公式サイトを直接確認。トップに電話080-8244-9297、営業時間6:00〜翌5:00、当日出勤一覧あり。スケジュールページで2026-11-19(木)の出勤予定を確認。アクセスページには広島市中区・昭和町・竹屋の3ルームを案内。メンエスmall等の第三者媒体でも電話・営業時間は一致。ただし個別部屋住所は非公開。"
       },
-      "verifiedAddress": "広島県広島市中区（公式サイトに複数ルーム記載）",
+      "verifiedAddress": "広島県広島市中区（公式アクセスページに中区・昭和町・竹屋の3ルーム案内。番地・部屋番号は非公開）",
       "verifiedHours": "6:00〜翌5:00",
       "verifiedPhone": "080-8244-9297",
       "duplicateRole": "primary",
