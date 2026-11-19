@@ -1133,15 +1133,15 @@
       "name": "ルル",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区鶴見町を第三者媒体で確認。詳細住所・部屋番号は非公開",
+      "status": "第三者媒体の店舗詳細・最新投稿確認済み（独立公式ドメイン未確認）",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkAuditStatus": "店舗詳細・電話・営業時間・11/17投稿を照合。MEN'S ESで11/19出勤2名表示を確認。独立公式ドメイン未確認",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
         "status": "not-confirmed-in-visible-directory-snapshot",
@@ -1154,31 +1154,19 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "LuLu",
-        "address": null,
-        "hours": null,
-        "phone": null,
+        "checkedAt": "2026-11-19",
+        "kind": "third-party-store-detail-and-current-diary-crosscheck",
+        "url": "https://estama.jp/shop/41479/",
+        "address": "広島県広島市中区鶴見町（エステ魂掲載。番地・部屋番号は非公開）",
+        "hours": "9:30〜翌2:00",
+        "phone": "090-4148-6747",
         "sources": [
-          "https://menesu-select.com/hiroshima/hiroshima/"
+          "https://estama.jp/shop/41479/",
+          "https://estama.jp/shop/41479/bloglist/",
+          "https://mens-es.men/shop/41479",
+          "https://metp.ore-aroma.jp/shop/S-lulu-hiroshima/"
         ],
-        "note": "媒体掲載名は確認候補。検索で見つかる同名の他業種（Lulu等）は一致根拠に採用しない。住所・電話・公式HPは未確認。"
+        "status": "エステ魂の店舗詳細で電話090-4148-6747、広島市中区鶴見町、営業時間9:30〜翌2:00を確認。MEN'S ESの当日検索結果では本日出勤2名・17:00案内可能表示。エステ魂写メNoteに11/17の出勤情報投稿、11月予定表を確認。独立した公式ドメインは確認できず、オレアロ上の公式サイト欄もエステ魂URLを指す。SNSとしてX luluhonopi、Instagram luluhonokaが掲載されるが、店舗独立ドメインとは区別。"
       },
       "contactReviewDone": true,
       "contactReview": {
@@ -1188,7 +1176,12 @@
         "sources": [
           "https://menesu-select.com/hiroshima/hiroshima/"
         ]
-      }
+      },
+      "officialUrl": "https://estama.jp/shop/41479/",
+      "officialUrlStatus": "エステ魂の店舗掲載ページ。独立公式ドメインは未確認（オレアロの公式サイト欄も同ページ）",
+      "verifiedAddress": "広島県広島市中区鶴見町（詳細非公開）",
+      "verifiedHours": "9:30〜翌2:00",
+      "verifiedPhone": "090-4148-6747"
     },
     {
       "name": "ヴェルディ",
