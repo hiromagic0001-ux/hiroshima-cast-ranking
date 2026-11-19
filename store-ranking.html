@@ -57,6 +57,8 @@ main{max-width:900px;margin:auto;padding:14px}
   <div style="font-size:13px;font-weight:750;margin-bottom:6px">店舗ランキング 手動更新チェック</div>
   <p style="font-size:11px;color:var(--muted);line-height:1.6;margin:0 0 10px">外部媒体の順位を取得し、件数・順位・リンクを検証できた媒体だけD1へ保存します。取得失敗や検証不一致の媒体は「更新未確認」とし、前回の成功データを保持します。媒体別の指標は混ぜません。</p>
   <button id="ranking-refresh-button" type="button" class="action" style="width:100%;border:0;font:inherit;cursor:pointer;margin-top:0">最新順位を取得してD1に保存</button>
+  <button id="ranking-link-audit-button" type="button" class="action" style="width:100%;border:1px solid var(--line);font:inherit;cursor:pointer;margin-top:8px;background:#26372f">保存済み313件のリンクを検査（読み取り専用）</button>
+  <div id="ranking-link-audit-results" role="status" aria-live="polite" style="font-size:11px;line-height:1.7;margin-top:8px"></div>
   <div id="ranking-refresh-status" role="status" aria-live="polite" style="font-size:12px;color:var(--muted);margin-top:10px"></div>
   <div id="ranking-refresh-results" style="margin-top:10px"></div>
   <div id="ranking-saved-results" style="margin-top:14px"></div>
@@ -91,7 +93,9 @@ main{max-width:900px;margin:auto;padding:14px}
   const status = document.getElementById("ranking-refresh-status");
   const results = document.getElementById("ranking-refresh-results");
   const saved = document.getElementById("ranking-saved-results");
-  if (!button || !status || !results || !saved) return;
+  const linkAuditButton = document.getElementById("ranking-link-audit-button");
+  const linkAuditResults = document.getElementById("ranking-link-audit-results");
+  if (!button || !status || !results || !saved || !linkAuditButton || !linkAuditResults) return;
   const api = "https://hiroshima-cast-refresh-api.onrender.com";
   const sourceOrder = ["salonowa", "mensesthe_rank", "menes_note"];
   const esc = value => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
@@ -394,6 +398,47 @@ main{max-width:900px;margin:auto;padding:14px}
     }
   }
   loadSaved();
+  linkAuditButton.addEventListener("click", async () => {
+    linkAuditButton.disabled = true;
+    linkAuditButton.textContent = "リンク先を検査中…";
+    linkAuditResults.textContent = "D1に保存済みの媒体別リンクを読み取り専用で確認しています。検査には時間がかかる場合があります。";
+    try {
+      const response = await fetch(api + "/api/stores/check-ranking-links", {
+        method: "POST", headers: { "Accept": "application/json", "Content-Type": "application/json" }, body: "{}"
+      });
+      const data = await response.json();
+      if (!response.ok || !data.ok) throw new Error(data.detail || data.error || "リンク検査に失敗しました");
+      const totals = data.totals || {};
+      const summary = document.createElement("div");
+      summary.style.cssText = "padding:10px;border:1px solid var(--line);border-radius:9px;margin-top:8px";
+      summary.textContent = "検査対象 " + data.total + "件 ／ リンクあり " + (totals.linksPresent || 0) + "件 ／ リンクなし " + (totals.linksMissing || 0) + "件 ／ 応答あり " + (totals.reachable || 0) + "件 ／ リンク切れ " + (totals.broken || 0) + "件 ／ アクセス制限 " + (totals.restricted || 0) + "件 ／ 未確認 " + (totals.unconfirmed || 0) + "件";
+      linkAuditResults.replaceChildren(summary);
+      for (const group of data.groups || []) {
+        const section = document.createElement("div");
+        section.style.cssText = "padding:9px 0;border-bottom:1px solid var(--line)";
+        const heading = document.createElement("div");
+        heading.style.fontWeight = "750";
+        heading.textContent = group.label + "：" + group.total + "件 ／ リンクあり " + group.linksPresent + " ／ なし " + group.linksMissing + " ／ 応答あり " + group.reachable + " ／ 切れ " + group.broken + " ／ 制限 " + group.restricted + " ／ 未確認 " + group.unconfirmed;
+        section.appendChild(heading);
+        for (const issue of group.issues || []) {
+          const line = document.createElement("div");
+          line.style.cssText = "margin-top:4px;color:var(--muted);overflow-wrap:anywhere";
+          line.textContent = (issue.rank ? issue.rank + "位 " : "") + issue.name + "： " + issue.status + (issue.httpStatus ? "（HTTP " + issue.httpStatus + "）" : "") + (issue.detail ? "／" + issue.detail : "");
+          section.appendChild(line);
+        }
+        linkAuditResults.appendChild(section);
+      }
+      const note = document.createElement("div");
+      note.style.cssText = "color:var(--muted);margin-top:8px";
+      note.textContent = "検査日時：" + new Date(data.checkedAt).toLocaleString("ja-JP") + "。アクセス制限はリンク切れと断定していません。データの保存・変更は行っていません。";
+      linkAuditResults.appendChild(note);
+    } catch (error) {
+      linkAuditResults.textContent = "検査できませんでした：" + String(error?.message || error) + "。保存済みランキングは変更していません。";
+    } finally {
+      linkAuditButton.disabled = false;
+      linkAuditButton.textContent = "もう一度リンクを検査（読み取り専用）";
+    }
+  });
   button.addEventListener("click", async () => {
     button.disabled = true;
     button.textContent = "取得・検証・保存中…";
