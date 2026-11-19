@@ -5731,7 +5731,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区弥生町3-20、銀山町駅徒歩5分、電話082-246-0070、9:00〜24:00、無休。業種はメンズエステではなく店舗型ヘルス。",
+        "status": "店舗型ヘルスとして確認。広島市中区弥生町3-20、電話082-246-0070、9:00〜24:00、無休。メンズエステ候補から業種を分離。",
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=f13fabfea0"
         ]
@@ -5782,9 +5782,9 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区薬研堀5-2、銀山町駅徒歩5分、電話082-249-9147、10:00〜24:00、無休。業種は店舗型ヘルス。",
+        "status": "「ナナ」は広島市のエステ魂掲載で蘭-ran-所属キャスト名として確認。候補店舗「ナナ」と同一店舗とは確認できず、店名同定・住所は保留。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=c04d0a7b12"
+          "https://estama.jp/shop/42675/cast/632061/"
         ]
       }
     },
@@ -5833,7 +5833,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "独立公式サイトで中区薬研堀5-21、電話082-246-0848、9:00〜24:00を確認。ソープヘルス/マットヘルスで、一般メンズエステではない。",
+        "status": "独立公式サイトで中区薬研堀5-21、電話082-246-0848、9:00〜24:00を確認。ソープヘルス/マットヘルスで一般メンズエステではない。",
         "sources": [
           "https://h-ousama.com/"
         ]
@@ -5884,9 +5884,9 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区薬研堀4-9、電話082-247-7039、15:00〜24:00、無休。業種は店舗型ハンドサービス/SM・イメクラ系。",
+        "status": "公式キャストページで広島市中区薬研堀4-9、電話082-247-7039、営業時間15:00〜24:00を確認。オナクラ/店舗型サービスでメンズエステではない。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=c84203661c"
+          "https://dragonhand.info/itemList.html"
         ]
       }
     },
@@ -5935,7 +5935,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区弥生町3-14、電話082-567-4030、10:00〜24:00、無休。業種は店舗型ハンドサービス/SM・イメクラ系。",
+        "status": "広島市中区弥生町3-14、電話082-567-4030、10:00〜24:00。店舗型ハンドサービス/SM・イメクラ系でメンズエステとは区別。",
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=37cae4aebb"
         ]
@@ -5988,7 +5988,8 @@
         "batch": "20店舗まとめて個別再確認",
         "status": "2026年10月開店の店舗型性感エステ。中区薬研堀5-19、電話082-236-8009、9:00〜24:00。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=b9c6d6586d"
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=b9c6d6586d",
+          "https://www.girlsheaven-job.net/hiroshima/ma-184/sa-418/gokuraku_esthe_hiroshima/"
         ]
       }
     },
@@ -6037,7 +6038,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "エースグループの性感エステ。電話090-9466-0550、10:00〜翌6:00。住所非公開、広島市発の掲載のため市内派遣範囲は未確定。",
+        "status": "エースグループ性感エステ。電話090-9466-0550、10:00〜翌6:00。住所非公開、広島市発の掲載のみで市内派遣範囲は未確定。",
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=608c658a3c"
         ]
@@ -6088,9 +6089,9 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "性感エステとして広島掲載、9:00〜LAST、60分11,000円〜。今回、電話・住所・独立公式サイトは確定できず。広島市内所在地は未確認。",
+        "status": "性感エステとして広島掲載、9:00〜LAST、60分11,000円〜。住所・電話・独立公式サイトは未確認。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=seikan&pref=hiroshima"
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=560f7c16d6"
         ]
       }
     },
@@ -6139,7 +6140,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "性感エステとして広島掲載、銀山町電停徒歩3分、10:00〜24:00、電話082-243-6630。住所非公開、独立公式サイト未確認。",
+        "status": "性感エステとして掲載。銀山町電停徒歩3分、10:00〜24:00、電話082-243-6630。住所非公開、独立公式サイト未確認。",
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=6f71229c60"
         ]
@@ -6190,7 +6191,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "性感エステとして広島掲載、電話082-567-4723、10:00〜翌5:00（最終受付3:00）。住所非公開、独立公式サイト未確認。",
+        "status": "性感エステとして掲載。電話082-567-4723、10:00〜翌5:00（最終受付3:00）。住所非公開、独立公式サイト未確認。",
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=a5e12fe165"
         ]
@@ -6241,7 +6242,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島市発のデリヘル。電話080-4754-6737、10:00〜翌5:00。住所非公開のため市内の固定店舗所在地はなし/未確認。",
+        "status": "広島市発のデリヘルとして掲載。電話080-4754-6737、10:00〜翌5:00。住所非公開のため市内固定店舗所在地は未確認。",
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=3a3f1143f4"
         ]
@@ -6292,7 +6293,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "公式サイトで広島市発のデリヘル、電話090-9415-2525を確認。媒体営業時間12:00〜翌3:00。住所非公開・派遣型。",
+        "status": "独立公式サイトで広島市発のデリヘルを確認。電話090-9415-2525、媒体記載12:00〜翌3:00。住所非公開・派遣型。",
         "sources": [
           "https://www.ares-hiroshima.com/top/event/",
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=d4c036216d"
@@ -6344,10 +6345,9 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島のデリヘルとして掲載。電話090-1018-9494、10:00〜24:00、弥生町発。住所非公開、独立公式サイト未確認。",
+        "status": "広島市中区の店舗候補として求人媒体掲載を確認。ただし今回の検索ではソープランド求人情報が見つかり、既存のデリヘル分類と矛盾。業種・公式集客サイト・所在地は要再照合。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=4b9dc7481b",
-          "https://work.purelovers.com/chugoku-shikoku/shop/9115/"
+          "https://mens-qzin.jp/hiroshima/area_34001/detail/dhearts/"
         ]
       }
     },
@@ -6396,9 +6396,9 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区発のデリヘル。電話082-249-6131、受付8:30〜、営業9:00〜LAST。住所非公開、独立公式サイト未確認。",
+        "status": "広島のデリヘル媒体掲載。電話082-249-6131、9:00〜LAST。住所非公開、独立公式サイトは未確認。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=f19fc739ad"
+          "https://fuzoku.jp/elegansssssssss/girllist/"
         ]
       }
     },
@@ -6452,10 +6452,10 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "ナチュラル/なちゅらる/NATURAL表記を確認。広島市のデリヘル、電話080-5552-4681、10:30〜LAST。住所非公開。公式CityHeaven掲載あり。",
+        "status": "候補のNATURALはデリヘル媒体掲載と既存情報あり。今回の検索では同名の美容院（中区袋町9-1、082-569-8620）も確認したが別業種・別店舗の可能性が高く、誤結合しない。",
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=506b51b32b",
-          "https://www.girlsheaven-job.net/hiroshima/ma-184/sa-418/natural_hiroshima/"
+          "https://www.mapion.co.jp/phonebook/M09001/34101/23433024349/"
         ]
       }
     },
@@ -6504,10 +6504,9 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区発のデリヘル。電話080-1930-3108、9:00〜翌5:00、不定休。店舗サイトとしてwww.hiroshimarush.comの案内を確認。",
+        "status": "広島・流川のデリヘルとして掲載。電話080-1930-3108、9:00〜翌5:00。店舗サイト案内あり。",
         "sources": [
-          "https://nsnn.jp/shop/rush-hiroshima/",
-          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=23e15fe491"
+          "https://nsnn.jp/shop/rush-hiroshima/"
         ]
       }
     },
@@ -6556,9 +6555,10 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島のデリヘルとして掲載、10:00〜翌5:00。今回の検索では電話・住所・独立公式サイトを確定できず。市内固定所在地は未確認。",
+        "status": "広島のデリヘル候補と既存媒体情報あり。ただし今回検索で見つかったtiara-esthetic.jpは中区三川町の一般ホリスティックサロンで、候補のデリヘルと同一とは確認できず。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://tiara-esthetic.jp/"
         ]
       }
     },
@@ -6658,7 +6658,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島のデリヘルとして掲載。電話090-8244-5109、10:00〜翌5:00。住所非公開、独立公式サイト未確認。",
+        "status": "広島のデリヘルとして既存媒体掲載記録あり。今回の再検索では独立した追加根拠を確保できず、電話・住所・営業状況は未確認扱いを維持。",
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=d2b7232ab5"
         ]
@@ -6709,7 +6709,7 @@
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区発のデリヘル。電話080-1903-1501、10:00〜翌6:00。住所非公開、独立公式サイト未確認。",
+        "status": "広島市中区発のデリヘルとして掲載。電話080-1903-1501、10:00〜翌6:00。住所非公開、独立公式サイト未確認。",
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=125e1a12df"
         ]
@@ -14132,7 +14132,7 @@
       "endIndex": 134,
       "count": 20,
       "scope": "広島市内候補20店舗",
-      "note": "店舗型ヘルス・ソープヘルス・SM/ハンドサービス・デリヘル・性感エステの業種を照合。派遣型は市内発/広島発と固定所在地を区別。住所非公開・未特定は未確認のまま記録。"
+      "note": "116〜135番の候補20件を再照合。店舗型ヘルス/ソープ/SM・ハンドサービス/性感エステ/デリヘルを区別。住所非公開の派遣型は固定店舗所在地未確認とし、同名別業種や業種矛盾は誤結合せず保留。"
     }
   ]
 }
