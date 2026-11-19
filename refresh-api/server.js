@@ -7,6 +7,7 @@ const ALLOWED_ORIGIN = "https://hiroshima-cast-portal.onrender.com";
 const ALLOWED_ORIGINS = new Set([ALLOWED_ORIGIN, "https://hiroshima-cast-ranking.onrender.com"]);
 let lastFetchAt = 0;
 let cachedInspection = null;
+let rankingLinkAuditJob = null;
 
 function send(res, status, body, origin) {
   res.writeHead(status, {
@@ -843,6 +844,14 @@ const server = http.createServer(async (req, res) => {
     const storageUrl = process.env.CAST_STORAGE_URL;
     const storageToken = process.env.CAST_STORAGE_API_TOKEN;
     if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
+    if (requestUrl.searchParams.get("refresh") === "1") rankingLinkAuditJob = null;
+    if (rankingLinkAuditJob?.status === "running") {
+      return send(res, 200, { ok: true, mode: "read-only", status: "running", startedAt: rankingLinkAuditJob.startedAt, note: "検査中です。同じURLを後で再読み込みしてください。保存データは変更していません。" }, origin);
+    }
+    if (rankingLinkAuditJob?.status === "complete") return send(res, 200, rankingLinkAuditJob.result, origin);
+    if (rankingLinkAuditJob?.status === "failed") return send(res, 502, { ok: false, status: "failed", error: rankingLinkAuditJob.error, note: "読み取り専用検査に失敗しました。" }, origin);
+    rankingLinkAuditJob = { status: "running", startedAt: new Date().toISOString() };
+    void (async () => {
     try {
       const stored = await fetch(new URL("/v1/data/ranking_state", storageUrl), {
         headers: { authorization: `Bearer ${storageToken}` },
@@ -850,7 +859,7 @@ const server = http.createServer(async (req, res) => {
       });
       const payload = await stored.json();
       if (!stored.ok || !payload.ok || !payload.found || !payload.value?.sources) {
-        return send(res, 502, { ok: false, error: "ranking_state_unavailable" }, origin);
+        throw new Error("ranking_state_unavailable");
       }
       const allowedHosts = {
         salonowa: new Set(["salonowa.jp", "www.salonowa.jp"]),
@@ -961,7 +970,7 @@ const server = http.createServer(async (req, res) => {
           }));
         }
       }
-      return send(res, 200, {
+      rankingLinkAuditJob = { status: "complete", completedAt: new Date().toISOString(), result: {
         ok: true, mode: "read-only", checkedAt: new Date().toISOString(),
         total: results.length,
         totals: {
@@ -974,10 +983,12 @@ const server = http.createServer(async (req, res) => {
         },
         groups,
         note: "読み取り専用検査です。店舗マスター・ランキング保存データは変更していません。アクセス制限はリンク切れと区別しています。"
-      }, origin);
+      }};
     } catch (error) {
-      return send(res, 502, { ok: false, error: "ranking_link_audit_failed", detail: String(error?.message || error) }, origin);
+      rankingLinkAuditJob = { status: "failed", error: String(error?.message || error) };
     }
+    })();
+    return send(res, 202, { ok: true, mode: "read-only", status: "started", startedAt: rankingLinkAuditJob.startedAt, note: "検査を開始しました。画面を閉じても構いません。同じURLを後で再読み込みすると結果を表示します。保存データは変更しません。" }, origin);
   }
   // Read/write app datasets through the server-side secret. Browser never receives the D1 token.
   const storageDataPrefix = "/api/storage/data/";
