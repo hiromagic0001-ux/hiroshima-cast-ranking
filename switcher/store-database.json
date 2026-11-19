@@ -12327,6 +12327,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市中区の出張型として掲載。電話080-6026-7525。媒体により営業時間は9:00〜0:00または受付13:00〜22:00と異なるため併記。",
+        "sources": [
+          "https://es-ban.com/shop/2294?a=&type=599",
+          "https://www.kking.jp/ippan/146274/"
+        ]
       }
     },
     {
@@ -12378,6 +12387,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキング掲載。個別住所・電話・独立公式サイトは今回未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -12429,6 +12446,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市中区舟入町、電話090-5245-2221、10:00〜翌2:00。店舗ページに公式HP欄あり。",
+        "sources": [
+          "https://dr.ptr216.ptrcloud.net/shop/toriko"
+        ]
       }
     },
     {
@@ -12480,6 +12505,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキング掲載。個別住所・電話・独立公式サイトは今回未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -12531,6 +12564,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市西区、横川駅南口徒歩7分、電話090-8106-5573、10:00〜翌5:00、公式HP tonari-esthe.comを確認。",
+        "sources": [
+          "https://estama.jp/shop/51793/"
+        ]
       }
     },
     {
@@ -12591,7 +12632,15 @@
       "duplicateCanonicalName": "TISSE",
       "aliases": [
         "TISSE"
-      ]
+      ],
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキング掲載。過去監査済みのTISSE候補と同名。今回の再掲載照合のみ。個別情報の重複登録は統合せず。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
+      }
     },
     {
       "name": "ENEL（エネル）",
@@ -12651,7 +12700,16 @@
       "officialUrlStatus": "統合先店舗の公式HPリンク（ENEL）",
       "aliases": [
         "ENEL"
-      ]
+      ],
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキング掲載。過去監査済みENEL候補と同名。既存公式情報を維持し、重複統合は保留。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+          "https://www.salonowa.jp/area/hiroshima/hiroshima"
+        ]
+      }
     },
     {
       "name": "Grace Spa",
@@ -12693,7 +12751,15 @@
       },
       "verifiedAddress": "広島県広島市中区富士見町7-11 TOSOKU 301",
       "verifiedHours": "10:00〜翌2:00",
-      "verifiedPhone": "090-7373-9222"
+      "verifiedPhone": "090-7373-9222",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市中区の公式サイトを確認。電話090-7373-9222、10:00〜LAST。",
+        "sources": [
+          "https://hiroshima-grace-spa.com/"
+        ]
+      }
     },
     {
       "name": "お手頃価格な おもてなし",
@@ -12744,6 +12810,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキング掲載。個別住所・電話・独立公式サイトは今回未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -12795,6 +12869,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市中区の店舗一覧に掲載。営業時間10:00〜LAST、個別住所・電話は未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?f=card&lang=en&p=34"
+        ]
       }
     },
     {
@@ -12846,6 +12928,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキング掲載。個別住所・電話・独立公式サイトは今回未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -12906,7 +12996,16 @@
       "officialUrlStatus": "統合先店舗の公式HPリンク（Refresh）",
       "aliases": [
         "Refresh"
-      ]
+      ],
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市中区のマンション型、営業時間10:30〜翌2:00、電話080-8244-3030。舟入町・河原町・舟入本町の複数ルーム。",
+        "sources": [
+          "https://menesmall.jp/shop/refresh",
+          "https://menesmall.jp/shop/refresh/contact"
+        ]
+      }
     },
     {
       "name": "Lumiella（ルミエラ）",
@@ -12957,6 +13056,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングとサロノワ掲載。比治山橋駅周辺の掲載あり。個別住所・電話は未確認。",
+        "sources": [
+          "https://www.salonowa.jp/area/hiroshima/hiroshima",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -13008,6 +13116,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "公式HP a doll hiroshimaを既存登録済み。広島市ランキング再掲載を確認。既存監査情報を維持。",
+        "sources": [
+          "https://www.salonowa.jp/area/hiroshima/hiroshima",
+          "https://adollhiroshima.com/"
+        ]
       }
     },
     {
@@ -13068,7 +13185,16 @@
       "duplicateCanonicalName": "BODY SPA 広島",
       "aliases": [
         "BODY SPA 広島"
-      ]
+      ],
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市公式サイト掲載。広島市ランキング・サロノワ双方に掲載。既存監査情報を維持。",
+        "sources": [
+          "https://www.salonowa.jp/area/hiroshima/hiroshima",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
+      }
     },
     {
       "name": "Relaxation Salon REAL",
@@ -13128,7 +13254,15 @@
       "officialUrlStatus": "統合先店舗の公式HPリンク（REAL）",
       "aliases": [
         "REAL"
-      ]
+      ],
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市中区のRelaxation Salon REALとして184店一覧に掲載。松川町駅、10:00〜翌5:00。既存監査情報を維持。",
+        "sources": [
+          "https://mens-es.men/area/3401"
+        ]
+      }
     },
     {
       "name": "出張専門高級メンズエステ IVY SPA",
@@ -13179,6 +13313,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島駅エリアの出張専門として184店一覧に掲載。9:30〜翌6:00。既存監査情報を維持。",
+        "sources": [
+          "https://mens-es.men/area/3401"
+        ]
       }
     },
     {
@@ -13230,6 +13372,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市中区東平塚町2-22、電話080-3435-5505、9:00〜翌6:00。チェリーSPA広島の別店名/系列店表記。店舗単位で区別。",
+        "sources": [
+          "https://estama.jp/shop/47917/"
+        ]
       }
     },
     {
@@ -13281,6 +13431,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市出張型として184店一覧に掲載。9:00〜翌6:00。既存NAGOMI候補と名称重複の可能性があるため統合保留。",
+        "sources": [
+          "https://mens-es.men/area/3401"
+        ]
       }
     },
     {
@@ -13341,7 +13499,16 @@
       "officialUrlStatus": "統合先店舗の公式HPリンク（Arinoa）",
       "aliases": [
         "Arinoa"
-      ]
+      ],
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市のランキング・店舗一覧に掲載。八丁堀または袋町駅周辺、11:00〜翌2:00。",
+        "sources": [
+          "https://mens-es.men/area/3401",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
+      }
     },
     {
       "name": "ミセスママ 広島",
@@ -15005,6 +15172,14 @@
       "count": 20,
       "scope": "広島市候補216〜235番",
       "note": "広島市のメンズエステ一覧で20候補の掲載・エリア・営業時間表記を照合。Noëlは媒体間で駅名・営業時間が異なるため差異を記録。Paz・Labyrinthは住所/電話の別媒体掲載を確認。その他の個別住所・電話・独立公式サイト未確認は未確認のまま保持。"
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 235,
+      "endIndex": 254,
+      "count": 20,
+      "scope": "広島市候補236〜255番",
+      "note": "華room・Toriko・TONARI・Grace Spa・Refresh・チェリーSPA東平塚店など個別媒体を確認。TISSE/ENEL/a doll/BODY SPA/REAL/IVY SPA/NAGOMIは既存候補と重複可能性があるため、既存記録を保全し統合を保留。華roomの営業時間は媒体間差異を記録。"
     }
   ]
 }
