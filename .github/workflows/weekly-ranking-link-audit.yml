@@ -40,7 +40,17 @@ jobs:
               exit 1
             fi
             if echo "$result" | jq -e '.checkedAt != null and .totals != null' >/dev/null; then
-              echo "$result" | jq '{checkedAt, total, totals, groups: [.groups[] | {sourceId, total, reachable, broken, restricted, unconfirmed}], note}'
+              report=$(echo "$result" | jq '{checkedAt, total, totals, groups: [.groups[] | {sourceId, total, reachable, broken, restricted, unconfirmed}], note}')
+              echo "$report"
+              echo '## Weekly ranking link audit' >> "$GITHUB_STEP_SUMMARY"
+              echo '```json' >> "$GITHUB_STEP_SUMMARY"
+              echo "$report" >> "$GITHUB_STEP_SUMMARY"
+              echo '```' >> "$GITHUB_STEP_SUMMARY"
+              problems=$(echo "$result" | jq '[.totals.linksMissing, .totals.broken, .totals.restricted, .totals.unconfirmed] | add')
+              if (( problems > 0 )); then
+                echo "Audit found $problems link issue(s)." >&2
+                exit 1
+              fi
               exit 0
             fi
             echo "Audit still running; checking again in 20 seconds."
