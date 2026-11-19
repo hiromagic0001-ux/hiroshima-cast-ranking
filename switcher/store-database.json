@@ -1822,15 +1822,15 @@
       "name": "Alive",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内の現行店舗情報との個別照合待ち",
+      "status": "候補名のみ・店舗同定未確定",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkAuditStatus": "名称候補。電話・住所・営業状況・公式サイト未確認",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
         "status": "name-match-in-current-directory-snapshot",
@@ -1843,24 +1843,13 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null
+        "checkedAt": "2026-11-19",
+        "status": "name-only-directory-match-not-currently-verified",
+        "note": "同名候補の記録はあるが、今回の最新広島市ディレクトリ・店舗情報から電話、住所、営業時間、当日出勤、独立公式サイトを特定できず。Healing Salon Aliveとは別レコードとして保持し、同一店舗と推定しない。福山市の脱毛サロンALIVE（alive-fukuyama.com）は広島市外かつ業種・店舗が異なるため対象外。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+          "https://menespark.com/hiroshima/hiroshima/"
+        ]
       }
     },
     {
@@ -9325,15 +9314,15 @@
       "name": "Healing Salon Alive",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市・広島駅周辺の媒体掲載確認。詳細住所は未確認",
+      "status": "媒体掲載・営業詳細の追加確認対象",
       "sources": [
         {
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkAuditStatus": "個別確認：広島市掲載・営業時間媒体差異を記録。電話・住所・当日出勤・独立公式サイトは未確認",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
         "status": "name-match-in-current-directory-snapshot",
@@ -9346,31 +9335,20 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市を対象とする現行媒体一覧の掲載名と照合一致。これは媒体掲載の確認であり、現在営業中・当日受付・住所/電話/営業時間・公式サイトの真正性を独立確認したものではない。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
-        "evidence": [
-          {
-            "source": "広島県メンズエステマップ（広島市37店の一覧）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "source": "広島市メンズエステ情報ランキング（107店一覧）",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          },
-          {
-            "source": "MEN'S ES広島市一覧（184店舗）",
-            "url": "https://mens-es.men/area/3401"
-          },
-          {
-            "source": "メンエスセレクト広島市一覧（125店）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          }
-        ],
-        "scope": "広島市対象の媒体一覧の名称照合",
-        "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
-      }
+        "checkedAt": "2026-11-19",
+        "status": "hiroshima-city-listing-match-details-unverified",
+        "address": "広島市・広島駅周辺との媒体掲載。番地・部屋住所は未確認",
+        "hours": "エステ魂掲載 11:00〜23:00／エステ番長・メンズエステマップ掲載 10:30〜22:00（差異あり）",
+        "phone": "未確認（エステ魂ページに9999-9999-9999の仮表示）",
+        "officialSiteStatus": "独立公式サイト未確認。エステ魂ページにはInstagram DM・LINE予約案内あり",
+        "note": "Healing Salon Aliveとして広島市の店舗掲載を確認。メンズエステマップは広島駅・10:30〜22:00、エステ魂は広島市・11:00〜23:00と表示。電話は仮番号のため登録しない。福山市南手城町の脱毛サロンALIVEとは別店舗。11月19日の当日出勤情報は確認できず。",
+        "sources": [
+          "https://estama.jp/shop/40767/",
+          "https://es-ban.com/p/5597/a/5598/shoplist",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
+      },
+      "verifiedHours": "媒体差異あり（10:30〜22:00／11:00〜23:00）"
     },
     {
       "name": "Jasmine（ジャスミン）",
