@@ -13675,6 +13675,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "&White（アンドホワイト）は広島市の現行第三者店舗一覧に掲載。市内表示・10:00〜翌3:00。独立公式サイトの直接確認は未完了。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -13749,6 +13760,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Affino（アフィーノ）は広島市の現行第三者店舗一覧に掲載。袋町駅最寄り・11:00〜翌2:00。電話・独立公式サイトの直接確認は未完了。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -13820,6 +13842,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Bright（ブライト）は広島市の現行第三者店舗一覧に掲載。比治山下駅最寄り・10:00〜LAST。媒体掲載情報であり独立公式サイトは未確認。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -13905,6 +13938,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "FREEDOM（フリーダム）は広島市の現行第三者店舗一覧に掲載。市役所前駅最寄り・10:00〜LAST。既存URLは保持し、独立公式サイトの稼働は未確認。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "officialUrl": "https://beange-beauty.com/",
@@ -13978,6 +14022,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Healing Salon Aliveは広島市の現行第三者店舗一覧に掲載。広島駅周辺・10:30〜22:00。既存メモの媒体間営業時間差を維持。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "verifiedHours": "10:30〜22:00（エステ番長・地図媒体）／11:00〜23:00（エステ魂）",
@@ -14050,6 +14105,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Jasmine（ジャスミン）は広島市の現行第三者店舗一覧に掲載。比治山橋駅最寄り・10:00〜翌0:00。媒体掲載情報。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14119,6 +14185,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Luxe 広島は広島市の現行第三者店舗一覧に掲載。10:00〜翌2:00。別名・独立公式サイトは未確認。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14197,6 +14274,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Men's salon 凛-rin-は広島市の現行第三者店舗一覧に掲載。比治山橋駅最寄り・10:00〜翌2:00。リアンとは別候補として既存区別を維持。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14273,6 +14361,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Men’s spa Rは広島市の現行第三者店舗一覧に掲載。出張型・9:00〜翌4:00。既存公式URLは保持するが直接稼働確認は未完了。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "duplicateRole": "alias",
@@ -14355,6 +14454,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Mrs.癒seasideは広島市の現行第三者店舗一覧に掲載。八丁堀駅・銀山町駅周辺・9:00〜翌3:00。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14424,6 +14534,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Noël（ノエル）は広島市の現行第三者店舗一覧に掲載。市役所前駅最寄り・10:00〜LAST。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14495,6 +14616,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Nuxe（ニュクス）は広島市の現行第三者店舗一覧に掲載。市役所前駅最寄り・6:00〜LAST。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14564,6 +14696,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Reflet Spa（ルフレスパ）は広島市の現行第三者店舗一覧に掲載。八丁堀駅最寄り・11:00〜LAST。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14649,6 +14792,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "SPA-DOLCEは広島市の現行第三者店舗一覧に掲載。12:00〜翌0:00。既存の独立公式サイト確認メモを維持し、当日営業は未確認。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14737,6 +14891,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "SPA商事-秘書室-は広島市の現行第三者店舗一覧に掲載。鷹野橋駅最寄り・10:00〜翌2:00。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14806,6 +14971,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "peony（ピオニー）は広島市の現行第三者店舗一覧に掲載。広島駅周辺・10:00〜18:00・出張型。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14875,6 +15051,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "トップシークレットは広島市の現行第三者店舗一覧に掲載。13:00〜翌6:00・出張型。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -14944,6 +15131,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "ベトナムガルは広島市の現行第三者店舗一覧に掲載。銀山町駅最寄り・6:00〜翌6:00。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15013,6 +15211,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "メンズエステ LOVEは広島市の現行第三者店舗一覧に掲載。竹屋町駅最寄り・10:00〜LAST。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15082,6 +15291,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "少し大人のメンズエステ Pazは広島市の現行第三者店舗一覧に掲載。中電前駅最寄り・10:00〜翌2:00。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15152,6 +15372,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Hitomebore～ひとめ惚れ～は広島市の現行第三者店舗一覧に掲載。鷹野橋駅最寄り・10:00〜LAST。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15222,6 +15453,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Labyrinth～ラビリンス～は広島市の現行第三者店舗一覧に掲載。10:00〜翌3:00。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15292,6 +15534,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "極のエステ～Ω～は広島市の現行第三者店舗一覧に掲載。10:00〜翌3:00。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15361,6 +15614,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "IRISは広島市の現行第三者店舗一覧に掲載。11:00〜翌2:00。媒体上で情報未確認表示も併記されているため、掲載＝営業確認とは扱わない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15430,6 +15694,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "luanaは広島市の現行第三者店舗一覧に掲載。11:00〜翌0:00。媒体上で情報未確認表示のため、営業確認とは扱わない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15499,6 +15774,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "エネル 出張は広島市の現行第三者店舗一覧に掲載。6:00〜翌6:00・出張型。独立公式サイトの店舗情報とは分けて扱う。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15568,6 +15854,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "ラブデラックスは広島市の現行第三者店舗一覧に掲載。13:00〜翌6:00・出張型。媒体上で情報未確認表示。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15637,6 +15934,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "広島:出張マッサージ～サヤ～は広島市の現行第三者店舗一覧に掲載。13:00〜翌4:00・出張型。媒体上で情報未確認表示。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15706,6 +16014,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "広島sweet luxuryspaは広島市の現行第三者店舗一覧に掲載。10:00〜翌5:00。媒体上で情報未確認表示。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15775,6 +16094,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "華roomは広島市の現行第三者店舗一覧に掲載。9:00〜翌0:00・出張型。媒体上で情報未確認表示。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15845,6 +16175,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "ベトナム子は広島市の現行ランキングに店舗名掲載あり。現行ランキングの本日出勤枠にも名称があるが、個別店舗住所・公式情報は未確認。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -15998,6 +16339,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "メンズアロマ広島人妻さんは広島市の現行ランキング掲載および第三者出勤一覧に掲載。個別の住所・独立公式サイトは未確認。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -16067,6 +16419,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "TONARI（トナリ）は広島市の現行ランキング掲載を確認。個別店舗住所・独立公式サイトの直接確認は未完了。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -16140,6 +16503,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "TISSE（ティセ）は広島市の現行ランキングおよび第三者新着店舗一覧に掲載。既存公式URLは保持し、公式サイトの直接稼働確認は別途。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "duplicateRole": "alias",
@@ -16223,6 +16597,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "ENEL（エネル）は広島市の現行ランキングおよび第三者出勤一覧に掲載。既存公式URLは保持し、公式サイトの直接稼働確認は別途。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "duplicateRole": "alias",
@@ -16305,6 +16690,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Grace Spaは広島市の現行ランキング・第三者出勤一覧に掲載。既存の独立公式サイト・中区4ルーム・電話・営業時間確認メモを維持。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "verifiedAddress": "広島市中区鶴見町13-19／富士見町4-29／富士見町7-11／小町9-39（複数ルーム）",
@@ -16378,6 +16774,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "お手頃価格な おもてなしは広島市の現行ランキング掲載を確認。個別住所・公式サイト・現行営業の直接確認は未完了。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -16447,6 +16854,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "取得した一覧の表示範囲で一致を確証できず。表記揺れ・一覧の表示範囲・別業種・掲載時差の可能性があり、閉店・不存在・市外とは判定しない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Lavie＆Spaは広島市の現行ランキング・第三者新着店舗一覧・出勤一覧に掲載。媒体名の表記差は維持。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -16516,6 +16934,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "heaven（ヘブン）は広島市の現行ランキング・第三者出勤一覧に掲載。既存の出勤更新日・公式HP直接確認待ちの注意を維持。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -16591,6 +17020,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Refresh（リフレッシュ）は広島市の現行ランキング・第三者新着店舗一覧・出勤一覧に掲載。既存の電話・営業時間・予約案内確認メモを維持。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "duplicateRole": "alias",
@@ -16676,6 +17116,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "Lumiella（ルミエラ）は広島市の現行ランキング・第三者新着店舗一覧・出勤一覧に掲載。媒体掲載であり独立公式サイトの直接確認ではない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -16746,6 +17197,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "a doll（アドール）は広島市の現行ランキング・第三者新着店舗一覧・出勤一覧に掲載。既存の媒体住所・電話・営業時間メモを維持。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "batchAudit": {
@@ -16820,6 +17282,17 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "広島市カテゴリの店舗一覧上で名称（表記揺れを含む）を確認。メンエスセレクトは公式サイト等をもとに運営が掲載するが「店舗未確認」と明記。掲載は現営業・住所・電話・独立公式ドメインの確証ではない。既存個別監査は維持。"
+        },
+        "cityDirectoryCrossCheck20261119Batch201to250": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "current third-party Hiroshima City directories",
+          "note": "BODY SPA HIROSHIMAは広島市の現行ランキング・第三者新着店舗一覧・出勤一覧に掲載。既存公式URLは保持し、独立公式サイトの直接稼働確認は別途。",
+          "sources": [
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://mensesthe-ranking.net/column/new-shops/",
+            "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
+          ]
         }
       },
       "duplicateRole": "alias",
@@ -19761,7 +20234,7 @@
     "individualAuditRecords": 278,
     "batchAuditedRecords": 271,
     "batchAuditRuns": 19,
-    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。 2026-11-19に1〜50番の第3段階所在地・掲載情報クロスチェックを追加。確認できた電話・所在地・複数ルーム・営業時間差のみ記録し、未確認候補は保留。 2026-11-19に51〜100番の第3段階媒体横断・業種確認を追加。掲載一致は媒体掲載確認に限定し、現営業・独立公式サイト・正確な所在地の確証とは区別。95〜100番の業種混在を保持し、278候補を維持。 2026-11-19に101〜150番の第3段階業種・広島市範囲・掲載クロスチェックを追加。広島県/広島エリア掲載と広島市明記を区別し、業種混在と同一性未確定を保持。掲載一致は現営業・独立公式サイト・正確な所在地の証明とは扱わず、未一致を閉店と断定しない。 2026-11-19に251〜278番の第3段階現行媒体一覧クロスチェックを追加。名称掲載と店舗同定・現営業・独立公式サイト・正確な所在地の確証を区別し、未一致候補も保持。 2026-11-19最終点検で、全278レコードのstatus集計を現行レコードから再計算し、集計欄の古い値を更新。個別レコードの事業情報・重複判定・店舗件数は変更なし。 2026-11-19に1〜50番のうち未確定15候補を追加検索。10候補で第三者媒体の掲載・更新情報を照合、5候補は今回の検索で確実な一致を得られず保留。媒体掲載は独立公式サイト・現営業の直接確認とは区別。全278候補を保持。 2026-11-19に51〜100番の未確定候補を優先して追加検索。Grace Spa、KING'S、Dior観音店、Aroma Mia、Celeste、Seraphi Spa、heaven、ばななすぱっ！の8候補について第三者媒体または市内現行一覧の掲載を追加確認。媒体情報と独立公式サイト・現営業の直接確認を区別し、278候補を保持。 2026-11-19に101〜150番を第三者媒体横断照合し、31候補に媒体掲載情報を追記。市外候補・類似名称は区別し、未確認事項を保持。 2026-11-19に151〜200番を第三者媒体横断照合し、39候補の掲載情報・未確認状況を個別メモに追加。公式サイト直接確認と媒体掲載を区別し、重複疑い・名称差異は統合せず278件保持。"
+    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。 2026-11-19に1〜50番の第3段階所在地・掲載情報クロスチェックを追加。確認できた電話・所在地・複数ルーム・営業時間差のみ記録し、未確認候補は保留。 2026-11-19に51〜100番の第3段階媒体横断・業種確認を追加。掲載一致は媒体掲載確認に限定し、現営業・独立公式サイト・正確な所在地の確証とは区別。95〜100番の業種混在を保持し、278候補を維持。 2026-11-19に101〜150番の第3段階業種・広島市範囲・掲載クロスチェックを追加。広島県/広島エリア掲載と広島市明記を区別し、業種混在と同一性未確定を保持。掲載一致は現営業・独立公式サイト・正確な所在地の証明とは扱わず、未一致を閉店と断定しない。 2026-11-19に251〜278番の第3段階現行媒体一覧クロスチェックを追加。名称掲載と店舗同定・現営業・独立公式サイト・正確な所在地の確証を区別し、未一致候補も保持。 2026-11-19最終点検で、全278レコードのstatus集計を現行レコードから再計算し、集計欄の古い値を更新。個別レコードの事業情報・重複判定・店舗件数は変更なし。 2026-11-19に1〜50番のうち未確定15候補を追加検索。10候補で第三者媒体の掲載・更新情報を照合、5候補は今回の検索で確実な一致を得られず保留。媒体掲載は独立公式サイト・現営業の直接確認とは区別。全278候補を保持。 2026-11-19に51〜100番の未確定候補を優先して追加検索。Grace Spa、KING'S、Dior観音店、Aroma Mia、Celeste、Seraphi Spa、heaven、ばななすぱっ！の8候補について第三者媒体または市内現行一覧の掲載を追加確認。媒体情報と独立公式サイト・現営業の直接確認を区別し、278候補を保持。 2026-11-19に101〜150番を第三者媒体横断照合し、31候補に媒体掲載情報を追記。市外候補・類似名称は区別し、未確認事項を保持。 2026-11-19に151〜200番を第三者媒体横断照合し、39候補の掲載情報・未確認状況を個別メモに追加。公式サイト直接確認と媒体掲載を区別し、重複疑い・名称差異は統合せず278件保持。 2026-11-19に201〜250番を現行広島市媒体一覧で横断照合し、43候補の媒体掲載情報を追記。媒体掲載と独立公式サイト・現営業の直接確認を区別し、全278件を保持。"
   },
   "duplicateAuditSummary": {
     "checkedAt": "2026-11-19",
@@ -19941,6 +20414,65 @@
         "https://estama.jp/shop/47576/",
         "https://ivyspa.jp/",
         "https://mensspa-r.com/"
+      ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 200,
+      "endIndex": 249,
+      "count": 50,
+      "scope": "201〜250番の現行広島市媒体一覧横断照合",
+      "recordsUpdated": [
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250
+      ],
+      "note": "50候補を現行広島市店舗一覧・ランキング・新着店一覧・出勤一覧で横断確認し、43候補に媒体掲載状況を追記。市内掲載と独立公式サイト・実営業の直接確認を区別。情報未確認表示の候補は未確認として扱い、既存の公式確認メモ・住所差異・重複候補を維持。278件保持。",
+      "sources": [
+        "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+        "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+        "https://mensesthe-ranking.net/column/new-shops/",
+        "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
       ]
     }
   ]
