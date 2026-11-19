@@ -1955,8 +1955,8 @@
       "name": "Suu",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内の出張専門として媒体掲載。固定店舗所在地は該当せず",
+      "status": "第三者媒体で広島市内出張専門・電話・営業時間・現行セラピスト掲載確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1997,13 +1997,16 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて再確認",
-        "status": "Suu 〜透けて見える世界〜はエステ魂で広島市・出張専門、電話070-8475-8884、営業時間13:00〜翌6:00、年中無休と掲載。独立公式ドメイン未確認。別の脱毛サロン「スゥ(Suu)」は女性向け脱毛店で同一店舗ではない。",
+        "batch": "50店舗第1回個別確認",
+        "status": "エステ魂の店舗案内・セラピストページで広島市内の出張専門、電話070-8475-8884、13:00〜翌6:00、年中無休、現行セラピスト掲載を再確認。独立公式ドメイン未確認。",
         "sources": [
           "https://estama.jp/shop/46486/flow/",
-          "https://beauty.hotpepper.jp/kr/slnH000826213/"
+          "https://estama.jp/shop/46486/cast/850205/"
         ]
-      }
+      },
+      "verifiedAddress": "広島市内（出張専門・固定店舗住所なし。広島駅最寄りとして媒体掲載）",
+      "verifiedPhone": "070-8475-8884",
+      "verifiedHours": "13:00〜翌6:00"
     },
     {
       "name": "広島メンズエステ ゆりかご",
@@ -2306,8 +2309,8 @@
       "name": "Luxurysalon ROMA",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区大手町・西平塚町の複数ルームを媒体で確認。個別の現行利用ルームは未確認",
+      "status": "複数媒体で店舗情報・電話・出勤表示確認・独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -2343,20 +2346,24 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて再確認",
-        "status": "Luxurysalon ROMAの広島市内求人掲載を再確認。電話090-4690-6000、求人媒体営業時間09:00〜翌05:00。別ランキングは10:00〜翌03:00と差あり。中区大手町ルームの記載あり。独立公式URLは確認できず。",
+        "batch": "50店舗第1回個別確認",
+        "status": "エステ魂とメンズスタイルで広島市内掲載、電話082-244-8484、9:00〜翌5:00を確認。メンエスなう等では10:00〜翌3:00の差異あり。大手町・西平塚町の複数ルーム表記。公式HP欄はエステ魂掲載ページであり独立公式ドメインとは確認できず。",
         "sources": [
-          "https://haji-s.com/chugokushikoku/shop/15358",
-          "https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=shop&sort=staff"
+          "https://estama.jp/shop/41458/",
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/luxurysalonroma",
+          "https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=shop&sort=price_low"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区大手町・西平塚町（媒体に複数ルーム掲載。番地・利用ルームは予約時確認）",
+      "verifiedPhone": "082-244-8484",
+      "verifiedHours": "9:00〜翌5:00（エステ魂・メンズスタイル掲載。別媒体は10:00〜翌3:00と相違）"
     },
     {
       "name": "パート妻のプライベートサロン",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内全域送迎として求人媒体掲載。固定店舗住所は未確認",
+      "status": "第三者媒体で広島市内送迎・電話・営業時間・求人ブログ確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -2397,13 +2404,16 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて再確認",
-        "status": "エステ魂の店舗・セラピスト掲載で広島市、舟入幸町駅、9:00〜翌4:00を確認。電話070-5672-2880はセラピストページで確認。独立公式サイト・番地住所は未確認。",
+        "batch": "50店舗第1回個別確認",
+        "status": "エスタマ求人で広島市内全域無料送迎、電話070-5672-2880、営業時間9:00〜翌4:00、2026年10月の店長ブログを確認。独立公式ドメイン未確認。",
         "sources": [
-          "https://estama.jp/shop/44273/cast/762238/",
-          "https://estama.jp/shop/44273/cast/942174/"
+          "https://esjob.jp/shop/44273/",
+          "https://estama.jp/shop/44273/cast/762238/"
         ]
-      }
+      },
+      "verifiedAddress": "広島市内全域無料送迎（固定店舗住所の掲載なし）",
+      "verifiedPhone": "070-5672-2880",
+      "verifiedHours": "9:00〜翌4:00"
     },
     {
       "name": "グレイススパ",
@@ -2542,8 +2552,8 @@
       "name": "Seraphi Spa",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区銀山町の媒体掲載を確認。番地・現行ルームは未確認",
+      "status": "複数媒体で広島市内店舗情報・電話・セラピスト掲載確認・独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -2579,12 +2589,17 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて再確認",
-        "status": "エステ魂でSeraphi Spa（セラフィ スパ）の広島市掲載、10:00〜翌6:00、電話070-5051-6726、当日受付可能表示とセラピスト一覧を確認。独立公式サイト・詳細住所は未確認。",
+        "batch": "50店舗第1回個別確認",
+        "status": "エステ魂で電話070-5051-6726、10:00〜翌6:00、セラピスト一覧を確認。メンエスパークも11/19更新の広島市掲載、ZUKANは銀山町・10:00〜翌4:00を掲載。営業時間差異あり。独立公式サイト未確認。",
         "sources": [
-          "https://estama.jp/shop/43583/cast/"
+          "https://estama.jp/shop/43583/cast/",
+          "https://menespark.com/hiroshima/hiroshima/?sort=therapist",
+          "https://zukan-esthe.com/store.php?id=692"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区銀山町（媒体掲載・番地未確認）",
+      "verifiedPhone": "070-5051-6726",
+      "verifiedHours": "10:00〜翌6:00（エステ魂）／10:00〜翌4:00（ZUKAN。媒体差あり）"
     },
     {
       "name": "クラブいち華",
