@@ -1986,18 +1986,18 @@
         "checkedAt": "2026-11-19",
         "result": "複数の第三者媒体で店名・電話・中区東平塚町を照合。独立公式ドメインは未確認。営業時間は媒体間で9:00〜LASTと9:00〜翌6:00の差があるため確定扱いしない。",
         "status": "第三者媒体掲載確認・独立公式サイト未確認・営業時間要確認",
-        "address": "広島県広島市中区東平塚町",
-        "hours": "9:00〜LAST／9:00〜翌6:00（媒体差あり）",
+        "address": "広島県広島市中区東平塚町（番地は未掲載）",
+        "hours": "09:00〜翌6:00（メンエスmall）／09:00〜LAST（全国ランキング。媒体差あり）",
         "phone": "090-1093-1100",
         "sources": [
-          "https://web2-mall.menesmall.jp/shop/travisqueen/flow",
-          "https://estama.jp/shop/42837/",
-          "https://www.esthe-ranking.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/"
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/",
+          "https://web2-mall.menesmall.jp/shop/travisqueen/flow"
         ],
-        "note": "エステ魂とメンエスmall等で電話・住所を照合。エステ魂は9:00〜LAST、メンエスmallは09:00〜翌06:00。hiroshimatravisqueen.comは媒体上のHP掲載があるが直接取得できず、独立公式サイトとして登録しない。"
+        "note": "全国メンズエステランキングとメンエスmallで店舗名・電話・広島市中区東平塚町を照合。営業時間は09:00〜LASTと09:00〜翌06:00の媒体差を保持。番地・独立公式サイト・現営業の直接確認は未完了。",
+        "kind": "third-party-cross-check-confirmed"
       },
       "verifiedAddress": "広島県広島市中区東平塚町",
-      "verifiedHours": "媒体差あり：9:00〜LAST／9:00〜翌6:00（要店舗確認）",
+      "verifiedHours": "09:00〜翌6:00（メンエスmall）／09:00〜LAST（全国ランキング。媒体差あり）",
       "verifiedPhone": "090-1093-1100",
       "contactReviewDone": true,
       "contactReview": {
@@ -2024,7 +2024,7 @@
       "name": "人妻スキャンダル",
       "category": "men-esthe",
       "area": "広島市舟入幸町駅周辺（マンション型・番地非公開）",
-      "areaStatus": "舟入幸町駅周辺と複数媒体で一致。部屋住所・番地は未確認",
+      "areaStatus": "広島市中区・舟入幸町駅最寄り（エステ魂店舗詳細で確認。個別住所非公開）",
       "status": "複数媒体で広島市内掲載・当日出勤表示あり（電話番号の店舗帰属に重複疑義）",
       "sources": [
         {
@@ -2056,16 +2056,15 @@
         "checkedAt": "2026-11-19",
         "status": "multiple directory listings corroborated; same-day attendance count displayed; phone attribution conflict remains",
         "area": "広島市・舟入幸町駅周辺、マンション型。番地・部屋住所は非公開/未確認。",
-        "phone": "070-5056-0272。メンエスパーク・エステ魂で人妻スキャンダルに掲載される一方、おとなすぱっ！にも同じ番号が掲載されており、店舗帰属は要確認。",
-        "hours": "メンエスパーク・エステ魂とも9:00〜翌4:00。エステ番長は9:00〜LAST（受付8:00〜翌2:00）と表示。",
+        "phone": "070-5056-0272（媒体掲載。別店舗との番号重複疑義は継続）",
+        "hours": "9:00〜翌4:00",
         "sameDay": "メンエスパークの本日クロール表示で「本日出勤 14セラピスト」。当日の個別予約枠までは保証しない。",
         "sources": [
-          "https://menespark.com/hiroshima/hiroshima/",
-          "https://estama.jp/shop/44130/cast/745751/",
-          "https://es-ban.com/shop/5335",
-          "https://mens-es.men/area/3401"
+          "https://estama.jp/shop/44130/cast/745751/"
         ],
-        "note": "独立公式サイトは確認できず。媒体上の在籍・当日出勤表示は確認したが、電話番号が別店舗にも重複掲載されるため確定電話として扱わない。住所番地は未確認。"
+        "note": "エステ魂の店舗・キャストページで広島市掲載、舟入幸町駅、電話、営業時間を照合。別候補「おとなすぱっ！」との電話番号重複疑義が残るため帰属は確定しない。",
+        "address": "広島県広島市中区・舟入幸町駅周辺（番地非公開）",
+        "kind": "third-party-cross-check-confirmed"
       },
       "verifiedAddress": "広島県広島市（舟入幸町駅周辺）",
       "verifiedHours": "9:00〜翌4:00（複数媒体）",
@@ -2203,15 +2202,21 @@
       "individualAudit": {
         "checkedAt": "2026-11-19",
         "status": "store-listings-and-current-cast-count-confirmed-official-site-unreachable",
-        "address": "広島県広島市中区・比治山橋駅徒歩3分圏内。ルーム詳細住所は予約後案内",
-        "hours": "11:00〜LAST（複数媒体で一致。別媒体に10:00〜翌5:00の記載があり差異あり）",
+        "address": "広島県広島市中区・比治山橋駅徒歩3分圏内（個別ルーム住所非公開）",
+        "hours": "10:00〜翌5:00（全国ランキング）／11:00〜LAST（メンズエステマップ。差異あり）",
         "phone": "090-5460-1201",
         "officialUrl": "https://b-b-spa.com/",
         "officialUrlStatus": "求人媒体に店舗公式サイトとして掲載。今回の直接アクセスは失敗し、独立ドメインのサイト内容・運営主体は未確認。求人用サイト https://bbspa-rec.com/ も403で未確認。",
-        "note": "電話番号は求人媒体・店舗情報媒体で一致。広島市中区・比治山橋駅徒歩3分圏内の掲載。2026-11-19のランキング表示で本日出勤3名、エステ魂のキャスト一覧にも当日時間表示あり。部屋住所は予約後案内。営業時間は媒体間で11:00〜LASTと10:00〜翌5:00の差異があるため確定扱いしない。"
+        "note": "複数媒体でB and Bの広島市中区・比治山橋駅付近掲載を照合。全国ランキングで電話090-5460-1201と営業時間10:00〜翌05:00を確認。メンズエステマップには11:00〜LASTの記載があり差異を保持。番地・独立公式サイトは未確認。",
+        "kind": "third-party-cross-check-confirmed",
+        "sources": [
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/",
+          "https://www.fues.jp/kansai/ranking/hiroshimaken/",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       },
       "verifiedAddress": "広島県広島市中区・比治山橋駅徒歩3分圏内（部屋詳細は予約後案内）",
-      "verifiedHours": "11:00〜LAST（別媒体に10:00〜翌5:00の差異あり）",
+      "verifiedHours": "10:00〜翌5:00（全国ランキング）／11:00〜LAST（別媒体。差異あり）",
       "batchAudit": {
         "checkedAt": "2026-11-19",
         "batch": "20店舗まとめて再確認",
@@ -2220,7 +2225,8 @@
           "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/",
           "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r85ccd69f0c"
         ]
-      }
+      },
+      "verifiedPhone": "090-5460-1201（全国メンズエステランキング掲載）"
     },
     {
       "name": "ふわもこSPA",
@@ -2686,7 +2692,7 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "サロノワ広島市一覧で新規オープン告知を確認し、本日出勤一覧に同店セラピストの出勤表示あり。住所・電話・独立公式URLは今回未確認。",
         "evidence": [
           {
@@ -2698,7 +2704,17 @@
             "url": "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
           }
         ],
-        "status": "新規掲載・本日出勤掲載確認"
+        "status": "新規掲載・本日出勤掲載確認",
+        "address": "広島県広島市中区大手町A/Bルーム・西平塚町A/Bルーム（4ルーム。詳細住所は問い合わせ）",
+        "phone": "082-244-8484",
+        "hours": "9:00〜翌5:00（エステ魂・メンズスタイル）／10:00〜翌3:00（ランキング媒体。差異あり）",
+        "kind": "third-party-cross-check-confirmed-multiple-rooms",
+        "sources": [
+          "https://estama.jp/shop/41458/",
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/luxurysalonroma",
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/2664f3b8-5520-4a2e-82ac-94acb5830b26/"
+        ],
+        "note": "エステ魂・メンズスタイル・全国ランキングで店舗名、電話、広島市中区の4ルーム（大手町A/B・西平塚A/B）を照合。営業時間は媒体差があるため併記。個別番地と現行ルーム稼働は未確認。"
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -2710,7 +2726,7 @@
           "https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=shop&sort=price_low"
         ]
       },
-      "verifiedAddress": "広島県広島市中区大手町・西平塚町（媒体に複数ルーム掲載。番地・利用ルームは予約時確認）",
+      "verifiedAddress": "広島県広島市中区大手町A/Bルーム・西平塚町A/Bルーム（4ルーム。詳細住所は問い合わせ）",
       "verifiedPhone": "082-244-8484",
       "verifiedHours": "9:00〜翌5:00（エステ魂・メンズスタイル掲載。別媒体は10:00〜翌3:00と相違）"
     },
@@ -16348,6 +16364,29 @@
         "https://www.esthe-works.jp/hiroshima/",
         "https://nsnn.jp/hiroshima-shi-esthe/"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 0,
+      "endIndex": 49,
+      "count": 50,
+      "scope": "広島市候補1〜50番・第3段階所在地/掲載情報クロスチェック",
+      "note": "1〜50番の50候補を既存個別メモと照合し、広島市内媒体一覧および名称別の検索結果で追加確認。Travis Queenは広島市中区東平塚町・電話090-1093-1100を複数媒体で照合し、営業時間09:00〜翌06:00/09:00〜LASTの差異を記録。人妻スキャンダルは舟入幸町駅最寄り・電話070-5056-0272・9:00〜翌4:00を確認したが、おとなすぱっ！との電話番号重複疑義を維持。B and Bは比治山橋駅徒歩圏・電話090-5460-1201を確認、営業時間の媒体差を記録。Luxurysalon ROMAは大手町A/B・西平塚A/Bの4ルーム、電話082-244-8484を照合。ナチュレは富士見町・電話・営業時間をエステ魂店舗ページで再確認し、エスタマ提供サブドメインと独立公式ドメインを区別。マダムヘブンは広島市中区掲載・電話・営業時間を複数媒体で照合。花魁広島は宝町掲載・営業時間を確認。Healing Salon Aliveはエステ魂掲載があるが電話9999-9999-9999のダミー表記で、実在住所・営業確認には使用しない。ビューティーアンドビーストは同名美容室との衝突疑義が解消せず、スパバーニーズも確実な同定情報が不足。その他の候補も媒体掲載のみを現営業や独立公式サイトの証拠とせず、未確認を維持。市外候補の混入、同名店舗、電話番号共有、営業時間の差異は保留し、店舗レコードの削除・統合・事業情報の推測上書きは行わず278件を保持。",
+      "sources": [
+        "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+        "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/",
+        "https://www.esthe-ranking.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/",
+        "https://web2-mall.menesmall.jp/shop/travisqueen/flow",
+        "https://estama.jp/shop/44130/cast/745751/",
+        "https://www.fues.jp/kansai/ranking/hiroshimaken/",
+        "https://estama.jp/shop/41458/",
+        "https://menes-style.jp/chugoku_shikoku/hiroshima/luxurysalonroma",
+        "https://www.esthe-ranking.jp/hiroshima/shop-detail/2664f3b8-5520-4a2e-82ac-94acb5830b26/",
+        "https://estama.jp/shop/34603/",
+        "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r0831a95adb",
+        "https://mens-es.men/shop/50643",
+        "https://estama.jp/shop/40767/"
+      ]
     }
   ],
   "auditSummary": {
@@ -16410,8 +16449,8 @@
     "duplicateReviewRecords": 15,
     "individualAuditRecords": 278,
     "batchAuditedRecords": 243,
-    "batchAuditRuns": 16,
-    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。"
+    "batchAuditRuns": 17,
+    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。 2026-11-19に1〜50番の第3段階所在地・掲載情報クロスチェックを追加。確認できた電話・所在地・複数ルーム・営業時間差のみ記録し、未確認候補は保留。"
   },
   "duplicateAuditSummary": {
     "checkedAt": "2026-11-19",
