@@ -16313,6 +16313,25 @@
         "https://fu-web.jp/hiroshima/merchant/news/merchantCode/1986/",
         "https://nsnn.jp/hiroshima-shi-health/"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 150,
+      "endIndex": 199,
+      "count": 50,
+      "scope": "広島市候補151〜200番・第2段階クロスチェック",
+      "note": "151〜200番の50候補について既存のindividualAudit・batchAuditを保持したまま、広島市メンズエステランキング（107店表示）、メンエスセレクト（広島市125店表示）、MEN'S ES（広島市184店舗表示）、エステ番長（広島170店表示）等の掲載範囲と既存個別根拠を再照合。媒体ごとに掲載数・掲載名・対象範囲が異なり、掲載一致だけでは現営業・独立公式サイト・正確な住所を証明しない。151五十路マダム広島店は広域派遣で広島市を含むため固定店舗所在地と区別。152秘密楽園、153やさしい部屋、156〜162等は媒体掲載を保持し、住所/公式URL未確認を維持。154東京式SPA研究所B、163NAGOMI、166IVY SPA、182リバーズエステは独立公式サイト等の既存確認情報を保持。164MPS・165Night VERDY・171MINTIA・176BUZZ・177小魔女・180Roa Grand・181LILY・191天使のエプロン・200リバーナルは第三者媒体の住所/電話/営業時間情報と独立公式サイトの有無を区別。189アイビースパと166 IVY SPA広島は公式ドメイン一致の重複候補として注記するが別レコードのまま保持。192煌き-KIRAMEKI-、193フルフル、194ぽっちゃりmateマシュマロは今回の取得範囲で個別一致を確定できず、非掲載・閉店とは断定しない。デリヘル等の派遣業態をメンズエステの固定店舗として扱わず、業種・所在・営業の未確認状態を維持。候補の削除・統合・業種の強制変更・事業情報の上書きは行わず、278レコードを保持。",
+      "sources": [
+        "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+        "https://menesu-select.com/hiroshima/hiroshima/",
+        "https://mens-es.men/area/3401",
+        "https://es-ban.com/p/5597/a/5598/shoplist",
+        "https://www.hiroshimajyukujyo.com/",
+        "https://bb.esthe-hp.com/",
+        "https://nagomi-hiroshima.com/",
+        "https://ivyspa.jp/",
+        "https://riverseste.com/"
+      ]
     }
   ],
   "auditSummary": {
