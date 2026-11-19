@@ -911,7 +911,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "独立公式サイト・現行掲載情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -919,22 +919,25 @@
         }
       ],
       "officialUrl": "https://yururinon.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "officialUrlStatus": "独立ドメインの公式サイトを直接確認済み",
+      "bulkAuditStatus": "独立公式サイト・現行情報の個別確認済み",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "current-listing-confirmed-official-site-not-crosschecked",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-domain-directly-verified-current-site-and-access",
+        "url": "https://yururinon.com/",
+        "address": "広島県広島市中区舟入町／河原町10／大手町3（公式アクセスページ記載の複数ルーム）",
+        "hours": "10:00〜翌2:00（受付9:30〜翌2:00）",
+        "phone": "090-5607-1122",
         "sources": [
           "https://yururinon.com/",
-          "https://menesth.jp/32/shop/47343/"
+          "https://yururinon.com/access/",
+          "https://menesth.jp/32/shop/47343/",
+          "https://estama.jp/shop/42454/menu/"
         ],
-        "address": "広島県広島市中区舟入町",
-        "hours": "10:00〜翌2:00",
-        "phone": "090-5607-1122",
-        "note": "店舗詳細掲載で住所・営業時間・電話番号を確認。公式サイトURLはDB登録値を保持。"
+        "status": "独立ドメインの公式サイトを直接閲覧。トップに営業時間・電話番号、当日出勤セラピストと2026-11-19の更新情報を確認。公式アクセスページに舟入町・河原町10・大手町3の複数ルームを確認。予約ボタンはエステ魂へ遷移するが、公式サイト自体は独立ドメインとして確認済み。"
       },
-      "verifiedAddress": "広島県広島市中区舟入町",
-      "verifiedHours": "10:00〜翌2:00",
+      "verifiedAddress": "広島県広島市中区舟入町／河原町10／大手町3（公式アクセスページ記載の複数ルーム）",
+      "verifiedHours": "10:00〜翌2:00（受付9:30〜翌2:00）",
       "verifiedPhone": "090-5607-1122"
     },
     {
