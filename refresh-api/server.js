@@ -866,6 +866,19 @@ const server = http.createServer(async (req, res) => {
       }
       const results = new Array(queue.length);
       let cursor = 0;
+      // Pace Salonowa requests to avoid triggering its HTTP 429 rate limit.
+      let salonowaNextStart = 0;
+      let salonowaQueue = Promise.resolve();
+      const waitForSalonowaSlot = async () => {
+        let release;
+        const previous = salonowaQueue;
+        salonowaQueue = new Promise(resolve => { release = resolve; });
+        await previous;
+        const waitMs = Math.max(0, salonowaNextStart - Date.now());
+        if (waitMs > 0) await new Promise(resolve => setTimeout(resolve, waitMs));
+        salonowaNextStart = Date.now() + 1200;
+        release();
+      };
       const worker = async () => {
         while (true) {
           const index = cursor++;
@@ -884,6 +897,7 @@ const server = http.createServer(async (req, res) => {
             continue;
           }
           try {
+            if (item.sourceId === "salonowa") await waitForSalonowaSlot();
             const response = await fetch(url, {
               method: "GET",
               redirect: "follow",
