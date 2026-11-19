@@ -185,6 +185,19 @@ main{max-width:900px;margin:auto;padding:14px}
       .replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60))
       .replace(/[\s・･.,，、。_‐‑‒–—―ーｰ()（）［］【】「」『』]/g, "");
   }
+  function storeNameSimilarity(a, b) {
+    if (!a || !b || Math.min(a.length, b.length) < 4) return 0;
+    if (a.includes(b) || b.includes(a)) return Math.min(a.length, b.length) / Math.max(a.length, b.length);
+    const grams = value => {
+      const result = new Set();
+      for (let i = 0; i < value.length - 1; i++) result.add(value.slice(i, i + 2));
+      return result;
+    };
+    const aa = grams(a), bb = grams(b);
+    let common = 0;
+    for (const gram of aa) if (bb.has(gram)) common++;
+    return (2 * common) / (aa.size + bb.size);
+  }
   async function renderMasterReconciliation(state, panel) {
     try {
       const response = await fetch(api + "/api/storage/data/stores", {cache:"no-store"});
@@ -207,8 +220,9 @@ main{max-width:900px;margin:auto;padding:14px}
       for (const id of sourceOrder) {
         const source = state?.sources?.[id];
         const records = Array.isArray(source?.records) ? source.records : [];
-        let matched = 0, unmatched = 0, ambiguous = 0;
+        let matched = 0, unmatched = 0, ambiguous = 0, nearMatchCount = 0;
         const unmatchedNames = [];
+        const nearMatches = [];
         const matchedIds = new Set();
         for (const record of records) {
           const key = normalizeStoreName(record.name);
@@ -223,11 +237,26 @@ main{max-width:900px;margin:auto;padding:14px}
             unmatchedNames.push("要確認：" + (record.name || "名称未確認"));
           } else {
             unmatched++;
-            unmatchedNames.push(record.name || "名称未確認");
+            const recordName = record.name || "名称未確認";
+            unmatchedNames.push(recordName);
+            const ranked = [];
+            if (key.length >= 4) {
+              for (const store of master) {
+                const storeKeys = [store.name, ...(Array.isArray(store.aliases) ? store.aliases : [])]
+                  .map(normalizeStoreName).filter(Boolean);
+                const score = Math.max(0, ...storeKeys.map(candidateKey => storeNameSimilarity(key, candidateKey)));
+                if (score >= 0.55) ranked.push({name:store.name || "名称未設定", score, id:String(store.id || store.name)});
+              }
+            }
+            const best = [...new Map(ranked.sort((a,b) => b.score-a.score).map(item => [item.id,item])).values()].slice(0,3);
+            if (best.length) {
+              nearMatchCount++;
+              nearMatches.push({sourceName:recordName, candidates:best});
+            }
           }
         }
         for (const masterId of matchedIds) matchedMasterIds.set(masterId, (matchedMasterIds.get(masterId) || 0) + 1);
-        sourceRows.push({id, label:source?.label || id, total:records.length, matched, unmatched, ambiguous, unmatchedNames, matchedIds});
+        sourceRows.push({id, label:source?.label || id, total:records.length, matched, unmatched, ambiguous, nearMatchCount, nearMatches, unmatchedNames, matchedIds});
       }
       const matchedAcrossSources = [...matchedMasterIds.values()].filter(count => count >= 2).length;
       const totalMatchedMaster = matchedMasterIds.size;
@@ -241,15 +270,27 @@ main{max-width:900px;margin:auto;padding:14px}
       panel.appendChild(summary);
       const note = document.createElement("div");
       note.style.cssText = "color:var(--muted);margin:4px 0 8px";
-      note.textContent = "店名・別表記の完全一致（全半角・大小文字・カナ表記を正規化）だけを自動一致としています。未一致は市外・閉店と断定せず、要調査として残します。マスターの追加・削除・並べ替えは行いません。";
+      note.textContent = "完全一致のみを一致扱いにします。近似候補は店名の文字列類似度による参考表示で、自動統合・自動登録はしません。未一致は市外・閉店と断定せず、要調査として残します。マスターの追加・削除・並べ替えは行いません。";
       panel.appendChild(note);
       for (const row of sourceRows) {
         const line = document.createElement("div");
         line.style.cssText = "border-top:1px solid var(--line);padding-top:7px;margin-top:7px";
         const label = document.createElement("div");
         label.style.fontWeight = "700";
-        label.textContent = row.label + "：" + row.total + "件中、一致候補 " + row.matched + "件 ／ 未一致 " + row.unmatched + "件 ／ 複数候補 " + row.ambiguous + "件";
+        label.textContent = row.label + "：" + row.total + "件中、一致候補 " + row.matched + "件 ／ 未一致 " + row.unmatched + "件 ／ 複数候補 " + row.ambiguous + "件 ／ 近似候補あり " + row.nearMatchCount + "件";
         line.appendChild(label);
+        if (row.nearMatches.length) {
+          const details = document.createElement("details");
+          details.style.marginTop = "4px";
+          const summary = document.createElement("summary");
+          summary.textContent = "表記違いの可能性がある候補を確認（" + row.nearMatchCount + "件）";
+          details.appendChild(summary);
+          const names = document.createElement("div");
+          names.style.cssText = "color:var(--muted);margin-top:5px;overflow-wrap:anywhere";
+          names.textContent = row.nearMatches.map(item => item.sourceName + " → " + item.candidates.map(candidate => candidate.name + "（類似度 " + Math.round(candidate.score*100) + "%）").join(" / ")).join("　｜　");
+          details.appendChild(names);
+          line.appendChild(details);
+        }
         if (row.unmatchedNames.length) {
           const details = document.createElement("details");
           details.style.marginTop = "4px";
