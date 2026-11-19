@@ -16239,6 +16239,18 @@
       "sources": [
         "https://menesu-select.com/hiroshima/hiroshima/"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 250,
+      "endIndex": 277,
+      "count": 28,
+      "scope": "広島市候補251〜278番・最終28件の第2段階掲載照合",
+      "note": "251〜278番の28候補について、広島市のMEN'S ES一覧および広島市カテゴリのメンズエステマップ掲載内容を照合。取得できた一覧本文・検索表示内で、Relaxation Salon REAL、IVY SPA、チェリーSPA東平塚店、NAGOMI、Arinoa、Affino、Bright、FREEDOM、Jasmine、LILY、Lavender、M.O.E.T、Men's spa R、Noël、Nuxe、Reflet Spa、peony、Paz、Hitomebore、Labyrinth、極のエステの計22候補について名称または表記違いを確認。残るミセスママ 広島、KING'S 広島、KING'S、Be-ange、COLORS、CRADLEの6候補は今回取得できた一覧抜粋内で名称一致を確定できず、非掲載とは断定せず未照合扱いで保持。第三者媒体の掲載一致は現営業・独立公式サイト・正確な所在地・電話番号の証明とは扱わない。既存の個別照合メモ、同名候補、電話番号差異、公式URL未確認状態を維持し、店舗レコードの削除・統合・事業情報の上書きは行わない。全278件を保持。",
+      "sources": [
+        "https://mens-es.men/area/3401",
+        "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+      ]
     }
   ],
   "auditSummary": {
