@@ -1439,9 +1439,9 @@
     {
       "name": "フリーダム",
       "category": "men-esthe",
-      "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "area": "広島市中区宝町（第三者媒体掲載ROOM）",
+      "areaStatus": "広島市中区宝町・フジグラン広島徒歩1分（第三者媒体掲載、部屋詳細は予約後案内）",
+      "status": "第三者媒体で店舗・営業情報および当日更新を確認・独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1465,44 +1465,35 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "Freedom",
-        "address": "広島県広島市（市役所前駅周辺・部屋住所は予約後案内）",
-        "hours": "10:00～LAST",
+        "checkedAt": "2026-11-19",
+        "status": "third-party listing corroborated; same-day news confirmed; independent official site not found",
         "phone": "070-8499-1534",
+        "address": "メンエスじゃぱんに宝町ROOM、フジグラン広島徒歩1分と掲載。メンズエステマップは市役所前駅を目安とし、部屋場所は予約後案内と記載。",
+        "hours": "エステ魂・メンズエステマップとも10:00〜LAST。メンエスじゃぱんは受付9:00〜24:00も記載。",
+        "sameDay": "エステ魂のニュース一覧に2026-11-19 00:02更新あり。ちかの紹介と店舗電話・営業時間を掲載。",
         "sources": [
-          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=raf3fba35d7"
+          "https://estama.jp/shop/40477/newslist/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=raf3fba35d7",
+          "https://mens-est.jp/shop/frdmhrs/"
         ],
-        "note": "広島市内のルーム型店舗として店名、電話、営業時間、最寄り駅を確認。部屋の番地住所と独立公式HPは未確認。"
+        "note": "公式HP欄は「-」で独立ドメインは確認できず。エステ魂は最新ニュースを更新しているが、当日の個別出勤確定と予約可能状況は時間変動するため別扱い。"
       },
-      "verifiedAddress": "広島県広島市（市役所前駅周辺・部屋住所は予約後案内）",
-      "verifiedHours": "10:00～LAST",
+      "verifiedAddress": "広島県広島市中区宝町（宝町ROOM。番地・部屋番号は予約後案内）",
+      "verifiedHours": "10:00〜LAST（受付9:00〜24:00との媒体記載あり）",
       "verifiedPhone": "070-8499-1534",
       "contactReviewDone": true,
       "contactReview": {
-        "checkedAt": "2026-11-14",
-        "status": "third-party listing cross-check",
-        "note": "広島市内のルーム型店舗として店名、電話、営業時間、最寄り駅を確認。部屋の番地住所と独立公式HPは未確認。",
+        "checkedAt": "2026-11-19",
+        "status": "third-party sources cross-checked; no independent official domain",
         "sources": [
-          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=raf3fba35d7"
-        ]
-      }
+          "https://estama.jp/shop/40477/newslist/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=raf3fba35d7",
+          "https://mens-est.jp/shop/frdmhrs/"
+        ],
+        "note": "電話・営業時間は複数媒体で一致。宝町ROOMとフジグラン広島徒歩1分は媒体掲載。部屋の詳細は予約後案内。"
+      },
+      "officialUrl": null,
+      "officialUrlStatus": "独立公式サイト未確認。エステ魂・メンズエステマップ等の媒体ページのみ確認"
     },
     {
       "name": "モアスパ",
