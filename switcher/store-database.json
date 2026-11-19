@@ -3656,7 +3656,17 @@
       "duplicateCanonicalName": "Refresh",
       "aliases": [
         "Refresh（リフレッシュ）"
-      ]
+      ],
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市中区舟入町・河原町・舟入本町の3ルーム、電話080-8244-3030、公式サイトhttps://r-s-refresh-hiroshima.com/を確認。公式HP欄と独立ドメインを照合。営業時間は公式/メンエスじゃぱん11:00〜翌2:00、メンエスmall10:30〜翌2:00で差あり。",
+        "sources": [
+          "https://mens-est.jp/shop/202010013448/",
+          "https://men-esthe.co.jp/ranking/hiroshima/?format=dispatch&sort=open",
+          "https://menesmall.jp/shop/refresh"
+        ]
+      }
     },
     {
       "name": "既婚者 極液ラボ",
@@ -3701,6 +3711,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂の個別セラピストページで広島市、舟入幸町駅、電話070-5520-4376、9:00〜翌4:00、年末年始休みを確認。店舗住所は町名・番地まで今回確定できず、独立公式ドメイン未確認。",
+        "sources": [
+          "https://estama.jp/shop/45468/cast/828544/"
+        ]
       }
     },
     {
@@ -3751,7 +3769,16 @@
       "duplicateCanonicalName": "Arinoa",
       "aliases": [
         "Arinoa～アリノア～"
-      ]
+      ],
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "店舗媒体と地図事業者情報で中区三川町6-7、電話080-2517-0007を確認。公式サイトhttps://arinoa-esthe.com/登録済み。媒体表示営業時間10:00〜翌2:00（曜日により差のある掲載もあり）。",
+        "sources": [
+          "https://estama.jp/shop/",
+          "https://arinoa-esthe.com/"
+        ]
+      }
     },
     {
       "name": "TONARI",
@@ -3796,6 +3823,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂でTONARI〜トナリ〜、西区・横川駅南口徒歩7分、電話090-8106-5573、10:00〜翌5:00、年中無休を確認。独立公式サイトhttps://tonari-esthe.com/とXあり。",
+        "sources": [
+          "https://estama.jp/shop/51793/"
+        ]
       }
     },
     {
@@ -3841,6 +3876,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂で中区大手町3丁目、中電前徒歩5分、電話070-9440-4756、8:00〜翌6:00、年中無休。公式サイトhttps://esthe-soin.net/、ブランドサイトhttps://soin0705.com/を確認。最新の店舗メッセージは2026-09-04のため、11/19当日営業・出勤は別途未確認。",
+        "sources": [
+          "https://estama.jp/shop/49383/"
+        ]
       }
     },
     {
@@ -3872,7 +3915,15 @@
       "officialUrlStatus": "独立公式サイトを確認",
       "verifiedAddress": "広島市中区（詳細住所は予約案内）",
       "verifiedHours": "9:00〜翌4:00",
-      "verifiedPhone": "080-2929-0321"
+      "verifiedPhone": "080-2929-0321",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "独立公式サイトhttps://mrsenel-official.com/で電話080-2929-0321、9:00〜翌4:00、年中無休、昭和町ルームを確認。地図事業者情報も昭和町3丁目を示す。",
+        "sources": [
+          "https://mrsenel-official.com/"
+        ]
+      }
     },
     {
       "name": "セレスト",
@@ -3917,6 +3968,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": "Celeste"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "Celesteとして広島市中区富士見町、中電前駅、電話080-1941-6948、10:00〜翌2:00を複数媒体で確認。独立公式ドメインは未確認。エステ魂ページは2026年7月のセラピスト更新が見えるが最新出勤は未確認。",
+        "sources": [
+          "https://estama.jp/shop/44050/cast/769651/",
+          "https://ranking-mensesthe.jp/shop/47531/"
+        ]
       }
     },
     {
@@ -3980,6 +4040,14 @@
         ],
         "phone": "070-2353-9000",
         "hours": "公式サイト表示 11:00〜LAST（FAQに11:00〜翌3:00の記載もあり）"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "独立公式サイトhttps://creahiroshima.com/で中区富士見町4、電話070-2353-9000、11:00〜翌5:00、年中無休、ネット予約を確認。",
+        "sources": [
+          "https://creahiroshima.com/contact/"
+        ]
       }
     },
     {
@@ -4025,6 +4093,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": "Seraphi Spa"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂とメンエスパークで銀山町駅、電話070-5051-6726、10:00〜翌6:00を確認。媒体間で翌4:00表示もあり営業時間差あり。独立公式ドメイン未確認。",
+        "sources": [
+          "https://estama.jp/shop/43583/cast/931880/",
+          "https://menespark.com/hiroshima/hiroshima/?sort=therapist"
+        ]
       }
     },
     {
@@ -4066,6 +4143,15 @@
         ],
         "status": "個別照合実施・一致未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ番長で電話070-1875-3711、11:00〜翌1:00。別ランキングでは13:00〜翌2:00で営業時間差あり。銀山町駅最寄り、独立公式HP欄ありだがURL本文は取得できず。",
+        "sources": [
+          "https://es-ban.com/shop/795",
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/all/aroma-massage/"
+        ]
       }
     },
     {
@@ -4113,6 +4199,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": "神のエステ"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "独立公式サイトhttps://kamies.jp、宝町・鶴見町ルーム、電話080-3892-0081、公式案内10:00〜LAST（受付9:00〜）を確認。メンエスmallは10:00〜翌3:00と掲載差あり。",
+        "sources": [
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/kamies",
+          "https://menesmall.jp/shop/got-esthe"
+        ]
       }
     },
     {
@@ -4151,7 +4246,15 @@
         "note": "店舗詳細と当日出勤表示を確認。電話・独立公式サイトは未確認。"
       },
       "verifiedAddress": "広島県広島市中区・フジグラン広島徒歩2分圏内",
-      "verifiedHours": "10:00〜翌1:00"
+      "verifiedHours": "10:00〜翌1:00",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "独立公式サイトhttps://angel-spa28.com/で電話050-6866-5984、10:00〜翌1:00、セラピスト出勤一覧を確認。地図事業者情報には別電話080-4262-5973があり、電話帰属の不一致を記録。",
+        "sources": [
+          "https://angel-spa28.com/"
+        ]
+      }
     },
     {
       "name": "ラドンナ",
@@ -4196,6 +4299,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂でLa Donna、電話090-3470-8998、10:00〜30:00（翌6:00）、フジグラン徒歩5分、2026-11-02の店舗ニュースを確認。町名住所・独立公式ドメインは未確認。",
+        "sources": [
+          "https://estama.jp/shop/33983/newslist/"
+        ]
       }
     },
     {
@@ -4241,6 +4352,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": "Lumiella"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "Lumiellaとしてエステ魂・全国ランキングで広島市掲載、電話070-9456-8338、富士見町駅最寄り、10:00〜翌3:00、11/18ニュース更新を確認。独立公式ドメイン未確認。",
+        "sources": [
+          "https://estama.jp/shop/50629/newslist/",
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/"
+        ]
       }
     },
     {
@@ -4286,6 +4406,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "サロノワ店舗アクセスで中区東平塚町、比治山駅最寄り、電話080-9144-7888、9:00〜LAST、公式URLhttps://hachimitsuclub.com/を確認。独立公式サイトの現行内容は別途未確認。",
+        "sources": [
+          "https://www.salonowa.jp/shop/shop-10544/access"
+        ]
       }
     },
     {
@@ -4331,6 +4459,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": "YOASOBI広島"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "今回の検索で同名の広島市メンズエステとして確実な店舗詳細を特定できず。電話・住所・営業時間・公式サイトは未確認。別業種・類似名と混同せず候補保留。",
+        "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -4371,7 +4508,16 @@
       "verifiedHours": "10:00〜LAST",
       "verifiedPhone": "090-3517-1314",
       "officialUrl": "https://hiroshima-queen.com/",
-      "officialUrlStatus": "独立した店舗公式サイトを確認"
+      "officialUrlStatus": "独立した店舗公式サイトを確認",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "クイーンの公式HP欄https://hiroshima-queen.com/、電話090-3517-1314、10:00〜LASTを確認。媒体掲載ルームは鉄砲町7-23/7-21/8-24、幟町7-26、中町5。中町5-23のGoogle事業者情報と部屋表記に差があり、複数ルームとして記録。",
+        "sources": [
+          "https://mens-est.jp/shop/hrsmqueen/",
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/e248ec96-75ef-4ef2-8133-1f8ec52bf239/"
+        ]
+      }
     },
     {
       "name": "ヘブン",
@@ -4416,6 +4562,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": "heaven"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "メンエスStyle公式掲載で中区住吉町16、電話090-3634-4567、9:30〜LAST、年中無休、公式HPhttps://hiroshima-heaven.com/、Xありを確認。",
+        "sources": [
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/heaven"
+        ]
       }
     },
     {
@@ -4461,6 +4615,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "MEN'S ES掲載で中区舟入幸町5-10 セブンプロート舟入幸町、9:00〜翌4:00、年末年始休みを確認。電話番号・独立公式サイトは今回未確認。",
+        "sources": [
+          "https://mens-es.men/shop/39023"
+        ]
       }
     },
     {
@@ -4521,6 +4683,14 @@
         "sources": [
           "https://fuzoku.jp/tenngoku125/girllist/",
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=7870c337e1"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "媒体で中区・広島駅最寄り、電話090-3174-4131、10:00〜LASTを確認。ただし媒体の業種表記は「風俗エステ」で一般メンズエステと異なる可能性があるため、業種再確認まで保留。",
+        "sources": [
+          "https://lvmiru.jp/store/83"
         ]
       }
     },
@@ -13603,6 +13773,14 @@
       "count": 20,
       "scope": "広島市内メンズエステ候補20店舗",
       "note": "独立公式情報・第三者媒体・広域掲載・未確認を区別。市内所在の裏付けが弱い候補は広島市内店舗と断定せず保留。"
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 75,
+      "endIndex": 94,
+      "count": 20,
+      "scope": "広島市内候補20店舗",
+      "note": "公式サイト・掲載媒体・所在地・電話・営業時間の根拠を記録。広島市外の候補、同名別業種、媒体間の差異は明示し、未確認を維持。"
     }
   ]
 }
