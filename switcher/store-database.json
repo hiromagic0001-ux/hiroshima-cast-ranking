@@ -9215,7 +9215,17 @@
         ],
         "scope": "取得一覧表示内で一致未確証",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9263,7 +9273,16 @@
         ],
         "scope": "広島市一覧",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9310,7 +9329,16 @@
         ],
         "scope": "広島市一覧",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9361,7 +9389,17 @@
         "sources": [
           "https://bb.esthe-hp.com/scheduleAll.html",
           "https://estama.jp/shop/50309/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9418,7 +9456,16 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9469,7 +9516,16 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9516,7 +9572,16 @@
         ],
         "scope": "広島市一覧",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9571,7 +9636,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9626,7 +9700,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9681,7 +9764,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9736,7 +9828,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9791,7 +9892,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9851,7 +9961,16 @@
         "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://nagomi-hiroshima.com/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9911,7 +10030,17 @@
         "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://estama.jp/shop/46472/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -9974,7 +10103,17 @@
           "https://estama.jp/shop/28719/",
           "https://menesth.jp/32/shop/47334/",
           "https://mens-est.jp/shop/hrsmverdy/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10036,7 +10175,17 @@
         "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://ivyspa.jp/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10094,7 +10243,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10150,7 +10308,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10205,7 +10372,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10260,7 +10436,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10319,7 +10504,16 @@
         "sources": [
           "https://estama.jp/shop/27936/cast/",
           "https://estama.jp/shop/27936/cast/394372/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10377,7 +10571,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10433,7 +10636,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10488,7 +10700,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10543,7 +10764,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10601,7 +10831,16 @@
         "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://estama.jp/shop/42473/flow/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10658,7 +10897,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10713,7 +10961,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10769,7 +11026,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10814,7 +11080,16 @@
         ],
         "address": "広島県広島市中区・稲荷町駅周辺",
         "hours": "10:00〜LAST",
-        "note": "複数媒体で広島市中区の店舗詳細を照合。電話・独立公式サイトは未確認。"
+        "note": "複数媒体で広島市中区の店舗詳細を照合。電話・独立公式サイトは未確認。",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "verifiedAddress": "広島県広島市中区・稲荷町駅周辺",
       "verifiedHours": "10:00〜LAST",
@@ -10874,7 +11149,16 @@
         "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://estama.jp/shop/41122/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10932,7 +11216,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -10988,7 +11281,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11044,7 +11346,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11099,7 +11410,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11154,7 +11474,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11209,7 +11538,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11264,7 +11602,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11322,7 +11669,16 @@
         "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://ivyspa.jp/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11380,7 +11736,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11439,7 +11804,16 @@
         "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://estama.jp/shop/47576/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11498,7 +11872,17 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11553,7 +11937,17 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11608,7 +12002,17 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11667,7 +12071,17 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "DB登録URLあり・公式性/リンク先は別途再検証",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "duplicateRole": "primary",
       "duplicateCanonicalName": "spa R（スパアール）",
@@ -11736,7 +12150,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11791,7 +12214,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11846,7 +12278,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11901,7 +12342,16 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "広島市カテゴリ媒体の表示範囲で名称掲載一致",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -11957,7 +12407,17 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島市カテゴリの第三者媒体一覧における名称掲載クロスチェック（公式店舗・営業実態の直接検証とは別）",
+          "status": "今回取得した媒体表示範囲では名称一致未確証",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ],
+          "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17603,6 +18063,18 @@
         "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
         "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
         "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+      ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 150,
+      "endIndex": 199,
+      "count": 50,
+      "scope": "広島市候補151〜200番・第3段階の媒体掲載クロスチェック",
+      "note": "151〜200番の50候補を、広島市メンズエステ情報ランキング（現行107件表示）およびメンエスセレクト広島市一覧（現行96件表示）で名称照合。秘密楽園、やさしい部屋、アロマドール、絆、ミセス48、甘い恋人、ときめきSPA、蛍、慕色、癒しの女神、NAGOMI、楽々、微妙な関係、会いたい、Access Hiroshima、E〜感じ、エムシェルジュ、DEAR、Private Spa MINTIA、BUZZ、小魔女、秘蜜エステ、アロマ姫、Roa等はランキング表示範囲で名称掲載を確認。エイミー、アルカンジュ、Rabbids、奥様Ｙシャツ倶楽部、LILY、リバーズエステ、コロン、ピンクパンサー、隠れ家、ラベンダー、ピーチスパ、いちい、アイビースパ、りあんすぱ、天使のエプロン等はメンエスセレクトの広島市一覧表示/検索抜粋で名称掲載を確認。五十路マダム広島店、MPS、IVY SPA広島、デリヘル候補等は今回のメンズエステ一覧表示だけでは一致を確証せず、業種の違いも考慮して保留。各媒体は広島市カテゴリの掲載情報であり、掲載ページ自身も店舗未確認等の注意を含むため、現営業・独立公式サイト・正確な所在地・電話・営業時間の確定根拠にはしない。既存の公式サイト/エステ魂等で得た個別情報、住所・電話・営業時間の相違、同一ドメイン重複候補は上書きせず維持。未一致を閉店・不存在とせず、レコード削除・統合・事業情報の推測上書きは行わず278件を保持。",
+      "sources": [
+        "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+        "https://menesu-select.com/hiroshima/hiroshima/"
       ]
     }
   ],
