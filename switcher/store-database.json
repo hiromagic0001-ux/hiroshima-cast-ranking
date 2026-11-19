@@ -8079,8 +8079,8 @@
       "name": "東京式SPA研究所「B」",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区小町5番・中電前電停徒歩5分圏内を公式および媒体で確認",
+      "status": "独立公式サイト・住所・電話・営業時間を確認",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -8100,9 +8100,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ情報ランキングの現行一覧または同ページ内の広島市店舗表示で名称一致を確認。独立公式サイト、住所、電話、営業時間、当日営業の個別確認は未完了。",
-        "status": "広島市一覧掲載確認・営業詳細未確証",
+        "status": "独立公式サイトとエステ魂店舗ページで中区小町5番、電話080-8039-2167、11:00〜LAST、無休を照合。中電前電停徒歩5分圏内。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（現行一覧）",
@@ -8111,16 +8111,26 @@
         ],
         "scope": "広島市一覧",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "sources": [
+          "https://bb.esthe-hp.com/scheduleAll.html",
+          "https://estama.jp/shop/50309/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区小町5番、電話080-8039-2167、11:00〜LAST、無休。独立公式サイト https://bb.esthe-hp.com を掲載。",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "独立公式サイトとエステ魂店舗ページで中区小町5番、電話080-8039-2167、11:00〜LAST、無休を照合。中電前電停徒歩5分圏内。",
         "sources": [
+          "https://bb.esthe-hp.com/scheduleAll.html",
           "https://estama.jp/shop/50309/"
         ]
-      }
+      },
+      "officialUrl": "https://bb.esthe-hp.com/",
+      "officialUrlStatus": "独立公式サイトを直接確認。公式とエステ魂の掲載情報が一致",
+      "verifiedAddress": "広島県広島市中区小町5番",
+      "verifiedPhone": "080-8039-2167",
+      "verifiedHours": "11:00〜LAST"
     },
     {
       "name": "アロマドール",
@@ -8551,7 +8561,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "独立公式サイトで電話・営業時間・出勤表を確認",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -8559,7 +8569,7 @@
         }
       ],
       "officialUrl": "https://nagomi-hiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み",
+      "officialUrlStatus": "独立公式サイトを直接確認",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
@@ -8573,9 +8583,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "独立公式サイトで電話090-7130-2000、8:00〜翌6:00、不定休、当日のセラピスト出勤表を確認。住所はサイト上で詳細非公開のため未記入。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -8592,24 +8602,28 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "DB登録URLあり・公式性/リンク先は別途再検証",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "sources": [
+          "https://nagomi-hiroshima.com/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島店として掲載。ランキング上の掲載確認のみで、住所・電話は未確認。",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "独立公式サイトで電話090-7130-2000、8:00〜翌6:00、不定休、当日のセラピスト出勤表を確認。住所はサイト上で詳細非公開のため未記入。",
         "sources": [
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
-          "https://mens-es.men/area/3401"
+          "https://nagomi-hiroshima.com/"
         ]
-      }
+      },
+      "verifiedPhone": "090-7130-2000",
+      "verifiedHours": "8:00〜翌6:00（不定休）"
     },
     {
       "name": "MPS — MEN'S PRIVATE SALON",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "中区舟入幸町5-10をエステ魂店舗情報で確認",
+      "status": "第三者媒体で住所・電話・営業時間を確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -8629,9 +8643,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "エステ魂店舗情報で中区舟入幸町5-10 セブンプロート舟入幸町、電話070-5302-7379、9:00〜翌4:00、年末年始休みを確認。独立公式ドメインは未確認。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -8648,23 +8662,29 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
-      },
-      "batchAudit": {
-        "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂の店舗ページで中区舟入幸町5-10、電話070-5302-7379、9:00〜翌4:00、年末年始休みを確認。マンション個室型。",
+        "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://estama.jp/shop/46472/"
         ]
-      }
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "エステ魂店舗情報で中区舟入幸町5-10 セブンプロート舟入幸町、電話070-5302-7379、9:00〜翌4:00、年末年始休みを確認。独立公式ドメインは未確認。",
+        "sources": [
+          "https://estama.jp/shop/46472/"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区舟入幸町5-10 セブンプロート舟入幸町",
+      "verifiedPhone": "070-5302-7379",
+      "verifiedHours": "9:00〜翌4:00"
     },
     {
       "name": "Night VERDY～ヴェルディ～",
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "広島市中区・電話・営業時間を複数媒体で確認。時間表記に差あり",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -8684,9 +8704,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "エステ魂・メンズリラク・メンエスじゃぱんで広島市掲載、電話080-9893-9031、出勤情報を確認。営業時間は6:00〜LASTと8:00〜翌6:00で媒体差があるため一本化しない。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -8703,24 +8723,32 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "sources": [
+          "https://estama.jp/shop/28719/",
+          "https://menesth.jp/32/shop/47334/",
+          "https://mens-est.jp/shop/hrsmverdy/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市ランキングおよびメンエスじゃぱんに掲載。中電前駅徒歩5分、6:00〜LAST。独立公式サイト・電話・住所は未確認。",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "エステ魂・メンズリラク・メンエスじゃぱんで広島市掲載、電話080-9893-9031、出勤情報を確認。営業時間は6:00〜LASTと8:00〜翌6:00で媒体差があるため一本化しない。",
         "sources": [
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+          "https://estama.jp/shop/28719/",
+          "https://menesth.jp/32/shop/47334/",
           "https://mens-est.jp/shop/hrsmverdy/"
         ]
-      }
+      },
+      "verifiedPhone": "080-9893-9031",
+      "verifiedHours": "6:00〜LAST（媒体掲載。別媒体は8:00〜翌6:00）"
     },
     {
       "name": "高級メンズエステ IVY SPA広島",
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "独立公式サイトで出張専門・営業時間確認。電話は媒体情報との再照合待ち",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -8740,9 +8768,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "独立公式サイトで出張専門、完全予約制、営業時間9:30〜翌3:00、対応エリア・交通費案内を確認。電話番号は今回の公式ページ本文で確認できず。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -8759,17 +8787,22 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "sources": [
+          "https://ivyspa.jp/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市ランキングと広島市184店一覧に掲載。出張専門として案内、広島駅エリア、9:30〜翌6:00の媒体情報。電話・独立公式サイトは未確認。",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "独立公式サイトで出張専門、完全予約制、営業時間9:30〜翌3:00、対応エリア・交通費案内を確認。電話番号は今回の公式ページ本文で確認できず。",
         "sources": [
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
-          "https://mens-es.men/area/3401"
+          "https://ivyspa.jp/"
         ]
-      }
+      },
+      "officialUrl": "https://ivyspa.jp/",
+      "officialUrlStatus": "独立公式サイトを直接確認。出張専門と営業時間を掲載",
+      "verifiedHours": "9:30〜翌3:00"
     },
     {
       "name": "広島メンズエステクイーン",
@@ -8997,7 +9030,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "広島市掲載・電話・営業時間・セラピスト掲載をエステ魂で確認",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -9017,9 +9050,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "エステ魂店舗・セラピストページで広島市、鷹野橋駅最寄り、電話090-3207-8053、10:00〜LAST、年中無休、在籍セラピスト掲載を確認。住所番地は未掲載。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -9036,17 +9069,23 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "sources": [
+          "https://estama.jp/shop/27936/cast/",
+          "https://estama.jp/shop/27936/cast/394372/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "メンエスmallの店舗情報で広島市中区、10:00〜翌3:00、年中無休を確認。詳細住所・電話は掲載ページから確認できず。",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "エステ魂店舗・セラピストページで広島市、鷹野橋駅最寄り、電話090-3207-8053、10:00〜LAST、年中無休、在籍セラピスト掲載を確認。住所番地は未掲載。",
         "sources": [
-          "https://dr.ptr216.ptrcloud.net/shop/mintia",
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          "https://estama.jp/shop/27936/cast/",
+          "https://estama.jp/shop/27936/cast/394372/"
         ]
-      }
+      },
+      "verifiedPhone": "090-3207-8053",
+      "verifiedHours": "10:00〜LAST"
     },
     {
       "name": "Access Hiroshima",
@@ -9273,8 +9312,8 @@
       "name": "BUZZ",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "稲荷町駅最寄り。広島市内のルーム住所は番地未確認",
+      "status": "エステ魂店舗ページで電話・営業時間・予約方法を確認",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -9294,9 +9333,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "エステ魂の利用案内で電話070-6480-7300、営業時間10:00〜翌3:00、予約受付9:00〜翌3:00、完全予約制、稲荷町駅最寄りを確認。住所番地・独立公式サイトは未確認。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -9313,16 +9352,21 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "sources": [
+          "https://estama.jp/shop/42473/flow/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂の広島市掲載。稲荷町駅最寄り、営業時間10:00〜翌3:00、電話070-6480-7300、南区金屋町ルームを確認。",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "エステ魂の利用案内で電話070-6480-7300、営業時間10:00〜翌3:00、予約受付9:00〜翌3:00、完全予約制、稲荷町駅最寄りを確認。住所番地・独立公式サイトは未確認。",
         "sources": [
-          "https://estama.jp/shop/42473/"
+          "https://estama.jp/shop/42473/flow/"
         ]
-      }
+      },
+      "verifiedPhone": "070-6480-7300",
+      "verifiedHours": "10:00〜翌3:00"
     },
     {
       "name": "小魔女",
@@ -9541,8 +9585,8 @@
       "name": "LILY",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "中区三川町、新天地ドンキホーテ付近をエステ魂掲載で確認",
+      "status": "第三者媒体で広島市中区住所・電話・営業時間を確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -9562,9 +9606,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "エステ魂店舗情報で中区三川町、新天地ドンキホーテ付近、電話070-8904-4827、10:00〜LASTを確認。住所番地と独立公式サイトは未確認。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -9581,16 +9625,22 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
-      },
-      "batchAudit": {
-        "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂掲載。中区三川町、電話070-8904-4827、10:00〜LAST。独立公式サイトは未確認。",
+        "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://estama.jp/shop/41122/"
         ]
-      }
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "エステ魂店舗情報で中区三川町、新天地ドンキホーテ付近、電話070-8904-4827、10:00〜LASTを確認。住所番地と独立公式サイトは未確認。",
+        "sources": [
+          "https://estama.jp/shop/41122/"
+        ]
+      },
+      "verifiedAddress": "広島県広島市中区三川町（番地未掲載）",
+      "verifiedPhone": "070-8904-4827",
+      "verifiedHours": "10:00〜LAST"
     },
     {
       "name": "リバーズエステ",
@@ -9984,7 +10034,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "同じ公式ドメインのIVY SPAとの重複候補。別レコードを維持し同一性確認待ち",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -10004,9 +10054,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "既存記録のivyspa.jpと高級メンズエステ IVY SPA広島の公式ドメインが一致。別レコードとして保持し、同一店舗の重複候補として注記。公式サイトで出張専門・9:30〜翌3:00を確認。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -10023,16 +10073,22 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "sources": [
+          "https://ivyspa.jp/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "公式店舗ページで広島市出張専門、電話080-3884-8693、9:30〜翌3:00、公式HP ivyspa.jpを確認。",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "既存記録のivyspa.jpと高級メンズエステ IVY SPA広島の公式ドメインが一致。別レコードとして保持し、同一店舗の重複候補として注記。公式サイトで出張専門・9:30〜翌3:00を確認。",
         "sources": [
-          "https://menes-style.jp/chugoku_shikoku/hiroshima/ivyspa"
+          "https://ivyspa.jp/"
         ]
-      }
+      },
+      "officialUrl": "https://ivyspa.jp/",
+      "officialUrlStatus": "高級メンズエステ IVY SPA広島と同じ独立公式URL。別レコードのため統合せず重複候補として記録",
+      "verifiedHours": "9:30〜翌3:00"
     },
     {
       "name": "りあんすぱ",
@@ -10095,7 +10151,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "掲載媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "エステ魂店舗ページで広島市・電話・営業時間・公式HPリンクを確認",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市掲載",
@@ -10115,9 +10171,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "エステ魂店舗ページで広島市、電話080-9130-7433、10:00〜翌3:00、年中無休、公式HPリンクkawaii-apron.comを確認。公式サイトの直接アクセス確認とは区別。",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -10134,16 +10190,23 @@
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
-      },
-      "batchAudit": {
-        "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂掲載。電話080-9130-7433、10:00〜翌3:00、公式HP kawaii-apron.com、広島市掲載を確認。",
+        "operatingStatus": "営業中の個別確証なし",
         "sources": [
           "https://estama.jp/shop/47576/"
         ]
-      }
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第4回・151〜200番個別照合",
+        "status": "エステ魂店舗ページで広島市、電話080-9130-7433、10:00〜翌3:00、年中無休、公式HPリンクkawaii-apron.comを確認。公式サイトの直接アクセス確認とは区別。",
+        "sources": [
+          "https://estama.jp/shop/47576/"
+        ]
+      },
+      "officialUrl": "https://kawaii-apron.com/",
+      "officialUrlStatus": "エステ魂店舗情報に公式HPとして掲載。独立ドメイン直接アクセスは未確認",
+      "verifiedPhone": "080-9130-7433",
+      "verifiedHours": "10:00〜翌3:00"
     },
     {
       "name": "煌き-KIRAMEKI-",
