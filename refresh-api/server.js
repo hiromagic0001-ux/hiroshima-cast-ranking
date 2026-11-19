@@ -553,6 +553,71 @@ const server = http.createServer(async (req, res) => {
   }
   // One-time, non-destructive import of the existing Hiroshima 278-store candidate database.
   // The route seeds D1 only when the stores key is absent; it never replaces existing data.
+  // Merge only duplicate-name audit annotations into existing D1 stores. Never replace the store roster.
+  if (pathname === "/api/storage/sync-duplicate-audit" && req.method === "POST") {
+    if (origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "allowed_app_origin_required" }, origin);
+    const storageUrl = process.env.CAST_STORAGE_URL;
+    const storageToken = process.env.CAST_STORAGE_API_TOKEN;
+    if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
+    try {
+      const headers = { authorization: `Bearer ${storageToken}` };
+      const existingResponse = await fetch(new URL("/v1/data/stores", storageUrl), { headers, signal: AbortSignal.timeout(15000) });
+      const existing = await existingResponse.json();
+      if (!existingResponse.ok || !existing.ok || !existing.found || !Array.isArray(existing.value?.records)) {
+        return send(res, 502, { ok: false, error: "existing_stores_read_failed" }, origin);
+      }
+      const sourceUrl = "https://raw.githubusercontent.com/hiromagic0001-ux/hiroshima-cast-ranking/main/switcher/store-database.json";
+      const sourceResponse = await fetch(sourceUrl, { signal: AbortSignal.timeout(20000) });
+      if (!sourceResponse.ok) return send(res, 502, { ok: false, error: "source_database_unavailable", sourceStatus: sourceResponse.status }, origin);
+      const source = await sourceResponse.json();
+      if (source.totalCandidates !== 278 || !Array.isArray(source.records) || source.records.length !== 278 ||
+          source.duplicateAuditSummary?.groupsReviewed !== 7) {
+        return send(res, 409, { ok: false, error: "source_audit_validation_failed" }, origin);
+      }
+      const annotations = source.records.filter(record => record.duplicateAudit && record.duplicateGroup && record.name);
+      if (annotations.length !== 15) return send(res, 409, { ok: false, error: "unexpected_annotation_count", count: annotations.length }, origin);
+      const current = existing.value;
+      if (current.records.length !== 278) return send(res, 409, { ok: false, error: "existing_record_count_mismatch", count: current.records.length }, origin);
+      const pending = [];
+      for (const sourceRecord of annotations) {
+        const matches = current.records.filter(record =>
+          record.name === sourceRecord.name &&
+          record.duplicateGroup === sourceRecord.duplicateGroup &&
+          (record.duplicateRole || "unassigned") === (sourceRecord.duplicateRole || "unassigned")
+        );
+        if (matches.length !== 1) {
+          return send(res, 409, { ok: false, error: "record_match_not_unique", name: sourceRecord.name, matches: matches.length }, origin);
+        }
+        pending.push({ name: sourceRecord.name, duplicateAudit: sourceRecord.duplicateAudit });
+      }
+      const next = {
+        ...current,
+        records: current.records.map(record => {
+          const annotation = pending.find(item => item.name === record.name &&
+            annotations.some(sourceRecord => sourceRecord.name === item.name &&
+              sourceRecord.duplicateGroup === record.duplicateGroup &&
+              (sourceRecord.duplicateRole || "unassigned") === (record.duplicateRole || "unassigned")));
+          return annotation ? { ...record, duplicateAudit: annotation.duplicateAudit } : record;
+        }),
+        duplicateAuditSummary: source.duplicateAuditSummary
+      };
+      const writeResponse = await fetch(new URL("/v1/data/stores", storageUrl), {
+        method: "PUT",
+        headers: { ...headers, "content-type": "application/json" },
+        body: JSON.stringify(next),
+        signal: AbortSignal.timeout(20000)
+      });
+      const write = await writeResponse.json();
+      if (!writeResponse.ok || !write.ok) return send(res, 502, { ok: false, error: "duplicate_audit_sync_write_failed", upstreamStatus: writeResponse.status }, origin);
+      return send(res, 200, {
+        ok: true, updatedKey: "stores", recordsPreserved: current.records.length,
+        annotationsMerged: pending.length, groupsReviewed: source.duplicateAuditSummary.groupsReviewed,
+        updatedAt: write.updatedAt, note: "店舗レコードの追加・削除・統合は行わず、重複照合メモのみを更新しました。"
+      }, origin);
+    } catch (error) {
+      return send(res, 502, { ok: false, error: "duplicate_audit_sync_failed", detail: String(error?.message || error) }, origin);
+    }
+  }
   if (pathname === "/api/storage/import-initial-stores" && req.method === "GET") {
     if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const storageUrl = process.env.CAST_STORAGE_URL;
