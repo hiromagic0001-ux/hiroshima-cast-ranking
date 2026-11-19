@@ -117,23 +117,22 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "url": "https://estama.jp/shop/51166/",
-        "address": "広島県広島市中区（個室住所は予約時案内）",
-        "hours": "10:00〜翌2:00",
-        "phone": "080-8522-3707",
-        "kind": "listing-detail-and-active-listing",
+        "address": "広島県広島市中区幟町（掲載媒体情報・個別ルーム住所は予約時案内）",
+        "hours": "9:00〜翌2:00",
+        "phone": "070-9015-8403",
+        "kind": "listing-detail-current-activity-no-independent-domain",
         "sources": [
-          "https://estama.jp/shop/51166/",
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          "https://estama.jp/shop/51166/"
         ],
-        "note": "店舗型として掲載。料金・営業時間・電話番号を掲載媒体で照合。"
+        "status": "エステ魂店舗詳細を再確認。2026-11-19 00:42の新着情報、2026-11-18更新の出勤情報、セラピスト情報、住所（中区幟町）、営業時間、電話番号を確認。ページ内に独立ドメインの公式サイトは確認できず、媒体掲載情報として記録。"
       },
       "officialUrl": "https://estama.jp/shop/51166/",
-      "officialUrlStatus": "掲載媒体の公式HP欄でURLを確認（独立ドメインとは区別）",
-      "verifiedAddress": "広島県広島市中区（個室住所は予約時案内）",
-      "verifiedHours": "10:00〜翌2:00",
-      "verifiedPhone": "080-8522-3707"
+      "officialUrlStatus": "エステ魂の店舗掲載ページのみ確認。独立ドメインの公式サイトは未確認。",
+      "verifiedAddress": "広島県広島市中区幟町（掲載媒体情報・個別ルーム住所は予約時案内）",
+      "verifiedHours": "9:00〜翌2:00（掲載媒体情報）",
+      "verifiedPhone": "070-9015-8403（掲載媒体情報）"
     },
     {
       "name": "シークレット",
@@ -619,23 +618,22 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "officialUrl": "https://estama.jp/shop/43255/",
-      "officialUrlStatus": "掲載媒体の店舗HP欄・店舗詳細URLを確認（独立ドメイン公式サイトとは区別）",
+      "officialUrlStatus": "エステ魂の店舗掲載ページのみ確認。独立ドメインの公式サイトは未確認。",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "url": "https://estama.jp/shop/43255/",
-        "address": "広島市内・広島駅周辺（個別ルーム住所は媒体上非公開）",
+        "address": "広島県広島市中区小町（掲載媒体情報・個別ルーム住所は非公開）",
         "hours": "11:00〜LAST",
         "phone": "070-2400-4545",
-        "kind": "current-listing-and-therapist-schedule",
+        "kind": "listing-detail-current-activity-no-independent-domain",
         "sources": [
-          "https://estama.jp/shop/43255/cast/800033/",
-          "https://esjob.jp/etc/hiroshima/"
+          "https://estama.jp/shop/43255/"
         ],
-        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。"
+        "status": "エステ魂店舗詳細を再確認。2026-11-19 03:06の写メNote、2026-11-18更新情報、2026-11-01〜02の口コミ、セラピスト情報、住所（中区小町）、営業時間、電話番号を確認。独立ドメインの公式サイトは確認できず、媒体掲載情報として記録。"
       },
-      "verifiedAddress": "広島市内・広島駅周辺（個別ルーム住所は媒体上非公開）",
-      "verifiedHours": "11:00〜LAST",
-      "verifiedPhone": "070-2400-4545"
+      "verifiedAddress": "広島県広島市中区小町（掲載媒体情報・個別ルーム住所は非公開）",
+      "verifiedHours": "11:00〜LAST（掲載媒体情報）",
+      "verifiedPhone": "070-2400-4545（掲載媒体情報）"
     },
     {
       "name": "小悪魔SPA",
