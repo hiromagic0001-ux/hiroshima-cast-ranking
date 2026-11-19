@@ -1676,9 +1676,9 @@
     {
       "name": "スタンダード",
       "category": "men-esthe",
-      "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "area": "広島市（宝町・鶴見町・大手町に勤務地記載）",
+      "areaStatus": "求人媒体に宝町・鶴見・大手町と掲載。個別ルーム住所・現行所在地は未確認",
+      "status": "第三者媒体で店舗情報・電話・営業時間を確認・独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1702,44 +1702,34 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null,
-        "address": "広島県広島市中区鶴見町",
-        "hours": "10:00～翌2:00",
+        "checkedAt": "2026-11-19",
+        "status": "third-party shop and recruitment listings corroborated; latest message old; same-day roster not confirmed",
         "phone": "070-9513-0369",
+        "area": "エスタマ求人は勤務地を宝町・鶴見・大手町と記載。エステ魂は広島市/マンション個室として掲載。鶴見町の住所記録はあるが、複数ルームの現行住所は未確認。",
+        "hours": "エステ魂店舗詳細・求人とも10:00〜翌2:00（26:00）。",
+        "sameDay": "エステ魂店舗ページの最新メッセージは2026-10-24 09:06。11/19当日出勤の個別確認はできず。",
         "sources": [
-          "https://estama.jp/shop/50597/"
+          "https://estama.jp/shop/50597/",
+          "https://esjob.jp/shop/50597/",
+          "https://estama.jp/etc/couponlist/3401/"
         ],
-        "note": "店舗詳細で店名、広島市中区鶴見町、電話、営業時間、直近ニュースを確認。独立公式HPは未確認。"
+        "note": "電話・営業時間は店舗詳細と求人情報で一致。勤務地は宝町・鶴見・大手町の複数候補。独立公式サイトなし。媒体ページの「本日ご案内可」はクロール時点の表示で、11/19の予約状況を保証しない。"
       },
       "verifiedAddress": "広島県広島市中区鶴見町",
-      "verifiedHours": "10:00～翌2:00",
+      "verifiedHours": "10:00〜翌2:00（26:00表記）",
       "verifiedPhone": "070-9513-0369",
       "contactReviewDone": true,
       "contactReview": {
-        "checkedAt": "2026-11-14",
-        "status": "third-party listing cross-check",
-        "note": "店舗詳細で店名、広島市中区鶴見町、電話、営業時間、直近ニュースを確認。独立公式HPは未確認。",
+        "checkedAt": "2026-11-19",
+        "status": "third-party shop and recruitment listing cross-check",
         "sources": [
-          "https://estama.jp/shop/50597/"
-        ]
-      }
+          "https://estama.jp/shop/50597/",
+          "https://esjob.jp/shop/50597/"
+        ],
+        "note": "電話070-9513-0369、営業時間10:00〜26:00は一致。勤務地は宝町・鶴見・大手町、番地・部屋住所と当日出勤は未確認。独立公式サイト未確認。"
+      },
+      "officialUrl": null,
+      "officialUrlStatus": "独立公式ドメイン未確認。エステ魂店舗詳細と求人ページを確認"
     },
     {
       "name": "B and B",
