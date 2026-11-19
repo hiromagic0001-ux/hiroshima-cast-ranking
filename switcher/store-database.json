@@ -417,18 +417,16 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "url": null,
+        "checkedAt": "2026-11-19",
+        "url": "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r0831a95adb",
         "address": "広島県広島市中区（部屋住所は予約後案内）",
-        "hours": "10:00～翌3:00",
+        "hours": "10:00〜翌3:00",
         "phone": "070-1415-6065",
-        "kind": "third-party-current-listing-crosscheck",
+        "kind": "current-directory-listing-no-independent-domain",
         "sources": [
-          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r0831a95adb",
-          "https://esjob.jp/shop/50894/faq/"
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r0831a95adb"
         ],
-        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
-        "note": "店舗詳細で広島市中区、営業時間、電話を照合。ルームの番地住所は予約後案内。"
+        "status": "広島市中区の店舗掲載、営業時間10:00〜翌3:00、電話番号を再確認。個別ルーム住所は予約後案内。独立ドメイン公式サイトは未確認。"
       },
       "verifiedAddress": "広島県広島市中区（部屋住所は予約後案内）",
       "verifiedHours": "10:00～翌3:00",
@@ -491,23 +489,25 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "url": null,
-        "address": "広島県広島市中区鶴見町周辺（マンション住所詳細未掲載）",
-        "hours": "10:00～翌3:00",
+        "checkedAt": "2026-11-19",
+        "url": "https://estama.jp/shop/41773/flow/",
+        "address": "広島県広島市中区宝町・鶴見町周辺（媒体掲載情報。個別ルーム住所は予約時案内）",
+        "hours": "10:00〜翌3:00",
         "phone": "090-6403-2215",
-        "kind": "third-party-current-listing-crosscheck",
+        "kind": "current-listing-crosscheck-platform-official-link",
         "sources": [
-          "https://zukan-esthe.com/store.php?id=700",
-          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C0"
+          "https://estama.jp/shop/41773/flow/",
+          "https://ore-aroma.jp/shop/S-mitsubachi0601/",
+          "https://ore-aroma.jp/shop/S-mitsubachi0601/scr"
         ],
-        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
-        "note": "複数媒体で店名、営業時間、電話、広島市内の掲載エリアを照合。番地住所は未確認。"
+        "status": "エステ魂店舗詳細で営業時間10:00〜翌3:00、電話番号、宝町・鶴見ルームの案内を確認。オレアロの公式サイト欄はエステ魂店舗ページへリンク。独立ドメインは確認できず、媒体掲載ページとして分類。"
       },
-      "verifiedAddress": "広島県広島市中区鶴見町周辺（マンション住所詳細未掲載）",
-      "verifiedHours": "10:00～翌3:00",
-      "verifiedPhone": "090-6403-2215",
-      "contactReviewDone": true
+      "verifiedAddress": "広島県広島市中区宝町・鶴見町周辺（媒体掲載情報・個別ルーム住所は予約時案内）",
+      "verifiedHours": "10:00〜翌3:00（媒体掲載情報）",
+      "verifiedPhone": "090-6403-2215（媒体掲載情報）",
+      "contactReviewDone": true,
+      "officialUrl": "https://estama.jp/shop/41773/",
+      "officialUrlStatus": "オレアロ掲載ページの公式サイト欄がエステ魂の店舗ページを案内。店舗掲載ページは確認できたが、独立ドメイン公式サイトは未確認。"
     },
     {
       "name": "シュシュ 緑井店",
