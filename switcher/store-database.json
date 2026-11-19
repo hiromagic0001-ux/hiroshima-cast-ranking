@@ -1187,8 +1187,8 @@
       "name": "ヴェルディ",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区（ルーム詳細は予約後案内。媒体掲載住所に袋町・小網町の差あり）",
+      "status": "第三者媒体で最新掲載確認・独立公式サイト直接確認不可・営業時間に媒体差あり",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1209,35 +1209,37 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "recent-active-listing-confirmed",
+        "checkedAt": "2026-11-19",
+        "status": "current-third-party-cast-listing-and-recent-news-confirmed; independent-official-domain-unreachable; address-and-hours-discrepancy",
         "sources": [
+          "https://estama.jp/shop/28719/cast/",
           "https://estama.jp/shop/28719/newslist/",
-          "https://mens-est.jp/shop/hrsmverdy/",
-          "https://mens-est.jp/shop/hrsmverdy/girllist/",
-          "https://mens-est.jp/shop/hrsmverdy/",
-          "https://estama.jp/shop/28719/newslist/",
-          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4e5dae74be"
+          "https://ranking-mensesthe.jp/shop/46633/shopdata/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4e5dae74be",
+          "https://verdy-esthe.com/"
         ],
-        "address": "広島県広島市中区袋町／小網町（複数ルーム・予約後詳細案内）",
-        "hours": "6:00～LAST",
+        "address": "広島市中区。第三者媒体の地図情報に袋町9-9、別媒体は小網町付近と掲載。ルーム型で予約後案内の記載もあるため、詳細住所は確定しない。",
+        "hours": "エステ魂・ランキング媒体は6:00〜LAST、Ultimate Mapは8:00〜翌3:00。相違あり。",
         "phone": "080-9893-9031",
-        "note": "複数媒体で店名、電話、広島市中区の複数ルーム、営業時間の現行掲載を照合。独立公式ドメイン verdy-esthe.com は媒体上に記載があるが直接取得できず、公式リンクは未設定。"
+        "note": "11/19取得時点のエステ魂セラピスト一覧に本日出勤表示あり。最新ニュースは11/18。verdy-esthe.comは媒体で公式サイトとしてリンクされるが直接アクセスはタイムアウト。独立公式サイトの内容・当日公式発信とは断定しない。"
       },
-      "verifiedAddress": "広島県広島市中区袋町／小網町（複数ルーム・予約後詳細案内）",
-      "verifiedHours": "6:00～LAST",
+      "verifiedAddress": "広島県広島市中区（袋町・小網町の掲載あり、詳細所在地は未確定）",
+      "verifiedHours": "媒体差あり：6:00〜LAST／8:00〜翌3:00（要店舗確認）",
       "verifiedPhone": "080-9893-9031",
       "contactReviewDone": true,
       "contactReview": {
-        "checkedAt": "2026-11-14",
-        "status": "third-party listing checked",
-        "note": "複数媒体で店名、電話、広島市中区の複数ルーム、営業時間の現行掲載を照合。独立公式ドメイン verdy-esthe.com は媒体上に記載があるが直接取得できず、公式リンクは未設定。",
+        "checkedAt": "2026-11-19",
+        "status": "third-party listings cross-checked; official domain timeout",
+        "note": "電話は複数媒体で一致。住所・営業時間は媒体差があり確定保留。11/19時点の媒体キャスト一覧に本日出勤表示。",
         "sources": [
-          "https://mens-est.jp/shop/hrsmverdy/",
+          "https://estama.jp/shop/28719/cast/",
           "https://estama.jp/shop/28719/newslist/",
+          "https://ranking-mensesthe.jp/shop/46633/shopdata/",
           "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4e5dae74be"
         ]
-      }
+      },
+      "officialUrl": "https://verdy-esthe.com/",
+      "officialUrlStatus": "媒体上の公式サイト掲載あり・直接アクセスはタイムアウトのため未確認"
     },
     {
       "name": "マシェリ",
