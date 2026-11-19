@@ -1342,8 +1342,8 @@
       "name": "salon.do.ni-na",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区の5ルームを第三者店舗情報で確認。詳細住所の一部は予約時案内",
+      "status": "独立公式サイト確認済み・第三者媒体で11月19日出勤予定掲載",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1351,23 +1351,26 @@
         }
       ],
       "officialUrl": "https://salon-do-ni-na.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "officialUrlStatus": "独立ドメイン公式サイトを直接確認済み",
+      "bulkAuditStatus": "公式サイト・第三者媒体照合済み。営業時間に媒体差あり。公式出勤表は旧週表示、当日予定は第三者媒体で確認",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "official-site-and-current-cast-schedule-confirmed",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-domain-direct-check-and-third-party-crosscheck",
+        "url": "https://salon-do-ni-na.com/",
+        "address": "広島市中区の複数ルーム：富士見町13-17 K.Y.BLD／鶴見町4-10 パレグレース鶴見／富士見町4-29 富士見町ビル／竹屋町8-14 DOLCH／宝町（部屋詳細非公開）。五日市店は別店舗として除外。",
+        "hours": "公式サイト10:00〜翌3:00。第三者媒体に10:00〜翌2:00の記載もあり",
+        "phone": "070-2368-2727",
         "sources": [
           "https://salon-do-ni-na.com/",
+          "https://salon-do-ni-na.com/schedule.php",
           "https://menes-style.jp/chugoku_shikoku/hiroshima/salondo",
-          "https://estama.jp/shop/28377/"
+          "https://mens-est.jp/shop/salondo27/schedule/",
+          "https://dr.ptr216.ptrcloud.net/shop/ni-na/girl"
         ],
-        "address": "広島県広島市中区富士見町13-17、鶴見町4-10、富士見町4-29、竹屋町8-14、宝町（複数ルーム）",
-        "hours": "10:00〜翌3:00",
-        "phone": "070-2368-2727",
-        "note": "独立公式サイトに最新ニュース・出勤一覧あり。複数の店舗案内で住所・電話・営業時間を照合。現行のキャスト出勤表示を確認。"
+        "status": "独立ドメインの公式サイトを直接開き、電話070-2368-2727・営業時間10:00〜翌3:00・最新情報（11/12新人掲載）・セラピスト一覧を確認。公式出勤表ページは11/2〜11/8の古い週表示であり11/19の公式出勤表とは扱わない。第三者のメンエスじゃぱん出勤表は2026-11-19の出勤予定20名を掲載。Menes-styleの店舗情報は中区5ルームの住所・電話・10:00〜翌3:00を掲載。別媒体は営業時間翌2:00と異なる。五日市店は公式サイト上で別リンクのため対象レコードに含めない。"
       },
-      "verifiedAddress": "広島県広島市中区富士見町13-17、鶴見町4-10、富士見町4-29、竹屋町8-14、宝町（複数ルーム）",
-      "verifiedHours": "10:00〜翌3:00",
+      "verifiedAddress": "広島市中区：富士見町13-17／鶴見町4-10／富士見町4-29／竹屋町8-14／宝町（複数ルーム）",
+      "verifiedHours": "公式10:00〜翌3:00（第三者媒体に翌2:00の記載あり）",
       "verifiedPhone": "070-2368-2727"
     },
     {
