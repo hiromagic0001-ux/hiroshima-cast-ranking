@@ -920,6 +920,20 @@ const server = http.createServer(async (req, res) => {
           issues: rows.filter(row => row.status !== "応答あり").slice(0, 30).map(({ name, rank, href, status, httpStatus, detail }) => ({ name, rank, href, status, httpStatus: httpStatus ?? null, detail: detail || null }))
         };
       });
+      // Emit restricted records one per log line so they can be retrieved safely
+      // from Render logs when the full JSON response is not accessible to the operator.
+      for (const group of groups) {
+        for (const issue of group.issues.filter(item => item.status === "アクセス制限")) {
+          console.log(JSON.stringify({
+            event: "ranking_link_audit_issue",
+            sourceId: group.sourceId,
+            name: issue.name,
+            rank: issue.rank,
+            href: issue.href,
+            httpStatus: issue.httpStatus
+          }));
+        }
+      }
       return send(res, 200, {
         ok: true, mode: "read-only", checkedAt: new Date().toISOString(),
         total: results.length,
