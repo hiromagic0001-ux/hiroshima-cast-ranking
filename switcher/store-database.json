@@ -1735,15 +1735,31 @@
       "name": "B and B",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区のエリア掲載を確認・部屋住所は予約後案内",
+      "status": "媒体掲載・営業状況の継続確認対象",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "B and B 店舗掲載（電話・営業時間・エリア）",
+          "url": "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r85ccd69f0c"
+        },
+        {
+          "label": "BandB 求人・店舗情報（電話・公式サイト候補）",
+          "url": "https://esjob.jp/shop/49990/"
+        },
+        {
+          "label": "エステ魂 セラピスト一覧（11月19日表示）",
+          "url": "https://estama.jp/shop/49990/cast/"
+        },
+        {
+          "label": "全国メンズエステランキング（本日出勤表示）",
+          "url": "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkAuditStatus": "個別確認済み：電話・エリア・当日出勤表示。独立公式サイトと営業時間差異は未確定",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
         "status": "name-match-in-current-directory-snapshot",
@@ -1756,18 +1772,17 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "current-cast-listing-and-directory-details-confirmed",
-        "sources": [
-          "https://www.salonowa.jp/area/hiroshima/therapists?today=1",
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
-        ],
-        "address": "広島県広島市中区・比治山橋駅徒歩3分圏内",
-        "hours": "11:00〜LAST",
-        "note": "当日出勤表示と広島市中区の店舗掲載を確認。電話・独立公式サイトは未確認。"
+        "checkedAt": "2026-11-19",
+        "status": "store-listings-and-current-cast-count-confirmed-official-site-unreachable",
+        "address": "広島県広島市中区・比治山橋駅徒歩3分圏内。ルーム詳細住所は予約後案内",
+        "hours": "11:00〜LAST（複数媒体で一致。別媒体に10:00〜翌5:00の記載があり差異あり）",
+        "phone": "090-5460-1201",
+        "officialUrl": "https://b-b-spa.com/",
+        "officialUrlStatus": "求人媒体に店舗公式サイトとして掲載。今回の直接アクセスは失敗し、独立ドメインのサイト内容・運営主体は未確認。求人用サイト https://bbspa-rec.com/ も403で未確認。",
+        "note": "電話番号は求人媒体・店舗情報媒体で一致。広島市中区・比治山橋駅徒歩3分圏内の掲載。2026-11-19のランキング表示で本日出勤3名、エステ魂のキャスト一覧にも当日時間表示あり。部屋住所は予約後案内。営業時間は媒体間で11:00〜LASTと10:00〜翌5:00の差異があるため確定扱いしない。"
       },
-      "verifiedAddress": "広島県広島市中区・比治山橋駅徒歩3分圏内",
-      "verifiedHours": "11:00〜LAST"
+      "verifiedAddress": "広島県広島市中区・比治山橋駅徒歩3分圏内（部屋詳細は予約後案内）",
+      "verifiedHours": "11:00〜LAST（別媒体に10:00〜翌5:00の差異あり）"
     },
     {
       "name": "ふわもこSPA",
