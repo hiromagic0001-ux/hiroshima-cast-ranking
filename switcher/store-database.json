@@ -13847,8 +13847,8 @@
       "name": "Relaxation Salon REAL",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "公式アクセスページで中区東平塚町・昭和町の2ルームを確認",
+      "status": "独立公式サイトで2ルーム・電話・営業時間・当日出勤表示を確認",
       "sources": [
         {
           "label": "MEN'S ES・広島市184店舗一覧",
@@ -13870,9 +13870,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市を対象とする現行媒体一覧の掲載名と照合一致。これは媒体掲載の確認であり、現在営業中・当日受付・住所/電話/営業時間・公式サイトの真正性を独立確認したものではない。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "公式アクセスで中区東平塚町・昭和町、電話070-8367-1849、10:00〜翌5:00を確認。別媒体の電話番号に差があるため公式記載を採用。",
         "evidence": [
           {
             "source": "広島県メンズエステマップ（広島市37店の一覧）",
@@ -13893,21 +13893,27 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "note": "公式サイト記載の電話070-8367-1849を採用。メンエスじゃぱんに別番号070-3784-1840の掲載があるため番号不一致を注記。",
+        "sources": [
+          "https://rs-real.com/access/",
+          "https://rs-real.com/"
+        ]
       },
       "duplicateRole": "alias",
       "duplicateCanonicalName": "REAL",
       "officialUrl": "https://rs-real.com/",
-      "officialUrlStatus": "統合先店舗の公式HPリンク（REAL）",
+      "officialUrlStatus": "独立公式サイトを直接確認。公式アクセスページに電話・2ルーム・営業時間を掲載",
       "aliases": [
         "REAL"
       ],
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区のRelaxation Salon REALとして184店一覧に掲載。松川町駅、10:00〜翌5:00。既存監査情報を維持。",
+        "batch": "最終回・251〜278番28候補の再照合",
+        "status": "公式アクセスで中区東平塚町・昭和町、電話070-8367-1849、10:00〜翌5:00を確認。別媒体の電話番号に差があるため公式記載を採用。",
         "sources": [
-          "https://mens-es.men/area/3401"
+          "https://rs-real.com/access/",
+          "https://rs-real.com/"
         ]
       },
       "duplicateAudit": {
@@ -13916,14 +13922,17 @@
         "note": "REAL／Relaxation Salon REAL。公式URL rs-real.com は一致。一方、第三者地図に公式情報と異なる住所・電話があり、混同候補の確認を継続。別情報を統合しない。",
         "group": "real",
         "role": "alias"
-      }
+      },
+      "verifiedPhone": "070-8367-1849",
+      "verifiedHours": "10:00〜翌5:00",
+      "verifiedAddress": "広島県広島市中区東平塚町／昭和町（2ルーム、番地・部屋番号は予約時案内）"
     },
     {
       "name": "出張専門高級メンズエステ IVY SPA",
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "独立公式サイトで出張専門・営業時間を確認。IVY SPA同系候補との重複照合は保留",
       "sources": [
         {
           "label": "MEN'S ES・広島市184店舗一覧",
@@ -13970,19 +13979,22 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島駅エリアの出張専門として184店一覧に掲載。9:30〜翌6:00。既存監査情報を維持。",
+        "batch": "最終回・251〜278番28候補の再照合",
+        "status": "公式サイトで出張専門・完全予約制・営業時間9:30〜翌3:00を確認。既存IVY SPA候補と同一性は統合せず保留。",
         "sources": [
-          "https://mens-es.men/area/3401"
+          "https://ivyspa.jp/"
         ]
-      }
+      },
+      "officialUrl": "https://ivyspa.jp/",
+      "officialUrlStatus": "独立公式サイトを直接確認。出張専門・9:30〜翌3:00掲載",
+      "verifiedHours": "9:30〜翌3:00"
     },
     {
       "name": "チェリーSPA東平塚店",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "エステ魂特定商取引表示で東平塚町2-22を確認",
+      "status": "エステ魂個別ページで東平塚店の住所・電話・営業時間を確認。系列公式サイトも確認",
       "sources": [
         {
           "label": "MEN'S ES・広島市184店舗一覧",
@@ -14029,12 +14041,18 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区東平塚町2-22、電話080-3435-5505、9:00〜翌6:00。チェリーSPA広島の別店名/系列店表記。店舗単位で区別。",
+        "batch": "最終回・251〜278番28候補の再照合",
+        "status": "エステ魂個別ページで中区東平塚町2-22、電話080-3435-5505、9:00〜翌6:00を確認。チェリーSPA広島公式サイトも確認。",
         "sources": [
-          "https://estama.jp/shop/47917/"
+          "https://estama.jp/shop/47917/",
+          "https://cherryspahiroshima.com/"
         ]
-      }
+      },
+      "officialUrl": "https://cherryspahiroshima.com/",
+      "officialUrlStatus": "チェリーSPA広島の独立公式サイト。東平塚店の個別情報はエステ魂掲載で確認",
+      "verifiedAddress": "広島県広島市中区東平塚町2-22",
+      "verifiedPhone": "080-3435-5505",
+      "verifiedHours": "9:00〜翌6:00"
     },
     {
       "name": "出張メンズエステ～NAGOMI～",
@@ -14100,7 +14118,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "広島掲載・電話・営業時間・出勤情報を媒体で確認。公式HPリンクあり、直接接続未確認",
       "sources": [
         {
           "label": "MEN'S ES・広島市184店舗一覧",
@@ -14150,17 +14168,17 @@
       "duplicateRole": "alias",
       "duplicateCanonicalName": "Arinoa",
       "officialUrl": "https://arinoa-esthe.com/",
-      "officialUrlStatus": "統合先店舗の公式HPリンク（Arinoa）",
+      "officialUrlStatus": "独立公式サイトURLを媒体に掲載。公式サイト直接接続は今回未確認",
       "aliases": [
         "Arinoa"
       ],
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市のランキング・店舗一覧に掲載。八丁堀または袋町駅周辺、11:00〜翌2:00。",
+        "batch": "最終回・251〜278番28候補の再照合",
+        "status": "メンエスじゃぱん個別ページと出勤表で電話080-2517-0007、11:00〜LAST、八丁堀徒歩10分、11/19の出勤掲載を確認。公式HPリンクはarinoa-esthe.com。",
         "sources": [
-          "https://mens-es.men/area/3401",
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          "https://mens-est.jp/shop/arinoahrsm/",
+          "https://mens-est.jp/shop/arinoahrsm/schedule/"
         ]
       },
       "duplicateAudit": {
@@ -14169,7 +14187,9 @@
         "note": "Arinoa／Arinoa～アリノア～。既存の同一duplicateGroup。読み仮名付き表記候補。元レコード保持。",
         "group": "arinoa",
         "role": "alias"
-      }
+      },
+      "verifiedPhone": "080-2517-0007",
+      "verifiedHours": "11:00〜LAST"
     },
     {
       "name": "ミセスママ 広島",
@@ -14709,7 +14729,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "独立公式サイトでセラピスト一覧・最新情報を確認。住所・電話の追加確証は今回なし",
       "sources": [
         {
           "label": "風俗マップ・メンズエステ候補",
@@ -14717,7 +14737,7 @@
         }
       ],
       "officialUrl": "https://mensspa-r.com/",
-      "officialUrlStatus": "統合先店舗の公式HPリンク（spa R（スパアール））",
+      "officialUrlStatus": "独立公式サイトを直接確認。セラピスト一覧・最新情報掲載",
       "duplicateReview": "同一店舗の別表記候補。通常表示では統合先にまとめる。全件表示で別表記も確認可能。",
       "duplicateGroup": "mens-spa-r",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
@@ -14753,11 +14773,10 @@
       ],
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "既存Men's spa R候補と同一店舗。公式HP https://mensspa-r.com/ および広島市出張型の掲載を再確認。",
+        "batch": "最終回・251〜278番28候補の再照合",
+        "status": "独立公式サイトでセラピスト一覧と最新情報を確認。広島市出張型・9:00〜翌4:00は既存媒体掲載を維持。",
         "sources": [
-          "https://mensspa-r.com/",
-          "https://menesmall.jp/hiroshima/124/shops"
+          "https://mensspa-r.com/"
         ]
       },
       "duplicateAudit": {
@@ -14867,8 +14886,8 @@
       "name": "Reflet Spa",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "メンエスmall個別店舗ページで住所・電話・営業時間を確認",
+      "status": "第三者媒体の個別ページで住所・電話・営業時間を確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "風俗マップ・メンズエステ候補",
@@ -14903,13 +14922,16 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "既存Reflet Spa候補と同一店舗。中区田中町1-1 山本ビル1F、11:00〜翌3:00を再確認。",
+        "batch": "最終回・251〜278番28候補の再照合",
+        "status": "メンエスmall個別店舗ページで中区田中町1-1 山本ビル1F、電話080-8356-7959、11:00〜翌3:00、受付10:00〜LAST、年中無休を確認。",
         "sources": [
-          "https://dr.ptr216.ptrcloud.net/shop/reflet-spa",
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          "https://menesmall.jp/shop/reflet-spa",
+          "https://dr.ptr216.ptrcloud.net/shop/reflet-spa"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区田中町1-1 山本ビル1F",
+      "verifiedPhone": "080-8356-7959",
+      "verifiedHours": "11:00〜翌3:00（受付10:00〜LAST）"
     },
     {
       "name": "peony",
@@ -15199,7 +15221,7 @@
       "category": "men-esthe",
       "area": "広島市中区宝町",
       "areaStatus": "掲載住所確認・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "第三者媒体で中区宝町・電話・営業時間を確認。登録公式URLは404のため公式サイト未稼働/未確認",
       "sources": [
         {
           "label": "エステ魂（店舗情報）",
@@ -15211,7 +15233,7 @@
         }
       ],
       "officialUrl": "https://beange.men-este.net/",
-      "officialUrlStatus": "登録独立URLは404（2026-11-19確認）。掲載媒体の店舗ページは確認済み・独立公式URLは再確認待ち",
+      "officialUrlStatus": "登録されていたbeange.men-este.netは404。媒体のHP欄も同URLのため稼働する独立公式サイト未確認",
       "aliases": [
         "ビアンジュ",
         "be ange",
@@ -15244,11 +15266,11 @@
       "verifiedPhone": "090-9251-0678（掲載媒体情報）",
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "最終3店舗個別再確認",
-        "status": "エステ魂の個別店舗ページで広島市中区宝町、電話090-9251-0678、営業時間11:00〜翌3:00、公式HP https://beange.men-este.net/ を確認。マンション個室型、出張不可。",
+        "batch": "最終回・251〜278番28候補の再照合",
+        "status": "エステ魂・メンエスmallの掲載で中区宝町、電話090-9251-0678、11:00〜翌3:00を確認。登録公式URLは404で公式サイトの稼働を確認できず。",
         "sources": [
-          "https://estama.jp/shop/38980/",
-          "https://menesmall.jp/shop/be-ange"
+          "https://estama.jp/shop/40477/",
+          "https://beange.men-este.net/"
         ]
       }
     },
@@ -15256,8 +15278,8 @@
       "name": "COLORS（カラーズ）",
       "category": "men-esthe",
       "area": "広島市中区宝町",
-      "areaStatus": "媒体掲載住所確認・営業状況未確認",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "メンエスmall個別店舗ページで中区宝町5-9を確認",
+      "status": "第三者媒体の個別ページで住所・電話・営業時間を確認。公式HPリンク先URLは未取得",
       "sources": [
         {
           "label": "メンエスmall 店舗情報",
@@ -15297,21 +15319,24 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "最終3店舗個別再確認",
-        "status": "メンエスmall個別ページで広島市中区宝町5-9、電話080-2101-4002、営業時間10:00〜翌1:00を確認。媒体のオフィシャルHPリンク欄はあるがURL実体は今回抽出できず、独立公式ドメイン確認とは分ける。",
+        "batch": "最終回・251〜278番28候補の再照合",
+        "status": "メンエスmall個別ページ・料金・問い合わせ情報で中区宝町5-9、電話080-2101-4002、10:00〜翌1:00を確認。オフィシャルHPリンク表示はあるがリンク先URL実体は未確認。",
         "sources": [
-          "https://dr.ptr216.ptrcloud.net/shop/colors",
-          "https://menesmall.jp/shop/colors/contact",
-          "https://menesmall.jp/shop/colors/flow"
+          "https://menesmall.jp/shop/colors",
+          "https://menesmall.jp/shop/colors/system",
+          "https://menesmall.jp/shop/colors/contact"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区宝町5-9",
+      "verifiedPhone": "080-2101-4002",
+      "verifiedHours": "10:00〜翌1:00"
     },
     {
       "name": "CRADLE（クレイドル）",
       "category": "men-esthe",
       "area": "広島市中区鶴見町",
       "areaStatus": "複数媒体の掲載住所情報・営業状況未確認",
-      "status": "媒体掲載・未確定",
+      "status": "広島市中区鶴見町7・営業時間の媒体掲載を確認。電話は別店舗と一致するため未確定",
       "sources": [
         {
           "label": "広島メンエス求人ガイド 店舗情報",
@@ -15359,12 +15384,15 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "最終3店舗個別再確認",
-        "status": "広島市中区鶴見町7、営業時間10:00〜翌5:00の媒体掲載を確認。掲載電話070-1482-6361は別店舗ミセスママの電話と一致するため、誤掲載/転記の可能性を注記し、CRADLEの電話として確定しない。独立公式HPは未確認。",
+        "batch": "最終回・251〜278番28候補の再照合",
+        "status": "中区鶴見町7、10:00〜翌5:00の媒体掲載を確認。掲載電話070-1482-6361はミセスママ広島の電話と一致するため、CRADLEの電話として登録しない。",
         "sources": [
-          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4705ae08fd&lang=en"
+          "https://menesu-select.com/hiroshima/hiroshima/",
+          "https://mens-es.men/area/3401"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区鶴見町7（番地以降未確認）",
+      "verifiedHours": "10:00〜翌5:00"
     }
   ],
   "sources": [
