@@ -54,7 +54,7 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "url": null,
         "address": null,
         "hours": null,
@@ -62,9 +62,9 @@
         "kind": "name-collision-investigation",
         "sources": [
           "https://bap-holdings.co.jp/salon_area/hiroshima/",
-          "https://bap-holdings.co.jp/salon/"
+          "https://menesu-select.com/hiroshima/hiroshima/"
         ],
-        "note": "同名検索では美容室beauty:beastの広島市内店舗が公式確認できたが、メンズエステ店舗との同一性を示す証拠なし。誤リンク防止のため公式URLは設定せず、業種/同名衝突の要確認候補として保持。"
+        "status": "同名のbeauty:beastは広島市内の美容室として公式サイトで確認できるが、メンズエステ候補との同一店舗・系列関係を示す証拠なし。誤った美容室URLを店舗公式URLとして登録せず、同名衝突の未確認候補として維持。"
       }
     },
     {
@@ -229,21 +229,23 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "kind": "third-party-current-listing-crosscheck",
-        "url": null,
-        "address": "広島県広島市中区宝町（フジグラン広島周辺）",
-        "hours": "10:00～翌3:00",
-        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
+        "checkedAt": "2026-11-19",
+        "url": "https://estama.jp/shop/50643/flow/",
+        "address": "広島県広島市中区宝町（フジグラン広島周辺・個別場所は予約時案内）",
+        "hours": "10:00〜翌3:00",
+        "phone": "070-2292-7716",
+        "kind": "current-listing-detail-no-independent-domain",
         "sources": [
-          "https://mens-es.men/shop/50643"
+          "https://estama.jp/shop/50643/flow/",
+          "https://estama.jp/shop/50643/menu/"
         ],
-        "phone": null,
-        "note": "店舗詳細で広島市内の住所エリア・営業時間・当日出勤表示を確認。番地・電話・独立公式サイトは未確認。"
+        "status": "エステ魂の店舗詳細で電話番号、営業時間、宝町・フジグラン広島周辺の案内を確認。独立ドメインの公式サイトは確認できず、媒体掲載ページとして記録。"
       },
-      "verifiedAddress": "広島県広島市中区宝町（フジグラン広島周辺）",
-      "verifiedHours": "10:00～翌3:00",
-      "contactReviewDone": true
+      "verifiedAddress": "広島県広島市中区宝町（フジグラン広島周辺・媒体掲載情報）",
+      "verifiedHours": "10:00〜翌3:00（媒体掲載情報）",
+      "contactReviewDone": true,
+      "verifiedPhone": "070-2292-7716（媒体掲載情報）",
+      "officialUrlStatus": "エステ魂の店舗掲載ページのみ確認。独立ドメインの公式サイトは未確認。"
     },
     {
       "name": "トリコ",
@@ -336,23 +338,23 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "url": null,
-        "address": "広島県広島市中区舟入幸町5-10 セブンプロート舟入幸町",
-        "hours": "9:00～翌4:00",
-        "phone": "070-5056-0272",
-        "kind": "third-party-current-listing-crosscheck",
+        "checkedAt": "2026-11-19",
+        "url": "https://estama.jp/shop/43343/cast/",
+        "address": "広島県広島市中区舟入幸町5-10 セブンプロート舟入幸町（求人媒体掲載情報）",
+        "hours": "9:00〜翌4:00",
+        "phone": "070-5677-5558",
+        "kind": "current-cast-list-and-job-listing-no-independent-domain",
         "sources": [
-          "https://estama.jp/shop/43343/",
-          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C5"
+          "https://estama.jp/shop/43343/cast/",
+          "https://esjob.jp/shop/43343/"
         ],
-        "note": "求人・店舗掲載ページで住所、電話、営業時間を照合。独立公式サイトは未確認。",
-        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）"
+        "status": "エステ魂のセラピスト一覧で最新の在籍・出勤表示を確認。求人ページで住所・電話・営業時間を再確認。独立ドメインの公式サイトは未確認。"
       },
       "verifiedAddress": "広島県広島市中区舟入幸町5-10 セブンプロート舟入幸町",
       "verifiedHours": "9:00～翌4:00",
-      "verifiedPhone": "070-5056-0272",
-      "contactReviewDone": true
+      "verifiedPhone": "070-5677-5558（エステ魂掲載情報）",
+      "contactReviewDone": true,
+      "officialUrlStatus": "エステ魂・求人媒体の店舗ページを確認。独立ドメインの公式サイトは未確認。"
     },
     {
       "name": "ENEL",
