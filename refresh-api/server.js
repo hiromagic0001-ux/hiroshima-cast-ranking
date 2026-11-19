@@ -283,8 +283,13 @@ const server = http.createServer(async (req, res) => {
             const anchor = $(el);
             const href = anchor.attr("href") || "";
             if (/\/casts?\//.test(href)) return;
-            const absoluteHref = new URL(href, source.url).href;
-            if (seenShopUrls.has(absoluteHref)) return;
+            const shopUrl = new URL(href, source.url);
+            // The source may link the same shop with and without a trailing slash.
+            // Deduplicate by canonical origin + pathname, not the raw href string.
+            const canonicalShopPath = shopUrl.pathname.replace(/\/+$/, "").toLowerCase();
+            const shopKey = `${shopUrl.origin}${canonicalShopPath}`;
+            if (seenShopUrls.has(shopKey)) return;
+            const absoluteHref = shopUrl.href;
             const raw = anchor.text().replace(/\s+/g, " ").trim();
             const cityIndex = raw.lastIndexOf("広島市");
             let name = cityIndex >= 0 ? raw.slice(cityIndex + "広島市".length).trim()
@@ -293,7 +298,7 @@ const server = http.createServer(async (req, res) => {
             if (!name || name.length > 80) return;
             const rankingGroup = /アジアン/.test(raw) ? "アジアン店舗" : "通常店舗";
             groupRanks[rankingGroup] += 1;
-            seenShopUrls.add(absoluteHref);
+            seenShopUrls.add(shopKey);
             parsedRecords.push({ rank: groupRanks[rankingGroup], rankingGroup, name, href: absoluteHref, metric: "アクセス人気順" });
           });
           const mainCount = groupRanks["通常店舗"];
