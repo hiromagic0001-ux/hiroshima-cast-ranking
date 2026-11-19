@@ -303,12 +303,17 @@ const server = http.createServer(async (req, res) => {
           });
           const mainCount = groupRanks["通常店舗"];
           const asianCount = groupRanks["アジアン店舗"];
+          const publishedCountMatch = bodyText.match(/広島市のメンズエステ掲載店\s*([0-9,]+)\s*件/);
+          const publishedStoreCount = publishedCountMatch
+            ? Number(publishedCountMatch[1].replace(/,/g, ""))
+            : null;
           const ranksContinuous = ["通常店舗", "アジアン店舗"].every(group => {
             const ranks = parsedRecords.filter(x => x.rankingGroup === group).map(x => x.rank);
             return ranks.every((rank, index) => rank === index + 1);
           });
-          parserValidation = { parsedCount: parsedRecords.length, expectedDisplayCount: 107,
-            normalStoreCount: mainCount, asianStoreCount: asianCount, ranksContinuous };
+          parserValidation = { parsedCount: parsedRecords.length,
+            expectedDisplayCount: Number.isInteger(publishedStoreCount) ? publishedStoreCount : 107,
+            publishedStoreCount, normalStoreCount: mainCount, asianStoreCount: asianCount, ranksContinuous };
         } else if (source.id === "menes_note") {
           $("a[href*='/stores/']").each((_, el) => {
             const href = $(el).attr("href") || "";
@@ -495,7 +500,11 @@ const server = http.createServer(async (req, res) => {
       for (const id of Object.keys(expected)) {
         const source = inspection.sources.find(item => item.id === id);
         const records = Array.isArray(source?.records) ? source.records : [];
-        const expectedCount = expected[id];
+        // mensesthe_rank changes its published listing count over time; use the
+        // count explicitly displayed by the source page instead of a stale hard-coded value.
+        const expectedCount = id === "mensesthe_rank" &&
+          Number.isInteger(source?.parserValidation?.expectedDisplayCount)
+          ? source.parserValidation.expectedDisplayCount : expected[id];
         const hrefHosts = {
           salonowa: new Set(["salonowa.jp", "www.salonowa.jp"]),
           mensesthe_rank: new Set(["mensesthe-rank.jp", "www.mensesthe-rank.jp"]),
