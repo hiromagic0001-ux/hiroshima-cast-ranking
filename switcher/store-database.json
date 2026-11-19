@@ -1498,9 +1498,9 @@
     {
       "name": "モアスパ",
       "category": "men-esthe",
-      "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "area": "広島市（市役所前駅周辺・ルーム型）",
+      "areaStatus": "広島市・市役所前駅最寄り（媒体掲載。番地・部屋住所は未確認）",
+      "status": "第三者媒体で広島市内店舗・電話・営業時間を確認・独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1520,24 +1520,32 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
+        "checkedAt": "2026-11-19",
+        "status": "multiple third-party directory listings corroborated; independent official domain and same-day roster not verified",
+        "phone": "080-4268-1551",
+        "area": "広島市・市役所前駅最寄り、マンション型ルーム（番地・部屋住所非公開/未確認）",
+        "hours": "10:00〜翌4:00（メンエス情報局の店舗詳細）",
+        "sources": [
+          "https://men-esthe.jp/salon.php?id=17192",
+          "https://estama.jp/shop/49246/",
+          "https://ore-aroma.jp/hiroshima/rank-list/広島市",
+          "https://ore-aroma.jp/hiroshima/rank-list/広島市役所前駅"
         ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null
+        "note": "電話番号はオレアロ広島市一覧に掲載。営業時間はメンエス情報局に掲載。エステ魂のURLが店舗リンク先として案内され、独立ドメインの公式サイトは見つからず。11/19の個別出勤・予約可能状況は未確認。"
+      },
+      "verifiedPhone": "080-4268-1551",
+      "verifiedHours": "10:00〜翌4:00（第三者媒体掲載）",
+      "officialUrl": null,
+      "officialUrlStatus": "独立公式ドメイン未確認。エステ魂の店舗ページが案内先",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "third-party directory details cross-checked; no independent official domain",
+        "sources": [
+          "https://men-esthe.jp/salon.php?id=17192",
+          "https://ore-aroma.jp/hiroshima/rank-list/広島市"
+        ],
+        "note": "市役所前駅周辺の広島市内店舗として媒体複数で一致。電話080-4268-1551、営業時間10:00〜翌4:00。住所番地と当日出勤は未確認。"
       }
     },
     {
