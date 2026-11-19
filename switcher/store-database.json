@@ -5459,8 +5459,8 @@
       "name": "LIGHT（ライト）",
       "category": "soap",
       "area": "広島市候補",
-      "areaStatus": "広島市内の所在地を地図事業者情報で確認",
-      "status": "所在地確認済み・営業状況は公式情報で要確認",
+      "areaStatus": "広島市中区弥生町3-12との第三者媒体掲載あり。STORYと同一住所表記のため住所重複を要照合",
+      "status": "第三者媒体で広島市中区住所・電話・営業時間を確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
@@ -5482,37 +5482,32 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          }
-        ],
-        "status": "個別照合実施・一致未確証",
-        "nameAlias": null
+        "checkedAt": "2026-11-19",
+        "status": "風俗マップの個別店舗ページで中区弥生町3-12、電話082-541-2118、9:00〜24:00を確認。STORYここだけの物語も同じ住所3-12として別媒体に掲載されるため、住所の重複・店名同定は要照合。独立公式サイト未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=267a936b58",
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=e8a7064798"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間9:00〜24:00。メンズエステではなくソープランド。公式URL・電話は今回未確認。",
+        "batch": "50店舗第3回・101〜150番再照合",
+        "status": "第三者媒体で中区弥生町3-12、電話082-541-2118、9:00〜24:00を確認。STORYここだけの物語も同一住所で掲載されているため、同住所の別店舗か媒体データ混同かを保留。公式URL・独立公式サイトは未確認。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
-          "https://nsnn.jp/hiroshima-shi-soap/"
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=267a936b58",
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=e8a7064798"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区弥生町3-12（第三者媒体掲載）",
+      "verifiedPhone": "082-541-2118（第三者媒体掲載）",
+      "verifiedHours": "9:00〜24:00（第三者媒体掲載）"
     },
     {
       "name": "PaleTTe（パレット）",
       "category": "soap",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区薬研堀10-7を公式アクセスページで確認",
+      "status": "独立公式サイト・住所・電話・営業時間を確認",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
@@ -5532,37 +5527,33 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          }
-        ],
-        "status": "個別照合実施・一致未確証",
-        "nameAlias": null
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-directly-verified",
+        "status": "公式アクセスページで中区薬研堀10-7、電話082-244-8123、営業時間9:00〜24:00を直接確認。ソープランドとして分類。",
+        "sources": [
+          "https://www.hiroshima-palette.com/access/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島・薬研堀/流川のソープランド。公式予約ページ https://www.hiroshima-palette.com/reserve/、電話082-244-8123、9:00〜24:00を確認。メンズエステではなくソープランド。",
+        "batch": "50店舗第3回・101〜150番再照合",
+        "status": "独立公式アクセスページで中区薬研堀10-7、電話082-244-8123、9:00〜24:00を確認。",
         "sources": [
-          "https://www.hiroshima-palette.com/reserve/",
-          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
+          "https://www.hiroshima-palette.com/access/"
         ]
-      }
+      },
+      "officialUrl": "https://www.hiroshima-palette.com/",
+      "officialUrlStatus": "独立公式サイトのアクセスページで薬研堀10-7、電話082-244-8123、9:00〜24:00を確認",
+      "verifiedAddress": "広島県広島市中区薬研堀10-7",
+      "verifiedPhone": "082-244-8123",
+      "verifiedHours": "9:00〜24:00"
     },
     {
       "name": "STORY ここだけの物語",
       "category": "soap",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区弥生町3-12との第三者媒体掲載あり。LIGHTと同一住所表記のため住所重複を要照合",
+      "status": "広島市内の第三者媒体掲載確認。独立公式サイトの直接確認は未了",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
@@ -5582,32 +5573,26 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "風俗マップの広島県一覧で名称一致を確認。掲載エリアは広島/薬研堀・流川等を含み、店舗により広島市内・広島県内の区別が必要。市内住所と営業状況は未確証。",
-        "status": "広島県一覧掲載確認・広島市所在未確証",
-        "evidence": [
-          {
-            "source": "風俗マップ広島県一覧（県内広島エリアを含む。市内住所は別途要確認）",
-            "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
-          },
-          {
-            "source": "風俗マップ広島県デリヘル一覧（広島市・広島エリアの表示を含む）",
-            "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima"
-          }
-        ],
-        "scope": "広島県一覧・市内所在要再確認",
-        "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "checkedAt": "2026-11-19",
+        "status": "第三者情報ナビと風俗マップで広島市中区弥生町3-12、電話082-240-5167、9:00〜24:00、在籍情報を確認。店舗サイトとしてginza-monogatari.comの案内あり。LIGHTも同じ住所3-12で別掲載のため、住所重複・店名同定は要照合。",
+        "sources": [
+          "https://nsnn.jp/shop/ginza_story_hiroshima/",
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=e8a7064798",
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=267a936b58"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間9:00〜24:00。メンズエステではなくソープランド。公式URL・電話は今回未確認。",
+        "batch": "50店舗第3回・101〜150番再照合",
+        "status": "第三者媒体で中区弥生町3-12、電話082-240-5167、9:00〜24:00、在籍情報を確認。店舗サイト案内はginza-monogatari.com。LIGHTも同住所3-12と別電話で掲載されているため、住所重複は未解決。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
-          "https://nsnn.jp/hiroshima-shi-soap/"
+          "https://nsnn.jp/shop/ginza_story_hiroshima/",
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=e8a7064798"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区弥生町3-12（第三者媒体掲載）",
+      "verifiedPhone": "082-240-5167（第三者媒体掲載）",
+      "verifiedHours": "9:00〜24:00（第三者媒体掲載）"
     },
     {
       "name": "Sherbet（シャーベット）",
@@ -6166,8 +6151,8 @@
       "name": "Serenity（セレニティ）",
       "category": "store-health",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区弥生町3-20との第三者媒体掲載。Serenity Oasisとの同一性は未確定",
+      "status": "第三者媒体で広島市内店舗型ヘルス情報確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
@@ -6187,38 +6172,32 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "風俗マップの広島県一覧で名称一致を確認。掲載エリアは広島/薬研堀・流川等を含み、店舗により広島市内・広島県内の区別が必要。市内住所と営業状況は未確証。",
-        "status": "広島県一覧掲載確認・広島市所在未確証",
-        "evidence": [
-          {
-            "source": "風俗マップ広島県一覧（県内広島エリアを含む。市内住所は別途要確認）",
-            "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
-          },
-          {
-            "source": "風俗マップ広島県デリヘル一覧（広島市・広島エリアの表示を含む）",
-            "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima"
-          }
-        ],
-        "scope": "広島県一覧・市内所在要再確認",
-        "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "checkedAt": "2026-11-19",
+        "status": "風俗マップ個別掲載で中区弥生町3-20、電話082-246-0070、9:00〜24:00、無休を確認。別候補「Serenity Oasis」も同住所とする記録があり、同一店舗か別店舗かは未確定。統合せず保留。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=f13fabfea0",
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "店舗型ヘルスとして確認。広島市中区弥生町3-20、電話082-246-0070、9:00〜24:00、無休。メンズエステ候補から業種を分離。",
+        "batch": "50店舗第3回・101〜150番再照合",
+        "status": "店舗型ヘルスの第三者掲載で中区弥生町3-20、電話082-246-0070、9:00〜24:00、無休を確認。Serenity Oasisも同住所とする既存記録があるため、重複候補として記録し店舗統合はしない。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=f13fabfea0"
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=f13fabfea0",
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区弥生町3-20（第三者媒体掲載）",
+      "verifiedPhone": "082-246-0070（第三者媒体掲載）",
+      "verifiedHours": "9:00〜24:00（第三者媒体掲載）"
     },
     {
       "name": "ナナ",
       "category": "store-health",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区薬研堀5-2の店舗型ヘルスとして第三者媒体掲載を確認",
+      "status": "広島市中区の店舗型ヘルス掲載確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
@@ -6238,31 +6217,24 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "風俗マップの広島県一覧で名称一致を確認。掲載エリアは広島/薬研堀・流川等を含み、店舗により広島市内・広島県内の区別が必要。市内住所と営業状況は未確証。",
-        "status": "広島県一覧掲載確認・広島市所在未確証",
-        "evidence": [
-          {
-            "source": "風俗マップ広島県一覧（県内広島エリアを含む。市内住所は別途要確認）",
-            "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
-          },
-          {
-            "source": "風俗マップ広島県デリヘル一覧（広島市・広島エリアの表示を含む）",
-            "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima"
-          }
-        ],
-        "scope": "広島県一覧・市内所在要再確認",
-        "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "checkedAt": "2026-11-19",
+        "status": "風俗マップ個別ページで中区薬研堀5-2、電話082-249-9147、10:00〜24:00、無休を確認。エステ魂の「蘭-ran-」所属キャスト名「ナナ」とは別物の可能性があり、店舗名としての照合を優先。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=c04d0a7b12",
+          "https://estama.jp/shop/42675/cast/632061/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "「ナナ」は広島市のエステ魂掲載で蘭-ran-所属キャスト名として確認。候補店舗「ナナ」と同一店舗とは確認できず、店名同定・住所は保留。",
+        "batch": "50店舗第3回・101〜150番再照合",
+        "status": "広島市中区薬研堀5-2、電話082-249-9147、10:00〜24:00、無休の店舗型ヘルス掲載を確認。キャスト名「ナナ」との誤結合を避ける。",
         "sources": [
-          "https://estama.jp/shop/42675/cast/632061/"
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=c04d0a7b12"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区薬研堀5-2（第三者媒体掲載）",
+      "verifiedPhone": "082-249-9147（第三者媒体掲載）",
+      "verifiedHours": "10:00〜24:00（第三者媒体掲載）"
     },
     {
       "name": "人妻専科 たま乱堂",
@@ -7874,8 +7846,8 @@
       "name": "カサブランカ 広島店",
       "category": "delivery",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・公式系列ページの店舗所在地確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内派遣の旧掲載あり。2023年8月にMOZAICと合併の告知",
+      "status": "MOZAICとの合併告知あり。現行の独立店舗としての営業継続は未確認",
       "sources": [
         {
           "label": "カサブランカ公式・広島店候補",
@@ -7895,39 +7867,30 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "店舗名を広島市・広島県の取得一覧と照合したが、表示範囲では確実な一致を確認できず。未掲載・表記違いは不存在や閉店を意味しない。",
-        "status": "今回の取得一覧内で一致未確証",
-        "evidence": [
-          {
-            "source": "広島市メンズエステ情報ランキング（現行一覧）",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          },
-          {
-            "source": "風俗マップ広島県一覧（県内広島エリアを含む。市内住所は別途要確認）",
-            "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
-          }
-        ],
-        "scope": "取得一覧表示内で一致未確証",
-        "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "checkedAt": "2026-11-19",
+        "status": "FU-WEB掲載に2023-08-08付で「モザイクと合併」と明記。現行の独立店舗としてカサブランカ広島店が営業しているかは未確認。過去の電話082-504-3634・10:00〜翌3:00は旧掲載情報として保持し、現行情報に流用しない。",
+        "sources": [
+          "https://fu-web.jp/hiroshima/merchant/news/merchantCode/1986/",
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=f0a080bc30"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "カサブランカグループ広島店。公式案内で電話082-258-3019、受付9:30〜、営業10:00〜LAST。広島市内派遣。",
+        "batch": "50店舗第3回・101〜150番再照合",
+        "status": "2023年8月8日のFU-WEB告知でカサブランカ広島店とMOZAICの合併を確認。カサブランカは旧店舗名・統合前候補として残し、現行営業店としては未確認。候補削除・統合は行わない。",
         "sources": [
-          "https://www.casa-b.jp/?DOC=info",
-          "https://www.casa-b.jp/work/mens/s/group/"
+          "https://fu-web.jp/hiroshima/merchant/news/merchantCode/1986/"
         ]
-      }
+      },
+      "verifiedPhone": "082-504-3634（旧掲載・現在の利用可否未確認）",
+      "verifiedHours": "10:00〜翌3:00（2023年の掲載情報）"
     },
     {
       "name": "モザイク 広島店",
       "category": "delivery",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・公式系列ページの店舗所在地確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内派遣グループとして案内。固定店舗住所は非公開",
+      "status": "公式求人ページで電話・広島店案内を確認。店舗営業時間・現行予約窓口は別途確認",
       "sources": [
         {
           "label": "カサブランカ公式・広島店候補",
@@ -7947,32 +7910,24 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "店舗名を広島市・広島県の取得一覧と照合したが、表示範囲では確実な一致を確認できず。未掲載・表記違いは不存在や閉店を意味しない。",
-        "status": "今回の取得一覧内で一致未確証",
-        "evidence": [
-          {
-            "source": "広島市メンズエステ情報ランキング（現行一覧）",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          },
-          {
-            "source": "風俗マップ広島県一覧（県内広島エリアを含む。市内住所は別途要確認）",
-            "url": "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
-          }
-        ],
-        "scope": "取得一覧表示内で一致未確証",
-        "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "checkedAt": "2026-11-19",
+        "status": "MOZAIC公式求人ページで電話090-3377-4324、メールmoza-h@docomo.ne.jp、勤務可能時間10:00〜翌4:00を確認。これは求人の勤務可能時間であり、店舗営業時間ではない。カサブランカ広島店との2023年合併告知あり。",
+        "sources": [
+          "https://mozaic.tv/work/?DOC=essential",
+          "https://fu-web.jp/hiroshima/merchant/news/merchantCode/1986/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "MOZAIC広島店（カサブランカグループ）のデリヘル。電話090-3377-4324、LINE moza-h。広島店としてグループ一覧に掲載。",
+        "batch": "50店舗第3回・101〜150番再照合",
+        "status": "公式求人ページで電話090-3377-4324と勤務可能時間10:00〜翌4:00を確認。勤務時間を店舗営業時間とは扱わない。カサブランカとの2023年合併告知を踏まえ、系列・統合関係を注記。",
         "sources": [
-          "https://chugoku-shikoku.qzin.jp/mozaic/blog/",
-          "https://www.casa-b.jp/work/mens/s/group/"
+          "https://mozaic.tv/work/?DOC=essential",
+          "https://fu-web.jp/hiroshima/merchant/news/merchantCode/1986/"
         ]
-      }
+      },
+      "verifiedPhone": "090-3377-4324",
+      "verifiedHours": "10:00〜翌4:00（求人公式ページ掲載の勤務可能時間。店舗営業時間とは区別）"
     },
     {
       "name": "五十路マダム 広島店",
