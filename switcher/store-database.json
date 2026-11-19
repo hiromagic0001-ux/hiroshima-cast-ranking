@@ -1026,8 +1026,8 @@
       "name": "Organic energy",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区富士見町を公式サイトで確認",
+      "status": "独立公式サイト確認済み・当日営業/出勤未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1035,22 +1035,25 @@
         }
       ],
       "officialUrl": "https://organic-hiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "officialUrlStatus": "独立ドメインの公式サイトを直接確認済み",
+      "bulkAuditStatus": "公式サイト・第三者媒体照合済み。営業時間に媒体差、当日営業/出勤未確認",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "official-site-and-current-site-content-confirmed",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-domain-and-third-party-crosscheck",
+        "url": "https://organic-hiroshima.com/",
+        "address": "広島県広島市中区富士見町（公式サイトに記載。ヒルトン広島から徒歩3分との案内）",
+        "hours": "公式サイト11:00〜LAST。第三者媒体には10:00〜LASTおよび10:00〜翌2:00の異なる記載あり",
+        "phone": "070-6690-1788",
         "sources": [
           "https://organic-hiroshima.com/",
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          "https://nsnn.jp/shop/ek48491/",
+          "https://men-esthe.co.jp/store/yxPe8nAw/?area=hiroshima",
+          "https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?sort=staff"
         ],
-        "address": "広島県広島市中区富士見町（中心部・ヒルトン広島徒歩3分の案内）",
-        "hours": "11:00〜LAST",
-        "phone": "070-6690-1788",
-        "note": "独立公式サイトに店舗情報・料金・セラピスト一覧を確認。公式ページ上の出勤は未定表示のため、営業中と出勤中は区別。"
+        "status": "独立ドメインの公式サイトを直接確認。電話番号・富士見町・料金を照合。公式サイト営業時間は11:00〜LAST。第三者媒体には10:00開始の相違があるため営業時間は媒体差ありとして記録。公式トップの出勤表示は『現在出勤は未定』、最新情報も掲載なし。11月19日の営業・出勤実績は未確認。"
       },
-      "verifiedAddress": "広島県広島市中区富士見町（中心部・ヒルトン広島徒歩3分の案内）",
-      "verifiedHours": "11:00〜LAST",
+      "verifiedAddress": "広島県広島市中区富士見町（公式サイト記載）",
+      "verifiedHours": "公式11:00〜LAST（第三者媒体は10:00〜LAST等の相違あり）",
       "verifiedPhone": "070-6690-1788"
     },
     {
