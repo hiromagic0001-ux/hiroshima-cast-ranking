@@ -2053,8 +2053,8 @@
       "name": "おもてなし 広島",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区田中町の第三者媒体掲載を複数確認。現行営業・個別ルームの利用状況は未確認",
+      "status": "第三者媒体で広島市内店舗情報を複数確認・独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -2095,13 +2095,18 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて再確認",
-        "status": "エステ魂で「パート妻のプライベートサロン」広島市・舟入幸町駅、9:00〜翌4:00を確認。別ページで電話070-5672-2880。独立公式サイト・番地住所は未確認。",
+        "batch": "50店舗第1回個別確認・誤記訂正",
+        "status": "前回batchAuditに別店舗「パート妻のプライベートサロン」の情報が誤って記録されていたため訂正。おもてなしは複数の第三者媒体で広島市中区田中町6-16 シャル流川、電話070-2631-1694、営業時間12:00〜翌2:00を確認。公式HPとしてhttp://www.omotenashi-massage.com/の掲載はあるが独立公式サイトへの直接アクセス・現行稼働は未確認。住所・電話・営業時間は媒体掲載情報として保持し、営業確定扱いしない。",
         "sources": [
-          "https://estama.jp/shop/44273/cast/942174/",
-          "https://estama.jp/shop/44273/cast/762238/"
+          "https://www.fues.jp/kansai/store/2000004688/",
+          "https://www.kking.jp/ippan/24099/",
+          "https://men-esthe.co.jp/ranking/hiroshima/?format=dispatch&sort=price_low",
+          "https://estama.jp/shop/24281/cast/38195/"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区田中町6-16 シャル流川（第三者媒体掲載。現行ルームの利用可否は未確認）",
+      "verifiedPhone": "070-2631-1694（複数媒体で一致）",
+      "verifiedHours": "12:00〜翌2:00（複数媒体で一致）"
     },
     {
       "name": "Aroma Salon Freyja",
