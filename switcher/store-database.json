@@ -16214,6 +16214,20 @@
         "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82&cat=deli&pref=hiroshima",
         "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 50,
+      "endIndex": 99,
+      "count": 50,
+      "scope": "広島市候補51〜100番・第2段階の掲載照合",
+      "note": "51〜100番について、広島市を対象とする複数の第三者店舗一覧を横断し、掲載名・市区町村表示・業種/営業形態の照合を実施。メンズエステランキング、メンエスセレクト、メンズエステマップ等で一致する候補を確認。媒体ごとに掲載件数と分類が異なり、一覧掲載だけでは現営業・独立公式サイト・正確な所在地の確証にならないため、個別の公式サイト確認が不足する候補は未確定のまま保持。住所非公開・複数ルーム・同名候補・市外境界の可能性は個別確認対象として残し、候補の削除・統合・事業情報の上書きは行わない。既存の個別照合メモと278件の店舗レコードを保持。",
+      "sources": [
+        "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+        "https://menesu-select.com/hiroshima/hiroshima/",
+        "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+        "https://mens-es.men/area/3401"
+      ]
     }
   ],
   "auditSummary": {
@@ -16276,8 +16290,8 @@
     "duplicateReviewRecords": 15,
     "individualAuditRecords": 278,
     "batchAuditedRecords": 243,
-    "batchAuditRuns": 14,
-    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。"
+    "batchAuditRuns": 15,
+    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。"
   },
   "duplicateAuditSummary": {
     "checkedAt": "2026-11-19",
