@@ -4,6 +4,7 @@ import * as cheerio from "cheerio";
 const PORT = Number(process.env.PORT || 10000);
 const SOURCE_URL = "https://estama.jp/etc/ranking/therapist/3401/";
 const ALLOWED_ORIGIN = "https://hiroshima-cast-portal.onrender.com";
+const ALLOWED_ORIGINS = new Set([ALLOWED_ORIGIN, "https://hiroshima-cast-ranking.onrender.com"]);
 let lastFetchAt = 0;
 let cachedInspection = null;
 
@@ -11,7 +12,7 @@ function send(res, status, body, origin) {
   res.writeHead(status, {
     "content-type": "application/json; charset=utf-8",
     "cache-control": "no-store",
-    "access-control-allow-origin": origin === ALLOWED_ORIGIN ? origin : ALLOWED_ORIGIN,
+    "access-control-allow-origin": ALLOWED_ORIGINS.has(origin) ? origin : ALLOWED_ORIGIN,
     "vary": "Origin"
   });
   res.end(JSON.stringify(body));
@@ -26,7 +27,7 @@ const server = http.createServer(async (req, res) => {
   console.log(JSON.stringify({ event: "request", method: req.method, path: pathname, origin: origin || null }));
   if (req.method === "OPTIONS") {
     res.writeHead(204, {
-      "access-control-allow-origin": ALLOWED_ORIGIN,
+      "access-control-allow-origin": ALLOWED_ORIGINS.has(origin) ? origin : ALLOWED_ORIGIN,
       "access-control-allow-methods": "GET, POST, PUT, OPTIONS",
       "access-control-allow-headers": "Content-Type",
       "access-control-max-age": "600"
@@ -37,7 +38,7 @@ const server = http.createServer(async (req, res) => {
     return send(res, 200, { ok: true, service: "hiroshima-cast-refresh-api", mode: "diagnostic-only" }, origin);
   }
   if (pathname === "/api/casts/inspect" && req.method === "GET") {
-    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const targets = [
       { group: "delihel", name: "カガミ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/girlid-47414845/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/reviews/?girlid=47414845" },
       { group: "delihel", name: "サアヤ", profile: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/girlid-50354138/", review: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=50354138" },
@@ -108,7 +109,7 @@ const server = http.createServer(async (req, res) => {
       note: "診断専用。順位や既存データの更新・上書きは行いません。" }, origin);
   }
   if (pathname === "/api/casts/metrics-inspect" && req.method === "GET") {
-    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const targets = [
       { group: "delihel", name: "カガミ", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/hiroshima_hyoban/reviews/?girlid=47414845" },
       { group: "delihel", name: "サアヤ", url: "https://www.cityheaven.net/hiroshima/A3401/A340101/rush/reviews/?girlid=50354138" },
@@ -194,7 +195,7 @@ const server = http.createServer(async (req, res) => {
       retrievedAt: new Date().toISOString(), groups, results }, origin);
   }
   if (pathname === "/api/stores/inspect" && req.method === "GET") {
-    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const sources = [
       { id: "salonowa", label: "サロノワ・また行きたい順", url: "https://www.salonowa.jp/area/hiroshima/hiroshima" },
       { id: "mensesthe_rank", label: "メンズエステ情報ランキング・アクセス順", url: "https://mensesthe-rank.jp/areas/hiroshima-hiroshima" },
@@ -454,7 +455,7 @@ const server = http.createServer(async (req, res) => {
   // Persist only complete, validated source-specific store rankings.
   // The 278-store roster and its audit metadata remain untouched.
   if (pathname === "/api/stores/refresh" && req.method === "POST") {
-    if (origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "allowed_app_origin_required" }, origin);
+    if (!ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "allowed_app_origin_required" }, origin);
     const storageUrl = process.env.CAST_STORAGE_URL;
     const storageToken = process.env.CAST_STORAGE_API_TOKEN;
     if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
@@ -592,7 +593,7 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (pathname === "/api/casts/alternative-inspect" && req.method === "GET") {
-    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const sources = [
       { id: "bestcastdata", label: "BEST CAST DATA・最高キャスト選出人数", url: "https://bestcastdata.jp/hiroshima/hiroshima-city/" },
       { id: "fuzoku_repeat", label: "風俗じゃぱん・リピートランキング", url: "https://fuzoku.jp/hiroshimacoco/girllist/ranking/" }
@@ -651,7 +652,7 @@ const server = http.createServer(async (req, res) => {
       note: "診断専用。既存ランキングの公開・上書きは行いません。" }, origin);
   }
   if (pathname === "/api/fuzoku/list-inspect" && req.method === "GET") {
-    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const source = "https://fuzoku.jp/hiroshimacoco/girllist/";
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 15000);
@@ -707,7 +708,7 @@ const server = http.createServer(async (req, res) => {
   // Merge audit metadata from the canonical 278-record source into existing D1 stores.
   // Never replace the roster or business fields; preserve every current store record.
   if (pathname === "/api/storage/sync-duplicate-audit" && req.method === "POST") {
-    if (origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "allowed_app_origin_required" }, origin);
+    if (!ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "allowed_app_origin_required" }, origin);
     const storageUrl = process.env.CAST_STORAGE_URL;
     const storageToken = process.env.CAST_STORAGE_API_TOKEN;
     if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
@@ -785,7 +786,7 @@ const server = http.createServer(async (req, res) => {
     }
   }
   if (pathname === "/api/storage/import-initial-stores" && req.method === "GET") {
-    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const storageUrl = process.env.CAST_STORAGE_URL;
     const storageToken = process.env.CAST_STORAGE_API_TOKEN;
     if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
@@ -817,7 +818,7 @@ const server = http.createServer(async (req, res) => {
   }
   // Cloudflare D1 storage bridge. Secrets remain on this server; never expose them to browsers.
   if (pathname === "/api/storage/status" && req.method === "GET") {
-    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const storageUrl = process.env.CAST_STORAGE_URL;
     const storageToken = process.env.CAST_STORAGE_API_TOKEN;
     if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
@@ -840,7 +841,7 @@ const server = http.createServer(async (req, res) => {
   const storageDataPrefix = "/api/storage/data/";
   const storageDataMatch = pathname.startsWith(storageDataPrefix) ? pathname.slice(storageDataPrefix.length).match(/^([a-z_]+)$/) : null;
   if (storageDataMatch && ["GET", "PUT"].includes(req.method)) {
-    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const key = storageDataMatch[1];
     const allowedKeys = new Set(["stores", "casts", "source_status", "ranking_state", "refresh_status", "settings"]);
     if (!allowedKeys.has(key)) return send(res, 400, { ok: false, error: "invalid_key" }, origin);
@@ -871,7 +872,7 @@ const server = http.createServer(async (req, res) => {
     }
   }
   if (pathname === "/api/storage/refresh-runs" && req.method === "POST") {
-    if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const storageUrl = process.env.CAST_STORAGE_URL;
     const storageToken = process.env.CAST_STORAGE_API_TOKEN;
     if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
@@ -901,7 +902,7 @@ const server = http.createServer(async (req, res) => {
   if (pathname !== "/api/estama/inspect" || req.method !== "GET") {
     return send(res, 404, { ok: false, error: "not_found" }, origin);
   }
-  if (origin && origin !== ALLOWED_ORIGIN) {
+  if (origin && !ALLOWED_ORIGINS.has(origin)) {
     return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
   }
   const now = Date.now();
