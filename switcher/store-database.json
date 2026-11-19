@@ -16200,6 +16200,20 @@
         "https://es-ban.com/p/5597/a/5598/shoplist",
         "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 100,
+      "endIndex": 149,
+      "count": 50,
+      "scope": "広島市候補101〜150番・第2段階の業種/掲載エリア再照合",
+      "note": "既存の店舗別individualAudit・batchAuditと過去の20店舗単位の照合履歴を保持したまま、101〜150番の50候補を業種別・掲載エリア別に再確認。ソープランド・店舗型ヘルス・性感エステ・デリヘル・その他の業種区分を第三者一覧と照合。薬研堀/流川掲載は広島市中心部のエリア表示として記録し、独立した住所証明とは扱わない。デリヘルは広島県内「広島」表記と「広島市」明記を区別し、広島市限定一覧で確認できる店はELEGANCE・RUSH等に限られることを記録。広島市外の可能性、固定住所非公開、同住所重複（LIGHT/STORY、Serenity/Serenity Oasis）、業種の不一致・同名衝突は未解決のまま保持。媒体掲載は営業中・独立公式サイト・正確な所在地の証明ではない。候補の削除・統合・業種の強制変更は行わない。",
+      "sources": [
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima",
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82&cat=deli&pref=hiroshima",
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima"
+      ]
     }
   ],
   "auditSummary": {
@@ -16262,8 +16276,8 @@
     "duplicateReviewRecords": 15,
     "individualAuditRecords": 278,
     "batchAuditedRecords": 243,
-    "batchAuditRuns": 13,
-    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。"
+    "batchAuditRuns": 14,
+    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。"
   },
   "duplicateAuditSummary": {
     "checkedAt": "2026-11-19",
