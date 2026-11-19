@@ -2596,6 +2596,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂の店舗・セラピスト掲載で広島市、八丁堀駅最寄り、電話090-3373-7771を確認。セラピスト投稿に土日営業・11:00〜22:00／13:00〜翌1:00の案内があるが、店舗営業時間として一律確定しない。独立公式ドメイン未確認。",
+        "sources": [
+          "https://estama.jp/shop/44067/cast/710562/",
+          "https://estama.jp/shop/44067/menu/"
+        ]
       }
     },
     {
@@ -2641,6 +2650,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂・エステ番長で広島市掲載。電話080-4552-6161、営業時間はエステ魂11:00〜翌6:00、エステ番長11:00〜翌5:00で1時間差。中電前駅最寄り。独立公式ドメイン未確認。",
+        "sources": [
+          "https://estama.jp/shop/40453/cast/",
+          "https://es-ban.com/p/5597/a/5598/shoplist?a=5598&type=5789"
+        ]
       }
     },
     {
@@ -2686,6 +2704,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "今回の検索では同名の広島市店舗の個別ページ・電話・所在地・営業時間を特定できず。広島市一覧への名称掲載のみで、営業状況・独立公式サイトは未確認。",
+        "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -2731,6 +2758,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": "Tonトロ五日市店"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "メンエスパークで広島市・楽々園電停/五日市駅エリア、電話070-5674-8041、営業時間11:00〜26:00、本日出勤2名表示を確認。五日市店は広島市佐伯区内の候補として扱い、部屋番地・独立公式ドメイン未確認。",
+        "sources": [
+          "https://menespark.com/hiroshima/hiroshima/?sort=review",
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ]
       }
     },
     {
@@ -2776,6 +2812,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "Mrs美魔女REDとして媒体掲載。中区宝町、電話070-4467-7591、営業時間10:00〜翌5:00、公式HP欄https://bimajo-red.com/を確認。独立ドメインの直接閲覧による運営主体確認は未実施。",
+        "sources": [
+          "https://menesth.jp/32/shop/48969/"
+        ]
       }
     },
     {
@@ -2816,6 +2860,15 @@
           }
         ],
         "status": "複数媒体掲載確認・営業詳細未確証"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "複数媒体で広島市掲載。電話070-9019-6447、比治山橋駅徒歩10分、営業時間10:00〜LAST（受付9:00〜）の媒体情報を確認。独立公式ドメインは今回未確認。",
+        "sources": [
+          "https://mensesthe-barometer.com/hiroshima",
+          "https://ore-aroma.jp/hiroshima/rank-list/広島市?p=2"
+        ]
       }
     },
     {
@@ -2852,7 +2905,16 @@
       "verifiedHours": "11:00〜翌2:00",
       "verifiedPhone": "090-5818-3970",
       "officialUrl": "https://aroma-iris.net/",
-      "officialUrlStatus": "エスタマ店舗詳細の公式ホームページ欄に独立ドメインURLを確認。直接アクセスはタイムアウトしたため、サイト稼働・内容は未確認。店舗詳細には住所・電話・営業時間・2026-11-17更新情報あり。"
+      "officialUrlStatus": "エスタマ店舗詳細の公式ホームページ欄に独立ドメインURLを確認。直接アクセスはタイムアウトしたため、サイト稼働・内容は未確認。店舗詳細には住所・電話・営業時間・2026-11-17更新情報あり。",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存の個別確認を再点検。エステ魂掲載で観音・五日市ルーム、電話090-5818-3970、11:00〜翌2:00。公式HP欄aroma-iris.netは直接アクセス未確認のまま。広島市西区観音の店舗候補。",
+        "sources": [
+          "https://estama.jp/shop/34319/",
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ]
+      }
     },
     {
       "name": "スパドルチェ 広島",
@@ -2897,6 +2959,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市の一覧候補として名称掲載は確認できるが、今回の検索で電話・住所・営業時間・独立公式サイトを個別確認できず。媒体掲載候補のまま保留。",
+        "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -2942,6 +3013,16 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "a doll/アドールとして広島市の媒体掲載を再確認。第三者情報では10:00〜翌2:00の記載。独立公式サイト候補https://adollhiroshima.com/は既存記録を維持するが、今回直接確認できた一次情報は限定的。",
+        "sources": [
+          "https://nsnn.jp/area/hiroshima/Xyxtob6/esthe/",
+          "https://menesu-select.com/hiroshima/hiroshima/",
+          "https://adollhiroshima.com/"
+        ]
       }
     },
     {
@@ -2980,7 +3061,16 @@
         "note": "当日出勤表示と店舗詳細を確認。電話番号・番地住所・独立公式サイトは今回未確認。"
       },
       "verifiedAddress": "広島県広島市中区（市役所前・中電前周辺）",
-      "verifiedHours": "10:00〜翌3:00"
+      "verifiedHours": "10:00〜翌3:00",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市中区・市役所前/中電前周辺、10:00〜翌3:00、当日出勤表示を過去媒体で確認。今回の再検索では電話・番地・独立公式サイトを確認できず。",
+        "sources": [
+          "https://www.salonowa.jp/area/hiroshima/therapists?today=1",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
+        ]
+      }
     },
     {
       "name": "大人の隠れ家",
@@ -3025,6 +3115,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "メンエスStyle掲載で中区弥生町・鶴見町・東平塚町の複数ルーム、電話080-9790-6435、営業時間9:00〜翌3:00（受付8:00〜）を確認。案内先はエステ魂の店舗ページで、独立公式ドメイン未確認。",
+        "sources": [
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/otonanokakuregahiroshima",
+          "https://ore-aroma.jp/hiroshima/rank-list/広島市?p=2"
+        ]
       }
     },
     {
@@ -3080,6 +3179,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": "RESORT"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂の店舗詳細で中区薬研堀6-7 森田ビル4F、電話080-2926-1146、12:00〜翌4:00を確認。公式HP欄はhttp://www.resort-h.net/。既存登録resort-h.siteとは異なるため同一性・現行公式URLの照合が必要。",
+        "sources": [
+          "https://estama.jp/shop/23992/",
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ]
       }
     },
     {
@@ -3125,6 +3233,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂・オレアロで広島市、銀山町駅、電話080-8500-6385、10:00〜翌5:00、年中無休を確認。エステ魂は11/9〜11/15の週予定を表示しており、11/19当日出勤は未確認。独立公式ドメイン未確認。",
+        "sources": [
+          "https://estama.jp/shop/41853/schedule/",
+          "https://ore-aroma.jp/hiroshima/rank-list/広島市?p=2"
+        ]
       }
     },
     {
@@ -3170,6 +3287,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂で広島市、広島駅南口徒歩6分/稲荷町電停、電話080-9795-2255、9:00〜翌2:00、不定休を確認。ページにはブランドサイト導線があるが独立ドメインは未確認。",
+        "sources": [
+          "https://estama.jp/shop/28378/cast/495298/"
+        ]
       }
     },
     {
@@ -3215,6 +3340,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "2026年11月の第三者ランキングに15:00〜翌3:00、エステ魂店舗ページへの導線を確認。ただしページは「広島・呉」広域表記で、広島市内の住所・電話・同一店舗性を確定できず。市内店舗と断定せず保留。",
+        "sources": [
+          "https://www.oreno-esthe.com/hiroshima/93/173?sort=newest",
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ]
       }
     },
     {
@@ -3260,6 +3394,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂の店舗・セラピストページで広島市、広島駅最寄り、電話070-1415-1879、10:00〜翌2:00を確認。独立公式ドメイン未確認。",
+        "sources": [
+          "https://estama.jp/shop/38121/cast/367356/",
+          "https://estama.jp/shop/38121/cast/348469/"
+        ]
       }
     },
     {
@@ -3305,6 +3448,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "THINK〜シンク〜のエステ魂店舗詳細で中区大手町5-10-11 リヴィエールⅡ、住吉町ルーム、電話090-4105-0167、9:00〜翌5:00を確認。公式サイト欄https://think-relax.hiroshima.jp/top.php を確認。",
+        "sources": [
+          "https://estama.jp/shop/22514/"
+        ]
       }
     },
     {
@@ -3350,6 +3501,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "Lumiellaとしてエステ魂・全国ランキングに掲載。電話070-9456-8338、富士見町駅最寄り、10:00〜翌3:00。11/18ニュース更新と当日案内表示あり。独立ブランドサイトのURLは今回未確認。",
+        "sources": [
+          "https://estama.jp/shop/50629/newslist/",
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/"
+        ]
       }
     },
     {
@@ -3386,6 +3546,15 @@
           }
         ],
         "status": "媒体掲載確認・営業詳細未確証"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂・メンエスmallで広島市中区、比治山橋駅最寄り、電話080-4773-3567、10:00〜翌2:00を確認。11/17 23:42の店舗ニュースあり。独立公式ドメイン未確認。",
+        "sources": [
+          "https://estama.jp/shop/49802/newslist/",
+          "https://dr.ptr216.ptrcloud.net/shop/you-me-spa/contact"
+        ]
       }
     },
     {
@@ -3431,6 +3600,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": "Aroma Mia"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "Aroma Miaとして広島市中区宝町、電話番号・営業時間は今回取得媒体に十分表示されず、10:00〜翌3:00、本日出勤5名・在籍32名というMEN'S ES掲載情報を確認。数値は媒体掲載時点のもので公式確証ではない。",
+        "sources": [
+          "https://mens-es.men/shop/43092",
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ]
       }
     },
     {
@@ -13417,6 +13595,14 @@
       "count": 20,
       "scope": "広島市内メンズエステ候補20店舗",
       "note": "個別情報は公式情報・第三者媒体情報・未確認を区別。店舗同定できない候補や市外同名店舗は混同せず保留。"
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 55,
+      "endIndex": 74,
+      "count": 20,
+      "scope": "広島市内メンズエステ候補20店舗",
+      "note": "独立公式情報・第三者媒体・広域掲載・未確認を区別。市内所在の裏付けが弱い候補は広島市内店舗と断定せず保留。"
     }
   ]
 }
