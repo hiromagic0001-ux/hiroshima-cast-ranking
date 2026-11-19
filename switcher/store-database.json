@@ -3024,8 +3024,8 @@
       "name": "アドール",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内、比治山橋駅・市役所前駅付近の媒体掲載を複数確認。番地未確認",
+      "status": "複数第三者媒体で電話・営業時間・セラピスト在籍情報確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -3066,14 +3066,16 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "a doll/アドールとして広島市の媒体掲載を再確認。第三者情報では10:00〜翌2:00の記載。独立公式サイト候補https://adollhiroshima.com/は既存記録を維持するが、今回直接確認できた一次情報は限定的。",
+        "batch": "50店舗第1回個別確認",
+        "status": "全国メンズエステランキングとEstowaで広島市・比治山橋駅/市役所前駅付近、電話070-9126-1805、10:00〜翌2:00（受付10:00〜翌0:30）、セラピスト6名掲載を確認。公式サイト導線の実URL・独立ドメインは確認できず。",
         "sources": [
-          "https://nsnn.jp/area/hiroshima/Xyxtob6/esthe/",
-          "https://menesu-select.com/hiroshima/hiroshima/",
-          "https://adollhiroshima.com/"
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/",
+          "https://estowa.net/shop/S-yayouwutian-com/"
         ]
-      }
+      },
+      "verifiedAddress": "広島市中区（比治山橋駅・市役所前駅付近。番地未確認）",
+      "verifiedPhone": "070-9126-1805",
+      "verifiedHours": "10:00〜翌2:00（受付10:00〜翌0:30）"
     },
     {
       "name": "La Paix-ラペ-",
@@ -3255,8 +3257,8 @@
       "name": "シャルディア",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区西平塚町・鶴見町の複数ルームを第三者媒体で確認。番地・現行ルームは未確認",
+      "status": "第三者媒体で店舗・電話・複数ルーム・出勤情報確認。独立公式ドメイン未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -3297,13 +3299,17 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂・オレアロで広島市、銀山町駅、電話080-8500-6385、10:00〜翌5:00、年中無休を確認。エステ魂は11/9〜11/15の週予定を表示しており、11/19当日出勤は未確認。独立公式ドメイン未確認。",
+        "batch": "50店舗第1回個別確認",
+        "status": "エステ魂のアクセス案内で西平塚町・鶴見町ルーム、電話080-8500-6385、10:00〜翌5:00、今すぐ案内可表示を確認。MEN'S ES・メンズリラクは10:00〜翌1:00表記で営業時間に差異。HP欄shardia.esthe-hp.comは媒体/ホスティング型URLで独立公式ドメインとして扱わない。",
         "sources": [
-          "https://estama.jp/shop/41853/schedule/",
-          "https://ore-aroma.jp/hiroshima/rank-list/広島市?p=2"
+          "https://estama.jp/shop/41853/flow/",
+          "https://mens-es.men/shop/41853",
+          "https://menesth.jp/32/shop/45743/"
         ]
-      }
+      },
+      "verifiedAddress": "広島市中区西平塚町・鶴見町のルーム（媒体掲載、番地未確認）",
+      "verifiedPhone": "080-8500-6385",
+      "verifiedHours": "10:00〜翌5:00（エステ魂）／10:00〜翌1:00（メンズリラク等、媒体差あり）"
     },
     {
       "name": "ミセスプリンセスドール",
@@ -3475,8 +3481,8 @@
       "name": "シンク",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区大手町・住吉町の3ルームを公式サイトで確認",
+      "status": "独立公式サイト・複数ルーム・現行案内確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -3496,24 +3502,15 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-verified",
+        "url": "https://think-relax.hiroshima.jp/top.php",
+        "status": "独立公式サイトで大手町2ルーム・住吉町1ルーム、住所2箇所、電話090-4105-0167、営業時間9:00〜翌5:00、受付8:30〜、セラピスト出勤表を確認。エステ魂掲載情報とも一致。",
+        "sources": [
+          "https://think-relax.hiroshima.jp/top.php",
+          "https://think-relax.hiroshima.jp/access.php",
+          "https://estama.jp/shop/22514/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -3522,14 +3519,20 @@
         "sources": [
           "https://estama.jp/shop/22514/"
         ]
-      }
+      },
+      "officialUrl": "https://think-relax.hiroshima.jp/top.php",
+      "officialUrlStatus": "独立ドメイン公式サイトを直接確認。住所・電話・営業時間・セラピスト出勤表を掲載。",
+      "officialUrlVerifiedAt": "2026-11-19",
+      "verifiedAddress": "広島県広島市中区大手町5-10-11 リヴィエールⅡ（2ルーム）／住吉町17-5 バウハウス住吉（1ルーム）",
+      "verifiedPhone": "090-4105-0167",
+      "verifiedHours": "9:00〜翌5:00（受付8:30〜）"
     },
     {
       "name": "ルミエラ",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区宝町の媒体掲載を確認。番地・個別ルーム未確認",
+      "status": "複数媒体で電話・所在地・当日受付・セラピスト情報確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -3570,13 +3573,17 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "Lumiellaとしてエステ魂・全国ランキングに掲載。電話070-9456-8338、富士見町駅最寄り、10:00〜翌3:00。11/18ニュース更新と当日案内表示あり。独立ブランドサイトのURLは今回未確認。",
+        "batch": "50店舗第1回個別確認",
+        "status": "エステ魂のニュースページで2026-11-19時点の予約受付表示、電話070-9456-8338、10:00〜翌3:00、キャンペーン掲載を確認。全国ランキングは中区宝町、フジグラン徒歩3分、10:00〜LASTを掲載。公式HP欄はエステ魂URLであり独立公式ドメイン未確認。",
         "sources": [
           "https://estama.jp/shop/50629/newslist/",
-          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/"
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/56142a75-12b7-4b93-abd8-e7424ae6fedd/",
+          "https://www.es-yoasobi.com/shop/6lTWrAkk/"
         ]
-      }
+      },
+      "verifiedAddress": "広島市中区宝町（フジグラン広島徒歩3分、比治山橋駅徒歩約9分。番地非掲載）",
+      "verifiedPhone": "070-9456-8338",
+      "verifiedHours": "10:00〜翌3:00（エステ魂の店舗情報）／10:00〜LAST（他媒体。差異あり）"
     },
     {
       "name": "You＆MeSPA～ユミスパ～",
