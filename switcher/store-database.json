@@ -16298,6 +16298,21 @@
         "https://www.salonowa.jp/area/hiroshima/hiroshima",
         "https://estama.jp/etc/shoplist/3401/store/"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 100,
+      "endIndex": 149,
+      "count": 50,
+      "scope": "広島市候補101〜150番・第2段階業種/掲載/公式URLクロスチェック",
+      "note": "候補101〜150番を公開中の広島エリア業種別一覧と照合。Ultimate Mapの広島県全体123店一覧では、薬研堀・流川の店舗型ヘルス/ソープランド/SM・イメクラ/性感エステと、広島市・広島エリアのデリヘル等が混在し、一覧上でも業種が明確に分かれている。101 LIGHT・102 PaleTTe・103 STORY・104 Sherbet・105 Sherbet別館・106エルミタージュ・107ブルームーン・108ブレイク・109ロイヤル女子寮・110女子寮本館・111石庭・112石庭別館はソープランド掲載、113 AGORA・114 OASIS・115 PANTHER・116 Serenity・117ナナ・118人妻専科たま乱堂は店舗型ヘルス掲載、119ドラゴンハンド・120ヘブンハンドはSM等、121極楽エステ・122 AROMA JUNGLE・123 Loving Touch・124 OLIVE SPA・125 SILK SPAは性感エステ掲載。126廣島奥様チン電、127 Ares、128 DiamondHearts、129 ELEGANCE、130 NATURAL、131 RUSH、132 TIARA、133 Vip style club、134人妻アクメ、135ポポロン、137エッチな熟女、138ベルベット、139人妻同窓会、140奥様鉄道69、142摩天楼などはデリヘル掲載で、メンズエステとして扱わないよう業種確認対象。136人妻EXPRESS、141 Serenity Oasis、143 Melty Esthe、144広島回春性感マッサージ倶楽部、145スパ アール、146 THINK、148 #オナクラなうは今回の一覧本文だけでは個別一致を確認できず、未確認のまま保持。147チェリーSPA広島は独立公式サイトを直接確認し、中区宝町6・銀山町・東平塚・昭和町のルーム案内を掲載。149カサブランカ広島店は2023-08-08にモザイクと合併すると媒体告知があり、現行独立店舗と断定しない。150モザイクは合併先として告知されるが、求人上の勤務可能時間を店舗営業時間として扱わない。101 LIGHTと103 STORYは同じ弥生町3-12の住所掲載があり、別電話・別店舗名のため住所重複だけで統合しない。116 Serenityと141 Serenity Oasisも同一性未確認のため統合しない。既存の公式URL登録は保持し、未確認候補にURLを推測追加しない。店舗レコード278件は削除・統合せず、業種の自動変更も行わない。",
+      "sources": [
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?a=広島&cat=deli&pref=hiroshima",
+        "https://cherryspahiroshima.com/",
+        "https://fu-web.jp/hiroshima/merchant/news/merchantCode/1986/",
+        "https://nsnn.jp/hiroshima-shi-health/"
+      ]
     }
   ],
   "auditSummary": {
