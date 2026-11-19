@@ -7783,6 +7783,14 @@
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市メンズエステランキング107店の掲載一覧に「絆～きずな～」を確認。住所・電話・独立公式サイトは今回未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -7822,6 +7830,14 @@
         "scope": "広島市一覧",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "同ランキングに掲載を確認。個別住所・電話・公式URLは未確認。名称は「ミセス48～魔性のオイル編VOL.1～」として保持。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -7869,6 +7885,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "同ランキングに広島市店として掲載。住所・電話・公式URLは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -7916,6 +7940,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "同ランキングに広島市店として掲載。住所・電話・公式URLは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -7963,6 +7995,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキング掲載、電話番号や住所は個別確認できず。店舗掲載情報のみで記録。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -8010,6 +8050,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキング掲載。電話・住所・独立公式サイトは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -8057,6 +8105,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキング掲載。電話・住所・独立公式サイトは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -8106,6 +8162,15 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "DB登録URLあり・公式性/リンク先は別途再検証",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島店として掲載。ランキング上の掲載確認のみで、住所・電話は未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+          "https://mens-es.men/area/3401"
+        ]
       }
     },
     {
@@ -8153,6 +8218,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "エステ魂の店舗ページで中区舟入幸町5-10、電話070-5302-7379、9:00〜翌4:00、年末年始休みを確認。マンション個室型。",
+        "sources": [
+          "https://estama.jp/shop/46472/"
+        ]
       }
     },
     {
@@ -8200,6 +8273,15 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングおよびメンエスじゃぱんに掲載。中電前駅徒歩5分、6:00〜LAST。独立公式サイト・電話・住所は未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+          "https://mens-est.jp/shop/hrsmverdy/"
+        ]
       }
     },
     {
@@ -8247,6 +8329,15 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングと広島市184店一覧に掲載。出張専門として案内、広島駅エリア、9:30〜翌6:00の媒体情報。電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+          "https://mens-es.men/area/3401"
+        ]
       }
     },
     {
@@ -8294,6 +8385,15 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングと184店一覧に掲載。八丁堀・袋町駅周辺、10:00〜LASTの媒体情報。電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+          "https://mens-es.men/area/3401"
+        ]
       }
     },
     {
@@ -8341,6 +8441,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングに掲載。電話・住所・公式サイトは今回未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -8388,6 +8496,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングに掲載。電話・住所・公式サイトは今回未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -8435,6 +8551,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングに掲載。電話・住所・公式サイトは今回未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -8482,6 +8606,15 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "メンエスmallの店舗情報で広島市中区、10:00〜翌3:00、年中無休を確認。詳細住所・電話は掲載ページから確認できず。",
+        "sources": [
+          "https://dr.ptr216.ptrcloud.net/shop/mintia",
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -8529,6 +8662,15 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングと184店一覧に掲載。電話・住所・独立公式サイトは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+          "https://mens-es.men/area/3401"
+        ]
       }
     },
     {
@@ -8576,6 +8718,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングに掲載。電話・住所・独立公式サイトは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -8623,6 +8773,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングに掲載。電話・住所・独立公式サイトは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -8670,6 +8828,14 @@
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市ランキングに掲載。電話・住所・独立公式サイトは未確認。",
+        "sources": [
+          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+        ]
       }
     },
     {
@@ -14312,6 +14478,14 @@
       "count": 20,
       "scope": "広島市内候補20店舗",
       "note": "公式サイト・第三者媒体・求人媒体で業種と所在地範囲を確認。デリヘル/店舗型ヘルス/オナクラ/メンズエステを区別。広域派遣・住所非公開・同名候補は固定店舗の市内所在を断定せず保留。"
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 155,
+      "endIndex": 174,
+      "count": 20,
+      "scope": "広島市メンズエステ候補20店舗",
+      "note": "広島市ランキング・店舗個別媒体で掲載を照合。MPS/VERDY/IVY SPA/Queen/MINTIAは個別掲載情報を確認。その他はランキング掲載の確認にとどまり、住所・電話・独立公式サイトを未確認として区別。"
     }
   ]
 }
