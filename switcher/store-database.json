@@ -14,22 +14,27 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "今回の個別確認",
+          "url": "https://ore-aroma.jp/shop/S-nature-hiroshima/system"
         }
       ],
-      "officialUrl": "https://nature4555.estama.jp",
-      "officialUrlStatus": "掲載媒体の公式HP欄でURLを確認（独立ドメインとは区別）",
+      "officialUrl": "https://34603.b7.estama.jp/",
+      "officialUrlStatus": "店舗専用ページへの公式サイトリンクを確認。エスタマ提供サブドメインであり独立ドメイン公式サイトとは区別。ページ内に営業時間・電話・当日出勤情報あり。",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "url": "https://nature4555.estama.jp",
+        "checkedAt": "2026-11-19",
+        "url": "https://34603.b7.estama.jp/",
         "address": "広島県広島市中区富士見町",
         "hours": "10:00〜翌0:00",
         "phone": "080-4555-3365",
-        "kind": "listing-detail-confirmed",
+        "kind": "estama-hosted-shop-page-confirmed",
         "sources": [
-          "https://estama.jp/shop/34603/"
+          "https://estama.jp/shop/34603/",
+          "https://ore-aroma.jp/shop/S-nature-hiroshima/system"
         ],
-        "note": "公式HP欄、住所、営業時間、電話番号、2026-10-23新着メッセージを確認。"
+        "note": "店舗専用ページへの公式サイトリンクを確認。エスタマ提供サブドメインであり独立ドメイン公式サイトとは区別。ページ内に営業時間・電話・当日出勤情報あり。"
       },
       "verifiedAddress": "広島県広島市中区富士見町",
       "verifiedHours": "10:00〜翌0:00",
@@ -280,23 +285,29 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "今回の個別確認",
+          "url": "https://estama.jp/shop/41469/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
-      "officialUrl": "https://estama.jp/shop/41469/",
-      "officialUrlStatus": "掲載媒体の店舗HP欄・店舗詳細URLを確認（独立ドメイン公式サイトとは区別）",
+      "officialUrl": "https://itsukaichi-esthe.com/",
+      "officialUrlStatus": "エスタマ店舗詳細の公式ホームページ欄に独立ドメインURLを確認。直接アクセスはタイムアウトしたため、サイト稼働・内容は未確認。店舗詳細には住所・電話・営業時間・2026-11-18更新情報あり。",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "url": "https://estama.jp/shop/41469/",
+        "checkedAt": "2026-11-19",
+        "url": "https://itsukaichi-esthe.com/",
         "address": "広島県広島市佐伯区美の里1丁目8番",
         "hours": "11:00〜24:00（受付10:00〜24:00）",
         "phone": "080-2747-9617",
-        "kind": "current-booking-page-and-active-cast",
+        "kind": "listing-official-link-direct-timeout",
         "sources": [
           "https://estama.jp/shop/41469/cast/646319/",
-          "https://www.esthe-ranking.jp/hiroshima/shop-detail/06a0c16b-ba7d-4e79-b22e-1f06b0a45dd1/"
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/06a0c16b-ba7d-4e79-b22e-1f06b0a45dd1/",
+          "https://estama.jp/shop/41469/"
         ],
-        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。"
+        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。",
+        "note": "エスタマ店舗詳細の公式ホームページ欄に独立ドメインURLを確認。直接アクセスはタイムアウトしたため、サイト稼働・内容は未確認。店舗詳細には住所・電話・営業時間・2026-11-18更新情報あり。"
       },
       "verifiedAddress": "広島県広島市佐伯区美の里1丁目8番",
       "verifiedHours": "11:00〜24:00（受付10:00〜24:00）",
@@ -2509,24 +2520,31 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "今回の個別確認",
+          "url": "https://estama.jp/shop/34319/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "kind": "current-listing-and-business-details",
+        "checkedAt": "2026-11-19",
+        "kind": "listing-official-link-direct-timeout",
         "address": "広島市（観音ルーム・五日市ルーム）",
         "hours": "11:00〜翌2:00",
         "phone": "090-5818-3970",
-        "url": null,
+        "url": "https://aroma-iris.net/",
         "status": "当日更新メッセージ・予約可・営業時間・電話を確認（公式HP未確認）",
         "sources": [
           "https://estama.jp/shop/34319/"
-        ]
+        ],
+        "note": "エスタマ店舗詳細の公式ホームページ欄に独立ドメインURLを確認。直接アクセスはタイムアウトしたため、サイト稼働・内容は未確認。店舗詳細には住所・電話・営業時間・2026-11-17更新情報あり。"
       },
       "verifiedAddress": "広島市（観音ルーム・五日市ルーム）",
       "verifiedHours": "11:00〜翌2:00",
-      "verifiedPhone": "090-5818-3970"
+      "verifiedPhone": "090-5818-3970",
+      "officialUrl": "https://aroma-iris.net/",
+      "officialUrlStatus": "エスタマ店舗詳細の公式ホームページ欄に独立ドメインURLを確認。直接アクセスはタイムアウトしたため、サイト稼働・内容は未確認。店舗詳細には住所・電話・営業時間・2026-11-17更新情報あり。"
     },
     {
       "name": "スパドルチェ 広島",
