@@ -38,7 +38,16 @@
       },
       "verifiedAddress": "広島県広島市中区富士見町",
       "verifiedHours": "10:00〜翌0:00",
-      "verifiedPhone": "080-4555-3365"
+      "verifiedPhone": "080-4555-3365",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "店舗専用ページへの公式サイトリンクを確認。エスタマ提供サブドメインであり独立ドメイン公式サイトとは区別。ページ内に営業時間・電話・当日出勤情報あり。",
+        "sources": [
+          "https://estama.jp/shop/34603/",
+          "https://ore-aroma.jp/shop/S-nature-hiroshima/system"
+        ]
+      }
     },
     {
       "name": "ビューティーアンドビースト",
@@ -65,6 +74,15 @@
           "https://menesu-select.com/hiroshima/hiroshima/"
         ],
         "status": "同名のbeauty:beastは広島市内の美容室として公式サイトで確認できるが、メンズエステ候補との同一店舗・系列関係を示す証拠なし。誤った美容室URLを店舗公式URLとして登録せず、同名衝突の未確認候補として維持。"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "同名のbeauty:beastは広島市内の美容室として公式サイトで確認できるが、メンズエステ候補との同一店舗・系列関係を示す証拠なし。誤った美容室URLを店舗公式URLとして登録せず、同名衝突の未確認候補として維持。",
+        "sources": [
+          "https://bap-holdings.co.jp/salon_area/hiroshima/",
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ]
       }
     },
     {
@@ -101,7 +119,16 @@
       },
       "verifiedAddress": "広島県広島市佐伯区五日市5-3-1（掲載媒体情報）",
       "verifiedHours": "10:00〜翌3:00（掲載媒体情報）",
-      "verifiedPhone": "090-3030-5984（掲載媒体情報）"
+      "verifiedPhone": "090-3030-5984（掲載媒体情報）",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂の店舗詳細に独立公式ホームページ https://chouchou-coin.com/ を明示。店舗ページに2026-11-04のニュースとセラピスト情報を確認。住所・電話・営業時間は掲載媒体の記載。独立サイトへのアクセス確認と現在営業の確証は別扱い。",
+        "sources": [
+          "https://estama.jp/shop/30869/",
+          "https://chouchou-coin.com/"
+        ]
+      }
     },
     {
       "name": "ジェンティル",
@@ -132,7 +159,15 @@
       "officialUrlStatus": "エステ魂の店舗掲載ページのみ確認。独立ドメインの公式サイトは未確認。",
       "verifiedAddress": "広島県広島市中区幟町（掲載媒体情報・個別ルーム住所は予約時案内）",
       "verifiedHours": "9:00〜翌2:00（掲載媒体情報）",
-      "verifiedPhone": "070-9015-8403（掲載媒体情報）"
+      "verifiedPhone": "070-9015-8403（掲載媒体情報）",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂店舗詳細を再確認。2026-11-19 00:42の新着情報、2026-11-18更新の出勤情報、セラピスト情報、住所（中区幟町）、営業時間、電話番号を確認。ページ内に独立ドメインの公式サイトは確認できず、媒体掲載情報として記録。",
+        "sources": [
+          "https://estama.jp/shop/51166/"
+        ]
+      }
     },
     {
       "name": "シークレット",
@@ -171,6 +206,16 @@
         "checkedAt": "2026-11-19",
         "status": "rechecked",
         "note": "独立ドメインの公式サイトを直接開き、店舗名・電話・営業時間を照合。公式サイトに2026-11-18の最新告知と当日セラピスト情報が表示され、営業情報の更新を確認。",
+        "sources": [
+          "https://thesecret924.com/",
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/thesecret",
+          "https://estama.jp/shop/44286/bloglist"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメインの公式サイトを直接開き、店舗名・電話・営業時間を照合。公式サイトに2026-11-18の最新告知と当日セラピスト情報が表示され、営業情報の更新を確認。",
         "sources": [
           "https://thesecret924.com/",
           "https://menes-style.jp/chugoku_shikoku/hiroshima/thesecret",
@@ -222,7 +267,17 @@
       "contactReviewDone": true,
       "officialUrl": "https://estama.jp/shop/41552/",
       "officialUrlStatus": "エステ魂の店舗掲載ページのみ確認。求人ページの公式サイト欄もエステ魂掲載ページを案内しており、独立ドメイン公式サイトは未確認。",
-      "verifiedPhone": "080-8522-3707（求人媒体掲載情報）"
+      "verifiedPhone": "080-8522-3707（求人媒体掲載情報）",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂で2026-11-18の新着情報を複数件確認。求人ページの公式サイト欄はエステ魂店舗ページを案内し、独立ドメインは未確認。電話番号080-8522-3707を求人ページで確認。住所は別媒体MEN'S ESの中区鶴見町7-8掲載情報として分けて記録。",
+        "sources": [
+          "https://estama.jp/shop/41552/newslist/",
+          "https://esjob.jp/shop/41552/",
+          "https://mens-es.men/shop/41552"
+        ]
+      }
     },
     {
       "name": "花魁 広島",
@@ -258,7 +313,16 @@
       "verifiedHours": "10:00〜翌3:00（媒体掲載情報）",
       "contactReviewDone": true,
       "verifiedPhone": "070-2292-7716（媒体掲載情報）",
-      "officialUrlStatus": "エステ魂の店舗掲載ページのみ確認。独立ドメインの公式サイトは未確認。"
+      "officialUrlStatus": "エステ魂の店舗掲載ページのみ確認。独立ドメインの公式サイトは未確認。",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂の店舗詳細で電話番号、営業時間、宝町・フジグラン広島周辺の案内を確認。独立ドメインの公式サイトは確認できず、媒体掲載ページとして記録。",
+        "sources": [
+          "https://estama.jp/shop/50643/flow/",
+          "https://estama.jp/shop/50643/menu/"
+        ]
+      }
     },
     {
       "name": "トリコ",
@@ -292,7 +356,18 @@
       },
       "verifiedAddress": "広島県広島市中区舟入町（番地・部屋番号は予約確認後案内）",
       "verifiedHours": "公式9:00〜22:00／媒体9:00〜翌2:00・10:00〜翌2:00（相違・要確認）",
-      "verifiedPhone": "090-5245-2221"
+      "verifiedPhone": "090-5245-2221",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメインの公式サイトを直接閲覧。電話番号090-5245-2221、舟入町、セラピスト・出勤情報を確認。公式サイト表示営業時間は9:00〜22:00だが、エステ魂は9:00〜翌2:00、メンエスmallは10:00〜翌2:00と異なるため、営業時間は確定値に統一せず要確認として記録。公式サイトの最新情報欄は9/30更新表示で、11/19時点の営業継続を断定できる新着告知は未確認。",
+        "sources": [
+          "https://hiroshima-toriko.com/",
+          "https://estama.jp/shop/30128/",
+          "https://dr.ptr216.ptrcloud.net/shop/toriko",
+          "https://www.fues.jp/kansai/store/2000004645/"
+        ]
+      }
     },
     {
       "name": "Dior 五日市店",
@@ -330,7 +405,17 @@
       },
       "verifiedAddress": "広島県広島市佐伯区美の里1丁目8番",
       "verifiedHours": "11:00〜24:00（受付10:00〜24:00）",
-      "verifiedPhone": "080-2747-9617"
+      "verifiedPhone": "080-2747-9617",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "個別店舗ページで所在地表示・営業時間・電話または現行出勤情報を照合。公式ドメインが確認できない場合は媒体URLを公式サイト扱いしていない。。エスタマ店舗詳細の公式ホームページ欄に独立ドメインURLを確認。直接アクセスはタイムアウトしたため、サイト稼働・内容は未確認。店舗詳細には住所・電話・営業時間・2026-11-18更新情報あり。",
+        "sources": [
+          "https://estama.jp/shop/41469/cast/646319/",
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/06a0c16b-ba7d-4e79-b22e-1f06b0a45dd1/",
+          "https://estama.jp/shop/41469/"
+        ]
+      }
     },
     {
       "name": "おとなすぱっ！",
@@ -370,7 +455,16 @@
       "verifiedHours": "9:00～翌4:00",
       "verifiedPhone": "070-5677-5558（エステ魂掲載情報）",
       "contactReviewDone": true,
-      "officialUrlStatus": "エステ魂・求人媒体の店舗ページを確認。独立ドメインの公式サイトは未確認。"
+      "officialUrlStatus": "エステ魂・求人媒体の店舗ページを確認。独立ドメインの公式サイトは未確認。",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂のセラピスト一覧で最新の在籍・出勤表示を確認。求人ページで住所・電話・営業時間を再確認。独立ドメインの公式サイトは未確認。",
+        "sources": [
+          "https://estama.jp/shop/43343/cast/",
+          "https://esjob.jp/shop/43343/"
+        ]
+      }
     },
     {
       "name": "ENEL",
@@ -419,6 +513,18 @@
         "note": "ENEL／ENEL（エネル）。既存の同一duplicateGroup。媒体表記と店舗名の読み違い候補。元レコード保持。",
         "group": "enel",
         "role": "primary"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメイン公式サイトを直接確認。トップに電話080-8244-9297、営業時間6:00〜翌5:00、当日出勤一覧あり。スケジュールページで2026-11-19(木)の出勤予定を確認。アクセスページには広島市中区・昭和町・竹屋の3ルームを案内。メンエスmall等の第三者媒体でも電話・営業時間は一致。ただし個別部屋住所は非公開。",
+        "sources": [
+          "https://enel-official.com/",
+          "https://enel-official.com/schedule.php",
+          "https://enel-official.com/map.php",
+          "https://web2-mall.menesmall.jp/shop/enel/free_space/254",
+          "https://ranking-mensesthe.jp/shop/28094/shopdata/"
+        ]
       }
     },
     {
@@ -457,7 +563,15 @@
       "verifiedAddress": "広島県広島市中区（部屋住所は予約後案内）",
       "verifiedHours": "10:00～翌3:00",
       "verifiedPhone": "070-1415-6065",
-      "contactReviewDone": true
+      "contactReviewDone": true,
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "広島市中区の店舗掲載、営業時間10:00〜翌3:00、電話番号を再確認。個別ルーム住所は予約後案内。独立ドメイン公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r0831a95adb"
+        ]
+      }
     },
     {
       "name": "ラヴィアンドスパ",
@@ -491,7 +605,18 @@
       },
       "verifiedAddress": "広島市中区富士見町（掲載媒体情報）",
       "verifiedHours": "10:00〜LAST（媒体に10:00〜翌2:00表記あり）",
-      "verifiedPhone": "090-3049-1138"
+      "verifiedPhone": "090-3049-1138",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立公式ドメインの店舗紹介・アクセス情報を確認。メンエスじゃぱん等の掲載情報と店名・電話・広島市中区住所を照合。掲載媒体間で営業時間表記に差があるため併記し、営業継続の確証とは分ける。",
+        "sources": [
+          "https://laviespa.net/",
+          "https://laviespa.net/access/",
+          "https://mens-est.jp/shop/Laviespa/",
+          "https://menesth.jp/32/shop/41032/"
+        ]
+      }
     },
     {
       "name": "みつばち",
@@ -533,7 +658,17 @@
       "verifiedPhone": "090-6403-2215（媒体掲載情報）",
       "contactReviewDone": true,
       "officialUrl": "https://estama.jp/shop/41773/",
-      "officialUrlStatus": "オレアロ掲載ページの公式サイト欄がエステ魂の店舗ページを案内。店舗掲載ページは確認できたが、独立ドメイン公式サイトは未確認。"
+      "officialUrlStatus": "オレアロ掲載ページの公式サイト欄がエステ魂の店舗ページを案内。店舗掲載ページは確認できたが、独立ドメイン公式サイトは未確認。",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂店舗詳細で営業時間10:00〜翌3:00、電話番号、宝町・鶴見ルームの案内を確認。オレアロの公式サイト欄はエステ魂店舗ページへリンク。独立ドメインは確認できず、媒体掲載ページとして分類。",
+        "sources": [
+          "https://estama.jp/shop/41773/flow/",
+          "https://ore-aroma.jp/shop/S-mitsubachi0601/",
+          "https://ore-aroma.jp/shop/S-mitsubachi0601/scr"
+        ]
+      }
     },
     {
       "name": "シュシュ 緑井店",
@@ -564,7 +699,15 @@
       },
       "verifiedAddress": "広島県広島市安佐南区緑井2丁目14-26（掲載媒体情報）",
       "verifiedHours": "10:00〜翌3:00（掲載媒体情報）",
-      "verifiedPhone": "080-2072-8300（掲載媒体情報）"
+      "verifiedPhone": "080-2072-8300（掲載媒体情報）",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂の店舗詳細に住所・営業時間・電話・2026-10-27のニュースおよびセラピスト情報を確認。公式ホームページ欄に独立ドメインの掲載なし。店舗掲載ページを独立公式サイトと混同しない。",
+        "sources": [
+          "https://estama.jp/shop/29246/"
+        ]
+      }
     },
     {
       "name": "リフレMoEST",
@@ -603,6 +746,16 @@
         "checkedAt": "2026-11-19",
         "status": "rechecked",
         "note": "エステ魂の広島市店舗一覧で当日案内可・本日出勤表示・当日メッセージを確認。全国メンズエステランキングの店舗詳細で同じ電話番号、宝町所在地、在籍情報を確認。独立公式サイトURLは既存掲載のGoopeページを維持。営業時間は媒体差があるため断定せず。",
+        "sources": [
+          "https://r.goope.jp/moest-hiroshima/",
+          "https://estama.jp/etc/shoplist/3401/store/",
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/1c791c76-fdbe-4ac1-b94a-abbbbabafd3e/"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂の広島市店舗一覧で当日案内可・本日出勤表示・当日メッセージを確認。全国メンズエステランキングの店舗詳細で同じ電話番号、宝町所在地、在籍情報を確認。独立公式サイトURLは既存掲載のGoopeページを維持。営業時間は媒体差があるため断定せず。",
         "sources": [
           "https://r.goope.jp/moest-hiroshima/",
           "https://estama.jp/etc/shoplist/3401/store/",
@@ -648,6 +801,15 @@
           "https://estama.jp/shop/41985/",
           "https://men-esthe-job.men-esthe.mixh.jp/area.php?id=112&p=3"
         ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "listing-detail-verified-independent-site-unconfirmed。求人ページのHPリンク先は独立ドメインではなくエステ魂の店舗詳細 https://estama.jp/shop/41985/。店舗詳細にSPA Bernese、広島市中区土橋町（番地非公開）、電話070-9087-3825、営業時間10:30〜翌0:00、定休日 火・水・木・金、最寄り土橋駅の記載あり。ページ上の新着メッセージは2026-09-06で、11/19時点の営業継続を示す最新証拠ではない。X/Instagramのリンクは掲載されているが独立公式HPとは区別。",
+        "sources": [
+          "https://estama.jp/shop/41985/",
+          "https://men-esthe-job.men-esthe.mixh.jp/area.php?id=112&p=3"
+        ]
       }
     },
     {
@@ -679,7 +841,15 @@
       },
       "verifiedAddress": "広島県広島市中区小町（掲載媒体情報・個別ルーム住所は非公開）",
       "verifiedHours": "11:00〜LAST（掲載媒体情報）",
-      "verifiedPhone": "070-2400-4545（掲載媒体情報）"
+      "verifiedPhone": "070-2400-4545（掲載媒体情報）",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂店舗詳細を再確認。2026-11-19 03:06の写メNote、2026-11-18更新情報、2026-11-01〜02の口コミ、セラピスト情報、住所（中区小町）、営業時間、電話番号を確認。独立ドメインの公式サイトは確認できず、媒体掲載情報として記録。",
+        "sources": [
+          "https://estama.jp/shop/43255/"
+        ]
+      }
     },
     {
       "name": "小悪魔SPA",
@@ -718,6 +888,16 @@
         "checkedAt": "2026-11-19",
         "status": "rechecked",
         "note": "独立ドメインの公式サイトを直接開き、店名・電話・営業時間・所在地を確認。セラピスト一覧、予約フォーム、公式Xへのリンクを確認。外部媒体には別表記や異なる電話番号の可能性があるため公式サイト記載を優先。",
+        "sources": [
+          "https://hiroshima-synchro.com/",
+          "https://mens-es.men/shop/29324",
+          "https://dr.ptr216.ptrcloud.net/hiroshima/shop/reserve"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメインの公式サイトを直接開き、店名・電話・営業時間・所在地を確認。セラピスト一覧、予約フォーム、公式Xへのリンクを確認。外部媒体には別表記や異なる電話番号の可能性があるため公式サイト記載を優先。",
         "sources": [
           "https://hiroshima-synchro.com/",
           "https://mens-es.men/shop/29324",
@@ -787,6 +967,17 @@
         "note": "REAL／Relaxation Salon REAL。公式URL rs-real.com は一致。一方、第三者地図に公式情報と異なる住所・電話があり、混同候補の確認を継続。別情報を統合しない。",
         "group": "real",
         "role": "primary"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメイン公式サイトを直接確認。公式サイトのトップに本日出勤セラピスト複数名、10:00〜翌5:00、電話070-8367-1849を掲載。アクセスページで東平塚・昭和町の2ルームを確認。第三者地図に別電話070-3784-1840・宝町住所の登録があるが、公式サイト情報と不一致のため採用せず、混同候補として区別。",
+        "sources": [
+          "https://rs-real.com/",
+          "https://rs-real.com/access/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rd65d27ffa5",
+          "https://www.fues.jp/kansai/ranking/hiroshimaken/"
+        ]
       }
     },
     {
@@ -827,6 +1018,17 @@
         "checkedAt": "2026-11-19",
         "status": "independent-official-site-directly-verified",
         "note": "独立ドメイン公式サイトのトップ・アクセスページを確認。広島駅から徒歩5分、南区大須賀町、電話080-9004-2543、営業時間11:00〜翌3:00を掲載。エステ魂・エステナビ等の第三者媒体とも電話・営業時間・エリアを照合。",
+        "sources": [
+          "https://aphrodite-talassa.com/",
+          "https://aphrodite-talassa.com/access/",
+          "https://estama.jp/shop/51646/",
+          "https://www.es-navi.com/list/list.php?num=7400&type=i-japan"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメイン公式サイトのトップ・アクセスページを確認。広島駅から徒歩5分、南区大須賀町、電話080-9004-2543、営業時間11:00〜翌3:00を掲載。エステ魂・エステナビ等の第三者媒体とも電話・営業時間・エリアを照合。",
         "sources": [
           "https://aphrodite-talassa.com/",
           "https://aphrodite-talassa.com/access/",
@@ -889,6 +1091,15 @@
         "note": "TISSE／TISSE（ティセ）。既存の同一duplicateGroup。カナ表記違い候補。元レコード保持。",
         "group": "tisse",
         "role": "primary"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメイン公式サイトを直接確認。電話・営業時間・橋本町4ルームを掲載。2026-11-17の写メ日記、11-17のイベント情報、11-11の5周年告知と当日出勤表示を確認。第三者メンズエステmallの電話・住所・営業時間とも一致。",
+        "sources": [
+          "https://mens-tisse.com/",
+          "https://dr.ptr216.ptrcloud.net/shop/tisse"
+        ]
       }
     },
     {
@@ -931,7 +1142,17 @@
       "verifiedHours": "10:00〜26:00（受付10:00〜25:00、公式サイト記載）",
       "contactReviewDone": true,
       "officialUrl": "https://adollhiroshima.com/",
-      "officialUrlStatus": "独立ドメインの店舗公式サイトを直接確認。アクセスページに広島市中区の複数ルーム、電話番号、営業時間を掲載。予約導線はエスタマだが、公式サイト本体は独立ドメイン。"
+      "officialUrlStatus": "独立ドメインの店舗公式サイトを直接確認。アクセスページに広島市中区の複数ルーム、電話番号、営業時間を掲載。予約導線はエスタマだが、公式サイト本体は独立ドメイン。",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメイン公式サイトを直接開いて確認。公式アクセスページに昭和町・大手町・富士見町の3ルーム、電話番号070-9126-1805、営業時間10:00〜26:00（受付10:00〜25:00）を掲載。第三者媒体にも同じ電話・住所エリアが掲載されている。予約ボタンはエスタマに遷移するが、公式サイトURLは独立ドメイン。",
+        "sources": [
+          "https://adollhiroshima.com/",
+          "https://adollhiroshima.com/access/",
+          "https://esthe-ranking.jp/hiroshima/shop-detail/677923b7-f077-41cb-81a4-ee9aae952ce1/"
+        ]
+      }
     },
     {
       "name": "ゆるりnon",
@@ -965,7 +1186,18 @@
       },
       "verifiedAddress": "広島県広島市中区舟入町／河原町10／大手町3（公式アクセスページ記載の複数ルーム）",
       "verifiedHours": "10:00〜翌2:00（受付9:30〜翌2:00）",
-      "verifiedPhone": "090-5607-1122"
+      "verifiedPhone": "090-5607-1122",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメインの公式サイトを直接閲覧。トップに営業時間・電話番号、当日出勤セラピストと2026-11-19の更新情報を確認。公式アクセスページに舟入町・河原町10・大手町3の複数ルームを確認。予約ボタンはエステ魂へ遷移するが、公式サイト自体は独立ドメインとして確認済み。",
+        "sources": [
+          "https://yururinon.com/",
+          "https://yururinon.com/access/",
+          "https://menesth.jp/32/shop/47343/",
+          "https://estama.jp/shop/42454/menu/"
+        ]
+      }
     },
     {
       "name": "BODY SPA 広島",
@@ -1013,6 +1245,17 @@
         "note": "BODY SPA 広島／BODY SPA HIROSHIMA。公式サイト bodyspa-hiroshima.com と媒体表記を照合。別URL bodyspahiroshima.com は公式ドメインとして扱わず、同一性は追加確認対象。",
         "group": "body-spa",
         "role": "primary"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "bodyspa-hiroshima.comを直接閲覧。トップに電話090-1414-4850、営業時間10:00〜LAST、所在地は広島市中区国泰寺町2丁目と表示。公式サイトのニュース欄に2026-11-19更新と11/18出勤告知、当日の出勤表示あり。公式サイトは国泰寺町・竹屋町・東平塚町の複数ルームを案内。以前登録されていたbodyspahiroshima.comは別の媒体ページであり、公式ドメインとして誤登録しないよう訂正。予約・問い合わせリンクはエステ魂等へ遷移するが、公式サイト本体は独立ドメインで確認済み。",
+        "sources": [
+          "https://bodyspa-hiroshima.com/",
+          "https://estama.jp/shop/24335/",
+          "https://menesth.jp/32/shop/48787/",
+          "https://www.es-king.jp/area/hiroshima/"
+        ]
       }
     },
     {
@@ -1053,7 +1296,19 @@
       "verifiedPhone": "070-8461-5262",
       "contactReviewDone": true,
       "officialUrl": "https://hiroshima-hitozumasan.com/",
-      "officialUrlStatus": "求人媒体のHP欄に独立ドメインURL掲載。ただし直接アクセス不可・公式サイト内容未確認"
+      "officialUrlStatus": "求人媒体のHP欄に独立ドメインURL掲載。ただし直接アクセス不可・公式サイト内容未確認",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "メンエスmall・メンズリラク・エステ魂の店舗情報で電話070-8461-5262と広島市中区宝町を確認。営業時間は10:00〜24:00と10:00〜翌2:00で相違。求人媒体には公式HPリンクとしてhiroshima-hitozumasan.com/recruitが記載されるが、独立ドメインのトップと求人ページは直接アクセス時にタイムアウト/取得不可。独立公式サイトの実体・当日営業は未確認。第三者媒体のセラピスト一覧には複数在籍者が掲載されるが、11/19当日の出勤は電話確認表示で確定不可。",
+        "sources": [
+          "https://menesmall.jp/shop/hitozumasan/system",
+          "https://menesth.jp/32/shop/41609/system/",
+          "https://estama.jp/shop/35731/menu/",
+          "https://www.e-q.jp/48870/",
+          "https://hiroshima-hitozumasan.com/"
+        ]
+      }
     },
     {
       "name": "Organic energy",
@@ -1087,7 +1342,18 @@
       },
       "verifiedAddress": "広島県広島市中区富士見町（公式サイト記載）",
       "verifiedHours": "公式11:00〜LAST（第三者媒体は10:00〜LAST等の相違あり）",
-      "verifiedPhone": "070-6690-1788"
+      "verifiedPhone": "070-6690-1788",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメインの公式サイトを直接確認。電話番号・富士見町・料金を照合。公式サイト営業時間は11:00〜LAST。第三者媒体には10:00開始の相違があるため営業時間は媒体差ありとして記録。公式トップの出勤表示は『現在出勤は未定』、最新情報も掲載なし。11月19日の営業・出勤実績は未確認。",
+        "sources": [
+          "https://organic-hiroshima.com/",
+          "https://nsnn.jp/shop/ek48491/",
+          "https://men-esthe.co.jp/store/yxPe8nAw/?area=hiroshima",
+          "https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?sort=staff"
+        ]
+      }
     },
     {
       "name": "Mrs.ni-na",
@@ -1121,7 +1387,18 @@
       },
       "verifiedAddress": "広島県広島市中区（公式サイト：鶴見町4番／第三者媒体：宝町・要確認）",
       "verifiedHours": "10:00〜翌2:00（受付9:00〜翌2:00）",
-      "verifiedPhone": "090-2637-2007"
+      "verifiedPhone": "090-2637-2007",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメイン公式サイトを直接確認。公式トップに電話090-2637-2007、営業時間10:00〜翌2:00、受付9:00〜翌2:00、セラピスト・出勤一覧を掲載。公式アクセス欄は中区鶴見町4番。メンエスmall等の複数媒体は中区宝町と記載し、住所が一致しないため要確認。公式サイト上の出勤一覧は確認したが、当日分の掲載日付は確定できず、11月19日の出勤実績とは扱わない。",
+        "sources": [
+          "https://mrs-salon-do-ni-na.com/",
+          "https://menesmall.jp/shop/mrs-ni-na",
+          "https://mens-est.jp/shop/Mrsni2na7/",
+          "https://menesth.jp/32/shop/40345/"
+        ]
+      }
     },
     {
       "name": "カロン",
@@ -1155,7 +1432,18 @@
       "officialUrlStatus": "独立ドメイン公式サイトを直接確認済み（電話・営業時間・出勤表示あり）",
       "verifiedAddress": "広島市中区宝町・中区鉄砲町・南区京橋（複数ルーム・第三者媒体掲載）",
       "verifiedHours": "10:00〜LAST（受付9:30〜LAST）",
-      "verifiedPhone": "080-5637-7951"
+      "verifiedPhone": "080-5637-7951",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメイン公式サイトを直接確認。公式サイトに営業時間10:00〜LAST、受付9:30〜LAST、電話080-5637-7951、本日出勤セラピスト表示あり。公式サイトのニュース最終表示は11/10。住所詳細は公式ページ内で確定できず、エステ魂の店舗情報は広島市中区宝町・中区鉄砲町・南区京橋の複数ルームを掲載。第三者媒体でも電話・営業時間・宝町の掲載を照合。11/19の日付付き出勤表ではないため当日出勤確定とはしない。",
+        "sources": [
+          "https://kalon2525.com/",
+          "https://estama.jp/shop/43756/",
+          "https://estama.jp/shop/43756/menu/",
+          "https://menesth.jp/32/shop/48788/"
+        ]
+      }
     },
     {
       "name": "ルル",
@@ -1209,7 +1497,18 @@
       "officialUrlStatus": "エステ魂の店舗掲載ページ。独立公式ドメインは未確認（オレアロの公式サイト欄も同ページ）",
       "verifiedAddress": "広島県広島市中区鶴見町（詳細非公開）",
       "verifiedHours": "9:30〜翌2:00",
-      "verifiedPhone": "090-4148-6747"
+      "verifiedPhone": "090-4148-6747",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "エステ魂の店舗詳細で電話090-4148-6747、広島市中区鶴見町、営業時間9:30〜翌2:00を確認。MEN'S ESの当日検索結果では本日出勤2名・17:00案内可能表示。エステ魂写メNoteに11/17の出勤情報投稿、11月予定表を確認。独立した公式ドメインは確認できず、オレアロ上の公式サイト欄もエステ魂URLを指す。SNSとしてX luluhonopi、Instagram luluhonokaが掲載されるが、店舗独立ドメインとは区別。",
+        "sources": [
+          "https://estama.jp/shop/41479/",
+          "https://estama.jp/shop/41479/bloglist/",
+          "https://mens-es.men/shop/41479",
+          "https://metp.ore-aroma.jp/shop/S-lulu-hiroshima/"
+        ]
+      }
     },
     {
       "name": "ヴェルディ",
@@ -1267,7 +1566,19 @@
         ]
       },
       "officialUrl": "https://verdy-esthe.com/",
-      "officialUrlStatus": "媒体上の公式サイト掲載あり・直接アクセスはタイムアウトのため未確認"
+      "officialUrlStatus": "媒体上の公式サイト掲載あり・直接アクセスはタイムアウトのため未確認",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "current-third-party-cast-listing-and-recent-news-confirmed; independent-official-domain-unreachable; address-and-hours-discrepancy。11/19取得時点のエステ魂セラピスト一覧に本日出勤表示あり。最新ニュースは11/18。verdy-esthe.comは媒体で公式サイトとしてリンクされるが直接アクセスはタイムアウト。独立公式サイトの内容・当日公式発信とは断定しない。",
+        "sources": [
+          "https://estama.jp/shop/28719/cast/",
+          "https://estama.jp/shop/28719/newslist/",
+          "https://ranking-mensesthe.jp/shop/46633/shopdata/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4e5dae74be",
+          "https://verdy-esthe.com/"
+        ]
+      }
     },
     {
       "name": "マシェリ",
@@ -1327,7 +1638,19 @@
         ]
       },
       "verifiedPhone": "080-2912-8317",
-      "officialUrlStatus": "独立公式ドメイン未確認。オレアロ等の媒体内ページに公式サイト表記あり"
+      "officialUrlStatus": "独立公式ドメイン未確認。オレアロ等の媒体内ページに公式サイト表記あり",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "multiple-third-party-listings-and-same-day-roster-indicated; independent-domain-unconfirmed; room-and-hours-discrepancy。11/19取得時点のZUKANに本日の出勤3名を時間付きで表示。エステ魂にも20:10〜21:10の予約状況表示。独立公式ドメインは見つからず、オレアロは媒体ページであり独立公式HPとして扱わない。",
+        "sources": [
+          "https://zukan-esthe.com/store.php?id=2797",
+          "https://ore-aroma.jp/shop/S-macherie-hirosima/areamap",
+          "https://estama.jp/shop/24376/coupon/",
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C4",
+          "https://www.kking.jp/ippan/119340/"
+        ]
+      }
     },
     {
       "name": "アガットテイク",
@@ -1372,7 +1695,17 @@
           "https://menesmall.jp/shop/agate-take/system"
         ]
       },
-      "officialUrlStatus": "独立公式ドメイン未確認。オレアロの「公式」表記は媒体内掲載のため独立公式HPとして登録しない"
+      "officialUrlStatus": "独立公式ドメイン未確認。オレアロの「公式」表記は媒体内掲載のため独立公式HPとして登録しない",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "third-party-listing-and-same-day-cast-indication-confirmed; independent-official-domain-unconfirmed; hours-discrepancy。11/19取得時点のエステ魂セラピスト一覧に小羽のあ 18:30〜22:00の当日出勤表示。エステ魂に電話番号・予約状況表示あり。メンエスmallは住所・電話・営業時間を掲載。独立公式ドメインは確認できず、オレアロ内の「公式」表記は独立ドメイン確認の代替にしない。",
+        "sources": [
+          "https://estama.jp/shop/34497/cast/",
+          "https://menesmall.jp/shop/agate-take/system",
+          "https://ore-aroma.jp/hiroshima/rank-list/%E5%BA%83%E5%B3%B6%E5%B8%82"
+        ]
+      }
     },
     {
       "name": "salon.do.ni-na",
@@ -1407,7 +1740,19 @@
       },
       "verifiedAddress": "広島市中区：富士見町13-17／鶴見町4-10／富士見町4-29／竹屋町8-14／宝町（複数ルーム）",
       "verifiedHours": "公式10:00〜翌3:00（第三者媒体に翌2:00の記載あり）",
-      "verifiedPhone": "070-2368-2727"
+      "verifiedPhone": "070-2368-2727",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "独立ドメインの公式サイトを直接開き、電話070-2368-2727・営業時間10:00〜翌3:00・最新情報（11/12新人掲載）・セラピスト一覧を確認。公式出勤表ページは11/2〜11/8の古い週表示であり11/19の公式出勤表とは扱わない。第三者のメンエスじゃぱん出勤表は2026-11-19の出勤予定20名を掲載。Menes-styleの店舗情報は中区5ルームの住所・電話・10:00〜翌3:00を掲載。別媒体は営業時間翌2:00と異なる。五日市店は公式サイト上で別リンクのため対象レコードに含めない。",
+        "sources": [
+          "https://salon-do-ni-na.com/",
+          "https://salon-do-ni-na.com/schedule.php",
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/salondo",
+          "https://mens-est.jp/shop/salondo27/schedule/",
+          "https://dr.ptr216.ptrcloud.net/shop/ni-na/girl"
+        ]
+      }
     },
     {
       "name": "ディオール",
@@ -1461,6 +1806,17 @@
           "https://estama.jp/shop/34319/",
           "https://ranking-mensesthe.jp/shop/39215/",
           "https://ore-aroma.jp/shop/S-aroma-iris-net/sc"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第1回・既存個別調査記録の一括整理",
+        "status": "third-party-shop-details-confirmed; official-domain-direct-verification-pending; no-same-day-roster-confirmation。エステ魂の店舗詳細は11/17の新着メッセージを表示。11/19のOreAroスケジュール画面は「登録が見つかりませんでした」で、当日出勤は未確認。独立公式ドメインとして掲載されるaroma-iris.netの直接確認は未完了。",
+        "sources": [
+          "https://estama.jp/shop/34319/",
+          "https://ore-aroma.jp/shop/S-aroma-iris-net/sc",
+          "https://ranking-mensesthe.jp/shop/39215/",
+          "https://aroma-iris.net/"
         ]
       }
     },
