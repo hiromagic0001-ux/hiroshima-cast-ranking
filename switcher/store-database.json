@@ -716,8 +716,8 @@
       "name": "REAL",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区東平塚町・昭和町（公式サイト掲載ルーム）",
+      "status": "独立公式サイト・現行店舗情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -729,38 +729,52 @@
         }
       ],
       "officialUrl": "https://rs-real.com/",
-      "officialUrlStatus": "公式サイト表示確認済み（REAL表記・電話番号・複数ルーム情報を照合）",
+      "officialUrlStatus": "独立公式サイトを直接確認",
       "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "real",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "2026-11-19に独立公式サイトを直接確認し、店舗情報を再照合",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-directly-opened",
         "url": "https://rs-real.com/",
-        "address": "広島市中区東平塚町・昭和町（複数ルーム）",
-        "hours": "10:00〜翌5:00（別媒体に11:00〜LAST）",
+        "address": "広島市中区東平塚町／昭和町（ルーム所在地。番地非公開）",
+        "hours": "10:00〜翌5:00",
         "phone": "070-8367-1849",
-        "kind": "independent-official-site-and-current-listing",
+        "status": "独立ドメイン公式サイトを直接確認。公式サイトのトップに本日出勤セラピスト複数名、10:00〜翌5:00、電話070-8367-1849を掲載。アクセスページで東平塚・昭和町の2ルームを確認。第三者地図に別電話070-3784-1840・宝町住所の登録があるが、公式サイト情報と不一致のため採用せず、混同候補として区別。",
         "sources": [
-          "https://menes-style.jp/chugoku_shikoku/hiroshima/reall",
-          "https://mens-est.jp/shop/202010013447/"
-        ],
-        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+          "https://rs-real.com/",
+          "https://rs-real.com/access/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rd65d27ffa5",
+          "https://www.fues.jp/kansai/ranking/hiroshimaken/"
+        ]
       },
-      "verifiedAddress": "広島市中区東平塚町・昭和町（複数ルーム）",
-      "verifiedHours": "10:00〜翌5:00（別媒体に11:00〜LAST）",
+      "verifiedAddress": "広島市中区東平塚町／昭和町（番地は予約時案内）",
+      "verifiedHours": "10:00〜翌5:00",
       "verifiedPhone": "070-8367-1849",
       "duplicateRole": "primary",
       "duplicateCanonicalName": "REAL",
       "aliases": [
         "Relaxation Salon REAL"
-      ]
+      ],
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "independent-official-site-directly-verified",
+        "note": "独立ドメイン公式サイトを直接確認。公式サイトのトップに本日出勤セラピスト複数名、10:00〜翌5:00、電話070-8367-1849を掲載。アクセスページで東平塚・昭和町の2ルームを確認。第三者地図に別電話070-3784-1840・宝町住所の登録があるが、公式サイト情報と不一致のため採用せず、混同候補として区別。",
+        "sources": [
+          "https://rs-real.com/",
+          "https://rs-real.com/access/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rd65d27ffa5",
+          "https://www.fues.jp/kansai/ranking/hiroshimaken/"
+        ]
+      }
     },
     {
       "name": "Mrs.APHRODITE THALASSA",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市南区大須賀町（公式サイト掲載）",
+      "status": "独立公式サイト・営業案内確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -768,30 +782,45 @@
         }
       ],
       "officialUrl": "https://aphrodite-talassa.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "officialUrlStatus": "独立公式サイトを直接確認",
+      "bulkAuditStatus": "2026-11-19に独立公式サイトを直接確認し、店舗情報を再照合",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "official-site-and-current-listing-confirmed",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-directly-opened-and-third-party-crosschecked",
+        "url": "https://aphrodite-talassa.com/",
+        "address": "広島県広島市南区大須賀町（広島駅ルーム）",
+        "hours": "11:00〜翌3:00（受付10:00〜翌3:00）",
+        "phone": "080-9004-2543",
+        "status": "独立ドメイン公式サイトのトップ・アクセスページを確認。広島駅から徒歩5分、南区大須賀町、電話080-9004-2543、営業時間11:00〜翌3:00を掲載。エステ魂・エステナビ等の第三者媒体とも電話・営業時間・エリアを照合。",
         "sources": [
           "https://aphrodite-talassa.com/",
-          "https://estama.jp/shop/51646/"
-        ],
-        "address": "広島県広島市南区大須賀町",
-        "hours": "11:00〜翌3:00",
-        "phone": "080-9004-2543",
-        "note": "独立公式サイトと掲載媒体の店舗詳細を照合。公式サイト案内は2026-09-26広島駅近く開店。"
+          "https://aphrodite-talassa.com/access/",
+          "https://estama.jp/shop/51646/",
+          "https://www.es-navi.com/list/list.php?num=7400&type=i-japan"
+        ]
       },
-      "verifiedAddress": "広島県広島市南区大須賀町",
+      "verifiedAddress": "広島市南区大須賀町（広島駅徒歩5分・番地非公開）",
       "verifiedHours": "11:00〜翌3:00",
-      "verifiedPhone": "080-9004-2543"
+      "verifiedPhone": "080-9004-2543",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "independent-official-site-directly-verified",
+        "note": "独立ドメイン公式サイトのトップ・アクセスページを確認。広島駅から徒歩5分、南区大須賀町、電話080-9004-2543、営業時間11:00〜翌3:00を掲載。エステ魂・エステナビ等の第三者媒体とも電話・営業時間・エリアを照合。",
+        "sources": [
+          "https://aphrodite-talassa.com/",
+          "https://aphrodite-talassa.com/access/",
+          "https://estama.jp/shop/51646/",
+          "https://www.es-navi.com/list/list.php?num=7400&type=i-japan"
+        ]
+      }
     },
     {
       "name": "TISSE",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区橋本町（公式サイト掲載）",
+      "status": "独立公式サイト・最新店舗情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -799,30 +828,41 @@
         }
       ],
       "officialUrl": "https://mens-tisse.com/",
-      "officialUrlStatus": "公式サイト表示確認済み（ミセスTISSE表記・電話番号・広島市中区情報を照合）",
+      "officialUrlStatus": "独立公式サイトを直接確認",
       "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "tisse",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "2026-11-19に独立公式サイトを直接確認し、店舗情報を再照合",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "official-site-and-current-business-listing-confirmed",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-directly-opened-and-current-posts",
+        "url": "https://mens-tisse.com/",
+        "address": "広島市中区橋本町（4ルーム・番地非公開）",
+        "hours": "9:00〜24:00",
+        "phone": "090-1582-0866",
+        "status": "独立ドメイン公式サイトを直接確認。電話・営業時間・橋本町4ルームを掲載。2026-11-17の写メ日記、11-17のイベント情報、11-11の5周年告知と当日出勤表示を確認。第三者メンズエステmallの電話・住所・営業時間とも一致。",
         "sources": [
           "https://mens-tisse.com/",
-          "https://mensesthe-ranking.net/hiroshima/hiroshima/"
-        ],
-        "address": "広島県広島市中区橋本町4-（部屋番号等は予約時案内）",
-        "hours": "9:00〜24:00（公式案内）",
-        "phone": "090-1582-0866",
-        "note": "独立公式サイト、電話、営業時間を確認。地図事業者情報も橋本町で一致。重複グループtisseの別表記候補があるため統合は保留。"
+          "https://dr.ptr216.ptrcloud.net/shop/tisse"
+        ]
       },
-      "verifiedAddress": "広島県広島市中区橋本町4-（部屋番号等は予約時案内）",
-      "verifiedHours": "9:00〜24:00（公式案内）",
+      "verifiedAddress": "広島市中区橋本町（4ルーム・番地非公開）",
+      "verifiedHours": "9:00〜24:00",
       "verifiedPhone": "090-1582-0866",
       "duplicateRole": "primary",
       "duplicateCanonicalName": "TISSE",
       "aliases": [
         "TISSE（ティセ）"
-      ]
+      ],
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "independent-official-site-directly-verified",
+        "note": "独立ドメイン公式サイトを直接確認。電話・営業時間・橋本町4ルームを掲載。2026-11-17の写メ日記、11-17のイベント情報、11-11の5周年告知と当日出勤表示を確認。第三者メンズエステmallの電話・住所・営業時間とも一致。",
+        "sources": [
+          "https://mens-tisse.com/",
+          "https://dr.ptr216.ptrcloud.net/shop/tisse"
+        ]
+      }
     },
     {
       "name": "a doll",
