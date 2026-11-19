@@ -4032,8 +4032,8 @@
       "name": "CREA",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "公式サイトで広島市中区の複数住所を確認。現行ルームの割当は未確定",
+      "status": "独立公式サイト・当日出勤情報確認済み（住所・営業時間の表記差あり）",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -4049,7 +4049,7 @@
         }
       ],
       "officialUrl": "https://creahiroshima.com/",
-      "officialUrlStatus": "独立ドメイン公式サイトへ直接アクセス可能。店舗トップに営業時間・電話・当日の出勤情報を掲載。住所情報はページ内に複数表記があり個別照合待ち。",
+      "officialUrlStatus": "独立公式ドメインに直接アクセスし、電話・当日出勤情報・店舗案内を確認（2026-11-19）。住所表記と営業時間にページ内差異があるため詳細は要照合。",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
@@ -4092,12 +4092,17 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "独立公式サイトhttps://creahiroshima.com/で中区富士見町4、電話070-2353-9000、11:00〜翌5:00、年中無休、ネット予約を確認。",
+        "batch": "50店舗第1回個別確認",
+        "status": "独立公式サイトを直接確認。電話070-2353-9000、当日出勤情報を掲載。公式FAQは11:00〜翌3:00、ページ上部は11:00〜LAST。住所は富士見町4-30と東平塚町3の複数表記のため確定保留。",
         "sources": [
-          "https://creahiroshima.com/contact/"
+          "https://creahiroshima.com/schedule/",
+          "https://creahiroshima.com/"
         ]
-      }
+      },
+      "officialUrlVerifiedAt": "2026-11-19",
+      "verifiedPhone": "070-2353-9000",
+      "verifiedHours": "11:00〜LAST（FAQには翌3:00の記載もあり）",
+      "verifiedAddress": "広島市中区富士見町4-30、東平塚町3（公式サイト内に複数住所表記。利用ルームの個別指定は要確認）"
     },
     {
       "name": "セラフィスパ",
