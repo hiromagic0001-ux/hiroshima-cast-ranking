@@ -9666,6 +9666,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "五十路マダム 広島店の第三者店舗一覧掲載を確認。広島市候補としての媒体掲載であり、系列公式ページの店舗所在地・現行営業は未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -9723,6 +9731,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "秘密楽園の広島市ランキング掲載を確認。掲載順位・掲載状態は第三者媒体の情報であり、独立公式サイトや現行営業の直接確認ではない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -9779,6 +9795,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "やさしい部屋の広島市ランキング掲載を確認。店舗所在地・現行営業の直接確認は未完了。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -9906,6 +9930,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "アロマドールの広島市ランキング掲載を確認。掲載情報のみで独立公式サイト・現行営業は未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -9966,6 +9998,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "絆～きずな～の広島市ランキング掲載を確認。別媒体ではKIZUNA表記もあるため、表記同一性は保留。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -10022,6 +10062,15 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "ミセス48～魔性のオイル編VOL.1～の広島市掲載を確認。別媒体で電話080-5507-9065、広島市中区幟町10-9、10:00〜翌6:00、2026年11月割引掲載を確認。媒体情報であり独立公式サイト未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://www.kking.jp/ippan/225549/"
+          ]
         }
       },
       "batchAudit": {
@@ -10086,6 +10135,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "甘い恋人の広島市ランキング掲載を確認。店舗の現行営業・公式サイトは未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -10150,6 +10207,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "ときめきSPAの広島市ランキング掲載を確認。店舗の現行営業・公式サイトは未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -10214,6 +10279,15 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "蛍（ホタル）の広島市ランキング掲載を確認。別の広島市ランキングでは電話090-7964-3358、10:30〜翌2:00、セラピスト22名の掲載を確認。第三者媒体情報。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/all/facial/"
+          ]
         }
       },
       "batchAudit": {
@@ -10278,6 +10352,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "慕色（ぼしょく）の広島市ランキング掲載を確認。所在地・電話・現行営業は追加確認待ち。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -10342,6 +10424,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "癒しの女神の広島市ランキング掲載を確認。ランキング上位表示・在籍名表示は第三者媒体情報であり、公式サイトの直接確認ではない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -10693,6 +10783,15 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "広島メンズエステクイーンは広島市のランキング・広島市一覧の現行掲載を今回確認できず。表記揺れ・別名の可能性を残し、閉店とは判断しない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "batchAudit": {
@@ -10758,6 +10857,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "楽々の広島市ランキング掲載を確認。独立公式サイト・現行営業の直接確認は未完了。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -10822,6 +10929,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "微妙な関係の広島市ランキング掲載を確認。店舗住所・電話・現行営業は未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -10886,6 +11001,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "会いたいの広島市ランキング掲載を確認。所在地・電話・現行営業の直接確認は未完了。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -10954,6 +11077,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "Private Spa MINTIA（プライベートスパ ミンティア）の広島市ランキング掲載を確認。現行出勤表示あり。ただし公式サイト・営業継続の直接確認は未完了。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -11021,6 +11152,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "Access Hiroshima（アクセス広島）の広島市ランキング掲載を確認。店舗の現行営業・公式サイトは未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -11086,6 +11225,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "E～感じの広島市ランキング掲載を確認。店舗の現行営業・公式サイトは未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -11150,6 +11297,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "エムシェルジュの広島市ランキング掲載を確認。第三者媒体の掲載であり、独立公式サイト・営業継続は未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -11214,6 +11369,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "DEARの広島市ランキング掲載を確認。店舗の現行営業・公式サイトは未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -11281,6 +11444,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "BUZZの広島市ランキング掲載を確認。既存メモの稲荷町駅最寄り情報と併せ、第三者媒体の現行ランキング掲載として記録。住所番地・独立公式サイトは未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -11347,6 +11518,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "小魔女の広島市ランキング掲載を確認。店舗の現行営業・公式サイトは未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -11411,6 +11590,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "秘蜜エステの広島市ランキング掲載を確認。店舗の現行営業・公式サイトは未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -11476,6 +11663,14 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "アロマ姫の広島市ランキング掲載を確認。店舗の現行営業・公式サイトは未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -11530,6 +11725,15 @@
             "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "Roa～Grand～の広島市ランキング掲載を確認。別の広島市店舗一覧にもRoa～Grand～表記あり。既存メモの中区掲載情報を維持し、営業継続は未確認。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "verifiedAddress": "広島県広島市中区・稲荷町駅周辺",
@@ -11599,6 +11803,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "LILYの広島市店舗一覧掲載を確認。既存メモの中区三川町・電話・営業時間情報は第三者媒体情報として維持し、独立公式サイトは未確認。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "batchAudit": {
@@ -11796,6 +12008,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "ピンクパンサーの広島市掲載を確認。エステ魂の店舗ページで広島市掲載、営業時間10:00〜翌2:00、銀山町駅最寄り、電話070-9181-8730を確認。第三者媒体情報。",
+          "sources": [
+            "https://estama.jp/shop/51253/menu/"
+          ]
         }
       },
       "batchAudit": {
@@ -11924,6 +12144,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "ラベンダーの広島市店舗一覧掲載を確認。住所・電話・独立公式サイト・現行営業は未確認。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "batchAudit": {
@@ -12119,6 +12347,15 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "アイビースパはIVY SPAと同じ公式ドメインivyspa.jpを使う候補として既存の重複疑いを維持。公式サイトに出張専門案内あり。別レコードの同一性確証はなく統合しない。",
+          "sources": [
+            "https://ivyspa.jp/",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "batchAudit": {
@@ -12254,6 +12491,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "天使のエプロンのエステ魂店舗ページで広島市掲載、電話080-9130-7433、営業時間10:00〜翌3:00、公式HP kawaii-apron.com、店舗説明・予約受付情報を確認。取得ページの更新時期は古いため最新営業は未確認。",
+          "sources": [
+            "https://estama.jp/shop/47576/"
+          ]
         }
       },
       "batchAudit": {
@@ -12323,6 +12568,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "煌き-KIRAMEKI-は今回の現行広島市ランキング・一覧で確実な同一店掲載を確認できず。表記揺れの可能性を残し、閉店・不存在とは判断しない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -12388,6 +12641,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "フルフル☆60分10000円☆は今回の現行広島市ランキング・一覧で確実な同一店掲載を確認できず。旧媒体候補として保持し、閉店とは判断しない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "batchAudit": {
@@ -12453,6 +12714,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "ぽっちゃりmateマシュマロは今回の現行広島市ランキング・一覧で確実な同一店掲載を確認できず。類似名称の別店舗と混同せず、未確認のまま保持。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "batchAudit": {
@@ -12522,6 +12791,15 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "spa R（スパアール）は公式URL候補mensspa-r.comを保持。今回の広島市現行ランキングでは名称の直接掲載を確認できず、公式サイトの現行稼働・所在地を追加確認待ち。",
+          "sources": [
+            "https://mensspa-r.com/",
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          ]
         }
       },
       "duplicateRole": "primary",
@@ -12600,6 +12878,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "エイミー（ämmy）は広島市店舗一覧でエイミーとして掲載を確認。別一覧では営業時間10:00〜翌2:00の掲載あり。住所・電話・独立公式サイトは未確認。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "batchAudit": {
@@ -12664,6 +12950,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "アルカンジュは広島市店舗一覧でアルカンジュ／Archange表記を確認。別一覧では営業時間10:00〜LASTの掲載あり。表記同一性と公式情報は未確認。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "batchAudit": {
@@ -12728,6 +13022,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "Rabbidsは広島市店舗一覧で掲載を確認。所在地・電話・独立公式サイト・現行営業は未確認。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "batchAudit": {
@@ -12792,6 +13094,14 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "掲載ページは広島市カテゴリの店舗一覧。掲載自体は店舗への直接確認・現営業・正確な所在地・独立公式サイトの証明ではない。既存の個別確認結果を優先し、未確認項目は未確認のまま保持。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "奥様Ｙシャツ倶楽部は広島市店舗一覧で掲載を確認。所在地・電話・独立公式サイト・現行営業は未確認。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
         }
       },
       "batchAudit": {
@@ -12858,6 +13168,15 @@
             "https://menesu-select.com/hiroshima/hiroshima/"
           ],
           "note": "今回取得できたページ表示・検索抜粋の範囲で一致を確認できなかった。別表記・掲載階層・業種違い・表示範囲外の可能性があり、閉店・不存在・市外とは判定しない。"
+        },
+        "thirdPartyListingCrossCheck20261119Batch151to200": {
+          "checkedAt": "2026-11-19",
+          "sourceType": "third-party directory/current listing",
+          "note": "リバーナルは広島市店舗一覧でリバーナル／Rebernal表記を確認。別の広島市一覧にもRebernal掲載あり。名称表記を照合メモに残し、現行営業の直接確認は未完了。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/",
+            "https://ultimate-map.com/yoru/mensaesthe/prefs.php?lang=en&p=34"
+          ]
         }
       },
       "batchAudit": {
@@ -19442,7 +19761,7 @@
     "individualAuditRecords": 278,
     "batchAuditedRecords": 271,
     "batchAuditRuns": 19,
-    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。 2026-11-19に1〜50番の第3段階所在地・掲載情報クロスチェックを追加。確認できた電話・所在地・複数ルーム・営業時間差のみ記録し、未確認候補は保留。 2026-11-19に51〜100番の第3段階媒体横断・業種確認を追加。掲載一致は媒体掲載確認に限定し、現営業・独立公式サイト・正確な所在地の確証とは区別。95〜100番の業種混在を保持し、278候補を維持。 2026-11-19に101〜150番の第3段階業種・広島市範囲・掲載クロスチェックを追加。広島県/広島エリア掲載と広島市明記を区別し、業種混在と同一性未確定を保持。掲載一致は現営業・独立公式サイト・正確な所在地の証明とは扱わず、未一致を閉店と断定しない。 2026-11-19に251〜278番の第3段階現行媒体一覧クロスチェックを追加。名称掲載と店舗同定・現営業・独立公式サイト・正確な所在地の確証を区別し、未一致候補も保持。 2026-11-19最終点検で、全278レコードのstatus集計を現行レコードから再計算し、集計欄の古い値を更新。個別レコードの事業情報・重複判定・店舗件数は変更なし。 2026-11-19に1〜50番のうち未確定15候補を追加検索。10候補で第三者媒体の掲載・更新情報を照合、5候補は今回の検索で確実な一致を得られず保留。媒体掲載は独立公式サイト・現営業の直接確認とは区別。全278候補を保持。 2026-11-19に51〜100番の未確定候補を優先して追加検索。Grace Spa、KING'S、Dior観音店、Aroma Mia、Celeste、Seraphi Spa、heaven、ばななすぱっ！の8候補について第三者媒体または市内現行一覧の掲載を追加確認。媒体情報と独立公式サイト・現営業の直接確認を区別し、278候補を保持。 2026-11-19に101〜150番を第三者媒体横断照合し、31候補に媒体掲載情報を追記。市外候補・類似名称は区別し、未確認事項を保持。"
+    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。 2026-11-19に1〜50番の第3段階所在地・掲載情報クロスチェックを追加。確認できた電話・所在地・複数ルーム・営業時間差のみ記録し、未確認候補は保留。 2026-11-19に51〜100番の第3段階媒体横断・業種確認を追加。掲載一致は媒体掲載確認に限定し、現営業・独立公式サイト・正確な所在地の確証とは区別。95〜100番の業種混在を保持し、278候補を維持。 2026-11-19に101〜150番の第3段階業種・広島市範囲・掲載クロスチェックを追加。広島県/広島エリア掲載と広島市明記を区別し、業種混在と同一性未確定を保持。掲載一致は現営業・独立公式サイト・正確な所在地の証明とは扱わず、未一致を閉店と断定しない。 2026-11-19に251〜278番の第3段階現行媒体一覧クロスチェックを追加。名称掲載と店舗同定・現営業・独立公式サイト・正確な所在地の確証を区別し、未一致候補も保持。 2026-11-19最終点検で、全278レコードのstatus集計を現行レコードから再計算し、集計欄の古い値を更新。個別レコードの事業情報・重複判定・店舗件数は変更なし。 2026-11-19に1〜50番のうち未確定15候補を追加検索。10候補で第三者媒体の掲載・更新情報を照合、5候補は今回の検索で確実な一致を得られず保留。媒体掲載は独立公式サイト・現営業の直接確認とは区別。全278候補を保持。 2026-11-19に51〜100番の未確定候補を優先して追加検索。Grace Spa、KING'S、Dior観音店、Aroma Mia、Celeste、Seraphi Spa、heaven、ばななすぱっ！の8候補について第三者媒体または市内現行一覧の掲載を追加確認。媒体情報と独立公式サイト・現営業の直接確認を区別し、278候補を保持。 2026-11-19に101〜150番を第三者媒体横断照合し、31候補に媒体掲載情報を追記。市外候補・類似名称は区別し、未確認事項を保持。 2026-11-19に151〜200番を第三者媒体横断照合し、39候補の掲載情報・未確認状況を個別メモに追加。公式サイト直接確認と媒体掲載を区別し、重複疑い・名称差異は統合せず278件保持。"
   },
   "duplicateAuditSummary": {
     "checkedAt": "2026-11-19",
@@ -19562,6 +19881,66 @@
         "https://nsnn.jp/hiroshima-health/",
         "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
         "https://web1-mall.menesmall.jp/hiroshima"
+      ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 150,
+      "endIndex": 199,
+      "count": 50,
+      "scope": "151〜200番の第三者媒体横断照合",
+      "recordsUpdated": [
+        151,
+        152,
+        153,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        184,
+        186,
+        189,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "note": "50候補を現行広島市ランキング・店舗一覧・個別媒体で照合し、39候補に掲載確認または未確認の検索結果を記録。掲載情報と公式サイト・現行営業の直接確認を区別し、曖昧な名称は統合せず保持。全278レコード維持。",
+      "sources": [
+        "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+        "https://menesu-select.com/hiroshima/hiroshima/",
+        "https://ultimate-map.com/yoru/mensaesthe/prefs.php?lang=en&p=34",
+        "https://www.kking.jp/ippan/225549/",
+        "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/all/facial/",
+        "https://estama.jp/shop/51253/menu/",
+        "https://estama.jp/shop/47576/",
+        "https://ivyspa.jp/",
+        "https://mensspa-r.com/"
       ]
     }
   ]
