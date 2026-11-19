@@ -183,7 +183,7 @@ main{max-width:900px;margin:auto;padding:14px}
   function normalizeStoreName(value) {
     return String(value || "").normalize("NFKC").toLowerCase()
       .replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60))
-      .replace(/[\\s・･.,，、。_‐‑‒–—―ーｰ()（）［］【】「」『』]/g, "");
+      .replace(/[\s・･.,，、。_‐‑‒–—―ーｰ()（）［］【】「」『』]/g, "");
   }
   async function renderMasterReconciliation(state, panel) {
     try {
