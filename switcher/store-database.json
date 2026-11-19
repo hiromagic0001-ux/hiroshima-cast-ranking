@@ -4898,8 +4898,8 @@
       "name": "ヨアソビ広島",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "公式サイト特商法表記で中区宝町6-8を確認。外部事業者情報は昭和町4-20と異なるため住所差異を記録",
+      "status": "独立公式サイト・電話・住所・営業時間・最新出勤予定を確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -4919,34 +4919,32 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "YOASOBI広島"
+        "checkedAt": "2026-11-19",
+        "status": "独立公式サイトと複数媒体で店舗情報一致。住所に外部事業者との表記差あり",
+        "result": "公式サイトを直接確認。特商法表記は中区宝町6-8、電話080-2053-6313。営業時間10:00〜翌5:00、受付10:00〜翌6:00。11/16のニュースと11/19出勤スケジュールを確認。メンズリラクは中区宝町・電話・営業時間が一致。Google事業者情報は昭和町4-20と異なるため住所差異を注記し、公式の特商法表記を優先。",
+        "sources": [
+          "https://yoasobi-hiroshima.com/",
+          "https://yoasobi-hiroshima.com/schedule.html",
+          "https://yoasobi-hiroshima.com/system.html",
+          "https://menesth.jp/32/shop/48968/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "今回の検索で同名の広島市メンズエステとして確実な店舗詳細を特定できず。電話・住所・営業時間・公式サイトは未確認。別業種・類似名と混同せず候補保留。",
+        "batch": "未確定候補の追加精査",
+        "status": "独立公式サイトで中区宝町6-8、電話080-2053-6313、10:00〜翌5:00、11/19出勤情報を確認。外部事業者情報の昭和町4-20とは住所表記に差があるため公式特商法表記を採用し差異を保持。",
         "sources": [
-          "https://menesu-select.com/hiroshima/hiroshima/",
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
+          "https://yoasobi-hiroshima.com/system.html",
+          "https://yoasobi-hiroshima.com/schedule.html",
+          "https://menesth.jp/32/shop/48968/"
         ]
-      }
+      },
+      "nameAlias": "YOASOBI広島",
+      "officialUrl": "https://yoasobi-hiroshima.com/",
+      "officialUrlStatus": "独立公式サイトを直接確認。2026-11-16更新ニュース、11/19出勤予定、アクセス・特商法表記を確認",
+      "verifiedAddress": "広島県広島市中区宝町6-8（公式特商法表記）",
+      "verifiedPhone": "080-2053-6313",
+      "verifiedHours": "10:00〜翌5:00（受付10:00〜翌6:00）"
     },
     {
       "name": "QUEEN",
@@ -11923,8 +11921,8 @@
       "name": "SPA-DOLCE",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "エステ魂の利用案内で中区吉島西1丁目28-12、舟入南駅最寄りを確認",
+      "status": "エステ魂個別店舗・利用案内で住所・電話・営業時間を確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "風俗マップ・広島市メンズエステ37店",
@@ -11944,9 +11942,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市を対象とする現行媒体一覧の掲載名と照合一致。これは媒体掲載の確認であり、現在営業中・当日受付・住所/電話/営業時間・公式サイトの真正性を独立確認したものではない。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "checkedAt": "2026-11-19",
+        "result": "エステ魂の店舗利用案内で中区吉島西1丁目28-12、舟入南駅、電話090-6385-5485を確認。営業時間12:00〜24:00はエステ番長の個別店舗掲載と照合。現行営業・当日受付は別途確認が必要。",
+        "status": "個別店舗・利用案内で広島市中区住所・電話・営業時間を確認。独立公式サイト未確認",
         "evidence": [
           {
             "source": "広島県メンズエステマップ（広島市37店の一覧）",
@@ -11967,16 +11965,24 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "sources": [
+          "https://estama.jp/shop/38683/flow/",
+          "https://es-ban.com/p/5597/shoplist?type=5789"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市一覧に掲載。12:00〜翌0:00の媒体情報。住所・電話・独立公式サイトは未確認。",
+        "batch": "未確定候補の追加精査",
+        "status": "中区吉島西1丁目28-12、電話090-6385-5485をエステ魂で確認。営業時間12:00〜24:00はエステ番長掲載。独立公式サイトは未確認。",
         "sources": [
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+          "https://estama.jp/shop/38683/flow/",
+          "https://es-ban.com/p/5597/shoplist?type=5789"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区吉島西1丁目28-12",
+      "verifiedPhone": "090-6385-5485",
+      "verifiedHours": "12:00〜24:00"
     },
     {
       "name": "SPA商事-秘書室-",
@@ -15336,7 +15342,7 @@
       "category": "men-esthe",
       "area": "広島市中区鶴見町",
       "areaStatus": "複数媒体の掲載住所情報・営業状況未確認",
-      "status": "広島市中区鶴見町7・営業時間の媒体掲載を確認。電話は別店舗と一致するため未確定",
+      "status": "中区鶴見町7・営業時間を複数媒体で確認。電話番号が媒体間で不一致のため未確定",
       "sources": [
         {
           "label": "広島メンエス求人ガイド 店舗情報",
@@ -15365,9 +15371,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "今回取得した広島市対象の主要媒体一覧では確実な名称一致を確認できず。表記違い・掲載終了・媒体未掲載の可能性があり、閉店・不存在とは判定しない。",
-        "status": "今回の取得一覧内で一致未確証",
+        "checkedAt": "2026-11-19",
+        "result": "エステ番長求人ページは070-1482-6332、求人専門サイトとUltimate Mapは070-1482-6361を掲載。住所は中区鶴見町7、営業時間10:00〜翌5:00で一致。電話はCRADLEの確定番号として登録しない。独立公式サイトは未確認。",
+        "status": "住所・営業時間は複数媒体一致。電話番号に不一致あり未確定",
         "evidence": [
           {
             "source": "メンズエステマップ広島県（広島市37店）",
@@ -15380,19 +15386,26 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "sources": [
+          "https://esjob.jp/etc/hiroshima/a3401/p8/",
+          "https://hiroshima-menes-recruit.com/store/store-046/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4705ae08fd&lang=en"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "最終回・251〜278番28候補の再照合",
-        "status": "中区鶴見町7、10:00〜翌5:00の媒体掲載を確認。掲載電話070-1482-6361はミセスママ広島の電話と一致するため、CRADLEの電話として登録しない。",
+        "batch": "未確定候補の追加精査",
+        "status": "中区鶴見町7・10:00〜翌5:00は複数媒体で一致。電話は070-1482-6332と070-1482-6361の2種類が掲載され、未確定として保持。",
         "sources": [
-          "https://menesu-select.com/hiroshima/hiroshima/",
-          "https://mens-es.men/area/3401"
+          "https://esjob.jp/etc/hiroshima/a3401/p8/",
+          "https://hiroshima-menes-recruit.com/store/store-046/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4705ae08fd&lang=en"
         ]
       },
-      "verifiedAddress": "広島県広島市中区鶴見町7（番地以降未確認）",
-      "verifiedHours": "10:00〜翌5:00"
+      "verifiedAddress": "広島県広島市中区鶴見町7",
+      "verifiedHours": "10:00〜翌5:00",
+      "verifiedPhone": null
     }
   ],
   "sources": [
