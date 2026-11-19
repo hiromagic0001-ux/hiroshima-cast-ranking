@@ -1385,8 +1385,8 @@
       "name": "ディオール",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市西区観音本町（Dior観音店の媒体掲載住所。広島市中区候補とは区が異なるため市内範囲を要確認）",
+      "status": "第三者媒体で店舗情報確認・独立公式サイトの直接確認未完了・11月19日当日出勤未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1406,20 +1406,34 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          }
+        "checkedAt": "2026-11-19",
+        "status": "third-party-shop-details-confirmed; official-domain-direct-verification-pending; no-same-day-roster-confirmation",
+        "sources": [
+          "https://estama.jp/shop/34319/",
+          "https://ore-aroma.jp/shop/S-aroma-iris-net/sc",
+          "https://ranking-mensesthe.jp/shop/39215/",
+          "https://aroma-iris.net/"
         ],
-        "status": "個別照合実施・一致未確証",
-        "nameAlias": null
+        "address": "エステ魂に広島市西区観音本町1丁目4-7 BM-12ビル。観音店と五日市店の複数ルーム案内あり。市内候補だが広島市中区ではないため、広島市内限定アプリの収録範囲を要確認。",
+        "hours": "エステ魂・ランキング媒体とも11:00〜翌2:00。",
+        "phone": "090-5818-3970",
+        "note": "エステ魂の店舗詳細は11/17の新着メッセージを表示。11/19のOreAroスケジュール画面は「登録が見つかりませんでした」で、当日出勤は未確認。独立公式ドメインとして掲載されるaroma-iris.netの直接確認は未完了。"
+      },
+      "verifiedPhone": "090-5818-3970",
+      "verifiedAddress": "広島県広島市西区観音本町1丁目4-7 BM-12ビル（第三者媒体掲載）",
+      "verifiedHours": "11:00〜翌2:00",
+      "officialUrl": "https://aroma-iris.net/",
+      "officialUrlStatus": "第三者媒体に公式HPとして掲載・独立ドメインの直接内容確認は未完了",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "third-party shop details cross-checked; independent domain not directly verified",
+        "note": "電話・住所・営業時間は複数媒体で一致。店舗住所は西区で、広島市中区限定の対象範囲から外れる可能性あり。11/19出勤は未確認。",
+        "sources": [
+          "https://estama.jp/shop/34319/",
+          "https://ranking-mensesthe.jp/shop/39215/",
+          "https://ore-aroma.jp/shop/S-aroma-iris-net/sc"
+        ]
       }
     },
     {
