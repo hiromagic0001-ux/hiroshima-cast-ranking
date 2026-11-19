@@ -1493,7 +1493,16 @@
         "note": "電話・営業時間は複数媒体で一致。宝町ROOMとフジグラン広島徒歩1分は媒体掲載。部屋の詳細は予約後案内。"
       },
       "officialUrl": null,
-      "officialUrlStatus": "独立公式サイト未確認。エステ魂・メンズエステマップ等の媒体ページのみ確認"
+      "officialUrlStatus": "独立公式サイト未確認。エステ魂・メンズエステマップ等の媒体ページのみ確認",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "媒体掲載の再確認。電話070-8499-1534、10:00〜LAST、広島市・市役所前駅周辺。部屋詳細は予約後案内。独立公式ドメイン未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=raf3fba35d7",
+          "https://ore-aroma.jp/hiroshima/rank-list/広島市"
+        ]
+      }
     },
     {
       "name": "モアスパ",
@@ -1546,6 +1555,15 @@
           "https://ore-aroma.jp/hiroshima/rank-list/広島市"
         ],
         "note": "市役所前駅周辺の広島市内店舗として媒体複数で一致。電話080-4268-1551、営業時間10:00〜翌4:00。住所番地と当日出勤は未確認。"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "広島市・市役所前駅最寄りの媒体掲載、電話080-4268-1551を確認。営業時間10:00〜翌4:00は第三者媒体記載。番地・独立公式サイト・当日出勤は未確認。",
+        "sources": [
+          "https://ore-aroma.jp/hiroshima/rank-list/広島市役所前駅",
+          "https://estama.jp/shop/49246/"
+        ]
       }
     },
     {
@@ -1606,6 +1624,15 @@
           "https://web2-mall.menesmall.jp/shop/travisqueen/flow",
           "https://estama.jp/shop/42837/",
           "https://www.esthe-ranking.jp/hiroshima/shop-detail/4dfd74c8-8ff7-4537-b741-7fa83df51900/"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "Travis Queenとして第三者媒体掲載を再確認。電話090-1093-1100。営業時間9:00〜LASTと翌6:00の媒体差あり。独立公式ドメインは直接確認できず。",
+        "sources": [
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C3",
+          "https://estama.jp/shop/42837/"
         ]
       }
     },
@@ -1671,7 +1698,16 @@
         "note": "舟入幸町駅周辺、9:00〜翌4:00は複数媒体で一致。本日出勤14名表示。ただし070-5056-0272はおとなすぱっ！にも掲載され、電話帰属に疑義。独立公式HPと番地は未確認。"
       },
       "officialUrl": null,
-      "officialUrlStatus": "独立公式ドメイン未確認。エステ魂・メンエスパーク・エステ番長の媒体掲載を確認"
+      "officialUrlStatus": "独立公式ドメイン未確認。エステ魂・メンエスパーク・エステ番長の媒体掲載を確認",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "舟入幸町駅周辺の広島市内掲載、9:00〜翌4:00、電話070-5056-0272を確認。別店舗にも同番号掲載のため電話帰属は未確定。メンエスパークは本日出勤14名表示。",
+        "sources": [
+          "https://estama.jp/shop/44130/cast/745751/",
+          "https://menespark.com/hiroshima/hiroshima/"
+        ]
+      }
     },
     {
       "name": "スタンダード",
@@ -1729,7 +1765,16 @@
         "note": "電話070-9513-0369、営業時間10:00〜26:00は一致。勤務地は宝町・鶴見・大手町、番地・部屋住所と当日出勤は未確認。独立公式サイト未確認。"
       },
       "officialUrl": null,
-      "officialUrlStatus": "独立公式ドメイン未確認。エステ魂店舗詳細と求人ページを確認"
+      "officialUrlStatus": "独立公式ドメイン未確認。エステ魂店舗詳細と求人ページを確認",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "求人・店舗媒体で電話070-9513-0369、営業時間10:00〜26:00、勤務地宝町・鶴見・大手町を確認。独立公式ドメインと当日出勤は未確認。",
+        "sources": [
+          "https://esjob.jp/shop/50597/",
+          "https://estama.jp/shop/50597/"
+        ]
+      }
     },
     {
       "name": "B and B",
@@ -1782,7 +1827,16 @@
         "note": "電話番号は求人媒体・店舗情報媒体で一致。広島市中区・比治山橋駅徒歩3分圏内の掲載。2026-11-19のランキング表示で本日出勤3名、エステ魂のキャスト一覧にも当日時間表示あり。部屋住所は予約後案内。営業時間は媒体間で11:00〜LASTと10:00〜翌5:00の差異があるため確定扱いしない。"
       },
       "verifiedAddress": "広島県広島市中区・比治山橋駅徒歩3分圏内（部屋詳細は予約後案内）",
-      "verifiedHours": "11:00〜LAST（別媒体に10:00〜翌5:00の差異あり）"
+      "verifiedHours": "11:00〜LAST（別媒体に10:00〜翌5:00の差異あり）",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "広島市中区・比治山橋駅徒歩圏の媒体掲載、電話090-5460-1201を確認。営業時間11:00〜LASTと10:00〜翌5:00の差あり。11/19媒体表示で本日出勤3名。公式候補ドメインは直接確認不可。",
+        "sources": [
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r85ccd69f0c"
+        ]
+      }
     },
     {
       "name": "ふわもこSPA",
@@ -1816,7 +1870,15 @@
       },
       "verifiedAddress": "広島市中区富士見町4-30（公式サイト・掲載媒体情報）",
       "verifiedHours": "11:00〜LAST（公式FAQでは翌5:00までの案内あり）",
-      "verifiedPhone": "090-9307-1323"
+      "verifiedPhone": "090-9307-1323",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "独立公式サイトのアクセスページで中区富士見町4-30、電話090-9307-1323、11:00開始を確認。公式FAQは翌5:00まで。",
+        "sources": [
+          "https://fuwamoko-spa.com/access/"
+        ]
+      }
     },
     {
       "name": "Alive",
@@ -1849,6 +1911,15 @@
         "sources": [
           "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
           "https://menespark.com/hiroshima/hiroshima/"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "同名候補の識別を再確認。エステ魂掲載のHealing Salon Aliveは広島市、11:00〜23:00・予約制の媒体情報。別ディレクトリは広島駅周辺10:30〜22:00で営業時間差あり。電話はプレースホルダー表記、独立公式サイト未確認。福山市のALIVEは別店舗・市外のため混同除外。",
+        "sources": [
+          "https://estama.jp/shop/40767/",
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C3"
         ]
       }
     },
@@ -1895,6 +1966,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "Suu 〜透けて見える世界〜はエステ魂で広島市・出張専門、電話070-8475-8884、営業時間13:00〜翌6:00、年中無休と掲載。独立公式ドメイン未確認。別の脱毛サロン「スゥ(Suu)」は女性向け脱毛店で同一店舗ではない。",
+        "sources": [
+          "https://estama.jp/shop/46486/flow/",
+          "https://beauty.hotpepper.jp/kr/slnH000826213/"
+        ]
       }
     },
     {
@@ -1931,7 +2011,15 @@
       },
       "verifiedAddress": "広島県広島市内8エリア（部屋住所は予約時案内）",
       "verifiedHours": "10:00〜翌2:00",
-      "verifiedPhone": "090-8517-0792"
+      "verifiedPhone": "090-8517-0792",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "独立公式サイトで広島市内8エリア、電話090-8517-0792、営業時間10:00〜翌2:00を再確認。個別ルーム住所は予約時案内。",
+        "sources": [
+          "https://yurikago-hiroshima.jp/"
+        ]
+      }
     },
     {
       "name": "おもてなし 広島",
@@ -1976,6 +2064,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "エステ魂で「パート妻のプライベートサロン」広島市・舟入幸町駅、9:00〜翌4:00を確認。別ページで電話070-5672-2880。独立公式サイト・番地住所は未確認。",
+        "sources": [
+          "https://estama.jp/shop/44273/cast/942174/",
+          "https://estama.jp/shop/44273/cast/762238/"
+        ]
       }
     },
     {
@@ -2029,6 +2126,15 @@
         "sources": [
           "https://aromafreyja.com/",
           "https://estama.jp/shop/25606/",
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/aroma-massage/"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "独立公式ドメインを確認。電話080-9797-6280、公式営業時間11:00〜翌1:00（最終受付23:30）。公式住所は昭和町5、第三者媒体は鶴見町7で住所差あり。",
+        "sources": [
+          "https://aromafreyja.com/",
           "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/aroma-massage/"
         ]
       }
@@ -2088,6 +2194,16 @@
           "https://ore-aroma.jp/shop/S-7dream-este-net/areamap",
           "https://estama.jp/shop/28467/schedule/"
         ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "独立公式サイトの11/19出勤表、電話090-1356-6132、営業時間10:00〜翌5:00（受付9:00〜翌3:00）を確認。第三者媒体と部屋住所・出勤人数に差あり。",
+        "sources": [
+          "https://7dream-este.net/schedule/",
+          "https://7dream-este.net/contact/",
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/"
+        ]
       }
     },
     {
@@ -2141,7 +2257,17 @@
       },
       "verifiedAddress": "広島県広島市西区大宮1丁目（店舗ページ記載）",
       "verifiedHours": "9:30〜25:00（受付9:00〜25:00）",
-      "verifiedPhone": "070-4221-3357 / 080-8244-3848"
+      "verifiedPhone": "070-4221-3357 / 080-8244-3848",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "エステ魂の店舗管理サブドメインで店舗専用ページ、住所（広島市西区大宮1丁目）、営業時間9:30〜25:00、電話070-4221-3357/080-8244-3848、11/9ニュース・出勤欄を確認。独立ドメインではない。",
+        "sources": [
+          "https://30588.b6.estama.jp/",
+          "https://30588.b6.estama.jp/access/",
+          "https://30588.b6.estama.jp/therapist/"
+        ]
+      }
     },
     {
       "name": "Luxurysalon ROMA",
@@ -2181,6 +2307,15 @@
           }
         ],
         "status": "新規掲載・本日出勤掲載確認"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "Luxurysalon ROMAの広島市内求人掲載を再確認。電話090-4690-6000、求人媒体営業時間09:00〜翌05:00。別ランキングは10:00〜翌03:00と差あり。中区大手町ルームの記載あり。独立公式URLは確認できず。",
+        "sources": [
+          "https://haji-s.com/chugokushikoku/shop/15358",
+          "https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=shop&sort=staff"
+        ]
       }
     },
     {
@@ -2226,6 +2361,15 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "エステ魂の店舗・セラピスト掲載で広島市、舟入幸町駅、9:00〜翌4:00を確認。電話070-5672-2880はセラピストページで確認。独立公式サイト・番地住所は未確認。",
+        "sources": [
+          "https://estama.jp/shop/44273/cast/762238/",
+          "https://estama.jp/shop/44273/cast/942174/"
+        ]
       }
     },
     {
@@ -2255,7 +2399,16 @@
       },
       "verifiedAddress": "広島県広島市中区鶴見町13-19",
       "verifiedHours": "10:00〜翌2:00",
-      "verifiedPhone": "090-7373-9222"
+      "verifiedPhone": "090-7373-9222",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "Grace Spaの第三者店舗詳細で中区鶴見町13-19、10:00〜翌2:00、電話090-7373-9222を確認。独立公式HPの実URL・直接アクセスは未確認。",
+        "sources": [
+          "https://menesmall.jp/shop/grace-spa",
+          "https://ore-aroma.jp/hiroshima/rank-list/広島市"
+        ]
+      }
     },
     {
       "name": "Palma～女神の手～",
@@ -2287,7 +2440,17 @@
       },
       "verifiedAddress": "広島市中区（詳細住所は予約時案内）",
       "verifiedHours": "10:00〜翌2:30",
-      "verifiedPhone": "070-1068-7357"
+      "verifiedPhone": "070-1068-7357",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "Palma〜女神の手〜の媒体掲載で中区、電話070-1068-7357、10:00〜翌2:30（最終受付翌2:30前後の表示差あり）を再確認。独立公式サイトURLは既存登録。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rbdfb3aeca7",
+          "https://web1-mall.menesmall.jp/shop/palma/girl/62288",
+          "https://hiroshima-palma.com/"
+        ]
+      }
     },
     {
       "name": "キング",
@@ -2332,6 +2495,14 @@
         ],
         "status": "媒体掲載一致・営業詳細未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "「キング」単独名の広島市内メンズエステとして同一店舗を特定できる新しい一次情報は確認できず。KING'S等の類似名と混同せず、電話・住所・営業時間・公式URLは未確認のまま維持。",
+        "sources": [
+          "https://menesu-select.com/hiroshima/hiroshima/"
+        ]
       }
     },
     {
@@ -2372,6 +2543,14 @@
           }
         ],
         "status": "本日出勤掲載確認・詳細項目未確認"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて再確認",
+        "status": "エステ魂でSeraphi Spa（セラフィ スパ）の広島市掲載、10:00〜翌6:00、電話070-5051-6726、当日受付可能表示とセラピスト一覧を確認。独立公式サイト・詳細住所は未確認。",
+        "sources": [
+          "https://estama.jp/shop/43583/cast/"
+        ]
       }
     },
     {
@@ -13229,5 +13408,15 @@
       ],
       "notes": "第三者媒体の店舗詳細を照合。電話番号の店舗帰属に矛盾がある場合は未確証として注記。独立公式サイトが直接確認できないURLは公式URLへ登録しない。"
     }
-  }
+  },
+  "batchAudits": [
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 35,
+      "endIndex": 54,
+      "count": 20,
+      "scope": "広島市内メンズエステ候補20店舗",
+      "note": "個別情報は公式情報・第三者媒体情報・未確認を区別。店舗同定できない候補や市外同名店舗は混同せず保留。"
+    }
+  ]
 }
