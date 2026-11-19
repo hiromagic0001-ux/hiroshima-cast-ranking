@@ -303,7 +303,7 @@ const server = http.createServer(async (req, res) => {
           });
           const mainCount = groupRanks["通常店舗"];
           const asianCount = groupRanks["アジアン店舗"];
-          const publishedCountMatch = bodyText.match(/広島市のメンズエステ掲載店\\s*([0-9,]+)\\s*件/);
+          const publishedCountMatch = bodyText.match(/広島市のメンズエステ掲載店\s*([0-9,]+)\s*件/);
           const publishedStoreCount = publishedCountMatch
             ? Number(publishedCountMatch[1].replace(/,/g, ""))
             : null;
