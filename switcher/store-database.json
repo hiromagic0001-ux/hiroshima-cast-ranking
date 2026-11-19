@@ -577,34 +577,39 @@
       "name": "スパバーニーズ",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区土橋町（媒体掲載住所・番地非公開）",
+      "status": "媒体掲載確認済み・独立公式サイト未確認",
       "sources": [
         {
-          "label": "メンズエステセレクト（既存収録）",
-          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          "label": "エステ魂 店舗詳細（掲載ページ・独立公式サイトではない）",
+          "url": "https://estama.jp/shop/41985/"
+        },
+        {
+          "label": "メンズエステ求人（店舗掲載・HPリンク先確認）",
+          "url": "https://men-esthe-job.men-esthe.mixh.jp/area.php?id=112&p=3"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkAuditStatus": "店舗詳細ページを個別確認済み。独立公式サイト・現況は未確認",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "listing-only-not-individually-confirmed",
+        "checkedAt": "2026-11-19",
+        "status": "listing-detail-verified-independent-site-unconfirmed",
         "sources": [
-          "https://menesu-select.com/hiroshima/hiroshima/",
-          "https://menesu-select.com/hiroshima/hiroshima/"
+          "https://estama.jp/shop/41985/",
+          "https://men-esthe-job.men-esthe.mixh.jp/area.php?id=112&p=3"
         ],
-        "note": "広島市の媒体一覧掲載は確認。個別店舗詳細、住所、電話、公式サイトは確証なし。",
-        "address": null,
-        "hours": null,
-        "phone": null
+        "note": "求人ページのHPリンク先は独立ドメインではなくエステ魂の店舗詳細 https://estama.jp/shop/41985/。店舗詳細にSPA Bernese、広島市中区土橋町（番地非公開）、電話070-9087-3825、営業時間10:30〜翌0:00、定休日 火・水・木・金、最寄り土橋駅の記載あり。ページ上の新着メッセージは2026-09-06で、11/19時点の営業継続を示す最新証拠ではない。X/Instagramのリンクは掲載されているが独立公式HPとは区別。",
+        "address": "広島県広島市中区土橋町（番地非公開・媒体掲載）",
+        "hours": "10:30〜翌0:00（掲載情報。現況未確認）",
+        "phone": "070-9087-3825"
       },
       "contactReviewDone": true,
       "contactReview": {
-        "checkedAt": "2026-11-14",
-        "status": "third-party listing checked",
-        "note": "広島市の媒体一覧掲載は確認。個別店舗詳細、住所、電話、公式サイトは確証なし。",
+        "checkedAt": "2026-11-19",
+        "status": "third-party store detail verified; independent official domain unconfirmed",
+        "note": "求人ページのHPリンクがエステ魂の店舗詳細へ遷移することを確認。独立公式サイトとして登録しない。住所・電話・営業時間は掲載情報として記録し、営業中とは断定しない。",
         "sources": [
-          "https://menesu-select.com/hiroshima/hiroshima/"
+          "https://estama.jp/shop/41985/",
+          "https://men-esthe-job.men-esthe.mixh.jp/area.php?id=112&p=3"
         ]
       }
     },
