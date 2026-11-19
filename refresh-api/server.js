@@ -837,6 +837,107 @@ const server = http.createServer(async (req, res) => {
       return send(res, 502, { ok: false, error: "storage_connection_failed", detail: String(error?.message || error) }, origin);
     }
   }
+  // Read-only link audit for the saved three-source ranking. Never writes to D1.
+  if (pathname === "/api/stores/check-ranking-links" && req.method === "POST") {
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const storageUrl = process.env.CAST_STORAGE_URL;
+    const storageToken = process.env.CAST_STORAGE_API_TOKEN;
+    if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
+    try {
+      const stored = await fetch(new URL("/v1/data/ranking_state", storageUrl), {
+        headers: { authorization: `Bearer ${storageToken}` },
+        signal: AbortSignal.timeout(15000)
+      });
+      const payload = await stored.json();
+      if (!stored.ok || !payload.ok || !payload.found || !payload.value?.sources) {
+        return send(res, 502, { ok: false, error: "ranking_state_unavailable" }, origin);
+      }
+      const allowedHosts = {
+        salonowa: new Set(["salonowa.jp", "www.salonowa.jp"]),
+        mensesthe_rank: new Set(["mensesthe-rank.jp", "www.mensesthe-rank.jp"]),
+        menes_note: new Set(["men-esthe-review.com", "www.men-esthe-review.com"])
+      };
+      const sourceLabels = { salonowa: "salonowa", mensesthe_rank: "mensesthe_rank", menes_note: "menes_note" };
+      const queue = [];
+      for (const id of Object.keys(allowedHosts)) {
+        const source = payload.value.sources[id];
+        const records = Array.isArray(source?.records) ? source.records : [];
+        for (const record of records) queue.push({ sourceId: id, sourceLabel: sourceLabels[id], name: record.name || "名称未確認", rank: record.rank ?? null, href: record.href || "" });
+      }
+      const results = new Array(queue.length);
+      let cursor = 0;
+      const worker = async () => {
+        while (true) {
+          const index = cursor++;
+          if (index >= queue.length) return;
+          const item = queue[index];
+          if (!item.href) { results[index] = { ...item, status: "リンクなし" }; continue; }
+          let url;
+          try {
+            url = new URL(item.href);
+            if (url.protocol !== "https:" || !allowedHosts[item.sourceId].has(url.hostname)) {
+              results[index] = { ...item, status: "検査対象外", detail: "許可ドメイン外またはHTTPS以外" };
+              continue;
+            }
+          } catch {
+            results[index] = { ...item, status: "URL不正" };
+            continue;
+          }
+          try {
+            const response = await fetch(url, {
+              method: "GET",
+              redirect: "follow",
+              headers: { "user-agent": "Mozilla/5.0 (compatible; HiroshimaCastLinkAudit/1.0)", "accept": "text/html,application/xhtml+xml,*/*;q=0.8" },
+              signal: AbortSignal.timeout(7000)
+            });
+            const finalUrl = new URL(response.url || url.href);
+            const safeFinal = finalUrl.protocol === "https:" && allowedHosts[item.sourceId].has(finalUrl.hostname);
+            const statusCode = response.status;
+            try { await response.body?.cancel(); } catch {}
+            let status = "応答エラー";
+            if (!safeFinal) status = "転送先要確認";
+            else if (statusCode >= 200 && statusCode < 400) status = "応答あり";
+            else if ([401, 403, 429].includes(statusCode)) status = "アクセス制限";
+            else if ([404, 410].includes(statusCode)) status = "リンク切れ";
+            results[index] = { ...item, status, httpStatus: statusCode, finalUrl: safeFinal ? finalUrl.href : null };
+          } catch (error) {
+            results[index] = { ...item, status: "応答未確認", detail: String(error?.name === "TimeoutError" || error?.name === "AbortError" ? "タイムアウト" : error?.message || error).slice(0, 140) };
+          }
+        }
+      };
+      await Promise.all(Array.from({ length: Math.min(8, queue.length) }, () => worker()));
+      const groups = Object.keys(allowedHosts).map(id => {
+        const rows = results.filter(row => row.sourceId === id);
+        const count = status => rows.filter(row => row.status === status).length;
+        return {
+          sourceId: id, label: sourceLabels[id], total: rows.length,
+          linksPresent: rows.filter(row => Boolean(row.href)).length,
+          linksMissing: count("リンクなし"),
+          reachable: count("応答あり"),
+          broken: count("リンク切れ"),
+          restricted: count("アクセス制限"),
+          unconfirmed: rows.filter(row => ["応答未確認", "応答エラー", "転送先要確認", "検査対象外", "URL不正"].includes(row.status)).length,
+          issues: rows.filter(row => row.status !== "応答あり").slice(0, 30).map(({ name, rank, href, status, httpStatus, detail }) => ({ name, rank, href, status, httpStatus: httpStatus ?? null, detail: detail || null }))
+        };
+      });
+      return send(res, 200, {
+        ok: true, mode: "read-only", checkedAt: new Date().toISOString(),
+        total: results.length,
+        totals: {
+          linksPresent: results.filter(row => Boolean(row.href)).length,
+          linksMissing: results.filter(row => row.status === "リンクなし").length,
+          reachable: results.filter(row => row.status === "応答あり").length,
+          broken: results.filter(row => row.status === "リンク切れ").length,
+          restricted: results.filter(row => row.status === "アクセス制限").length,
+          unconfirmed: results.filter(row => ["応答未確認", "応答エラー", "転送先要確認", "検査対象外", "URL不正"].includes(row.status)).length
+        },
+        groups,
+        note: "読み取り専用検査です。店舗マスター・ランキング保存データは変更していません。アクセス制限はリンク切れと区別しています。"
+      }, origin);
+    } catch (error) {
+      return send(res, 502, { ok: false, error: "ranking_link_audit_failed", detail: String(error?.message || error) }, origin);
+    }
+  }
   // Read/write app datasets through the server-side secret. Browser never receives the D1 token.
   const storageDataPrefix = "/api/storage/data/";
   const storageDataMatch = pathname.startsWith(storageDataPrefix) ? pathname.slice(storageDataPrefix.length).match(/^([a-z_]+)$/) : null;
