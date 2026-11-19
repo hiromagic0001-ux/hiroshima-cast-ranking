@@ -2033,8 +2033,8 @@
       "name": "7 Dream Este",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区（公式求人記載。第三者媒体は住吉町・鶴見町の複数ルームを掲載）",
+      "status": "独立公式サイト・11月19日出勤表確認済み・所在地に媒体差あり",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -2042,7 +2042,7 @@
         }
       ],
       "officialUrl": "https://7dream-este.net/",
-      "officialUrlStatus": "公式サイト確認済み",
+      "officialUrlStatus": "独立公式サイトを直接確認・当日出勤スケジュール掲載",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
@@ -2056,21 +2056,35 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "current-third-party-listing-and-shop-details-confirmed",
+        "checkedAt": "2026-11-19",
+        "status": "independent-official-site-and-dated-schedule-confirmed; room-address-and-schedule-count-differ-by-media",
         "sources": [
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
-          "https://s-palette.com/hiroshima/hiroshima",
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
+          "https://7dream-este.net/schedule/",
+          "https://7dream-este.net/contact/",
+          "https://7dream-este.net/recruit/",
+          "https://ore-aroma.jp/shop/S-7dream-este-net/areamap",
+          "https://estama.jp/shop/28467/schedule/"
         ],
-        "address": "広島県広島市中区大手町5丁目",
-        "hours": "11:00〜翌5:00",
+        "address": "公式求人ページは広島市中区まで。第三者媒体のアクセスページは住吉町・鶴見町の2ルームを掲載。既存記録の大手町5丁目は公式裏付けなしのため確定住所として扱わない。",
+        "hours": "公式10:00〜翌5:00（受付9:00〜翌3:00）。第三者媒体に12:00〜翌5:00表記もあり。",
         "phone": "090-1356-6132",
-        "note": "公式サイトURLは既存登録を維持。複数媒体の住所・電話・営業時間を照合。最新ランキングにも掲載あり。"
+        "note": "公式サイトの11/19(木)出勤表に複数名の時間付き予定を確認。エステ魂は同日2名表示で人数に差がある。公式出勤表を優先し、媒体の人数差は未統一。"
       },
-      "verifiedAddress": "広島県広島市中区大手町5丁目",
-      "verifiedHours": "11:00〜翌5:00",
-      "verifiedPhone": "090-1356-6132"
+      "verifiedAddress": "広島県広島市中区（公式は区まで。住吉町・鶴見町は第三者媒体掲載）",
+      "verifiedHours": "公式10:00〜翌5:00（受付9:00〜翌3:00）",
+      "verifiedPhone": "090-1356-6132",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "independent official website and same-day schedule verified",
+        "note": "電話・営業時間・当日出勤表を公式サイトで確認。住所は区まで。第三者媒体では住吉町・鶴見町の2ルームと異なる営業時間・人数を掲載。",
+        "sources": [
+          "https://7dream-este.net/schedule/",
+          "https://7dream-este.net/contact/",
+          "https://ore-aroma.jp/shop/S-7dream-este-net/areamap",
+          "https://estama.jp/shop/28467/schedule/"
+        ]
+      }
     },
     {
       "name": "カトレア",
