@@ -412,7 +412,14 @@
       "duplicateCanonicalName": "ENEL",
       "aliases": [
         "ENEL（エネル）"
-      ]
+      ],
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "ENEL／ENEL（エネル）。既存の同一duplicateGroup。媒体表記と店舗名の読み違い候補。元レコード保持。",
+        "group": "enel",
+        "role": "primary"
+      }
     },
     {
       "name": "マダムヘブン",
@@ -773,6 +780,13 @@
           "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rd65d27ffa5",
           "https://www.fues.jp/kansai/ranking/hiroshimaken/"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely-review-required",
+        "note": "REAL／Relaxation Salon REAL。公式URL rs-real.com は一致。一方、第三者地図に公式情報と異なる住所・電話があり、混同候補の確認を継続。別情報を統合しない。",
+        "group": "real",
+        "role": "primary"
       }
     },
     {
@@ -868,6 +882,13 @@
           "https://mens-tisse.com/",
           "https://dr.ptr216.ptrcloud.net/shop/tisse"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "TISSE／TISSE（ティセ）。既存の同一duplicateGroup。カナ表記違い候補。元レコード保持。",
+        "group": "tisse",
+        "role": "primary"
       }
     },
     {
@@ -985,7 +1006,14 @@
       "duplicateCanonicalName": "BODY SPA 広島",
       "aliases": [
         "BODY SPA HIROSHIMA"
-      ]
+      ],
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely-review-required",
+        "note": "BODY SPA 広島／BODY SPA HIROSHIMA。公式サイト bodyspa-hiroshima.com と媒体表記を照合。別URL bodyspahiroshima.com は公式ドメインとして扱わず、同一性は追加確認対象。",
+        "group": "body-spa",
+        "role": "primary"
+      }
     },
     {
       "name": "広島人妻さん",
@@ -3666,6 +3694,13 @@
           "https://men-esthe.co.jp/ranking/hiroshima/?format=dispatch&sort=open",
           "https://menesmall.jp/shop/refresh"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "Refresh／Refresh（リフレッシュ）。既存の同一duplicateGroup。広島市媒体掲載情報と店舗情報の照合候補。住所・営業状況は未確証のまま保持。",
+        "group": "refresh",
+        "role": "primary"
       }
     },
     {
@@ -3778,6 +3813,13 @@
           "https://estama.jp/shop/",
           "https://arinoa-esthe.com/"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "Arinoa／Arinoa～アリノア～。既存の同一duplicateGroup。読み仮名付き表記候補。元レコード保持。",
+        "group": "arinoa",
+        "role": "primary"
       }
     },
     {
@@ -9943,6 +9985,13 @@
           "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
           "https://mensspa-r.com/"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "spa R／Men’s spa R／Men's spa R。既存の同一duplicateGroup。公式URL mensspa-r.com が一致。住所・営業状況は未確証のまま保持。",
+        "group": "mens-spa-r",
+        "role": "primary"
       }
     },
     {
@@ -11091,6 +11140,13 @@
           "https://mensspa-r.com/",
           "https://menesu-select.com/hiroshima/hiroshima/"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "spa R／Men’s spa R／Men's spa R。既存の同一duplicateGroup。公式URL mensspa-r.com が一致。住所・営業状況は未確証のまま保持。",
+        "group": "mens-spa-r",
+        "role": "alias"
       }
     },
     {
@@ -12640,6 +12696,13 @@
         "sources": [
           "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "TISSE／TISSE（ティセ）。既存の同一duplicateGroup。カナ表記違い候補。元レコード保持。",
+        "group": "tisse",
+        "role": "alias"
       }
     },
     {
@@ -12709,6 +12772,13 @@
           "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
           "https://www.salonowa.jp/area/hiroshima/hiroshima"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "ENEL／ENEL（エネル）。既存の同一duplicateGroup。媒体表記と店舗名の読み違い候補。元レコード保持。",
+        "group": "enel",
+        "role": "alias"
       }
     },
     {
@@ -13005,6 +13075,13 @@
           "https://menesmall.jp/shop/refresh",
           "https://menesmall.jp/shop/refresh/contact"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "Refresh／Refresh（リフレッシュ）。既存の同一duplicateGroup。広島市媒体掲載情報と店舗情報の照合候補。住所・営業状況は未確証のまま保持。",
+        "group": "refresh",
+        "role": "alias"
       }
     },
     {
@@ -13194,6 +13271,13 @@
           "https://www.salonowa.jp/area/hiroshima/hiroshima",
           "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely-review-required",
+        "note": "BODY SPA 広島／BODY SPA HIROSHIMA。公式サイト bodyspa-hiroshima.com と媒体表記を照合。別URL bodyspahiroshima.com は公式ドメインとして扱わず、同一性は追加確認対象。",
+        "group": "body-spa",
+        "role": "alias"
       }
     },
     {
@@ -13262,6 +13346,13 @@
         "sources": [
           "https://mens-es.men/area/3401"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely-review-required",
+        "note": "REAL／Relaxation Salon REAL。公式URL rs-real.com は一致。一方、第三者地図に公式情報と異なる住所・電話があり、混同候補の確認を継続。別情報を統合しない。",
+        "group": "real",
+        "role": "alias"
       }
     },
     {
@@ -13508,6 +13599,13 @@
           "https://mens-es.men/area/3401",
           "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "Arinoa／Arinoa～アリノア～。既存の同一duplicateGroup。読み仮名付き表記候補。元レコード保持。",
+        "group": "arinoa",
+        "role": "alias"
       }
     },
     {
@@ -14098,6 +14196,13 @@
           "https://mensspa-r.com/",
           "https://menesmall.jp/hiroshima/124/shops"
         ]
+      },
+      "duplicateAudit": {
+        "checkedAt": "2026-11-19",
+        "decision": "same-store-likely",
+        "note": "spa R／Men’s spa R／Men's spa R。既存の同一duplicateGroup。公式URL mensspa-r.com が一致。住所・営業状況は未確証のまま保持。",
+        "group": "mens-spa-r",
+        "role": "alias"
       }
     },
     {
@@ -15455,5 +15560,12 @@
     "batchAuditedRecords": 243,
     "batchAuditRuns": 13,
     "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。"
+  },
+  "duplicateAuditSummary": {
+    "checkedAt": "2026-11-19",
+    "groupsReviewed": 7,
+    "groupsWithLikelySameStore": 6,
+    "recordsAnnotated": 15,
+    "policy": "照合メモの追加のみ。レコード削除・統合・primary/alias変更なし。所在地・営業状況を確定扱いしない。"
   }
 }
