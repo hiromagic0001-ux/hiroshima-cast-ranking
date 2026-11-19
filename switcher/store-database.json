@@ -191,23 +191,25 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "kind": "third-party-current-listing-crosscheck",
-        "url": null,
-        "address": "広島県広島市中区鶴見町7-8",
-        "hours": "10:00～翌2:00",
-        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
+        "checkedAt": "2026-11-19",
+        "url": "https://estama.jp/shop/41552/newslist/",
+        "address": "広島県広島市中区鶴見町7-8（MEN'S ES掲載情報。住所の独立確認は未了）",
+        "hours": "10:00〜翌2:00（媒体間で26:00表記あり）",
+        "phone": "080-8522-3707",
+        "kind": "current-listing-cross-checked-no-independent-domain",
         "sources": [
-          "https://mens-es.men/shop/41552",
           "https://estama.jp/shop/41552/newslist/",
-          "https://estama.jp/shop/41552/"
+          "https://esjob.jp/shop/41552/",
+          "https://mens-es.men/shop/41552"
         ],
-        "phone": null,
-        "note": "エステ魂の店舗詳細ページ（/shop/41552/）とニュース一覧を区別して登録。住所・営業時間は第三者媒体掲載情報であり、独立公式サイトは未確認。"
+        "status": "エステ魂で2026-11-18の新着情報を複数件確認。求人ページの公式サイト欄はエステ魂店舗ページを案内し、独立ドメインは未確認。電話番号080-8522-3707を求人ページで確認。住所は別媒体MEN'S ESの中区鶴見町7-8掲載情報として分けて記録。"
       },
-      "verifiedAddress": "広島県広島市中区鶴見町7-8",
-      "verifiedHours": "10:00～翌2:00",
-      "contactReviewDone": true
+      "verifiedAddress": "広島県広島市中区鶴見町7-8（別媒体掲載情報・独立確認未了）",
+      "verifiedHours": "10:00〜翌2:00（媒体掲載情報）",
+      "contactReviewDone": true,
+      "officialUrl": "https://estama.jp/shop/41552/",
+      "officialUrlStatus": "エステ魂の店舗掲載ページのみ確認。求人ページの公式サイト欄もエステ魂掲載ページを案内しており、独立ドメイン公式サイトは未確認。",
+      "verifiedPhone": "080-8522-3707（求人媒体掲載情報）"
     },
     {
       "name": "花魁 広島",
