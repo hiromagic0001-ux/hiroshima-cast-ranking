@@ -16139,7 +16139,17 @@
         "sources": [
           "https://rs-real.com/access/",
           "https://rs-real.com/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "duplicateRole": "alias",
       "duplicateCanonicalName": "REAL",
@@ -16216,7 +16226,16 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "媒体一覧で名称掲載",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "広島県ページの出張可能店舗欄に「出張専門高級メンズエステ IVY SPA 広島」を確認。広島市の固定ルーム掲載や当日営業を示すものではなく、既存IVY SPA候補との同一性も未確定。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16278,7 +16297,17 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "名称近似・店舗同定保留",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "「チェリーSPA 広島」の広島市カテゴリ掲載を確認。ただし候補名は「チェリーSPA東平塚店」であり、同一店舗・同一ルームかはこの一覧だけでは確定しない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16343,7 +16372,18 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "媒体一覧で名称掲載",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "広島市ランキングと広島県ページの出張可能店舗欄に「NAGOMI～和み～ 広島店」を確認。既存の出張型候補との同一性・重複関係は統合せず保留。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/",
+            "https://menesu-select.com/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16404,7 +16444,17 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "媒体一覧で名称掲載",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "広島市ランキングとメンエスセレクト広島市一覧に「Arinoa（アリノア）」を確認。既存個別情報は上書きせず、媒体掲載の再確認として記録。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "duplicateRole": "alias",
       "duplicateCanonicalName": "Arinoa",
@@ -16488,7 +16538,17 @@
           "https://mrsmama.jp/first",
           "https://menesmall.jp/shop/mrs-mama",
           "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r2fafe75c56"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16552,7 +16612,17 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16613,7 +16683,17 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16674,7 +16754,17 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16722,7 +16812,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16780,7 +16880,16 @@
           "https://estama.jp/shop/40477/"
         ],
         "phone": "070-8499-1534",
-        "hours": "10:00〜LAST"
+        "hours": "10:00〜LAST",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "媒体一覧で名称掲載",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "メンエスセレクト広島市一覧に「フリーダム」を確認。既存FREEDOM候補と名称が対応する掲載情報として記録し、住所・電話・営業状況の追加確定とは扱わない。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16827,7 +16936,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16874,7 +16993,16 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "媒体一覧で名称掲載",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "メンエスセレクト広島市一覧に「LILY」を確認。既存個別情報は上書きせず、媒体掲載の再確認として記録。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16921,7 +17049,16 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "媒体一覧で名称掲載",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "メンエスセレクト広島市一覧に「ラベンダー」を確認。既存候補との名称対応として記録し、所在地・営業状況は確定しない。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16968,7 +17105,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17019,7 +17166,16 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "DB登録URLあり。公式性・リンク先の最新性は継続検証対象",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "媒体一覧で名称掲載",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "広島県ページの出張可能店舗欄に「メンズスパ アール」を確認。既存の独立公式サイト情報と合わせても、この媒体掲載だけで同一性や現在の出張受付は確定しない。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/"
+          ]
+        }
       },
       "duplicateRole": "alias",
       "duplicateCanonicalName": "spa R（スパアール）",
@@ -17078,7 +17234,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17126,7 +17292,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17173,7 +17349,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17224,7 +17410,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17271,7 +17467,16 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "媒体一覧で名称掲載",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "広島県ページの出張可能店舗欄に「出張専門高級メンズエステ IVY SPA 広島」を確認。252番候補との同一性は未確定のまま保持し、統合しない。",
+          "sources": [
+            "https://menesu-select.com/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17318,7 +17523,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17365,7 +17580,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17412,7 +17637,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17460,7 +17695,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17514,7 +17759,17 @@
         "sources": [
           "https://menesmall.jp/shop/be-ange",
           "https://estama.jp/shop/38980/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "verifiedAddress": "広島県広島市中区宝町（掲載媒体情報）",
       "verifiedHours": "11:00〜翌3:00（掲載媒体情報）",
@@ -17571,7 +17826,17 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -17642,7 +17907,17 @@
           "https://esjob.jp/etc/hiroshima/a3401/p8/",
           "https://hiroshima-menes-recruit.com/store/store-046/",
           "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4705ae08fd&lang=en"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "result": "今回取得した媒体一覧では名称一致を確認できず",
+          "scope": "広島市ランキング107店表示およびメンエスセレクト広島市一覧125店・出張7店表示の取得時点スナップショット",
+          "note": "今回取得した2媒体の表示範囲では候補名の一致を確認できなかった。未掲載・閉店・不存在を意味しない。既存の個別確認結果を変更せず、所在地・電話・営業時間・独立公式サイト・現営業の追加確証とは扱わない。",
+          "sources": [
+            "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+            "https://menesu-select.com/hiroshima/hiroshima/"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -18588,6 +18863,19 @@
         "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
         "https://menesu-select.com/hiroshima/hiroshima/"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 250,
+      "endIndex": 277,
+      "count": 28,
+      "scope": "広島市候補251〜278番・第3段階の現行媒体一覧クロスチェック",
+      "note": "251〜278番の28候補を、取得時点のメンズエステ情報ランキング広島市ページ（107店表示）、メンエスセレクト広島市一覧（125店表示・出張7店）および広島県ページの出張可能店舗欄で再照合。Arinoa、LILY、ラベンダー、FREEDOMは広島市一覧で名称掲載を確認。NAGOMI～和み～広島店は広島市一覧および出張可能店舗欄で確認。IVY SPAとメンズスパ アールは広島県ページの出張可能店舗欄で確認。チェリーSPAは広島市カテゴリ掲載を確認したが、東平塚店との同一性は保留。その他の候補は今回取得した表示範囲で名称一致を確認できず、未掲載・閉店・不存在とは扱わない。各媒体の名称掲載は現営業・独立公式サイト・正確な住所・電話・営業時間の証明ではない。既存個別情報を上書きせず、同名候補を統合せず、レコード削除・統合・primary/alias変更を行わず278件を保持。",
+      "sources": [
+        "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+        "https://menesu-select.com/hiroshima/hiroshima/",
+        "https://menesu-select.com/hiroshima/"
+      ]
     }
   ],
   "auditSummary": {
@@ -18649,9 +18937,9 @@
     "areaStillNeedsConfirmation": 232,
     "duplicateReviewRecords": 15,
     "individualAuditRecords": 278,
-    "batchAuditedRecords": 243,
-    "batchAuditRuns": 18,
-    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。 2026-11-19に1〜50番の第3段階所在地・掲載情報クロスチェックを追加。確認できた電話・所在地・複数ルーム・営業時間差のみ記録し、未確認候補は保留。 2026-11-19に51〜100番の第3段階媒体横断・業種確認を追加。掲載一致は媒体掲載確認に限定し、現営業・独立公式サイト・正確な所在地の確証とは区別。95〜100番の業種混在を保持し、278候補を維持。 2026-11-19に101〜150番の第3段階業種・広島市範囲・掲載クロスチェックを追加。広島県/広島エリア掲載と広島市明記を区別し、業種混在と同一性未確定を保持。掲載一致は現営業・独立公式サイト・正確な所在地の証明とは扱わず、未一致を閉店と断定しない。"
+    "batchAuditedRecords": 271,
+    "batchAuditRuns": 19,
+    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。 2026-11-19に1〜50番の第3段階所在地・掲載情報クロスチェックを追加。確認できた電話・所在地・複数ルーム・営業時間差のみ記録し、未確認候補は保留。 2026-11-19に51〜100番の第3段階媒体横断・業種確認を追加。掲載一致は媒体掲載確認に限定し、現営業・独立公式サイト・正確な所在地の確証とは区別。95〜100番の業種混在を保持し、278候補を維持。 2026-11-19に101〜150番の第3段階業種・広島市範囲・掲載クロスチェックを追加。広島県/広島エリア掲載と広島市明記を区別し、業種混在と同一性未確定を保持。掲載一致は現営業・独立公式サイト・正確な所在地の証明とは扱わず、未一致を閉店と断定しない。 2026-11-19に251〜278番の第3段階現行媒体一覧クロスチェックを追加。名称掲載と店舗同定・現営業・独立公式サイト・正確な所在地の確証を区別し、未一致候補も保持。"
   },
   "duplicateAuditSummary": {
     "checkedAt": "2026-11-19",
