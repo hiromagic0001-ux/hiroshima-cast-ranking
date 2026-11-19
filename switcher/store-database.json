@@ -991,8 +991,8 @@
       "name": "広島人妻さん",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体掲載住所・所在地情報あり（公式住所/営業状況は未確証）",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区宝町の媒体掲載あり。詳細ルーム住所・現行所在地は未確認",
+      "status": "第三者媒体の店舗情報確認済み・独立公式サイト未確認・営業時間に媒体差",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1003,24 +1003,29 @@
           "url": "https://www.e-q.jp/48870/"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkAuditStatus": "複数第三者媒体照合済み。営業時間に媒体差、公式サイト・当日出勤未確認",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
-        "sources": [
-          "https://www.e-q.jp/48870/"
-        ],
-        "note": "求人媒体の店舗欄で電話・時間・エリアを確認。電話は求人応募窓口として掲載されており、予約用番号・現行営業情報とは未確証。",
-        "url": null,
-        "address": "広島市中区・田中町/宝町北バス停周辺",
-        "hours": "10:00～24:00（求人媒体掲載）",
+        "checkedAt": "2026-11-19",
+        "kind": "third-party-listing-crosscheck-independent-site-not-accessible",
+        "url": "https://hiroshima-hitozumasan.com/",
+        "address": "広島市中区宝町（メンエスmall・エステ魂掲載）。求人媒体は田中町・宝町北バス停周辺と記載。詳細ルーム住所は非公開。",
+        "hours": "メンエスmall・求人媒体10:00〜24:00。メンズリラク・エステ魂は10:00〜翌2:00（媒体差あり）",
         "phone": "070-8461-5262",
-        "kind": "third-party-current-listing-crosscheck"
+        "sources": [
+          "https://menesmall.jp/shop/hitozumasan/system",
+          "https://menesth.jp/32/shop/41609/system/",
+          "https://estama.jp/shop/35731/menu/",
+          "https://www.e-q.jp/48870/",
+          "https://hiroshima-hitozumasan.com/"
+        ],
+        "status": "メンエスmall・メンズリラク・エステ魂の店舗情報で電話070-8461-5262と広島市中区宝町を確認。営業時間は10:00〜24:00と10:00〜翌2:00で相違。求人媒体には公式HPリンクとしてhiroshima-hitozumasan.com/recruitが記載されるが、独立ドメインのトップと求人ページは直接アクセス時にタイムアウト/取得不可。独立公式サイトの実体・当日営業は未確認。第三者媒体のセラピスト一覧には複数在籍者が掲載されるが、11/19当日の出勤は電話確認表示で確定不可。"
       },
-      "verifiedAddress": "広島市中区・田中町/宝町北バス停周辺",
-      "verifiedHours": "10:00～24:00（求人媒体掲載）",
+      "verifiedAddress": "広島市中区宝町（第三者媒体掲載・詳細住所非公開）",
+      "verifiedHours": "10:00〜24:00（媒体に10:00〜翌2:00の相違あり）",
       "verifiedPhone": "070-8461-5262",
-      "contactReviewDone": true
+      "contactReviewDone": true,
+      "officialUrl": "https://hiroshima-hitozumasan.com/",
+      "officialUrlStatus": "求人媒体のHP欄に独立ドメインURL掲載。ただし直接アクセス不可・公式サイト内容未確認"
     },
     {
       "name": "Organic energy",
