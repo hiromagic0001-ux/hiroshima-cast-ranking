@@ -1987,8 +1987,8 @@
       "name": "Aroma Salon Freyja",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区（公式は昭和町5、第三者媒体は鶴見町7と掲載・住所相違）",
+      "status": "独立公式サイト確認済み・営業時間と所在地に媒体差あり・当日出勤未確定",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1996,7 +1996,7 @@
         }
       ],
       "officialUrl": "https://aromafreyja.com/",
-      "officialUrlStatus": "公式サイト確認済み",
+      "officialUrlStatus": "独立公式サイトを直接確認",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
@@ -2010,23 +2010,32 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市内一覧に掲載。サロノワ本日出勤一覧に同店セラピストの本日出勤表示を確認。公式サイトURLは既存登録を維持。住所・電話は今回未確認。",
-        "evidence": [
-          {
-            "source": "サロノワ本日出勤一覧",
-            "url": "https://www.salonowa.jp/area/hiroshima/therapists?today=1"
-          },
-          {
-            "source": "サロノワ広島市一覧",
-            "url": "https://www.salonowa.jp/area/hiroshima/hiroshima"
-          },
-          {
-            "source": "公式サイト（既存登録）",
-            "url": "https://aromafreyja.com/"
-          }
+        "checkedAt": "2026-11-19",
+        "status": "independent-official-site-confirmed; address-and-hours-conflict; dated-today-roster-not-confirmed",
+        "sources": [
+          "https://aromafreyja.com/",
+          "https://estama.jp/shop/25606/",
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/aroma-massage/",
+          "https://www.kking.jp/ippan/31486/"
         ],
-        "status": "本日出勤掲載確認・詳細項目一部未確認"
+        "address": "公式サイトは広島市中区昭和町5。エステ魂は中区鶴見町7と掲載。両者が同一店舗の現行ルームか未確定のため住所を一本化しない。",
+        "hours": "公式11:00〜翌1:00（最終受付23:30）。エステ魂は10:00〜翌3:00と記載。公式表記を優先し、媒体差ありと注記。",
+        "phone": "080-9797-6280",
+        "note": "公式独立ドメインを直接確認。公式サイトには出勤一覧が表示されるが日付が明示されないため11月19日の当日出勤とは扱わない。ランキング媒体は11月19日取得時点で本日出勤なし表示。"
+      },
+      "verifiedPhone": "080-9797-6280",
+      "verifiedAddress": "広島県広島市中区（公式：昭和町5／第三者媒体：鶴見町7・要照合）",
+      "verifiedHours": "公式11:00〜翌1:00（最終受付23:30）。第三者媒体に10:00〜翌3:00表記あり",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "official domain verified; address/hours discrepancy; same-day roster not confirmed",
+        "note": "公式と第三者媒体で住所・営業時間に差異。日付付き当日出勤情報は確証なし。",
+        "sources": [
+          "https://aromafreyja.com/",
+          "https://estama.jp/shop/25606/",
+          "https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/aroma-massage/"
+        ]
       }
     },
     {
