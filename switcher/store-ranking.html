@@ -422,8 +422,19 @@ main{max-width:900px;margin:auto;padding:14px}
         section.appendChild(heading);
         for (const issue of group.issues || []) {
           const line = document.createElement("div");
-          line.style.cssText = "margin-top:4px;color:var(--muted);overflow-wrap:anywhere";
-          line.textContent = (issue.rank ? issue.rank + "位 " : "") + issue.name + "： " + issue.status + (issue.httpStatus ? "（HTTP " + issue.httpStatus + "）" : "") + (issue.detail ? "／" + issue.detail : "");
+          line.style.cssText = "margin-top:7px;padding:7px 8px;border:1px solid var(--line);border-radius:8px;color:var(--muted);overflow-wrap:anywhere";
+          const label = document.createElement("div");
+          label.textContent = (issue.rank ? issue.rank + "位 " : "") + issue.name + "： " + issue.status + (issue.httpStatus ? "（HTTP " + issue.httpStatus + "）" : "") + (issue.detail ? "／" + issue.detail : "");
+          line.appendChild(label);
+          if (issue.href) {
+            const link = document.createElement("a");
+            link.href = issue.href;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.textContent = "検査した店舗リンクを開く ↗";
+            link.style.cssText = "display:inline-block;margin-top:5px;color:var(--mint);text-decoration:underline;overflow-wrap:anywhere";
+            line.appendChild(link);
+          }
           section.appendChild(line);
         }
         linkAuditResults.appendChild(section);
