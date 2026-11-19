@@ -118,6 +118,12 @@ main{max-width:900px;margin:auto;padding:14px}
     reconciliation.textContent = "278件の店舗マスターとの照合結果を読み込み中…";
     saved.appendChild(reconciliation);
     renderMasterReconciliation(state, reconciliation);
+    const phoneAudit = document.createElement("div");
+    phoneAudit.id = "phone-match-audit";
+    phoneAudit.style.cssText = "font-size:11px;line-height:1.7;margin:10px 0 14px;padding:11px;border:1px solid var(--line);border-radius:10px;background:#14251e";
+    phoneAudit.textContent = "電話番号による同一店舗照合を読み込み中…";
+    saved.appendChild(phoneAudit);
+    renderPhoneMatchAudit(phoneAudit);
     if (!sourceOrder.some(id => sources[id])) {
       const empty = document.createElement("div");
       empty.style.cssText = "font-size:11px;color:var(--muted)";
@@ -184,6 +190,74 @@ main{max-width:900px;margin:auto;padding:14px}
     return String(value || "").normalize("NFKC").toLowerCase()
       .replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60))
       .replace(/[\s・･.,，、。_‐‑‒–—―ーｰ()（）［］【】「」『』]/g, "");
+  }
+  function normalizePhone(value) {
+    return String(value || "").replace(/[^0-9]/g, "").replace(/^0+/, "0");
+  }
+  function collectPhones(value, path = "", out = []) {
+    if (!value || typeof value !== "object") return out;
+    for (const [key, child] of Object.entries(value)) {
+      const nextPath = path ? path + "." + key : key;
+      if (/(phone|tel|telephone|mobile|contact|電話|連絡)/i.test(key) && typeof child === "string") {
+        const phone = normalizePhone(child);
+        if (phone.length >= 9) out.push({phone, path:nextPath});
+      } else if (child && typeof child === "object") collectPhones(child, nextPath, out);
+    }
+    return out;
+  }
+  async function renderPhoneMatchAudit(panel) {
+    const checks = [
+      {label:"ハチミツ倶楽部 → ハチミツ俱楽部", phones:["080-9144-7888"]},
+      {label:"CRADLE～クレイドル～ → CRADLE（クレイドル）", phones:["070-1482-6361","070-1482-6332"]},
+      {label:"～みつばち～ → みつばち", phones:["090-6403-2215"]},
+      {label:"Lumiella -ルミエラ- → Lumiella（ルミエラ）", phones:["070-9456-8338"]},
+      {label:"癒し処 ゆるりnon → ゆるりnon", phones:["090-5607-1122"]}
+    ];
+    try {
+      const response = await fetch(api + "/api/storage/data/stores", {cache:"no-store"});
+      const payload = await response.json();
+      if (!response.ok || !payload.ok || !payload.found || !Array.isArray(payload.value?.records)) throw new Error("店舗マスターを読み込めません");
+      const master = payload.value.records;
+      panel.replaceChildren();
+      const heading = document.createElement("div");
+      heading.style.fontWeight = "750";
+      heading.textContent = "電話番号による同一店舗照合（読み取り専用）";
+      panel.appendChild(heading);
+      const note = document.createElement("div");
+      note.style.color = "var(--muted)";
+      note.textContent = "公開情報の電話番号とマスター内の電話番号を完全一致で比較します。一致した場合は同一店舗候補として表示します。データの変更・別名登録はまだ行いません。";
+      panel.appendChild(note);
+      for (const check of checks) {
+        const found = [];
+        for (const store of master) {
+          const phones = collectPhones(store);
+          const matched = phones.filter(item => check.phones.includes(item.phone));
+          if (matched.length) found.push({store, matched});
+        }
+        const line = document.createElement("div");
+        line.style.cssText = "border-top:1px solid var(--line);padding-top:7px;margin-top:7px";
+        const title = document.createElement("div");
+        title.style.fontWeight = "700";
+        title.textContent = check.label;
+        line.appendChild(title);
+        const result = document.createElement("div");
+        if (found.length === 1) {
+          result.textContent = "● 電話番号一致：同一店舗候補「" + (found[0].store.name || "名称未設定") + "」／ " + found[0].matched.map(x => x.phone).join("・");
+        } else if (found.length > 1) {
+          result.textContent = "△ 複数店舗で一致：要確認 " + found.map(x => x.store.name || "名称未設定").join("、");
+        } else {
+          result.textContent = "未一致：マスター内に同じ電話番号が見つかりません";
+        }
+        line.appendChild(result);
+        panel.appendChild(line);
+      }
+      const count = document.createElement("div");
+      count.style.cssText = "margin-top:8px;color:var(--muted)";
+      count.textContent = "照合対象マスター：" + master.length + "件 ／ 完全一致のみを表示";
+      panel.appendChild(count);
+    } catch (error) {
+      panel.textContent = "電話番号照合を実行できません：" + String(error?.message || error) + "。店舗マスターは変更していません。";
+    }
   }
   function storeNameSimilarity(a, b) {
     if (!a || !b || Math.min(a.length, b.length) < 4) return 0;
