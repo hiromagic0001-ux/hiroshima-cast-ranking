@@ -264,8 +264,8 @@
       "name": "トリコ",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "公式サイト・現行営業情報確認済み",
+      "areaStatus": "広島市中区舟入町を公式サイトで確認（番地非公開）",
+      "status": "独立公式サイト確認済み・営業時間に媒体差あり",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -273,22 +273,25 @@
         }
       ],
       "officialUrl": "https://hiroshima-toriko.com/",
-      "officialUrlStatus": "独立公式サイトを確認",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "officialUrlStatus": "独立ドメインの公式サイトを直接確認済み",
+      "bulkAuditStatus": "独立公式サイト・媒体情報を再照合済み（営業時間は要確認）",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "kind": "official-site-and-current-post",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-domain-directly-verified-crosschecked-with-listings",
         "url": "https://hiroshima-toriko.com/",
-        "address": "広島市中区舟入町",
-        "hours": "9:00〜22:00",
+        "address": "広島県広島市中区舟入町（番地・部屋番号は予約確認後案内）",
+        "hours": "公式サイト表示9:00〜22:00。エステ魂は9:00〜翌2:00、メンエスmallは10:00〜翌2:00と相違あり。営業時間は要電話確認。",
         "phone": "090-5245-2221",
-        "status": "公式サイト・直近更新・出勤情報を確認",
         "sources": [
-          "https://hiroshima-toriko.com/"
-        ]
+          "https://hiroshima-toriko.com/",
+          "https://estama.jp/shop/30128/",
+          "https://dr.ptr216.ptrcloud.net/shop/toriko",
+          "https://www.fues.jp/kansai/store/2000004645/"
+        ],
+        "status": "独立ドメインの公式サイトを直接閲覧。電話番号090-5245-2221、舟入町、セラピスト・出勤情報を確認。公式サイト表示営業時間は9:00〜22:00だが、エステ魂は9:00〜翌2:00、メンエスmallは10:00〜翌2:00と異なるため、営業時間は確定値に統一せず要確認として記録。公式サイトの最新情報欄は9/30更新表示で、11/19時点の営業継続を断定できる新着告知は未確認。"
       },
-      "verifiedAddress": "広島市中区舟入町",
-      "verifiedHours": "9:00〜22:00",
+      "verifiedAddress": "広島県広島市中区舟入町（番地・部屋番号は予約確認後案内）",
+      "verifiedHours": "公式9:00〜22:00／媒体9:00〜翌2:00・10:00〜翌2:00（相違・要確認）",
       "verifiedPhone": "090-5245-2221"
     },
     {
