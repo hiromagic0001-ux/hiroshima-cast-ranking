@@ -1,0 +1,50 @@
+name: Weekly ranking link audit
+
+on:
+  schedule:
+    # Every Sunday at 02:00 JST (Saturday 17:00 UTC)
+    - cron: "0 17 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-ranking-link-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Start read-only audit
+        env:
+          AUDIT_URL: https://hiroshima-cast-refresh-api.onrender.com/api/stores/check-ranking-links
+        run: |
+          set -euo pipefail
+          start=$(curl --fail --silent --show-error --max-time 30 "${AUDIT_URL}?refresh=1")
+          echo "$start"
+          echo "$start" | jq -e '.ok == true' >/dev/null
+
+      - name: Wait for audit and report results
+        env:
+          AUDIT_URL: https://hiroshima-cast-refresh-api.onrender.com/api/stores/check-ranking-links
+        run: |
+          set -euo pipefail
+          deadline=$((SECONDS + 1080))
+          while (( SECONDS < deadline )); do
+            result=$(curl --fail --silent --show-error --max-time 30 "$AUDIT_URL")
+            if echo "$result" | jq -e '.status == "failed"' >/dev/null; then
+              echo "$result"
+              exit 1
+            fi
+            if echo "$result" | jq -e '.checkedAt != null and .totals != null' >/dev/null; then
+              echo "$result" | jq '{checkedAt, total, totals, groups: [.groups[] | {sourceId, total, reachable, broken, restricted, unconfirmed}], note}'
+              exit 0
+            fi
+            echo "Audit still running; checking again in 20 seconds."
+            sleep 20
+          done
+          echo "Timed out waiting for the read-only audit result."
+          exit 1
