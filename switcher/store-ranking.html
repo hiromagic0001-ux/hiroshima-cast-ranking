@@ -99,7 +99,11 @@ main{max-width:900px;margin:auto;padding:14px}
     saved.replaceChildren();
     const title = document.createElement("div");
     title.style.cssText = "font-size:13px;font-weight:750;margin-bottom:8px";
-    title.textContent = "D1に保存済みの媒体別順位";
+    title.textContent = "D1保存済み｜媒体別ランキング";
+    const intro = document.createElement("div");
+    intro.style.cssText = "font-size:11px;color:var(--muted);line-height:1.6;margin-bottom:8px";
+    intro.textContent = "各媒体の順位を独立して掲載しています。異なる媒体の指標を合算せず、店舗マスター278件の並び順も変更しません。";
+    saved.appendChild(intro);
     saved.appendChild(title);
     const sources = state && state.sources && typeof state.sources === "object" ? state.sources : {};
     if (!sourceOrder.some(id => sources[id])) {
@@ -129,7 +133,7 @@ main{max-width:900px;margin:auto;padding:14px}
       if (records.length) {
         const list = document.createElement("ol");
         list.style.cssText = "margin:7px 0 0;padding-left:22px;font-size:11px;line-height:1.7";
-        for (const record of records.slice(0, 15)) {
+        for (const record of records) {
           const item = document.createElement("li");
           const label = (record.rank ? record.rank + "位 " : "") + (record.name || "名称未確認") +
             (record.rating != null ? " ／ 評価 " + record.rating : "") +
@@ -146,12 +150,6 @@ main{max-width:900px;margin:auto;padding:14px}
           list.appendChild(item);
         }
         section.appendChild(list);
-        if (records.length > 15) {
-          const more = document.createElement("div");
-          more.style.cssText = "font-size:10px;color:var(--muted);margin-top:5px";
-          more.textContent = "ほか " + (records.length - 15) + "件";
-          section.appendChild(more);
-        }
       } else {
         const none = document.createElement("div");
         none.style.cssText = "font-size:11px;color:var(--muted);margin-top:5px";
