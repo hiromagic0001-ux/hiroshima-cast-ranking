@@ -3443,10 +3443,18 @@
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
+        },
+        {
+          "label": "CREA 独立ドメイン公式サイト",
+          "url": "https://creahiroshima.com/"
+        },
+        {
+          "label": "エステ魂 CREA店舗掲載",
+          "url": "https://estama.jp/shop/26145/"
         }
       ],
       "officialUrl": "https://creahiroshima.com/",
-      "officialUrlStatus": "公式サイト確認済み",
+      "officialUrlStatus": "独立ドメイン公式サイトへ直接アクセス可能。店舗トップに営業時間・電話・当日の出勤情報を掲載。住所情報はページ内に複数表記があり個別照合待ち。",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
@@ -3460,7 +3468,7 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
         "evidence": [
           {
@@ -3476,8 +3484,16 @@
             "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           }
         ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "CREA"
+        "status": "独立ドメイン公式サイトに当日出勤情報・電話・営業時間を確認。媒体掲載の電話番号も一致。公式サイト内の住所表記が複数あるため住所の確定は保留。",
+        "nameAlias": "CREA",
+        "url": "https://creahiroshima.com/",
+        "kind": "independent-official-site-and-current-roster-confirmed",
+        "sources": [
+          "https://creahiroshima.com/",
+          "https://estama.jp/shop/26145/"
+        ],
+        "phone": "070-2353-9000",
+        "hours": "公式サイト表示 11:00〜LAST（FAQに11:00〜翌3:00の記載もあり）"
       }
     },
     {
@@ -9053,6 +9069,14 @@
         {
           "label": "風俗マップ・広島市メンズエステ37店",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        },
+        {
+          "label": "エステ魂 店舗詳細・ブランドサイト欄",
+          "url": "https://estama.jp/shop/38980/"
+        },
+        {
+          "label": "Be-ange 独立ドメイン公式サイト",
+          "url": "https://beange-beauty.com/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -9068,9 +9092,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市を対象とする現行媒体一覧の掲載名と照合一致。これは媒体掲載の確認であり、現在営業中・当日受付・住所/電話/営業時間・公式サイトの真正性を独立確認したものではない。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "媒体のブランドサイトリンクから独立ドメイン公式サイトを確認。公式サイトと媒体の店名・電話番号が一致。旧登録URLは404。住所の個別照合と最新営業状況は未確証。",
         "evidence": [
           {
             "source": "広島県メンズエステマップ（広島市37店の一覧）",
@@ -9091,8 +9115,18 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
-      }
+        "operatingStatus": "営業中の個別確証なし",
+        "url": "https://beange-beauty.com/",
+        "kind": "independent-official-site-confirmed",
+        "sources": [
+          "https://estama.jp/shop/38980/",
+          "https://beange-beauty.com/"
+        ],
+        "phone": "090-9251-0678",
+        "hours": "11:00〜27:00（受付10:00〜27:00）"
+      },
+      "officialUrl": "https://beange-beauty.com/",
+      "officialUrlStatus": "独立ドメインの店舗ブランドサイトを媒体のブランドサイト欄から確認・直接アクセス可能。旧URL beange.men-este.net は404のため置換。"
     },
     {
       "name": "Healing Salon Alive",
@@ -11696,6 +11730,10 @@
         {
           "label": "風俗マップ・メンズエステ候補",
           "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        },
+        {
+          "label": "エステ魂 FREEDOM店舗詳細",
+          "url": "https://estama.jp/shop/40477/"
         }
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
@@ -11711,9 +11749,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市（37店）のメンズエステ一覧で名称・市内エリアを確認。掲載情報は第三者媒体によるもので、現在の営業中・当日受付を独立確認したものではない。",
-        "status": "広島市一覧掲載一致・営業詳細未確証",
+        "status": "第三者媒体の店舗ページで2026-11-10の新着情報・電話・営業時間・セラピスト掲載を確認。公式ホームページ欄は確認できず、独立公式サイトは未確認。所在地も未確証。",
         "evidence": [
           {
             "source": "メンズエステマップ広島県（広島市37店）",
@@ -11722,7 +11760,14 @@
         ],
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "現在営業中・当日受付の独立確証なし"
+        "operatingStatus": "現在営業中・当日受付の独立確証なし",
+        "url": "https://estama.jp/shop/40477/",
+        "kind": "current-third-party-listing-only",
+        "sources": [
+          "https://estama.jp/shop/40477/"
+        ],
+        "phone": "070-8499-1534",
+        "hours": "10:00〜LAST"
       }
     },
     {
