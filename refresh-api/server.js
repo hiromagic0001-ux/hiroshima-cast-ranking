@@ -553,7 +553,8 @@ const server = http.createServer(async (req, res) => {
   }
   // One-time, non-destructive import of the existing Hiroshima 278-store candidate database.
   // The route seeds D1 only when the stores key is absent; it never replaces existing data.
-  // Merge only duplicate-name audit annotations into existing D1 stores. Never replace the store roster.
+  // Merge audit metadata from the canonical 278-record source into existing D1 stores.
+  // Never replace the roster or business fields; preserve every current store record.
   if (pathname === "/api/storage/sync-duplicate-audit" && req.method === "POST") {
     if (origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "allowed_app_origin_required" }, origin);
     const storageUrl = process.env.CAST_STORAGE_URL;
@@ -570,36 +571,49 @@ const server = http.createServer(async (req, res) => {
       const sourceResponse = await fetch(sourceUrl, { signal: AbortSignal.timeout(20000) });
       if (!sourceResponse.ok) return send(res, 502, { ok: false, error: "source_database_unavailable", sourceStatus: sourceResponse.status }, origin);
       const source = await sourceResponse.json();
-      if (source.totalCandidates !== 278 || !Array.isArray(source.records) || source.records.length !== 278 ||
-          source.duplicateAuditSummary?.groupsReviewed !== 7) {
-        return send(res, 409, { ok: false, error: "source_audit_validation_failed" }, origin);
+      if (source.totalCandidates !== 278 || !Array.isArray(source.records) || source.records.length !== 278) {
+        return send(res, 409, { ok: false, error: "source_database_validation_failed", count: source.records?.length ?? null }, origin);
       }
-      const annotations = source.records.filter(record => record.duplicateAudit && record.duplicateGroup && record.name);
-      if (annotations.length !== 15) return send(res, 409, { ok: false, error: "unexpected_annotation_count", count: annotations.length }, origin);
       const current = existing.value;
       if (current.records.length !== 278) return send(res, 409, { ok: false, error: "existing_record_count_mismatch", count: current.records.length }, origin);
-      const pending = [];
-      for (const sourceRecord of annotations) {
-        const matches = current.records.filter(record =>
-          record.name === sourceRecord.name &&
-          record.duplicateGroup === sourceRecord.duplicateGroup &&
-          (record.duplicateRole || "unassigned") === (sourceRecord.duplicateRole || "unassigned")
-        );
-        if (matches.length !== 1) {
-          return send(res, 409, { ok: false, error: "record_match_not_unique", name: sourceRecord.name, matches: matches.length }, origin);
+      const sourceNames = new Set();
+      for (const record of source.records) {
+        if (!record.name || sourceNames.has(record.name)) return send(res, 409, { ok: false, error: "source_names_not_unique", name: record.name || null }, origin);
+        sourceNames.add(record.name);
+      }
+      const currentByName = new Map();
+      for (const record of current.records) {
+        if (!record.name || currentByName.has(record.name)) return send(res, 409, { ok: false, error: "existing_names_not_unique", name: record.name || null }, origin);
+        currentByName.set(record.name, record);
+      }
+      const auditFields = ["individualAudit", "batchAudit", "duplicateReview", "duplicateAudit",
+        "duplicateGroup", "duplicateRole", "duplicateCanonicalName", "contactReview", "contactReviewDone"];
+      let updatedRecords = 0;
+      let fieldsSynced = 0;
+      const nextRecords = current.records.map(record => {
+        const sourceRecord = source.records.find(item => item.name === record.name);
+        if (!sourceRecord) return record;
+        const merged = { ...record };
+        let changed = false;
+        for (const field of auditFields) {
+          if (Object.prototype.hasOwnProperty.call(sourceRecord, field)) {
+            merged[field] = sourceRecord[field];
+            changed = true;
+            fieldsSynced++;
+          }
         }
-        pending.push({ name: sourceRecord.name, duplicateAudit: sourceRecord.duplicateAudit });
+        if (changed) updatedRecords++;
+        return merged;
+      });
+      if (nextRecords.length !== 278 || currentByName.size !== sourceNames.size) {
+        return send(res, 409, { ok: false, error: "record_roster_validation_failed" }, origin);
       }
       const next = {
         ...current,
-        records: current.records.map(record => {
-          const annotation = pending.find(item => item.name === record.name &&
-            annotations.some(sourceRecord => sourceRecord.name === item.name &&
-              sourceRecord.duplicateGroup === record.duplicateGroup &&
-              (sourceRecord.duplicateRole || "unassigned") === (record.duplicateRole || "unassigned")));
-          return annotation ? { ...record, duplicateAudit: annotation.duplicateAudit } : record;
-        }),
-        duplicateAuditSummary: source.duplicateAuditSummary
+        records: nextRecords,
+        ...(Array.isArray(source.batchAudits) ? { batchAudits: source.batchAudits } : {}),
+        ...(source.auditSummary ? { auditSummary: source.auditSummary } : {}),
+        ...(source.duplicateAuditSummary ? { duplicateAuditSummary: source.duplicateAuditSummary } : {})
       };
       const writeResponse = await fetch(new URL("/v1/data/stores", storageUrl), {
         method: "PUT",
@@ -608,14 +622,15 @@ const server = http.createServer(async (req, res) => {
         signal: AbortSignal.timeout(20000)
       });
       const write = await writeResponse.json();
-      if (!writeResponse.ok || !write.ok) return send(res, 502, { ok: false, error: "duplicate_audit_sync_write_failed", upstreamStatus: writeResponse.status }, origin);
+      if (!writeResponse.ok || !write.ok) return send(res, 502, { ok: false, error: "audit_sync_write_failed", upstreamStatus: writeResponse.status }, origin);
       return send(res, 200, {
         ok: true, updatedKey: "stores", recordsPreserved: current.records.length,
-        annotationsMerged: pending.length, groupsReviewed: source.duplicateAuditSummary.groupsReviewed,
-        updatedAt: write.updatedAt, note: "店舗レコードの追加・削除・統合は行わず、重複照合メモのみを更新しました。"
+        updatedRecords, fieldsSynced, groupsReviewed: source.duplicateAuditSummary?.groupsReviewed ?? null,
+        updatedAt: write.updatedAt,
+        note: "278件の店舗レコードと既存の店舗情報は保持し、個別確認・一括確認・重複照合などの監査メモだけを同期しました。"
       }, origin);
     } catch (error) {
-      return send(res, 502, { ok: false, error: "duplicate_audit_sync_failed", detail: String(error?.message || error) }, origin);
+      return send(res, 502, { ok: false, error: "audit_sync_failed", detail: String(error?.message || error) }, origin);
     }
   }
   if (pathname === "/api/storage/import-initial-stores" && req.method === "GET") {
