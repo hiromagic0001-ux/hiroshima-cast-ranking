@@ -138,8 +138,8 @@
       "name": "シークレット",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区東平塚町（公式案内）",
+      "status": "独立公式サイト確認・最新店舗情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -148,22 +148,35 @@
       ],
       "officialUrl": "https://thesecret924.com/",
       "officialUrlStatus": "独立公式サイトを確認",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "2026-11-19に個別再確認済み。公式情報と第三者媒体情報を区別して記録",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "kind": "official-site-and-current-listing",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-directly-opened-and-current-posts",
         "url": "https://thesecret924.com/",
         "address": "広島市中区東平塚町",
         "hours": "10:00〜LAST（受付9:30〜）",
         "phone": "080-9328-4440",
-        "status": "店舗情報ページに公式HP・住所・電話・営業時間掲載",
+        "status": "独立ドメインの公式サイトを直接開き、店舗名・電話・営業時間を照合。公式サイトに2026-11-18の最新告知と当日セラピスト情報が表示され、営業情報の更新を確認。",
         "sources": [
-          "https://menes-style.jp/chugoku_shikoku/hiroshima/thesecret"
+          "https://thesecret924.com/",
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/thesecret",
+          "https://estama.jp/shop/44286/bloglist"
         ]
       },
       "verifiedAddress": "広島市中区東平塚町",
       "verifiedHours": "10:00〜LAST（受付9:30〜）",
-      "verifiedPhone": "080-9328-4440"
+      "verifiedPhone": "080-9328-4440",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "rechecked",
+        "note": "独立ドメインの公式サイトを直接開き、店舗名・電話・営業時間を照合。公式サイトに2026-11-18の最新告知と当日セラピスト情報が表示され、営業情報の更新を確認。",
+        "sources": [
+          "https://thesecret924.com/",
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/thesecret",
+          "https://estama.jp/shop/44286/bloglist"
+        ]
+      }
     },
     {
       "name": "王様のきもち",
@@ -544,8 +557,8 @@
       "name": "リフレMoEST",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区宝町（掲載所在地）",
+      "status": "公式ページURL確認・複数媒体で店舗情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -554,24 +567,35 @@
       ],
       "officialUrl": "https://r.goope.jp/moest-hiroshima/",
       "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "2026-11-19に個別再確認済み。公式情報と第三者媒体情報を区別して記録",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
+        "kind": "official-url-and-current-directory-crosscheck",
         "url": "https://r.goope.jp/moest-hiroshima/",
         "address": "広島県広島市中区宝町（個室住所は予約後案内）",
-        "hours": "17:00〜LAST（媒体に15:00〜翌1:00の旧情報あり）",
+        "hours": "17:00〜LAST（別媒体に15:00〜LAST等の差異あり）",
         "phone": "082-208-2058",
-        "kind": "official-url-and-current-listing-crosscheck",
+        "status": "エステ魂の広島市店舗一覧で当日案内可・本日出勤表示・当日メッセージを確認。全国メンズエステランキングの店舗詳細で同じ電話番号、宝町所在地、在籍情報を確認。独立公式サイトURLは既存掲載のGoopeページを維持。営業時間は媒体差があるため断定せず。",
         "sources": [
-          "https://www.salonowa.jp/shop/moest-12205",
-          "https://mensesthe-rank.jp/areas/hiroshima-hiroshima/shops/rifuremoest",
-          "https://www.kking.jp/ippan/268166/"
-        ],
-        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+          "https://r.goope.jp/moest-hiroshima/",
+          "https://estama.jp/etc/shoplist/3401/store/",
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/1c791c76-fdbe-4ac1-b94a-abbbbabafd3e/"
+        ]
       },
       "verifiedAddress": "広島県広島市中区宝町（個室住所は予約後案内）",
-      "verifiedHours": "17:00〜LAST（媒体に15:00〜翌1:00の旧情報あり）",
-      "verifiedPhone": "082-208-2058"
+      "verifiedHours": "17:00〜LAST（媒体差あり）",
+      "verifiedPhone": "082-208-2058",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "rechecked",
+        "note": "エステ魂の広島市店舗一覧で当日案内可・本日出勤表示・当日メッセージを確認。全国メンズエステランキングの店舗詳細で同じ電話番号、宝町所在地、在籍情報を確認。独立公式サイトURLは既存掲載のGoopeページを維持。営業時間は媒体差があるため断定せず。",
+        "sources": [
+          "https://r.goope.jp/moest-hiroshima/",
+          "https://estama.jp/etc/shoplist/3401/store/",
+          "https://www.esthe-ranking.jp/hiroshima/shop-detail/1c791c76-fdbe-4ac1-b94a-abbbbabafd3e/"
+        ]
+      }
     },
     {
       "name": "スパバーニーズ",
@@ -648,8 +672,8 @@
       "name": "小悪魔SPA",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区宝町（公式サイト案内）",
+      "status": "独立公式サイト直接確認・店舗情報更新済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -658,23 +682,35 @@
       ],
       "officialUrl": "https://hiroshima-synchro.com/",
       "officialUrlStatus": "公式ページURLを確認（掲載媒体上のHP欄を含む）",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "2026-11-19に個別再確認済み。公式情報と第三者媒体情報を区別して記録",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-directly-opened-and-current-roster",
         "url": "https://hiroshima-synchro.com/",
         "address": "広島県広島市中区宝町（フジグラン宝町から徒歩2分）",
-        "hours": "24時間営業",
+        "hours": "24時間・年中無休（公式サイト表示）",
         "phone": "080-6083-0666",
-        "kind": "official-site-listed-and-current-listing",
+        "status": "独立ドメインの公式サイトを直接開き、店名・電話・営業時間・所在地を確認。セラピスト一覧、予約フォーム、公式Xへのリンクを確認。外部媒体には別表記や異なる電話番号の可能性があるため公式サイト記載を優先。",
         "sources": [
+          "https://hiroshima-synchro.com/",
           "https://mens-es.men/shop/29324",
-          "https://mens-est.jp/shop/hsynchro/"
-        ],
-        "status": "公式サイトまたは複数媒体の店舗詳細を照合。媒体間で異なる営業時間は併記し、単一値に断定していない。"
+          "https://dr.ptr216.ptrcloud.net/hiroshima/shop/reserve"
+        ]
       },
       "verifiedAddress": "広島県広島市中区宝町（フジグラン宝町から徒歩2分）",
-      "verifiedHours": "24時間営業",
-      "verifiedPhone": "080-6083-0666"
+      "verifiedHours": "24時間・年中無休",
+      "verifiedPhone": "080-6083-0666",
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "rechecked",
+        "note": "独立ドメインの公式サイトを直接開き、店名・電話・営業時間・所在地を確認。セラピスト一覧、予約フォーム、公式Xへのリンクを確認。外部媒体には別表記や異なる電話番号の可能性があるため公式サイト記載を優先。",
+        "sources": [
+          "https://hiroshima-synchro.com/",
+          "https://mens-es.men/shop/29324",
+          "https://dr.ptr216.ptrcloud.net/hiroshima/shop/reserve"
+        ]
+      }
     },
     {
       "name": "REAL",
