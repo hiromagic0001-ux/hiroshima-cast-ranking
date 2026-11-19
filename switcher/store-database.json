@@ -1305,8 +1305,8 @@
       "name": "アガットテイク",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区八丁堀（第三者媒体掲載、詳細住所非公開）",
+      "status": "第三者媒体で11月19日出勤表示確認・独立公式サイト未確認・営業時間に媒体差あり",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1319,29 +1319,32 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "third-party-shop-detail-confirmed-current-status-not-independently-proven",
+        "checkedAt": "2026-11-19",
+        "status": "third-party-listing-and-same-day-cast-indication-confirmed; independent-official-domain-unconfirmed; hours-discrepancy",
         "sources": [
+          "https://estama.jp/shop/34497/cast/",
           "https://menesmall.jp/shop/agate-take/system",
-          "https://menesmall.jp/shop/agate-take"
+          "https://ore-aroma.jp/hiroshima/rank-list/%E5%BA%83%E5%B3%B6%E5%B8%82"
         ],
-        "address": "広島県広島市中区八丁堀",
-        "hours": "9:00～翌3:00",
+        "address": "広島市中区八丁堀（メンエスmall掲載。マンション型のため部屋番号等は非公開）",
+        "hours": "エステ魂は9:00〜翌4:00、メンエスmallは09:00〜翌03:00。媒体差あり。",
         "phone": "080-7308-3572",
-        "note": "メンエスmall店舗詳細で名称、住所エリア、電話、営業時間を確認。掲載更新は2024-07-11のため現況は要再確認。独立公式HPは未確認。"
+        "note": "11/19取得時点のエステ魂セラピスト一覧に小羽のあ 18:30〜22:00の当日出勤表示。エステ魂に電話番号・予約状況表示あり。メンエスmallは住所・電話・営業時間を掲載。独立公式ドメインは確認できず、オレアロ内の「公式」表記は独立ドメイン確認の代替にしない。"
       },
-      "verifiedAddress": "広島県広島市中区八丁堀",
-      "verifiedHours": "9:00～翌3:00",
+      "verifiedAddress": "広島県広島市中区八丁堀（媒体掲載）",
+      "verifiedHours": "媒体差あり：9:00〜翌4:00（エステ魂）／9:00〜翌3:00（メンエスmall）",
       "verifiedPhone": "080-7308-3572",
       "contactReviewDone": true,
       "contactReview": {
-        "checkedAt": "2026-11-14",
-        "status": "third-party listing checked",
-        "note": "メンエスmall店舗詳細で名称、住所エリア、電話、営業時間を確認。掲載更新は2024-07-11のため現況は要再確認。独立公式HPは未確認。",
+        "checkedAt": "2026-11-19",
+        "status": "third-party sources cross-checked; independent official site unconfirmed",
+        "note": "電話と八丁堀エリアは複数媒体で一致。当日出勤は媒体一覧表示。営業時間は翌3時/翌4時で相違。",
         "sources": [
-          "https://menesmall.jp/shop/agate-take"
+          "https://estama.jp/shop/34497/cast/",
+          "https://menesmall.jp/shop/agate-take/system"
         ]
-      }
+      },
+      "officialUrlStatus": "独立公式ドメイン未確認。オレアロの「公式」表記は媒体内掲載のため独立公式HPとして登録しない"
     },
     {
       "name": "salon.do.ni-na",
