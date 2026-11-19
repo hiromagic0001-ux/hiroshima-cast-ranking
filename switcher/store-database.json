@@ -3549,8 +3549,8 @@
       "name": "RESORT",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区薬研堀6-7 森田ビル4Fを公式サイトで確認",
+      "status": "独立公式サイト確認・電話番号と旧媒体URLの同一性は未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -3566,7 +3566,7 @@
         }
       ],
       "officialUrl": "https://resort-h.site/",
-      "officialUrlStatus": "公式サイト確認済み",
+      "officialUrlStatus": "独立ドメイン公式サイトを直接確認。公式ページに中区薬研堀6-7 森田ビル4F、12:00〜翌4:00、本日の出勤欄を掲載。電話番号は今回の公式ページ本文で確認できず。",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
@@ -3580,7 +3580,7 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
         "evidence": [
           {
@@ -3596,18 +3596,24 @@
             "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           }
         ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "RESORT"
+        "status": "独立公式サイトを直接確認。公式住所・営業時間・本日の出勤欄を確認。旧媒体の別URL・電話情報との同一性は未確定。",
+        "nameAlias": "RESORT",
+        "sources": [
+          "https://resort-h.site/",
+          "https://estama.jp/shop/23992/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂の店舗詳細で中区薬研堀6-7 森田ビル4F、電話080-2926-1146、12:00〜翌4:00を確認。公式HP欄はhttp://www.resort-h.net/。既存登録resort-h.siteとは異なるため同一性・現行公式URLの照合が必要。",
+        "batch": "50店舗第2回・個別照合",
+        "status": "独立公式ドメイン https://resort-h.site/ を直接確認。中区薬研堀6-7 森田ビル4F、12:00〜翌4:00、本日の出勤欄を確認。以前の媒体記録にある別ドメインresort-h.netおよび電話080-2926-1146との同一性は未確認のため統合せず。",
         "sources": [
-          "https://estama.jp/shop/23992/",
-          "https://menesu-select.com/hiroshima/hiroshima/"
+          "https://resort-h.site/",
+          "https://estama.jp/shop/23992/"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区薬研堀6-7 森田ビル4F（公式サイト）",
+      "verifiedHours": "12:00〜翌4:00（公式サイト）"
     },
     {
       "name": "シャルディア",
@@ -3861,19 +3867,20 @@
         "checkedAt": "2026-11-19",
         "kind": "independent-official-site-verified",
         "url": "https://think-relax.hiroshima.jp/top.php",
-        "status": "独立公式サイトで大手町2ルーム・住吉町1ルーム、住所2箇所、電話090-4105-0167、営業時間9:00〜翌5:00、受付8:30〜、セラピスト出勤表を確認。エステ魂掲載情報とも一致。",
+        "status": "公式アクセスページで大手町5-10-11 リヴィエール2 601、住吉町17-5 バウハウス住吉405、電話090-4105-0167、8:30〜翌5:00、セラピスト出勤表を確認。",
         "sources": [
-          "https://think-relax.hiroshima.jp/top.php",
           "https://think-relax.hiroshima.jp/access.php",
-          "https://estama.jp/shop/22514/"
+          "https://think-relax.hiroshima.jp/about.php",
+          "https://think-relax.hiroshima.jp/top.php"
         ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "THINK〜シンク〜のエステ魂店舗詳細で中区大手町5-10-11 リヴィエールⅡ、住吉町ルーム、電話090-4105-0167、9:00〜翌5:00を確認。公式サイト欄https://think-relax.hiroshima.jp/top.php を確認。",
+        "batch": "50店舗第2回・個別照合",
+        "status": "独立公式アクセスページを再確認。大手町5-10-11 リヴィエール2 601、住吉町17-5 バウハウス住吉405、電話090-4105-0167、営業時間表示8:30〜翌5:00。既存の9:00〜翌5:00記録から公式表示に更新。",
         "sources": [
-          "https://estama.jp/shop/22514/"
+          "https://think-relax.hiroshima.jp/access.php",
+          "https://think-relax.hiroshima.jp/about.php"
         ]
       },
       "officialUrl": "https://think-relax.hiroshima.jp/top.php",
@@ -3881,7 +3888,7 @@
       "officialUrlVerifiedAt": "2026-11-19",
       "verifiedAddress": "広島県広島市中区大手町5-10-11 リヴィエールⅡ（2ルーム）／住吉町17-5 バウハウス住吉（1ルーム）",
       "verifiedPhone": "090-4105-0167",
-      "verifiedHours": "9:00〜翌5:00（受付8:30〜）"
+      "verifiedHours": "8:30〜翌5:00（公式サイト表示。受付時間表記）"
     },
     {
       "name": "ルミエラ",
@@ -3969,27 +3976,26 @@
         "checkedAt": "2026-11-19",
         "kind": "independent-official-site-verified",
         "url": "https://spayouandme.com/",
-        "status": "公式サイトTOPに電話080-4773-3567、10:00〜26:00、受付9:00〜26:00。アクセスページに宝町5と河原町3の2ルームを明記。セラピスト・出勤表ページあり。第三者媒体の営業時間表記と一部差異があるため併記。",
+        "status": "独立公式サイトを再確認。電話080-4773-3567、10:00〜26:00、受付9:00〜26:00を確認。公式サイトのアクセス情報で宝町・河原町の2ルームを確認。",
         "sources": [
           "https://spayouandme.com/",
-          "https://spayouandme.com/access/",
-          "https://mens-est.jp/shop/YouMeSPA/"
+          "https://spayouandme.com/access/"
         ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂・メンエスmallで広島市中区、比治山橋駅最寄り、電話080-4773-3567、10:00〜翌2:00を確認。11/17 23:42の店舗ニュースあり。独立公式ドメイン未確認。",
+        "batch": "50店舗第2回・個別照合",
+        "status": "独立公式サイトを再確認。電話080-4773-3567、営業時間10:00〜26:00、受付9:00〜26:00。宝町・河原町の2ルーム。従来の受付時間9:00〜翌0:30という記録は公式TOP表示と異なるため修正。",
         "sources": [
-          "https://estama.jp/shop/49802/newslist/",
-          "https://dr.ptr216.ptrcloud.net/shop/you-me-spa/contact"
+          "https://spayouandme.com/",
+          "https://spayouandme.com/access/"
         ]
       },
       "officialUrl": "https://spayouandme.com/",
       "officialUrlStatus": "独立ドメインの公式サイトとアクセス・セラピスト・出勤情報ページを直接確認。宝町・河原町の2ルーム。",
       "verifiedAddress": "広島市中区宝町5／広島市中区河原町3（公式アクセス掲載）",
       "verifiedPhone": "080-4773-3567",
-      "verifiedHours": "10:00〜翌2:00（受付9:00〜翌0:30。公式サイトTOPは受付9:00〜26:00表記）"
+      "verifiedHours": "10:00〜翌2:00（公式TOPは10:00〜26:00、受付9:00〜26:00）"
     },
     {
       "name": "アロマミア",
@@ -4134,7 +4140,7 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
         "evidence": [
           {
@@ -4150,21 +4156,27 @@
             "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           }
         ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null
+        "status": "エステ魂の複数セラピストページで広島市、舟入幸町駅最寄り、9:00〜翌4:00、在籍プロフィールを確認。電話はセラピストページ070-5520-4376、求人ページ070-2363-0457と不一致。住所番地は求人掲載の舟入幸町5-10だが、ルーム住所としての一致は未確認。",
+        "nameAlias": null,
+        "sources": [
+          "https://estama.jp/shop/45468/cast/828544/",
+          "https://estama.jp/shop/45468/cast/819331/",
+          "https://esjob.jp/shop/45468/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "50店舗個別確認",
-        "status": "エステ魂の複数セラピストページで広島市、舟入幸町駅最寄り、電話070-5520-4376、9:00〜翌4:00、年末年始のみ休業を確認。個別プロフィールの更新時期は異なるため営業継続の最終確認ではない。",
+        "batch": "50店舗第2回・個別照合",
+        "status": "広島市・舟入幸町駅最寄り、9:00〜翌4:00、セラピスト掲載を確認。電話はセラピストページ070-5520-4376と求人ページ070-2363-0457で不一致のため確定番号に統一しない。求人ページは舟入幸町5-10を勤務地表示。独立公式ドメイン未確認。",
         "sources": [
-          "https://estama.jp/shop/45468/cast/819331/",
-          "https://estama.jp/shop/45468/cast/828544/"
+          "https://estama.jp/shop/45468/cast/828544/",
+          "https://esjob.jp/shop/45468/"
         ]
       },
       "verifiedAddress": "広島市内・舟入幸町駅最寄り（番地未確認）",
-      "verifiedPhone": "070-5520-4376",
-      "verifiedHours": "9:00〜翌4:00"
+      "verifiedPhone": null,
+      "verifiedHours": "9:00〜翌4:00",
+      "phoneStatus": "電話番号に媒体間の不一致あり。セラピストページ070-5520-4376、求人ページ070-2363-0457。確定番号として統一しない。"
     },
     {
       "name": "Arinoa",
@@ -4260,18 +4272,21 @@
         "checkedAt": "2026-11-19",
         "kind": "independent-official-site-verified",
         "url": "https://tonari-esthe.com/",
-        "status": "公式サイトに10:00〜翌5:00、横川駅エリア、最新セラピスト出勤情報、2026-11-08のお知らせを確認。エステ魂に電話090-8106-5573、広島市西区、横川駅北口徒歩7分、年中無休を掲載。",
+        "status": "独立公式ドメインhttps://tonari-esthe.com/とエステ魂店舗ページを照合。広島市西区、横川駅南口/北口徒歩7分の表記差、電話090-8106-5573、10:00〜翌5:00、年中無休、11月の告知・セラピスト掲載を確認。",
         "sources": [
           "https://tonari-esthe.com/",
-          "https://estama.jp/shop/51793/"
+          "https://estama.jp/shop/51793/",
+          "https://menesth.jp/32/shop/51656/"
         ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂でTONARI〜トナリ〜、西区・横川駅南口徒歩7分、電話090-8106-5573、10:00〜翌5:00、年中無休を確認。独立公式サイトhttps://tonari-esthe.com/とXあり。",
+        "batch": "50店舗第2回・個別照合",
+        "status": "独立公式サイト、エステ魂、メンズリラクの3媒体でTONARI～トナリ～を照合。広島市西区、電話090-8106-5573、10:00〜翌5:00、年中無休。駅出口表記は南口/北口で差があり、番地は未掲載。",
         "sources": [
-          "https://estama.jp/shop/51793/"
+          "https://tonari-esthe.com/",
+          "https://estama.jp/shop/51793/",
+          "https://menesth.jp/32/shop/51656/"
         ]
       },
       "officialUrl": "https://tonari-esthe.com/",
@@ -4285,7 +4300,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "広島市中区大手町3丁目、広電市役所前駅・中電前駅徒歩5分を複数媒体で確認",
-      "status": "Soin〜ソワン〜と同一店舗名の表記揺れと判断できる情報あり。広島市内の住所・電話・営業時間・出勤情報を複数媒体で確認。独立公式サイトの直接確認は未了",
+      "status": "第三者媒体で広島市内情報・公式HPリンク確認。独立サイト直接確認待ち",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -4305,7 +4320,7 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
         "evidence": [
           {
@@ -4321,21 +4336,25 @@
             "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
           }
         ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null
-      },
-      "batchAudit": {
-        "checkedAt": "2026-11-19",
-        "batch": "50店舗個別確認",
-        "status": "エステ魂とメンエスパークの両方でSoin〜ソワン〜、電話070-9440-4756、広島市中区大手町3丁目、8:00〜翌6:00を確認。メンエスパークでは11/19更新・当日出勤2名・在籍4名。エステ魂に公式HP https://esthe-soin.net/ とブランドサイト https://soin0705.com の記載あり。直接アクセスは未確認。",
+        "status": "Soin〜ソワン〜との表記一致をエステ魂・メンエスパークで確認。電話070-9440-4756、広島市中区大手町3丁目、8:00〜翌6:00、11/19メンエスパークに当日出勤2名・在籍4名表示。公式HP欄https://esthe-soin.net/、ブランドサイトhttps://soin0705.com/。独立サイト直接アクセス未確認。",
+        "nameAlias": null,
         "sources": [
           "https://estama.jp/shop/49383/",
           "https://menespark.com/hiroshima/soin/",
           "https://menespark.com/hiroshima/"
         ]
       },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "50店舗第2回・個別照合",
+        "status": "エステ魂とメンエスパークでSoin〜ソワン〜との表記一致を確認。電話070-9440-4756、広島市中区大手町3丁目、8:00〜翌6:00。メンエスパークは11/19更新・当日出勤2名・在籍4名。公式HPリンクは媒体掲載のみで直接アクセス未確認。",
+        "sources": [
+          "https://estama.jp/shop/49383/",
+          "https://menespark.com/hiroshima/soin/"
+        ]
+      },
       "officialUrl": "https://esthe-soin.net/",
-      "officialUrlStatus": "エステ魂の店舗ページに公式ホームページとして掲載。独立ドメインの直接アクセス確認は未了。ブランドサイト https://soin0705.com も掲載。",
+      "officialUrlStatus": "エステ魂店舗ページに公式ホームページとして掲載。独立ドメインの直接アクセスは未確認。ブランドサイトhttps://soin0705.com/も媒体掲載。",
       "verifiedAddress": "広島市中区大手町3丁目",
       "verifiedPhone": "070-9440-4756",
       "verifiedHours": "8:00〜翌6:00（媒体表記08:00〜30:00）"
@@ -5392,8 +5411,8 @@
       "name": "Excellent Royal",
       "category": "soap",
       "area": "広島市候補",
-      "areaStatus": "広島市候補・住所確認待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区薬研堀5-8を公式アクセスページで確認",
+      "status": "独立公式サイト確認・広島市中区薬研堀のソープランド",
       "sources": [
         {
           "label": "風俗マップ・広島エリア",
@@ -5413,30 +5432,28 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          }
-        ],
-        "status": "個別照合実施・一致未確証",
-        "nameAlias": null
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-directly-verified",
+        "status": "独立公式アクセスページで広島市中区薬研堀5-8、電話082-242-1115、営業時間7:00〜24:00を確認。ソープランドとして分類。",
+        "sources": [
+          "https://ex-royal.com/access/",
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=soap&pref=hiroshima"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間7:00〜24:00。メンズエステではなくソープランド。独立公式URL・電話は今回未確認。",
+        "batch": "50店舗第2回・個別照合",
+        "status": "独立公式サイトのアクセスページで中区薬研堀5-8、電話082-242-1115、営業時間7:00〜24:00を確認。業種はソープランドで、メンズエステとは別分類。",
         "sources": [
-          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
-          "https://nsnn.jp/hiroshima-shi-soap/"
+          "https://ex-royal.com/access/",
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=soap&pref=hiroshima"
         ]
-      }
+      },
+      "officialUrl": "https://ex-royal.com/",
+      "verifiedAddress": "広島県広島市中区薬研堀5-8",
+      "verifiedPhone": "082-242-1115",
+      "verifiedHours": "7:00〜24:00",
+      "officialUrlStatus": "独立公式アクセスページで住所・電話・営業時間を直接確認"
     },
     {
       "name": "LIGHT（ライト）",
