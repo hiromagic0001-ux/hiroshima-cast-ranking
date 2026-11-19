@@ -6133,7 +6133,19 @@
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=267a936b58",
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=e8a7064798"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。個別住所・電話は既存記録を維持し、一覧掲載だけで現営業を確定しない。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6178,7 +6190,19 @@
         "status": "公式アクセスページで中区薬研堀10-7、電話082-244-8123、営業時間9:00〜24:00を直接確認。ソープランドとして分類。",
         "sources": [
           "https://www.hiroshima-palette.com/access/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回取得した広島県一覧抜粋では名称一致を再確認できず。既存の公式アクセス情報は保持し、一覧抜粋での未確認を閉店・非掲載とは扱わない。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6225,7 +6249,19 @@
           "https://nsnn.jp/shop/ginza_story_hiroshima/",
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=e8a7064798",
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=267a936b58"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。LIGHTと同じ住所の既存記録は同一店舗の証明ではなく、別レコードを維持。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6266,7 +6302,19 @@
         "phone": "082-236-3378",
         "sources": [
           "https://www.sherbet-hiroshima.com/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。独立公式サイト等の既存情報は維持。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "verifiedAddress": "広島県広島市中区銀山町12-10 藤観ビル3F",
       "verifiedHours": "6:00〜24:00",
@@ -6306,7 +6354,19 @@
         "phone": "082-567-4404",
         "sources": [
           "https://sherbet-bekkan.net/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。Sherbet本店との別館関係は既存情報を維持し、統合しない。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "verifiedAddress": "広島県広島市中区薬研堀1-7",
       "verifiedHours": "9:00〜24:00（土日祝6:00〜）",
@@ -6361,7 +6421,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。広島市内の正確な所在地は個別確証と区別。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6413,7 +6485,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。広島市内の正確な所在地は個別確証と区別。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6465,7 +6549,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。広島市内の正確な所在地は個別確証と区別。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6517,7 +6613,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。広島市内の正確な所在地は個別確証と区別。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6554,7 +6662,19 @@
         "sources": [
           "https://www.zyosiryouhonkan.com/",
           "https://www.zyosiryouhonkan.com/top/schedule"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。独立公式サイト等の既存情報は維持。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "verifiedAddress": "広島県広島市中区薬研堀5-3",
       "verifiedHours": "9:00〜24:00",
@@ -6594,7 +6714,19 @@
         "phone": null,
         "sources": [
           "https://www.sekitei-hiroshima.com/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。独立公式サイト等の既存情報は維持。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6629,7 +6761,19 @@
         "phone": null,
         "sources": [
           "https://www.sekitei-bekkan.com/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島・薬研堀/流川一覧にソープランドとして掲載。石庭本店との別館関係は既存情報を維持し、統合しない。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6680,7 +6824,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの店舗型ヘルス一覧にAGORAとして掲載。薬研堀・流川という地域表示であり、正確な番地の独立確認とは区別。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6731,7 +6887,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの店舗型ヘルス一覧にOasisとして掲載。薬研堀・流川という地域表示であり、正確な番地の独立確認とは区別。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6782,7 +6950,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの店舗型ヘルス一覧にPANTHERとして掲載。薬研堀・流川という地域表示であり、正確な番地の独立確認とは区別。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6823,7 +7003,19 @@
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=f13fabfea0",
           "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの店舗型ヘルス一覧にSerenityとして掲載。Serenity Oasisとの同一性は未確定のまま別レコードを維持。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6868,7 +7060,19 @@
         "sources": [
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=c04d0a7b12",
           "https://estama.jp/shop/42675/cast/632061/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの店舗型ヘルス一覧にナナとして掲載。キャスト名との同名衝突を避け、店舗候補としての既存記録を維持。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6922,7 +7126,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの店舗型ヘルス一覧に人妻専科たま乱堂として掲載。広島本店の表記を保持。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -6973,7 +7189,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップのSM・イメクラ等の一覧にドラゴンハンドとして掲載。メンズエステとは別業種。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7024,7 +7252,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップのSM・イメクラ等の一覧にヘブンハンド広島店として掲載。メンズエステとは別業種。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7075,7 +7315,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの性感エステ一覧に極楽エステとして掲載。メンズエステ分類とは分けて扱う。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7127,7 +7379,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの性感エステ一覧にAROMA JUNGLEとして掲載。メンズエステ分類とは分けて扱う。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7178,7 +7442,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの性感エステ一覧にLoving Touchとして掲載。メンズエステ分類とは分けて扱う。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7229,7 +7505,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの性感エステ一覧にOLIVE SPAとして掲載。メンズエステ分類とは分けて扱う。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7280,7 +7568,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの性感エステ一覧にSILK SPA広島店として掲載。メンズエステ分類とは分けて扱う。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7331,7 +7631,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回の取得一覧抜粋で名称一致を確定できず。広島県広島表記と広島市明記を区別し、既存候補を保留。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7382,7 +7694,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにAresとして広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7434,7 +7758,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにDiamondHeartsとして広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7485,7 +7821,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにELEGANCEとして広島市表記で掲載。掲載確認は現営業・住所の独立証明とは区別。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7541,7 +7889,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにNATURALとして広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7593,7 +7953,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにRUSHとして広島市表記で掲載。東広島店は別エリアとして区別。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7644,7 +8016,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにTIARAとして広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7696,7 +8080,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにVip style clubとして広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7747,7 +8143,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップに人妻アクメとして広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7798,7 +8206,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにポポロンとして広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7849,7 +8269,19 @@
         ],
         "scope": "取得一覧表示内で一致未確証",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回取得した一覧抜粋で名称一致を確定できず。非掲載・閉店とは断定せず保留。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7901,7 +8333,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにエッチな熟女として広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -7953,7 +8397,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにベルベット広島として広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8004,7 +8460,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップに人妻同窓会として広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8056,7 +8524,19 @@
         ],
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップに奥様鉄道69広島店として広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8108,7 +8588,19 @@
         ],
         "scope": "取得一覧表示内で一致未確証",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回取得した一覧抜粋で名称一致を確定できず。Serenityとの同一性も未確定のため統合しない。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8160,7 +8652,19 @@
         ],
         "scope": "取得一覧表示内で一致未確証",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップに摩天楼として広島エリア掲載。広島市の明示ではないため市内所在は未確定。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8211,7 +8715,19 @@
         ],
         "scope": "取得一覧表示内で一致未確証",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回取得した一覧抜粋で名称一致を確定できず。未掲載・閉店とは断定せず保留。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8262,7 +8778,19 @@
         ],
         "scope": "取得一覧表示内で一致未確証",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回取得した一覧抜粋で名称一致を確定できず。未掲載・閉店とは断定せず保留。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8313,7 +8841,19 @@
         ],
         "scope": "取得一覧表示内で一致未確証",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回取得した一覧抜粋で名称一致を確定できず。未掲載・閉店とは断定せず保留。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8365,7 +8905,19 @@
         ],
         "scope": "取得一覧表示内で一致未確証",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回取得した一覧抜粋で名称一致を確定できず。未掲載・閉店とは断定せず保留。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8425,7 +8977,19 @@
         ],
         "scope": "広島市一覧",
         "officialSiteStatus": "URL登録あり・リンク先内容未再検証",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップの広島市一覧抜粋では名称一致を確認できず。既存の独立公式サイト確認・ルーム情報は保持し、媒体一覧の未一致で否定しない。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8477,7 +9041,19 @@
         ],
         "scope": "取得一覧表示内で一致未確証",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回取得した一覧抜粋で名称一致を確定できず。未掲載・閉店とは断定せず保留。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8518,7 +9094,19 @@
         "sources": [
           "https://fu-web.jp/hiroshima/merchant/news/merchantCode/1986/",
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=f0a080bc30"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "風俗マップにカサブランカとして広島エリア掲載。ただし過去のモザイク合併告知と現行掲載の関係が不明で、独立店舗の現営業を確定しない。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -8561,7 +9149,19 @@
         "sources": [
           "https://mozaic.tv/work/?DOC=essential",
           "https://fu-web.jp/hiroshima/merchant/news/merchantCode/1986/"
-        ]
+        ],
+        "thirdStageCrossCheck": {
+          "checkedAt": "2026-11-19",
+          "scope": "広島県公開業種別一覧との再照合（一覧掲載・地域表示・業種の確認）",
+          "status": "今回取得した一覧抜粋でMOZAICの名称一致・現行営業情報を確認できず。求人の勤務可能時間を店舗営業時間へ転用せず、合併告知の既存記録を維持。",
+          "limitation": "第三者一覧の掲載一致は現営業・独立公式サイト・正確な所在地の証明ではない。広島エリア表記と広島市明記を区別し、未一致は閉店・非掲載と断定しない。",
+          "sources": [
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+            "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+          ]
+        }
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -16990,6 +17590,20 @@
         "https://mens-es.men/shop/50643",
         "https://estama.jp/shop/40767/"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 100,
+      "endIndex": 149,
+      "count": 50,
+      "scope": "広島市候補101〜150番・第3段階の業種/広島市範囲/掲載クロスチェック",
+      "note": "101〜150番の50候補について、風俗マップの広島県業種別123店一覧、デリヘル78店一覧、店舗型ヘルス6店一覧、広島エリア別一覧を再照合。ソープランド・店舗型ヘルス・SM等・性感エステ・デリヘルの業種区分を確認。広島県全体/広島エリアの掲載と「広島市」明記を区別し、Ares・DiamondHearts・NATURAL・TIARA・Vip style club等は広島エリア表示のみで市内所在未確定、ELEGANCE・RUSHは広島市表記を確認。LIGHT/STORYの住所重複、Serenity/Serenity Oasisの同一性、カサブランカ/モザイクの合併告知など既存の疑義は未解決のまま保持。今回の一覧抜粋で一致しない候補は未掲載・閉店と断定しない。媒体掲載は現営業・独立公式サイト・正確な住所の証明ではなく、既存の個別情報を上書きせず、278レコードを保持。 ",
+      "sources": [
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=deli&pref=hiroshima",
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?cat=health&pref=hiroshima",
+        "https://ultimate-map.com/yoru/fu-zoku/area.php?a=%E5%BA%83%E5%B3%B6&cat=deli&pref=hiroshima"
+      ]
     }
   ],
   "auditSummary": {
@@ -17053,7 +17667,7 @@
     "individualAuditRecords": 278,
     "batchAuditedRecords": 243,
     "batchAuditRuns": 18,
-    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。 2026-11-19に1〜50番の第3段階所在地・掲載情報クロスチェックを追加。確認できた電話・所在地・複数ルーム・営業時間差のみ記録し、未確認候補は保留。 2026-11-19に51〜100番の第3段階媒体横断・業種確認を追加。掲載一致は媒体掲載確認に限定し、現営業・独立公式サイト・正確な所在地の確証とは区別。95〜100番の業種混在を保持し、278候補を維持。"
+    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。 2026-11-19に1〜50番の第3段階所在地・掲載情報クロスチェックを追加。確認できた電話・所在地・複数ルーム・営業時間差のみ記録し、未確認候補は保留。 2026-11-19に51〜100番の第3段階媒体横断・業種確認を追加。掲載一致は媒体掲載確認に限定し、現営業・独立公式サイト・正確な所在地の確証とは区別。95〜100番の業種混在を保持し、278候補を維持。 2026-11-19に101〜150番の第3段階業種・広島市範囲・掲載クロスチェックを追加。広島県/広島エリア掲載と広島市明記を区別し、業種混在と同一性未確定を保持。掲載一致は現営業・独立公式サイト・正確な所在地の証明とは扱わず、未一致を閉店と断定しない。"
   },
   "duplicateAuditSummary": {
     "checkedAt": "2026-11-19",
