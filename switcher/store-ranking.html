@@ -106,6 +106,12 @@ main{max-width:900px;margin:auto;padding:14px}
     saved.appendChild(intro);
     saved.appendChild(title);
     const sources = state && state.sources && typeof state.sources === "object" ? state.sources : {};
+    const countSummary = document.createElement("div");
+    countSummary.style.cssText = "font-size:12px;font-weight:750;line-height:1.8;margin:8px 0 12px;padding:10px;border:1px solid var(--line);border-radius:10px;background:#10231b";
+    const savedTotal = sourceOrder.reduce((sum, id) => sum + (Number(sources[id]?.recordCount) || 0), 0);
+    const renderedTotal = sourceOrder.reduce((sum, id) => sum + (Array.isArray(sources[id]?.records) ? sources[id].records.length : 0), 0);
+    countSummary.textContent = "D1保存件数：" + savedTotal + "件 ／ 画面表示対象：" + renderedTotal + "件";
+    saved.appendChild(countSummary);
     if (!sourceOrder.some(id => sources[id])) {
       const empty = document.createElement("div");
       empty.style.cssText = "font-size:11px;color:var(--muted)";
@@ -124,12 +130,15 @@ main{max-width:900px;margin:auto;padding:14px}
       section.appendChild(heading);
       const meta = document.createElement("div");
       meta.style.cssText = "font-size:11px;color:var(--muted);line-height:1.6";
+      const records = Array.isArray(source.records) ? source.records : [];
+      const savedCount = Number(source.recordCount) || records.length;
       meta.textContent = "指標：" + (source.metric || "媒体別指標") +
-        " ／ 保存件数：" + (source.recordCount ?? (source.records || []).length) + "件" +
+        " ／ 保存件数：" + savedCount + "件" +
+        " ／ 実データ：" + records.length + "件" +
+        (savedCount !== records.length ? " ／ ⚠ 件数不一致" : "") +
         " ／ 最終成功：" + (source.lastSuccessAt || "まだ成功記録なし") +
         (source.error ? " ／ 状態：" + source.error : "");
       section.appendChild(meta);
-      const records = Array.isArray(source.records) ? source.records : [];
       if (records.length) {
         const list = document.createElement("ol");
         list.style.cssText = "margin:7px 0 0;padding-left:22px;font-size:11px;line-height:1.7";
