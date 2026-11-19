@@ -16185,6 +16185,21 @@
         "https://www.hiroshimajyukujyo.com/",
         "https://www.fucolle.com/32/shop/shop2469/"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 200,
+      "endIndex": 249,
+      "count": 50,
+      "scope": "広島市候補201〜250番・50店舗再照合",
+      "note": "広島市の店舗候補50件について、既存の個別batchAudit・individualAuditを保持したまま、広島市ランキング107店、MEN'S ES 184店、メンエスセレクト125店、エステ番長の広島170店一覧、メンズエステマップの広島市37店一覧で名称・エリア表示を横断再照合。各媒体の掲載数・分類・店舗名は媒体ごとに差があり、掲載一致は営業中・独立公式サイト・正確な住所の証明ではない。既存メモにある営業時間差、電話不一致、市外ルーム、重複候補は統合せず維持。",
+      "sources": [
+        "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+        "https://mens-es.men/area/3401",
+        "https://menesu-select.com/hiroshima/hiroshima/",
+        "https://es-ban.com/p/5597/a/5598/shoplist",
+        "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+      ]
     }
   ],
   "auditSummary": {
