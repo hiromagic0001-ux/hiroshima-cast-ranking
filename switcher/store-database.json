@@ -16332,6 +16332,22 @@
         "https://ivyspa.jp/",
         "https://riverseste.com/"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 200,
+      "endIndex": 249,
+      "count": 50,
+      "scope": "広島市候補201〜250番・第2段階クロスチェック",
+      "note": "201〜250番の50候補を、広島市カテゴリのメンズエステマップ（37店表示）、メンズエステ情報ランキング（107店表示）、メンエスセレクト（125店表示）、エステ番長（170店表示）および求人掲載情報で再照合。&White、Affino、Bright、FREEDOM、Healing Salon Alive、Jasmine、Luxe、Men's salon 凛、Men’s spa R、Mrs.癒seaside、Noël、Nuxe、Reflet Spa、SPA-DOLCE、SPA商事-秘書室-、peony、トップシークレット、ベトナムガル、メンズエステ LOVE、Paz、Hitomebore、Labyrinth、極のエステ、IRIS、luana、エネル出張、ラブデラックス、出張マッサージ～サヤ～、広島sweet luxuryspa、華room等は広島市カテゴリ一覧で名称一致を確認。ポルテ、スカーレット、ルーチェ、39サロン BonBon、リアン広島、BODY SPA HIROSHIMA等はメンエスセレクト/ランキング等の掲載情報と照合対象として確認。求人掲載の更新表示ではTONARI、BODY SPA HIROSHIMA、Lumiella等も広島市表記を確認。媒体ごとに対象業種・掲載数・更新頻度・市内/広域区分が異なるため、名称掲載のみで現営業・独立公式サイト・正確な所在地・電話番号を確定しない。201エモーションは広島市西区ルームと廿日市市の別ルームを区別。210 FREEDOMは独立ドメインURLの既存確認を保持し、旧URL404との混同を避ける。220 SPA-DOLCE、238 Toriko、243 Grace Spa、247 Refresh等の既存個別情報・複数ルーム・営業時間差は上書きせず維持。派遣型候補は固定店舗と扱わず、同名・類似名候補は統合しない。未確認項目は保留し、店舗レコードの削除・統合・事業情報の上書きは行わず278件を保持。",
+      "sources": [
+        "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+        "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+        "https://menesu-select.com/hiroshima/hiroshima/",
+        "https://es-ban.com/p/5597/a/5598/shoplist",
+        "https://www.esthe-works.jp/hiroshima/",
+        "https://nsnn.jp/hiroshima-shi-esthe/"
+      ]
     }
   ],
   "auditSummary": {
@@ -16394,8 +16410,8 @@
     "duplicateReviewRecords": 15,
     "individualAuditRecords": 278,
     "batchAuditedRecords": 243,
-    "batchAuditRuns": 15,
-    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。"
+    "batchAuditRuns": 16,
+    "note": "URL登録数には媒体ページ・媒体提供サブドメインが含まれる場合がある。独立公式ドメイン確認数とは別集計。所在地・電話・営業時間は各verifiedフィールドがあるレコード数で、全候補の実在・営業確定数ではない。重複候補は削除・統合せず確認対象として保持。 2026-11-19に101〜150番の業種・掲載エリアを第2段階で横断再照合。既存の個別メモと候補レコードは保持。 2026-11-19に51〜100番の第三者媒体横断掲載照合を追加。掲載確認と個別の現営業・独立公式サイト確認は区別し、候補は保持。 2026-11-19に201〜250番の第2段階クロスチェックを追加。媒体掲載と現営業・独立公式サイト・所在地の確証は区別し、278候補を保持。"
   },
   "duplicateAuditSummary": {
     "checkedAt": "2026-11-19",
