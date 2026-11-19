@@ -16228,6 +16228,17 @@
         "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
         "https://mens-es.men/area/3401"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 0,
+      "endIndex": 49,
+      "count": 50,
+      "scope": "広島市候補1〜50番・第2段階の掲載照合",
+      "note": "候補1〜50番の店名をメンエスセレクト広島市一覧の掲載名と照合。ページ上で50候補すべての名称掲載を確認（一覧の先頭50件）。同ページは「店舗未確認」と明記しているため、この結果は第三者媒体への掲載一致のみを示し、現営業・独立公式サイト・正確な所在地・電話番号の確証とは扱わない。ナチュレ等の個別照合メモ、同名衝突、媒体サブドメインと独立ドメインの区別を維持。候補の削除・統合・業種や事業情報の上書きは行わない。",
+      "sources": [
+        "https://menesu-select.com/hiroshima/hiroshima/"
+      ]
     }
   ],
   "auditSummary": {
