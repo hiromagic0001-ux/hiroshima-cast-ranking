@@ -2605,8 +2605,8 @@
       "name": "クラブいち華",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区三川町の媒体掲載を確認。番地・営業日程は予約時確認",
+      "status": "第三者媒体の店舗詳細・電話・所在地確認。週末中心の不定期営業、独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -2647,20 +2647,22 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂の店舗・セラピスト掲載で広島市、八丁堀駅最寄り、電話090-3373-7771を確認。セラピスト投稿に土日営業・11:00〜22:00／13:00〜翌1:00の案内があるが、店舗営業時間として一律確定しない。独立公式ドメイン未確認。",
+        "batch": "50店舗第1回個別確認",
+        "status": "エステ魂店舗詳細で広島市中区三川町、電話090-3373-7771、週末だけ開店する不定期営業の説明を確認。通常の営業時間欄は空欄のため未設定のまま。独立公式ドメイン未確認。",
         "sources": [
-          "https://estama.jp/shop/44067/cast/710562/",
-          "https://estama.jp/shop/44067/menu/"
+          "https://estama.jp/shop/44067/"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区三川町（番地非掲載）",
+      "verifiedPhone": "090-3373-7771",
+      "verifiedHours": "週末中心の不定期営業。店舗営業時間は未掲載"
     },
     {
       "name": "フェミニン",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区の富士見町・鶴見町ルームを媒体掲載で確認。番地・現行利用ルームは未確認",
+      "status": "複数媒体で電話・営業時間・現行セラピスト掲載確認。独立公式サイト未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -2701,13 +2703,17 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂・エステ番長で広島市掲載。電話080-4552-6161、営業時間はエステ魂11:00〜翌6:00、エステ番長11:00〜翌5:00で1時間差。中電前駅最寄り。独立公式ドメイン未確認。",
+        "batch": "50店舗第1回個別確認",
+        "status": "エステ魂の利用案内で電話080-4552-6161、営業時間11:00〜翌6:00、富士見町・鶴見町の2ルームを確認。セラピスト一覧は4日前クロール時点で現行掲載あり。エステ番長は11:00〜翌5:00と1時間差。独立公式サイト未確認。",
         "sources": [
+          "https://estama.jp/shop/40453/flow/",
           "https://estama.jp/shop/40453/cast/",
           "https://es-ban.com/p/5597/a/5598/shoplist?a=5598&type=5789"
         ]
-      }
+      },
+      "verifiedAddress": "広島市中区富士見町・鶴見町の2ルーム（番地非掲載）",
+      "verifiedPhone": "080-4552-6161",
+      "verifiedHours": "11:00〜翌6:00（エステ魂）／11:00〜翌5:00（エステ番長）"
     },
     {
       "name": "ザ・熟女 豊満桃色倶楽部",
@@ -2767,8 +2773,8 @@
       "name": "Tonトロ五日市店",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市佐伯区三宅の公式サイト記載を確認。広島市内",
+      "status": "独立公式サイト・五日市店情報確認済み（電話番号は媒体差あり）",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -2788,24 +2794,14 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "Tonトロ五日市店"
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-verified",
+        "url": "https://4rusyoku.com/hiro/",
+        "status": "公式サイトに五日市店案内、佐伯区三宅3-16-37、電話090-1335-4638、11:00〜翌2:00、当日出勤セラピスト欄を確認。第三者媒体は電話070-5674-8041としており電話番号に差異があるため、公式記載を優先し媒体差を注記。",
+        "sources": [
+          "https://4rusyoku.com/hiro/",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r2ff4662be2"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -2815,14 +2811,20 @@
           "https://menespark.com/hiroshima/hiroshima/?sort=review",
           "https://menesu-select.com/hiroshima/hiroshima/"
         ]
-      }
+      },
+      "officialUrl": "https://4rusyoku.com/hiro/",
+      "officialUrlStatus": "独立公式サイトを直接確認（2026-11-19）。五日市店の案内・当日出勤表示・料金/予約リンクあり。公式ページ記載の電話・住所・営業時間を確認。",
+      "officialUrlVerifiedAt": "2026-11-19",
+      "verifiedAddress": "広島県広島市佐伯区三宅3-16-37（公式サイト記載。五日市店のルーム案内）",
+      "verifiedPhone": "090-1335-4638（公式サイト記載。媒体には070-5674-8041もあり番号差異）",
+      "verifiedHours": "11:00〜翌2:00（公式サイト記載）"
     },
     {
       "name": "ミセスビマジョレッド",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区宝町の媒体掲載を確認。現行ルーム番地は未確認",
+      "status": "独立公式サイト・現行セラピスト情報確認済み。住所・電話・営業時間は第三者媒体掲載",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -2842,24 +2844,14 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": null
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-and-roster-verified",
+        "url": "https://bimajo-red.com/",
+        "status": "独立公式サイトに現行セラピストの予約状況、2026-11-16更新の告知を確認。第三者媒体menesth掲載の中区宝町、電話070-4467-7591、10:00〜翌5:00は媒体情報として保持。公式サイト本文から電話・住所を直接抽出できなかったため、独立公式サイト確認項目と媒体情報を分離。",
+        "sources": [
+          "https://bimajo-red.com/",
+          "https://menesth.jp/32/shop/48969/"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
@@ -2868,7 +2860,13 @@
         "sources": [
           "https://menesth.jp/32/shop/48969/"
         ]
-      }
+      },
+      "officialUrl": "https://bimajo-red.com/",
+      "officialUrlStatus": "独立公式ドメインへ直接アクセスし、現行セラピスト一覧・当日予約表示・2026-11-16更新のお知らせを確認。電話・所在地は第三者媒体情報として別管理。",
+      "officialUrlVerifiedAt": "2026-11-19",
+      "verifiedAddress": "広島市中区宝町（第三者媒体掲載。番地・現行ルームは未確認）",
+      "verifiedPhone": "070-4467-7591（第三者媒体掲載）",
+      "verifiedHours": "10:00〜翌5:00（第三者媒体掲載）"
     },
     {
       "name": "Vivienne",
