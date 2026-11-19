@@ -805,23 +805,25 @@
       ],
       "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "第三者媒体の店舗詳細・現行掲載情報を照合（独立公式HP未確認）",
-        "sources": [
-          "https://estowa.net/shop/S-yayouwutian-com/",
-          "https://bijo-mag.com/mei_adoll/"
-        ],
-        "address": "広島県広島市中区昭和町（別ルーム掲載あり）",
+        "checkedAt": "2026-11-19",
+        "url": "https://adollhiroshima.com/access/",
+        "address": "広島県広島市中区昭和町・大手町・富士見町（公式アクセスページ記載、部屋詳細は予約時案内）",
+        "hours": "10:00〜26:00（受付10:00〜25:00）",
         "phone": "070-9126-1805",
-        "note": "店舗情報媒体で電話・住所エリア・営業時間を照合。独立公式サイトの真正性は未確認。",
-        "url": null,
-        "hours": "10:00～翌2:00",
-        "kind": "third-party-current-listing-crosscheck"
+        "kind": "independent-official-site-directly-accessed",
+        "sources": [
+          "https://adollhiroshima.com/",
+          "https://adollhiroshima.com/access/",
+          "https://esthe-ranking.jp/hiroshima/shop-detail/677923b7-f077-41cb-81a4-ee9aae952ce1/"
+        ],
+        "status": "独立ドメイン公式サイトを直接開いて確認。公式アクセスページに昭和町・大手町・富士見町の3ルーム、電話番号070-9126-1805、営業時間10:00〜26:00（受付10:00〜25:00）を掲載。第三者媒体にも同じ電話・住所エリアが掲載されている。予約ボタンはエスタマに遷移するが、公式サイトURLは独立ドメイン。"
       },
-      "verifiedAddress": "広島県広島市中区昭和町（別ルーム掲載あり）",
-      "verifiedPhone": "070-9126-1805",
-      "verifiedHours": "10:00～翌2:00",
-      "contactReviewDone": true
+      "verifiedAddress": "広島県広島市中区昭和町・大手町・富士見町（公式アクセスページ記載）",
+      "verifiedPhone": "070-9126-1805（公式サイト記載）",
+      "verifiedHours": "10:00〜26:00（受付10:00〜25:00、公式サイト記載）",
+      "contactReviewDone": true,
+      "officialUrl": "https://adollhiroshima.com/",
+      "officialUrlStatus": "独立ドメインの店舗公式サイトを直接確認。アクセスページに広島市中区の複数ルーム、電話番号、営業時間を掲載。予約導線はエスタマだが、公式サイト本体は独立ドメイン。"
     },
     {
       "name": "ゆるりnon",
