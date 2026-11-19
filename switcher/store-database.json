@@ -3057,8 +3057,8 @@
       "name": "La Paix-ラペ-",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "公式サイトのアクセス欄で広島市中区三川町・宝町を確認（部屋番地は非掲載）",
+      "status": "独立公式サイト・現行出勤情報確認済み（詳細住所は未確認）",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -3078,27 +3078,34 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "current-cast-listing-and-shop-details-confirmed",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-site-and-current-schedule",
+        "url": "https://madame-la-paix.net/",
+        "address": "広島市中区三川町・宝町（個別部屋番地は非掲載）",
+        "hours": "10:00〜翌1:00",
+        "phone": "080-6242-3311",
+        "status": "独立公式サイト・現行出勤一覧・11/14更新情報を確認",
         "sources": [
-          "https://www.salonowa.jp/area/hiroshima/therapists?today=1",
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
+          "https://madame-la-paix.net/",
+          "https://menes-style.jp/chugoku_shikoku/hiroshima/lapaix"
         ],
-        "address": "広島県広島市中区（市役所前・中電前周辺）",
-        "hours": "10:00〜翌3:00",
-        "note": "当日出勤表示と店舗詳細を確認。電話番号・番地住所・独立公式サイトは今回未確認。"
+        "note": "公式サイトの店舗名、電話、営業時間、現行出勤一覧、11/14更新を確認。アクセス欄に三川町・宝町を記載。個別部屋番地・現在の営業継続は別途確証なし。"
       },
-      "verifiedAddress": "広島県広島市中区（市役所前・中電前周辺）",
-      "verifiedHours": "10:00〜翌3:00",
+      "verifiedAddress": "広島市中区三川町・宝町（個別部屋番地は非掲載）",
+      "verifiedHours": "10:00〜翌1:00",
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区・市役所前/中電前周辺、10:00〜翌3:00、当日出勤表示を過去媒体で確認。今回の再検索では電話・番地・独立公式サイトを確認できず。",
+        "batch": "50店舗第1回個別確認",
+        "status": "独立公式サイトを直接確認。広島市中区三川町・宝町、電話080-6242-3311、10:00〜翌1:00、現行出勤一覧を確認。個別部屋番地は未確認。",
         "sources": [
-          "https://www.salonowa.jp/area/hiroshima/therapists?today=1",
-          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?a=%E5%BA%83%E5%B3%B6%E5%B8%82%E4%B8%AD%E5%8C%BA&p=34"
+          "https://madame-la-paix.net/"
         ]
-      }
+      },
+      "officialUrl": "https://madame-la-paix.net/",
+      "officialUrlStatus": "独立公式サイトを直接確認（2026-11-19）。現行出勤一覧・11/14更新・電話・営業時間を掲載",
+      "officialUrlVerifiedAt": "2026-11-19",
+      "officialUrlVerificationNote": "独立ドメインのトップページに店舗名La Paix、電話080-6242-3311、営業時間10:00〜翌1:00、現行出勤一覧、11/14の最新情報を確認。アクセス欄は広島市中区三川町・宝町。個別部屋番地は非掲載。",
+      "verifiedPhone": "080-6242-3311"
     },
     {
       "name": "大人の隠れ家",
