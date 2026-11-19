@@ -440,6 +440,143 @@ const server = http.createServer(async (req, res) => {
       note: "診断専用。店舗ランキングの公開・既存データの上書きは行いません。"
     }, origin);
   }
+
+  // Persist only complete, validated source-specific store rankings.
+  // The 278-store roster and its audit metadata remain untouched.
+  if (pathname === "/api/stores/refresh" && req.method === "POST") {
+    if (origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "allowed_app_origin_required" }, origin);
+    const storageUrl = process.env.CAST_STORAGE_URL;
+    const storageToken = process.env.CAST_STORAGE_API_TOKEN;
+    if (!storageUrl || !storageToken) return send(res, 503, { ok: false, error: "storage_not_configured" }, origin);
+    const expected = { salonowa: 52, mensesthe_rank: 107, menes_note: 152 };
+    const labels = {
+      salonowa: "サロノワ・また行きたい順",
+      mensesthe_rank: "メンズエステ情報ランキング・アクセス順",
+      menes_note: "メンエスノート・口コミ評価"
+    };
+    const metrics = {
+      salonowa: "また行きたい順",
+      mensesthe_rank: "アクセス人気順（通常店舗・アジアン店舗別）",
+      menes_note: "口コミ評価・口コミ件数"
+    };
+    const sourceUrls = {
+      salonowa: "https://www.salonowa.jp/area/hiroshima/hiroshima",
+      mensesthe_rank: "https://mensesthe-rank.jp/areas/hiroshima-hiroshima",
+      menes_note: "https://men-esthe-review.com/area/%E5%BA%83%E5%B3%B6%E5%B8%82"
+    };
+    try {
+      const headers = { authorization: `Bearer ${storageToken}` };
+      const existingResponse = await fetch(new URL("/v1/data/ranking_state", storageUrl), {
+        headers, signal: AbortSignal.timeout(15000)
+      });
+      const existing = await existingResponse.json();
+      if (!existingResponse.ok || !existing.ok) {
+        return send(res, 502, { ok: false, error: "ranking_state_read_failed", upstreamStatus: existingResponse.status }, origin);
+      }
+      const current = existing.found && existing.value && typeof existing.value === "object" ? existing.value : {};
+      const priorSources = current.sources && typeof current.sources === "object" && !Array.isArray(current.sources)
+        ? current.sources : {};
+      const inspectResponse = await fetch(`http://127.0.0.1:${PORT}/api/stores/inspect`, {
+        headers: { origin: ALLOWED_ORIGIN, accept: "application/json" },
+        signal: AbortSignal.timeout(120000)
+      });
+      const inspection = await inspectResponse.json();
+      if (!Array.isArray(inspection.sources)) {
+        return send(res, 502, { ok: false, error: "inspection_result_invalid" }, origin);
+      }
+      const attemptedAt = new Date().toISOString();
+      const nextSources = { ...priorSources };
+      const checks = [];
+      for (const id of Object.keys(expected)) {
+        const source = inspection.sources.find(item => item.id === id);
+        const records = Array.isArray(source?.records) ? source.records : [];
+        const expectedCount = expected[id];
+        const hrefHosts = {
+          salonowa: new Set(["salonowa.jp", "www.salonowa.jp"]),
+          mensesthe_rank: new Set(["mensesthe-rank.jp", "www.mensesthe-rank.jp"]),
+          menes_note: new Set(["men-esthe-review.com", "www.men-esthe-review.com"])
+        }[id];
+        const validRecords = records.length === expectedCount && records.every(record => {
+          if (!record || !Number.isInteger(record.rank) || record.rank < 1 ||
+              typeof record.name !== "string" || !record.name.trim() || record.name.length > 100) return false;
+          if (!record.href && id === "salonowa") return true;
+          try {
+            const url = new URL(record.href);
+            return url.protocol === "https:" && hrefHosts.has(url.hostname);
+          } catch { return false; }
+        });
+        let ranksValid = false;
+        if (id === "mensesthe_rank") {
+          const groups = ["通常店舗", "アジアン店舗"];
+          ranksValid = groups.every(group => {
+            const groupRows = records.filter(record => record.rankingGroup === group);
+            return groupRows.every((record, index) => record.rank === index + 1) &&
+              records.every(record => groups.includes(record.rankingGroup));
+          });
+        } else {
+          const sortedRanks = records.map(record => record.rank).sort((a, b) => a - b);
+          ranksValid = sortedRanks.every((rank, index) => rank === index + 1);
+        }
+        const hrefs = records.map(record => record.href).filter(Boolean);
+        const uniqueHrefs = new Set(hrefs).size === hrefs.length;
+        const valid = Boolean(source?.ok && validRecords && ranksValid && uniqueHrefs);
+        const previous = priorSources[id] && typeof priorSources[id] === "object" ? priorSources[id] : {};
+        if (valid) {
+          nextSources[id] = {
+            sourceId: id, label: labels[id], url: sourceUrls[id], metric: metrics[id],
+            status: "更新済み", records, recordCount: records.length, expectedCount,
+            lastAttemptAt: attemptedAt, lastSuccessAt: attemptedAt, error: null
+          };
+        } else {
+          nextSources[id] = {
+            ...previous,
+            sourceId: id, label: labels[id], url: sourceUrls[id], metric: metrics[id],
+            status: "更新未確認", expectedCount,
+            recordCount: Array.isArray(previous.records) ? previous.records.length : 0,
+            lastAttemptAt: attemptedAt,
+            error: source?.error || (source?.ok
+              ? `件数・順位・リンク検証不一致（取得 ${records.length} / 期待 ${expectedCount}）`
+              : "外部媒体の取得またはページ構造の確認に失敗")
+          };
+        }
+        checks.push({ id, status: nextSources[id].status, receivedCount: records.length,
+          expectedCount, savedRecordCount: nextSources[id].recordCount, error: nextSources[id].error || null });
+      }
+      const nextState = {
+        ...current, schemaVersion: 1, sources: nextSources,
+        lastAttemptAt: attemptedAt,
+        lastRun: { attemptedAt, checks, note: "媒体別に独立保存。取得失敗・検証不一致の場合は直前の成功データを保持。" }
+      };
+      const writeResponse = await fetch(new URL("/v1/data/ranking_state", storageUrl), {
+        method: "PUT",
+        headers: { ...headers, "content-type": "application/json" },
+        body: JSON.stringify(nextState),
+        signal: AbortSignal.timeout(20000)
+      });
+      const write = await writeResponse.json();
+      if (!writeResponse.ok || !write.ok) {
+        return send(res, 502, { ok: false, error: "ranking_state_write_failed", upstreamStatus: writeResponse.status }, origin);
+      }
+      const verifyResponse = await fetch(new URL("/v1/data/ranking_state", storageUrl), {
+        headers, signal: AbortSignal.timeout(15000)
+      });
+      const verify = await verifyResponse.json();
+      if (!verifyResponse.ok || !verify.ok || !verify.found ||
+          !verify.value?.sources || Object.keys(expected).some(id => verify.value.sources[id]?.status !== nextSources[id]?.status)) {
+        return send(res, 502, { ok: false, error: "ranking_state_verify_failed", checks }, origin);
+      }
+      return send(res, 200, {
+        ok: true, mode: "persisted-source-separated", checks,
+        rankingState: verify.value,
+        note: "媒体別の順位だけをD1へ保存しました。278店舗の基本情報・照合メモは変更していません。"
+      }, origin);
+    } catch (error) {
+      return send(res, 502, { ok: false, error: "store_ranking_refresh_failed",
+        detail: String(error?.message || error),
+        note: "保存前の取得・検証に失敗した場合、既存のランキングデータは変更しません。" }, origin);
+    }
+  }
+
   if (pathname === "/api/casts/alternative-inspect" && req.method === "GET") {
     if (origin && origin !== ALLOWED_ORIGIN) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const sources = [
