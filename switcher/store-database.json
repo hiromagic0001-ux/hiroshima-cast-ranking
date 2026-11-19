@@ -1060,8 +1060,8 @@
       "name": "Mrs.ni-na",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区は確認。公式は鶴見町4番、第三者媒体は宝町で所在地相違・要確認",
+      "status": "独立公式サイト確認済み・所在地表記に媒体差あり",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1069,22 +1069,25 @@
         }
       ],
       "officialUrl": "https://mrs-salon-do-ni-na.com/",
-      "officialUrlStatus": "公式サイト確認済み",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "officialUrlStatus": "独立ドメイン公式サイトを直接確認済み",
+      "bulkAuditStatus": "独立公式サイトと第三者媒体を照合。電話・営業時間一致、住所相違を記録",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "official-site-link-and-current-third-party-shop-details-confirmed",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-domain-directly-verified-crosschecked",
+        "url": "https://mrs-salon-do-ni-na.com/",
+        "address": "公式サイトのアクセス欄は広島市中区鶴見町4番。第三者媒体は中区宝町と記載し相違。複数ルーム案内もあり、個別の現行ルーム所在地は未確定。",
+        "hours": "10:00〜翌2:00（予約受付9:00〜翌2:00）",
+        "phone": "090-2637-2007",
         "sources": [
           "https://mrs-salon-do-ni-na.com/",
-          "https://menesmall.jp/shop/mrs-ni-na"
+          "https://menesmall.jp/shop/mrs-ni-na",
+          "https://mens-est.jp/shop/Mrsni2na7/",
+          "https://menesth.jp/32/shop/40345/"
         ],
-        "address": "広島県広島市中区宝町",
-        "hours": "10:00〜翌2:00",
-        "phone": "090-2637-2007",
-        "note": "公式HP欄のURLとメンエスmall店舗詳細を照合。市内中心部4拠点・18ルームとの案内あり。住所は宝町表記で、各ルームの詳細住所は予約時案内。"
+        "status": "独立ドメイン公式サイトを直接確認。公式トップに電話090-2637-2007、営業時間10:00〜翌2:00、受付9:00〜翌2:00、セラピスト・出勤一覧を掲載。公式アクセス欄は中区鶴見町4番。メンエスmall等の複数媒体は中区宝町と記載し、住所が一致しないため要確認。公式サイト上の出勤一覧は確認したが、当日分の掲載日付は確定できず、11月19日の出勤実績とは扱わない。"
       },
-      "verifiedAddress": "広島県広島市中区宝町",
-      "verifiedHours": "10:00〜翌2:00",
+      "verifiedAddress": "広島県広島市中区（公式サイト：鶴見町4番／第三者媒体：宝町・要確認）",
+      "verifiedHours": "10:00〜翌2:00（受付9:00〜翌2:00）",
       "verifiedPhone": "090-2637-2007"
     },
     {
