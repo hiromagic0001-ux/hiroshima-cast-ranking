@@ -14293,9 +14293,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "今回取得した広島市対象の媒体一覧スナップショットでは確実な名称一致を確認できず。表記差・掲載終了・媒体未掲載の可能性があり、閉店や不存在とは判定しない。",
-        "status": "今回の取得一覧内で一致未確証",
+        "status": "独立公式ドメイン mrsmama.jp を確認。公式サイトは2026-10-15開店、JR広島駅徒歩5分、電話070-1482-6361、営業時間11:00〜翌3:00を掲載。メンエスmall・メンズエステマップの掲載情報とも電話・営業時間が一致。公式サイト記載は確認したが、実際の当日営業は別途確認が必要。",
         "evidence": [
           {
             "source": "広島県メンズエステマップ（広島市37店の一覧）",
@@ -14316,17 +14316,29 @@
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "url": "https://mrsmama.jp/",
+        "kind": "independent-official-domain-confirmed-crosschecked-with-listings",
+        "sources": [
+          "https://mrsmama.jp/",
+          "https://mrsmama.jp/first",
+          "https://menesmall.jp/shop/mrs-mama",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r2fafe75c56"
+        ]
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市内のメンエスmall掲載。電話070-1482-6361、広島駅徒歩5分、11:00〜翌3:00。別媒体では系列/旧店名らしき「ミセス」表記もあり、同一性は保留。",
+        "batch": "未確認6候補の追加個別照合",
+        "status": "独立公式ドメイン mrsmama.jp を確認。公式サイトは2026-10-15開店、JR広島駅徒歩5分、電話070-1482-6361、営業時間11:00〜翌3:00を掲載。メンエスmall・メンズエステマップの掲載情報とも電話・営業時間が一致。公式サイト記載は確認したが、実際の当日営業は別途確認が必要。",
         "sources": [
-          "https://dr.ptr216.ptrcloud.net/shop/mrs-mama",
+          "https://mrsmama.jp/",
+          "https://mrsmama.jp/first",
+          "https://menesmall.jp/shop/mrs-mama",
           "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r2fafe75c56"
         ]
-      }
+      },
+      "officialUrl": "https://mrsmama.jp/",
+      "officialUrlStatus": "独立公式ドメインを確認。公式サイト掲載情報と第三者媒体情報を照合。現営業は当日確認が必要。"
     },
     {
       "name": "KING'S 広島",
@@ -14380,11 +14392,12 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市内マンション型として掲載。10:00〜翌3:00、在籍15名の媒体表示。個別電話・住所・独立公式HPは未確認。",
+        "batch": "未確認6候補の追加個別照合",
+        "status": "エステ魂のKING'S（店舗ID39204）で広島市掲載、電話080-9555-2545、10:00〜LAST、中区富士見町の掲載を確認。メンエスmallのKING'S候補とも店名・電話・営業時間が近似するが、別レコード「KING'S」との同一性は確定せず、統合しない。",
         "sources": [
-          "https://menesmall.jp/hiroshima/124/shops",
-          "https://dr.ptr216.ptrcloud.net/hiroshima/shops"
+          "https://estama.jp/shop/39204/",
+          "https://estama.jp/shop/39204/flow/",
+          "https://menesmall.jp/shop/kings-hiroshima/system"
         ]
       }
     },
@@ -14440,11 +14453,12 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "「KING'S」と同一名称の別表記候補。中電前駅、10:00〜LAST、電話080-9555-2545の掲載を確認。別候補と同一か照合保留。",
+        "batch": "未確認6候補の追加個別照合",
+        "status": "エステ魂のKING'S（店舗ID39204）で広島市掲載、電話080-9555-2545、10:00〜LAST、中区富士見町の掲載を確認。別レコード「KING'S 広島」と同一候補の可能性があるが、表記差だけで統合せず保留。",
         "sources": [
-          "https://es-ban.com/p/5597/a/5598/ranking/rkc2",
-          "https://mail.men-esthe.jp/salon.php?id=13216"
+          "https://estama.jp/shop/39204/",
+          "https://estama.jp/shop/39204/flow/",
+          "https://estama.jp/shop/39204/menu/"
         ]
       }
     },
@@ -15343,10 +15357,11 @@
       "verifiedPhone": "090-9251-0678（掲載媒体情報）",
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "最終回・251〜278番28候補の再照合",
-        "status": "エステ魂・メンエスmallの掲載で中区宝町、電話090-9251-0678、11:00〜翌3:00を確認。登録公式URLは404で公式サイトの稼働を確認できず。",
+        "batch": "未確認6候補の追加個別照合",
+        "status": "メンエスmall・エステ魂で中区宝町、電話090-9251-0678、11:00〜翌3:00を確認。登録公式URL https://beange.men-este.net/ は検索時点で404。媒体の公式HP欄も同URLのため、稼働中の独立公式サイトは未確認。",
         "sources": [
-          "https://estama.jp/shop/40477/",
+          "https://menesmall.jp/shop/be-ange",
+          "https://estama.jp/shop/38980/",
           "https://beange.men-este.net/"
         ]
       }
@@ -15396,11 +15411,12 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "最終回・251〜278番28候補の再照合",
-        "status": "メンエスmall個別ページ・料金・問い合わせ情報で中区宝町5-9、電話080-2101-4002、10:00〜翌1:00を確認。オフィシャルHPリンク表示はあるがリンク先URL実体は未確認。",
+        "batch": "未確認6候補の追加個別照合",
+        "status": "メンエスmallの店舗・料金・問い合わせページで中区宝町5-9、電話080-2101-4002、10:00〜翌1:00を再確認。店舗ページ更新表示は2025-10-31。オフィシャルHPリンクの表示はあるがリンク先URL実体は取得できず、現営業・独立公式サイトは未確定。",
         "sources": [
           "https://menesmall.jp/shop/colors",
           "https://menesmall.jp/shop/colors/system",
+          "https://menesmall.jp/shop/colors/flow",
           "https://menesmall.jp/shop/colors/contact"
         ]
       },
@@ -15466,8 +15482,8 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "未確定候補の追加精査",
-        "status": "中区鶴見町7・10:00〜翌5:00は複数媒体で一致。電話は070-1482-6332と070-1482-6361の2種類が掲載され、未確定として保持。",
+        "batch": "未確認6候補の追加個別照合",
+        "status": "中区鶴見町7・10:00〜翌5:00は複数媒体で一致。電話番号は070-1482-6332と070-1482-6361の2種類が掲載され、店舗への帰属を確定できないため登録せず保留。独立公式サイトも未確認。",
         "sources": [
           "https://esjob.jp/etc/hiroshima/a3401/p8/",
           "https://hiroshima-menes-recruit.com/store/store-046/",
@@ -16250,6 +16266,22 @@
       "sources": [
         "https://mens-es.men/area/3401",
         "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+      ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 255,
+      "endIndex": 277,
+      "count": 6,
+      "scope": "未確認6候補（ミセスママ 広島、KING'S 広島、KING'S、Be-ange、COLORS、CRADLE）の追加個別照合",
+      "note": "ミセスママ広島の独立公式ドメインを確認。KING'Sはエステ魂の広島市店舗ページを確認したが別レコード同士の同一性は未確定のため統合せず。Be-angeの登録URLは404、COLORSの公式HPリンク先実URLは未取得。CRADLEは住所・営業時間一致、電話番号不一致を維持。第三者媒体掲載は現営業の確証と区別し、278レコードを保持。",
+      "sources": [
+        "https://mrsmama.jp/",
+        "https://estama.jp/shop/39204/",
+        "https://menesmall.jp/shop/be-ange",
+        "https://estama.jp/shop/38980/",
+        "https://menesmall.jp/shop/colors",
+        "https://esjob.jp/etc/hiroshima/a3401/p8/"
       ]
     }
   ],
