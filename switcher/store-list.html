@@ -20,6 +20,7 @@ function auditLabel(r){
  const kind=r.individualAudit?.kind||"";
  if(r.duplicateGroup)return "重複確認中";
  if(kind.includes("independent-official")||kind.includes("independent_official")||kind.includes("independent-official-site"))return "独立公式サイト確認";
+ if(kind==="official-site-confirmed"&&/独立公式サイト/.test(r.officialUrlStatus||""))return "独立公式サイト確認";
  if(kind==="estama-hosted-shop-page-confirmed")return "媒体サブドメイン確認";
  if(kind.includes("listing")||kind.includes("current-")||kind.includes("directory"))return "媒体掲載のみ";
  if(r.officialUrlStatus&&/独立ドメイン/.test(r.officialUrlStatus)&&/直接確認/.test(r.officialUrlStatus))return "独立公式サイト確認";
