@@ -11142,6 +11142,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。八丁堀駅徒歩3分・銀山町駅徒歩5分、9:00〜翌3:00の媒体情報。住所詳細・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11193,6 +11201,16 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市の媒体一覧に掲載。市役所前駅表記のページと鷹野橋駅表記の別媒体があり、場所表記に差異。電話070-3076-0123、営業時間10:00〜LAST（別媒体は9:00〜LAST）。予約後案内のため住所未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4065be40bc",
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C0"
+        ]
       }
     },
     {
@@ -11244,6 +11262,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。市役所前駅、6:00〜LASTの媒体情報。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11295,6 +11321,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。八丁堀駅、11:00〜LASTの媒体情報。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11346,6 +11380,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。12:00〜翌0:00の媒体情報。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11397,6 +11439,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。鷹野橋駅、10:00〜翌2:00の媒体情報。個別住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11448,6 +11498,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。広島駅エリア、10:00〜18:00の出張型として掲載。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11499,6 +11557,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。13:00〜翌6:00の出張型として掲載。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11550,6 +11616,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。銀山町駅、6:00〜翌6:00の店舗型として掲載。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11601,6 +11675,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。竹屋町駅、10:00〜LASTの媒体情報。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11652,6 +11734,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。中電前駅、10:00〜翌2:00。別媒体に中区大手町3丁目10-8、電話090-2962-4557の掲載あり。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+          "https://www.ernavi.com/hiroshima"
+        ]
       }
     },
     {
@@ -11703,6 +11794,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。鷹野橋駅、10:00〜LASTの媒体情報。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C3"
+        ]
       }
     },
     {
@@ -11754,6 +11854,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。10:00〜翌3:00。別媒体に中区富士見町（詳細予約時）、電話080-9130-7433の掲載あり。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34",
+          "https://www.ernavi.com/hiroshima"
+        ]
       }
     },
     {
@@ -11805,6 +11914,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。10:00〜翌3:00の媒体情報。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11856,6 +11973,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。11:00〜翌2:00、情報未確認の注記あり。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11907,6 +12032,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。11:00〜翌0:00、情報未確認の注記あり。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -11958,6 +12091,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市の出張型として掲載。6:00〜翌6:00、情報未確認の注記あり。エネル系の別名・系列と混同しない。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -12009,6 +12150,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市の出張型として掲載。13:00〜翌6:00、情報未確認の注記あり。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -12060,6 +12209,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市の出張型として掲載。13:00〜翌4:00、情報未確認の注記あり。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -12111,6 +12268,14 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市一覧に掲載。10:00〜翌5:00の媒体情報。住所・電話・独立公式サイトは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14832,6 +14997,14 @@
       "count": 20,
       "scope": "広島市候補196〜215番",
       "note": "奥様Yシャツ倶楽部・Rebernal・Emotion・BonBon・Lian・&White・Affino・FREEDOM・Healing Salon Alive等を媒体個別ページで照合。未確認候補は所在・営業未確認として保持。リアンと凛-rin-のような未確認名称は統合しない。"
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 215,
+      "endIndex": 234,
+      "count": 20,
+      "scope": "広島市候補216〜235番",
+      "note": "広島市のメンズエステ一覧で20候補の掲載・エリア・営業時間表記を照合。Noëlは媒体間で駅名・営業時間が異なるため差異を記録。Paz・Labyrinthは住所/電話の別媒体掲載を確認。その他の個別住所・電話・独立公式サイト未確認は未確認のまま保持。"
     }
   ]
 }
