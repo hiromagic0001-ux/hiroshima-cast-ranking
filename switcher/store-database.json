@@ -1245,8 +1245,8 @@
       "name": "マシェリ",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区（八丁堀のほか鶴見町・富士見町の複数ルーム掲載。詳細住所未確定）",
+      "status": "第三者媒体複数掲載・11月19日出勤表示あり・独立公式ドメイン未確認",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
@@ -1270,43 +1270,36 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "広島市の現行メンズエステ一覧スナップショット内に同名または表記一致を確認。これは媒体掲載確認であり、独立公式サイト・店舗所在地・電話・営業時間・現在営業中の個別確証ではない。",
-        "evidence": [
-          {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
-          },
-          {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
-          },
-          {
-            "label": "メンズエステ情報ランキング・広島市内一覧",
-            "url": "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
-          }
-        ],
-        "status": "媒体掲載一致・営業詳細未確証",
-        "nameAlias": "Macheri",
-        "address": "広島県広島市中区八丁堀",
-        "hours": "10:00～翌3:00",
-        "phone": null,
+        "checkedAt": "2026-11-19",
+        "status": "multiple-third-party-listings-and-same-day-roster-indicated; independent-domain-unconfirmed; room-and-hours-discrepancy",
         "sources": [
-          "https://mens-es.men/shop/24376"
+          "https://zukan-esthe.com/store.php?id=2797",
+          "https://ore-aroma.jp/shop/S-macherie-hirosima/areamap",
+          "https://estama.jp/shop/24376/coupon/",
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C4",
+          "https://www.kking.jp/ippan/119340/"
         ],
-        "note": "MEN'S ESの店舗詳細で広島市中区八丁堀、営業時間、在籍者情報を確認。電話番号と独立公式HPは未確認。"
+        "address": "エステアイは中区八丁堀1-23、ZUKANも八丁堀。エステ番長は鶴見町・富士見町の別ルームも同一電話で掲載。現行の部屋割り・住所は確定しない。",
+        "hours": "ZUKAN・エステ魂・エステアイは10:00〜翌3:00。エステ番長は10:00〜翌6:00（受付9:00〜翌2:00）。媒体差あり。",
+        "phone": "080-2912-8317",
+        "note": "11/19取得時点のZUKANに本日の出勤3名を時間付きで表示。エステ魂にも20:10〜21:10の予約状況表示。独立公式ドメインは見つからず、オレアロは媒体ページであり独立公式HPとして扱わない。"
       },
-      "verifiedAddress": "広島県広島市中区八丁堀",
-      "verifiedHours": "10:00～翌3:00",
+      "verifiedAddress": "広島県広島市中区（八丁堀・鶴見町・富士見町の媒体掲載。ルームの同一性・現行住所は要確認）",
+      "verifiedHours": "媒体差あり：10:00〜翌3:00／10:00〜翌6:00（受付9:00〜翌2:00の掲載もあり）",
       "contactReviewDone": true,
       "contactReview": {
-        "checkedAt": "2026-11-14",
-        "status": "third-party listing checked",
-        "note": "MEN'S ESの店舗詳細で広島市中区八丁堀、営業時間、在籍者情報を確認。電話番号と独立公式HPは未確認。",
+        "checkedAt": "2026-11-19",
+        "status": "third-party listings and same-day roster cross-checked; independent official domain unconfirmed",
+        "note": "電話は複数媒体で一致。住所は八丁堀のほか鶴見町・富士見町の掲載あり。営業時間にも媒体差。",
         "sources": [
-          "https://mens-es.men/shop/24376"
+          "https://zukan-esthe.com/store.php?id=2797",
+          "https://ore-aroma.jp/shop/S-macherie-hirosima/areamap",
+          "https://estama.jp/shop/24376/coupon/",
+          "https://es-ban.com/p/5597/a/5598/shoplist?page=0%2C4"
         ]
-      }
+      },
+      "verifiedPhone": "080-2912-8317",
+      "officialUrlStatus": "独立公式ドメイン未確認。オレアロ等の媒体内ページに公式サイト表記あり"
     },
     {
       "name": "アガットテイク",
