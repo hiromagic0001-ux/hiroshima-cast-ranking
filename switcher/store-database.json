@@ -944,34 +944,36 @@
       "name": "BODY SPA 広島",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内の所在地を公式サイトで確認（複数ルーム）",
+      "status": "独立公式サイト・現行掲載情報確認済み",
       "sources": [
         {
           "label": "メンズエステセレクト（既存収録）",
           "url": "https://menesu-select.com/hiroshima/hiroshima/"
         }
       ],
-      "officialUrl": "https://bodyspahiroshima.com/",
-      "officialUrlStatus": "公式サイト表示確認済み（BODY SPA HIROSHIMA表記・電話番号・広島市情報を照合）",
+      "officialUrl": "https://bodyspa-hiroshima.com/",
+      "officialUrlStatus": "独立ドメインの公式サイトを直接閲覧し、店舗名・電話・営業時間・広島市中区の案内・最新更新を照合済み",
       "duplicateReview": "同一店舗の別表記レコードを統合表示。原レコードは保持。",
       "duplicateGroup": "body-spa",
-      "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
+      "bulkAuditStatus": "独立公式サイト・現行更新情報の個別確認済み",
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "official-site-and-current-listing-confirmed",
-        "sources": [
-          "https://bodyspahiroshima.com/",
-          "https://www.es-king.jp/area/hiroshima/",
-          "https://esthe-ranking.jp/hiroshima/ippan/powder-massage/"
-        ],
-        "address": "広島県広島市中区東平塚町11-19（複数ルーム情報あり）",
-        "hours": "10:00〜LAST",
+        "checkedAt": "2026-11-19",
+        "kind": "independent-official-domain-directly-verified-and-current-updates",
+        "url": "https://bodyspa-hiroshima.com/",
+        "address": "広島県広島市中区国泰寺町2丁目（公式トップ記載）。公式サイト内に国泰寺町・竹屋町・東平塚町の複数ルーム案内あり。番地・部屋番号は非公開。",
+        "hours": "10:00〜LAST（受付9:30〜LAST）",
         "phone": "090-1414-4850",
-        "note": "独立公式サイトURLと複数掲載媒体の店舗情報を照合。市役所前駅周辺との表記差があるため、番地は事業者情報の住所として記録。duplicateGroup=body-spaは統合保留。"
+        "sources": [
+          "https://bodyspa-hiroshima.com/",
+          "https://estama.jp/shop/24335/",
+          "https://menesth.jp/32/shop/48787/",
+          "https://www.es-king.jp/area/hiroshima/"
+        ],
+        "status": "bodyspa-hiroshima.comを直接閲覧。トップに電話090-1414-4850、営業時間10:00〜LAST、所在地は広島市中区国泰寺町2丁目と表示。公式サイトのニュース欄に2026-11-19更新と11/18出勤告知、当日の出勤表示あり。公式サイトは国泰寺町・竹屋町・東平塚町の複数ルームを案内。以前登録されていたbodyspahiroshima.comは別の媒体ページであり、公式ドメインとして誤登録しないよう訂正。予約・問い合わせリンクはエステ魂等へ遷移するが、公式サイト本体は独立ドメインで確認済み。"
       },
-      "verifiedAddress": "広島県広島市中区東平塚町11-19（複数ルーム情報あり）",
-      "verifiedHours": "10:00〜LAST",
+      "verifiedAddress": "広島県広島市中区国泰寺町2丁目（公式トップ記載）。公式サイト内に国泰寺町・竹屋町・東平塚町の複数ルーム案内あり。番地・部屋番号は非公開。",
+      "verifiedHours": "10:00〜LAST（受付9:30〜LAST）",
       "verifiedPhone": "090-1414-4850",
       "duplicateRole": "primary",
       "duplicateCanonicalName": "BODY SPA 広島",
