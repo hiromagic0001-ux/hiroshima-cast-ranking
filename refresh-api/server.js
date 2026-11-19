@@ -838,7 +838,7 @@ const server = http.createServer(async (req, res) => {
     }
   }
   // Read-only link audit for the saved three-source ranking. Never writes to D1.
-  if (pathname === "/api/stores/check-ranking-links" && req.method === "POST") {
+  if (pathname === "/api/stores/check-ranking-links" && ["GET", "POST"].includes(req.method)) {
     if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const storageUrl = process.env.CAST_STORAGE_URL;
     const storageToken = process.env.CAST_STORAGE_API_TOKEN;
