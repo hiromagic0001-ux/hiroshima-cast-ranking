@@ -4753,6 +4753,14 @@
           "https://nsnn.jp/shop/esute_hybrid/",
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=afff0f9be3"
         ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島エリアの性感エステ掲載を確認。電話090-7122-8965、9:30〜翌1:30、住所非公開。広島市内の所在地は未確認のため、市内確定扱いにしない。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=afff0f9be3"
+        ]
       }
     },
     {
@@ -4819,6 +4827,15 @@
           "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=be0755e93f",
           "https://www.tenshi.tv/"
         ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "今回の公開検索では同名店舗の広島市内住所・電話・公式ページを確実に特定できず。候補として保留し、営業実態・市内所在地とも未確認。",
+        "sources": [
+          "https://menespark.com/hiroshima/hiroshima/",
+          "https://s-palette.com/hiroshima"
+        ]
       }
     },
     {
@@ -4862,6 +4879,15 @@
         ],
         "status": "個別照合実施・一致未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間7:00〜24:00。メンズエステではなくソープランドのため、業種分類を要修正。電話・公式URLは今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://nsnn.jp/hiroshima-shi-soap/"
+        ]
       }
     },
     {
@@ -4892,7 +4918,16 @@
       },
       "verifiedAddress": "広島市中区薬研堀4-4",
       "verifiedHours": "9:00〜24:00前",
-      "verifiedPhone": "082-247-1000"
+      "verifiedPhone": "082-247-1000",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランドとして掲載。既存公式URL https://www.eight-hiroshima.com/。営業時間9:00〜24:00。メンズエステではなくソープランド。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://www.nsnn.jp/hiroshima-shi-soap/"
+        ]
+      }
     },
     {
       "name": "Excellent Royal",
@@ -4933,6 +4968,15 @@
         ],
         "status": "個別照合実施・一致未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間7:00〜24:00。メンズエステではなくソープランド。独立公式URL・電話は今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://nsnn.jp/hiroshima-shi-soap/"
+        ]
       }
     },
     {
@@ -4976,6 +5020,15 @@
         ],
         "status": "個別照合実施・一致未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間9:00〜24:00。メンズエステではなくソープランド。公式URL・電話は今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://nsnn.jp/hiroshima-shi-soap/"
+        ]
       }
     },
     {
@@ -5017,6 +5070,15 @@
         ],
         "status": "個別照合実施・一致未確証",
         "nameAlias": null
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランド。公式予約ページ https://www.hiroshima-palette.com/reserve/、電話082-244-8123、9:00〜24:00を確認。メンズエステではなくソープランド。",
+        "sources": [
+          "https://www.hiroshima-palette.com/reserve/",
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
+        ]
       }
     },
     {
@@ -5060,6 +5122,15 @@
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間9:00〜24:00。メンズエステではなくソープランド。公式URL・電話は今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://nsnn.jp/hiroshima-shi-soap/"
+        ]
       }
     },
     {
@@ -5092,7 +5163,15 @@
       },
       "verifiedAddress": "広島県広島市中区銀山町12-10 藤観ビル3F",
       "verifiedHours": "6:00〜24:00",
-      "verifiedPhone": "082-236-3378"
+      "verifiedPhone": "082-236-3378",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "独立公式サイトで中区銀山町12-10藤観ビル3F、電話082-236-3378、6:00〜24:00、ソープランドと確認。既存URL https://www.sherbet-hiroshima.com/ は公式。",
+        "sources": [
+          "https://www.sherbet-hiroshima.com/"
+        ]
+      }
     },
     {
       "name": "シャーベット別館",
@@ -5124,7 +5203,16 @@
       },
       "verifiedAddress": "広島県広島市中区薬研堀1-7",
       "verifiedHours": "9:00〜24:00（土日祝6:00〜）",
-      "verifiedPhone": "082-567-4404"
+      "verifiedPhone": "082-567-4404",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "中区薬研堀1-7、電話082-567-4404、9:00〜24:00、無休、ソープランドとして確認。既存公式URL https://sherbet-bekkan.net/ は継続候補。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=00fd98163f",
+          "https://nsnn.jp/hiroshima-shi-soap/"
+        ]
+      }
     },
     {
       "name": "エルミタージュ",
@@ -5167,6 +5255,15 @@
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間9:00〜LAST。メンズエステではなくソープランド。公式URL・電話は今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://nsnn.jp/hiroshima-shi-soap/"
+        ]
       }
     },
     {
@@ -5210,6 +5307,15 @@
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "Blue Moonとして広島・薬研堀/流川のソープランド掲載。営業時間7:00〜24:00。メンズエステではなくソープランド。公式URL・電話は今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://nsnn.jp/hiroshima-shi-soap/"
+        ]
       }
     },
     {
@@ -5253,6 +5359,15 @@
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間9:00〜24:00（土日祝6:00〜）。メンズエステではなくソープランド。公式URL・電話は今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://nsnn.jp/hiroshima-shi-soap/"
+        ]
       }
     },
     {
@@ -5296,6 +5411,15 @@
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間10:00〜24:00。メンズエステではなくソープランド。公式URL・電話は今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima",
+          "https://nsnn.jp/hiroshima-shi-soap/"
+        ]
       }
     },
     {
@@ -5327,7 +5451,15 @@
       },
       "verifiedAddress": "広島県広島市中区薬研堀5-3",
       "verifiedHours": "9:00〜24:00",
-      "verifiedPhone": "082-240-9577"
+      "verifiedPhone": "082-240-9577",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "独立公式サイトで中区薬研堀5-3、電話082-240-9577、9:00〜24:00、年中無休、ソープランドと確認。メンズエステではなくソープランド。",
+        "sources": [
+          "https://www.zyosiryouhonkan.com/"
+        ]
+      }
     },
     {
       "name": "石庭",
@@ -5356,6 +5488,14 @@
         "sources": [
           "https://www.sekitei-hiroshima.com/"
         ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "独立公式サイトで中区弥生町6-12、電話082-243-3435、8:00〜23:59、銀山町駅徒歩3分、ソープランドと確認。メンズエステではなくソープランド。",
+        "sources": [
+          "https://www.sekitei-hiroshima.com/access/"
+        ]
       }
     },
     {
@@ -5382,6 +5522,14 @@
         "phone": null,
         "sources": [
           "https://www.sekitei-bekkan.com/"
+        ]
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "独立公式サイトで中区弥生町6-14、電話082-241-6016、9:00〜24:00、銀山町駅徒歩5分、ソープランドと確認。メンズエステではなくソープランド。",
+        "sources": [
+          "https://www.sekitei-bekkan.com/access/"
         ]
       }
     },
@@ -5426,6 +5574,14 @@
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川の店舗型ヘルスとして掲載。平日9:00〜24:00、土日6:00〜24:00。メンズエステではなく店舗型ヘルス。公式URL・電話は今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
+        ]
       }
     },
     {
@@ -5469,6 +5625,14 @@
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川の店舗型ヘルス「Oasis」として掲載。営業時間9:00〜24:00。メンズエステではなく店舗型ヘルス。既存候補との同一性・公式URL・電話は未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
+        ]
       }
     },
     {
@@ -5512,6 +5676,14 @@
         "scope": "広島県一覧・市内所在要再確認",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島・薬研堀/流川のソープランドとして掲載。営業時間9:00〜23:59。メンズエステではなくソープランド。公式URL・電話は今回未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/fu-zoku/area.php?pref=hiroshima"
+        ]
       }
     },
     {
@@ -13781,6 +13953,14 @@
       "count": 20,
       "scope": "広島市内候補20店舗",
       "note": "公式サイト・掲載媒体・所在地・電話・営業時間の根拠を記録。広島市外の候補、同名別業種、媒体間の差異は明示し、未確認を維持。"
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 95,
+      "endIndex": 114,
+      "count": 20,
+      "scope": "広島市内候補20店舗",
+      "note": "公開情報で所在地・電話・営業時間・業種・公式URLを照合。ソープランド/店舗型ヘルスはメンズエステと区別し、住所不明・同一性未確定は保留。"
     }
   ]
 }
