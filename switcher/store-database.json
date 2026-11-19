@@ -16283,6 +16283,21 @@
         "https://menesmall.jp/shop/colors",
         "https://esjob.jp/etc/hiroshima/a3401/p8/"
       ]
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 50,
+      "endIndex": 99,
+      "count": 50,
+      "scope": "広島市候補51〜100番・第2段階クロスチェック",
+      "note": "既存50件の個別照合メモを、広島市MEN'S ES一覧（184店舗表示）、メンエスセレクト（125店・店舗未確認と明記）、メンエスパーク（15店・2026-11-19更新）、サロノワ（52店）と突合。媒体ごとに掲載数と対象範囲が大きく異なるため、単一媒体の掲載有無だけで欠落・閉店を判定しない。51〜94番は既存メモの個別情報・公式URL有無・住所/電話/営業時間の差異を保持。独立公式サイトが未確認の候補は媒体掲載のみとし、媒体の公式HP欄やサブドメインを独立公式ドメインと混同しない。95〜100番は業種混在リスクを再確認：95は「風俗エステ」掲載、96は性感エステ掲載かつ広島市内住所未確認、97はデリヘル掲載・電話不一致、98はソープランド、99はソープランド、100はソープランド。既存の業種不一致は削除・統合・自動分類せず、要分類確認として維持。Tonトロ五日市店は佐伯区で広島市内、郊外市町として除外しない。全278候補レコードは維持し、店舗の現営業を媒体掲載だけで断定しない。",
+      "sources": [
+        "https://mens-es.men/area/3401",
+        "https://menesu-select.com/hiroshima/hiroshima/",
+        "https://menespark.com/hiroshima/hiroshima/",
+        "https://www.salonowa.jp/area/hiroshima/hiroshima",
+        "https://estama.jp/etc/shoplist/3401/store/"
+      ]
     }
   ],
   "auditSummary": {
