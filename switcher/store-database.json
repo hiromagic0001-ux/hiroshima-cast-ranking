@@ -4080,19 +4080,23 @@
       "name": "天使のゆびさき（カリビアンマッサージ）",
       "category": "unclassified",
       "area": "広島市候補",
-      "areaStatus": "住所・営業状況の照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市内（派遣型・住所非公開の媒体掲載）",
+      "status": "公式HPリンク掲載確認・本体アクセス未確認／営業状況要照合",
       "sources": [
         {
-          "label": "メンズエステセレクト（既存収録）",
-          "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          "label": "店舗公式HPとして求人媒体が掲載するリンク（本体アクセス未確認）",
+          "url": "https://www.tenshi.tv/"
         },
         {
-          "label": "店舗公式サイト・業態表記に揺れ",
-          "url": "http://www.tenshi.tv/"
+          "label": "R-30 店舗求人情報（店名・広島市・公式HPリンク・電話）",
+          "url": "https://www.r-30.net/chugoku/shop-tenshinoyubi/"
+        },
+        {
+          "label": "風俗マップ 店舗掲載（電話・営業時間、別番号のため要照合）",
+          "url": "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=be0755e93f"
         }
       ],
-      "bulkAuditStatus": "媒体掲載候補として一括点検済み・公式HP/所在地/営業状況の個別確認待ち",
+      "bulkAuditStatus": "個別照合済み。求人媒体上の公式HPリンクを確認。公式サイト本体と電話番号・営業現況は未確定",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
         "status": "not-confirmed-in-visible-directory-snapshot",
@@ -4105,20 +4109,37 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "result": "店舗名を個別検索語として照合したが、今回取得できた広島市一覧の表示範囲では確実な一致を確認できず。未掲載部分・別表記・別媒体の可能性があり、閉店/不存在とは判定しない。",
+        "checkedAt": "2026-11-19",
+        "status": "official-domain-link-listed-but-site-unreachable-phone-conflict",
+        "result": "R-30の店舗求人ページに店名「カリビアンマッサージ 天使のゆびさき」、地域・勤務地「広島／広島市」、オフィシャルHP http://www.tenshi.tv/（httpsへ遷移）と記載。公式サイト本体は今回のアクセス確認で取得できず、サイト内容・運営主体の直接照合は未完了。別媒体の風俗マップには同名店・広島・9:30〜LAST・電話082-258-2748が掲載される一方、R-30は080-2933-3298を掲載しており電話番号が不一致。住所は非公開/広島市表記のみ。営業中とは断定しない。",
         "evidence": [
           {
-            "label": "メンエスセレクト・広島市一覧（125店表示、店舗未確認と明記）",
-            "url": "https://menesu-select.com/hiroshima/hiroshima/"
+            "label": "R-30 店舗求人情報（2026-09-01店長NEWS表示、公式HP欄・電話080-2933-3298・広島市）",
+            "url": "https://www.r-30.net/chugoku/shop-tenshinoyubi/"
           },
           {
-            "label": "メンズエステマップ・広島県一覧（199店、広島市中区101店を含む）",
-            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+            "label": "風俗マップ 店舗情報（2026-09-29表示、電話082-258-2748・9:30〜LAST・住所非公開）",
+            "url": "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=be0755e93f"
+          },
+          {
+            "label": "公式HPリンク（アクセス不可）",
+            "url": "https://www.tenshi.tv/"
           }
         ],
-        "status": "個別照合実施・一致未確証",
-        "nameAlias": null
+        "address": "広島県広島市（番地・所在地非公開）",
+        "hours": "9:30〜LAST（第三者掲載・現況未確認）",
+        "phone": "080-2933-3298（R-30掲載。別媒体は082-258-2748のため要照合）"
+      },
+      "contactReviewDone": true,
+      "contactReview": {
+        "checkedAt": "2026-11-19",
+        "status": "third-party official-link evidence; direct site and contact details unresolved",
+        "note": "公式HPとしてのリンク掲載は確認できたが、公式サイト本体はアクセス不可。電話番号が媒体間で不一致のため、確定電話番号として扱わない。住所非公開。閉店・営業中いずれも断定しない。",
+        "sources": [
+          "https://www.r-30.net/chugoku/shop-tenshinoyubi/",
+          "https://ultimate-map.com/yoru/fu-zoku/shop.php?id=be0755e93f",
+          "https://www.tenshi.tv/"
+        ]
       }
     },
     {
