@@ -14573,7 +14573,16 @@
       },
       "verifiedAddress": "広島県広島市中区宝町（掲載媒体情報）",
       "verifiedHours": "11:00〜翌3:00（掲載媒体情報）",
-      "verifiedPhone": "090-9251-0678（掲載媒体情報）"
+      "verifiedPhone": "090-9251-0678（掲載媒体情報）",
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "最終3店舗個別再確認",
+        "status": "エステ魂の個別店舗ページで広島市中区宝町、電話090-9251-0678、営業時間11:00〜翌3:00、公式HP https://beange.men-este.net/ を確認。マンション個室型、出張不可。",
+        "sources": [
+          "https://estama.jp/shop/38980/",
+          "https://menesmall.jp/shop/be-ange"
+        ]
+      }
     },
     {
       "name": "COLORS（カラーズ）",
@@ -14617,6 +14626,16 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "最終3店舗個別再確認",
+        "status": "メンエスmall個別ページで広島市中区宝町5-9、電話080-2101-4002、営業時間10:00〜翌1:00を確認。媒体のオフィシャルHPリンク欄はあるがURL実体は今回抽出できず、独立公式ドメイン確認とは分ける。",
+        "sources": [
+          "https://dr.ptr216.ptrcloud.net/shop/colors",
+          "https://menesmall.jp/shop/colors/contact",
+          "https://menesmall.jp/shop/colors/flow"
+        ]
       }
     },
     {
@@ -14669,6 +14688,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "最終3店舗個別再確認",
+        "status": "広島市中区鶴見町7、営業時間10:00〜翌5:00の媒体掲載を確認。掲載電話070-1482-6361は別店舗ミセスママの電話と一致するため、誤掲載/転記の可能性を注記し、CRADLEの電話として確定しない。独立公式HPは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r4705ae08fd&lang=en"
+        ]
       }
     }
   ],
@@ -15356,6 +15383,14 @@
       "count": 20,
       "scope": "広島市候補256〜275番",
       "note": "広島市内の店舗一覧・個別媒体を照合。Affino/FREEDOM/Reflet Spa/Labyrinthなど既存候補と重なる名称は再確認を記録し、重複統合は保留。KING'S表記は複数掲載があるため同一性未確定。ミセスママ広島は電話・営業時間を確認。"
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 275,
+      "endIndex": 277,
+      "count": 3,
+      "scope": "広島市候補276〜278番・最終3店舗",
+      "note": "Be-angeは公式HP/電話/住所/営業時間を確認。COLORSは住所/電話/営業時間を媒体で確認。CRADLEは住所/営業時間掲載を確認したが、電話番号が別店舗ミセスママと一致するため確定情報から除外し要再確認とした。"
     }
   ]
 }
