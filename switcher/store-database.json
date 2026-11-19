@@ -10727,8 +10727,8 @@
       "name": "エモーション",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "横川ルームは広島市西区大宮。大東ルームは廿日市市のため広島市内店舗所在地として数えない",
+      "status": "広島市西区横川ルームの媒体掲載・電話・営業時間を確認。別ルームは廿日市市",
       "sources": [
         {
           "label": "メンズエステセレクト・広島市一覧",
@@ -10748,9 +10748,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "広島市内ルームを個別確認。別ルーム所在地は広島市外",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -10763,20 +10763,33 @@
           {
             "source": "MEN'S ES広島市一覧（184店舗掲載）",
             "url": "https://mens-es.men/area/3401"
+          },
+          {
+            "source": "エステ魂・emotion 横川ルーム/大東ルーム",
+            "url": "https://estama.jp/shop/39199"
+          },
+          {
+            "source": "エステ魂・利用案内",
+            "url": "https://estama.jp/shop/39199/flow/"
           }
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "note": "西区大宮の横川ルームは広島市内。廿日市市大東ルームは市外のため広島市店舗として扱わない。電話070-4074-3969、9:00〜翌2:00。"
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市の当日出勤情報に「emotion~エモーション~」掲載。横川ルーム・大東ルームの記載あり。住所・電話・公式URLは未確認。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "エステ魂の個別店舗・利用案内で西区大宮の横川ルーム、電話070-4074-3969、9:00〜翌2:00を確認。大東ルームは廿日市市のため市外と明記。",
         "sources": [
-          "https://mens-es.men/area/3401/today"
+          "https://estama.jp/shop/39199",
+          "https://estama.jp/shop/39199/flow/"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市西区大宮（番地・部屋番号は予約時案内）",
+      "verifiedPhone": "070-4074-3969",
+      "verifiedHours": "9:00〜翌2:00"
     },
     {
       "name": "ポルテ",
@@ -10947,8 +10960,8 @@
       "name": "39サロン BonBon",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "広島市中区宝町。フジグラン広島から徒歩2分との求人媒体掲載",
+      "status": "複数媒体で電話・営業時間・中区宝町を確認。媒体表記に差があるためLAST表記",
       "sources": [
         {
           "label": "メンズエステセレクト・広島市一覧",
@@ -10968,9 +10981,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "広島市中区宝町・電話・営業時間・出勤予定を複数媒体で確認",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -10983,6 +10996,14 @@
           {
             "source": "MEN'S ES広島市一覧（184店舗掲載）",
             "url": "https://mens-es.men/area/3401"
+          },
+          {
+            "source": "メンエスmall 店舗・出勤情報",
+            "url": "https://web1-mall.menesmall.jp/shop/bonbon"
+          },
+          {
+            "source": "駅ちかランキング 店舗基本情報",
+            "url": "https://ranking-mensesthe.jp/shop/46693/shopdata/"
           }
         ],
         "scope": "広島市の媒体掲載名照合",
@@ -10991,20 +11012,22 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "中区、営業時間10:00〜24:00、電話070-3969-3939。媒体店舗ページで出勤予定表も確認。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "電話070-3969-3939、中区宝町、10:00〜LAST、出勤予定表を確認。別媒体に10:00〜24:00表記もあるため営業時間差を記録。",
         "sources": [
           "https://web1-mall.menesmall.jp/shop/bonbon",
           "https://ranking-mensesthe.jp/shop/46693/shopdata/"
         ]
-      }
+      },
+      "verifiedPhone": "070-3969-3939",
+      "verifiedHours": "10:00〜LAST（媒体別表記あり）"
     },
     {
       "name": "リアン 広島",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の市内表示・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "横川駅徒歩6分・広島市西区三篠町1丁目",
+      "status": "西区三篠町・電話・営業時間を媒体で確認。独立公式サイト直接確認待ち",
       "sources": [
         {
           "label": "メンズエステセレクト・広島市一覧",
@@ -11024,9 +11047,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市メンズエステ一覧で名称一致を確認。複数媒体掲載を含むものもあるが、掲載情報は営業中の独立確認ではない。住所・電話・営業時間・当日受付は個別確証なし。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "広島市西区三篠町1丁目の店舗情報を媒体で確認",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -11039,27 +11062,37 @@
           {
             "source": "MEN'S ES広島市一覧（184店舗掲載）",
             "url": "https://mens-es.men/area/3401"
+          },
+          {
+            "source": "ココア求人・リアン店舗情報",
+            "url": "https://cocoa-job.jp/mensesthe/32/shop/42696/?sptreat=2"
           }
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "note": "横川駅徒歩6分、電話090-6416-9024。凛-rin-とは電話・最寄駅・場所が異なるため同一店舗と断定しない。"
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市西区三篠町1丁目、横川駅徒歩6分、電話090-6416-9024、10:00〜翌1:00、公式サイトesthe-lian.comを確認。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "西区三篠町1丁目、横川駅徒歩6分、電話090-6416-9024を求人媒体で確認。凛-rin-とは所在地・電話が異なるため重複扱いしない。",
         "sources": [
-          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rc01d7e629b"
+          "https://cocoa-job.jp/mensesthe/32/shop/42696/?sptreat=2"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市西区三篠町1丁目（番地詳細未掲載）",
+      "verifiedPhone": "090-6416-9024",
+      "verifiedHours": "10:00〜翌1:00",
+      "officialUrl": "https://esthe-lian.com/",
+      "officialUrlStatus": "求人媒体に公式サイトURLとして掲載。独立公式サイトの直接確認は未完了"
     },
     {
       "name": "&White（アンドホワイト）",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "中区鉄砲町・宝町の媒体掲載。部屋番地は非公開",
+      "status": "広島市中区・電話・営業時間・在籍掲載を複数媒体で確認。独立公式サイト直接確認待ち",
       "sources": [
         {
           "label": "風俗マップ・広島市メンズエステ37店",
@@ -11079,9 +11112,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "今回取得した広島市メンズエステ一覧の表示範囲では名称一致を確証できず。別表記・掲載終了・媒体未掲載の可能性があり、閉店・不存在とは判定しない。",
-        "status": "今回の取得一覧内で一致未確証",
+        "status": "中区鉄砲町・宝町、電話・営業時間を複数媒体で確認",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -11094,6 +11127,14 @@
           {
             "source": "MEN'S ES広島市一覧（184店舗掲載）",
             "url": "https://mens-es.men/area/3401"
+          },
+          {
+            "source": "メンズリラク 店舗情報",
+            "url": "https://menesth.jp/32/shop/46032/"
+          },
+          {
+            "source": "エステ番長 店舗情報",
+            "url": "https://es-ban.com/shop/8671"
           }
         ],
         "scope": "広島市の媒体掲載名照合",
@@ -11102,19 +11143,23 @@
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "中区鉄砲町・宝町、電話080-9792-0623、10:00〜翌3:00。媒体上の店舗情報を確認。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "中区鉄砲町・宝町、電話080-9792-0623、10:00〜翌3:00を複数媒体で確認。住所番地と独立公式サイトは未確認。",
         "sources": [
-          "https://menesth.jp/32/shop/46032/"
+          "https://menesth.jp/32/shop/46032/",
+          "https://es-ban.com/shop/8671"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区鉄砲町・宝町（番地未掲載）",
+      "verifiedPhone": "080-9792-0623",
+      "verifiedHours": "10:00〜翌3:00"
     },
     {
       "name": "Affino（アフィーノ）",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "メンエスmallの店舗情報で中区三川町6を確認",
+      "status": "中区住所・営業時間を媒体で確認。電話番号は連絡先欄の再確認待ち",
       "sources": [
         {
           "label": "風俗マップ・広島市メンズエステ37店",
@@ -11134,9 +11179,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "今回取得した広島市メンズエステ一覧の表示範囲では名称一致を確証できず。別表記・掲載終了・媒体未掲載の可能性があり、閉店・不存在とは判定しない。",
-        "status": "今回の取得一覧内で一致未確証",
+        "status": "中区三川町6・営業時間を媒体で確認",
         "evidence": [
           {
             "source": "広島市メンズエステ情報ランキング（107店掲載）",
@@ -11149,20 +11194,27 @@
           {
             "source": "MEN'S ES広島市一覧（184店舗掲載）",
             "url": "https://mens-es.men/area/3401"
+          },
+          {
+            "source": "メンエスmall 店舗情報",
+            "url": "https://menesmall.jp/shop/affino"
           }
         ],
         "scope": "広島市の媒体掲載名照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "note": "電話欄は今回の確認結果で確証を得ていないため未記入。公式HPリンク表示はあるが独立ドメイン先は未確認。"
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "中区三川町6、11:00〜翌2:00。媒体店舗ページで所在地・営業時間を確認。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "メンエスmallで中区三川町6、11:00〜翌2:00、完全個室・予約制の掲載を確認。電話・独立公式URLの実体は未確認。",
         "sources": [
-          "https://dr.ptr216.ptrcloud.net/shop/affino"
+          "https://menesmall.jp/shop/affino"
         ]
-      }
+      },
+      "verifiedAddress": "広島県広島市中区三川町6",
+      "verifiedHours": "11:00〜翌2:00"
     },
     {
       "name": "Bright（ブライト）",
@@ -11305,7 +11357,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "広島市・広島駅周辺の媒体掲載確認。詳細住所は未確認",
-      "status": "媒体掲載・営業詳細の追加確認対象",
+      "status": "広島市掲載・営業時間に媒体差あり。電話はダミー表記のため未登録",
       "sources": [
         {
           "label": "風俗マップ・広島市メンズエステ37店",
@@ -11326,25 +11378,41 @@
       },
       "individualAudit": {
         "checkedAt": "2026-11-19",
-        "status": "hiroshima-city-listing-match-details-unverified",
+        "status": "広島市掲載・営業時間差異を確認。電話未確認",
         "address": "広島市・広島駅周辺との媒体掲載。番地・部屋住所は未確認",
         "hours": "エステ魂掲載 11:00〜23:00／エステ番長・メンズエステマップ掲載 10:30〜22:00（差異あり）",
         "phone": "未確認（エステ魂ページに9999-9999-9999の仮表示）",
         "officialSiteStatus": "独立公式サイト未確認。エステ魂ページにはInstagram DM・LINE予約案内あり",
-        "note": "Healing Salon Aliveとして広島市の店舗掲載を確認。メンズエステマップは広島駅・10:30〜22:00、エステ魂は広島市・11:00〜23:00と表示。電話は仮番号のため登録しない。福山市南手城町の脱毛サロンALIVEとは別店舗。11月19日の当日出勤情報は確認できず。",
+        "note": "電話9999-9999-9999はダミー。営業時間は10:30〜22:00と11:00〜23:00の差を保持。住所番地・独立公式サイト未確認。",
         "sources": [
           "https://estama.jp/shop/40767/",
           "https://es-ban.com/p/5597/a/5598/shoplist",
           "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ],
+        "evidence": [
+          {
+            "source": "エステ魂 店舗情報",
+            "url": "https://estama.jp/shop/40767/"
+          },
+          {
+            "source": "エステ番長 広島店舗一覧",
+            "url": "https://es-ban.com/p/5597/a/5598?page=%2C8"
+          },
+          {
+            "source": "Ultimate Map 広島市一覧",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/prefs.php?lang=zh&p=34"
+          }
         ]
       },
-      "verifiedHours": "媒体差異あり（10:30〜22:00／11:00〜23:00）",
+      "verifiedHours": "10:30〜22:00（エステ番長・地図媒体）／11:00〜23:00（エステ魂）",
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "エステ魂掲載。広島市、マンション個室、11:00〜23:00。電話欄はダミー表記9999のため連絡先未確認。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "広島市掲載を確認。営業時間は媒体により10:30〜22:00／11:00〜23:00。電話欄9999はダミーのため登録せず。",
         "sources": [
-          "https://estama.jp/shop/40767/"
+          "https://estama.jp/shop/40767/",
+          "https://es-ban.com/p/5597/a/5598?page=%2C8",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?lang=zh&p=34"
         ]
       }
     },
@@ -11470,8 +11538,8 @@
       "name": "Men's salon 凛-rin-",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "比治山橋駅周辺。正確な部屋住所は予約後案内",
+      "status": "比治山橋駅周辺・電話・営業時間を複数媒体で確認。リアンとは別候補",
       "sources": [
         {
           "label": "風俗マップ・広島市メンズエステ37店",
@@ -11491,9 +11559,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市を対象とする現行媒体一覧の掲載名と照合一致。これは媒体掲載の確認であり、現在営業中・当日受付・住所/電話/営業時間・公式サイトの真正性を独立確認したものではない。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "比治山橋駅周辺の別店舗候補として電話・営業時間を確認",
         "evidence": [
           {
             "source": "広島県メンズエステマップ（広島市37店の一覧）",
@@ -11510,20 +11578,32 @@
           {
             "source": "メンエスセレクト広島市一覧（125店）",
             "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "source": "エステ番長 広島店舗一覧",
+            "url": "https://es-ban.com/p/5597/a/5598/shoplist"
+          },
+          {
+            "source": "Ultimate Map 店舗ページ",
+            "url": "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rc92ad940d5&lang=en"
           }
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "note": "電話070-6639-1527、比治山橋駅周辺、10:00〜翌2:00。リアンの電話090-6416-9024・西区三篠町とは一致しない。"
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市西区三篠町1丁目、横川駅徒歩6分、電話090-6416-9024、10:00〜翌1:00。公式サイトesthe-lian.com。既存候補「リアン 広島」と同一候補の可能性が高いが、重複統合は保留。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "比治山橋駅周辺、電話070-6639-1527、10:00〜翌2:00を複数媒体で確認。リアン広島とは別候補。",
         "sources": [
-          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rc01d7e629b"
+          "https://es-ban.com/p/5597/a/5598/shoplist",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rc92ad940d5&lang=en"
         ]
-      }
+      },
+      "verifiedPhone": "070-6639-1527",
+      "verifiedHours": "10:00〜翌2:00"
     },
     {
       "name": "Men’s spa R",
@@ -12909,8 +12989,8 @@
       "name": "Toriko",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "公式サイトで中区舟入町を確認",
+      "status": "独立公式サイトで住所エリア・電話・営業時間・セラピスト出勤表を確認",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市107店表示",
@@ -12930,9 +13010,9 @@
         "note": "今回取得できた一覧表示部分では名称一致を確定できず。ページ抜粋に未掲載でも店舗不存在を意味しない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市を対象とする現行媒体一覧の掲載名と照合一致。これは媒体掲載の確認であり、現在営業中・当日受付・住所/電話/営業時間・公式サイトの真正性を独立確認したものではない。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "独立公式サイトで中区舟入町・電話・営業時間・出勤表を確認",
         "evidence": [
           {
             "source": "広島県メンズエステマップ（広島市37店の一覧）",
@@ -12949,20 +13029,35 @@
           {
             "source": "メンエスセレクト広島市一覧（125店）",
             "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "source": "Toriko公式サイト",
+            "url": "https://hiroshima-toriko.com/"
+          },
+          {
+            "source": "Toriko公式アクセス・店舗案内",
+            "url": "https://hiroshima-toriko.com/sp/"
           }
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
-        "operatingStatus": "営業中の個別確証なし"
+        "operatingStatus": "営業中の個別確証なし",
+        "note": "公式表記は9:00〜22:00。過去の媒体記録10:00〜翌2:00は採用せず、公式情報を優先。"
       },
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区舟入町、電話090-5245-2221、10:00〜翌2:00。店舗ページに公式HP欄あり。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "独立公式サイトで中区舟入町、電話090-5245-2221、9:00〜22:00、セラピスト出勤表を確認。",
         "sources": [
-          "https://dr.ptr216.ptrcloud.net/shop/toriko"
+          "https://hiroshima-toriko.com/",
+          "https://hiroshima-toriko.com/sp/"
         ]
-      }
+      },
+      "officialUrl": "https://hiroshima-toriko.com/",
+      "officialUrlStatus": "独立公式サイトを直接確認",
+      "verifiedAddress": "広島県広島市中区舟入町（部屋住所は予約確定後案内）",
+      "verifiedPhone": "090-5245-2221",
+      "verifiedHours": "9:00〜22:00"
     },
     {
       "name": "メンズアロマ広島人妻さん",
@@ -13237,8 +13332,8 @@
       "name": "Grace Spa",
       "category": "men-esthe",
       "area": "広島市候補",
-      "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "areaStatus": "公式アクセスページで中区内4ルームを確認",
+      "status": "独立公式サイトで複数ルーム・電話・営業時間・出勤情報を確認",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市107店表示",
@@ -13246,7 +13341,7 @@
         }
       ],
       "officialUrl": "https://hiroshima-grace-spa.com/",
-      "officialUrlStatus": "公式サイト確認済み",
+      "officialUrlStatus": "独立公式サイトを直接確認。アクセスページで複数ルームを掲載",
       "bulkAuditStatus": "公式HPリンク登録済み・リンク先と現営業状況の再確認対象",
       "bulkCrossCheck": {
         "checkedAt": "2026-11-14",
@@ -13260,8 +13355,8 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
-        "status": "current-business-listing-confirmed",
+        "checkedAt": "2026-11-19",
+        "status": "独立公式サイトの複数ルーム情報を確認。単一住所登録を複数ルーム表記に修正",
         "sources": [
           "https://s-palette.com/hiroshima/hiroshima",
           "https://mensesthe-rank.jp/areas/hiroshima-hiroshima"
@@ -13269,16 +13364,27 @@
         "address": "広島県広島市中区富士見町7-11 TOSOKU 301",
         "hours": "10:00〜翌2:00",
         "phone": "090-7373-9222",
-        "note": "店舗詳細と予約制ルーム案内を確認。独立公式サイトURLは既存登録を維持。"
+        "note": "中区鶴見町13-19、富士見町4-29、富士見町7-11、小町9-39の4ルーム。電話090-7373-9222、10:00〜LAST。",
+        "evidence": [
+          {
+            "source": "Grace Spa公式アクセス",
+            "url": "https://hiroshima-grace-spa.com/access/"
+          },
+          {
+            "source": "Grace Spa公式トップ・出勤情報",
+            "url": "https://hiroshima-grace-spa.com/"
+          }
+        ]
       },
-      "verifiedAddress": "広島県広島市中区富士見町7-11 TOSOKU 301",
-      "verifiedHours": "10:00〜翌2:00",
+      "verifiedAddress": "広島市中区鶴見町13-19／富士見町4-29／富士見町7-11／小町9-39（複数ルーム）",
+      "verifiedHours": "10:00〜LAST",
       "verifiedPhone": "090-7373-9222",
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区の公式サイトを確認。電話090-7373-9222、10:00〜LAST。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "公式アクセスで中区内4ルーム（鶴見町13-19、富士見町4-29・7-11、小町9-39）、電話090-7373-9222、10:00〜LASTを確認。",
         "sources": [
+          "https://hiroshima-grace-spa.com/access/",
           "https://hiroshima-grace-spa.com/"
         ]
       }
@@ -13465,7 +13571,7 @@
       "category": "men-esthe",
       "area": "広島市候補",
       "areaStatus": "媒体の広島市掲載・住所照合待ち",
-      "status": "媒体掲載・未確定",
+      "status": "エステ魂で電話・営業時間・現在の予約案内を確認。公式ドメインは既存登録を維持",
       "sources": [
         {
           "label": "メンズエステ情報ランキング・広島市107店表示",
@@ -13487,9 +13593,9 @@
         "note": "現行ディレクトリの取得表示内に同名または名称一致を確認。営業中・公式サイト・住所の個別確証ではない。"
       },
       "individualAudit": {
-        "checkedAt": "2026-11-14",
+        "checkedAt": "2026-11-19",
         "result": "広島市を対象とする現行媒体一覧の掲載名と照合一致。これは媒体掲載の確認であり、現在営業中・当日受付・住所/電話/営業時間・公式サイトの真正性を独立確認したものではない。",
-        "status": "広島市媒体掲載一致・営業詳細未確証",
+        "status": "エステ魂で電話080-8244-3030、10:00〜翌2:00、本日案内可の掲載を確認",
         "evidence": [
           {
             "source": "広島県メンズエステマップ（広島市37店の一覧）",
@@ -13506,6 +13612,10 @@
           {
             "source": "メンエスセレクト広島市一覧（125店）",
             "url": "https://menesu-select.com/hiroshima/hiroshima/"
+          },
+          {
+            "source": "エステ魂 店舗情報",
+            "url": "https://estama.jp/shop/28164/"
           }
         ],
         "scope": "広島市対象の媒体一覧の名称照合",
@@ -13521,11 +13631,10 @@
       ],
       "batchAudit": {
         "checkedAt": "2026-11-19",
-        "batch": "20店舗まとめて個別再確認",
-        "status": "広島市中区のマンション型、営業時間10:30〜翌2:00、電話080-8244-3030。舟入町・河原町・舟入本町の複数ルーム。",
+        "batch": "50店舗第5回・201〜250番個別再照合",
+        "status": "エステ魂の個別ページで電話080-8244-3030、10:00〜翌2:00、予約案内を確認。公式URLは既存記録を維持。",
         "sources": [
-          "https://menesmall.jp/shop/refresh",
-          "https://menesmall.jp/shop/refresh/contact"
+          "https://estama.jp/shop/28164/"
         ]
       },
       "duplicateAudit": {
@@ -13534,7 +13643,9 @@
         "note": "Refresh／Refresh（リフレッシュ）。既存の同一duplicateGroup。広島市媒体掲載情報と店舗情報の照合候補。住所・営業状況は未確証のまま保持。",
         "group": "refresh",
         "role": "alias"
-      }
+      },
+      "verifiedPhone": "080-8244-3030",
+      "verifiedHours": "10:00〜翌2:00"
     },
     {
       "name": "Lumiella（ルミエラ）",
