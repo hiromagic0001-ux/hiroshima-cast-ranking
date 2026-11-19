@@ -13559,6 +13559,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市内のメンエスmall掲載。電話070-1482-6361、広島駅徒歩5分、11:00〜翌3:00。別媒体では系列/旧店名らしき「ミセス」表記もあり、同一性は保留。",
+        "sources": [
+          "https://dr.ptr216.ptrcloud.net/shop/mrs-mama",
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=r2fafe75c56"
+        ]
       }
     },
     {
@@ -13610,6 +13619,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市内マンション型として掲載。10:00〜翌3:00、在籍15名の媒体表示。個別電話・住所・独立公式HPは未確認。",
+        "sources": [
+          "https://menesmall.jp/hiroshima/124/shops",
+          "https://dr.ptr216.ptrcloud.net/hiroshima/shops"
+        ]
       }
     },
     {
@@ -13661,6 +13679,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "「KING'S」と同一名称の別表記候補。中電前駅、10:00〜LAST、電話080-9555-2545の掲載を確認。別候補と同一か照合保留。",
+        "sources": [
+          "https://es-ban.com/p/5597/a/5598/ranking/rkc2",
+          "https://mail.men-esthe.jp/salon.php?id=13216"
+        ]
       }
     },
     {
@@ -13712,6 +13739,15 @@
         "scope": "広島市対象の媒体一覧の名称照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "営業中の個別確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存Affino候補と同一店舗。中区三川町6、11:00〜翌2:00の掲載を再確認。独立公式HPリンクの記載あり。",
+        "sources": [
+          "https://dr.ptr216.ptrcloud.net/shop/affino",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -13751,6 +13787,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市内ランキングに掲載。比治山下駅、10:00〜LAST。個別住所・電話・独立公式HPは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -13801,6 +13845,14 @@
         ],
         "phone": "070-8499-1534",
         "hours": "10:00〜LAST"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存FREEDOM候補と同一店舗。市役所前駅、10:00〜LAST、電話070-8499-1534。予約後にルーム案内。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/spot.php?id=raf3fba35d7"
+        ]
       }
     },
     {
@@ -13840,6 +13892,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市内ランキング掲載。比治山橋駅、10:00〜翌0:00。個別住所・電話・独立公式HPは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -13879,6 +13939,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存LILY候補と同一候補の可能性。袋町駅、10:00〜LASTの掲載。個別住所・電話は未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -13918,6 +13986,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存ラベンダー候補と同一候補の可能性。比治山橋駅、15:00〜23:00。個別住所・電話は未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -13957,6 +14033,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "広島市内ランキング掲載。比治山橋駅、10:00〜翌0:00。個別住所・電話・独立公式HPは未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14005,7 +14089,16 @@
       "duplicateCanonicalName": "spa R（スパアール）",
       "aliases": [
         "spa R（スパアール）"
-      ]
+      ],
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存Men's spa R候補と同一店舗。公式HP https://mensspa-r.com/ および広島市出張型の掲載を再確認。",
+        "sources": [
+          "https://mensspa-r.com/",
+          "https://menesmall.jp/hiroshima/124/shops"
+        ]
+      }
     },
     {
       "name": "Noël",
@@ -14044,6 +14137,15 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存Noël候補と同一店舗の可能性が高い。エステ魂の店舗ページと公式SNSを確認。住所・電話の詳細は今回未取得。",
+        "sources": [
+          "https://estama.jp/shop/44352/",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14083,6 +14185,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存Nuxe候補と同一店舗の可能性。市役所前駅、6:00〜LASTの掲載。個別住所・電話は未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14122,6 +14232,15 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存Reflet Spa候補と同一店舗。中区田中町1-1 山本ビル1F、11:00〜翌3:00を再確認。",
+        "sources": [
+          "https://dr.ptr216.ptrcloud.net/shop/reflet-spa",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14161,6 +14280,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存peony候補と同一店舗。広島駅エリア、10:00〜18:00の出張型掲載。住所・電話は未確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14200,6 +14327,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存IVY SPA候補と同一候補。広島市出張型、10:00〜翌3:00の掲載を再確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14239,6 +14374,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存Paz候補と同一店舗の可能性。中電前駅、10:00〜翌2:00。電話・住所の別媒体情報は既存記録を維持。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14278,6 +14421,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存Hitomebore候補と同一店舗。鷹野橋駅、10:00〜LASTの掲載を再確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14317,6 +14468,15 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存Labyrinth候補と同一店舗。中区のマンション型、10:00〜翌3:00。電話080-9130-7433、公式HP欄あり。",
+        "sources": [
+          "https://dr.ptr216.ptrcloud.net/shop/labyrinth/system",
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -14356,6 +14516,14 @@
         "scope": "広島市の店舗名・掲載情報の照合",
         "officialSiteStatus": "未確認",
         "operatingStatus": "現在営業中・当日受付の独立確証なし"
+      },
+      "batchAudit": {
+        "checkedAt": "2026-11-19",
+        "batch": "20店舗まとめて個別再確認",
+        "status": "既存「極のエステ～Ω～」候補と同一店舗。広島市内、10:00〜翌3:00の掲載を再確認。",
+        "sources": [
+          "https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34"
+        ]
       }
     },
     {
@@ -15180,6 +15348,14 @@
       "count": 20,
       "scope": "広島市候補236〜255番",
       "note": "華room・Toriko・TONARI・Grace Spa・Refresh・チェリーSPA東平塚店など個別媒体を確認。TISSE/ENEL/a doll/BODY SPA/REAL/IVY SPA/NAGOMIは既存候補と重複可能性があるため、既存記録を保全し統合を保留。華roomの営業時間は媒体間差異を記録。"
+    },
+    {
+      "checkedAt": "2026-11-19",
+      "startIndex": 255,
+      "endIndex": 274,
+      "count": 20,
+      "scope": "広島市候補256〜275番",
+      "note": "広島市内の店舗一覧・個別媒体を照合。Affino/FREEDOM/Reflet Spa/Labyrinthなど既存候補と重なる名称は再確認を記録し、重複統合は保留。KING'S表記は複数掲載があるため同一性未確定。ミセスママ広島は電話・営業時間を確認。"
     }
   ]
 }
