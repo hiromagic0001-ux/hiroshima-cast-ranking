@@ -112,6 +112,12 @@ main{max-width:900px;margin:auto;padding:14px}
     const renderedTotal = sourceOrder.reduce((sum, id) => sum + (Array.isArray(sources[id]?.records) ? sources[id].records.length : 0), 0);
     countSummary.textContent = "D1保存件数：" + savedTotal + "件 ／ 画面表示対象：" + renderedTotal + "件";
     saved.appendChild(countSummary);
+    const reconciliation = document.createElement("div");
+    reconciliation.id = "master-reconciliation";
+    reconciliation.style.cssText = "font-size:11px;line-height:1.7;margin:10px 0 14px;padding:11px;border:1px solid var(--line);border-radius:10px;background:#14251e";
+    reconciliation.textContent = "278件の店舗マスターとの照合結果を読み込み中…";
+    saved.appendChild(reconciliation);
+    renderMasterReconciliation(state, reconciliation);
     if (!sourceOrder.some(id => sources[id])) {
       const empty = document.createElement("div");
       empty.style.cssText = "font-size:11px;color:var(--muted)";
@@ -172,6 +178,94 @@ main{max-width:900px;margin:auto;padding:14px}
       stamp.style.cssText = "font-size:10px;color:var(--muted);margin-top:10px";
       stamp.textContent = "最終確認：" + state.lastAttemptAt;
       saved.appendChild(stamp);
+    }
+  }
+  function normalizeStoreName(value) {
+    return String(value || "").normalize("NFKC").toLowerCase()
+      .replace(/[ァ-ヶ]/g, ch => String.fromCharCode(ch.charCodeAt(0) - 0x60))
+      .replace(/[\\s・･.,，、。_‐‑‒–—―ーｰ()（）［］【】「」『』]/g, "");
+  }
+  async function renderMasterReconciliation(state, panel) {
+    try {
+      const response = await fetch(api + "/api/storage/data/stores", {cache:"no-store"});
+      const payload = await response.json();
+      if (!response.ok || !payload.ok || !payload.found || !Array.isArray(payload.value?.records)) {
+        throw new Error("店舗マスターを読み込めません");
+      }
+      const master = payload.value.records;
+      const lookup = new Map();
+      for (const store of master) {
+        const keys = [store.name, ...(Array.isArray(store.aliases) ? store.aliases : [])]
+          .map(normalizeStoreName).filter(Boolean);
+        for (const key of new Set(keys)) {
+          if (!lookup.has(key)) lookup.set(key, []);
+          lookup.get(key).push(store);
+        }
+      }
+      const sourceRows = [];
+      const matchedMasterIds = new Map();
+      for (const id of sourceOrder) {
+        const source = state?.sources?.[id];
+        const records = Array.isArray(source?.records) ? source.records : [];
+        let matched = 0, unmatched = 0, ambiguous = 0;
+        const unmatchedNames = [];
+        const matchedIds = new Set();
+        for (const record of records) {
+          const key = normalizeStoreName(record.name);
+          const candidates = key ? (lookup.get(key) || []) : [];
+          const uniqueCandidates = [...new Map(candidates.map(item => [String(item.id || item.name), item])).values()];
+          if (uniqueCandidates.length === 1) {
+            matched++;
+            const store = uniqueCandidates[0];
+            matchedIds.add(String(store.id || store.name));
+          } else if (uniqueCandidates.length > 1) {
+            ambiguous++;
+            unmatchedNames.push("要確認：" + (record.name || "名称未確認"));
+          } else {
+            unmatched++;
+            unmatchedNames.push(record.name || "名称未確認");
+          }
+        }
+        for (const masterId of matchedIds) matchedMasterIds.set(masterId, (matchedMasterIds.get(masterId) || 0) + 1);
+        sourceRows.push({id, label:source?.label || id, total:records.length, matched, unmatched, ambiguous, unmatchedNames, matchedIds});
+      }
+      const matchedAcrossSources = [...matchedMasterIds.values()].filter(count => count >= 2).length;
+      const totalMatchedMaster = matchedMasterIds.size;
+      panel.replaceChildren();
+      const heading = document.createElement("div");
+      heading.style.cssText = "font-size:12px;font-weight:750;margin-bottom:5px";
+      heading.textContent = "278件の店舗マスターとの照合（読み取り専用）";
+      panel.appendChild(heading);
+      const summary = document.createElement("div");
+      summary.textContent = "マスター総数：" + master.length + "件 ／ いずれかの媒体で一致したマスター：" + totalMatchedMaster + "件 ／ 2媒体以上で一致：" + matchedAcrossSources + "件";
+      panel.appendChild(summary);
+      const note = document.createElement("div");
+      note.style.cssText = "color:var(--muted);margin:4px 0 8px";
+      note.textContent = "店名・別表記の完全一致（全半角・大小文字・カナ表記を正規化）だけを自動一致としています。未一致は市外・閉店と断定せず、要調査として残します。マスターの追加・削除・並べ替えは行いません。";
+      panel.appendChild(note);
+      for (const row of sourceRows) {
+        const line = document.createElement("div");
+        line.style.cssText = "border-top:1px solid var(--line);padding-top:7px;margin-top:7px";
+        const label = document.createElement("div");
+        label.style.fontWeight = "700";
+        label.textContent = row.label + "：" + row.total + "件中、一致候補 " + row.matched + "件 ／ 未一致 " + row.unmatched + "件 ／ 複数候補 " + row.ambiguous + "件";
+        line.appendChild(label);
+        if (row.unmatchedNames.length) {
+          const details = document.createElement("details");
+          details.style.marginTop = "4px";
+          const summary = document.createElement("summary");
+          summary.textContent = "未一致・要確認の名称を表示（" + row.unmatchedNames.length + "件）";
+          details.appendChild(summary);
+          const names = document.createElement("div");
+          names.style.cssText = "color:var(--muted);margin-top:5px;overflow-wrap:anywhere";
+          names.textContent = row.unmatchedNames.join("、");
+          details.appendChild(names);
+          line.appendChild(details);
+        }
+        panel.appendChild(line);
+      }
+    } catch (error) {
+      panel.textContent = "店舗マスターとの照合結果を取得できません：" + String(error?.message || error) + "。保存済みランキングには変更を加えていません。";
     }
   }
   async function loadSaved() {
