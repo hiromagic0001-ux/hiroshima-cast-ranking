@@ -1777,3 +1777,12 @@
 - Directory snapshot crosscheck: Menespark Hiroshima city page states 15 stores (updated 2026-11-20); Men-esthe Now snapshot also states 15 shops and 449 profiles (11:05 snapshot). These are each media's own listed populations, not census counts and not additive. Sources: https://menespark.com/hiroshima/hiroshima/ ; https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=shop&sort=open
 - Bakusai: no new Hiroshima-category personal-thread rolling-30-day counts verified in this pass. Do not infer zero from search absence or retrieval failure. Official inquiry page still requires board URL, thread number and response number; it is not a public bulk export. Source: https://bakusai.com/isp/
 - No cast-level anonymous-post ranking created; no app, store DB, ranking, or Render changes.
+
+
+## 2026-11-20 追加調査（最新掲載の再照合）
+- Liana－リアナ－: Estama Hiroshima City listing, phone 070-2297-7978, "ニューオープン" label, fully-reserved status shown in captured page. Exact street address and phone match against the internal store database not verified; retain as an unconfirmed candidate. Source: https://estama.jp/shop/50155/
+- Hiroshima city directory population discrepancy rechecked: Esthe-ranking currently displays 48 men's-esthe listings for Hiroshima City; Menespark displays 15 shops (updated 2026-11-20). These are each publisher's own directory counts and should not be added or treated as a census. Sources: https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/ ; https://menespark.com/hiroshima/hiroshima/
+- CREA listing continues to show Hiroshima City, phone 070-2353-9000; no evidence in this pass to change the known phone-match status. Source: https://estama.jp/shop/26145/
+- FREEDOM current news list again shows Hiroshima City and phone 070-8499-1534 in 2026-11-20 posts. This is a current listing confirmation only, not a separate official registry check. Source: https://estama.jp/shop/40477/newslist/
+- Bakusai: targeted search in this pass did not surface a newly verifiable Hiroshima acode=8 personal thread or reliable rolling-30-day post count. Search absence is not zero; inaccessible or deleted posts remain uncounted. The official log inquiry page requires a specific board URL, thread number and response number. Source: https://bakusai.com/isp/
+- No named-cast anonymous sexual/private-life ranking created. No app, store database, ranking, or Render deployment changes.
