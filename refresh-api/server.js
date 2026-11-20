@@ -134,11 +134,42 @@ const server = http.createServer(async (req, res) => {
         if (Number.isFinite(parsed) && parsed > 0) dateCandidates.push(parsed);
       }
       const latestPostAt = dateCandidates.length ? new Date(Math.max(...dateCandidates)).toISOString() : null;
+      // Extract only a small set of publicly visible post excerpts; never include author/profile data.
+      const extractedPosts = new Map();
+      $('a').each((_, anchor) => {
+        const label = $(anchor).text().replace(/\\s+/g, ' ').trim();
+        const numberMatch = label.match(/^#(\\d{1,4})$/);
+        if (!numberMatch) return;
+        const postNo = Number(numberMatch[1]);
+        let node = $(anchor), chosen = null;
+        for (let depth = 0; depth < 6 && node.length; depth++, node = node.parent()) {
+          const rawText = node.text().replace(/\\s+/g, ' ').trim();
+          if (rawText.length >= 25 && rawText.length <= 1200 &&
+              (/(?:20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2})/.test(rawText) || rawText.includes('この投稿は削除されました'))) {
+            chosen = node;
+            break;
+          }
+        }
+        if (!chosen) return;
+        const clone = chosen.clone();
+        clone.find('a,button,form,script,style,[class*="ad"],[id*="ad"]').remove();
+        let excerpt = clone.text().replace(/\\s+/g, ' ').trim();
+        excerpt = excerpt.replace(/^#\\d{1,4}\\s*/, '')
+          .replace(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/, '')
+          .replace(/\\[匿名さん\\]/g, '').replace(/(?:Good!|Bad|報告|返信|移動)/g, '').trim();
+        if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
+        excerpt = excerpt.slice(0, 220);
+        const dateMatch = rawText.match(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
+        extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : null, excerpt });
+      });
+      const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
       return send(res, 200, {
         ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
         activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
         latestPostAt,
+        posts,
+        postsAvailable: posts.length > 0,
         checkedAt: new Date().toISOString(),
         note: replyCount === null ? "公開ページからレス数を判読できません。未確認として現行リンクを維持しました。" :
           switched ? "999レス到達を確認し、同一タイトルの後継スレッドへ切り替えました。" :
