@@ -197,3 +197,18 @@
 - https://www.esthe-mens.jp/hiroshima/
 
 アプリDB・D1・ランキング・UI・Renderデプロイは変更せず、調査ログのみ追記。
+
+
+## 11/20追加調査：公式新着レスJSONの再検証（11:20 JST）
+- 爆サイ公式 `/newreslist_json/` の検索インデックス表示を再確認。JSONの `newResSet` には `tid`、`bid`、`bbs_title`、`res_count`、`title`、`ctgid`、`acode`、`res_date`、`reg_date`、`pv_cnt` 等が含まれる。
+- 今回検索インデックスに現れたサンプルは鹿児島・熊本・宮崎（acode=16等）のデータであり、広島市データではない。例として熊本のメンエス個人スレッドも表示されたが、地域コード・掲示板IDが違うため対象から除外。
+- 広島用候補 `https://bakusai.com/newreslist_json/?acode=8` は直接取得できず、検索インデックスにも広島の対象カテゴリのレスデータは見つからなかった。したがって、このJSONを使った広島市の30日投稿数集計は現時点で実行不能。
+- 公式ログ照会案内は、対象掲示板URL・スレッド番号・レス番号が必要であり、削除依頼・管理人削除・投稿者削除分を除いたログ保存と説明。一般公開のJSONが全投稿履歴を提供すると解釈しない。
+- 今回も新しい広島市の個別tid・投稿日時は確定できず、既知3スレッドを維持。累計レス数・PV・他県データを代替値にしない。
+
+出典:
+- https://bakusai.com/newreslist_json/?acode=16&ctrid=
+- https://bakusai.com/newreslist_json/?acode=8
+- https://bakusai.com/isp/
+
+アプリDB・D1・ランキング・UI・Renderデプロイは変更せず、調査ログのみ追記。
