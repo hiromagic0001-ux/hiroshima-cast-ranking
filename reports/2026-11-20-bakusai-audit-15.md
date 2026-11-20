@@ -601,3 +601,19 @@
   - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
   - https://bakusai.com/newreslist_json/?acode=16&ctrid=
 - アプリ、D1、Renderへの変更なし。調査記録のみ。
+
+
+## 11/20追加調査：当日掲載名の別媒体横断照合（夜間帯）
+
+- 確認日時：2026-11-20 11:22 JST
+- 対象板：広島市メンズエステ（acode=8 / ctgid=136 / bid=4907）
+- メンエスMAPの11/20出勤一覧と22時表示、およびベストレメンエスタウンの広島市本日出勤欄を比較し、夜間帯の候補名を追加抽出。
+- 夜間帯の例：CREA（立花まき、谷村めい、北村まこ）、チェリーSPA広島（神田ほのか、小宮てる、乙葉るな、渚みずほ、江見ちい等）、7DreamEste（一之瀬みづき、奏もも）、salon.do-ni-na（峰城、佐野）、ゆりかご広島（聡美、麗華、美華、玲奈）等。別媒体で同名・同店が確認できても、本人同一性や在籍継続の証明にはならない。
+- 対象板を店舗名＋候補名で再照合したが、新規に確定できる個人スレッドtidはなし。既知tidの新規日付付きレスも確認できず。
+- 直近30日件数は未確認のまま。出勤回数、媒体プロフィール数、累計レス数、一覧上位表示は投稿件数の代替にしない。
+- 参照URL：
+  - https://me.fucolle.com/32/sche/
+  - https://me.fucolle.com/32/sche/?t=22
+  - https://www.esthe-mens.jp/hiroshima/
+  - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
+- アプリ、D1、Renderへの変更なし。調査記録のみ。
