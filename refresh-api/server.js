@@ -171,8 +171,17 @@ const server = http.createServer(async (req, res) => {
       });
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
+      const postNumberAnchors = $('a').map((_, el) => $(el).text().replace(/\\s+/g, ' ').trim()).get().filter(x => /^#\\d{1,4}$/.test(x)).length;
+      const structuralSamples = $('[id*="res"],[class*="res"],[id*="post"],[class*="post"]').slice(0, 18).map((_, el) => ({
+        tag: el.tagName || '',
+        id: ($(el).attr('id') || '').slice(0, 100),
+        className: ($(el).attr('class') || '').toString().slice(0, 140),
+        text: $(el).text().replace(/\\s+/g, ' ').trim().slice(0, 180)
+      })).get();
+      console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, structuralSamples }));
       return send(res, 200, {
         ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
+        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, structuralSamples },
         activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
         latestPostAt,
         posts,
