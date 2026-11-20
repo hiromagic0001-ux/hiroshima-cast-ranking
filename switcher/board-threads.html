@@ -85,7 +85,7 @@ async function refresh(){
  }
  render();status.textContent="自動確認："+success+"件取得成功／"+unknown+"件未確認。未確認の場合は元リンクを維持します。";
 }
-render();refresh();
+render();refresh();setInterval(refresh,300000);
 })();
 </script>
 </body></html>
