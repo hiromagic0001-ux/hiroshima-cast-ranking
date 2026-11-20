@@ -1131,3 +1131,20 @@
 - https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=13575776/
 - https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10178723/
 - https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10052155/
+
+
+## 11/20追加調査：既知スレッド名・店舗名での検索（11:51 JST）
+
+- 既知4候補（まいちき／みお・ミオ・美桜／リゾート小川／シュシュ広瀬）を、広島対象カテゴリのURLパターンに限定したサイト内検索と一般検索で再照合。
+- 新しい対象スレッドURL、レス本文、対象期間内の日付付きレスは検索結果から確認できなかった。検索インデックスに出ない可能性があるため「投稿なし」とは判定しない。
+- 新着レスJSON検索結果として表示された `acode=2` は宮城県（例：石巻市・宮城パパ活等）のデータで、広島 `acode=8` ではないため全件除外。
+- 爆サイ公式ログ照会案内では、掲示板URL・スレッド番号・レス番号を特定して照会する形式であることを再確認。公開ページから全投稿を一括取得できる根拠にはならない。
+- 新規確定0件。既存の暫定値「4スレッド・可視レス7件」を維持。今回の検索結果は対象期間の網羅性を保証しない。
+
+検索・参照URL：
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=12691278/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=13575776/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10178723/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10052155/
+- https://bakusai.com/newreslist_json/?acode=2&ctrid= （宮城県のため除外）
+- https://bakusai.com/isp/
