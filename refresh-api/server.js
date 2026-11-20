@@ -124,12 +124,12 @@ const server = http.createServer(async (req, res) => {
         const raw = $(el).attr("datetime") || $(el).attr("data-time") || "";
         if (!raw) return;
         let parsed = Date.parse(raw);
-        if (!Number.isFinite(parsed) && /^\\d{10,13}$/.test(raw)) parsed = Number(raw) * (raw.length === 10 ? 1000 : 1);
+        if (!Number.isFinite(parsed) && /^\d{10,13}$/.test(raw)) parsed = Number(raw) * (raw.length === 10 ? 1000 : 1);
         if (Number.isFinite(parsed) && parsed > 0) dateCandidates.push(parsed);
       });
-      const visibleDates = bodyText.match(/(?:20\\d{2})[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}日?(?:\\s*[T ]\\s*\\d{1,2}:\\d{2}(?::\\d{2})?)?/g) || [];
+      const visibleDates = bodyText.match(/(?:20\d{2})[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}日?(?:\s*[T ]\s*\d{1,2}:\d{2}(?::\d{2})?)?/g) || [];
       for (const raw of visibleDates) {
-        const normalized = raw.replace(/年|月/g, "/").replace(/日/g, "").replace(/[.]/g, "/").replace(/\\s*T\\s*/, " ");
+        const normalized = raw.replace(/年|月/g, "/").replace(/日/g, "").replace(/[.]/g, "/").replace(/\s*T\s*/, " ");
         const parsed = Date.parse(normalized);
         if (Number.isFinite(parsed) && parsed > 0) dateCandidates.push(parsed);
       }
@@ -137,15 +137,15 @@ const server = http.createServer(async (req, res) => {
       // Extract only a small set of publicly visible post excerpts; never include author/profile data.
       const extractedPosts = new Map();
       $('a').each((_, anchor) => {
-        const label = $(anchor).text().replace(/\\s+/g, ' ').trim();
-        const numberMatch = label.match(/^#(\\d{1,4})$/);
+        const label = $(anchor).text().replace(/\s+/g, ' ').trim();
+        const numberMatch = label.match(/^#(\d{1,4})$/);
         if (!numberMatch) return;
         const postNo = Number(numberMatch[1]);
         let node = $(anchor), chosen = null;
         for (let depth = 0; depth < 6 && node.length; depth++, node = node.parent()) {
-          const rawText = node.text().replace(/\\s+/g, ' ').trim();
+          const rawText = node.text().replace(/\s+/g, ' ').trim();
           if (rawText.length >= 25 && rawText.length <= 1200 &&
-              (/(?:20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2})/.test(rawText) || rawText.includes('この投稿は削除されました'))) {
+              (/(?:20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2})/.test(rawText) || rawText.includes('この投稿は削除されました'))) {
             chosen = node;
             break;
           }
@@ -153,13 +153,13 @@ const server = http.createServer(async (req, res) => {
         if (!chosen) return;
         const clone = chosen.clone();
         clone.find('a,button,form,script,style,[class*="ad"],[id*="ad"]').remove();
-        let excerpt = clone.text().replace(/\\s+/g, ' ').trim();
-        excerpt = excerpt.replace(/^#\\d{1,4}\\s*/, '')
-          .replace(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/, '')
-          .replace(/\\[匿名さん\\]/g, '').replace(/(?:Good!|Bad|報告|返信|移動)/g, '').trim();
+        let excerpt = clone.text().replace(/\s+/g, ' ').trim();
+        excerpt = excerpt.replace(/^#\d{1,4}\s*/, '')
+          .replace(/20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/, '')
+          .replace(/\[匿名さん\]/g, '').replace(/(?:Good!|Bad|報告|返信|移動)/g, '').trim();
         if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
         excerpt = excerpt.slice(0, 220);
-        const dateMatch = rawText.match(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
+        const dateMatch = rawText.match(/20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
         extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : null, excerpt });
       });
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
