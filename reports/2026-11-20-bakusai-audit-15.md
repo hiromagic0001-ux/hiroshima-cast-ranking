@@ -61,3 +61,18 @@
 - https://www.salonowa.jp/area/hiroshima/hiroshima
 
 アプリDB・D1・ランキング・UI・Renderデプロイは変更せず、調査ログのみ追記。
+
+
+## 11/20追加調査：爆サイ新着レス一覧JSONの代替取得経路
+- 爆サイ公式の公開エンドポイント `/newreslist_json/?acode=...&ctrid=...` が検索エンジンにインデックスされていることを確認。公開レス一覧のJSONに `tid`（スレッドID）、`bid`（掲示板ID）、`bbs_title`、`res_count`（累計レス数）、`title`、`ctgid`、`kencode`、`acode`、`res_date`（Unix時刻）、`reg_date`、`pv_cnt` 等が含まれる例を確認した。
+- 公式FAQも、削除済み投稿はログ一覧から除外されること、会員限定機能や投稿認証モードが存在することを説明している。従って取得できた公開レスだけで全投稿・全期間の完全性を主張しない。
+- 広島市向けの候補URL `https://bakusai.com/newreslist_json/?acode=8&ctrid=136` を直接開こうとしたが、今回の取得経路ではエラーとなり、対象カテゴリのJSON本文は未取得。別地域のJSONサンプルを広島データとして流用していない。
+- 次の調査手順は、対象カテゴリID（ctgid=136/bid=4907）に紐づく公式JSONの正確なパラメータを公開ページ上で確認し、取得可能なら各レスのスレッドID・投稿時刻を抽出して30日窓で集計すること。現段階ではランキング値は未作成。
+
+出典:
+- https://bakusai.com/newreslist_json/?acode=16&ctrid=
+- https://bakusai.com/q_a/ctrid=11/
+- https://bakusai.com/isp/
+- https://bakusai.com/newreslist_json/?acode=8&ctrid=136 （取得失敗を記録）
+
+アプリDB・D1・UI・ランキング・Renderデプロイは変更せず、調査ログのみ追記。
