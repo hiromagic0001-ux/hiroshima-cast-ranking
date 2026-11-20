@@ -386,3 +386,16 @@
   - https://me.fucolle.com/32/sche/?t=22
   - https://bakusai.com/isp/
 - アプリコード、D1、UI、Renderは変更なし。
+
+
+## 11/20追加調査：別店舗ブランド名による対象板の横断検索（11:22 JST）
+
+- 広島市内候補店舗の別表記を使い、対象 `acode=8/ctgid=136/bid=4907` に限定して「NAGOMI／ナゴミ／なごみ」「王様のきもち／王様の気持ち」「Arinoa／アリノア」「Soin／ソワン」を検索。
+- 今回の検索結果では新規の対象tidを確認できず。検索エンジン結果が空であることはスレッド不存在の証明ではないため、対象候補名と検索日だけを監査ログに残す。
+- 爆サイ新着JSON検索結果は `acode=16` 等の別地域データを返す例が継続しており、広島の対象板の一覧データとして流用しない。
+- 公式ログ照会ページは掲示板URL・スレッド番号・レス番号を必要情報として列挙している。公開取得できないレスや削除済み投稿を推定で埋めない方針を維持。
+- 参照URL：
+  - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
+  - https://bakusai.com/newreslist_json/?acode=8&ctrid=
+  - https://bakusai.com/isp/
+- アプリコード、D1、UI、Renderは変更なし。
