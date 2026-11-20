@@ -134,44 +134,27 @@ const server = http.createServer(async (req, res) => {
         if (Number.isFinite(parsed) && parsed > 0) dateCandidates.push(parsed);
       }
       const latestPostAt = dateCandidates.length ? new Date(Math.max(...dateCandidates)).toISOString() : null;
-      // Extract public posts from the current Bakusai layout. The post number,
-      // date and message may sit in neighboring wrappers, so select the smallest
-      // ancestor containing one numbered post and its date/deletion marker.
+      // Bakusai currently renders post numbers in span.res_rotundate (not links),
+      // with date and body in sibling .res_header and .res_body elements.
       const extractedPosts = new Map();
-      $('a').each((_, anchor) => {
-        const label = $(anchor).text().replace(/\s+/g, ' ').trim();
-        const numberMatch = label.match(/^#(\d{1,4})$/);
+      $('[id="res_block"]').each((_, el) => {
+        const block = $(el);
+        const numberText = block.find('.res_rotundate').first().text().replace(/\\s+/g, ' ').trim();
+        const numberMatch = numberText.match(/^#(\\d{1,4})$/);
         if (!numberMatch) return;
         const postNo = Number(numberMatch[1]);
-        let node = $(anchor), chosen = null, rawText = '';
-        for (let depth = 0; depth < 10 && node.length; depth++, node = node.parent()) {
-          const candidateText = node.text().replace(/\s+/g, ' ').trim();
-          const numberedAnchors = node.find('a').filter((__, a) =>
-            /^#\d{1,4}$/.test($(a).text().replace(/\s+/g, ' ').trim())
-          ).length;
-          const hasDate = /20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}/.test(candidateText);
-          if (candidateText.length >= 8 && candidateText.length <= 5000 &&
-              numberedAnchors <= 1 && (hasDate || candidateText.includes('この投稿は削除されました'))) {
-            chosen = node;
-            rawText = candidateText;
-            break;
-          }
-        }
-        if (!chosen) return;
-        const clone = chosen.clone();
-        clone.find('a,button,form,script,style,[class*="ad"],[id*="ad"]').remove();
-        let excerpt = clone.text().replace(/\s+/g, ' ').trim();
-        excerpt = excerpt.replace(/^#\d{1,4}\s*/, '')
-          .replace(/20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/, '')
-          .replace(/\[匿名さん\]/g, '').replace(/(?:Good!|Bad|報告|返信|移動)/g, '').trim();
+        const headerText = block.find('.res_header').first().text().replace(/\\s+/g, ' ').trim();
+        const bodyNode = block.find('.res_body').first();
+        if (!bodyNode.length) return;
+        const dateMatch = headerText.match(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
+        let excerpt = bodyNode.text().replace(/\\s+/g, ' ').trim();
+        excerpt = excerpt.replace(/\\[匿名さん\\]/g, '').trim();
         if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
-        excerpt = excerpt.slice(0, 220);
-        const dateMatch = rawText.match(/20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
-        extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : null, excerpt });
+        extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : null, excerpt: excerpt.slice(0, 220) });
       });
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
-      const postNumberAnchors = $('a').map((_, el) => $(el).text().replace(/\\s+/g, ' ').trim()).get().filter(x => /^#\\d{1,4}$/.test(x)).length;
+      const postNumberAnchors = $('[class*="res_rotundate"]').filter((_, el) => /^#\\d{1,4}$/.test($(el).text().trim())).length;
       const structuralSamples = $('[id*="res"],[class*="res"],[id*="post"],[class*="post"]').slice(0, 18).map((_, el) => ({
         tag: el.tagName || '',
         id: ($(el).attr('id') || '').slice(0, 100),
