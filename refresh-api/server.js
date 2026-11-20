@@ -193,7 +193,12 @@ const server = http.createServer(async (req, res) => {
         className: ($(el).attr('class') || '').toString().slice(0, 140),
         text: $(el).text().replace(/\\s+/g, ' ').trim().slice(0, 180)
       })).get();
-      console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, latestPageFetch, paginationLinks, structuralSamples }));
+      const raw471 = html.indexOf("#471");
+      const raw471Context = raw471 >= 0 ? html.slice(Math.max(0, raw471 - 500), Math.min(html.length, raw471 + 1200)).replace(/\\s+/g, " ").slice(0, 1700) : null;
+      const rawBodyMarkers = (html.match(/res_body/g) || []).length;
+      const rawPostMarkers = (html.match(/res_rotundate/g) || []).length;
+      const rawTargetText = html.includes("本当に一理あると思うこれに尽きる");
+      console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, latestPageFetch, raw471Found: raw471 >= 0, raw471Context, rawBodyMarkers, rawPostMarkers, rawTargetText, paginationLinks, structuralSamples }));
       return send(res, 200, {
         ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
         diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, latestPageFetch, paginationLinks, structuralSamples },
