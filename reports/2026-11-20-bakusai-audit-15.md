@@ -1795,3 +1795,16 @@
 - TONARI: cross-directory result lists Hiroshima City / Yokogawa Station South Exit, phone 090-8106-5573. Phone and station area now corroborated across directory listings, but exact street address and phone match against internal DB still not verified. Source: https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/
 - Directory scope: a current city ranking page displays 109 Hiroshima City listings; another page displays 59; Menespark displays 15 (updated 2026-11-20). These publisher-defined populations differ and are not additive or a census. Sources: https://mensesthe-rank.jp/areas/hiroshima-hiroshima ; https://ore-aroma.jp/hiroshima/rank-list/広島市?p=2 ; https://menespark.com/hiroshima/hiroshima/
 - No newly verified Hiroshima Bakusai personal-thread rolling-30-day counts found in this pass. No inference of zero from absence or failed retrieval. No named-cast anonymous sexual/private-life ranking. No app, store DB, ranking, or Render changes.
+
+
+## 2026-11-20 追加調査（店舗候補・電話/住所クロスチェック）
+- ゆりかご広島: business listing gives Naka-ku Higashihiratsukacho 2-2-2, phone 090-8517-0792; matches previously recorded phone. Treat map listing address as location evidence, not proof of corporate registration. Source: Google business listing.
+- Mrs.美魔女RED: business listing gives Naka-ku Mikawacho 6, phone 070-4467-7591; phone matches previously recorded candidate. The exact room location may differ from booking location; do not infer room number. Source: Google business listing.
+- ふわもこSPA: business listing gives Naka-ku Fujimicho 4-30, phone 090-9307-1323; corroborates earlier official access candidate. Source: Google business listing.
+- Grace Spa: business listing gives Naka-ku Fujimicho 7-11, phone 090-7373-9222; phone matches prior listing. The address is a room/building-level listing; confirm directly before treating as permanent storefront. Source: Google business listing.
+- Arinoa: business listing gives Naka-ku Mikawacho 6-7, phone 080-2517-0007; matches known phone candidate. Source: Google business listing.
+- RESORT: business listing gives Naka-ku Yagenbori 6-7, phone 080-2926-1146; matches prior candidate phone. Source: Google business listing.
+- New possible candidates surfaced from broad local results: 7DreamEste (Naka-ku Tsurumicho 7-8-2, phone 090-1356-6132) and ピンクパンサー (Naka-ku Kanayamacho, phone 070-9181-8730). They are not yet cross-checked against the internal store list or a direct official page; keep as unverified leads, not confirmed additions.
+- Broad directory population snapshots remain inconsistent; search result for S-Palette lists 8 Hiroshima prefecture shops as of 2026-11-19, while other directories have different counts. Publisher-specific counts only; not additive and not a census. Source: https://s-palette.com/
+- Bakusai: this pass produced no newly verifiable Hiroshima acode=8 individual-thread rolling-30-day totals. No zero inference from unavailable search results. No named-cast anonymous sexual/private-life ranking.
+- No app, store DB, ranking, or Render changes.
