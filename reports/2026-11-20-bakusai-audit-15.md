@@ -2374,3 +2374,16 @@
 - 現段階の限界：マスターの第1バッチ81件すべてについて、登録番号と当該店舗の独立公式ソースを一件ずつ照合した「81/81完了」とは言えない。今回は登録値の機械正規化と、上記の公開ソースによる一部照合。電話欠落19件の全件補完も未完了。
 - 出典URL：RESORT https://estama.jp/shop/23992/ および https://estama.jp/etc/shoplist/3401/store/ ; 神のエステ https://menes-style.jp/chugoku_shikoku/hiroshima/kamies ; HEAVEN https://menes-style.jp/chugoku_shikoku/hiroshima/heaven ; CREA https://creahiroshima.com/ および https://creahiroshima.com/access/ ; NAGOMI https://menes-style.jp/chugoku_shikoku/hiroshima/nagomihiroshima ; Rebernal https://menes-style.jp/chugoku_shikoku/hiroshima/rebernal ; standard https://estama.jp/shop/50597/ ; Organic energy https://organic-hiroshima.com/ ; メンエスパーク https://menespark.com/hiroshima/hiroshima/ .
 - 店舗マスターJSON、D1、アプリコード、Renderサービスの変更・デプロイなし。監査ログのみ更新。
+
+
+## 2026-11-20 13:31 JST — 重複候補の照合・欠落電話候補の継続調査
+- マスター100件の登録電話完全一致2組を再確認：
+  - #23 a doll / #64 アドール：070-9126-1805。エステナビの広島市メンズエステ一覧とエストワの店舗詳細が「a doll（アドール）」、同一電話、比治山橋駅、広島市中区昭和町ルーム・大手町ルームを掲載。これは同一店舗の表記揺れ・重複レコードである根拠が強い。ただし公式URLはエステ魂の店舗ページであり、独自ドメイン公式サイトと同義ではない。データ側では削除・統合せず、監査上「電話完全一致＋同一読み＋媒体のルーム記載一致＝重複統合候補（要承認）」とする。
+  - #35 ディオール / #62 ディオール観音店：090-5818-3970。今回の公開検索では、同一電話・同一運営を示す独立ソースを取得できず。観音店という支店名からの推測は不可。重複判定を保留し、別店舗として残す。
+- #2 ビューティーアンドビーストは同名の美容室「beauty:beast」と混同しない。美容室はメンズエステではなく、店名類似のみで電話や住所を転用しない。
+- 電話欠落候補の今回調査：#58「ザ・熟女 豊満桃色倶楽部」、#77「既婚者 極液ラボ」、#89「Lumiella」、#94「ばななすぱっ！」、#98「DIANA」は検索結果で、広島市内の該当店と確実に結びつく主電話を確認できず。未確認のまま保持し、番号を補完しない。#84 Seraphi Spaは070-5051-6726がエステナビとメンエスパーク双方に掲載されることを再確認。#75 Aroma Miaは070-8537-6369の店舗掲載を再確認したが、独立公式サイトの一次確認は別途必要。#54 キング候補のKING'S 080-9555-2545は名称一致が不十分で、別店の可能性を残す。
+- #89 Lumiellaは別の既知候補「ルミエラ」070-9456-8338と表記が似るが、同一電話・同一公式情報が確認できないため、同一店舗扱いにしない。
+- エステナビ広島市ページではa doll 070-9126-1805、Seraphi Spa 070-5051-6726、RESORT 080-2926-1146、THINK 090-4105-0167、salon.do.ni-na 070-2368-2727、Angel Spa 050-6866-5984、Vivienne 070-9019-6447、ENEL 080-8244-9297、Toriko 090-5245-2221、Mrs.Ni-na 090-2637-2007、Lavie & Spa 090-3049-1138、Palma 070-1068-7357、Mrs.ENEL 080-2929-0321、Organic energy 070-6690-1788、神のエステ 080-3892-0081、Arinoa 080-2517-0007、Access Hiroshima 090-2648-0228、ふわもこSPA 090-9307-1323、B and B 090-5460-1201、You＆MeSPA 080-4773-3567、BODY SPA HIROSHIMA 090-1414-4850を掲載。これは媒体上の電話掲載確認であり、全店の公式番号・営業中を独立確認したものではない。広島市外の楽々園表記等は市内区分を住所で確認し、媒体の広域「広島」表示だけでは採用しない。
+- 出典：エステナビ広島市 https://www.es-navi.com/list/list.php?city=34100&type=i-japan ; a dollエストワ https://estowa.net/shop/S-yayouwutian-com/ ; salon.do.ni-na公式案内 https://menes-style.jp/chugoku_shikoku/hiroshima/salondo ; Organic energy公式 https://organic-hiroshima.com/ ; CREA公式 https://creahiroshima.com/ .
+- 次工程：#58/#77/#89/#94/#98の追加一次ソース検索、#35/#62の電話・所在地確認、既存81件の電話番号を公式サイト単位で裏取り。第1バッチ全体の公式番号照合は未完了。
+- マスターJSON、D1、アプリコード、Renderサービスへの変更・デプロイなし。監査ログのみ更新。
