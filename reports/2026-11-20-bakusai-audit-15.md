@@ -2000,3 +2000,15 @@
 - Be-ange（090-9251-0678）、神のエステ（080-3892-0081）、Organic energy（070-6690-1788）、CREA（070-2353-9000）、salon.do.ni-na（070-2368-2727）は今回も業種/電話/市内住所を再確認。複数ルームは同一電話番号につき各1店舗扱い。Sources: https://estama.jp/shop/38980/ ; https://menesmall.jp/shop/got-esthe ; https://organic-hiroshima.com/ ; https://creahiroshima.com/ ; https://menes-style.jp/chugoku_shikoku/hiroshima/salondo
 - メンエスパーク広島市ページは15件表示（最終更新2026-11-20）。媒体内掲載数であり全市のユニーク店舗総数ではない。Source: https://menespark.com/hiroshima/hiroshima/
 - 278件マスター未読取のため電話番号照合は未実施。100件ユニーク確定バッチ未完了。Bakusai直近30日投稿数の新規確定値なし。アプリUI・店舗DB・ランキング・Render変更なし。
+
+
+## 2026-11-20 14:40 JST — 南区「Rivers Este」新規候補・既存候補再確認
+- Rivers Este（リバーズエステ）：広島市南区的場町、電話080-7253-5554、マンション型メンズエステ、公式HP https://riverseste.com をメンエスstyle掲載で確認。掲載ページは取得時点で約2か月前のクロールのため、現行営業の確定ではなく新規候補として登録。Source: https://menes-style.jp/chugoku_shikoku/hiroshima/riverseste
+- Organic energy（070-6690-1788）：公式サイト本文で高級メンズエステ、広島市中区富士見町、電話番号を確認。Source: https://organic-hiroshima.com/
+- Grace Spa（090-7373-9222）：公式サイト本文で広島市中区のメンズエステ・電話番号を確認。Source: https://hiroshima-grace-spa.com/
+- Be-ange（090-9251-0678）：エステ魂詳細で広島市中区宝町、個室型、公式サイトURL、電話番号を確認。Source: https://estama.jp/shop/38980/
+- リアン(Lian)（090-6416-9024）：メンズエステマップで広島市西区三篠町1丁目、横川駅徒歩6分、ルーム型、電話番号、公式サイト候補URLを再確認。Source: https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rc01d7e629b
+- Mrs.APHRODITE THALASSA（080-9004-2543）：地図事業者情報でも南区大須賀町18-18と電話番号を確認。公式案内では住所は大須賀町・駅徒歩5分の表記のため、番地詳細は公開元ごとの表記差として記録。Source: Google business listing captured 2026-11-20.
+- Access Hiroshima、Lavie &spa、Mrs.美魔女RED、ふわもこSPA、Arinoa、RESORT、7DreamEste、ゆりかご広島も事業者情報で市内住所・電話番号を再確認。ただし地図カテゴリのみの確認を公式営業証拠と混同せず、既存候補ステータスを維持。
+- メンズ専門フェイシャル（Men's salon Liko）、理容店（Coiffeur BORD）、一般美容/脱毛（Lit-skin、Epi・phany、Raise&Remove、Ra Parure）は今回のメンズエステ店舗リストから除外。男性向けサービスというだけでメンズエステ店舗に含めない。
+- 新規候補1件（Rivers Este）を追加。278件マスター未読取につき電話番号照合未実施、100件ユニーク確定バッチ未完了。Bakusai直近30日投稿数の新規確定値なし。アプリUI・店舗DB・ランキング・Render変更なし。
