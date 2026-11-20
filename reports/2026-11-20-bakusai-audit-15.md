@@ -1878,3 +1878,17 @@
 - Important discrepancy: MEN'S ES current search result shows 184 stores, while prior page snapshot had 186. Record as a dynamic directory count; do not assert either as fixed count.
 - This remains source cross-checking only; no complete 100-store individual verification and no exact internal DB comparison because the current store database file path/content has not been retrieved. No app, store DB, ranking, or Render changes.
 - Bakusai: no new Hiroshima acode=8 rolling-30-day post counts confirmed. No individual cast ranking based on anonymous private/sexual claims.
+
+
+## 2026-11-20 100件一括処理・第1バッチ追加の公式/媒体クロスチェック
+- Menespark city page snapshot (2026-11-20) lists 15 Hiroshima City shops, including Soin (070-9440-4756) and ハチミツ倶楽部 (080-9144-7888). Page also displays current schedules/profile counts, but those are directory data and not proof of popularity. Source: https://menespark.com/hiroshima/hiroshima/
+- Men-esthe Now page (2026-11-20) also lists 15 Hiroshima City stores and 449 therapist profiles; this is a publisher-specific population, not a census. Source: https://men-esthe.co.jp/ranking/hiroshima/hiroshima/
+- Estama Hiroshima City store-type page shows 10 entries, including RESORT (080-2926-1146) with a 2026-11-20 message, plus Noble (070-3771-1320), ベトナム子 (050-6867-5191), ベトナムガル (050-6873-0011), ゆらり香 (090-1358-6394). The list includes non-target Asian massage categories and duplicate RESORT branch-style entry; do not classify every entry as target men's esthe or count duplicates. Source: https://estama.jp/etc/shoplist/3401/store/
+- Official site cross-check:
+  - Organic energy official page confirms phone 070-6690-1788, Hiroshima City Naka-ku Fujimicho and current therapist/shop content. Source: https://organic-hiroshima.com/
+  - Grace Spa official page confirms phone 090-7373-9222 and describes itself as Hiroshima City Naka-ku men's esthe. Source: https://hiroshima-grace-spa.com/
+  - Kamies official listing confirms 神のエステ phone 080-3892-0081 and Takaramachi/Tsurumicho rooms. Source: https://menes-style.jp/chugoku_shikoku/hiroshima/kamies
+- Current candidate status: Soin, ハチミツ倶楽部, RESORT, Organic energy, Grace Spa, 神のエステ are corroborated by current listing/official page evidence; still require exact phone comparison against the app's internal store database before asserting duplicate or merge. The actual DB file path/content has not been retrieved in this pass.
+- Additional local business search results were screened for category relevance: general relaxation/body-care salons, barber shops, facial salons and hair salons (including Asian Relaxation Villa, MIYABI, Enjoy Relaxation, SOLUNA, ATEASE, Lit-skin, men's barbers) were excluded because they are not evidenced as target Hiroshima City men's-esthe stores. ピンクパンサー result has matching Naka-ku address/phone but category alone says beauty salon; keep unverified lead pending a direct men's-esthe source, do not count as confirmed.
+- This pass adds no defensible 100th unique verified store. Do not claim first batch completed; source counts remain overlapping and internal DB comparison is outstanding.
+- No new verified Bakusai Hiroshima acode=8 rolling-30-day counts. No named cast anonymous private/sexual-content ranking. No app, store database, ranking, or Render changes.
