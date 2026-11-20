@@ -2431,3 +2431,13 @@
 - #58に電話を補完できる根拠は今回も得られず。#98 DIANAの同名異業種混同防止も維持。
 - 参照URL：広島・呉一覧 https://men-esthe.jp/area.php?id=112&p=6 ; Dior観音店 https://menes-style.jp/chugoku_shikoku/hiroshima/diorkanon ; https://estama.jp/shop/34319/ ; https://menesth.jp/32/shop/39215/ ; Lumiella https://estama.jp/shop/50629/menu/ .
 - 第1バッチ全100件の公式サイト/電話/住所の完全個別照合は未完了。店舗マスター、D1、アプリコード、Renderサービス変更・デプロイなし。監査ログのみ更新。
+
+
+## 2026-11-20 14:25 JST — #43 Alive / #82 Celeste / #93 HEAVENの電話・住所再確認
+- #43「Alive」：エステ魂のHealing Salon Alive個別ページで掲載エリア「広島市」、営業時間11:00〜23:00、LINE ID alive276を確認。ただし電話欄は9999-9999-9999というダミー値で、住所は「広島県広島市」まで。実電話・区/町域は確認できないため、電話番号を補完せず、ダミー番号を実番号として扱わない。Instagram DMまたは媒体LINEから予約可能との記載。
+- #82「セレスト」：エステ魂の個人セラピストページで080-1941-6948が予約・問い合わせ番号として表示されるが、これは個人プロフィールページ上の連絡先であり、店舗代表番号とは確定できない。店舗電話欄への転記は保留。掲載エリアは広島市、営業時間10:00〜翌2:00。
+- #93「ヘブン」：メンエスStyleのHEAVEN公式店舗ページで、広島市中区住吉町16、電話090-3634-4567、9:30〜ラスト、年中無休、公式HP https://hiroshima-heaven.com を再確認。独立公式HPリンクも確認できた。これは#93の店舗情報を補強するが、公式HP本文の別途直接取得は未実施。
+- #58「ザ・熟女 豊満桃色倶楽部」：広島・呉一覧の掲載は維持。現住所・電話番号・現営業の独立根拠は今回も未取得。口コミ上の鷹野橋近辺という記述を確定住所として転記しない。
+- 広島市のメンエスセレクト一覧は125店と表示するが、ページ自身が「公式サイト情報をもとに掲載（店舗未確認）」と明記。件数を実在・営業中の店舗数とみなさない。
+- 参照URL：Alive https://estama.jp/shop/40767/ ; Celeste https://estama.jp/shop/44050/cast/765818/ ; HEAVEN https://menes-style.jp/chugoku_shikoku/hiroshima/heaven ; 広島市一覧 https://menesu-select.com/hiroshima/hiroshima/ .
+- 監査ログのみ更新。店舗マスターJSON、D1、アプリコード、Renderサービス・デプロイは変更なし。
