@@ -35,9 +35,9 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-h
 <button class="tab" type="button" data-industry="deli">デリヘル</button>
 <button class="tab" type="button" data-industry="soap">ソープランド</button>
 </div>
-<div class="tools"><input id="q" type="search" placeholder="店舗名・キャスト名で検索"><span id="count" class="count"></span><button id="refresh" class="refresh" type="button">最新書き込みを確認</button></div>
+<div class="tools"><input id="q" type="search" placeholder="店舗名・キャスト名で検索"><span id="count" class="count"></span><button id="refresh" class="refresh" type="button">投稿内容・最新情報を取得</button></div>
 <section id="list" class="list" aria-live="polite"></section>
-<p id="status" class="status">「最新書き込みを確認」ボタンを押した時だけ投稿日時を取得し、新しい順に並べ替えます。自動更新は行いません。</p>
+<p id="status" class="status">「投稿内容・最新情報を取得」ボタンを押した時だけ、公開範囲の投稿抜粋（最大20件）と最新日時を取得します。広告・投稿者情報は表示せず、自動更新もしません。</p>
 <div class="note"><b>999レス到達時の自動切替</b><br>登録スレッドが999レスに達し、同じ店舗・キャストの後継スレッドを確認できた場合は、アプリ内リンクを新スレッドへ自動で切り替えます。後継スレッドが特定できない場合や、レス数を取得できない場合は誤リンク防止のため現行リンクを維持し、「未確認」と表示します。</div>
 <footer>確認できた直接スレッドURLのみ掲載。掲示板の表示制限・削除・取得不能は未確認として扱います。</footer>
 </main>
@@ -80,7 +80,14 @@ function render(){
   const live=document.createElement("div");live.className="meta";const latest=s.latestPostAt?new Date(s.latestPostAt).toLocaleString("ja-JP",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}):"投稿日時未確認";
   live.textContent=(s.replyCount==null?"現在のレス数：未確認":"現在のレス数："+s.replyCount+"件")+"｜最新投稿："+latest+"｜"+(s.switched?"後継スレッドへ自動切替済":s.reached?"999到達・後継未確認":"999レス到達時に自動切替");
   const a=document.createElement("a");a.className="open";a.href=s.activeUrl||x.url;a.target="_blank";a.rel="noopener";a.textContent=s.switched?"現在のスレッドを開く":"掲示板の直接スレッドを開く";
-  card.append(title,meta,live,a);list.append(card);
+  card.append(title,meta,live);
+  const details=document.createElement("details");details.className="posts";
+  const summary=document.createElement("summary");summary.textContent="最近の投稿内容（最大20件）";details.append(summary);
+  const posts=s.posts||[];
+  if(posts.length){
+   posts.forEach(post=>{const entry=document.createElement("div");entry.className="post";const stamp=document.createElement("span");stamp.className="post-date";stamp.textContent="#"+post.postNo+(post.date?"｜"+post.date:"");const body=document.createElement("p");body.textContent=post.excerpt;entry.append(stamp,body);details.append(entry);});
+  }else{const unavailable=document.createElement("p");unavailable.className="post-unavailable";unavailable.textContent="公開ページから投稿本文を取得できませんでした。ログイン制限・削除・ページ構造の違いなどの可能性があります。";details.append(unavailable);}
+  card.append(details,a);list.append(card);
  });
 }
 document.querySelectorAll(".tab").forEach(btn=>btn.addEventListener("click",()=>{active=btn.dataset.industry;document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b===btn));render();}));
@@ -95,8 +102,8 @@ async function refresh(){
    catch{state.set(url,{replyCount:null,activeUrl:url,switched:false});unknown++;}
   }));
  }
- render();status.textContent="手動確認完了："+success+"件取得成功／"+unknown+"件未確認。日時未確認のスレッドは下位に表示します。";
- refreshButton.disabled=false;refreshButton.textContent="最新書き込みを確認";
+ render();status.textContent="手動取得完了："+success+"件取得成功／"+unknown+"件未確認。日時未確認のスレッドは下位に表示します。";
+ refreshButton.disabled=false;refreshButton.textContent="投稿内容・最新情報を取得";
 }
 render();
 refreshButton.addEventListener("click",refresh);
