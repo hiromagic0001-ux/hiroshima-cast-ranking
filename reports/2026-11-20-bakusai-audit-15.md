@@ -2346,3 +2346,19 @@
 - 第1バッチ電話欠落19件のうち10件を調査し、実番号確定6件、候補/保留3件、不正表示1件。残り9件は未調査。これらの検索結果は個別ソース上の記載を示すだけで、電話が現在通じることや営業継続を保証しない。
 - 検索参照：Angel Spa公式 https://angel-spa28.com/ 、メンエスじゃぱん https://mens-est.jp/shop/AngelSpa/ 、AROMA INNOCENT https://www.esthe-ranking.jp/hiroshima/ippan/aroma-massage/ 、ハチミツ俱楽部 https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/ 、HEAVEN https://menes-style.jp/chugoku_shikoku/hiroshima/heaven 、RESORT https://estama.jp/shop/23992/ 、神のエステ https://menes-style.jp/chugoku_shikoku/hiroshima/kamies 、SPA-DOLCE https://es-ban.com/p/5597/shoplist?type=5789 、Alive https://estama.jp/shop/40767/ 。
 - 店舗マスター、D1、アプリ、Renderは変更していない。監査ログのみ更新。
+
+
+## 2026-11-20 13:14 JST — 第1バッチ残り電話欠落候補の追加照合
+- 電話欠落候補の追加調査で以下の番号を公開掲載から確認：
+  - #54「キング」：エステ魂KING'S店舗ページに080-9555-2545、広島市中区富士見町、10:00〜LAST。マスター名「キング」と媒体名「KING'S」は表記差があるため、電話一致確認までは同一店舗確定ではなく候補一致。
+  - #75「アロマミア」：ZUKAN店舗詳細に070-8537-6369、広島市中区宝町、10:00〜翌3:00、当日出勤表示。マスター名と店舗名一致。
+  - #84「セラフィスパ」：エステナビに070-5051-6726、広島市広島エリア・銀山町駅、10:00〜翌4:00。別媒体メンエスパークにも同番号と店名Seraphi Spaを確認。
+  - #56「クラブいち華」ではなく、#57「フェミニン」：エステ番長に080-4552-6161、広島マンション型。店名表記feminin/フェミニンが一致。
+  - #68「シャルディア」は今回の検索結果で電話を確定できず。#58「ザ・熟女 豊満桃色倶楽部」も信頼できる電話記載を確認できず。
+  - #2「ビューティーアンドビースト」は同名のbeauty:beast men’sが広島市中区本通3-20に存在するが、これは美容室であり、メンズエステ候補との同一性はない。誤登録防止のため電話補完対象から除外・同名衝突維持。
+- 今回の新規確定はマスター候補との店名・業態の整合性を含めて3件（Aroma Mia、Seraphi Spa、feminin）。KING'Sは#54「キング」との同一性が未確定のため候補1件。残り電話欠落候補で未確定のものは#58、#68等。
+- 先の検索と合わせ、第1バッチ電話欠落候補19件のうち、電話番号を候補含め確認できた店舗は累計9件以上。店舗主番号として確定した件数と、マスターの該当レコードとの同一性確定数は区別する。既存の#87 Angel Spa、#85 AROMA INNOCENT、#90 ハチミツ俱楽部、#93 HEAVEN、#67 RESORT、#86 神のエステの確認根拠は前節に記録済み。
+- 追加の既存候補根拠：#55 Seraphi Spa 070-5051-6726（エステナビ・メンエスパーク一致）、#72 THINK 090-4105-0167（公式店舗サイトに2ルーム・電話掲載）、#74 You＆MeSPA 080-4773-3567（公式サイト/媒体一致）、#81 Mrs.ENEL 080-2929-0321（事業情報一致）、#78 Arinoa 080-2517-0007（事業情報一致）、#13 Lavie &spa 090-3049-1138（事業情報一致）、#25 BODY SPA 090-1414-4850（公式サイト/事業情報一致）、#52 Grace Spa 090-7373-9222（事業情報一致）。
+- 第1バッチ内の電話番号記載あり81件の完全一致照合は、今回まだ100件分の番号正規化・衝突検査を完了していない。既存番号の一部を個別に裏取りした段階であり、81件全件完了とは報告しない。
+- 参照URL：KING'S https://estama.jp/shop/39204/flow/ ; Aroma Mia https://zukan-esthe.com/store.php?id=2879 ; Seraphi Spa https://www.es-navi.com/list/list.php?city=34100&type=i-japan and https://menespark.com/hiroshima/hiroshima/?sort=therapist ; feminin https://es-ban.com/p/5597/a/5598/shoplist?a=5598&type=5789 ; beauty:beast official salon listing https://bap-holdings.co.jp/salon_area/hiroshima/ .
+- 店舗マスター、D1、アプリコード、Renderサービスへの書き込み・変更・デプロイなし。監査ログのみ更新。
