@@ -1767,3 +1767,13 @@
 - 2026/11/19時点の全国検索ポータルは広島県54店、別ポータルは広島県8店と表示。県単位の掲載差が大きく、市内店舗数や全数の根拠にはできない。媒体別母集団としてのみ記録。
 - 新たな爆サイ広島対象スレッド・直近30日投稿数の検証は今回もなし。個人キャストと匿名投稿を結び付けたランキングは作成しない。
 - 今回もアプリ、店舗DB、ランキング、Renderサービスは変更していない。
+
+
+## 2026-11-20 12:35 JST 追加照合
+- FREEDOM: Estama newslist page rechecked; Hiroshima City listing and phone 070-8499-1534 confirmed, with current 2026-11-20 shop news. This matches the previously known phone candidate; this is a listing/news confirmation, not an independent legal-business verification. Source: https://estama.jp/shop/40477/newslist/
+- Luxurysalon ROMA: Menesth listing rechecked; Hiroshima City Naka-ku Otemachi, phone 082-244-8484, listing says planned November opening. Opening completion not independently confirmed. Source: https://menesth.jp/32/shop/45233/
+- soleil: Estama listing rechecked; "new open" text and phone 070-2293-4181. Exact address / DB phone match not confirmed. Source: https://estama.jp/shop/43936/
+- TONARI: Estama Hiroshima City shop page found (shop/51793); phone/address details not confirmed in retrieved excerpt; keep candidate status. Source: https://estama.jp/shop/51793/
+- Directory snapshot crosscheck: Menespark Hiroshima city page states 15 stores (updated 2026-11-20); Men-esthe Now snapshot also states 15 shops and 449 profiles (11:05 snapshot). These are each media's own listed populations, not census counts and not additive. Sources: https://menespark.com/hiroshima/hiroshima/ ; https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=shop&sort=open
+- Bakusai: no new Hiroshima-category personal-thread rolling-30-day counts verified in this pass. Do not infer zero from search absence or retrieval failure. Official inquiry page still requires board URL, thread number and response number; it is not a public bulk export. Source: https://bakusai.com/isp/
+- No cast-level anonymous-post ranking created; no app, store DB, ranking, or Render changes.
