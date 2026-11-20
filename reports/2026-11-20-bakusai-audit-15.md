@@ -1272,3 +1272,18 @@
 - https://bakusai.com/newreslist_json/?acode=2&ctrid= （広島以外のため除外）
 - https://bakusai.com/isp/
 - https://bakusai.com/rule/
+
+
+## 11/20追加調査：11/20当日出勤候補名からのBakusai照合（11:51 JST）
+
+- 11/20クロールのメンエスmall広島「本日出勤」ページから、CREA（山本りこ・谷村めい・中森ゆか・夏目さら・柚月のあ等）、チェリーSPA広島（桐谷まこ・白石もえ・妃咲ねむ・宮瀬ゆめ等）、クイーン、Access Hiroshima、NAGOMI等の掲載候補を確認。これは媒体の当日出勤掲載であり、在籍確定・人気・掲示板投稿数を意味しない。
+- 上記から「宮瀬ゆめ」「白石もえ」「妃咲ねむ」「柚月のあ」と、店舗名「クイーン」「NAGOMI」「Access Hiroshima」を組み合わせ、Bakusai広島対象カテゴリ（acode=8 / ctgid=136 / bid=4907）を指定して検索したが、新しい個人スレッドURL・対象期間内の日時付きレスは検索結果に出なかった。検索結果なしは投稿不存在の証明ではなく未確認扱い。
+- 同日メンエスなう広島市ページは15店・当日出勤67名と表示。メンエスじゃぱん広島県ページやメンエスmall広島県ページは県域母集団であり、市内調査と混同しない。
+- 爆サイ公式ログ照会案内は掲示板URL・スレッド番号・レス番号を指定する方式で、削除済み投稿を除くログ保存である。一般公開の全投稿取得APIではない。
+- 新規確定0件。厳密なローリング30日窓（2026/10/21 11:51〜2026/11/20 11:51 JST）の既知確認分は「4スレッド・可視レス6件」のまま。取得不能・検索未収録は未確認であり、全数調査値ではない。
+
+参照URL：
+- https://web1-mall.menesmall.jp/hiroshima/girl/today
+- https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=dispatch&sort=open
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/
+- https://bakusai.com/isp/
