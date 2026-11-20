@@ -1861,3 +1861,20 @@
 - Current directory snapshots: Menespark shows 15 Hiroshima listings updated 2026-11-20; Esthe Ranking reservation page has 48 listings; these differ from 109 total listing count on men's-esthe-rank because categories and inclusion rules differ. Sources: https://menespark.com/hiroshima/hiroshima/ ; https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/
 - 100-store batch status: this pass corroborated 8 named city candidates and added AXL as one further candidate; this is not a completed 100-store verification. Previous source lists contain overlapping records and lack complete phone numbers. Continue collecting/validating in batches without padding.
 - Bakusai: no new verified Hiroshima acode=8 rolling-30-day thread/post totals in this pass. No inference of zero. No named-cast anonymous sexual/private-life ranking. No app, store DB, ranking, or Render changes.
+
+
+## 2026-11-20 100件一括処理・第1バッチ追加クロスチェック
+- Rechecked current Hiroshima city source populations: Menespark 15 (updated 2026-11-20), Salonowa 52, MEN'S ES 184 (search snapshot differs from earlier 186), mensesthe-rank 109. Publisher-specific counts fluctuate and overlap; none is a verified census. Sources: https://menespark.com/hiroshima/hiroshima/ ; https://www.salonowa.jp/area/hiroshima/hiroshima ; https://mens-es.men/area/3401 ; https://mensesthe-rank.jp/areas/hiroshima-hiroshima
+- Official source confirmations:
+  - CREA official site: 070-2353-9000; Hiroshima City Naka-ku Fujimicho 4-30 and Higashihiratsukacho 3. Source: https://creahiroshima.com/
+  - Grace Spa official site: 090-7373-9222; Hiroshima City Naka-ku. Source: https://hiroshima-grace-spa.com/
+  - 神のエステ official listing: 080-3892-0081; Hiroshima City Naka-ku Takaramachi / Tsurumicho rooms. Source: https://menes-style.jp/chugoku_shikoku/hiroshima/kamies
+  - Organic energy official site: 070-6690-1788; Hiroshima City Naka-ku central area / Fujimicho. Source: https://organic-hiroshima.com/
+  - salon.do.ni-na official listing: 070-2368-2727; multiple Naka-ku rooms (Fujimicho, Tsurumicho, Takaramachi, Takeyacho). Source: https://menes-style.jp/chugoku_shikoku/hiroshima/salondo
+  - Cherry SPA official site: multiple Naka-ku rooms (Takaramachi 6, Ginzancho, Higashihiratsuka 2, Showamachi 6); phone not exposed in retrieved excerpt. Source: https://cherryspahiroshima.com/
+- Business listing crosschecks corroborated phone/address for RESORT 080-2926-1146 (Yagenbori 6-7), Grace Spa 090-7373-9222 (Fujimicho 7-11), ゆりかご広島 090-8517-0792 (Higashihiratsukacho 2-2-2), Mrs.美魔女RED 070-4467-7591 (Mikawacho 6), Lavie &spa 090-3049-1138 (Fujimicho 3), Paz 090-2962-4557 (Otemachi 3-10-8), Mrs.ENEL 080-2929-0321 (Showamachi 3), BODY SPA 090-1414-4850 (Higashihiratsukacho 11-19), Arinoa 080-2517-0007 (Mikawacho 6-7), fuwamoko SPA 090-9307-1323 (Fujimicho 4-30), 7DreamEste 090-1356-6132 (Tsurumicho 7-8-2), YOASOBI 080-2053-6313 (Showamachi 4-20), Access Hiroshima 090-2648-0228 (Takaramachi 5). Business listings are secondary evidence and do not substitute for official registry confirmation.
+- RESORT Estama page confirms city listing, phone 080-2926-1146 and 2026-11-20 shop message. Source: https://estama.jp/etc/shoplist/3401/store/
+- Candidate pool additions for next review: Lavie &spa (090-3049-1138), Paz (090-2962-4557), YOASOBI (080-2053-6313), Access Hiroshima (090-2648-0228). These are additional candidates, not yet matched against the app's internal store database.
+- Important discrepancy: MEN'S ES current search result shows 184 stores, while prior page snapshot had 186. Record as a dynamic directory count; do not assert either as fixed count.
+- This remains source cross-checking only; no complete 100-store individual verification and no exact internal DB comparison because the current store database file path/content has not been retrieved. No app, store DB, ranking, or Render changes.
+- Bakusai: no new Hiroshima acode=8 rolling-30-day post counts confirmed. No individual cast ranking based on anonymous private/sexual claims.
