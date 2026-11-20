@@ -1948,3 +1948,14 @@
 - 既存候補の再確認：CREA 070-2353-9000（富士見町4-29、公式HP creat…）、NAGOMI 090-7130-2000（昭和町/的場町/流川町/大手町の各ルーム）、神のエステ 080-3892-0081（宝町/鶴見町）、Grace Spa 090-7373-9222。複数ルームは同一電話番号につき各1店舗として扱う。
 - メンエスパーク広島市ページは2026-11-20最終更新・15店舗表示。ただし媒体掲載数であり、ユニーク店舗数や営業実態の確定数ではない。Source: https://menespark.com/hiroshima/hiroshima/
 - 今回の追加は媒体掲載・電話・市内住所の確認候補であり、既存278件マスターとの照合未了。100店舗の確定バッチ完了とはしない。匿名掲示板の直近30日投稿数に新規確定値なし。アプリUI、店舗DB、ランキング、Renderは変更なし。
+
+
+## 2026-11-20 13:25 JST — 広島市掲載一覧の再照合
+- S-Palette広島市ページ（取得日2026-11-20）は7店を掲載。今回、既存候補のArinoa（080-2517-0007）、NAGOMI（090-7130-2000）、CREA（070-2353-9000）、BODY SPA HIROSHIMA（090-1414-4850）、Grace Spa（090-7373-9222）、7Dream Este（090-1356-6132）を同一媒体上で確認。ページの「7店」は媒体掲載数であり、全市の実店舗総数ではない。Source: https://s-palette.com/hiroshima/hiroshima
+- 同ページ掲載の「トップシークレット -Micro Bikini Collection-」（080-8235-9035）は広島市内の出張型として掲載。メンズエステ関連掲載として候補登録するが、店舗型ではなく、別名の「The Secret」とは電話番号が異なるため同一店扱いしない。Source: https://s-palette.com/hiroshima/hiroshima
+- CREA公式サイトは電話070-2353-9000と中区富士見町4-30・東平塚町3の複数ルームを記載。電話一致のため1店舗・複数ルームとして扱う。Source: https://creahiroshima.com/
+- Grace Spa公式サイトは電話090-7373-9222と広島市中区のメンズエステであることを確認。Source: https://hiroshima-grace-spa.com/
+- 神のエステ公式系掲載は宝町・鶴見町ルームと電話080-3892-0081、NAGOMI公式系掲載は昭和町・的場町・流川町・大手町ルームと電話090-7130-2000。いずれも同一電話番号の複数ルームを複数店舗に数えない。Sources: https://menes-style.jp/chugoku_shikoku/hiroshima/kamies ; https://menes-style.jp/chugoku_shikoku/hiroshima/nagomihiroshima
+- salon.do.ni-naは公式系掲載で富士見町・鶴見町・竹屋町・宝町等の複数ルーム、電話070-2368-2727を確認。五日市ルームも同一電話番号のため別店舗に数えない。Source: https://menes-style.jp/chugoku_shikoku/hiroshima/salondo
+- 今回、asian relaxation villa大手町店、MIYABI、Enjoy Relaxation、ATEASE、SOLUNA、もみ亭、Suimin Terrace等の一般リラクゼーション店も検索結果に出たが、メンズエステ店舗としての直接根拠が不足するため候補数に加算しない。ピンクパンサーも美容室カテゴリしか確認できず保留。
+- 既存278件マスターとの電話番号照合は未実施。今回の媒体再確認は100件のユニーク店舗完了を意味しない。Bakusai直近30日投稿数の新規確定なし。アプリUI・店舗DB・ランキング・Render変更なし。
