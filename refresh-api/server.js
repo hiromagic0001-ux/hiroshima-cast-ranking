@@ -117,10 +117,28 @@ const server = http.createServer(async (req, res) => {
         if (candidates.length) successorUrl = candidates.sort((a,b) =>
           Number(b.match(/\/tid=(\d+)/)?.[1] || 0) - Number(a.match(/\/tid=(\d+)/)?.[1] || 0))[0];
       }
+      // Read the newest visible post timestamp when the public thread page exposes one.
+      // Prefer explicit machine-readable timestamps; fall back to visible date strings.
+      const dateCandidates = [];
+      $("time[datetime], [datetime], [data-time]").each((_, el) => {
+        const raw = $(el).attr("datetime") || $(el).attr("data-time") || "";
+        if (!raw) return;
+        let parsed = Date.parse(raw);
+        if (!Number.isFinite(parsed) && /^\\d{10,13}$/.test(raw)) parsed = Number(raw) * (raw.length === 10 ? 1000 : 1);
+        if (Number.isFinite(parsed) && parsed > 0) dateCandidates.push(parsed);
+      });
+      const visibleDates = bodyText.match(/(?:20\\d{2})[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}日?(?:\\s*[T ]\\s*\\d{1,2}:\\d{2}(?::\\d{2})?)?/g) || [];
+      for (const raw of visibleDates) {
+        const normalized = raw.replace(/年|月/g, "/").replace(/日/g, "").replace(/[.]/g, "/").replace(/\\s*T\\s*/, " ");
+        const parsed = Date.parse(normalized);
+        if (Number.isFinite(parsed) && parsed > 0) dateCandidates.push(parsed);
+      }
+      const latestPostAt = dateCandidates.length ? new Date(Math.max(...dateCandidates)).toISOString() : null;
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
       return send(res, 200, {
         ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
         activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
+        latestPostAt,
         checkedAt: new Date().toISOString(),
         note: replyCount === null ? "公開ページからレス数を判読できません。未確認として現行リンクを維持しました。" :
           switched ? "999レス到達を確認し、同一タイトルの後継スレッドへ切り替えました。" :
