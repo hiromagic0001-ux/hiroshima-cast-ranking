@@ -2362,3 +2362,15 @@
 - 第1バッチ内の電話番号記載あり81件の完全一致照合は、今回まだ100件分の番号正規化・衝突検査を完了していない。既存番号の一部を個別に裏取りした段階であり、81件全件完了とは報告しない。
 - 参照URL：KING'S https://estama.jp/shop/39204/flow/ ; Aroma Mia https://zukan-esthe.com/store.php?id=2879 ; Seraphi Spa https://www.es-navi.com/list/list.php?city=34100&type=i-japan and https://menespark.com/hiroshima/hiroshima/?sort=therapist ; feminin https://es-ban.com/p/5597/a/5598/shoplist?a=5598&type=5789 ; beauty:beast official salon listing https://bap-holdings.co.jp/salon_area/hiroshima/ .
 - 店舗マスター、D1、アプリコード、Renderサービスへの書き込み・変更・デプロイなし。監査ログのみ更新。
+
+
+## 2026-11-20 13:22 JST — 第1バッチ100件の登録電話番号機械照合＋公開ソース再照合
+- GitHub blobで取得した278件マスターの第1バッチ100件について、登録済み電話欄81件を数字のみへ正規化し、バッチ内完全一致グループを検査。登録電話欄に重複する番号は2組（該当番号は現行JSON上の値に基づき後続作業で監査）だった。完全一致が0組の場合も、別電話/複数番号の同一店舗を意味しないため統合しない。電話番号の異なる支店・別店舗も保留ルール維持。
+- 今回の公開情報で補強できた既存レコード：RESORT 080-2926-1146、神のエステ 080-3892-0081、HEAVEN 090-3634-4567、CREA 070-2353-9000、Organic energy 070-6690-1788、NAGOMI 090-7130-2000、Rebernal 070-8806-0807、standard 070-9513-0369。RESORT・神のエステは複数ルーム表記でも店舗電話が一致し、店舗数を部屋数分に増やさない。
+- 広島市の公開ディレクトリにRESORTの番号・中区薬研堀6-7 森田ビル4Fが掲載され、店舗ページには同一番号・住所・営業時間がある。電話番号の裏取りは良好だが、ディレクトリの記述だけで独立した営業確認と同等とは扱わない。
+- 公開情報の再確認で、CREA公式は富士見町4-30と東平塚町3の2ルーム、電話070-2353-9000を明記。NAGOMIは昭和町/的場町/流川町/大手町の複数ルームを一つの電話090-7130-2000で案内。神のエステは宝町/鶴見町を一電話080-3892-0081で案内。HEAVENは中区住吉町16、090-3634-4567。Rebernalは中区東平塚町、070-8806-0807。standardはエステ魂の店舗ページに070-9513-0369。
+- 注意：エステ魂の広島市カテゴリページは全10件と表示するが、同ページにRESORTが複数行あり、同一店舗重複が含まれる。表示件数を店舗総数に加算しない。またアジアン系店舗等は既存のmen-esthe判定と別途業態根拠を確認してから扱う。
+- 公開検索で補強された事業候補（いずれも既存レコードの裏付け目的であり新規件数に加算しない）：Lavie &spa 090-3049-1138、中区富士見町3；Mrs.美魔女RED 070-4467-7591、中区三川町6；ゆりかご広島 090-8517-0792、中区東平塚町2-2-2；Paz 090-2962-4557、中区大手町3-10-8；BODY SPA 090-1414-4850、中区東平塚町11-19；7DreamEste 090-1356-6132、中区鶴見町7-8-2；Arinoa 080-2517-0007、中区三川町6-7；YOASOBI広島 080-2053-6313、中区昭和町4-20；ふわもこSPA 090-9307-1323、中区富士見町4-30。
+- 現段階の限界：マスターの第1バッチ81件すべてについて、登録番号と当該店舗の独立公式ソースを一件ずつ照合した「81/81完了」とは言えない。今回は登録値の機械正規化と、上記の公開ソースによる一部照合。電話欠落19件の全件補完も未完了。
+- 出典URL：RESORT https://estama.jp/shop/23992/ および https://estama.jp/etc/shoplist/3401/store/ ; 神のエステ https://menes-style.jp/chugoku_shikoku/hiroshima/kamies ; HEAVEN https://menes-style.jp/chugoku_shikoku/hiroshima/heaven ; CREA https://creahiroshima.com/ および https://creahiroshima.com/access/ ; NAGOMI https://menes-style.jp/chugoku_shikoku/hiroshima/nagomihiroshima ; Rebernal https://menes-style.jp/chugoku_shikoku/hiroshima/rebernal ; standard https://estama.jp/shop/50597/ ; Organic energy https://organic-hiroshima.com/ ; メンエスパーク https://menespark.com/hiroshima/hiroshima/ .
+- 店舗マスターJSON、D1、アプリコード、Renderサービスの変更・デプロイなし。監査ログのみ更新。
