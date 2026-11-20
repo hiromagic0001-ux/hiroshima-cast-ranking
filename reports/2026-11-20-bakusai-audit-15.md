@@ -1100,3 +1100,16 @@
 - https://mens-est.jp/hiroshima/
 - https://mens-est.jp/shop/accesshrsm/schedule/
 - https://bakusai.com/isp/
+
+
+## 11/20追加調査：検索エンジンの個人スレッド再探索（11:51 JST）
+
+- 対象を `site:bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/` に限定し、2026年10月21日〜11月20日の広島メンエス個人スレッド候補を複数の語句で再検索。
+- 該当する新規スレッドURL・レス日付を含む検索結果は得られなかった。検索結果なしは投稿なしの証明ではなく、インデックス未収録・検索対象外の可能性があるため「未確認」とする。
+- 別地域の新着レスJSON（acode=16）は引き続き除外。広島市外および県全域の媒体ランキングも爆サイ個人スレッド集計には混ぜない。
+- 新規確定0件。暫定集計「4スレッド・可視レス7件」は変更なし。次回は既知4スレッドの個別レスページが公開取得可能か、時間を置いて再確認する。
+
+検索対象：
+- https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/
+- https://bakusai.com/newreslist_json/?acode=8&ctrid=
