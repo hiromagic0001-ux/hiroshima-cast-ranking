@@ -1163,3 +1163,20 @@
 - https://me.fucolle.com/32/sche/?t=21
 - https://men-esthe.co.jp/ranking/hiroshima/hiroshima/
 - https://bakusai.com/isp/
+
+
+## 11/20追加調査：広島市内媒体から新規店舗候補を抽出し爆サイ照合（11:51 JST）
+
+- 11/20更新の「メンエスなう」広島市ページは15店舗・在籍448名・当日出勤67名を表示。広島県ページは61店舗・在籍1,523名であり、市ページと県ページは母集団が異なる。市ページを店舗候補探索にのみ利用し、媒体ランキング・出勤数は爆サイ投稿数に転用しない。
+- 広島市ページの候補としてQUEEN（クイーン）を確認。別媒体の店舗ページは57名在籍と記載するが、掲載数は媒体間・更新時点で異なるため、在籍人数を確定値にしない。
+- 広島市ページ上位候補の店舗名「ダンディ＋／ダンディプラス」「QUEEN／クイーン」を、Bakusaiの広島対象URLパターン（acode=8 / ctgid=136 / bid=4907）に限定して検索したが、検索結果は空で、新規の対象スレッドURL・日付付きレスは確認できなかった。
+- 「俺の紙パンツ」等の第三者まとめ記事に爆サイの累計レス番号や引用が掲載されていたが、対象期間の個別レス一覧・日時を直接検証できず、直近30日件数には採用しない。累計レス番号を期間内投稿数と誤認しない。
+- 県全域のランキング（広島県61店）を広島市の店舗数に加算しない。媒体別母集団は別管理。
+- 新規確定0件。暫定集計「4スレッド・可視レス7件」を維持。今回の検索結果空欄は投稿不存在の証明ではなく未確認扱い。
+
+参照URL：
+- https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=shop
+- https://men-esthe.co.jp/ranking/hiroshima/?format=dispatch&sort=price_low
+- https://mensesthe-rank.jp/areas/hiroshima-hiroshima
+- https://istanbulescortgirl.org/store/dandy-plus-hiroshima-report/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/
