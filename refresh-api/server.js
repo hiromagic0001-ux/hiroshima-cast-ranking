@@ -185,7 +185,7 @@ const server = http.createServer(async (req, res) => {
       });
       // Newer Bakusai markup stores full replies in article#resNNN .resbody,
       // while #res_block may contain only the currently selected/preview reply.
-      $('article.res_list_article[id^="res"]').each((_, el) => {
+      $('.res_list_article[id^="res"]').each((_, el) => {
         const article = $(el);
         const idMatch = (article.attr('id') || '').match(/^res(\\d{1,4})$/);
         if (!idMatch) return;
