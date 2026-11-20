@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "title": "Hiroshima Cast Search duplicate review patch manifest",
+  "repository": "hiromagic0001-ux/hiroshima-cast-ranking",
+  "branch": "main",
+  "sourcePath": "switcher/store-database.json",
+  "sourceBlobSha": "d7e32e6ca082352ffbe981a73df80b233e024c43",
+  "mode": "review_only_not_executable",
+  "generatedAt": "2026-11-20",
+  "sourceRecordCount": 278,
+  "permanentRecordIdsPresent": false,
+  "policy": {
+    "noDelete": true,
+    "noMerge": true,
+    "noOverwriteExistingFields": true,
+    "noProductionApply": true,
+    "requireCurrentBlobShaMatch": true,
+    "requireAuditNumberAndExpectedNameAndCategoryMatch": true,
+    "preserveAllSourcesAndOriginalFields": true,
+    "keepMultiRoomAndDispatchServiceBoundaries": true
+  },
+  "proposedMetadata": {
+    "field": "duplicateGroup",
+    "rule": "Only add after human approval and after confirming source listing IDs. Do not change existing group values without separate review.",
+    "candidates": [
+      {
+        "group": "toriko",
+        "records": [
+          {
+            "auditNumber": 8,
+            "expectedName": "トリコ",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 7
+          },
+          {
+            "auditNumber": 238,
+            "expectedName": "Toriko",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 237
+          }
+        ],
+        "status": "same-store-candidate",
+        "note": "電話・公式URL・所在地の一致。元掲載ID最終照合を条件とする"
+      },
+      {
+        "group": "enel",
+        "records": [
+          {
+            "auditNumber": 11,
+            "expectedName": "ENEL",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 10
+          },
+          {
+            "auditNumber": 242,
+            "expectedName": "ENEL（エネル）",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 241
+          }
+        ],
+        "status": "existing-group-review",
+        "note": "既存duplicateGroup=enel。既存グループを維持し、元掲載ID/サービス単位を確認"
+      },
+      {
+        "group": "freedom",
+        "records": [
+          {
+            "auditNumber": 36,
+            "expectedName": "フリーダム",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 35
+          },
+          {
+            "auditNumber": 210,
+            "expectedName": "FREEDOM（フリーダム）",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 209
+          },
+          {
+            "auditNumber": 261,
+            "expectedName": "FREEDOM",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 260
+          }
+        ],
+        "status": "field-contamination-review",
+        "note": "#210はFREEDOM名維持。Be-ange由来疑いフィールド隔離案。#276は対象外"
+      },
+      {
+        "group": "grace-spa",
+        "records": [
+          {
+            "auditNumber": 52,
+            "expectedName": "グレイススパ",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 51
+          },
+          {
+            "auditNumber": 243,
+            "expectedName": "Grace Spa",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 242
+          }
+        ],
+        "status": "same-store-candidate",
+        "note": "複数ルームを保持し、元掲載ID確認後に相互参照"
+      },
+      {
+        "group": "seraphi-spa",
+        "records": [
+          {
+            "auditNumber": 55,
+            "expectedName": "Seraphi Spa",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 54
+          },
+          {
+            "auditNumber": 84,
+            "expectedName": "セラフィスパ",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 83
+          }
+        ],
+        "status": "same-store-candidate",
+        "note": "電話・掲載情報一致。個別掲載ID確認後に相互参照"
+      },
+      {
+        "group": "lumiella",
+        "records": [
+          {
+            "auditNumber": 73,
+            "expectedName": "ルミエラ",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 72
+          },
+          {
+            "auditNumber": 89,
+            "expectedName": "Lumiella",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 88
+          }
+        ],
+        "status": "same-store-candidate",
+        "note": "電話・所在地一致。#89の直接掲載ID対応を確認"
+      },
+      {
+        "group": "refresh",
+        "records": [
+          {
+            "auditNumber": 76,
+            "expectedName": "Refresh",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 75
+          },
+          {
+            "auditNumber": 247,
+            "expectedName": "Refresh（リフレッシュ）",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 246
+          }
+        ],
+        "status": "existing-group-review",
+        "note": "既存duplicateGroup=refresh。複数ルーム保持"
+      },
+      {
+        "group": "arinoa",
+        "records": [
+          {
+            "auditNumber": 78,
+            "expectedName": "Arinoa",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 77
+          },
+          {
+            "auditNumber": 255,
+            "expectedName": "Arinoa～アリノア～",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 254
+          }
+        ],
+        "status": "existing-group-review",
+        "note": "既存duplicateGroup=arinoa。媒体/公式出典を区別"
+      },
+      {
+        "group": "cherry-spa",
+        "records": [
+          {
+            "auditNumber": 147,
+            "expectedName": "チェリーSPA広島",
+            "expectedCategory": "esthetic",
+            "arrayIndexZeroBased": 146
+          },
+          {
+            "auditNumber": 253,
+            "expectedName": "チェリーSPA東平塚店",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 252
+          }
+        ],
+        "status": "brand-room-review",
+        "note": "ブランド候補。業態カテゴリ差とルーム単位を保持"
+      },
+      {
+        "group": "reflet-spa",
+        "records": [
+          {
+            "auditNumber": 219,
+            "expectedName": "Reflet Spa（ルフレスパ）",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 218
+          },
+          {
+            "auditNumber": 269,
+            "expectedName": "Reflet Spa",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 268
+          }
+        ],
+        "status": "same-store-candidate",
+        "note": "電話・住所一致。元掲載ID確認後に相互参照"
+      },
+      {
+        "group": "labyrinth",
+        "records": [
+          {
+            "auditNumber": 228,
+            "expectedName": "Labyrinth～ラビリンス～",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 227
+          },
+          {
+            "auditNumber": 274,
+            "expectedName": "Labyrinth",
+            "expectedCategory": "men-esthe",
+            "arrayIndexZeroBased": 273
+          }
+        ],
+        "status": "same-store-candidate",
+        "note": "電話一致候補。#191は含めない"
+      }
+    ]
+  },
+  "heldCandidates": [
+    {
+      "group": "affino",
+      "records": [
+        {
+          "auditNumber": 208,
+          "expectedName": "Affino（アフィーノ）",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 207
+        },
+        {
+          "auditNumber": 259,
+          "expectedName": "Affino",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 258
+        }
+      ],
+      "status": "hold",
+      "note": "#259側の個別電話・公式URL等の根拠不足"
+    },
+    {
+      "group": "kings",
+      "records": [
+        {
+          "auditNumber": 54,
+          "expectedName": "キング",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 53
+        },
+        {
+          "auditNumber": 257,
+          "expectedName": "KING'S 広島",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 256
+        },
+        {
+          "auditNumber": 258,
+          "expectedName": "KING'S",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 257
+        }
+      ],
+      "status": "hold",
+      "note": "#54/#257候補、#258の独立根拠不足"
+    },
+    {
+      "group": "dior",
+      "records": [
+        {
+          "auditNumber": 35,
+          "expectedName": "ディオール",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 34
+        },
+        {
+          "auditNumber": 62,
+          "expectedName": "ディオール観音店",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 61
+        }
+      ],
+      "status": "hold",
+      "note": "電話一致だがブランド/ルーム境界不明"
+    },
+    {
+      "group": "spa-r",
+      "records": [
+        {
+          "auditNumber": 145,
+          "expectedName": "スパ アール",
+          "expectedCategory": "esthetic",
+          "arrayIndexZeroBased": 144
+        },
+        {
+          "auditNumber": 195,
+          "expectedName": "spa R（スパアール）",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 194
+        },
+        {
+          "auditNumber": 215,
+          "expectedName": "Men’s spa R",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 214
+        },
+        {
+          "auditNumber": 266,
+          "expectedName": "Men's spa R",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 265
+        }
+      ],
+      "status": "hold",
+      "note": "電話・カテゴリ差、サービス単位不明"
+    },
+    {
+      "group": "nagomi",
+      "records": [
+        {
+          "auditNumber": 163,
+          "expectedName": "NAGOMI～和み～",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 162
+        },
+        {
+          "auditNumber": 254,
+          "expectedName": "出張メンズエステ～NAGOMI～",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 253
+        }
+      ],
+      "status": "hold",
+      "note": "店舗型/出張型・営業時間差を維持"
+    },
+    {
+      "group": "ivy-spa",
+      "records": [
+        {
+          "auditNumber": 166,
+          "expectedName": "高級メンズエステ IVY SPA広島",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 165
+        },
+        {
+          "auditNumber": 189,
+          "expectedName": "アイビースパ",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 188
+        },
+        {
+          "auditNumber": 252,
+          "expectedName": "出張専門高級メンズエステ IVY SPA",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 251
+        },
+        {
+          "auditNumber": 271,
+          "expectedName": "IVY SPA",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 270
+        }
+      ],
+      "status": "hold",
+      "note": "出張専門。個別掲載ID対応が一部未確認"
+    },
+    {
+      "group": "cradle",
+      "records": [
+        {
+          "auditNumber": 278,
+          "expectedName": "CRADLE（クレイドル）",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 277
+        }
+      ],
+      "status": "field-conflict",
+      "note": "電話070-1482-6361/070-1482-6332を出典別に保持"
+    },
+    {
+      "group": "serenity",
+      "records": [
+        {
+          "auditNumber": 116,
+          "expectedName": "Serenity（セレニティ）",
+          "expectedCategory": "store-health",
+          "arrayIndexZeroBased": 115
+        },
+        {
+          "auditNumber": 141,
+          "expectedName": "Serenity Oasis",
+          "expectedCategory": "store-health",
+          "arrayIndexZeroBased": 140
+        }
+      ],
+      "status": "separate-unless-proven",
+      "note": "同住所候補だけで統合しない"
+    },
+    {
+      "group": "light-story",
+      "records": [
+        {
+          "auditNumber": 101,
+          "expectedName": "LIGHT（ライト）",
+          "expectedCategory": "soap",
+          "arrayIndexZeroBased": 100
+        },
+        {
+          "auditNumber": 103,
+          "expectedName": "STORY ここだけの物語",
+          "expectedCategory": "soap",
+          "arrayIndexZeroBased": 102
+        }
+      ],
+      "status": "keep-separate",
+      "note": "同住所でも電話違い"
+    },
+    {
+      "group": "sherbet",
+      "records": [
+        {
+          "auditNumber": 104,
+          "expectedName": "Sherbet（シャーベット）",
+          "expectedCategory": "soap",
+          "arrayIndexZeroBased": 103
+        },
+        {
+          "auditNumber": 105,
+          "expectedName": "シャーベット別館",
+          "expectedCategory": "soap",
+          "arrayIndexZeroBased": 104
+        }
+      ],
+      "status": "keep-separate",
+      "note": "本館/別館の系列注記、別レコード維持"
+    },
+    {
+      "group": "casablanca-mosaic",
+      "records": [
+        {
+          "auditNumber": 149,
+          "expectedName": "カサブランカ 広島店",
+          "expectedCategory": "delivery",
+          "arrayIndexZeroBased": 148
+        },
+        {
+          "auditNumber": 150,
+          "expectedName": "モザイク 広島店",
+          "expectedCategory": "delivery",
+          "arrayIndexZeroBased": 149
+        }
+      ],
+      "status": "history-only",
+      "note": "合併告知は履歴保持、別レコード維持"
+    },
+    {
+      "group": "angels-apron-labyrinth",
+      "records": [
+        {
+          "auditNumber": 191,
+          "expectedName": "天使のエプロン",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 190
+        },
+        {
+          "auditNumber": 228,
+          "expectedName": "Labyrinth～ラビリンス～",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 227
+        },
+        {
+          "auditNumber": 274,
+          "expectedName": "Labyrinth",
+          "expectedCategory": "men-esthe",
+          "arrayIndexZeroBased": 273
+        }
+      ],
+      "status": "keep-separate",
+      "note": "電話一致のみ。統合禁止"
+    }
+  ],
+  "p0Correction": {
+    "record": {
+      "auditNumber": 210,
+      "expectedName": "FREEDOM（フリーダム）",
+      "expectedCategory": "men-esthe"
+    },
+    "proposedAction": "quarantine_suspected_be_ange_audit_fields_only",
+    "preserveName": "FREEDOM（フリーダム）",
+    "relatedFREEDOMRecords": [
+      36,
+      261
+    ],
+    "excludedBeAngeRecord": {
+      "auditNumber": 276,
+      "expectedName": "Be-ange（ビアンジュ）",
+      "expectedCategory": "men-esthe"
+    },
+    "status": "proposal_only_not_approved",
+    "requirements": [
+      "snapshot entire original record before edits",
+      "retain all suspected Be-ange values and source URLs in quarantine history",
+      "do not overwrite officialUrl/individualAudit until explicit approval",
+      "keep #276 unchanged"
+    ]
+  },
+  "notIncluded": [
+    {
+      "auditNumber": 191,
+      "reason": "電話一致のみでLabyrinthに統合しない"
+    },
+    {
+      "auditNumber": 276,
+      "reason": "#210 FREEDOMのBe-ange混入レビューとは別店舗"
+    }
+  ],
+  "executionPlan": [
+    "Fetch current source and verify exact sourceBlobSha; stop if different.",
+    "Validate each audit number against expectedName and expectedCategory.",
+    "Generate a proposed diff only; do not write source JSON.",
+    "Run preservation assertions on all original fields, record count, order, categories, phone/address/URL/source fields.",
+    "Require explicit human approval before any production update."
+  ],
+  "expectedProductionChanges": 0
+}
