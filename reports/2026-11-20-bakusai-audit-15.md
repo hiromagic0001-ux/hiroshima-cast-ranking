@@ -2441,3 +2441,26 @@
 - 広島市のメンエスセレクト一覧は125店と表示するが、ページ自身が「公式サイト情報をもとに掲載（店舗未確認）」と明記。件数を実在・営業中の店舗数とみなさない。
 - 参照URL：Alive https://estama.jp/shop/40767/ ; Celeste https://estama.jp/shop/44050/cast/765818/ ; HEAVEN https://menes-style.jp/chugoku_shikoku/hiroshima/heaven ; 広島市一覧 https://menesu-select.com/hiroshima/hiroshima/ .
 - 監査ログのみ更新。店舗マスターJSON、D1、アプリコード、Renderサービス・デプロイは変更なし。
+
+
+## 2026-11-20 13:04 JST — 公式ページ・媒体情報の追加照合
+
+### 既存レコードの追加裏付け
+- #86 神のエステ：店舗専用ページに宝町・鶴見町の複数ルーム、電話080-3892-0081、公式URL https://kamies.jp を確認。住所は町名までで、番地は未確認。出典 https://menes-style.jp/chugoku_shikoku/hiroshima/kamies
+- #90 ハチミツ俱楽部：広島市内メンズエステ掲載ページに電話080-9144-7888、比治山駅周辺、営業時間09:00〜LASTを再確認。独立公式住所の確定とは分ける。出典 https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/
+- #83 CREA：独立公式サイトで電話070-2353-9000、広島市中区富士見町4-30・東平塚町3の複数住所表記、11:00〜LASTの掲載を再確認。複数ルームのため住所を単一化しない。出典 https://creahiroshima.com/
+- #34 salon.do.ni-na：掲載店舗ページで電話070-2368-2727、富士見町・鶴見町・竹屋町・宝町の複数ルーム、公式URL https://salon-do-ni-na.com を確認。複数ルームは1店舗として扱う。出典 https://menes-style.jp/chugoku_shikoku/hiroshima/salondo
+- #243 Grace Spa：独立公式サイトで電話090-7373-9222を確認。広島市中区富士見町・鶴見町・小町の複数ルーム情報と照合。出典 https://hiroshima-grace-spa.com/
+- #48 7 Dream Este：電話090-1356-6132、広島市中区の店舗情報を追加照合。第三者媒体の住所は公式住所と区別。出典 https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/
+
+### 新規候補・未登録照合
+- MELLONA～メローナ～広島：第三者媒体に広島市中区宝町、電話080-9798-9343、メンズエステ店舗型として掲載。開店予定の表現も残るため、営業中確定・マスター追加は保留。出典 https://menesth.jp/32/shop/51055/
+- Be-ange（ビアンジュ）：第三者媒体に広島市中区宝町、電話090-9251-0678、公式ホームページ欄 https://beange.men-este.net/ を掲載。既存#276と同一候補の再裏付けとして扱い、新規店舗数に加算しない。出典 https://estama.jp/shop/38980/
+- #54 キング、#58 ザ・熟女 豊満桃色倶楽部、#63 スパドルチェ 広島、#77 既婚者 極液ラボ、#82 セレスト、#88 ラドンナ、#92 QUEENは今回の検索範囲で、店舗代表電話・公式住所を独立確認できず保留継続。検索不一致を不存在・閉店とは扱わない。
+- #43 Aliveは実在する代表電話を確認できず、既存記録のダミー番号扱いを維持。ゼロ件や閉店とは判定しない。
+- #98 DIANA（ディアナ）は既存照合どおりソープランド業態の同名衝突。メンズエステ店舗とは統合しない。
+
+### 監査上の扱い
+- 公式サイト、掲載媒体、第三者店舗データを別ソースとして記録。第三者掲載だけの電話・住所を「公式確認済み」と格上げしない。
+- 複数ルームは同一店舗内の所在地情報として保持し、店舗数を水増ししない。
+- 店舗マスターJSON、アプリコード、D1、ランキング、Renderデプロイは変更していない。監査ログのみ更新。
