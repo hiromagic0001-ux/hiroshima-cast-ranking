@@ -139,32 +139,33 @@ const server = http.createServer(async (req, res) => {
       const extractedPosts = new Map();
       $('[id="res_block"]').each((_, el) => {
         const block = $(el);
-        const numberText = block.find('.res_rotundate').first().text().replace(/\\s+/g, ' ').trim();
-        const numberMatch = numberText.match(/^#(\\d{1,4})$/);
+        const numberText = block.find('.res_rotundate').first().text().replace(/\s+/g, ' ').trim();
+        const numberMatch = numberText.match(/^#(\d{1,4})$/);
         if (!numberMatch) return;
         const postNo = Number(numberMatch[1]);
-        const headerText = block.find('.res_header').first().text().replace(/\\s+/g, ' ').trim();
+        const headerText = block.find('.res_header').first().text().replace(/\s+/g, ' ').trim();
         const bodyNode = block.find('.res_body').first();
         if (!bodyNode.length) return;
-        const dateMatch = headerText.match(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
-        let excerpt = bodyNode.text().replace(/\\s+/g, ' ').trim();
-        excerpt = excerpt.replace(/\\[匿名さん\\]/g, '').trim();
+        const dateMatch = headerText.match(/20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
+        let excerpt = bodyNode.text().replace(/\s+/g, ' ').trim();
+        excerpt = excerpt.replace(/\[匿名さん\]/g, '').trim();
         if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
         extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : null, excerpt: excerpt.slice(0, 220) });
       });
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
-      const postNumberAnchors = $('[class*="res_rotundate"]').filter((_, el) => /^#\\d{1,4}$/.test($(el).text().trim())).length;
+      const postNumberAnchors = $('[class*="res_rotundate"]').filter((_, el) => /^#\d{1,4}$/.test($(el).text().trim())).length;
+      const paginationLinks = $('a[href*="tp="]').slice(0, 30).map((_, el) => ({ text: $(el).text().replace(/\s+/g, ' ').trim().slice(0, 50), href: $(el).attr('href') || '' })).get();
       const structuralSamples = $('[id*="res"],[class*="res"],[id*="post"],[class*="post"]').slice(0, 18).map((_, el) => ({
         tag: el.tagName || '',
         id: ($(el).attr('id') || '').slice(0, 100),
         className: ($(el).attr('class') || '').toString().slice(0, 140),
         text: $(el).text().replace(/\\s+/g, ' ').trim().slice(0, 180)
       })).get();
-      console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, structuralSamples }));
+      console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, paginationLinks, structuralSamples }));
       return send(res, 200, {
         ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
-        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, structuralSamples },
+        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, paginationLinks, structuralSamples },
         activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
         latestPostAt,
         posts,
