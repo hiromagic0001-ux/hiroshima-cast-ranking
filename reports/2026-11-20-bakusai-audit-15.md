@@ -1904,3 +1904,16 @@
 - Pink Panther 070-9181-8730 is listed as a beauty salon in the local business index, but this pass did not find a reliable men's-esthe source; do not include in confirmed target store count. Keep as category-unverified lead only.
 - Current evidence supports multiple store records, but a completed 100-unique-store batch is still not defensible: sources overlap, branch/room entries repeat, and the app's actual store DB file has not been retrieved for exact phone matching. Do not claim 100 complete or pad to 100.
 - No new verified Bakusai Hiroshima acode=8 rolling-30-day thread/post counts. No cast-level ranking based on anonymous sexual/private-life content. No app, store DB, ranking, or Render changes.
+
+
+## 2026-11-20 12:42 JST — 継続調査
+- メンズエステstyleの広島市店舗ページで NAGOMI～和み～（090-7130-2000、昭和町・的場町・流川町・大手町ルーム）を再確認。公式HP https://nagomi-hiroshima.com 。複数ルームは同一店舗の住所違いとして扱い、店舗数を重複加算しない。Source: https://menes-style.jp/chugoku_shikoku/hiroshima/nagomihiroshima
+- 同じ媒体で「大人の隠れ家」（080-9790-6435、弥生町・鶴見町・東平塚町ルーム）を新規候補として確認。媒体掲載とHP/予約情報の追加照合が必要なため暫定。Source: https://menes-style.jp/chugoku_shikoku/hiroshima/otonanokakuregahiroshima
+- エステ魂の店舗詳細で standard〜スタンダード〜（070-9513-0369、広島市掲載、10:00～翌2:00）を確認。説明はメンズエステと明記。公式サイト・所在地番地の一次確認は未了。Source: https://estama.jp/shop/50597/
+- AXL CONDITIONINGS（080-3884-8693、三川町6-3／鶴見町4-12）についてエステ図鑑掲載の男性限定・電話・2ルーム情報を再確認。公式サイト未確認のため媒体照合済み候補。Source: https://esthe-zukan.com/chugoku/chugokuhiroshima/2338
+- CREA（070-2353-9000）について公式サイトとエステ魂詳細が一致。公式サイトは富士見町4-30・東平塚町3、エステ魂詳細は富士見町4-29の表記もある。番地表記差を保持し、同一電話番号なので同一店舗候補として扱う。Sources: https://creahiroshima.com/ ; https://estama.jp/shop/26145/
+- RESORT（080-2926-1146）についてエステ魂詳細で薬研堀6-7 森田ビル4Fを再確認。複数媒体の同一電話番号・同一所在地は同一店舗として重複排除。Source: https://estama.jp/shop/23992/
+- メンズエステstyle掲載の神のエステ（080-3892-0081、宝町・鶴見町）も再確認。複数ルームは店舗重複として数えない。Source: https://menes-style.jp/chugoku_shikoku/hiroshima/kamies
+- ローカルビジネス検索の男性向けサロン候補は、メンズエステ専業の根拠がない一般リラクゼーション、理容、美容、男性フェイシャルを対象店舗に混入させず除外または保留。例：男性専門フェイシャル Men's salon Liko（西区庚午北）は男性向けだがメンズエステの同一カテゴリとは確認できず、今回の対象店舗数に含めない。
+- GitHubリポジトリ直下と mens-esthe/ を確認した範囲では店舗マスターJSON/CSVは見つからず、アプリの実データはAPI等別管理の可能性が残る。したがって今回も既存278件との電話番号突合は未実施。既存DBに対する重複確定を主張しない。
+- この回の追加は候補・照合記録であり、100件のユニーク店舗一括検証完了ではない。媒体掲載数の単純合算はしない。Bakusaiの直近30日投稿数は新規の確定値なし。アプリUI・店舗DB・ランキング・Renderは変更なし。
