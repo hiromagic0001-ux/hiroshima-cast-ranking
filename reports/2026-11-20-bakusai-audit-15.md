@@ -1959,3 +1959,13 @@
 - salon.do.ni-naは公式系掲載で富士見町・鶴見町・竹屋町・宝町等の複数ルーム、電話070-2368-2727を確認。五日市ルームも同一電話番号のため別店舗に数えない。Source: https://menes-style.jp/chugoku_shikoku/hiroshima/salondo
 - 今回、asian relaxation villa大手町店、MIYABI、Enjoy Relaxation、ATEASE、SOLUNA、もみ亭、Suimin Terrace等の一般リラクゼーション店も検索結果に出たが、メンズエステ店舗としての直接根拠が不足するため候補数に加算しない。ピンクパンサーも美容室カテゴリしか確認できず保留。
 - 既存278件マスターとの電話番号照合は未実施。今回の媒体再確認は100件のユニーク店舗完了を意味しない。Bakusai直近30日投稿数の新規確定なし。アプリUI・店舗DB・ランキング・Render変更なし。
+
+
+## 2026-11-20 13:40 JST — 公式サイト追加確認・既存候補の照合
+- メンズエステ ミセスティセ（tisse）：公式サイトで業種「メンズエステ」、広島市中区橋本町4ルーム、電話090-1582-0866、店舗案内と11月上旬の日記更新を確認。新規候補として追加。Source: https://mens-tisse.com/
+- 既存候補の公式/媒体掲載を再確認：Organic energy（070-6690-1788、広島市中区富士見町）、CREA（070-2353-9000、広島市中区富士見町）、salon.do.ni-na（070-2368-2727、複数の中区ルーム）、神のエステ（080-3892-0081、宝町/鶴見町）、Rebernal（070-8806-0807、東平塚町）。複数ルームは同じ電話番号のため1店舗として数える。Sources: https://organic-hiroshima.com/ ; https://creahiroshima.com/contact/ ; https://menes-style.jp/chugoku_shikoku/hiroshima/salondo ; https://menes-style.jp/chugoku_shikoku/hiroshima/kamies ; https://menes-style.jp/chugoku_shikoku/hiroshima/rebernal
+- 全国メンズエステランキングの広島市ページは2026-11-20取得時点でメンズエステ店48件と表示。CREA、salon.do.ni-na、神のエステ、チェリーSPA広島、VERDY、B and B、ハチミツ俱楽部、7 Dream Este等の掲載と電話番号を確認。ただし48件は媒体掲載件数であり、ユニーク店舗数/営業実態確定数ではない。Source: https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/
+- エステ魂の広島市店舗型ページは10件表示だが、RESORTが同一電話番号080-2926-1146で2枠掲載。ページ内にはアジアンエステ店も含まれるため、10件をメンズエステ10店とは扱わない。Source: https://estama.jp/etc/shoplist/3401/store/
+- 電話番号照合の観点で、VERDY（080-9893-9031）は既存DB候補「ヴェルディ」と一致する可能性が高いが、マスター未読取のため統合処理は未実施。既知の電話一致候補6組も未確定のまま保留。
+- 地図検索で出た「Lit-skin」「カサイ」「ダンディハウス」「Ra Parure」等は、一般美容/整体/男性向けフェイシャル等で、今回対象のメンズエステ店舗としての根拠がないため除外。
+- 今回の追加は候補とソースの検証であり、278件マスター照合・100件ユニーク確定バッチは未完了。Bakusai直近30日投稿数の新規確定なし。アプリUI、店舗DB、ランキング、Render変更なし。
