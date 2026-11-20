@@ -1990,3 +1990,13 @@
 - メンズエステタウン広島トップページにはチェリーSPA広島、heaven、大人の隠れ家、マスカットSPA等の市内カテゴリ表示があるが、一覧トップだけでは各店舗の電話・正確な住所・重複確認が不足するため、今回は候補の確定数に加算せず詳細ページ待ちとする。Source: https://www.esthe-mens.jp/hiroshima/
 - 今回の検索で見つかった一般美容/脱毛/理容、整体、一般リラクゼーション（Lit-skin、メンズ機能整体カサイ、BORD、ダンディハウス等）は対象の「メンズエステ店舗」とは別カテゴリのため候補から除外。
 - 278件マスター未読取につき電話番号突合は未実施。100件ユニーク確定バッチ未完了。Bakusai直近30日投稿数の新規確定値なし。アプリUI・店舗DB・ランキング・Render変更なし。
+
+
+## 2026-11-20 14:25 JST — 南区・広島駅前の新規候補確認
+- Mrs.APHRODITE THALASSA：広島市南区大須賀町、電話080-9004-2543。公式求人ページに「広島駅前」「9月26日OPEN」「メンズエステサロン」「電話番号」を確認し、複数の店舗媒体でも広島市南区大須賀町・JR広島駅・同一電話番号・メンズエステ店舗型の掲載を確認。新規候補として追加。Sources: https://aphrodite-talassa.com/recruit/ ; https://www.kking.jp/ippan/751012/ ; https://ranking-deli.jp/hiroshima/area151/style8/50968/ ; https://www.es-navi.com/list/list.php?num=7400&type=i-japan
+- ただし一部のメンズエステマップ検索結果には大阪市東淀川区の住所が誤掲載されているため採用せず、公式求人ページと複数の広島市南区掲載を優先。住所表記の矛盾は監査注記として保持。
+- ミセスTISSE（090-1582-0866）：ランキング媒体の店舗詳細で業種「メンズエステ（店舗型）」、広島市中区橋本町、公式URL https://mens-tisse.com/ を再確認。前回既に候補登録済みのため新規追加せず、重複加算なし。Source: https://ranking-mensesthe.jp/shop/32276/shopdata/
+- リアン(Lian)（090-6416-9024）：メンズエステマップ/求人の両方で西区三篠町1丁目・横川駅徒歩圏・同一電話番号を再確認。前回候補登録済みのため新規追加せず。Sources: https://ultimate-map.com/yoru/mensaesthe/spot.php?id=rc01d7e629b ; https://esjob.jp/shop/50549/
+- Be-ange（090-9251-0678）、神のエステ（080-3892-0081）、Organic energy（070-6690-1788）、CREA（070-2353-9000）、salon.do.ni-na（070-2368-2727）は今回も業種/電話/市内住所を再確認。複数ルームは同一電話番号につき各1店舗扱い。Sources: https://estama.jp/shop/38980/ ; https://menesmall.jp/shop/got-esthe ; https://organic-hiroshima.com/ ; https://creahiroshima.com/ ; https://menes-style.jp/chugoku_shikoku/hiroshima/salondo
+- メンエスパーク広島市ページは15件表示（最終更新2026-11-20）。媒体内掲載数であり全市のユニーク店舗総数ではない。Source: https://menespark.com/hiroshima/hiroshima/
+- 278件マスター未読取のため電話番号照合は未実施。100件ユニーク確定バッチ未完了。Bakusai直近30日投稿数の新規確定値なし。アプリUI・店舗DB・ランキング・Render変更なし。
