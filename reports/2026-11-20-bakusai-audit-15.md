@@ -412,3 +412,16 @@
   - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
   - https://bakusai.com/isp/
 - アプリコード、D1、UI、Renderは変更なし。
+
+
+## 11/20追加調査：直接一覧URLの再取得失敗・JSON検索結果の地域不一致を再確認（11:24 JST）
+
+- 対象掲示板の一覧URLを直接開く再試行を行ったが、調査用Web取得手段ではURLエンコード後もアクセス不可（Internal Error）。一覧のページ数、全スレッド母数、ページ送りを確認できず。
+- 爆サイ `/newreslist_json/` の検索結果は今回も `acode=16`（鹿児島・熊本・宮崎の掲示板データを含む結果）を返し、要求した広島 `acode=8` の結果ではなかった。地域不一致のJSON結果は一切カウントに採用しない。
+- 公式ログ照会案内では、照会に掲示板URL・スレッド番号・レス番号が必要であり、削除依頼・管理削除・投稿者自身の削除分は保存ログ対象外と説明。一般公開の全件一覧・期間別投稿集計としては利用できない。
+- この再試行で新規の広島対象tid・期間内レス日時は得られず。対象3スレッドの直近30日投稿数、対象板の全件母数とも未確定。検索結果なしを「0件」として扱わない。
+- 参照URL：
+  - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
+  - https://bakusai.com/newreslist_json/?acode=8&ctrid=
+  - https://bakusai.com/isp/
+- アプリコード、D1、UI、Renderは変更なし。
