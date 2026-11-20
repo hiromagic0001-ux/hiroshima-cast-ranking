@@ -123,9 +123,9 @@ const server = http.createServer(async (req, res) => {
         }
       });
       if (replyCount !== null && replyCount >= 999 && !successorUrl) {
-            latestUrl.pathname.includes('/tid=' + (target.pathname.match(/\/tid=(\d+)/)?.[1] || ''));
+        const bid = Number(target.pathname.match(/\/bid=(\d+)/)?.[1] || 0);
+        const currentId = Number(target.pathname.match(/\/tid=(\d+)/)?.[1] || 0);
         const currentKey = normalizeTitle(title);
-            latestUrl.pathname.includes('/tid=' + (target.pathname.match(/\/tid=(\d+)/)?.[1] || ''));
         const candidates = [];
         for (let page = 1; page <= 9; page++) {
           const listingUrl = page === 1
