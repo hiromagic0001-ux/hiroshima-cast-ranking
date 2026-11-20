@@ -218,3 +218,23 @@
 - https://mens-est.jp/shop/accesshrsm/schedule/
 
 アプリDB・D1・ランキング・UI・Renderデプロイは変更せず、調査記録のみ更新。
+
+
+## 11/20追加・04:03時点の再取得
+取得日：2026-11-20
+- メンエスなう広島市ページ（format=shop / sort=staff）は04:03時点で公開15店舗、公開プロフィール448名、本日出勤67名、出勤中5名、これから出勤0名と表示。直前の08:29取得値（449名・73名等）とは時刻・取得スナップショットが異なるため、両方を保持し単一の確定値に統合しない。
+- 同ページのQUEENカードは在籍57名・本日出勤11名、チェリーSPA広島は在籍67名・本日出勤12名（sort=staff表示）を確認。媒体カードの集計であり、公式在籍数とは断定しない。
+- メンエスなうの別URL（format=dispatch）は11/19更新・13:54時点で出勤60名、出勤中20名、これから出勤38名。日付が11/19のため11/20当日値に転用しない。
+- トップシークレットの「なの」は11/20 23:00〜翌06:00の週間予定を確認。ページ上の口コミ投稿は11/13付であり、掲示板の直近30日投稿数や当日出勤とは別指標。
+- EstamaのLa Paixブログ一覧は11/11付、Vivienneのブログ一覧は11/18付の公開投稿を確認。古い投稿を11/20の出勤実績・人気度に流用しない。
+- 爆サイ個人スレッドの直近30日投稿数は今回の検索でも取得できず、人気ランキング用データは未確定のまま。累計レス数、他媒体のブログ反応数、口コミ件数を代替指標にしない。
+
+出典:
+- https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=shop
+- https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?sort=staff
+- https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=dispatch
+- https://ranking-mensesthe.jp/shop/49143/5832835/
+- https://estama.jp/shop/30844/bloglist/
+- https://estama.jp/shop/31647/bloglist/
+
+アプリDB・D1・ランキング・UI・Renderデプロイは変更せず、調査記録のみ更新。
