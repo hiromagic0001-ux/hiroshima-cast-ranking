@@ -1808,3 +1808,14 @@
 - Broad directory population snapshots remain inconsistent; search result for S-Palette lists 8 Hiroshima prefecture shops as of 2026-11-19, while other directories have different counts. Publisher-specific counts only; not additive and not a census. Source: https://s-palette.com/
 - Bakusai: this pass produced no newly verifiable Hiroshima acode=8 individual-thread rolling-30-day totals. No zero inference from unavailable search results. No named-cast anonymous sexual/private-life ranking.
 - No app, store DB, ranking, or Render changes.
+
+
+## 2026-11-20 100件単位の一括処理方針・初回母集団確認
+- User requested processing 100 stores simultaneously per batch. Adopt 100-record batches for future Hiroshima City candidate audits; process fewer only when fewer grounded candidates are available. Never pad with invented records or count duplicate media listings as separate stores.
+- Scope remains Hiroshima City only. Each batch should capture candidate name, source URL, phone, city/ward evidence, official site/contact if publicly available, cross-directory evidence, exact-phone duplicate status, and disposition: verified city candidate / provisional / out-of-city / duplicate-hold / inaccessible. Exact phone match is the only automatic store-merge key; unknown or different phones remain separate/hold.
+- Initial source population check: Salonowa page states 52 Hiroshima City listings (and separately 6 Fukuyama, 2 Higashi-Hiroshima, 1 Kure); exclude those non-city areas. Source: https://www.salonowa.jp/area/hiroshima/hiroshima
+- Esthe-ranking page currently reports 48 men's-esthe listings in Hiroshima City, but the open page's captured content shows only a partial/ranked subset and is a directory count, not 48 independently verified active businesses. Source: https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/
+- Menespark page shows 15 Hiroshima listings in the latest search snapshot; a cached opened copy showed 14 and was dated 2026-10-22, demonstrating snapshot/date variance. Source: https://menespark.com/hiroshima/hiroshima/
+- These three directory populations overlap substantially (CREA, salon.do.ni-na, 神のエステ, VERDY, Seraphi Spa, NAGOMI, 7 Dream Este, etc.). Do not add 52+48+15 as unique store count. A deduplicated 100-store batch cannot be honestly declared complete from these page counts alone.
+- Confirmed cross-source listing examples in this pass: 7 Dream Este phone 090-1356-6132 (Esthe-ranking); B and B phone 090-5460-1201; ハチミツ俱楽部 080-9144-7888; QUEEN 090-3517-1314; 小悪魔SPA 080-6083-0666; Lumiella 070-9456-8338; all remain subject to exact internal DB phone comparison and current operation/official-source checks. Source: https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/
+- No application, store database, ranking, or Render changes. No anonymous individual-cast sexual/private-life ranking created. Bakusai rolling-30-day store/thread counts were not verified in this batch.
