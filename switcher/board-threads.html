@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#123d31">
+<title>広島市 匿名掲示板スレッド｜業種別</title>
+<style>
+:root{color-scheme:dark;--bg:#0c1714;--panel:#172721;--line:#2d443b;--green:#a5e2bd;--muted:#a9b9b0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#f4f7f5;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif}
+header{background:#123d31;padding:22px 16px;border-bottom:1px solid #315849}h1{font-size:21px;margin:0 0 7px}header p{margin:0;color:#d2e6db;font-size:12px;line-height:1.7}
+main{max-width:760px;margin:auto;padding:14px}.back{display:inline-block;margin:10px 0 14px;color:var(--green);font-size:13px}
+.note{background:#302a18;border:1px solid #62522b;border-radius:12px;padding:12px;color:#f5e9c7;font-size:12px;line-height:1.7;margin-bottom:13px}
+.tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:12px 0}
+.tab{border:1px solid #648c78;border-radius:9px;background:#20372d;color:#d7f7e4;padding:11px 5px;font:inherit;font-size:12px}
+.tab.active{background:#a5e2bd;color:#102019;font-weight:800}
+.tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+input{flex:1;min-width:150px;background:#101d17;color:#fff;border:1px solid #496454;border-radius:9px;padding:12px;font-size:14px}
+.count,.status{font-size:11px;color:var(--muted);line-height:1.7}
+.list{display:grid;gap:9px;margin-top:10px}.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+.item b{display:block;font-size:14px;line-height:1.5}.meta{font-size:11px;color:#bdcec4;line-height:1.7;margin-top:5px}
+.pill{display:inline-block;border:1px solid #52715e;border-radius:20px;padding:2px 7px;margin-right:5px;color:#c7d8ce;font-size:10px}
+.open{display:inline-block;margin-top:8px;padding:8px 11px;border:1px solid #8a7650;border-radius:8px;color:#f1dfb6;text-decoration:none;font-size:12px}
+.empty{padding:14px;border:1px dashed #52715e;border-radius:10px;color:var(--muted);font-size:12px;line-height:1.7}
+footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-height:1.7}
+</style>
+</head>
+<body>
+<header><h1>広島市 匿名掲示板スレッド</h1><p>デリヘル・メンズエステ・ソープランドを業種別に整理</p></header>
+<main>
+<a class="back" href="/">← 広島キャスト検索へ戻る</a>
+<div class="note">店舗名不明・広島市外・本人との照合根拠が不足する候補は除外しています。匿名掲示板の投稿は真偽やサービス品質を証明しません。個人スレッドの投稿数と店舗スレッド内の言及数は別に表示します。</div>
+<div class="tabs" role="tablist" aria-label="業種">
+<button class="tab active" type="button" data-industry="mens">メンズエステ</button>
+<button class="tab" type="button" data-industry="deli">デリヘル</button>
+<button class="tab" type="button" data-industry="soap">ソープランド</button>
+</div>
+<div class="tools"><input id="q" type="search" placeholder="店舗名・キャスト名で検索"><span id="count" class="count"></span></div>
+<section id="list" class="list" aria-live="polite"></section>
+<p id="status" class="status">レス数・後継スレッドを自動確認しています。</p>
+<div class="note"><b>999レス到達時の自動切替</b><br>登録スレッドが999レスに達し、同じ店舗・キャストの後継スレッドを確認できた場合は、アプリ内リンクを新スレッドへ自動で切り替えます。後継スレッドが特定できない場合や、レス数を取得できない場合は誤リンク防止のため現行リンクを維持し、「未確認」と表示します。</div>
+<footer>確認できた直接スレッドURLのみ掲載。掲示板の表示制限・削除・取得不能は未確認として扱います。</footer>
+</main>
+<script>
+(()=>{
+const API="https://hiroshima-cast-refresh-api.onrender.com/api/bakusai/thread-status";
+const threads=[
+{industry:"mens",store:"salon.do.ni-na",cast:"双葉",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=9542965/",detail:"直近365日・公開投稿19件（削除分除外）"},
+{industry:"mens",store:"チェリーSPA",cast:"一条 ふうか",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=9635267/",detail:"直近365日・公開投稿7件"},
+{industry:"mens",store:"salon.do.ni-na",cast:"愛沢",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10970438/",detail:"直近365日・公開投稿8件"},
+{industry:"mens",store:"神のエステ",cast:"ましろ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認2投稿（個人投稿数とは別）"},
+{industry:"mens",store:"神のエステ",cast:"みなみ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認2投稿（個人投稿数とは別）"},
+{industry:"mens",store:"神のエステ",cast:"みどり",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認1投稿（個人投稿数とは別）"},
+{industry:"mens",store:"神のエステ",cast:"みずき",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認1投稿（個人投稿数とは別）"},
+{industry:"mens",store:"神のエステ",cast:"るあ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認1投稿（個人投稿数とは別）"},
+{industry:"mens",store:"神のエステ",cast:"さとみ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認1投稿（個人投稿数とは別）"},
+{industry:"mens",store:"CREA",cast:"小林もえ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=13206563/",detail:"公開確認1投稿（店舗名と姓を照合）"},
+{industry:"mens",store:"ENEL",cast:"花街 りん",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12975883/",detail:"公開確認1投稿（表記類似候補）"},
+{industry:"mens",store:"ENEL",cast:"夏海 そら",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12975883/",detail:"公開確認1投稿（表記類似候補）"},
+{industry:"mens",store:"ゆりかご",cast:"美緋～びび～",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=13431328/",detail:"公開確認1投稿（表記類似候補）"}
+];
+let active="mens";const state=new Map();const list=document.getElementById("list"),q=document.getElementById("q"),count=document.getElementById("count"),status=document.getElementById("status");
+function render(){
+ const key=q.value.trim().toLocaleLowerCase();
+ const rows=threads.filter(x=>x.industry===active&&(x.store+" "+x.cast+" "+x.type).toLocaleLowerCase().includes(key));
+ count.textContent=rows.length+"件";
+ list.replaceChildren();
+ if(!rows.length){const p=document.createElement("div");p.className="empty";p.textContent=active==="mens"?"検索条件に一致するスレッドはありません。":"この業種は、広島市内の店舗・キャストと照合できる直接スレッドURLがまだ登録されていません。未確認リンクは表示していません。";list.append(p);return;}
+ rows.forEach(x=>{
+  const s=state.get(x.url)||{};const card=document.createElement("article");card.className="item";
+  const title=document.createElement("b");title.textContent=x.store+"｜"+x.cast;
+  const meta=document.createElement("div");meta.className="meta";meta.innerHTML='<span class="pill">'+x.type+'</span>'+x.detail;
+  const live=document.createElement("div");live.className="meta";live.textContent=s.replyCount==null?"現在のレス数：未確認":("現在のレス数："+s.replyCount+"件｜"+(s.switched?"後継スレッドへ自動切替済":s.reached?"999到達・後継未確認":"999レス到達時に自動切替"));
+  const a=document.createElement("a");a.className="open";a.href=s.activeUrl||x.url;a.target="_blank";a.rel="noopener";a.textContent=s.switched?"現在のスレッドを開く":"掲示板の直接スレッドを開く";
+  card.append(title,meta,live,a);list.append(card);
+ });
+}
+document.querySelectorAll(".tab").forEach(btn=>btn.addEventListener("click",()=>{active=btn.dataset.industry;document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b===btn));render();}));
+q.addEventListener("input",render);
+async function refresh(){
+ const urls=[...new Set(threads.map(x=>x.url))];let success=0,unknown=0;
+ for(let i=0;i<urls.length;i+=3){
+  await Promise.all(urls.slice(i,i+3).map(async url=>{
+   try{const response=await fetch(API+"?url="+encodeURIComponent(url),{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);const data=await response.json();if(!data.ok)throw new Error(data.error||"unverified");state.set(url,data);success++;}
+   catch{state.set(url,{replyCount:null,activeUrl:url,switched:false});unknown++;}
+  }));
+ }
+ render();status.textContent="自動確認："+success+"件取得成功／"+unknown+"件未確認。未確認の場合は元リンクを維持します。";
+}
+render();refresh();
+})();
+</script>
+</body></html>
