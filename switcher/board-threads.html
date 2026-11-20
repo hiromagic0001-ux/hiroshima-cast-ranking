@@ -20,7 +20,6 @@ input{flex:1;min-width:150px;background:#101d17;color:#fff;border:1px solid #496
 .list{display:grid;gap:9px;margin-top:10px}.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
 .item b{display:block;font-size:14px;line-height:1.5}.meta{font-size:11px;color:#bdcec4;line-height:1.7;margin-top:5px}
 .pill{display:inline-block;border:1px solid #52715e;border-radius:20px;padding:2px 7px;margin-right:5px;color:#c7d8ce;font-size:10px}
-.open{display:inline-block;margin-top:8px;padding:8px 11px;border:1px solid #8a7650;border-radius:8px;color:#f1dfb6;text-decoration:none;font-size:12px}
 .empty{padding:14px;border:1px dashed #52715e;border-radius:10px;color:var(--muted);font-size:12px;line-height:1.7}
 .posts{margin-top:10px;border-top:1px solid var(--line);padding-top:9px}.posts summary{color:var(--green);font-size:12px;cursor:pointer}.post{padding:8px 0;border-bottom:1px solid #2d443b}.post-date{font-size:10px;color:var(--muted)}.post p{font-size:12px;line-height:1.65;margin:4px 0 0;white-space:pre-wrap}.post-unavailable{font-size:11px;color:var(--muted);line-height:1.6}
 footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-height:1.7}
@@ -38,9 +37,9 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-h
 </div>
 <div class="tools"><input id="q" type="search" placeholder="店舗名・キャスト名で検索"><span id="count" class="count"></span><button id="refresh" class="refresh" type="button">投稿内容・最新情報を取得</button></div>
 <section id="list" class="list" aria-live="polite"></section>
-<p id="status" class="status">「投稿内容・最新情報を取得」ボタンを押した時だけ、公開範囲の投稿抜粋（最大20件）と最新日時を取得します。広告・投稿者情報は表示せず、自動更新もしません。</p>
-<div class="note"><b>999レス到達時の自動切替</b><br>登録スレッドが999レスに達し、同じ店舗・キャストの後継スレッドを確認できた場合は、アプリ内リンクを新スレッドへ自動で切り替えます。後継スレッドが特定できない場合や、レス数を取得できない場合は誤リンク防止のため現行リンクを維持し、「未確認」と表示します。</div>
-<footer>確認できた直接スレッドURLのみ掲載。掲示板の表示制限・削除・取得不能は未確認として扱います。</footer>
+<p id="status" class="status">「投稿内容・最新情報を取得」ボタンを押すと、登録スレッドの公開書き込みだけを取得してこの画面に表示します。元スレッドを開くリンクは表示しません。自動更新もしません。</p>
+<div class="note"><b>999レス到達時の自動切替</b><br>登録スレッドが999レスに達し、同じ店舗・キャストの後継スレッドを確認できた場合は、後継スレッドが確認できた場合は、取得対象を新スレッドへ切り替えます。後継スレッドが特定できない場合やレス数を取得できない場合は「未確認」と表示します。</div>
+<footer>掲示板の公開範囲で取得できた書き込みのみ表示します。取得不能・削除済みの内容は補完しません。</footer>
 </main>
 <script>
 (()=>{
@@ -80,15 +79,13 @@ function render(){
   const meta=document.createElement("div");meta.className="meta";meta.innerHTML='<span class="pill">'+x.type+'</span>'+x.detail;
   const live=document.createElement("div");live.className="meta";const latest=s.latestPostAt?new Date(s.latestPostAt).toLocaleString("ja-JP",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}):"投稿日時未確認";
   live.textContent=(s.replyCount==null?"現在のレス数：未確認":"現在のレス数："+s.replyCount+"件")+"｜最新投稿："+latest+"｜"+(s.switched?"後継スレッドへ自動切替済":s.reached?"999到達・後継未確認":"999レス到達時に自動切替");
-  const a=document.createElement("a");a.className="open";a.href=s.activeUrl||x.url;a.target="_blank";a.rel="noopener";a.textContent="元スレッドを開く（必要な場合）";
   card.append(title,meta,live);
-  const details=document.createElement("details");details.className="posts";
-  const summary=document.createElement("summary");summary.textContent="最近の投稿内容（最大20件）";details.append(summary);
+  const details=document.createElement("section");details.className="posts";
   const posts=s.posts||[];
   if(posts.length){
    posts.forEach(post=>{const entry=document.createElement("div");entry.className="post";const stamp=document.createElement("span");stamp.className="post-date";stamp.textContent="#"+post.postNo+(post.date?"｜"+post.date:"");const body=document.createElement("p");body.textContent=post.excerpt;entry.append(stamp,body);details.append(entry);});
   }else{const unavailable=document.createElement("p");unavailable.className="post-unavailable";unavailable.textContent="公開ページから投稿本文を取得できませんでした。ログイン制限・削除・ページ構造の違いなどの可能性があります。";details.append(unavailable);}
-  card.append(details,a);list.append(card);
+  card.append(details);list.append(card);
  });
 }
 document.querySelectorAll(".tab").forEach(btn=>btn.addEventListener("click",()=>{active=btn.dataset.industry;document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b===btn));render();}));
