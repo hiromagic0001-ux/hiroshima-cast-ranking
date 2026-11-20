@@ -73,7 +73,7 @@ const server = http.createServer(async (req, res) => {
           const latestUrl = new URL(latestHref, 'https://bakusai.com');
           const sameThread = latestUrl.hostname === 'bakusai.com' &&
             latestUrl.pathname.includes('/thr_res/') &&
-            latestUrl.pathname.includes('/tid=' + (target.pathname.match(/\\/tid=(\\d+)/)?.[1] || ''));
+            latestUrl.pathname.includes('/tid=' + (target.pathname.match(/\/tid=(\d+)/)?.[1] || ''));
           if (sameThread) {
             latestPageFetch.attempted = true;
             latestPageFetch.finalUrl = latestUrl.toString();
@@ -81,8 +81,8 @@ const server = http.createServer(async (req, res) => {
             const latest$ = cheerio.load(latestHtml);
             const currentCount = $('[id="res_block"]').length;
             const latestCount = latest$('[id="res_block"]').length;
-            const currentNo = Number(($('[id="res_block"]').first().find('.res_rotundate').text().match(/#(\\d+)/) || [])[1] || 0);
-            const latestNo = Number((latest$('[id="res_block"]').first().find('.res_rotundate').text().match(/#(\\d+)/) || [])[1] || 0);
+            const currentNo = Number(($('[id="res_block"]').first().find('.res_rotundate').text().match(/#(\d+)/) || [])[1] || 0);
+            const latestNo = Number((latest$('[id="res_block"]').first().find('.res_rotundate').text().match(/#(\d+)/) || [])[1] || 0);
             latestPageFetch.ok = latestCount > 0;
             latestPageFetch.currentVisiblePost = currentNo || null;
             latestPageFetch.latestVisiblePost = latestNo || null;
@@ -123,9 +123,9 @@ const server = http.createServer(async (req, res) => {
         }
       });
       if (replyCount !== null && replyCount >= 999 && !successorUrl) {
-        const currentId = Number(target.pathname.match(/\/tid=(\d+)/)?.[1] || 0);
+            latestUrl.pathname.includes('/tid=' + (target.pathname.match(/\/tid=(\d+)/)?.[1] || ''));
         const currentKey = normalizeTitle(title);
-        const bid = target.pathname.match(/\/bid=(\d+)/)?.[1];
+            latestUrl.pathname.includes('/tid=' + (target.pathname.match(/\/tid=(\d+)/)?.[1] || ''));
         const candidates = [];
         for (let page = 1; page <= 9; page++) {
           const listingUrl = page === 1
