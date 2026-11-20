@@ -344,3 +344,18 @@
   - https://me.fucolle.com/32/sche/?t=21
   - https://me.fucolle.com/32/sche/?t=23
 - アプリコード、D1、UI、Renderは変更なし。
+
+
+## 11/20追加調査：爆サイ新着JSONの地域指定可否と検索インデックス再点検（11:20 JST）
+
+- 爆サイの `/newreslist_json/?acode=8&ctrid=` を検索エンジン経由で確認しようとしたが、取得結果は別地域（例：acode=16 鹿児島、acode=2 宮城）に切り替わり、広島 `acode=8` の対象データを返さなかった。よって検索結果に見える他県のスレッドは広島の証拠に使わず、JSONの地域別一覧を取得できたとは扱わない。
+- 検索エンジンで `acode=8/ctgid=136/bid=4907` のURL構造と、既出店舗・キャスト名（7Dream、CREA、ゆりかご、salon.do.ni-na、チェリーSPA、グレイススパ）を組み合わせて再照合したが、新規の対象tidは確認できず。
+- 爆サイ公式ログ照会案内では、掲示板URL・スレッド番号・レス番号が必要と説明されている。これは公開利用者向けの一括レス一覧APIではなく、公開画面で確認できない期間内レス数を補完する仕組みとして扱えない。
+- 今回は調査手法上の制約を記録。検索エンジン非掲載は不存在を意味しない。対象3スレッドの30日件数は未確定のまま。
+- 参照URL：
+  - https://bakusai.com/newreslist_json/?acode=8&ctrid=
+  - https://bakusai.com/newreslist_json/?acode=16&ctrid=
+  - https://bakusai.com/newreslist_json/?acode=2&ctrid=
+  - https://bakusai.com/isp/
+  - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
+- アプリコード、D1、UI、Renderは変更なし。
