@@ -440,3 +440,21 @@
   - https://mens-es.men/area/3401?page=3
   - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
 - アプリコード、D1、UI、Renderは変更なし。
+
+
+## 11/20追加調査：MEN'S ES店舗一覧の再照合とページ2・3の取得可否確認（11:26 JST）
+
+- MEN'S ESの広島市ページを検索結果で再確認。現行表示は「184店舗・3609名在籍」「1/10ページ」。先の186店舗という別表示は別時点・別画面の数値とみられ、今回の基準値には採用せず、媒体表示の変動として記録。
+- ページ1で確認できる店舗候補にチェリーSPA広島、Grace Spa、Relaxation Salon REAL、Seraphi Spa、パート妻のプライベートサロン、Night VERDY、既婚者 極液ラボ、IVY SPA広島、神のエステ、おとなすぱっ！、チェリーSPA東平塚店、MPS、VERDY、NAGOMI、広島メンズエステクイーン、7DreamEste、Arinoa等がある。
+- 新たにRefresh（リフレッシュ）の広島市店舗ページを確認し、公開プロフィール上の9名を名前検索候補に追加。ただし在籍掲載は掲示板スレッドの存在・人物同一性・投稿数を意味しない。
+- MEN'S ESのページ2・3のURLを直接開く再試行は今回もInternal Error。10ページ全体の店舗名を取得したとは言えない。対象爆サイ板一覧も直接取得できず、全スレッド母数は未確定。
+- 広島県全域ページは238店舗で、三原・福山等を含む。広島市184店舗の一覧とは分けて扱い、県全体の数字を広島市の候補数に足さない。
+- 対象 `acode=8/ctgid=136/bid=4907` 固定検索で新規tidは確認できず。既存3スレッドの2026-10-21〜11-20投稿数も未確定を維持。
+- 参照URL：
+  - https://mens-es.men/area/3401
+  - https://mens-es.men/area/3401?page=2
+  - https://mens-es.men/area/3401?page=3
+  - https://mens-es.men/shop/28164
+  - https://mens-es.men/hiroshima
+  - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
+- アプリコード、D1、UI、Renderは変更なし。
