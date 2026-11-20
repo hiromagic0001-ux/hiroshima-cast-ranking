@@ -62,8 +62,39 @@ const server = http.createServer(async (req, res) => {
       .replace(/[①②③④⑤⑥⑦⑧⑨⑩]/g, "").replace(/[0-9０-９]+(?:スレ|個目|代目)?$/g, "")
       .replace(/[\s　・:：【】「」『』()（）［］]/g, "").toLowerCase();
     try {
-      const html = await fetchHtml(target.toString());
-      const $ = cheerio.load(html);
+      let html = await fetchHtml(target.toString());
+      let $ = cheerio.load(html);
+      // The default thread URL can expose only the last-opened reply. Follow
+      // Bakusai's explicit "最新レス" link to retrieve the actual newest page.
+      let latestPageFetch = { attempted: false, ok: false, finalUrl: null, error: null };
+      const latestHref = $('a').filter((_, el) => /最新レス/.test($(el).text().replace(/\\s+/g, ' ').trim())).first().attr('href') || '';
+      if (latestHref) {
+        try {
+          const latestUrl = new URL(latestHref, 'https://bakusai.com');
+          const sameThread = latestUrl.hostname === 'bakusai.com' &&
+            latestUrl.pathname.includes('/thr_res/') &&
+            latestUrl.pathname.includes('/tid=' + (target.pathname.match(/\\/tid=(\\d+)/)?.[1] || ''));
+          if (sameThread) {
+            latestPageFetch.attempted = true;
+            latestPageFetch.finalUrl = latestUrl.toString();
+            const latestHtml = await fetchHtml(latestUrl.toString());
+            const latest$ = cheerio.load(latestHtml);
+            const currentCount = $('[id="res_block"]').length;
+            const latestCount = latest$('[id="res_block"]').length;
+            const currentNo = Number(($('[id="res_block"]').first().find('.res_rotundate').text().match(/#(\\d+)/) || [])[1] || 0);
+            const latestNo = Number((latest$('[id="res_block"]').first().find('.res_rotundate').text().match(/#(\\d+)/) || [])[1] || 0);
+            latestPageFetch.ok = latestCount > 0;
+            latestPageFetch.currentVisiblePost = currentNo || null;
+            latestPageFetch.latestVisiblePost = latestNo || null;
+            if (latestCount > currentCount || latestNo > currentNo) {
+              html = latestHtml;
+              $ = latest$;
+            }
+          }
+        } catch (error) {
+          latestPageFetch.error = String(error?.message || error).slice(0, 180);
+        }
+      }
       const title = $("title").first().text().replace(/\s+/g, " ").trim();
       const bodyText = $("body").text().replace(/\s+/g, " ");
       let replyCount = null;
@@ -162,10 +193,10 @@ const server = http.createServer(async (req, res) => {
         className: ($(el).attr('class') || '').toString().slice(0, 140),
         text: $(el).text().replace(/\\s+/g, ' ').trim().slice(0, 180)
       })).get();
-      console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, paginationLinks, structuralSamples }));
+      console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, latestPageFetch, paginationLinks, structuralSamples }));
       return send(res, 200, {
         ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
-        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, paginationLinks, structuralSamples },
+        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, latestPageFetch, paginationLinks, structuralSamples },
         activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
         latestPostAt,
         posts,
