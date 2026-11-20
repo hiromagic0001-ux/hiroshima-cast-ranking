@@ -1180,3 +1180,19 @@
 - https://mensesthe-rank.jp/areas/hiroshima-hiroshima
 - https://istanbulescortgirl.org/store/dandy-plus-hiroshima-report/
 - https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/
+
+
+## 11/20追加調査：メンエスパーク広島市15店を候補源として照合（11:51 JST）
+
+- メンエスパークの広島市ページは2026/11/20最終更新・市内15店と表示。県ページは16店（広島15・福山1）であり、広島市対象の候補母集団と県全域を区別する。
+- 市内ページから店舗候補の例を確認：Soin（電話070-9440-4756）、ハチミツ倶楽部（080-9144-7888）、チェリーSPA広島（080-3435-5505）、Night VERDY、人妻スキャンダル、Seraphi Spa、ふわもこSPA、リフレMoEST等。店舗名・電話は候補照合用であり、掲載内容のみで在籍や営業状況を確定しない。
+- 上記のうちハチミツ倶楽部、チェリーSPA、Soin／ソワンを爆サイ広島対象カテゴリ（acode=8 / ctgid=136 / bid=4907）に限定して検索したが、該当する新規スレッドURLや日付付きレスは検索結果から確認できなかった。検索結果なしは投稿不存在の証拠ではなく未確認扱い。
+- 新着レスJSONの acode=16 は熊本・鹿児島・宮崎の地域コードで、広島には利用しない。
+- 新規確定0件。既存の暫定集計「4スレッド・可視レス7件」を維持。全数調査とは表現しない。
+
+参照URL：
+- https://menespark.com/hiroshima/hiroshima/
+- https://menespark.com/hiroshima/hiroshima/?sort=review
+- https://menespark.com/hiroshima/shop-list/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/
+- https://bakusai.com/newreslist_json/?acode=16&ctrid= （広島以外のため除外）
