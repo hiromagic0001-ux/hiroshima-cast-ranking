@@ -35,7 +35,7 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-h
 </div>
 <div class="tools"><input id="q" type="search" placeholder="店舗名・キャスト名で検索"><span id="count" class="count"></span></div>
 <section id="list" class="list" aria-live="polite"></section>
-<p id="status" class="status">レス数・後継スレッドを自動確認しています。</p>
+<p id="status" class="status">最新投稿日時が確認できたスレッドから新しい順に表示します。確認できないものは下位に表示します。</p>
 <div class="note"><b>999レス到達時の自動切替</b><br>登録スレッドが999レスに達し、同じ店舗・キャストの後継スレッドを確認できた場合は、アプリ内リンクを新スレッドへ自動で切り替えます。後継スレッドが特定できない場合や、レス数を取得できない場合は誤リンク防止のため現行リンクを維持し、「未確認」と表示します。</div>
 <footer>確認できた直接スレッドURLのみ掲載。掲示板の表示制限・削除・取得不能は未確認として扱います。</footer>
 </main>
@@ -61,6 +61,13 @@ let active="mens";const state=new Map();const list=document.getElementById("list
 function render(){
  const key=q.value.trim().toLocaleLowerCase();
  const rows=threads.filter(x=>x.industry===active&&(x.store+" "+x.cast+" "+x.type).toLocaleLowerCase().includes(key));
+ // Sort by newest visible post timestamp; unknown timestamps remain below confirmed updates.
+ rows.sort((a,b)=>{
+  const at=Date.parse(state.get(a.url)?.latestPostAt||"");
+  const bt=Date.parse(state.get(b.url)?.latestPostAt||"");
+  const av=Number.isFinite(at)?at:0, bv=Number.isFinite(bt)?bt:0;
+  return bv-av;
+ });
  count.textContent=rows.length+"件";
  list.replaceChildren();
  if(!rows.length){const p=document.createElement("div");p.className="empty";p.textContent=active==="mens"?"検索条件に一致するスレッドはありません。":"この業種は、広島市内の店舗・キャストと照合できる直接スレッドURLがまだ登録されていません。未確認リンクは表示していません。";list.append(p);return;}
@@ -68,7 +75,8 @@ function render(){
   const s=state.get(x.url)||{};const card=document.createElement("article");card.className="item";
   const title=document.createElement("b");title.textContent=x.store+"｜"+x.cast;
   const meta=document.createElement("div");meta.className="meta";meta.innerHTML='<span class="pill">'+x.type+'</span>'+x.detail;
-  const live=document.createElement("div");live.className="meta";live.textContent=s.replyCount==null?"現在のレス数：未確認":("現在のレス数："+s.replyCount+"件｜"+(s.switched?"後継スレッドへ自動切替済":s.reached?"999到達・後継未確認":"999レス到達時に自動切替"));
+  const live=document.createElement("div");live.className="meta";const latest=s.latestPostAt?new Date(s.latestPostAt).toLocaleString("ja-JP",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}):"投稿日時未確認";
+  live.textContent=(s.replyCount==null?"現在のレス数：未確認":"現在のレス数："+s.replyCount+"件")+"｜最新投稿："+latest+"｜"+(s.switched?"後継スレッドへ自動切替済":s.reached?"999到達・後継未確認":"999レス到達時に自動切替");
   const a=document.createElement("a");a.className="open";a.href=s.activeUrl||x.url;a.target="_blank";a.rel="noopener";a.textContent=s.switched?"現在のスレッドを開く":"掲示板の直接スレッドを開く";
   card.append(title,meta,live,a);list.append(card);
  });
@@ -83,7 +91,7 @@ async function refresh(){
    catch{state.set(url,{replyCount:null,activeUrl:url,switched:false});unknown++;}
   }));
  }
- render();status.textContent="自動確認："+success+"件取得成功／"+unknown+"件未確認。未確認の場合は元リンクを維持します。";
+ render();status.textContent="最新投稿日時を確認して新しい順に並べ替えました："+success+"件取得成功／"+unknown+"件未確認。日時未確認のスレッドは下位に表示します。元リンクは維持します。";
 }
 render();refresh();setInterval(refresh,300000);
 })();
