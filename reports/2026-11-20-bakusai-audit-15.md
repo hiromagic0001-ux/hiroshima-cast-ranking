@@ -1084,3 +1084,19 @@
 - https://bakusai.com/q_a/
 - https://bakusai.com/isp/
 - https://bbsmenu.afi.click/open2ch/
+
+
+## 11/20追加調査：別検索経路と指標の切り分け（11:51 JST）
+
+- 爆サイ広島対象カテゴリ一覧 `https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/` および広島新着レスJSON `https://bakusai.com/newreslist_json/?acode=8&ctrid=` を再度直接確認したが、いずれも閲覧不可（Internal Error）。この取得障害から投稿ゼロとは判断しない。
+- メンエスじゃぱん広島県ページの検索結果に、11/19更新のデイリー・週間・月間セラピストランキングが表示された。ただし県全域（福山・東広島等を含む）で、ランキング指標も爆サイの直近30日レス数ではないため、掲示板ランキングの根拠には採用しない。出勤・媒体ランキングは独立した別データとして扱う。
+- 同ページからAccess Hiroshimaの11/20週間出勤表（11/20は9名）も確認できたが、これは出勤予定数であり、人気・掲示板投稿数・在籍総数に転用しない。
+- 爆サイ公式ログ照会案内は、掲示板URL・スレッド番号・レス番号の指定を必要とし、削除された投稿はログ対象外と説明している。一般公開の全レス取得経路としては使えない。
+- 今回の追加検索で広島市内の個人スレッド／直近30日レスとして新規確定できたものはなし。従来の「4スレッド・可視レス7件」は暫定部分集計のまま維持。
+
+参照URL：
+- https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
+- https://bakusai.com/newreslist_json/?acode=8&ctrid=
+- https://mens-est.jp/hiroshima/
+- https://mens-est.jp/shop/accesshrsm/schedule/
+- https://bakusai.com/isp/
