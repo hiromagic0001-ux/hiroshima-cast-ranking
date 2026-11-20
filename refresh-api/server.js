@@ -183,6 +183,25 @@ const server = http.createServer(async (req, res) => {
         if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
         extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : null, excerpt: excerpt.slice(0, 220) });
       });
+      // Newer Bakusai markup stores full replies in article#resNNN .resbody,
+      // while #res_block may contain only the currently selected/preview reply.
+      $('article.res_list_article[id^="res"]').each((_, el) => {
+        const article = $(el);
+        const idMatch = (article.attr('id') || '').match(/^res(\\d{1,4})$/);
+        if (!idMatch) return;
+        const postNo = Number(idMatch[1]);
+        const dateText = article.find('[itemprop="commentTime"]').first().text().replace(/\\s+/g, ' ').trim();
+        const bodyNode = article.find('[itemprop="commentText"], .resbody').first();
+        if (!bodyNode.length) return;
+        let excerpt = bodyNode.text().replace(/\\s+/g, ' ').trim();
+        excerpt = excerpt.replace(/\\[匿名さん\\]/g, '').replace(/返信移動/g, '').trim();
+        if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
+        const dateMatch = dateText.match(/20\\d{2}[年\\/.-]\\s?\\d{1,2}[月\\/.-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
+        const existing = extractedPosts.get(postNo);
+        if (!existing || excerpt.length > existing.excerpt.length) {
+          extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
+        }
+      });
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
       const postNumberAnchors = $('[class*="res_rotundate"]').filter((_, el) => /^#\d{1,4}$/.test($(el).text().trim())).length;
