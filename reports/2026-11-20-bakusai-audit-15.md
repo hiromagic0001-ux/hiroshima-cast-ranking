@@ -1843,3 +1843,21 @@
 - S-Palette has a much narrower 7-shop sample and supplies phone/address detail for some already-known candidates (Arinoa, NAGOMI, CREA, BODY SPA HIROSHIMA, GRACE SPA, 7Dream Este); use as cross-source evidence, not as a comprehensive directory. Source: https://s-palette.com/hiroshima/hiroshima
 - Business search in this pass returned ordinary relaxation businesses (MIYABI, Enjoy Relaxation, SOLUNA, Asian Relaxation Villa, etc.) that do not establish a men's-esthe listing; excluded from the target dataset to avoid category contamination. Grace Spa and RESORT listings did corroborate prior phone/address leads, but no internal DB file comparison was performed.
 - This pass has retrieved 77 entries from one more directory; it has not completed 100-store phone/official-site/active-status verification. The previous 96-record source extraction remains not independently DB-matched. No app, store DB, ranking, or Render changes. No new verified Bakusai rolling-30-day counts.
+
+
+## 2026-11-20 100件一括処理・第1バッチ継続（市内掲載・電話番号照合の追加）
+- Fresh Hiroshima City directory snapshot: mensesthe-rank.jp lists 109 Hiroshima City entries; it explicitly displays Lumiella, Refresh, fuwamoko SPA, Grace Spa, Luxurysalon ROMA, TONARI, ENEL, NAGOMI, Soin, Arinoa, BODY SPA HIROSHIMA, Mrs.ni-na, Vivienne, 7 Dream Este, VERDY, Seraphi Spa, salon.do.ni-na, etc. This is a media count, not a verified unique active-store census. Source: https://mensesthe-rank.jp/areas/hiroshima-hiroshima
+- Men's Esthe Map snapshot lists Hiroshima Prefecture 199 entries; its Hiroshima City Naka-ku section includes 101 entries and a separate Hiroshima City section lists 37. These are directory categories, not necessarily unique stores; prefecture count includes out-of-city and must not be used as city total. Source: https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34
+- Cross-source phone/address corroboration:
+  - Mrs.美魔女RED: 070-4467-7591, Hiroshima City Naka-ku Mikawacho 6 (business listing + directory listing).
+  - ゆりかご広島: 090-8517-0792, Hiroshima City Naka-ku Higashihiratsukacho 2-2-2.
+  - ふわもこSPA: 090-9307-1323, Hiroshima City Naka-ku Fujimicho 4-30.
+  - Grace Spa: 090-7373-9222, Hiroshima City Naka-ku Fujimicho 7-11 (room number is shown in business listing; booking-only room details may vary).
+  - RESORT: 080-2926-1146, Hiroshima City Naka-ku Yagenbori 6-7.
+  - Arinoa: 080-2517-0007, Hiroshima City Naka-ku Mikawacho 6-7.
+  - 7Dream Este: 090-1356-6132, Hiroshima City Naka-ku Tsurumicho 7-8-2.
+  These are cross-source listing confirmations; do not claim internal DB match because the exact DB path/content has not been retrieved in this pass. Sources: Google business results and https://ultimate-map.com/yoru/mensaesthe/prefs.php?p=34
+- Additional directory-confirmed record: AXL CONDITIONINGS, Hiroshima City Naka-ku Mikawacho 6-3 / Tsurumicho 4-12 rooms, phone 080-3884-8693; no internal DB comparison yet. Source: https://esthe-zukan.com/chugoku/chugokuhiroshima/2338
+- Current directory snapshots: Menespark shows 15 Hiroshima listings updated 2026-11-20; Esthe Ranking reservation page has 48 listings; these differ from 109 total listing count on men's-esthe-rank because categories and inclusion rules differ. Sources: https://menespark.com/hiroshima/hiroshima/ ; https://www.esthe-ranking.jp/hiroshima/hiroshima-city/ippan/reservation/
+- 100-store batch status: this pass corroborated 8 named city candidates and added AXL as one further candidate; this is not a completed 100-store verification. Previous source lists contain overlapping records and lack complete phone numbers. Continue collecting/validating in batches without padding.
+- Bakusai: no new verified Hiroshima acode=8 rolling-30-day thread/post totals in this pass. No inference of zero. No named-cast anonymous sexual/private-life ranking. No app, store DB, ranking, or Render changes.
