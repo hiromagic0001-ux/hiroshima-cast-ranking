@@ -1113,3 +1113,21 @@
 - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
 - https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/
 - https://bakusai.com/newreslist_json/?acode=8&ctrid=
+
+
+## 11/20追加調査：既知4スレッド個別ページ再取得（11:51 JST）
+
+- 既知の暫定個人スレッド4件を個別URLで再取得したが、4件すべて閲覧ツール側で Internal Error / URL not accessible。
+  - tid 12691278（まいちき）
+  - tid 13575776（みお／ミオ／美桜）
+  - tid 10178723（リゾート 小川）
+  - tid 10052155（シュシュ 広瀬）
+- 取得不能のため、対象期間（2026/10/21〜11/20）の追加レス有無・件数は更新できない。前回可視レスの件数を今回の再確認で増減させない。
+- acode=16 の新着レスJSONは九州地域データであることを再確認し、広島データから除外。
+- 新規確定0件。暫定集計「4スレッド・可視レス7件」を維持するが、全数調査値ではない。
+
+確認URL：
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=12691278/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=13575776/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10178723/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10052155/
