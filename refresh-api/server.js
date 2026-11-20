@@ -38,6 +38,100 @@ const server = http.createServer(async (req, res) => {
   if (pathname === "/health" && req.method === "GET") {
     return send(res, 200, { ok: true, service: "hiroshima-cast-refresh-api", mode: "diagnostic-only" }, origin);
   }
+  if (pathname === "/api/bakusai/thread-status" && req.method === "GET") {
+    if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
+    const rawUrl = requestUrl.searchParams.get("url") || "";
+    let target;
+    try { target = new URL(rawUrl); } catch { return send(res, 400, { ok: false, error: "invalid_thread_url" }, origin); }
+    if (target.protocol !== "https:" || target.hostname !== "bakusai.com" ||
+        !/^\/thr_res\/acode=8\/ctgid=136\/bid=(?:4907|1037)\/tid=\d+(?:\/tp=\d+)?\/?$/.test(target.pathname)) {
+      return send(res, 400, { ok: false, error: "thread_url_not_allowed" }, origin);
+    }
+    const fetchHtml = async url => {
+      const response = await fetch(url, { signal: AbortSignal.timeout(12000), headers: {
+        "user-agent": "Mozilla/5.0 (compatible; HiroshimaCastRefresh/1.0)",
+        "accept": "text/html,application/xhtml+xml"
+      }});
+      if (!response.ok) throw new Error("source_http_" + response.status);
+      const html = await response.text();
+      if (html.length < 1000 || html.length > 5000000) throw new Error("unexpected_html_size");
+      return html;
+    };
+    const normalizeTitle = value => String(value || "").normalize("NFKC")
+      .replace(/爆サイ.*$/i, "").replace(/(?:part|ＰＡＲＴ)\s*\d+/ig, "")
+      .replace(/[①②③④⑤⑥⑦⑧⑨⑩]/g, "").replace(/[0-9０-９]+(?:スレ|個目|代目)?$/g, "")
+      .replace(/[\s　・:：【】「」『』()（）［］]/g, "").toLowerCase();
+    try {
+      const html = await fetchHtml(target.toString());
+      const $ = cheerio.load(html);
+      const title = $("title").first().text().replace(/\s+/g, " ").trim();
+      const bodyText = $("body").text().replace(/\s+/g, " ");
+      let replyCount = null;
+      $('[class*="res_count"],[class*="rescount"],[class*="thread_count"],[data-res-count]').each((_, el) => {
+        const value = $(el).attr("data-res-count") || $(el).text();
+        const match = String(value).match(/([0-9,]{1,6})/);
+        if (match) replyCount = Math.max(replyCount || 0, Number(match[1].replace(/,/g, "")));
+      });
+      const countPatterns = [
+        /(?:総レス数|レス数|レス件数|全レス)\s*[：:]?\s*([0-9,]{1,6})/i,
+        /([0-9,]{1,6})\s*レス(?:\s|　|$)/i
+      ];
+      for (const pattern of countPatterns) {
+        const match = bodyText.match(pattern);
+        if (match) replyCount = Math.max(replyCount || 0, Number(match[1].replace(/,/g, "")));
+      }
+      const responseIds = [...html.matchAll(/(?:id=["'](?:res|レス|response)[_-]?(\d{1,4})["']|data-res-no=["'](\d{1,4})["'])/gi)]
+        .map(m => Number(m[1] || m[2])).filter(Number.isFinite);
+      if (responseIds.length) replyCount = Math.max(replyCount || 0, ...responseIds);
+      let successorUrl = null;
+      $('a[href*="/thr_res/"]').each((_, el) => {
+        const label = $(el).text().replace(/\s+/g, " ").trim();
+        const href = $(el).attr("href") || "";
+        if (!successorUrl && /次スレ|新スレ|続スレ|次のスレ/i.test(label) && href.includes("/tid=")) {
+          try { const u = new URL(href, "https://bakusai.com"); if (u.hostname === "bakusai.com") successorUrl = u.toString(); } catch {}
+        }
+      });
+      if (replyCount !== null && replyCount >= 999 && !successorUrl) {
+        const currentId = Number(target.pathname.match(/\/tid=(\d+)/)?.[1] || 0);
+        const currentKey = normalizeTitle(title);
+        const bid = target.pathname.match(/\/bid=(\d+)/)?.[1];
+        const candidates = [];
+        for (let page = 1; page <= 9; page++) {
+          const listingUrl = page === 1
+            ? `https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=${bid}/`
+            : `https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=${bid}/p=${page}/`;
+          try {
+            const listingHtml = await fetchHtml(listingUrl);
+            const listing = cheerio.load(listingHtml);
+            listing('a[href*="/thr_res/"][href*="/tid="]').each((_, el) => {
+              const href = listing(el).attr("href") || "";
+              const label = listing(el).text().replace(/\s+/g, " ").trim();
+              const id = Number(href.match(/\/tid=(\d+)/)?.[1] || 0);
+              const key = normalizeTitle(label);
+              if (id > currentId && key && key === currentKey) {
+                try { candidates.push(new URL(href, "https://bakusai.com").toString()); } catch {}
+              }
+            });
+          } catch {}
+        }
+        if (candidates.length) successorUrl = candidates.sort((a,b) =>
+          Number(b.match(/\/tid=(\d+)/)?.[1] || 0) - Number(a.match(/\/tid=(\d+)/)?.[1] || 0))[0];
+      }
+      const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
+      return send(res, 200, {
+        ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
+        activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
+        checkedAt: new Date().toISOString(),
+        note: replyCount === null ? "公開ページからレス数を判読できません。未確認として現行リンクを維持しました。" :
+          switched ? "999レス到達を確認し、同一タイトルの後継スレッドへ切り替えました。" :
+          replyCount >= 999 ? "999レス到達を確認しましたが、同一タイトルの後継スレッドを確認できません。現行リンクを維持しました。" :
+          "999レス未満です。現行スレッドを維持しました。"
+      }, origin);
+    } catch (error) {
+      return send(res, 502, { ok: false, error: "bakusai_fetch_failed", detail: String(error?.message || error) }, origin);
+    }
+  }
+
   if (pathname === "/api/casts/inspect" && req.method === "GET") {
     if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const targets = [
