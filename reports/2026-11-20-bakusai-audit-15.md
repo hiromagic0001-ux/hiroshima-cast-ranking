@@ -1287,3 +1287,20 @@
 - https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=dispatch&sort=open
 - https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/
 - https://bakusai.com/isp/
+
+
+## 11/20追加調査：公開検索の再実施・市内母集団の再確認（11:51 JST）
+
+- 2026/11/20の公開検索で、爆サイ対象URL条件 `acode=8/ctgid=136/bid=4907` を指定した新規の個人スレッド・日付付きレスは検索結果から確認できなかった。検索インデックス未収録・ページ取得不能の可能性があるため、投稿なしとは判定しない。
+- 11/20更新のメンエスなう広島市ページは15店・掲載セラピスト448名・当日出勤67名。広島県全域ページは61店・在籍1,523名・当日出勤176名。市内と県域の母集団を分離する。
+- メンエスMAPの11/20出勤表は広島30・福山5・呉/東広島1の区分。出勤表に掲載されたCREA、チェリーSPA広島、salon.do-ni-na、ゆりかご、7DreamEste等のキャスト名は候補語としてのみ利用し、出勤情報・ランキングを爆サイ30日レス数に代用しない。
+- メンエスじゃぱん広島県ランキングは県域の掲載情報であり、市内確定母集団としては扱わない。
+- 爆サイ公式ログ照会ページは掲示板URL・スレッド番号・レス番号を指定する手続きであり、一般公開の全レス取得APIではない。削除済み投稿はログ対象外となる。
+- 新規確定0件。厳密なローリング30日窓（2026/10/21 11:51〜2026/11/20 11:51 JST）の既知確認分「4スレッド・可視レス6件」を維持。未取得・未収録は未確認であり、全数集計ではない。
+
+参照URL：
+- https://men-esthe.co.jp/ranking/hiroshima/hiroshima/?format=dispatch&sort=open
+- https://me.fucolle.com/32/sche/?t=21
+- https://mens-est.jp/hiroshima/therapist_ranking/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/
+- https://bakusai.com/isp/
