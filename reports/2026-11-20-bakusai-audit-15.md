@@ -617,3 +617,19 @@
   - https://www.esthe-mens.jp/hiroshima/
   - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
 - アプリ、D1、Renderへの変更なし。調査記録のみ。
+
+
+## 11/20追加調査：出勤表2ページ目・セラピストランキングからの候補追加
+
+- 確認日時：2026-11-20 11:22 JST
+- 対象板：広島市メンズエステ（acode=8 / ctgid=136 / bid=4907）
+- 新しい入口として、メンエスMAPの出勤表2ページ目（https://me.fucolle.com/32/sche/page2/）とメンエスじゃぱん広島セラピストランキング（https://mens-est.jp/hiroshima/therapist_ranking/）を確認。
+- 出勤表2ページ目から、斎藤れな（チェリーSPA、23:00～翌05:00）等を追加の検索候補として確認。ランキング側からは、湊（NAGOMI）、ももか（Lavie&spa）、友紀りあ・桜井ももこ（ENEL）、工藤あやか（with Bright）、双葉（salon.do.ni-na）、東条（salon.do.ni-na）、大宮のぞみ（水戸あおい／VERDY）、真野さゆり・一条ふうか（チェリーSPA）、希咲かれん（B and B）、由那（Access Hiroshima）等の名前・店舗表記を確認。
+- ランキング順位は媒体独自の指標であり、爆サイの直近30日投稿数・人気・本人同一性を示さない。現在の出勤・在籍表示とも区別する。
+- 上記の新規候補名と表記揺れで対象板を検索したが、今回新たに確定できる個人スレッドtidや日付付き30日レスは取得できず。検索結果に出ないことを不存在・0件とはしない。
+- 爆サイの新着JSON検索結果が別地域（acode=16）に偏る問題も再確認。広島対象板のデータと誤認しない。
+- 参照URL：
+  - https://me.fucolle.com/32/sche/page2/
+  - https://mens-est.jp/hiroshima/therapist_ranking/
+  - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
+- アプリ、D1、Renderへの変更なし。調査記録のみ。
