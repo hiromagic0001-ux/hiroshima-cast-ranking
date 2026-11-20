@@ -1304,3 +1304,18 @@
 - https://mens-est.jp/hiroshima/therapist_ranking/
 - https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/
 - https://bakusai.com/isp/
+
+
+## 11/20追加調査：スレッド再取得と当日出勤候補の照合（19時台 JST）
+
+- 爆サイの既知候補 tid=12691278（まいちき）、13575776（みお／ミオ／美桜）、10178723（リゾート 小川）を再取得したが、公開取得は3件とも Internal Error。これらはレス数を更新せず、未確認として維持。
+- tid=10052155「シュシュ 広瀬」は再取得成功。最新#924は2026/10/21 08:15で、厳密な30日窓開始（2026/10/21 11:51 JST）より3時間36分前。30日集計から除外を再確認。
+- 11/20当日出勤ページで広島市区分（広島30店）を確認。21時枠にはCREA、チェリーSPA広島、salon.do-ni-na、ゆりかご、7DreamEste、HEAVENの掲載がある。県内の福山5店・呉東広島1店は市内集計から除外。出勤一覧は候補名の照合用であり、爆サイ投稿数の代理指標にはしない。
+- 新規に確認できた30日窓内の個人スレッド／レスは0件。既知の確認分4スレッド・可視レス6件を維持するが、3件のスレッド本文が取得不能のため全数確定ではない。
+
+参照URL：
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10052155/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=12691278/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=13575776/
+- https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10178723/
+- https://me.fucolle.com/32/sche/?t=21
