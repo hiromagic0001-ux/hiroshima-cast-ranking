@@ -1506,3 +1506,13 @@
 - https://bakusai.com/q_a/
 
 アプリ本体・D1・ランキング・UI・Renderデプロイは変更せず、調査ログのみ追記。
+
+
+## 11/20追加調査：Access Hiroshima出勤候補の照合（12:20 JST）
+
+- メンエスmallのAccess Hiroshima掲載を確認。広島市中区鶴見町／南区金屋町の市内店舗情報で、11/20当日の候補として愛梨、梓、舞香、乃愛、絢、柚羽、葵、あすか等が掲載されていた。媒体上の予定・出勤表示であり、実際の出勤確定や人物同一性の根拠にはしない。
+- メンエスmallの広島県本日出勤一覧から、Access Hiroshima以外のCREA・チェリーSPA・NAGOMI等の候補も確認。県全体の一覧なので市外店舗を市内データに混入させない。
+- 爆サイ対象カテゴリ acode=8/ctgid=136/bid=4907 に対して、Access Hiroshima・候補名（由那、衣露華、舞香、美音等）を限定検索したが、該当する新規個人スレッドは検索結果から確認できず。検索結果なしは投稿不存在の証明ではない。
+- 30日間の爆サイ個人レス数に新規加算なし。媒体の在籍数・出勤表・ランキングは爆サイ投稿数の代替指標にしない。
+- 参照：メンエスmall Access Hiroshima https://dr.ptr216.ptrcloud.net/shop/access-hiroshima ; 広島県本日出勤 https://web1-mall.menesmall.jp/hiroshima/girl/today ; 爆サイFAQ https://bakusai.com/q_a/
+- アプリ本体、D1、ランキング、UI、Renderサービスは変更していない。
