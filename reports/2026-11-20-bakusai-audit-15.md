@@ -1526,3 +1526,13 @@
 - 上記候補名と爆サイ対象カテゴリ acode=8/ctgid=136/bid=4907 の照合では、新しい個人スレッド／期間内の日付付きレスを確認できず。検索結果なしは投稿不存在の証明ではない。爆サイ30日レス数への新規加算なし。
 - 参照：Fucolle 11/20時刻別出勤ページ https://me.fucolle.com/32/sche/?t=10 ; https://me.fucolle.com/32/sche/?t=15 ; https://me.fucolle.com/32/sche/?t=17 ; https://me.fucolle.com/32/sche/?t=23 ; 爆サイ照会案内 https://bakusai.com/isp/
 - アプリ本体、D1、ランキング、UI、Renderサービスは変更していない。
+
+
+## 11/20追加調査：メンエスじゃぱん市内ランキングとAccess Hiroshima照合（12:20 JST）
+
+- 広島市のセラピストランキングページでAccess Hiroshimaの由那、美音（みお）、あすかを確認。店舗名と市内エリア（宝町）が表示されている候補として整理。ランキング順位やプロフィール数は爆サイ投稿数に転用しない。
+- 同ページの他店舗候補は、CREA、チェリーSPA、NAGOMI、salon.do-ni-na、Arinoa等。広島県トップページの県域ランキング（福山・東広島を含み得る）は市内ランキングと混同しない。
+- Fucolle 11/20 12時・21時・23時ページから、広島市店舗の出勤候補（salon.do-ni-na夏井・矢吹・小春・古賀・峰城・佐野、CREA立花まき・谷村めい・北村まこ、チェリーSPA美咲ゆか・雨宮さき・山本うみ・東條あやね・神田ほのか・小宮てる・乙葉るな・渚みずほ・江見ちい・斎藤れな、7DreamEste奏もも・一之瀬みづき、ゆりかご広島恵理・聡美・麗華・玲奈・美華・美緋・絢香）を確認。時刻別重複は一人として扱い、県域の福山・呉・東広島は除外。
+- 候補名（Access Hiroshimaの由那・美音・あすかを含む）を爆サイ対象カテゴリ acode=8/ctgid=136/bid=4907 に限定して検索したが、新規個人スレッド／期間内の日付付きレスは確認できず。検索結果なしは不存在の証明ではない。30日投稿数への加算なし。
+- 参照：メンエスじゃぱん市内ランキング https://mens-est.jp/hiroshima/a-09524/therapist_ranking/ ; 県ページ https://mens-est.jp/hiroshima/ ; Fucolle 11/20 12時・21時・23時 https://me.fucolle.com/32/sche/?t=12 ; https://me.fucolle.com/32/sche/?t=21 ; https://me.fucolle.com/32/sche/?t=23
+- アプリ本体、D1、ランキング、UI、Renderサービスは変更していない。
