@@ -139,17 +139,17 @@ const server = http.createServer(async (req, res) => {
       // ancestor containing one numbered post and its date/deletion marker.
       const extractedPosts = new Map();
       $('a').each((_, anchor) => {
-        const label = $(anchor).text().replace(/\\s+/g, ' ').trim();
-        const numberMatch = label.match(/^#(\\d{1,4})$/);
+        const label = $(anchor).text().replace(/\s+/g, ' ').trim();
+        const numberMatch = label.match(/^#(\d{1,4})$/);
         if (!numberMatch) return;
         const postNo = Number(numberMatch[1]);
         let node = $(anchor), chosen = null, rawText = '';
         for (let depth = 0; depth < 10 && node.length; depth++, node = node.parent()) {
-          const candidateText = node.text().replace(/\\s+/g, ' ').trim();
+          const candidateText = node.text().replace(/\s+/g, ' ').trim();
           const numberedAnchors = node.find('a').filter((__, a) =>
-            /^#\\d{1,4}$/.test($(a).text().replace(/\\s+/g, ' ').trim())
+            /^#\d{1,4}$/.test($(a).text().replace(/\s+/g, ' ').trim())
           ).length;
-          const hasDate = /20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}/.test(candidateText);
+          const hasDate = /20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}/.test(candidateText);
           if (candidateText.length >= 8 && candidateText.length <= 5000 &&
               numberedAnchors <= 1 && (hasDate || candidateText.includes('この投稿は削除されました'))) {
             chosen = node;
@@ -160,13 +160,13 @@ const server = http.createServer(async (req, res) => {
         if (!chosen) return;
         const clone = chosen.clone();
         clone.find('a,button,form,script,style,[class*="ad"],[id*="ad"]').remove();
-        let excerpt = clone.text().replace(/\\s+/g, ' ').trim();
-        excerpt = excerpt.replace(/^#\\d{1,4}\\s*/, '')
-          .replace(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/, '')
-          .replace(/\\[匿名さん\\]/g, '').replace(/(?:Good!|Bad|報告|返信|移動)/g, '').trim();
+        let excerpt = clone.text().replace(/\s+/g, ' ').trim();
+        excerpt = excerpt.replace(/^#\d{1,4}\s*/, '')
+          .replace(/20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/, '')
+          .replace(/\[匿名さん\]/g, '').replace(/(?:Good!|Bad|報告|返信|移動)/g, '').trim();
         if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
         excerpt = excerpt.slice(0, 220);
-        const dateMatch = rawText.match(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
+        const dateMatch = rawText.match(/20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
         extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : null, excerpt });
       });
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
