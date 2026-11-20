@@ -458,3 +458,24 @@
   - https://mens-es.men/hiroshima
   - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
 - アプリコード、D1、UI、Renderは変更なし。
+
+
+## 11/20追加調査：MEN'S ES新着店舗ページ（Freyja・LuLu）からの対象板照合（11:27 JST）
+
+- MEN'S ES広島市一覧で184店舗・3,609名・10ページの表示を再確認。別媒体の広島市109店ランキング、エステ魂の店舗型10店、メンエスセレクト125店は掲載基準・業態・収録範囲が異なるため、件数を合算せず、それぞれ独立した店舗発見ルートとして扱う。
+- 新たにFreyja（フレイヤ、広島市中区鶴見町7、電話080-9797-6280、公式 aromafreyja.com）とLuLu（広島市中区鶴見町、電話090-4148-6747）の媒体ページを確認。FreyjaはMEN'S ESで40名掲載、LuLuは5名掲載。各店のキャスト名を対象 `acode=8/ctgid=136/bid=4907` に限定して検索したが、新しい対象tidは確認できず。
+- Freyjaはエステ魂にも同店・同電話番号で掲載され、公式サイト上のキャスト一覧も確認。媒体間で表示されるプロフィール数・表記に差があるため、名前は検索候補としてのみ扱い、掲示板上の人物同一性を断定しない。
+- MEN'S ESの本日出勤ページ検索結果は2026-11-19更新と表示され、今日の表示名・人数は日次更新データ。11/20の確定出勤や在籍全員とは解釈しない。
+- 対象掲示板の新着JSON検索結果は今回も `acode=16` の別地域データを返したため除外。広島 `acode=8` の一覧・ページ送りを取得できず、対象tid追加なし、全体母数・30日投稿数は未確定。
+- 参照URL：
+  - https://mens-es.men/area/3401
+  - https://mensesthe-rank.jp/areas/hiroshima-hiroshima
+  - https://estama.jp/etc/shoplist/3401/store/
+  - https://menesu-select.com/hiroshima/hiroshima/
+  - https://mens-es.men/shop/25606
+  - https://mens-es.men/shop/41479
+  - https://estama.jp/shop/25606/
+  - https://estama.jp/shop/41479/
+  - https://aromafreyja.com/
+  - https://bakusai.com/newreslist_json/?acode=8&ctrid=
+- アプリコード、D1、UI、Renderは変更なし。
