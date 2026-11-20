@@ -473,31 +473,6 @@
       ],
       "status": "history-only",
       "note": "合併告知は履歴保持、別レコード維持"
-    },
-    {
-      "group": "angels-apron-labyrinth",
-      "records": [
-        {
-          "auditNumber": 191,
-          "expectedName": "天使のエプロン",
-          "expectedCategory": "men-esthe",
-          "arrayIndexZeroBased": 190
-        },
-        {
-          "auditNumber": 228,
-          "expectedName": "Labyrinth～ラビリンス～",
-          "expectedCategory": "men-esthe",
-          "arrayIndexZeroBased": 227
-        },
-        {
-          "auditNumber": 274,
-          "expectedName": "Labyrinth",
-          "expectedCategory": "men-esthe",
-          "arrayIndexZeroBased": 273
-        }
-      ],
-      "status": "keep-separate",
-      "note": "電話一致のみ。統合禁止"
     }
   ],
   "p0Correction": {
@@ -542,5 +517,32 @@
     "Run preservation assertions on all original fields, record count, order, categories, phone/address/URL/source fields.",
     "Require explicit human approval before any production update."
   ],
-  "expectedProductionChanges": 0
+  "expectedProductionChanges": 0,
+  "nonMergeWarnings": [
+    {
+      "records": [
+        {
+          "auditNumber": 191,
+          "expectedName": "天使のエプロン",
+          "expectedCategory": "men-esthe"
+        },
+        {
+          "auditNumber": 228,
+          "expectedName": "Labyrinth～ラビリンス～",
+          "expectedCategory": "men-esthe"
+        },
+        {
+          "auditNumber": 274,
+          "expectedName": "Labyrinth",
+          "expectedCategory": "men-esthe"
+        }
+      ],
+      "status": "do-not-merge",
+      "note": "電話番号一致だけでは同一店舗と確定しない。#228/#274はLabyrinth候補として別途レビューするが、#191はその候補グループに含めない。"
+    }
+  ],
+  "reviewNotes": [
+    "Manifest consistency correction: removed the overlapping heldCandidates group angels-apron-labyrinth. The #191 versus #228/#274 non-merge caution is retained under nonMergeWarnings so #228/#274 appear only once in candidate group membership.",
+    "Existing duplicateGroup values on #11/#242 (enel), #76/#247 (refresh), #78/#255 (arinoa), and #195/#215/#266 (mens-spa-r) must be preserved exactly; do not rename mens-spa-r to spa-r."
+  ]
 }
