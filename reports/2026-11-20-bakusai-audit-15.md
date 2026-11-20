@@ -296,3 +296,20 @@
   - https://me.fucolle.com/32/sche/?t=21
   - https://bakusai.com/q_a/ctrid=13/
 - アプリコード、D1、UI、Renderは変更なし。
+
+
+## 11/20追加調査：7Dream・CREA・ゆりかご現行名簿からの対象板照合（11:17 JST）
+
+- 7Dream公式在籍・11/20出勤ページから、一之瀬みづき、奏もも、中条レイ、藤原七瀬、冬月しおん、堀北ゆら、白川ゆな、峰あすか、長月らら等を検索語候補として整理。
+- CREA公式11/20出勤表で立花まき、谷村めい、北村まこ等を確認。Fucolle 11/20 21時・23時表示では、ゆりかごの恵理・聡美・麗華・美華・玲奈、salon.do.ni-naの古賀・峰城・佐野、7Dreamの奏もも・一之瀬みづき等の掲載を確認。
+- 上記候補を対象 `acode=8/ctgid=136/bid=4907` に限定して検索したが、新規の個人スレッドtidは確認できず。別の掲示板ID・店舗単位のスレッドや外部まとめは対象外。
+- Fucolleは広島県ページ内に広島・福山・呉/東広島の区分があるため、県内全体の数字・名前を広島市のデータとして一括採用しない。今回の候補は店舗名が広島市の公式所在地と照合できる範囲に限定。
+- 既存3スレッドの30日投稿数は、公開部分に期間内の投稿日が見えないため引き続き未確定。累計レス数、ランキング、シフト、別媒体のレビュー数で代用しない。
+- 参照URL：
+  - https://7dream-este.net/cast/
+  - https://7dream-este.net/schedule/
+  - https://creahiroshima.com/schedule/
+  - https://me.fucolle.com/32/sche/?t=21
+  - https://me.fucolle.com/32/sche/?t=23
+  - https://bakusai.com/isp/
+- アプリコード、D1、UI、Renderは変更なし。
