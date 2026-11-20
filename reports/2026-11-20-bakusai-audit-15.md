@@ -76,3 +76,17 @@
 - https://bakusai.com/newreslist_json/?acode=8&ctrid=136 （取得失敗を記録）
 
 アプリDB・D1・UI・ランキング・Renderデプロイは変更せず、調査ログのみ追記。
+
+
+## 11/20追加調査：新着レスJSONの検索インデックス確認（11:08 JST）
+- 爆サイ公式 `/newreslist_json/` は検索インデックス経由でJSON本文が表示されるケースを追加確認。今回表示されたサンプルは `acode=2`（宮城県）で、`newResSet` に `tid`、`bid`、`bbs_title`、`res_count`、`title`、`ctgid`、`res_date`（Unix時刻）、`reg_date` 等が含まれていた。
+- これはエンドポイントのレス単位データ構造を確認できたという意味であり、広島市のデータではない。宮城県サンプルを広島市の集計に流用しない。
+- 広島向け候補 `acode=8` および `acode=8&ctrid=136` は今回も本文取得に失敗。検索でも `ctgid=136&bid=4907` と当該JSONの対応を示す一次情報は見つからなかった。
+- 次の確認対象は、広島市個人スレッド一覧HTMLから各スレッドIDと掲示板IDを抽出し、公開JSONの `bid/ctgid` と照合すること。現段階で30日投稿数は未集計、ランキング値は作成しない。
+
+出典:
+- https://bakusai.com/newreslist_json/?acode=2
+- https://bakusai.com/newreslist_json/?acode=8
+- https://bakusai.com/newreslist_json/?acode=8&ctrid=136
+
+アプリDB・D1・ランキング・UI・Renderデプロイは変更せず、調査ログのみ追記。
