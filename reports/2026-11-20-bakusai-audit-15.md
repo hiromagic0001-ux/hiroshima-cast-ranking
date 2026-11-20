@@ -633,3 +633,17 @@
   - https://mens-est.jp/hiroshima/therapist_ranking/
   - https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=4907/conne=185/
 - アプリ、D1、Renderへの変更なし。調査記録のみ。
+
+
+## 11/20追加調査：爆サイ山陽版スレッド検索URLの別経路検証
+
+- 確認日時：2026-11-20 11:22 JST
+- 対象：広島市メンズエステ板（acode=8 / ctgid=136 / bid=4907）
+- 検索ツール経由の別ルートとして、爆サイのスレッド検索URL形式（/sch_thr_thread/acode=8/ctgid=136/bid=4907/sch=thr_sch/sch_range=area/word=.../p=1/）を確認し、候補「希咲かれん」で直接ページを開く試行を実施。
+- ただし閲覧ツールから対象URLはアクセス不能（Internal Error）。よって検索結果・ページ数・スレッドIDは取得できていない。検索に失敗したことを「該当スレッドなし」と解釈しない。
+- 参考にした第三者技術メモは、スレッド検索のページネーションとtid抽出の考え方を説明しているが、別地域の例であり、広島対象板で同じ挙動が動作することは未検証。手順の参考に限定し、データ根拠にはしない。
+- 新規tid・日付付き30日レスの追加なし。acode=16の新着JSONは広島対象外として除外継続。
+- 参照URL：
+  - https://bakusai.com/sch_thr_thread/acode=8/ctgid=136/bid=4907/sch=thr_sch/sch_range=area/word=%E5%B8%8C%E5%92%B2%E3%81%8B%E3%82%8C%E3%82%93/p=1/
+  - https://note.com/ftad/n/n1bacc523a8f0
+- アプリ、D1、Renderへの変更なし。調査記録のみ。
