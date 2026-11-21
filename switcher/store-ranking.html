@@ -19,7 +19,12 @@
 const API="https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/stores";
 const labels={delivery:"デリヘル", "men-esthe":"メンズエステ",soap:"ソープランド"};
 const list=document.getElementById("list"),summary=document.getElementById("summary"),q=document.getElementById("q");
-let records=[],category="delivery",boardMetrics=new Map();
+let records=[],category="delivery",boardMetrics=new Map(),castCounts=new Map(),reviewMetrics=new Map();
+const normName=s=>String(s||"").normalize("NFKC").toLowerCase().replace(/[ァ-ヶ]/g,ch=>String.fromCharCode(ch.charCodeAt(0)-0x60)).replace(/[\\s・･.,，、。_‐‑‒–—―ーｰ()（）［］【】「」『』]/g,"");
+const storeKey=(name,cat)=>normName(name)+"|"+String(cat||"");
+function explicitNumber(obj,keys){for(const k of keys){const v=obj?.[k];if(v!==null&&v!==undefined&&v!==""&&Number.isFinite(Number(v)))return Number(v)}return null;}
+function reviewText(x){const v=reviewMetrics.get(storeKey(x.name,x.category))||x;const rating=explicitNumber(v,["averageRating","reviewAverage","ratingAverage","avgRating","rating"]);const count=explicitNumber(v,["reviewCount","reviewsCount","口コミ件数","口コミ数"]);return rating!==null&&count!==null?"評価 "+rating+"／5・"+count+"件":count!==null?count+"件（評価未確認）":"未確認";}
+function castText(x){const direct=explicitNumber(x,["activeCastCount","castCount","rosterCount","在籍キャスト数"]);if(direct!==null)return direct+"人";const n=castCounts.get(storeKey(x.name,x.category));return n!==undefined?n+"人（登録キャスト）":"未確認";}
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){
  const query=q.value.trim().toLowerCase();
@@ -30,8 +35,8 @@ function render(){
   const status=String(x.status||"");
   const unconfirmed=/未確定|候補|確認待ち|保留/.test(status)||/候補|照合待ち/.test(String(x.areaStatus||""));
   const el=document.createElement("article");el.className="store";
-  const bm=boardMetrics.get(x.name+"|"+x.category);const boardText=bm?(bm.complete?"個人 "+bm.individualCount+"件／店舗 "+bm.storeThreadCount+"件／キャスト言及 "+bm.storeMentionCount+"件（確認済）":"未確認（"+bm.done+"/"+bm.total+" URL確認）"):"未取得";
-  el.innerHTML='<div class="store-head"><div class="store-name">'+esc(x.name)+'</div><span class="tag">'+(unconfirmed?"候補・確認中":esc(labels[x.category]||"分類確認中"))+'</span></div><div class="sub">'+esc(x.areaStatus||x.area||"所在地未確認")+'｜'+esc(status||"状態未確認")+'</div><div class="metrics"><div class="m">口コミ評価<strong>未取得</strong></div><div class="m">在籍キャスト数<strong>未取得</strong></div><div class="m">直近30日話題性<strong>'+esc(boardText)+'</strong></div></div>';
+  const bm=boardMetrics.get(storeKey(x.name,x.category));const boardText=bm?(bm.complete?"個人 "+bm.individualCount+"件／店舗 "+bm.storeThreadCount+"件／キャスト言及 "+bm.storeMentionCount+"件（確認済）":"未確認（"+bm.done+"/"+bm.total+" URL確認）"):"未取得";
+  el.innerHTML='<div class="store-head"><div class="store-name">'+esc(x.name)+'</div><span class="tag">'+(unconfirmed?"候補・確認中":esc(labels[x.category]||"分類確認中"))+'</span></div><div class="sub">'+esc(x.areaStatus||x.area||"所在地未確認")+'｜'+esc(status||"状態未確認")+'</div><div class="metrics"><div class="m">口コミ評価<strong>'+esc(reviewText(x))+'</strong></div><div class="m">在籍キャスト数<strong>'+esc(castText(x))+'</strong></div><div class="m">直近30日話題性<strong>'+esc(boardText)+'</strong></div></div>';
   list.appendChild(el);
  }
  if(!rows.length)list.innerHTML='<div class="empty">該当する店舗がありません。</div>';
@@ -120,10 +125,32 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
 fetch(API,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(async data=>{
  if(!data.ok||!data.found||!Array.isArray(data.value?.records))throw Error("店舗マスターを読み込めません");
  records=data.value.records;
- try{
-  const saved=await fetch("https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/ranking_state",{cache:"no-store"});
-  if(saved.ok){const savedData=await saved.json();const snapshot=savedData.value?.storeBoardActivity;if(snapshot?.stores){boardMetrics=new Map(Object.entries(snapshot.stores).map(([key,v])=>[key,{count:Number(v.count||0),individualCount:Number(v.individualCount||0),storeThreadCount:Number(v.storeThreadCount||0),storeMentionCount:Number(v.storeMentionCount||0),complete:v.complete===true,done:Number(v.checkedThreads||0),total:Number(v.totalThreads||0)}]));}}
- }catch(e){}
+ const categoryMap={delivery:"delivery",deli:"delivery",delihel:"delivery",mens:"men-esthe","men-esthe":"men-esthe",soap:"soap",soapland:"soap"};
+ const [savedResponse,castsResponse]=await Promise.all([
+  fetch("https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/ranking_state",{cache:"no-store"}),
+  fetch("https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/casts",{cache:"no-store"})
+ ]);
+ if(savedResponse.ok){
+  const savedData=await savedResponse.json(),state=savedData.value||{},snapshot=state.storeBoardActivity;
+  if(snapshot?.stores)boardMetrics=new Map(Object.entries(snapshot.stores).map(([key,v])=>{const parts=key.split("|");return [storeKey(parts[0],categoryMap[parts[1]]||parts[1]),{count:Number(v.count||0),individualCount:Number(v.individualCount||0),storeThreadCount:Number(v.storeThreadCount||0),storeMentionCount:Number(v.storeMentionCount||0),complete:v.complete===true,done:Number(v.checkedThreads||0),total:Number(v.totalThreads||0)}]}));
+  const reviewSource=state.storeReviewMetrics||state.reviewMetrics||state.reviewsByStore||{};
+  if(reviewSource&&typeof reviewSource==="object")for(const [key,value] of Object.entries(reviewSource)){const parts=key.split("|");reviewMetrics.set(storeKey(parts[0],categoryMap[parts[1]]||parts[1]),value);}
+ }
+ if(castsResponse.ok){
+  const castsData=await castsResponse.json(),castRows=castsData.value?.records;
+  if(castsData.ok&&Array.isArray(castRows)){
+   const seen=new Map();
+   for(const cast of castRows){
+    const shop=cast.storeName||cast.store||cast.shopName||cast.shop||cast.store_name;
+    const cat=categoryMap[cast.category||cast.industry||cast.group]||cast.category||"";
+    if(!shop||!cat||/退店|在籍終了|非掲載|inactive|retired/i.test(String(cast.status||cast.state||"")))continue;
+    const key=storeKey(shop,cat),identity=String(cast.id||cast.castId||cast.profileUrl||cast.name||cast.castName||"");
+    if(!identity)continue;
+    if(!seen.has(key))seen.set(key,new Set());seen.get(key).add(identity);
+   }
+   for(const [key,set] of seen)castCounts.set(key,set.size);
+  }
+ }
  const target=records.find(x=>/煌き-KIRAMEKI-/i.test(x.name||""));
  if(target)target.__highlight=true;
  summary.textContent="店舗マスター "+records.length+"件を読み込みました。";
