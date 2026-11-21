@@ -38,4 +38,37 @@ button.profile-link{display:inline-block;background:#20372d;border:1px solid #8b
  document.addEventListener('click',e=>{const b=e.target.closest('button.profile-link[data-profile-url]');if(!b)return;const url=b.dataset.profileUrl;if(!url)return;link.href=url;frame.src=url;overlay.classList.add('open');document.body.style.overflow='hidden';});
 })();
 </script>
+<script src="https://hiroshima-cast-portal.onrender.com/x-account-links.js"></script>
+<script>
+(()=>{
+ const records=window.HIROSHIMA_X_LINKS||[];
+ if(!records.length)return;
+ const panel=document.createElement('section');
+ panel.style.cssText='margin:0 0 14px;padding:12px;background:#14251f;border:1px solid #52715e;border-radius:12px;color:#f4f7f5';
+ const summary=document.createElement('button');summary.type='button';summary.textContent='Xアカウント紐付け一覧（'+records.length+'件）を表示';summary.style.cssText='width:100%;padding:10px;border:1px solid #648c78;border-radius:9px;background:#20372d;color:#d7f7e4;font-size:13px;font-weight:700';
+ const list=document.createElement('div');list.hidden=true;list.style.cssText='margin-top:10px;display:grid;gap:7px';
+ summary.addEventListener('click',()=>{list.hidden=!list.hidden;list.style.display=list.hidden?'none':'grid';summary.textContent=(list.hidden?'Xアカウント紐付け一覧（':'一覧を閉じる（')+records.length+'件）'+(list.hidden?'を表示':'')});
+ records.forEach(r=>{
+  const row=document.createElement('div');row.style.cssText='padding:8px 9px;background:#1b3028;border-radius:8px;font-size:12px;line-height:1.6';
+  const label=document.createElement('div');label.textContent=r.store+'｜'+r.cast+(r.accountName?'（'+r.accountName+'）':'');
+  const a=document.createElement('a');a.href=r.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Xアカウントを開く';a.style.cssText='color:#a5e2bd;font-weight:700';
+  row.append(label,a);
+  if(r.instagram){const ig=document.createElement('div');ig.textContent='Instagram：'+r.instagram;ig.style.color='#bdcec4';row.append(ig);}
+  list.append(row);
+ });
+ panel.append(summary,list);
+ const notice=document.querySelector('.notice');
+ const main=document.querySelector('main');
+ if(notice&&notice.parentNode)notice.parentNode.insertBefore(panel,notice.nextSibling);else if(main)main.prepend(panel);
+ // Also add a direct X link to a cast card only when both the cast name and store text match.
+ document.querySelectorAll('article.item').forEach(card=>{
+  const name=card.querySelector('.name')?.textContent?.trim();const sub=card.querySelector('.sub')?.textContent||'';
+  if(!name)return;
+  records.filter(r=>r.cast===name&&sub.includes(r.store)).forEach(r=>{
+   const a=document.createElement('a');a.href=r.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Xアカウント';a.style.cssText='display:inline-block;margin:7px 7px 0 0;padding:6px 9px;border:1px solid #648c78;border-radius:8px;color:#a5e2bd;font-size:12px';
+   card.querySelector('.name')?.parentNode?.append(a);
+  });
+ });
+})();
+</script>
 </body></html>
