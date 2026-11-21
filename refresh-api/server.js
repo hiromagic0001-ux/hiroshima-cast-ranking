@@ -243,7 +243,10 @@ const server = http.createServer(async (req, res) => {
       const oldestParsedPostDate = datedPublicPosts.length
         ? datedPublicPosts.reduce((oldest, post) => post.date < oldest ? post.date : oldest, datedPublicPosts[0].date)
         : null;
-      const reached365Boundary = Boolean(oldestParsedPostDate && oldestParsedPostDate <= recent365Cutoff);\n      const allPagesFetched = pageFetches.length === pageNumbers.length && pageFetches.every(page => page.ok);\n      const recent365Complete = Boolean(replyCount !== null && (replyCount <= extractedPosts.size || (reached365Boundary && allPagesFetched)));
+      const reached365Boundary = Boolean(oldestParsedPostDate && oldestParsedPostDate <= recent365Cutoff);
+      const allPagesFetched = pageNumbers.length === pageCount && pageFetches.length === pageNumbers.length && pageFetches.every(page => page.ok);
+      const enoughPagesToReachBoundary = pageFetches.length > 0 && pageFetches.every(page => page.ok);
+      const recent365Complete = Boolean(replyCount !== null && (replyCount <= extractedPosts.size || allPagesFetched || (reached365Boundary && enoughPagesToReachBoundary)));
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
       const postNumberAnchors = $('[class*="res_rotundate"]').filter((_, el) => /^#\d{1,4}$/.test($(el).text().trim())).length;
       const paginationLinks = $('a[href*="tp="]').slice(0, 30).map((_, el) => ({ text: $(el).text().replace(/\s+/g, ' ').trim().slice(0, 50), href: $(el).attr('href') || '' })).get();
