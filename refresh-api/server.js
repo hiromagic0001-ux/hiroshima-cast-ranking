@@ -44,7 +44,7 @@ const server = http.createServer(async (req, res) => {
     let target;
     try { target = new URL(rawUrl); } catch { return send(res, 400, { ok: false, error: "invalid_thread_url" }, origin); }
     if (target.protocol !== "https:" || target.hostname !== "bakusai.com" ||
-        !/^\/thr_res\/acode=8\/ctgid=136\/bid=(?:4907|1037)\/tid=\d+(?:\/tp=\d+)?\/?$/.test(target.pathname)) {
+        !/^\/thr_res\/acode=8\/ctgid=136\/bid=\d+\/tid=\d+(?:\/tp=\d+)?\/?$/.test(target.pathname)) {
       return send(res, 400, { ok: false, error: "thread_url_not_allowed" }, origin);
     }
     const fetchHtml = async url => {
@@ -217,8 +217,7 @@ const server = http.createServer(async (req, res) => {
       const oldestParsedPostDate = datedPublicPosts.length
         ? datedPublicPosts.reduce((oldest, post) => post.date < oldest ? post.date : oldest, datedPublicPosts[0].date)
         : null;
-      const recent365Complete = Boolean(oldestParsedPostDate && oldestParsedPostDate <= recent365Cutoff) ||
-        Boolean(replyCount !== null && replyCount <= extractedPosts.size);
+      const recent365Complete = Boolean(replyCount !== null && replyCount <= extractedPosts.size);
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
       const postNumberAnchors = $('[class*="res_rotundate"]').filter((_, el) => /^#\d{1,4}$/.test($(el).text().trim())).length;
       const paginationLinks = $('a[href*="tp="]').slice(0, 30).map((_, el) => ({ text: $(el).text().replace(/\s+/g, ' ').trim().slice(0, 50), href: $(el).attr('href') || '' })).get();
