@@ -58,7 +58,7 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
     const pair=jobs[index];
     const names=Array.from(new Set(pair[1].flatMap(e=>[e.cast,...(e.mentionNames||[])]).filter(Boolean))).slice(0,16);
     try{
-     const url="https://hiroshima-cast-refresh-api.onrender.com/api/bakusai/thread-status?url="+encodeURIComponent(pair[0])+"&names="+encodeURIComponent(names.join("|"));
+     const url="https://hiroshima-cast-refresh-api.onrender.com/api/bakusai/thread-status?url="+encodeURIComponent(pair[0])+"&names="+encodeURIComponent(names.join("|"))+"&window=30d";
      const response=await fetch(url);
      const value=await response.json().catch(()=>({}));
      if(value.error==="bakusai_access_blocked"){blocked=true;continue;}
