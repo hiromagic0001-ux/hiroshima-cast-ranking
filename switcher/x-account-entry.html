@@ -36,7 +36,12 @@
  {store:"Lavie＆Spa（ラヴィアンドスパ）",cast:"はづき",url:"https://x.com/q4ba67ewak33529"},
  {store:"Lavie＆Spa",cast:"めい",url:"https://x.com/mei_l_s"},
  {store:"広島メンズエステ La Paix",cast:"ふじ香",url:"https://x.com/fujikalapaix"},
- {store:"La Paix",cast:"世莉（ラペ）",url:"https://x.com/s7l5t15",accountName:"Lapaix_Seri"}
+ {store:"La Paix",cast:"世莉（ラペ）",url:"https://x.com/s7l5t15",accountName:"Lapaix_Seri"},
+ {store:"natural",cast:"はな",url:"https://x.com/natural_87_hana"},
+ {store:"natural",cast:"もね",url:"https://x.com/natural_mone"},
+ {store:"natural",cast:"もね",url:"https://x.com/mone_natural"},
+ {store:"natural",cast:"ななせ",url:"https://x.com/mone_natural"},
+ {store:"natural",cast:"みお",url:"https://x.com/mio4859"}
  ];
  const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
  function addRow(v={}){const el=document.createElement("section");el.className="entry";el.innerHTML='<label>店舗名</label><input data-k="store" placeholder="例：サロンドニーナ" value="'+esc(v.store)+'"><label>キャスト名</label><input data-k="cast" placeholder="例：〇〇" value="'+esc(v.cast)+'"><label>XアカウントURL</label><input data-k="url" type="url" inputmode="url" placeholder="https://x.com/アカウント名" value="'+esc(v.url)+'"><div class="actions"><button type="button" class="danger remove">この入力欄を削除</button><span></span></div>';el.querySelector(".remove").onclick=()=>el.remove();forms.append(el)}
@@ -49,9 +54,10 @@
   const data=await res.json();
   if(!res.ok)throw new Error(data.error||("HTTP "+res.status));
   rows=payloadOf(data);serverReady=true;
-  const merged=new Map(rows.map(r=>[String(r.url||"").replace(/\\?.*$/,"").replace(/\\/$/,"").toLowerCase(),r]));
+  const rowKey=r=>[r.store||"",r.cast||"",String(r.url||"").replace(/\\?.*$/,"").replace(/\\/$/,"").toLowerCase()].join("|").toLowerCase();
+  const merged=new Map(rows.map(r=>[rowKey(r),r]));
   let added=0;
-  initialEntries.forEach(r=>{const key=r.url.toLowerCase();if(!merged.has(key)){merged.set(key,r);added++}});
+  initialEntries.forEach(r=>{const key=rowKey(r);if(!merged.has(key)){merged.set(key,r);added++}});
   if(added){
    const next=[...merged.values()];
    const put=await fetch(API,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(next)});
@@ -68,7 +74,7 @@
  const inputRows=[...forms.querySelectorAll(".entry")].map(el=>Object.fromEntries([...el.querySelectorAll("input")].map(i=>[i.dataset.k,i.value.trim()]))).filter(r=>r.store||r.cast||r.url);
  const invalid=inputRows.find(r=>!r.store||!r.cast||!/^https:\/\/(www\.)?x\.com\//i.test(r.url));
  if(invalid){status.textContent="店舗名・キャスト名・X URLをすべて入力してください。URLは https://x.com/ から始めてください。";return}
- const merged=new Map(rows.map(r=>[String(r.url||"").toLowerCase(),r]));inputRows.forEach(r=>merged.set(r.url.toLowerCase(),r));const next=[...merged.values()];
+ const rowKey=r=>[r.store||"",r.cast||"",String(r.url||"").toLowerCase()].join("|").toLowerCase();const merged=new Map(rows.map(r=>[rowKey(r),r]));inputRows.forEach(r=>merged.set(rowKey(r),r));const next=[...merged.values()];
  status.textContent="サーバーへ保存中…";
  try{const res=await fetch(API,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(next)});const data=await res.json();if(!res.ok)throw new Error(data.error||("HTTP "+res.status));rows=next;render();status.textContent="サーバーへの保存が完了しました（"+rows.length+"件）。別の端末からも読み込めます。"}
  catch(e){status.textContent="サーバー保存に失敗しました。データは確定保存されていません。\n"+(e.message||e)}
