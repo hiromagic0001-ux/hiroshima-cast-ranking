@@ -113,7 +113,7 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
  finally{button.disabled=false}
 });
 
-fetch(API,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(data=>{
+fetch(API,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(async data=>{
  if(!data.ok||!data.found||!Array.isArray(data.value?.records))throw Error("店舗マスターを読み込めません");
  records=data.value.records;
  try{
