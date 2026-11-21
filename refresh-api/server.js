@@ -181,10 +181,13 @@ const server = http.createServer(async (req, res) => {
       // Accept stored links with optional pagination suffixes and rebuild each page from the thread root.
       baseThreadUrl.pathname = baseThreadUrl.pathname.replace(/(?:\/(?:p|tp|rw)=\d+)+\/?$/, "").replace(/\/$/, "") + "/";
       const pageCount = replyCount !== null && replyCount > 0 ? Math.ceil(replyCount / 50) : 1;
-      // Bakusai exposes replies in 50-post pages. Walk newest pages backwards,
-      // stopping only after the rolling-365-day boundary is actually crossed.
+      const recent30Only = url.searchParams.get("window") === "30d";
+      const nowJstForWindow = new Date(Date.now() + 9 * 60 * 60 * 1000);
+      const cutoff30ForWindow = new Date(nowJstForWindow.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+      // Store ranking needs only the trailing 30 days. Fetch newest pages first
+      // and stop as soon as a dated post crosses that boundary.
       const maxPagesToFetch = Math.min(pageCount, 20);
-      const pageNumbers = Array.from({ length: maxPagesToFetch }, (_, i) => pageCount - i);
+      let pageNumbers = Array.from({ length: maxPagesToFetch }, (_, i) => pageCount - i);
       if (!pageNumbers.includes(1) && pageCount <= 20) pageNumbers.push(1);
       const parsePostsFromPage = pageHtml => {
         const page$ = cheerio.load(pageHtml);
@@ -239,9 +242,24 @@ const server = http.createServer(async (req, res) => {
           return { page: pageNo, ok: false, error: String(error?.message || error).slice(0, 120) };
         }
       };
-      for (let offset = 0; offset < pageNumbers.length; offset += 8) {
-        const batch = await Promise.all(pageNumbers.slice(offset, offset + 8).map(fetchPage));
-        pageFetches.push(...batch);
+      if (recent30Only) {
+        const checkedPages = [];
+        for (const pageNo of pageNumbers) {
+          const result = await fetchPage(pageNo);
+          pageFetches.push(result);
+          checkedPages.push(pageNo);
+          const dates = [...extractedPosts.values()].map(post => {
+            const match = String(post.date || "").match(/(20\\d{2})\\D+(\\d{1,2})\\D+(\\d{1,2})/);
+            return match ? match[1] + "-" + String(match[2]).padStart(2,"0") + "-" + String(match[3]).padStart(2,"0") : null;
+          }).filter(Boolean);
+          if (dates.length && dates.every(date => date <= cutoff30ForWindow)) break;
+        }
+        pageNumbers = checkedPages;
+      } else {
+        for (let offset = 0; offset < pageNumbers.length; offset += 8) {
+          const batch = await Promise.all(pageNumbers.slice(offset, offset + 8).map(fetchPage));
+          pageFetches.push(...batch);
+        }
       }
       pageFetches.sort((a, b) => a.page - b.page);
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20).map(({ postNo, date, excerpt }) => ({ postNo, date, excerpt }));
