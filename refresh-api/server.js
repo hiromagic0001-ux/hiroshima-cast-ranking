@@ -187,16 +187,16 @@ const server = http.createServer(async (req, res) => {
       // while #res_block may contain only the currently selected/preview reply.
       $('.res_list_article[id^="res"]').each((_, el) => {
         const article = $(el);
-        const idMatch = (article.attr('id') || '').match(/^res(\\d{1,4})$/);
+        const idMatch = (article.attr('id') || '').match(/^res(\d{1,4})$/);
         if (!idMatch) return;
         const postNo = Number(idMatch[1]);
-        const dateText = article.find('[itemprop="commentTime"]').first().text().replace(/\\s+/g, ' ').trim();
+        const dateText = article.find('[itemprop="commentTime"]').first().text().replace(/\s+/g, ' ').trim();
         const bodyNode = article.find('[itemprop="commentText"], .resbody').first();
         if (!bodyNode.length) return;
-        let excerpt = bodyNode.text().replace(/\\s+/g, ' ').trim();
-        excerpt = excerpt.replace(/\\[匿名さん\\]/g, '').replace(/返信移動/g, '').trim();
+        let excerpt = bodyNode.text().replace(/\s+/g, ' ').trim();
+        excerpt = excerpt.replace(/\[匿名さん\]/g, '').replace(/返信移動/g, '').trim();
         if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
-        const dateMatch = dateText.match(/20\\d{2}[年\\/.-]\\s?\\d{1,2}[月\\/.-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
+        const dateMatch = dateText.match(/20\d{2}[年\\/.-]\s?\d{1,2}[月\\/.-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
         const existing = extractedPosts.get(postNo);
         if (!existing || excerpt.length > existing.excerpt.length) {
           extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
