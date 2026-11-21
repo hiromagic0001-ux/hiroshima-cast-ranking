@@ -30,7 +30,7 @@ function render(){
   const status=String(x.status||"");
   const unconfirmed=/未確定|候補|確認待ち|保留/.test(status)||/候補|照合待ち/.test(String(x.areaStatus||""));
   const el=document.createElement("article");el.className="store";
-  const bm=boardMetrics.get(x.name+"|"+x.category);const boardText=bm?(bm.complete?bm.count+"件（確認済）":"未確認（"+bm.done+"/"+bm.total+"スレッド確認）"):"未取得";
+  const bm=boardMetrics.get(x.name+"|"+x.category);const boardText=bm?(bm.complete?"個人 "+bm.individualCount+"件／店舗 "+bm.storeThreadCount+"件／キャスト言及 "+bm.storeMentionCount+"件（確認済）":"未確認（"+bm.done+"/"+bm.total+" URL確認）"):"未取得";
   el.innerHTML='<div class="store-head"><div class="store-name">'+esc(x.name)+'</div><span class="tag">'+(unconfirmed?"候補・確認中":esc(labels[x.category]||"分類確認中"))+'</span></div><div class="sub">'+esc(x.areaStatus||x.area||"所在地未確認")+'｜'+esc(status||"状態未確認")+'</div><div class="metrics"><div class="m">口コミ評価<strong>未取得</strong></div><div class="m">在籍キャスト数<strong>未取得</strong></div><div class="m">直近30日話題性<strong>'+esc(boardText)+'</strong></div></div>';
   list.appendChild(el);
  }
@@ -72,7 +72,7 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
    groupedByStoreUrl.get(key).entries.push(item);
   });
   groupedByStoreUrl.forEach(group=>{
-   if(!sums.has(group.storeKey))sums.set(group.storeKey,{count:0,complete:true,done:0,total:0});
+   if(!sums.has(group.storeKey))sums.set(group.storeKey,{individualCount:0,storeThreadCount:0,storeMentionCount:0,complete:true,done:0,total:0});
    const sum=sums.get(group.storeKey),data=results.get(group.url);sum.total++;
    if(!data||data.recent30Complete!==true){sum.complete=false;if(data)sum.done++;return}
    const entries=group.entries;
@@ -81,21 +81,22 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
    const storeThreads=entries.filter(e=>e.type==="店舗スレッド");
    const candidates=entries.filter(e=>e.type==="店舗スレッド内の言及候補");
    if(candidates.length){sum.complete=false;sum.done++;return}
-   if(individual.length){sum.count+=Number(data.recent30Count||0);sum.done++;return}
-   if(storeThreads.length){sum.count+=Number(data.recent30Count||0);sum.done++;return}
-   if(storeMentions.length){
+   if(individual.length)sum.individualCount+=Number(data.recent30Count||0);
+   if(storeThreads.length||storeMentions.length){
+    if(storeThreads.length)sum.storeThreadCount+=Number(data.recent30Count||0);
     let mentionTotal=0,valid=true;
     for(const entry of storeMentions){
      const match=data.recent30Mentions?.[entry.cast];
      if(!match||!Number.isFinite(Number(match.count))){valid=false;break}
      mentionTotal+=Number(match.count);
     }
-    if(valid){sum.count+=mentionTotal;sum.done++}else{sum.complete=false;sum.done++}
-    return;
+    if(storeMentions.length&&valid)sum.storeMentionCount+=mentionTotal;
+    else if(storeMentions.length&&!valid)sum.complete=false;
    }
-   sum.complete=false;sum.done++;
+   if(!individual.length&&!storeThreads.length&&!storeMentions.length)sum.complete=false;
+   sum.done++;
   });
-  boardMetrics=new Map(Array.from(sums.entries()).map(([key,v])=>[key,{count:v.count,complete:v.complete&&v.done===v.total,done:v.done,total:v.total}]));
+  boardMetrics=new Map(Array.from(sums.entries()).map(([key,v])=>[key,{individualCount:v.individualCount,storeThreadCount:v.storeThreadCount,storeMentionCount:v.storeMentionCount,count:v.individualCount+v.storeThreadCount,complete:v.complete&&v.done===v.total,done:v.done,total:v.total}]));
   render();
   const complete=Array.from(boardMetrics.values()).filter(v=>v.complete).length;
   status.textContent="取得完了。集計結果を保存しています…";
@@ -103,7 +104,7 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
   if(!stateResponse.ok)throw Error("保存前のランキング状態を取得できません");
   const stateData=await stateResponse.json();
   const existingState=stateData.found&&stateData.value&&typeof stateData.value==="object"&&!Array.isArray(stateData.value)?stateData.value:{};
-  const boardSnapshot={generatedAt:new Date().toISOString(),manifestRecordCount:(manifest.records||[]).length,threadUrlCount:jobs.length,failedUrlCount:failed,stores:Object.fromEntries(Array.from(boardMetrics.entries()).map(([key,value])=>[key,{count:value.count,complete:value.complete,checkedThreads:value.done,totalThreads:value.total}]))};
+  const boardSnapshot={generatedAt:new Date().toISOString(),manifestRecordCount:(manifest.records||[]).length,threadUrlCount:jobs.length,failedUrlCount:failed,stores:Object.fromEntries(Array.from(boardMetrics.entries()).map(([key,value])=>[key,{count:value.count,individualCount:value.individualCount,storeThreadCount:value.storeThreadCount,storeMentionCount:value.storeMentionCount,complete:value.complete,checkedThreads:value.done,totalThreads:value.total}]))};
   const saveResponse=await fetch("https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/ranking_state",{method:"PUT",headers:{"content-type":"application/json"},body:JSON.stringify({...existingState,storeBoardActivity:boardSnapshot})});
   const saveData=await saveResponse.json();
   if(!saveResponse.ok||!saveData.ok)throw Error("掲示板集計の保存に失敗しました");
@@ -117,7 +118,7 @@ fetch(API,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);re
  records=data.value.records;
  try{
   const saved=await fetch("https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/ranking_state",{cache:"no-store"});
-  if(saved.ok){const savedData=await saved.json();const snapshot=savedData.value?.storeBoardActivity;if(snapshot?.stores){boardMetrics=new Map(Object.entries(snapshot.stores).map(([key,v])=>[key,{count:Number(v.count||0),complete:v.complete===true,done:Number(v.checkedThreads||0),total:Number(v.totalThreads||0)}]));}}
+  if(saved.ok){const savedData=await saved.json();const snapshot=savedData.value?.storeBoardActivity;if(snapshot?.stores){boardMetrics=new Map(Object.entries(snapshot.stores).map(([key,v])=>[key,{count:Number(v.count||0),individualCount:Number(v.individualCount||0),storeThreadCount:Number(v.storeThreadCount||0),storeMentionCount:Number(v.storeMentionCount||0),complete:v.complete===true,done:Number(v.checkedThreads||0),total:Number(v.totalThreads||0)}]));}}
  }catch(e){}
  const target=records.find(x=>/煌き-KIRAMEKI-/i.test(x.name||""));
  if(target)target.__highlight=true;
