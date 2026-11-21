@@ -44,7 +44,7 @@ const server = http.createServer(async (req, res) => {
     let target;
     try { target = new URL(rawUrl); } catch { return send(res, 400, { ok: false, error: "invalid_thread_url" }, origin); }
     if (target.protocol !== "https:" || target.hostname !== "bakusai.com" ||
-        !/^\/thr_res\/acode=8\/ctgid=136\/bid=\d+\/tid=\d+(?:\/tp=\d+)?\/?$/.test(target.pathname)) {
+        !/^\/thr_res\/acode=8\/ctgid=(?:103|136)\/bid=\d+\/tid=\d+(?:\/(?:p=\d+\/)?tp=\d+(?:\/rw=\d+)?|\/tp=\d+)?\/?$/.test(target.pathname)) {
       return send(res, 400, { ok: false, error: "thread_url_not_allowed" }, origin);
     }
     const fetchHtml = async url => {
