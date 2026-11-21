@@ -42,8 +42,9 @@ async function seedXAccountLinks() {
     const endpoint = new URL("/v1/data/x_account_links", storageUrl);
     const headers = { authorization: `Bearer ${storageToken}` };
     const get = await fetch(endpoint, { headers, signal: AbortSignal.timeout(15000) });
-    if (!get.ok) throw new Error("storage_get_http_" + get.status);
-    const payload = await get.json();
+    const getText = await get.text();
+    if (!get.ok) throw new Error("storage_get_http_" + get.status + ": " + getText.slice(0,500));
+    const payload = JSON.parse(getText);
     const existing = Array.isArray(payload) ? payload : [payload.data,payload.value,payload.records,payload.items,payload.result].find(Array.isArray) || [];
     const keyOf = row => [row.store||"",row.cast||"",String(row.url||"").replace(/[?#].*$/,"").replace(/\/$/,"")].join("|").toLowerCase();
     const merged = new Map();
