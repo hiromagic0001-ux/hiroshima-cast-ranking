@@ -182,35 +182,35 @@ const server = http.createServer(async (req, res) => {
         const page$ = cheerio.load(pageHtml);
         page$('[id="res_block"]').each((_, el) => {
           const block = page$(el);
-          const numberText = block.find('.res_rotundate').first().text().replace(/\\s+/g, ' ').trim();
-          const numberMatch = numberText.match(/^#(\\d{1,4})$/);
+          const numberText = block.find('.res_rotundate').first().text().replace(/\s+/g, ' ').trim();
+          const numberMatch = numberText.match(/^#(\d{1,4})$/);
           if (!numberMatch) return;
           const postNo = Number(numberMatch[1]);
-          const headerText = block.find('.res_header').first().text().replace(/\\s+/g, ' ').trim();
+          const headerText = block.find('.res_header').first().text().replace(/\s+/g, ' ').trim();
           const bodyNode = block.find('.res_body').first();
           if (!bodyNode.length) return;
-          const dateMatch = headerText.match(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
-          let excerpt = bodyNode.text().replace(/\\s+/g, ' ').trim().replace(/\\[匿名さん\\]/g, '').trim();
+          const dateMatch = headerText.match(/20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
+          let excerpt = bodyNode.text().replace(/\s+/g, ' ').trim().replace(/\[匿名さん\]/g, '').trim();
           if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
           const existing = extractedPosts.get(postNo);
           if (!existing || excerpt.length > existing.excerpt.length) extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
         });
         page$('.res_list_article[id^="res"]').each((_, el) => {
           const article = page$(el);
-          const idMatch = (article.attr('id') || '').match(/^res(\\d{1,4})$/);
+          const idMatch = (article.attr('id') || '').match(/^res(\d{1,4})$/);
           if (!idMatch) return;
           const postNo = Number(idMatch[1]);
-          const dateText = article.find('[itemprop="commentTime"]').first().text().replace(/\\s+/g, ' ').trim();
+          const dateText = article.find('[itemprop="commentTime"]').first().text().replace(/\s+/g, ' ').trim();
           const bodyNode = article.find('[itemprop="commentText"], .resbody').first();
           if (!bodyNode.length) return;
-          let excerpt = bodyNode.text().replace(/\\s+/g, ' ').trim().replace(/\\[匿名さん\\]/g, '').replace(/返信移動/g, '').trim();
+          let excerpt = bodyNode.text().replace(/\s+/g, ' ').trim().replace(/\[匿名さん\]/g, '').replace(/返信移動/g, '').trim();
           if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
-          const dateMatch = dateText.match(/20\\d{2}[年\\/.-]\\s?\\d{1,2}[月\\/.-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
+          const dateMatch = dateText.match(/20\d{2}[年\/.-]\s?\d{1,2}[月\/.-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
           const existing = extractedPosts.get(postNo);
           if (!existing || excerpt.length > existing.excerpt.length) extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
         });
       };
-      for (const pageNo of pageNumbers) {
+      const pageResults = await Promise.all(pageNumbers.map(async pageNo => {
         try {
           const pageUrl = new URL(baseThreadUrl.toString());
           pageUrl.pathname = pageUrl.pathname.replace(/\/$/, '') + (pageNo > 1 ? '/p=' + pageNo : '') + '/tp=1/rw=1/';
@@ -218,16 +218,15 @@ const server = http.createServer(async (req, res) => {
           parsePostsFromPage(pageHtml);
           const page$ = cheerio.load(pageHtml);
           const pagePostNos = page$('[id="res_block"]').map((_, el) => {
-            const m = page$(el).find('.res_rotundate').first().text().match(/^#(\\d{1,4})$/);
+            const m = page$(el).find('.res_rotundate').first().text().match(/^#(\d{1,4})$/);
             return m ? Number(m[1]) : null;
           }).get().filter(Number.isFinite);
-          pageFetches.push({ page: pageNo, ok: true, parsed: pagePostNos.length, minPostNo: pagePostNos.length ? Math.min(...pagePostNos) : null, maxPostNo: pagePostNos.length ? Math.max(...pagePostNos) : null });
-          if (pagePostNos.length && Math.min(...pagePostNos) <= 0) break;
+          return { page: pageNo, ok: true, parsed: pagePostNos.length, minPostNo: pagePostNos.length ? Math.min(...pagePostNos) : null, maxPostNo: pagePostNos.length ? Math.max(...pagePostNos) : null };
         } catch (error) {
-          pageFetches.push({ page: pageNo, ok: false, error: String(error?.message || error).slice(0, 120) });
-          break;
+          return { page: pageNo, ok: false, error: String(error?.message || error).slice(0, 120) };
         }
-      }
+      }));
+      pageFetches.push(...pageResults.sort((a, b) => a.page - b.page));
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
       // Count all public posts parsed from the fetched page, not only the 20 shown in the UI.
       // Use Japan-local calendar dates so the 365-day window matches the app audience.
