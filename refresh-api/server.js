@@ -68,7 +68,7 @@ const server = http.createServer(async (req, res) => {
       // The default thread URL can expose only the last-opened reply. Follow
       // Bakusai's explicit "最新レス" link to retrieve the actual newest page.
       let latestPageFetch = { attempted: false, ok: false, finalUrl: null, error: null };
-      const latestHref = $('a').filter((_, el) => /最新レス/.test($(el).text().replace(/\\s+/g, ' ').trim())).first().attr('href') || '';
+      const latestHref = $('a').filter((_, el) => /最新レス/.test($(el).text().replace(/\s+/g, ' ').trim())).first().attr('href') || '';
       if (latestHref) {
         try {
           const latestUrl = new URL(latestHref, 'https://bakusai.com');
@@ -278,10 +278,10 @@ const server = http.createServer(async (req, res) => {
         tag: el.tagName || '',
         id: ($(el).attr('id') || '').slice(0, 100),
         className: ($(el).attr('class') || '').toString().slice(0, 140),
-        text: $(el).text().replace(/\\s+/g, ' ').trim().slice(0, 180)
+        text: $(el).text().replace(/\s+/g, ' ').trim().slice(0, 180)
       })).get();
       const raw471 = html.indexOf("#471");
-      const raw471Context = raw471 >= 0 ? html.slice(Math.max(0, raw471 - 500), Math.min(html.length, raw471 + 1200)).replace(/\\s+/g, " ").slice(0, 1700) : null;
+      const raw471Context = raw471 >= 0 ? html.slice(Math.max(0, raw471 - 500), Math.min(html.length, raw471 + 1200)).replace(/\s+/g, " ").slice(0, 1700) : null;
       const rawBodyMarkers = (html.match(/res_body/g) || []).length;
       const rawPostMarkers = (html.match(/res_rotundate/g) || []).length;
       const rawTargetText = html.includes("本当に一理あると思うこれに尽きる");
