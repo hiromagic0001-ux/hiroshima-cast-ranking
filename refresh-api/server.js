@@ -249,10 +249,10 @@ const server = http.createServer(async (req, res) => {
           pageFetches.push(result);
           checkedPages.push(pageNo);
           const dates = [...extractedPosts.values()].map(post => {
-            const match = String(post.date || "").match(/(20\\d{2})\\D+(\\d{1,2})\\D+(\\d{1,2})/);
+            const match = String(post.date || "").match(/(20\d{2})\D+(\d{1,2})\D+(\d{1,2})/);
             return match ? match[1] + "-" + String(match[2]).padStart(2,"0") + "-" + String(match[3]).padStart(2,"0") : null;
           }).filter(Boolean);
-          if (dates.length && dates.every(date => date <= cutoff30ForWindow)) break;
+          if (dates.some(date => date <= cutoff30ForWindow)) break;
         }
         pageNumbers = checkedPages;
       } else {
