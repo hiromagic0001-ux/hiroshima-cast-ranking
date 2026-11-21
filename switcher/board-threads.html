@@ -321,15 +321,19 @@ function render(){
   const meta=document.createElement("div");meta.className="meta";
   let detailText;
   if(x.type==="個人スレッド"){
-   detailText=s.recent365Count==null?"直近365日：未確認":(s.recent365Complete?"直近365日・公開投稿"+s.recent365Count+"件（全ページ確認済み）":"直近365日・確認できた範囲 "+s.recent365Count+"件（全ページ未確認）");
+   const complete=s.recent30Complete===true;
+   detailText=complete?"直近30日・公開投稿 "+Number(s.recent30Count||0)+"件（全ページ確認済み）":"直近30日：未確認";
+   detailText+="｜直近365日 "+(s.recent365Complete?Number(s.recent365Count||0)+"件":"未確認");
   }else{
-   const mentionItems=(x.mentionNames||[]).map(name=>s.recent365Mentions?.[name]).filter(Boolean);
+   const mentionItems=(x.mentionNames||[]).map(name=>s.recent30Mentions?.[name]).filter(Boolean);
    if(mentionItems.length){
     const postNumbers=[...new Set(mentionItems.flatMap(item=>item.postNumbers||[]))].sort((a,b)=>a-b);
     const mentionCount=postNumbers.length||mentionItems.reduce((sum,item)=>sum+(Number(item.count)||0),0);
-    detailText=s.recent365Complete?"直近365日・名前一致 "+mentionCount+"件（全ページ確認済み）":"確認できた範囲 "+mentionCount+"件（全ページ未確認）";
-    if(postNumbers.length)detailText+="｜確認レス "+postNumbers.slice(0,5).map(n=>"#"+n).join("、");
-   }else detailText="直近365日：名前一致未確認";
+    detailText=s.recent30Complete?"直近30日・名前一致 "+mentionCount+"件（全ページ確認済み）":"直近30日：未確認";
+    const yearlyItems=(x.mentionNames||[]).map(name=>s.recent365Mentions?.[name]).filter(Boolean);
+    const yearlyPosts=[...new Set(yearlyItems.flatMap(item=>item.postNumbers||[]))];
+    detailText+="｜直近365日 "+(s.recent365Complete?(yearlyPosts.length||yearlyItems.reduce((sum,item)=>sum+(Number(item.count)||0),0))+"件":"未確認");
+   }else detailText="直近30日：名前一致未確認";
   }
   meta.innerHTML='<span class="pill">'+x.type+'</span>'+detailText;
   const live=document.createElement("div");live.className="meta";const latest=s.latestPostAt?new Date(s.latestPostAt).toLocaleString("ja-JP",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}):"投稿日時未確認";
