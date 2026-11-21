@@ -194,9 +194,19 @@ async function refresh(){
   await Promise.all(urls.slice(i,i+3).map(async url=>{
    try{
     const names=[...new Set(threads.filter(x=>x.url===url).flatMap(x=>x.mentionNames||[]))];
-    const query=API+"?url="+encodeURIComponent(url)+(names.length?"&names="+encodeURIComponent(names.join("|")):"");
-    const response=await fetch(query,{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);
-    const data=await response.json();if(!data.ok)throw new Error(data.error||"unverified");state.set(url,data);success++;
+    const getStatus=async targetUrl=>{
+     const query=API+"?url="+encodeURIComponent(targetUrl)+(names.length?"&names="+encodeURIComponent(names.join("|")):"");
+     const response=await fetch(query,{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);
+     const data=await response.json();if(!data.ok)throw new Error(data.error||"unverified");return data;
+    };
+    let currentUrl=url,data=await getStatus(currentUrl),didSwitch=false;
+    const visited=new Set([currentUrl]);
+    // Follow confirmed successor threads so counts and excerpts come from the active thread,
+    // not the full/archived predecessor. Limit hops to avoid a malformed endless chain.
+    for(let hop=0;hop<5&&data.switched&&data.activeUrl&&!visited.has(data.activeUrl);hop++){
+     currentUrl=data.activeUrl;visited.add(currentUrl);data=await getStatus(currentUrl);didSwitch=true;
+    }
+    state.set(url,{...data,activeUrl:currentUrl,switched:didSwitch||Boolean(data.switched),successorUnconfirmed:Boolean(data.switched&&data.activeUrl&&visited.has(data.activeUrl))});success++;
    }catch{state.set(url,{replyCount:null,activeUrl:url,switched:false,recent365Complete:false});unknown++;}
   }));
  }
