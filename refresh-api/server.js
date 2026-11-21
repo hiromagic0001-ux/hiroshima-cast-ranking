@@ -181,7 +181,7 @@ const server = http.createServer(async (req, res) => {
       // Accept stored links with optional pagination suffixes and rebuild each page from the thread root.
       baseThreadUrl.pathname = baseThreadUrl.pathname.replace(/(?:\/(?:p|tp|rw)=\d+)+\/?$/, "").replace(/\/$/, "") + "/";
       const pageCount = replyCount !== null && replyCount > 0 ? Math.ceil(replyCount / 50) : 1;
-      const recent30Only = url.searchParams.get("window") === "30d";
+      const recent30Only = requestUrl.searchParams.get("window") === "30d";
       const nowJstForWindow = new Date(Date.now() + 9 * 60 * 60 * 1000);
       const cutoff30ForWindow = new Date(nowJstForWindow.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
       // Store ranking needs only the trailing 30 days. Fetch newest pages first
