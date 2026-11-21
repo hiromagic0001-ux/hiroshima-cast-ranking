@@ -256,16 +256,21 @@ const server = http.createServer(async (req, res) => {
         return { postNo: post.postNo, date: match[1] + "-" + String(match[2]).padStart(2,"0") + "-" + String(match[3]).padStart(2,"0") };
       }).filter(Boolean);
       const recent365Count = datedPublicPosts.filter(post => post.date >= recent365Cutoff).length;
+      const cutoff30Jst = new Date(nowJst.getTime() - 30 * 24 * 60 * 60 * 1000);
+      const recent30Cutoff = cutoff30Jst.toISOString().slice(0, 10);
+      const recent30Count = datedPublicPosts.filter(post => post.date >= recent30Cutoff).length;
       const foldKana = value => String(value || "").normalize("NFKC").replace(/[ァ-ヶ]/g, character => String.fromCharCode(character.charCodeAt(0) - 0x60));
-      const recent365Mentions = Object.fromEntries(mentionNames.map(name => {
+      const countMentionsSince = cutoff => Object.fromEntries(mentionNames.map(name => {
         const foldedName = foldKana(name);
         const hits = datedPublicPosts.filter(post => {
-          if (post.date < recent365Cutoff) return false;
+          if (post.date < cutoff) return false;
           const excerpt = extractedPosts.get(post.postNo)?.fullText || extractedPosts.get(post.postNo)?.excerpt || "";
           return foldKana(excerpt).includes(foldedName);
         }).sort((a, b) => a.postNo - b.postNo);
         return [name, { count: hits.length, postNumbers: hits.map(post => post.postNo), samples: hits.slice(0, 5).map(post => ({ postNo: post.postNo, excerpt: (extractedPosts.get(post.postNo)?.excerpt || "").slice(0, 160) })) }];
       }));
+      const recent365Mentions = countMentionsSince(recent365Cutoff);
+      const recent30Mentions = countMentionsSince(recent30Cutoff);
       const oldestParsedPostDate = datedPublicPosts.length
         ? datedPublicPosts.reduce((oldest, post) => post.date < oldest ? post.date : oldest, datedPublicPosts[0].date)
         : null;
@@ -275,6 +280,8 @@ const server = http.createServer(async (req, res) => {
       const fetchedPagesParsed = pageFetches.length === pageNumbers.length && pageFetches.every(page => page.ok && page.parsed === Math.max(0, Math.min(50, replyCount - ((page.page - 1) * 50))));
       const allPagesFetched = pageNumbers.length === pageCount && fetchedPagesParsed;
       const recent365Complete = Boolean(replyCount !== null && hasPostMarkers && allPostsDated && fetchedPagesParsed && (allPagesFetched || reached365Boundary));
+      const reached30Boundary = Boolean(oldestParsedPostDate && oldestParsedPostDate <= recent30Cutoff);
+      const recent30Complete = Boolean(replyCount !== null && hasPostMarkers && allPostsDated && fetchedPagesParsed && (allPagesFetched || reached30Boundary));
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
       const postNumberAnchors = $('[class*="res_rotundate"]').filter((_, el) => /^#\d{1,4}$/.test($(el).text().trim())).length;
       const paginationLinks = $('a[href*="tp="]').slice(0, 30).map((_, el) => ({ text: $(el).text().replace(/\s+/g, ' ').trim().slice(0, 50), href: $(el).attr('href') || '' })).get();
@@ -292,10 +299,10 @@ const server = http.createServer(async (req, res) => {
       console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, latestPageFetch, raw471Found: raw471 >= 0, raw471Context, rawBodyMarkers, rawPostMarkers, rawTargetText, paginationLinks, structuralSamples }));
       return send(res, 200, {
         ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
-        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, parsedPublicPosts: extractedPosts.size, recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate, latestPageFetch, pageFetches, pageCount, paginationLinks, structuralSamples },
+        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, parsedPublicPosts: extractedPosts.size, recent365Count, recent365Complete, recent365Cutoff, recent30Count, recent30Complete, recent30Cutoff, oldestParsedPostDate, latestPageFetch, pageFetches, pageCount, paginationLinks, structuralSamples },
         activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
         latestPostAt,
-        recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate, recent365Mentions,
+        recent365Count, recent365Complete, recent365Cutoff, recent30Count, recent30Complete, recent30Cutoff, oldestParsedPostDate, recent365Mentions, recent30Mentions,
         posts,
         postsAvailable: posts.length > 0,
         checkedAt: new Date().toISOString(),
