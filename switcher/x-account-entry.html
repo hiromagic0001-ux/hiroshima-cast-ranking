@@ -5,7 +5,7 @@
 </style></head><body><main>
 <div class="top"><a href="/">← サービス選択へ戻る</a><span class="meta">広島キャスト検索</span></div>
 <h1>Xアカウント・キャスト紐付け</h1>
-<p>確認済みのXアカウントについて、店舗名・キャスト名・XのURLを入力して保存できます。今後の追加登録にも使えます。</p>
+<p>店舗名・キャスト名・XアカウントURLを登録できます。今後の追加登録にも使えます。</p>
 <div class="note">保存先はサーバー共通データです。登録したアカウントは後から店舗名・キャスト名・URLを修正または削除できます。現在は仮登録を優先し、後日確認して誤りがあれば修正してください。</div>
 <div id="forms"></div>
 <div class="actions"><button class="secondary" id="add">＋ 入力欄を追加</button><button id="save">入力内容を保存</button></div>
@@ -44,8 +44,8 @@
  {store:"natural",cast:"みお",url:"https://x.com/mio4859",status:"本人未確認"}
  ];
  const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
- function addRow(v={}){const el=document.createElement("section");el.className="entry";const status=v.status||"本人未確認";el.innerHTML='<label>店舗名</label><input data-k="store" placeholder="例：サロンドニーナ" value="'+esc(v.store)+'"><label>キャスト名</label><input data-k="cast" placeholder="例：〇〇" value="'+esc(v.cast)+'"><label>XアカウントURL</label><input data-k="url" type="url" inputmode="url" placeholder="https://x.com/アカウント名" value="'+esc(v.url)+'"><label>分類</label><select data-k="status"><option value="本人確認済み">本人確認済み</option><option value="本人未確認">本人未確認</option><option value="X未発見（調査中）">X未発見（調査中）</option></select><div class="actions"><button type="button" class="danger remove">この入力欄を削除</button><span></span></div>';el.querySelector("[data-k=status]").value=status;el.querySelector(".remove").onclick=()=>el.remove();forms.append(el)}
- function render(){saved.innerHTML=rows.length?rows.map((r,i)=>'<div class="saved"><strong>'+(i+1)+'. '+esc(r.store)+'｜'+esc(r.cast)+'｜'+esc(r.status||"本人未確認")+'</strong><a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.url)+'</a></div>').join(""):'<p class="meta">まだ登録されていません。</p>'}
+ function addRow(v={}){const el=document.createElement("section");el.className="entry";el.innerHTML='<label>店舗名</label><input data-k="store" placeholder="例：サロンドニーナ" value="'+esc(v.store)+'"><label>キャスト名</label><input data-k="cast" placeholder="例：〇〇" value="'+esc(v.cast)+'"><label>XアカウントURL</label><input data-k="url" type="url" inputmode="url" placeholder="https://x.com/アカウント名" value="'+esc(v.url)+'"><div class="actions"><button type="button" class="danger remove">この入力欄を削除</button><span></span></div>';el.querySelector("[data-k=status]").value=status;el.querySelector(".remove").onclick=()=>el.remove();forms.append(el)}
+ function render(){saved.innerHTML=rows.length?rows.map((r,i)=>'<div class="saved"><strong>'+(i+1)+'. '+esc(r.store)+'｜'+esc(r.cast)+'</strong><a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.url)+'</a></div>').join(""):'<p class="meta">まだ登録されていません。</p>'}
  function payloadOf(data){if(Array.isArray(data))return data;for(const k of ["data","value","records","items"])if(Array.isArray(data?.[k]))return data[k];if(Array.isArray(data?.result))return data.result;return []}
  async function load(){
  status.textContent="サーバーから登録データを読み込み中…";
