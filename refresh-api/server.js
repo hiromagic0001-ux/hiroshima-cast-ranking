@@ -211,7 +211,7 @@ const server = http.createServer(async (req, res) => {
           if (!existing || excerpt.length > existing.excerpt.length) extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
         });
       };
-      const pageResults = await Promise.all(pageNumbers.map(async pageNo => {
+      const fetchPage = async pageNo => {
         try {
           const pageUrl = new URL(baseThreadUrl.toString());
           pageUrl.pathname = pageUrl.pathname.replace(/\/$/, '') + (pageNo > 1 ? '/p=' + pageNo : '') + '/tp=1/rw=1/';
@@ -226,8 +226,12 @@ const server = http.createServer(async (req, res) => {
         } catch (error) {
           return { page: pageNo, ok: false, error: String(error?.message || error).slice(0, 120) };
         }
-      }));
-      pageFetches.push(...pageResults.sort((a, b) => a.page - b.page));
+      };
+      for (let offset = 0; offset < pageNumbers.length; offset += 8) {
+        const batch = await Promise.all(pageNumbers.slice(offset, offset + 8).map(fetchPage));
+        pageFetches.push(...batch);
+      }
+      pageFetches.sort((a, b) => a.page - b.page);
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
       // Count all public posts parsed from the fetched page, not only the 20 shown in the UI.
       // Use Japan-local calendar dates so the 365-day window matches the app audience.
