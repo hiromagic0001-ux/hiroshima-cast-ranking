@@ -6,7 +6,7 @@
 <div class="top"><a href="/">← サービス選択へ戻る</a><span class="meta">広島キャスト検索</span></div>
 <h1>Xアカウント・キャスト紐付け</h1>
 <p>確認済みのXアカウントについて、店舗名・キャスト名・XのURLを入力して保存できます。今後の追加登録にも使えます。</p>
-<div class="note">保存先はこのiPhoneのブラウザ内です。同じ端末・同じブラウザでは次回も表示されます。サーバー上の全利用者共通データやキャスト一覧への自動反映は、まだ行いません。</div>
+<div class="note">保存先はサーバー共通データです。登録したアカウントは後から店舗名・キャスト名・URLを修正または削除できます。現在は仮登録を優先し、後日確認して誤りがあれば修正してください。</div>
 <div id="forms"></div>
 <div class="actions"><button class="secondary" id="add">＋ 入力欄を追加</button><button id="save">入力内容を保存</button></div>
 <div id="status" role="status"></div>
@@ -17,11 +17,52 @@
  const API="https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/x_account_links";
  const forms=document.getElementById("forms"),saved=document.getElementById("saved"),status=document.getElementById("status");
  let rows=[]; let serverReady=false;
+ const initialEntries=[
+ {store:"サロンドニーナ",cast:"峰城",url:"https://x.com/salondo_m"},
+ {store:"サロンドニーナ",cast:"未来（みらい）",url:"https://x.com/mirai__nina"},
+ {store:"BODY spa Hiroshima",cast:"天使（あまつか）",url:"https://x.com/xamatsuka_2x"},
+ {store:"Vivienne",cast:"ひな",url:"https://x.com/hinachansab"},
+ {store:"Lavie＆Spa",cast:"早坂みゆう",url:"https://x.com/miyuu_salon"},
+ {store:"サロンドニーナ",cast:"矢吹",url:"https://x.com/salondonina_y"},
+ {store:"アガットテイク",cast:"花澤メイ",url:"https://x.com/agatetakemay"},
+ {store:"ゆりかご広島",cast:"麗華",url:"https://x.com/reikayurikago"},
+ {store:"7DREAM Este",cast:"奏もも",url:"https://x.com/7dreammomo"},
+ {store:"Vivienne",cast:"美波",url:"https://x.com/vivienne_minami"},
+ {store:"Lavie＆Spa",cast:"さわ",url:"https://x.com/sawa_laviespa"},
+ {store:"Lavie＆Spa",cast:"いちか",url:"https://x.com/ichikatanlavie",instagram:"ichika_lav"},
+ {store:"Lavie＆Spa",cast:"らな",url:"https://x.com/lavie__rana4",alternateUrls:["https://x.com/lavie__rana3"]},
+ {store:"広島メンズエステ La Paix",cast:"らぺ",url:"https://x.com/paix_la72927"},
+ {store:"Queen",cast:"こころ",url:"https://x.com/queen_kokoro2"},
+ {store:"Lavie＆Spa（ラヴィアンドスパ）",cast:"はづき",url:"https://x.com/q4ba67ewak33529"},
+ {store:"Lavie＆Spa",cast:"めい",url:"https://x.com/mei_l_s"},
+ {store:"広島メンズエステ La Paix",cast:"ふじ香",url:"https://x.com/fujikalapaix"},
+ {store:"La Paix",cast:"世莉（ラペ）",url:"https://x.com/s7l5t15",accountName:"Lapaix_Seri"}
+ ];
  const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
  function addRow(v={}){const el=document.createElement("section");el.className="entry";el.innerHTML='<label>店舗名</label><input data-k="store" placeholder="例：サロンドニーナ" value="'+esc(v.store)+'"><label>キャスト名</label><input data-k="cast" placeholder="例：〇〇" value="'+esc(v.cast)+'"><label>XアカウントURL</label><input data-k="url" type="url" inputmode="url" placeholder="https://x.com/アカウント名" value="'+esc(v.url)+'"><div class="actions"><button type="button" class="danger remove">この入力欄を削除</button><span></span></div>';el.querySelector(".remove").onclick=()=>el.remove();forms.append(el)}
  function render(){saved.innerHTML=rows.length?rows.map((r,i)=>'<div class="saved"><strong>'+(i+1)+'. '+esc(r.store)+'｜'+esc(r.cast)+'</strong><a href="'+esc(r.url)+'" target="_blank" rel="noopener">'+esc(r.url)+'</a></div>').join(""):'<p class="meta">まだ登録されていません。</p>'}
  function payloadOf(data){if(Array.isArray(data))return data;for(const k of ["data","value","records","items"])if(Array.isArray(data?.[k]))return data[k];if(Array.isArray(data?.result))return data.result;return []}
- async function load(){status.textContent="サーバーから登録データを読み込み中…";try{const res=await fetch(API,{method:"GET",cache:"no-store"});const data=await res.json();if(!res.ok)throw new Error(data.error||("HTTP "+res.status));rows=payloadOf(data);serverReady=true;status.textContent="サーバー保存データを読み込みました（"+rows.length+"件）。"}catch(e){serverReady=false;status.textContent="サーバー接続に失敗しました。保存・登録はまだできません。\n"+(e.message||e)}forms.innerHTML="";if(rows.length)rows.forEach(addRow);else addRow();render()}
+ async function load(){
+ status.textContent="サーバーから登録データを読み込み中…";
+ try{
+  const res=await fetch(API,{method:"GET",cache:"no-store"});
+  const data=await res.json();
+  if(!res.ok)throw new Error(data.error||("HTTP "+res.status));
+  rows=payloadOf(data);serverReady=true;
+  const merged=new Map(rows.map(r=>[String(r.url||"").replace(/\\?.*$/,"").replace(/\\/$/,"").toLowerCase(),r]));
+  let added=0;
+  initialEntries.forEach(r=>{const key=r.url.toLowerCase();if(!merged.has(key)){merged.set(key,r);added++}});
+  if(added){
+   const next=[...merged.values()];
+   const put=await fetch(API,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(next)});
+   const savedData=await put.json();
+   if(!put.ok)throw new Error(savedData.error||("HTTP "+put.status));
+   rows=next;
+   status.textContent="確認対象アカウントをサーバーへ仮登録しました（新規"+added+"件／合計"+rows.length+"件）。後日、誤りがあれば修正できます。";
+  }else status.textContent="サーバー登録済みです（"+rows.length+"件）。";
+ }catch(e){serverReady=false;status.textContent="サーバー接続または仮登録に失敗しました。登録は未完了です。\\n"+(e.message||e)}
+ forms.innerHTML="";if(rows.length)rows.forEach(addRow);else addRow();render();
+ }
  document.getElementById("add").onclick=()=>addRow();
  document.getElementById("save").onclick=async()=>{if(!serverReady){status.textContent="サーバーに接続できていないため保存できません。ページを再読み込みしてください。";return}
  const inputRows=[...forms.querySelectorAll(".entry")].map(el=>Object.fromEntries([...el.querySelectorAll("input")].map(i=>[i.dataset.k,i.value.trim()]))).filter(r=>r.store||r.cast||r.url);
