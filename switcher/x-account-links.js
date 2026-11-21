@@ -19,11 +19,11 @@ window.HIROSHIMA_X_LINKS = [
 {industry:"メンズエステ",store:"Lavie＆Spa",cast:"めい",url:"https://x.com/mei_l_s?s=11"},
 {industry:"メンズエステ",store:"広島メンズエステ La Paix",cast:"ふじ香",url:"https://x.com/fujikalapaix?s=11"},
 {industry:"メンズエステ",store:"La Paix",cast:"世莉（ラペ）",url:"https://x.com/s7l5t15?s=11",accountName:"Lapaix_Seri"},
-{industry:"メンズエステ",store:"natural",cast:"はな",url:"https://x.com/natural_87_hana?s=11"},
-{industry:"メンズエステ",store:"natural",cast:"もね",url:"https://x.com/natural_mone?s=11"},
-{industry:"メンズエステ",store:"natural",cast:"もね",url:"https://x.com/mone_natural?s=11"},
-{industry:"メンズエステ",store:"natural",cast:"ななせ",url:"https://x.com/mone_natural?s=11"},
-{industry:"メンズエステ",store:"natural",cast:"みお",url:"https://x.com/mio4859?s=11"}
+{industry:"デリヘル",store:"natural",cast:"はな",url:"https://x.com/natural_87_hana?s=11"},
+{industry:"デリヘル",store:"natural",cast:"もね",url:"https://x.com/natural_mone?s=11"},
+{industry:"デリヘル",store:"natural",cast:"もね",url:"https://x.com/mone_natural?s=11"},
+{industry:"デリヘル",store:"natural",cast:"ななせ",url:"https://x.com/mone_natural?s=11"},
+{industry:"デリヘル",store:"natural",cast:"みお",url:"https://x.com/mio4859?s=11"}
 ];
 (()=>{
  const records=window.HIROSHIMA_X_LINKS||[];
