@@ -11,7 +11,7 @@ main{max-width:760px;margin:auto;padding:14px}.back{display:inline-block;margin:
 .note{background:#302a18;border:1px solid #62522b;border-radius:12px;padding:12px;color:#f5e9c7;font-size:12px;line-height:1.7;margin-bottom:13px}
 .tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:12px 0}
 .tab{border:1px solid #648c78;border-radius:9px;background:#20372d;color:#d7f7e4;padding:11px 5px;font:inherit;font-size:12px}
-.tab.active{background:#a5e2bd;color:#102019;font-weight:800}
+.tab.active{background:#a5e2bd;color:#102019;font-weight:800}.tab small{display:block;font-size:10px;font-weight:600;opacity:.9;margin-top:3px}
 .tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
 .refresh{border:1px solid #8a7650;border-radius:9px;background:#294437;color:#f1dfb6;padding:11px 13px;font:inherit;font-size:12px;font-weight:700}
 .refresh:disabled{opacity:.55}
@@ -31,9 +31,9 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-h
 <a class="back" href="/">← 広島キャスト検索へ戻る</a>
 <div class="note">店舗名不明・広島市外・本人との照合根拠が不足する候補は除外しています。匿名掲示板の投稿は真偽やサービス品質を証明しません。個人スレッドの投稿数と店舗スレッド内の名前一致件数は別に集計します。店舗スレッドは登録済みURL単位で、前スレッド連鎖全体の合計ではありません。</div>
 <div class="tabs" role="tablist" aria-label="業種">
-<button class="tab active" type="button" data-industry="mens">メンズエステ</button>
-<button class="tab" type="button" data-industry="deli">デリヘル</button>
-<button class="tab" type="button" data-industry="soap">ソープランド</button>
+<button class="tab active" type="button" data-industry="mens">メンズエステ<small>7スレッド・13対象</small></button>
+<button class="tab" type="button" data-industry="deli">デリヘル<small>60スレッド・111対象</small></button>
+<button class="tab" type="button" data-industry="soap">ソープランド<small>33スレッド・118対象</small></button>
 </div>
 <div class="tools"><input id="q" type="search" placeholder="店舗名・キャスト名で検索"><span id="count" class="count"></span><button id="refresh" class="refresh" type="button">投稿内容・最新情報を取得</button></div>
 <section id="list" class="list" aria-live="polite"></section>
