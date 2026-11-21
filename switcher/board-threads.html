@@ -133,12 +133,25 @@ let active="mens";const state=new Map();const list=document.getElementById("list
 function render(){
  const key=q.value.trim().toLocaleLowerCase();
  const rows=threads.filter(x=>x.industry===active&&(x.store+" "+x.cast+" "+x.type).toLocaleLowerCase().includes(key));
- // Sort by newest visible post timestamp; unknown timestamps remain below confirmed updates.
+ // Keep individual-thread post counts and store-thread name mentions as separate ranking groups.
+ const score=x=>{
+  const s=state.get(x.url)||{};
+  if(x.type==="個人スレッド") return s.recent365Count==null?null:Number(s.recent365Count);
+  const items=(x.mentionNames||[]).map(name=>s.recent365Mentions?.[name]).filter(Boolean);
+  if(!items.length)return null;
+  const postNumbers=[...new Set(items.flatMap(item=>item.postNumbers||[]))];
+  return postNumbers.length||items.reduce((sum,item)=>sum+(Number(item.count)||0),0);
+ };
  rows.sort((a,b)=>{
+  const ag=a.type==="個人スレッド"?0:1, bg=b.type==="個人スレッド"?0:1;
+  if(ag!==bg)return ag-bg;
+  const av=score(a),bv=score(b);
+  if(av==null&&bv!=null)return 1;
+  if(av!=null&&bv==null)return -1;
+  if(av!=null&&bv!=null&&av!==bv)return bv-av;
   const at=Date.parse(state.get(a.url)?.latestPostAt||"");
   const bt=Date.parse(state.get(b.url)?.latestPostAt||"");
-  const av=Number.isFinite(at)?at:0, bv=Number.isFinite(bt)?bt:0;
-  return bv-av;
+  return (Number.isFinite(bt)?bt:0)-(Number.isFinite(at)?at:0);
  });
  count.textContent=rows.length+"件";
  list.replaceChildren();
