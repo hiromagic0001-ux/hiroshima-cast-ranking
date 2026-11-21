@@ -64,13 +64,36 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
    status.textContent="集計中："+Math.min(i+3,jobs.length)+"/"+jobs.length+" URL｜失敗 "+failed+"件";
   }
   const sums=new Map();
+  const groupedByStoreUrl=new Map();
   (manifest.records||[]).forEach(item=>{
-   const category={mens:"men-esthe",deli:"delivery",soap:"soap"}[item.industry]||"";
-   const key=item.store+"|"+category,data=results.get(item.url);
-   if(!sums.has(key))sums.set(key,{count:0,complete:true,done:0,total:0,seen:new Set()});
-   const sum=sums.get(key);if(sum.seen.has(item.url))return;sum.seen.add(item.url);sum.total++;
-   if(data&&data.recent30Complete===true){sum.count+=Number(data.recent30Count||0);sum.done++}
-   else{sum.complete=false;if(data)sum.done++}
+   const cat={mens:"men-esthe",deli:"delivery",soap:"soap"}[item.industry]||"";
+   const key=item.store+"|"+cat+"|"+item.url;
+   if(!groupedByStoreUrl.has(key))groupedByStoreUrl.set(key,{storeKey:item.store+"|"+cat,url:item.url,entries:[]});
+   groupedByStoreUrl.get(key).entries.push(item);
+  });
+  groupedByStoreUrl.forEach(group=>{
+   if(!sums.has(group.storeKey))sums.set(group.storeKey,{count:0,complete:true,done:0,total:0});
+   const sum=sums.get(group.storeKey),data=results.get(group.url);sum.total++;
+   if(!data||data.recent30Complete!==true){sum.complete=false;if(data)sum.done++;return}
+   const entries=group.entries;
+   const individual=entries.filter(e=>e.type==="個人スレッド");
+   const storeMentions=entries.filter(e=>e.type==="店舗スレッド内の言及");
+   const storeThreads=entries.filter(e=>e.type==="店舗スレッド");
+   const candidates=entries.filter(e=>e.type==="店舗スレッド内の言及候補");
+   if(candidates.length){sum.complete=false;sum.done++;return}
+   if(individual.length){sum.count+=Number(data.recent30Count||0);sum.done++;return}
+   if(storeThreads.length){sum.count+=Number(data.recent30Count||0);sum.done++;return}
+   if(storeMentions.length){
+    let mentionTotal=0,valid=true;
+    for(const entry of storeMentions){
+     const match=data.recent30Mentions?.[entry.cast];
+     if(!match||!Number.isFinite(Number(match.count))){valid=false;break}
+     mentionTotal+=Number(match.count);
+    }
+    if(valid){sum.count+=mentionTotal;sum.done++}else{sum.complete=false;sum.done++}
+    return;
+   }
+   sum.complete=false;sum.done++;
   });
   boardMetrics=new Map(Array.from(sums.entries()).map(([key,v])=>[key,{count:v.count,complete:v.complete&&v.done===v.total,done:v.done,total:v.total}]));
   render();
