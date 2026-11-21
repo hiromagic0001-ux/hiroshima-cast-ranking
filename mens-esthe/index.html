@@ -104,7 +104,7 @@ async function refreshStoreThreadMentions(){
    for(const name of thread.names){
     const item=data.recent365Mentions?.[name];if(!item)continue;
     const displayKey=({"小林":"小林もえ","花街":"花街 りん","夏海":"夏海 そら","びび":"美緋～びび～","すず":"鈴～すず～"})[name]||name;
-    boardAuditCounts.set(displayKey,{mentions:item.count,booking:0,note:thread.thread+"店舗スレッド内の名前一致候補"+(data.recent365Complete?"（全ページ確認済み）":"（全ページ未確認）")});
+    boardAuditCounts.set(displayKey,{mentions:item.count,booking:0,note:thread.thread+"店舗スレッド内の名前一致候補"+(data.recent365Complete?"（全ページ確認済み）":"（全ページ未確認）")+"｜確認レス："+(item.postNumbers||[]).slice(0,5).map(number=>"#"+number).join("、")});
    }
   }catch{
    for(const name of thread.names){const displayKey=({"小林":"小林もえ","花街":"花街 りん","夏海":"夏海 そら","びび":"美緋～びび～"})[name]||name;boardAuditCounts.set(displayKey,{mentions:null,booking:0,note:thread.thread+"店舗スレッドの取得未確認"});}
