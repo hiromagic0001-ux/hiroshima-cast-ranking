@@ -31,7 +31,7 @@ function render(){
   const unconfirmed=/未確定|候補|確認待ち|保留/.test(status)||/候補|照合待ち/.test(String(x.areaStatus||""));
   const el=document.createElement("article");el.className="store";
   const bm=boardMetrics.get(x.name+"|"+x.category);const boardText=bm?(bm.complete?bm.count+"件（確認済）":"未確認（"+bm.done+"/"+bm.total+"スレッド確認）"):"未取得";
-  el.innerHTML='<div class="store-head"><div class="store-name">'+esc(x.name)+'</div><span class="tag">'+(unconfirmed?"候補・確認中":esc(labels[x.category]||"分類確認中"))+'</span></div><div class="sub">'+esc(x.areaStatus||x.area||"所在地未確認")+'｜'+esc(status||"状態未確認")+'</div><div class="metrics"><div class="m">口コミ評価<strong>未取得</strong></div><div class="m">在籍キャスト数<strong>未取得</strong></div><div class="m">直近30日話題性<strong>\'+esc(boardText)+\'</strong></div></div>';
+  el.innerHTML='<div class="store-head"><div class="store-name">'+esc(x.name)+'</div><span class="tag">'+(unconfirmed?"候補・確認中":esc(labels[x.category]||"分類確認中"))+'</span></div><div class="sub">'+esc(x.areaStatus||x.area||"所在地未確認")+'｜'+esc(status||"状態未確認")+'</div><div class="metrics"><div class="m">口コミ評価<strong>未取得</strong></div><div class="m">在籍キャスト数<strong>未取得</strong></div><div class="m">直近30日話題性<strong>'+esc(boardText)+'</strong></div></div>';
   list.appendChild(el);
  }
  if(!rows.length)list.innerHTML='<div class="empty">該当する店舗がありません。</div>';
