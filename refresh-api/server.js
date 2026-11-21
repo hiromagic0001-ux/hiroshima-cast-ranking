@@ -213,7 +213,7 @@ const server = http.createServer(async (req, res) => {
       for (const pageNo of pageNumbers) {
         try {
           const pageUrl = new URL(baseThreadUrl.toString());
-          pageUrl.pathname = pageUrl.pathname.replace(/\\/$/, '') + (pageNo > 1 ? '/p=' + pageNo : '') + '/tp=1/rw=1/';
+          pageUrl.pathname = pageUrl.pathname.replace(/\/$/, '') + (pageNo > 1 ? '/p=' + pageNo : '') + '/tp=1/rw=1/';
           const pageHtml = await fetchHtml(pageUrl.toString());
           parsePostsFromPage(pageHtml);
           const page$ = cheerio.load(pageHtml);
