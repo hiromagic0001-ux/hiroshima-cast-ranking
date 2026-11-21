@@ -25,7 +25,7 @@
  document.getElementById("add").onclick=()=>addRow();
  document.getElementById("save").onclick=async()=>{if(!serverReady){status.textContent="サーバーに接続できていないため保存できません。ページを再読み込みしてください。";return}
  const inputRows=[...forms.querySelectorAll(".entry")].map(el=>Object.fromEntries([...el.querySelectorAll("input")].map(i=>[i.dataset.k,i.value.trim()]))).filter(r=>r.store||r.cast||r.url);
- const invalid=inputRows.find(r=>!r.store||!r.cast||!/^https:\/\/(www\\.)?x\\.com\//i.test(r.url));
+ const invalid=inputRows.find(r=>!r.store||!r.cast||!/^https:\/\/(www\.)?x\.com\//i.test(r.url));
  if(invalid){status.textContent="店舗名・キャスト名・X URLをすべて入力してください。URLは https://x.com/ から始めてください。";return}
  const merged=new Map(rows.map(r=>[String(r.url||"").toLowerCase(),r]));inputRows.forEach(r=>merged.set(r.url.toLowerCase(),r));const next=[...merged.values()];
  status.textContent="サーバーへ保存中…";
