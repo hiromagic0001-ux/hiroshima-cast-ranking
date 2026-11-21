@@ -49,22 +49,28 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
   const manifest=await manifestResponse.json();
   const byUrl=new Map();
   (manifest.records||[]).forEach(item=>{if(!byUrl.has(item.url))byUrl.set(item.url,[]);byUrl.get(item.url).push(item)});
-  const jobs=Array.from(byUrl.entries()),results=new Map();let failed=0,blocked=false;
-  for(let i=0;i<jobs.length&&!blocked;i++){
-   const pair=jobs[i];
-   const names=Array.from(new Set(pair[1].flatMap(e=>[e.cast,...(e.mentionNames||[])]).filter(Boolean))).slice(0,16);
-   try{
-    const url="https://hiroshima-cast-refresh-api.onrender.com/api/bakusai/thread-status?url="+encodeURIComponent(pair[0])+"&names="+encodeURIComponent(names.join("|"));
-    const response=await fetch(url);
-    const value=await response.json().catch(()=>({}));
-    if(value.error==="bakusai_access_blocked")blocked=true;
-    else if(!response.ok||!value.ok)failed++;
-    else results.set(pair[0],value);
-   }catch(error){failed++}
-   if(blocked){status.textContent="中断：爆サイ側がアクセスを制限しています。今回の集計結果は保存していません。時間を空けて再試行してください。";break;}
-   status.textContent="集計中："+(i+1)+"/"+jobs.length+" URL｜失敗 "+failed+"件";
-   if(i<jobs.length-1)await new Promise(resolve=>setTimeout(resolve,2200));
-  }
+  const jobs=Array.from(byUrl.entries()),results=new Map();let failed=0,blocked=false,completed=0;
+  let nextIndex=0;
+  const worker=async()=>{
+   while(!blocked){
+    const index=nextIndex++;
+    if(index>=jobs.length)return;
+    const pair=jobs[index];
+    const names=Array.from(new Set(pair[1].flatMap(e=>[e.cast,...(e.mentionNames||[])]).filter(Boolean))).slice(0,16);
+    try{
+     const url="https://hiroshima-cast-refresh-api.onrender.com/api/bakusai/thread-status?url="+encodeURIComponent(pair[0])+"&names="+encodeURIComponent(names.join("|"));
+     const response=await fetch(url);
+     const value=await response.json().catch(()=>({}));
+     if(value.error==="bakusai_access_blocked"){blocked=true;continue;}
+     if(!response.ok||!value.ok)failed++;
+     else results.set(pair[0],value);
+    }catch(error){failed++}
+    completed++;
+    status.textContent="集計中："+completed+"/"+jobs.length+" URL｜失敗 "+failed+"件（同時4件）";
+   }
+  };
+  await Promise.all(Array.from({length:Math.min(4,jobs.length)},()=>worker()));
+  if(blocked){status.textContent="中断：爆サイ側がアクセスを制限しています。今回の集計結果は保存していません。時間を空けて再試行してください。";return;}
   if(blocked)return;
   const sums=new Map();
   const groupedByStoreUrl=new Map();
