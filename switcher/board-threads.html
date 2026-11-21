@@ -38,7 +38,7 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-h
 <div class="tools"><input id="q" type="search" placeholder="店舗名・キャスト名で検索"><span id="count" class="count"></span><button id="refresh" class="refresh" type="button">投稿内容・最新情報を取得</button></div>
 <section id="list" class="list" aria-live="polite"></section>
 <p id="status" class="status">「投稿内容・最新情報を取得」ボタンを押すと、登録スレッドの公開書き込みだけを取得してこの画面に表示します。元スレッドを開くリンクは表示しません。自動更新もしません。</p>
-<div class="note"><b>999レス到達時の自動切替</b><br>登録スレッドが999レスに達し、同じ店舗・キャストの後継スレッドを確認できた場合は、後継スレッドが確認できた場合は、取得対象を新スレッドへ切り替えます。後継スレッドが特定できない場合やレス数を取得できない場合は「未確認」と表示します。</div>
+<div class="note"><b>999レス到達時の自動切替</b><br>登録スレッドが999レスに達し、同じ店舗・キャストの後継スレッドを確認できた場合は、後継スレッドが確認できた場合は、取得対象を新スレッドへ切り替えます。後継スレッドが特定できない場合やレス数を取得できない場合は「未確認」と表示します。 デリヘル・ソープは、広島市内の店舗・キャストとの対応と直接URLを照合できたスレッドのみ登録します。未検証URLは掲載しません。</div>
 <footer>掲示板の公開範囲で取得できた書き込みのみ表示します。取得不能・削除済みの内容は補完しません。</footer>
 </main>
 <script>
@@ -58,16 +58,6 @@ const threads=[
 {industry:"mens",store:"ENEL",cast:"花街 りん",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12975883/",mentionNames:["花街りん","花街 りん"],detail:"表記類似候補・個人投稿数とは別"},
 {industry:"mens",store:"ENEL",cast:"夏海 そら",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12975883/",mentionNames:["夏海そら","夏海 そら"],detail:"表記類似候補・個人投稿数とは別"},
 {industry:"mens",store:"ゆりかご",cast:"美緋～びび～",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=13431328/",mentionNames:["美緋"],detail:"表記類似候補・個人投稿数とは別"},
-{industry:"deli",store:"広島で評判のお店はココです！",cast:"カガミ～それいけ！加賀美さん～",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1888/tid=12378129/",detail:"直近365日・公開投稿数を取得時に集計"},
-{industry:"deli",store:"広島で評判のお店はココです！",cast:"マーコ",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1888/tid=12280049/",detail:"直近365日・公開投稿数を取得時に集計"},
-{industry:"soap",store:"EIGHT",cast:"れい",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1888/tid=5413359/",detail:"直近365日・公開投稿数を取得時に集計"},
-{industry:"soap",store:"Sherbet",cast:"ことね",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["ことね"],detail:"個人投稿数とは別に集計"},
-{industry:"soap",store:"Sherbet",cast:"すず",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["すず"],detail:"個人投稿数とは別に集計"},
-{industry:"soap",store:"Sherbet",cast:"イヴ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["イヴ","イブ"],detail:"個人投稿数とは別に集計"},
-{industry:"soap",store:"Sherbet",cast:"さや",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["さや"],detail:"個人投稿数とは別に集計"},
-{industry:"soap",store:"Sherbet",cast:"ゆめ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["ゆめ"],detail:"個人投稿数とは別に集計"},
-{industry:"soap",store:"Sherbet",cast:"ひな",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["ひな"],detail:"個人投稿数とは別に集計"},
-{industry:"soap",store:"EIGHT",cast:"きらら",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13619098/",mentionNames:["きらら"],detail:"個人投稿数とは別に集計"}
 ];
 let active="mens";const state=new Map();const list=document.getElementById("list"),q=document.getElementById("q"),count=document.getElementById("count"),status=document.getElementById("status");const refreshButton=document.getElementById("refresh");
 function render(){
