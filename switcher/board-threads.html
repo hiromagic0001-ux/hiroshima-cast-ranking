@@ -38,7 +38,7 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-h
 <div class="tools"><input id="q" type="search" placeholder="店舗名・キャスト名で検索"><span id="count" class="count"></span><button id="refresh" class="refresh" type="button">投稿内容・最新情報を取得</button></div>
 <section id="list" class="list" aria-live="polite"></section>
 <p id="status" class="status">「投稿内容・最新情報を取得」ボタンを押すと、登録スレッドの公開書き込みだけを取得してこの画面に表示します。元スレッドを開くリンクは表示しません。自動更新もしません。</p>
-<div class="note"><b>999レス到達時の自動切替</b><br>登録スレッドが999レスに達し、同じ店舗・キャストの後継スレッドを確認できた場合は、後継スレッドが確認できた場合は、取得対象を新スレッドへ切り替えます。後継スレッドが特定できない場合やレス数を取得できない場合は「未確認」と表示します。 デリヘル・ソープは、広島市内の店舗・キャストとの対応と直接URLを照合できたスレッドのみ登録します。未検証URLは掲載しません。</div>
+<div class="note"><b>999レス到達時の自動切替</b><br>登録スレッドが999レスに達し、同じ店舗・キャストの後継スレッドを確認できた場合は、取得対象を新スレッドへ切り替えます。後継スレッドが特定できない場合やレス数を取得できない場合は「未確認」と表示します。 デリヘル・ソープは、広島市内の店舗・キャストとの対応と直接URLを照合できたスレッドのみ登録します。未検証URLは掲載しません。</div>
 <footer>掲示板の公開範囲で取得できた書き込みのみ表示します。取得不能・削除済みの内容は補完しません。</footer>
 </main>
 <script>
@@ -142,7 +142,7 @@ function render(){
  });
  count.textContent=rows.length+"件";
  list.replaceChildren();
- if(!rows.length){const p=document.createElement("div");p.className="empty";p.textContent=active==="mens"?"検索条件に一致するスレッドはありません。":"この業種は、広島市内の店舗・キャストと照合できる直接スレッドURLがまだ登録されていません。未確認リンクは表示していません。";list.append(p);return;}
+ if(!rows.length){const p=document.createElement("div");p.className="empty";p.textContent=key?"検索条件に一致する登録スレッドはありません。":"この業種は、広島市内の店舗・キャストと照合できた登録スレッドがありません。未確認リンクは表示していません。";list.append(p);return;}
  rows.forEach(x=>{
   const s=state.get(x.url)||{};const card=document.createElement("article");card.className="item";
   const title=document.createElement("b");title.textContent=x.cast==="キャスト照合前"?x.store:x.store+"｜"+x.cast;
