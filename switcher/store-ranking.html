@@ -83,7 +83,7 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
    if(candidates.length){sum.complete=false;sum.done++;return}
    if(individual.length)sum.individualCount+=Number(data.recent30Count||0);
    if(storeThreads.length||storeMentions.length){
-    if(storeThreads.length)sum.storeThreadCount+=Number(data.recent30Count||0);
+    if(storeThreads.length||storeMentions.length)sum.storeThreadCount+=Number(data.recent30Count||0);
     let mentionTotal=0,valid=true;
     for(const entry of storeMentions){
      const match=data.recent30Mentions?.[entry.cast];
