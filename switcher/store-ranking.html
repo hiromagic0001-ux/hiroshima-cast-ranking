@@ -155,8 +155,6 @@ fetch(API,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);re
  if(target)target.__highlight=true;
  summary.textContent="店舗マスター "+records.length+"件を読み込みました。";
  render();
- const kirameki=records.find(x=>/煌き-KIRAMEKI-/i.test(x.name||""));
- if(kirameki&&category==="delivery"){q.value="煌き";render()}
 }).catch(e=>{summary.textContent="データ取得失敗："+String(e.message||e);list.innerHTML='<div class="empty">店舗マスターを取得できないため、順位を表示していません。</div>'});
 })();
 </script></body></html>
