@@ -173,6 +173,8 @@ const server = http.createServer(async (req, res) => {
       const baseThreadUrl = new URL(target.toString());
       baseThreadUrl.search = "";
       baseThreadUrl.hash = "";
+      // Accept stored links with optional pagination suffixes and rebuild each page from the thread root.
+      baseThreadUrl.pathname = baseThreadUrl.pathname.replace(/(?:\/(?:p|tp|rw)=\d+)+\/?$/, "").replace(/\/$/, "") + "/";
       const pageCount = replyCount !== null && replyCount > 0 ? Math.ceil(replyCount / 50) : 1;
       // Bakusai exposes replies in 50-post pages. Walk newest pages backwards,
       // stopping only after the rolling-365-day boundary is actually crossed.
