@@ -5,75 +5,6 @@ const PORT = Number(process.env.PORT || 10000);
 const SOURCE_URL = "https://estama.jp/etc/ranking/therapist/3401/";
 const ALLOWED_ORIGIN = "https://hiroshima-cast-portal.onrender.com";
 const ALLOWED_ORIGINS = new Set([ALLOWED_ORIGIN, "https://hiroshima-cast-ranking.onrender.com"]);
-const X_ACCOUNT_LINKS_SEED = [
-{store:"サロンドニーナ",cast:"峰城",url:"https://x.com/salondo_m?s=11"},
-{store:"サロンドニーナ",cast:"未来（みらい）",url:"https://x.com/mirai__nina?s=11"},
-{store:"BODY spa Hiroshima",cast:"天使（あまつか）",url:"https://x.com/xamatsuka_2x?s=11"},
-{store:"Vivienne",cast:"ひな",url:"https://x.com/hinachansab?s=11"},
-{store:"Lavie＆Spa",cast:"早坂みゆう",url:"https://x.com/miyuu_salon?s=11"},
-{store:"サロンドニーナ",cast:"矢吹",url:"https://x.com/salondonina_y?s=11"},
-{store:"アガットテイク",cast:"花澤メイ",url:"https://x.com/agatetakemay?s=11"},
-{store:"ゆりかご広島",cast:"麗華",url:"https://x.com/reikayurikago?s=11"},
-{store:"7DREAM Este",cast:"奏もも",url:"https://x.com/7dreammomo?s=11"},
-{store:"Vivienne",cast:"美波",url:"https://x.com/vivienne_minami?s=11"},
-{store:"Lavie＆Spa",cast:"さわ",url:"https://x.com/sawa_laviespa?s=11"},
-{store:"Lavie＆Spa",cast:"いちか",url:"https://x.com/ichikatanlavie?s=11",instagram:"ichika_lav"},
-{store:"Lavie＆Spa",cast:"らな",url:"https://x.com/lavie__rana4?s=11"},
-{store:"広島メンズエステ La Paix",cast:"らぺ",url:"https://x.com/paix_la72927?s=11"},
-{store:"Queen",cast:"こころ",url:"https://x.com/queen_kokoro2?s=11"},
-{store:"Lavie＆Spa（ラヴィアンドスパ）",cast:"はづき",url:"https://x.com/q4ba67ewak33529?s=11"},
-{store:"Lavie＆Spa",cast:"めい",url:"https://x.com/mei_l_s?s=11"},
-{store:"広島メンズエステ La Paix",cast:"ふじ香",url:"https://x.com/fujikalapaix?s=11"},
-{store:"La Paix",cast:"世莉（ラペ）",url:"https://x.com/s7l5t15?s=11",accountName:"Lapaix_Seri"},
-{store:"natural",cast:"はな",url:"https://x.com/natural_87_hana?s=11"},
-{store:"natural",cast:"もね",url:"https://x.com/natural_mone?s=11"},
-{store:"natural",cast:"もね",url:"https://x.com/mone_natural?s=11"},
-{store:"natural",cast:"ななせ",url:"https://x.com/mone_natural?s=11"},
-{store:"natural",cast:"みお",url:"https://x.com/mio4859?s=11"}
-];
-async function seedXAccountLinks() {
-  const storageUrl = process.env.CAST_STORAGE_URL;
-  const storageToken = process.env.CAST_STORAGE_API_TOKEN;
-  if (!storageUrl || !storageToken) {
-    console.log("X account seed skipped: shared storage is not configured");
-    return;
-  }
-  try {
-    const endpoint = new URL("/v1/data/x_account_links", storageUrl);
-    const headers = { authorization: `Bearer ${storageToken}` };
-    const get = await fetch(endpoint, { headers, signal: AbortSignal.timeout(15000) });
-    const getText = await get.text();
-    if (!get.ok) throw new Error("storage_get_http_" + get.status + ": " + getText.slice(0,500));
-    const payload = JSON.parse(getText);
-    const existing = Array.isArray(payload) ? payload : [payload.data,payload.value,payload.records,payload.items,payload.result].find(Array.isArray) || [];
-    const keyOf = row => [row.store||"",row.cast||"",String(row.url||"").replace(/[?#].*$/,"").replace(/\/$/,"")].join("|").toLowerCase();
-    const merged = new Map();
-    for (const row of existing) {
-      if (String(row.url||"").toLowerCase().includes("kopanda_3rd")) continue;
-      merged.set(keyOf(row), row);
-    }
-    let added = 0;
-    for (const row of X_ACCOUNT_LINKS_SEED) {
-      const key = keyOf(row);
-      if (!merged.has(key)) { merged.set(key,row); added++; }
-    }
-    const next = [...merged.values()];
-    if (added || next.length !== existing.length) {
-      const put = await fetch(endpoint, {
-        method: "PUT",
-        headers: { ...headers, "content-type": "application/json" },
-        body: JSON.stringify(next),
-        signal: AbortSignal.timeout(15000)
-      });
-      if (!put.ok) throw new Error("storage_put_http_" + put.status);
-      console.log("X account mappings saved to shared storage: " + next.length + " total (" + added + " added)");
-    } else {
-      console.log("X account mappings already current: " + next.length + " total");
-    }
-  } catch (error) {
-    console.error("X account seed failed:", String(error?.message || error));
-  }
-}
 let lastFetchAt = 0;
 let cachedInspection = null;
 let rankingLinkAuditJob = null;
@@ -1489,5 +1420,4 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, "0.0.0.0", () => {
   console.log("Hiroshima cast refresh API listening on " + PORT);
-  seedXAccountLinks();
 });
