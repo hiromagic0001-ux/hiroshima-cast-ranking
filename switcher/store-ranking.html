@@ -10,7 +10,7 @@
 <section class="metric"><h2>総合ランキングの算出方法</h2><p>口コミ評価・キャスト数・直近30日投稿数を各約33.3%で相対評価し、その平均を総合点（100点満点）とします。業種別・全業種横断の両方に対応します。定義や集計期間が異なるデータは混ぜず、3項目のどれかが未取得なら総合点を算出しません。</p></section><section class="metric"><h2>① 口コミ評価</h2><p>利用者口コミの平均評価と件数を別表示。求人口コミ・広告文・業者のランキング評価は混ぜません。現時点で全店舗共通の検証済みデータは未取得です。</p></section>
 <section class="metric"><h2>② キャスト数</h2><p>公式または現行プロフィール一覧で確認できる在籍人数のみ集計。退店・重複を確認できない場合は確定人数に含めません。</p></section>
 <section class="metric"><h2>③ 直近30日間の話題性</h2><p>公開掲示板の対象期間内投稿数を集計。個人スレッドと店舗スレッド内の言及は区別し、累計レス数や閲覧数は使いません。</p></section>
-<input id="q" class="search" type="search" placeholder="店舗名で検索（例：煌き、KIRAMEKI）" autocomplete="off">
+<button id="boardRefresh" type="button" style="width:100%;padding:12px;margin:10px 0;background:#28553e;color:white;border:1px solid #75a98a;border-radius:9px">登録済み掲示板の直近30日集計を更新</button><div id="boardStatus" class="summary">未実行（登録済みスレッドのみ対象）</div><input id="q" class="search" type="search" placeholder="店舗名で検索（例：煌き、KIRAMEKI）" autocomplete="off">
 <div id="summary" class="summary">店舗データを読み込み中…</div><div id="list" class="list"></div>
 <footer>データは店舗マスターを読み込みます。店舗候補はランキングの調査対象に含めますが、広島市内の所在地・営業状況が未確認の候補は確定店舗と区別して表示します。各指標の未取得は未取得のまま保持し、業者サイトの順位で補完しません。</footer>
 </main>
@@ -19,7 +19,7 @@
 const API="https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/stores";
 const labels={delivery:"デリヘル", "men-esthe":"メンズエステ",soap:"ソープランド"};
 const list=document.getElementById("list"),summary=document.getElementById("summary"),q=document.getElementById("q");
-let records=[],category="delivery";
+let records=[],category="delivery",boardMetrics=new Map();
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){
  const query=q.value.trim().toLowerCase();
@@ -30,13 +30,56 @@ function render(){
   const status=String(x.status||"");
   const unconfirmed=/未確定|候補|確認待ち|保留/.test(status)||/候補|照合待ち/.test(String(x.areaStatus||""));
   const el=document.createElement("article");el.className="store";
-  el.innerHTML='<div class="store-head"><div class="store-name">'+esc(x.name)+'</div><span class="tag">'+(unconfirmed?"候補・確認中":esc(labels[x.category]||"分類確認中"))+'</span></div><div class="sub">'+esc(x.areaStatus||x.area||"所在地未確認")+'｜'+esc(status||"状態未確認")+'</div><div class="metrics"><div class="m">口コミ評価<strong>未取得</strong></div><div class="m">在籍キャスト数<strong>未取得</strong></div><div class="m">直近30日話題性<strong>未取得</strong></div></div>';
+  const bm=boardMetrics.get(x.name+"|"+x.category);const boardText=bm?(bm.complete?bm.count+"件（確認済）":"未確認（"+bm.done+"/"+bm.total+"スレッド確認）"):"未取得";
+  el.innerHTML='<div class="store-head"><div class="store-name">'+esc(x.name)+'</div><span class="tag">'+(unconfirmed?"候補・確認中":esc(labels[x.category]||"分類確認中"))+'</span></div><div class="sub">'+esc(x.areaStatus||x.area||"所在地未確認")+'｜'+esc(status||"状態未確認")+'</div><div class="metrics"><div class="m">口コミ評価<strong>未取得</strong></div><div class="m">在籍キャスト数<strong>未取得</strong></div><div class="m">直近30日話題性<strong>\'+esc(boardText)+\'</strong></div></div>';
   list.appendChild(el);
  }
  if(!rows.length)list.innerHTML='<div class="empty">該当する店舗がありません。</div>';
 }
 document.querySelectorAll("[data-cat]").forEach(b=>b.addEventListener("click",()=>{category=b.dataset.cat;document.querySelectorAll("[data-cat]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render()}));
 q.addEventListener("input",render);
+
+document.getElementById("boardRefresh").addEventListener("click",async function(){
+ const button=this,status=document.getElementById("boardStatus");
+ button.disabled=true;status.textContent="対応表を読み込み中…";
+ try{
+  const manifestResponse=await fetch("/board-thread-manifest.json",{cache:"no-store"});
+  if(!manifestResponse.ok)throw Error("対応表を取得できません");
+  const manifest=await manifestResponse.json();
+  const byUrl=new Map();
+  (manifest.records||[]).forEach(item=>{if(!byUrl.has(item.url))byUrl.set(item.url,[]);byUrl.get(item.url).push(item)});
+  const jobs=Array.from(byUrl.entries()),results=new Map();let failed=0;
+  for(let i=0;i<jobs.length;i+=3){
+   const batch=jobs.slice(i,i+3);
+   const received=await Promise.all(batch.map(async pair=>{
+    const names=Array.from(new Set(pair[1].flatMap(e=>[e.cast,...(e.mentionNames||[])]).filter(Boolean))).slice(0,16);
+    try{
+     const url="https://hiroshima-cast-refresh-api.onrender.com/api/bakusai/thread-status?url="+encodeURIComponent(pair[0])+"&names="+encodeURIComponent(names.join("|"));
+     const response=await fetch(url);if(!response.ok)throw Error("HTTP "+response.status);
+     const value=await response.json();if(!value.ok)throw Error(value.error||"取得失敗");
+     return [pair[0],value];
+    }catch(error){failed++;return [pair[0],null]}
+   }));
+   received.forEach(pair=>{if(pair[1])results.set(pair[0],pair[1])});
+   status.textContent="集計中："+Math.min(i+3,jobs.length)+"/"+jobs.length+" URL｜失敗 "+failed+"件";
+  }
+  const sums=new Map();
+  (manifest.records||[]).forEach(item=>{
+   const category={mens:"men-esthe",deli:"delivery",soap:"soap"}[item.industry]||"";
+   const key=item.store+"|"+category,data=results.get(item.url);
+   if(!sums.has(key))sums.set(key,{count:0,complete:true,done:0,total:0,seen:new Set()});
+   const sum=sums.get(key);if(sum.seen.has(item.url))return;sum.seen.add(item.url);sum.total++;
+   if(data&&data.recent30Complete===true){sum.count+=Number(data.recent30Count||0);sum.done++}
+   else{sum.complete=false;if(data)sum.done++}
+  });
+  boardMetrics=new Map(Array.from(sums.entries()).map(([key,v])=>[key,{count:v.count,complete:v.complete&&v.done===v.total,done:v.done,total:v.total}]));
+  render();
+  const complete=Array.from(boardMetrics.values()).filter(v=>v.complete).length;
+  status.textContent="集計完了："+jobs.length+" URL｜全ページ確認済み店舗 "+complete+"件｜未確認は順位に使いません。登録済みスレッドのみの暫定集計です。";
+ }catch(error){status.textContent="集計失敗："+String(error.message||error)}
+ finally{button.disabled=false}
+});
+
 fetch(API,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(data=>{
  if(!data.ok||!data.found||!Array.isArray(data.value?.records))throw Error("店舗マスターを読み込めません");
  records=data.value.records;
