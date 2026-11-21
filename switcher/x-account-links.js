@@ -37,32 +37,24 @@ window.HIROSHIMA_X_LINKS = [
   return {card,cast,store};
  }).filter(x=>x.cast);
  const matched=new Set();
- const groups={"本人確認済み":[],"本人未確認":[],"X未発見（調査中）":[]};
+ const registered=[];const missing=[];
  records.forEach(r=>{
-  const status=groups[r.status]?r.status:"本人未確認";
-  groups[status].push(r);
+  registered.push(r);
   const target=cards.find(c=>norm(c.cast)===norm(r.cast)&&c.store.includes(r.store));
   if(target){
    matched.add(target);
-   if(!target.card.querySelector("[data-x-account-status]")){
-    const badge=document.createElement("span");
-    badge.dataset.xAccountStatus="1";
-    badge.textContent="X："+status;
-    badge.style.cssText="display:inline-block;margin:6px 6px 0 0;padding:4px 7px;border:1px solid #648c78;border-radius:7px;color:#d7f7e4;font-size:11px";
-    target.card.querySelector(".name")?.parentNode?.append(badge);
-   }
    if(!target.card.querySelector("[data-x-account-link]")){
     const a=document.createElement("a");a.dataset.xAccountLink="1";a.href=r.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Xアカウント";a.style.cssText="display:inline-block;margin:6px 6px 0 0;color:#a5e2bd;font-size:12px";
     target.card.querySelector(".name")?.parentNode?.append(a);
    }
   }
  });
- cards.filter(c=>!matched.has(c)).forEach(c=>groups["X未発見（調査中）"].push({store:c.store.trim(),cast:c.cast,missing:true}));
+ cards.filter(c=>!matched.has(c)).forEach(c=>missing.push({store:c.store.trim(),cast:c.cast,missing:true}));
  const panel=document.createElement("section");
  panel.style.cssText="margin:0 0 14px;padding:12px;background:#14251f;border:1px solid #52715e;border-radius:12px;color:#f4f7f5";
- const title=document.createElement("strong");title.textContent="Xアカウント分類";title.style.cssText="display:block;margin-bottom:9px;font-size:14px";
+ const title=document.createElement("strong");title.textContent="Xアカウント一覧";title.style.cssText="display:block;margin-bottom:9px;font-size:14px";
  panel.append(title);
- Object.entries(groups).forEach(([name,items])=>{
+ [["登録済みXアカウント",registered],["Xアカウント未発見・調査対象",missing]].forEach(([name,items])=>{
   const details=document.createElement("details");details.style.cssText="margin:7px 0;padding:8px 10px;background:#1b3028;border-radius:8px";
   const summary=document.createElement("summary");summary.textContent=name+"（"+items.length+"件）";summary.style.cssText="cursor:pointer;font-size:13px;font-weight:700;color:#d7f7e4";
   const list=document.createElement("div");list.style.cssText="display:grid;gap:7px;margin-top:9px";
