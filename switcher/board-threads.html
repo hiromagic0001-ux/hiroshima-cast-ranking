@@ -29,7 +29,7 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-h
 <header><h1>広島市 匿名掲示板スレッド</h1><p>デリヘル・メンズエステ・ソープランドを業種別に整理</p></header>
 <main>
 <a class="back" href="/">← 広島キャスト検索へ戻る</a>
-<div class="note">店舗名不明・広島市外・本人との照合根拠が不足する候補は除外しています。匿名掲示板の投稿は真偽やサービス品質を証明しません。個人スレッドの投稿数と店舗スレッド内の言及数は別に表示します。</div>
+<div class="note">店舗名不明・広島市外・本人との照合根拠が不足する候補は除外しています。匿名掲示板の投稿は真偽やサービス品質を証明しません。個人スレッドの投稿数と店舗スレッド内の名前一致件数は別に集計します。店舗スレッドは登録済みURL単位で、前スレッド連鎖全体の合計ではありません。</div>
 <div class="tabs" role="tablist" aria-label="業種">
 <button class="tab active" type="button" data-industry="mens">メンズエステ</button>
 <button class="tab" type="button" data-industry="deli">デリヘル</button>
@@ -48,16 +48,28 @@ const threads=[
 {industry:"mens",store:"salon.do.ni-na",cast:"双葉",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=9542965/",detail:"直近365日・公開投稿数を取得時に集計"},
 {industry:"mens",store:"チェリーSPA",cast:"一条 ふうか",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=9635267/",detail:"直近365日・公開投稿数を取得時に集計"},
 {industry:"mens",store:"salon.do.ni-na",cast:"愛沢",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10970438/",detail:"直近365日・公開投稿数を取得時に集計"},
-{industry:"mens",store:"神のエステ",cast:"ましろ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認2投稿（個人投稿数とは別）"},
-{industry:"mens",store:"神のエステ",cast:"みなみ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認2投稿（個人投稿数とは別）"},
-{industry:"mens",store:"神のエステ",cast:"みどり",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認1投稿（個人投稿数とは別）"},
-{industry:"mens",store:"神のエステ",cast:"みずき",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認1投稿（個人投稿数とは別）"},
-{industry:"mens",store:"神のエステ",cast:"るあ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認1投稿（個人投稿数とは別）"},
-{industry:"mens",store:"神のエステ",cast:"さとみ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認1投稿（個人投稿数とは別）"},
-{industry:"mens",store:"CREA",cast:"小林もえ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=13206563/",detail:"公開確認1投稿（店舗名と姓を照合）"},
-{industry:"mens",store:"ENEL",cast:"花街 りん",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12975883/",detail:"公開確認1投稿（表記類似候補）"},
-{industry:"mens",store:"ENEL",cast:"夏海 そら",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12975883/",detail:"公開確認1投稿（表記類似候補）"},
-{industry:"mens",store:"ゆりかご",cast:"美緋～びび～",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=13431328/",detail:"公開確認1投稿（表記類似候補）"}
+{industry:"mens",store:"神のエステ",cast:"ましろ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",mentionNames:["ましろ"],detail:"個人投稿数とは別に集計"},
+{industry:"mens",store:"神のエステ",cast:"みなみ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",mentionNames:["みなみ"],detail:"個人投稿数とは別に集計"},
+{industry:"mens",store:"神のエステ",cast:"みどり",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",mentionNames:["みどり"],detail:"個人投稿数とは別に集計"},
+{industry:"mens",store:"神のエステ",cast:"みずき",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",mentionNames:["みずき"],detail:"個人投稿数とは別に集計"},
+{industry:"mens",store:"神のエステ",cast:"るあ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",mentionNames:["るあ"],detail:"個人投稿数とは別に集計"},
+{industry:"mens",store:"神のエステ",cast:"さとみ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",mentionNames:["さとみ"],detail:"個人投稿数とは別に集計"},
+{industry:"mens",store:"CREA",cast:"小林もえ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=13206563/",mentionNames:["小林もえ"],detail:"個人投稿数とは別に集計"},
+{industry:"mens",store:"ENEL",cast:"花街 りん",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12975883/",mentionNames:["花街 りん"],detail:"表記類似候補・個人投稿数とは別"},
+{industry:"mens",store:"ENEL",cast:"夏海 そら",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12975883/",mentionNames:["夏海 そら"],detail:"表記類似候補・個人投稿数とは別"},
+{industry:"mens",store:"ゆりかご",cast:"美緋～びび～",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=13431328/",mentionNames:["美緋"],detail:"表記類似候補・個人投稿数とは別"},
+{industry:"deli",store:"広島で評判のお店はココです！",cast:"カガミ～それいけ！加賀美さん～",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1888/tid=12378129/",detail:"直近365日・公開投稿数を取得時に集計"},
+{industry:"deli",store:"広島で評判のお店はココです！",cast:"マーコ",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1888/tid=12280049/",detail:"直近365日・公開投稿数を取得時に集計"},
+{industry:"deli",store:"広島で評判のお店はココです！",cast:"カガミ～それいけ！加賀美さん～",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13511985/",mentionNames:["カガミ","ガミ"],detail:"個人投稿数とは別に集計"},
+{industry:"deli",store:"広島で評判のお店はココです！",cast:"マーコ",type:"店舗スレッド内の言及候補",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13511985/",mentionNames:["マーコ"],detail:"個人投稿数とは別に集計"},
+{industry:"soap",store:"EIGHT",cast:"れい",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1888/tid=5413359/",detail:"直近365日・公開投稿数を取得時に集計"},
+{industry:"soap",store:"Sherbet",cast:"ことね",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["ことね"],detail:"個人投稿数とは別に集計"},
+{industry:"soap",store:"Sherbet",cast:"すず",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["すず"],detail:"個人投稿数とは別に集計"},
+{industry:"soap",store:"Sherbet",cast:"イヴ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["イヴ"],detail:"個人投稿数とは別に集計"},
+{industry:"soap",store:"Sherbet",cast:"さや",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["さや"],detail:"個人投稿数とは別に集計"},
+{industry:"soap",store:"Sherbet",cast:"ゆめ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["ゆめ"],detail:"個人投稿数とは別に集計"},
+{industry:"soap",store:"Sherbet",cast:"ひな",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13622219/",mentionNames:["ひな"],detail:"個人投稿数とは別に集計"},
+{industry:"soap",store:"EIGHT",cast:"きらら",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=103/bid=1886/tid=13619098/",mentionNames:["きらら"],detail:"個人投稿数とは別に集計"}
 ];
 let active="mens";const state=new Map();const list=document.getElementById("list"),q=document.getElementById("q"),count=document.getElementById("count"),status=document.getElementById("status");const refreshButton=document.getElementById("refresh");
 function render(){
@@ -77,9 +89,18 @@ function render(){
   const s=state.get(x.url)||{};const card=document.createElement("article");card.className="item";
   const title=document.createElement("b");title.textContent=x.store+"｜"+x.cast;
   const meta=document.createElement("div");meta.className="meta";
-  const detailText=x.type==="個人スレッド"
-   ? (s.recent365Count==null ? "直近365日：未取得" : (s.recent365Complete ? "直近365日・公開投稿"+s.recent365Count+"件" : "直近365日・確認済み"+s.recent365Count+"件以上（取得範囲内）"))
-   : x.detail;
+  let detailText;
+  if(x.type==="個人スレッド"){
+   detailText=s.recent365Count==null?"直近365日：未確認":(s.recent365Complete?"直近365日・公開投稿"+s.recent365Count+"件（全ページ確認済み）":"直近365日・確認できた範囲 "+s.recent365Count+"件（全ページ未確認）");
+  }else{
+   const mentionItems=(x.mentionNames||[]).map(name=>s.recent365Mentions?.[name]).filter(Boolean);
+   if(mentionItems.length){
+    const postNumbers=[...new Set(mentionItems.flatMap(item=>item.postNumbers||[]))].sort((a,b)=>a-b);
+    const mentionCount=postNumbers.length||mentionItems.reduce((sum,item)=>sum+(Number(item.count)||0),0);
+    detailText=s.recent365Complete?"直近365日・名前一致 "+mentionCount+"件（全ページ確認済み）":"確認できた範囲 "+mentionCount+"件（全ページ未確認）";
+    if(postNumbers.length)detailText+="｜確認レス "+postNumbers.slice(0,5).map(n=>"#"+n).join("、");
+   }else detailText="直近365日：名前一致未確認";
+  }
   meta.innerHTML='<span class="pill">'+x.type+'</span>'+detailText;
   const live=document.createElement("div");live.className="meta";const latest=s.latestPostAt?new Date(s.latestPostAt).toLocaleString("ja-JP",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}):"投稿日時未確認";
   live.textContent=(s.replyCount==null?"現在のレス数：未確認":"現在のレス数："+s.replyCount+"件")+"｜最新投稿："+latest+"｜"+(s.switched?"後継スレッドへ自動切替済":s.reached?"999到達・後継未確認":"999レス到達時に自動切替");
@@ -100,8 +121,12 @@ async function refresh(){
  const urls=[...new Set(threads.map(x=>x.url))];let success=0,unknown=0;
  for(let i=0;i<urls.length;i+=3){
   await Promise.all(urls.slice(i,i+3).map(async url=>{
-   try{const response=await fetch(API+"?url="+encodeURIComponent(url),{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);const data=await response.json();if(!data.ok)throw new Error(data.error||"unverified");state.set(url,data);success++;}
-   catch{state.set(url,{replyCount:null,activeUrl:url,switched:false});unknown++;}
+   try{
+    const names=[...new Set(threads.filter(x=>x.url===url).flatMap(x=>x.mentionNames||[]))];
+    const query=API+"?url="+encodeURIComponent(url)+(names.length?"&names="+encodeURIComponent(names.join("|")):"");
+    const response=await fetch(query,{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);
+    const data=await response.json();if(!data.ok)throw new Error(data.error||"unverified");state.set(url,data);success++;
+   }catch{state.set(url,{replyCount:null,activeUrl:url,switched:false,recent365Complete:false});unknown++;}
   }));
  }
  render();status.textContent="手動取得完了："+success+"件取得成功／"+unknown+"件未確認。日時未確認のスレッドは下位に表示します。";
