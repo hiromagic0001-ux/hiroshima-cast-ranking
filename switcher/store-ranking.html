@@ -75,7 +75,16 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
   boardMetrics=new Map(Array.from(sums.entries()).map(([key,v])=>[key,{count:v.count,complete:v.complete&&v.done===v.total,done:v.done,total:v.total}]));
   render();
   const complete=Array.from(boardMetrics.values()).filter(v=>v.complete).length;
-  status.textContent="集計完了："+jobs.length+" URL｜全ページ確認済み店舗 "+complete+"件｜未確認は順位に使いません。登録済みスレッドのみの暫定集計です。";
+  status.textContent="取得完了。集計結果を保存しています…";
+  const stateResponse=await fetch("https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/ranking_state",{cache:"no-store"});
+  if(!stateResponse.ok)throw Error("保存前のランキング状態を取得できません");
+  const stateData=await stateResponse.json();
+  const existingState=stateData.found&&stateData.value&&typeof stateData.value==="object"&&!Array.isArray(stateData.value)?stateData.value:{};
+  const boardSnapshot={generatedAt:new Date().toISOString(),manifestRecordCount:(manifest.records||[]).length,threadUrlCount:jobs.length,failedUrlCount:failed,stores:Object.fromEntries(Array.from(boardMetrics.entries()).map(([key,value])=>[key,{count:value.count,complete:value.complete,checkedThreads:value.done,totalThreads:value.total}]))};
+  const saveResponse=await fetch("https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/ranking_state",{method:"PUT",headers:{"content-type":"application/json"},body:JSON.stringify({...existingState,storeBoardActivity:boardSnapshot})});
+  const saveData=await saveResponse.json();
+  if(!saveResponse.ok||!saveData.ok)throw Error("掲示板集計の保存に失敗しました");
+  status.textContent="集計・保存完了："+jobs.length+" URL｜全ページ確認済み店舗 "+complete+"件｜未確認は順位に使いません。登録済みスレッドのみの暫定集計です。";
  }catch(error){status.textContent="集計失敗："+String(error.message||error)}
  finally{button.disabled=false}
 });
@@ -83,6 +92,10 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
 fetch(API,{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(data=>{
  if(!data.ok||!data.found||!Array.isArray(data.value?.records))throw Error("店舗マスターを読み込めません");
  records=data.value.records;
+ try{
+  const saved=await fetch("https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/ranking_state",{cache:"no-store"});
+  if(saved.ok){const savedData=await saved.json();const snapshot=savedData.value?.storeBoardActivity;if(snapshot?.stores){boardMetrics=new Map(Object.entries(snapshot.stores).map(([key,v])=>[key,{count:Number(v.count||0),complete:v.complete===true,done:Number(v.checkedThreads||0),total:Number(v.totalThreads||0)}]));}}
+ }catch(e){}
  const target=records.find(x=>/煌き-KIRAMEKI-/i.test(x.name||""));
  if(target)target.__highlight=true;
  summary.textContent="店舗マスター "+records.length+"件を読み込みました。";
