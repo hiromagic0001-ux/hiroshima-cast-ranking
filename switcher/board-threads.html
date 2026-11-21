@@ -339,7 +339,7 @@ function render(){
   const posts=s.posts||[];
   if(posts.length){
    posts.forEach(post=>{const entry=document.createElement("div");entry.className="post";const stamp=document.createElement("span");stamp.className="post-date";stamp.textContent="#"+post.postNo+(post.date?"｜"+post.date:"");const body=document.createElement("p");body.textContent=post.excerpt;entry.append(stamp,body);details.append(entry);});
-  }else{const unavailable=document.createElement("p");unavailable.className="post-unavailable";unavailable.textContent="公開ページから投稿本文を取得できませんでした。ログイン制限・削除・ページ構造の違いなどの可能性があります。";details.append(unavailable);}
+  }else{const unavailable=document.createElement("p");unavailable.className="post-unavailable";unavailable.textContent=s.error==="bakusai_access_blocked"?"爆サイ側がアクセスエラーページを返したため、投稿本文を取得できません。アプリ側のログイン情報や表示設定では解決できない状態です。":s.error?"取得失敗："+s.error:"公開ページから投稿本文を取得できませんでした。";details.append(unavailable);}
   card.append(details);list.append(card);
  });
 }
@@ -355,8 +355,8 @@ async function refresh(){
     const names=[...new Set(threads.filter(x=>x.url===url).flatMap(x=>x.mentionNames||[]))];
     const getStatus=async targetUrl=>{
      const query=API+"?url="+encodeURIComponent(targetUrl)+(names.length?"&names="+encodeURIComponent(names.join("|")):"");
-     const response=await fetch(query,{cache:"no-store"});if(!response.ok)throw new Error("HTTP "+response.status);
-     const data=await response.json();if(!data.ok)throw new Error(data.error||"unverified");return data;
+     const response=await fetch(query,{cache:"no-store"});
+     const data=await response.json().catch(()=>({}));if(!response.ok||!data.ok)throw new Error(data.error||("HTTP "+response.status));return data;
     };
     let currentUrl=url,data=await getStatus(currentUrl),didSwitch=false;
     const visited=new Set([currentUrl]);
@@ -366,7 +366,7 @@ async function refresh(){
      currentUrl=data.activeUrl;visited.add(currentUrl);data=await getStatus(currentUrl);didSwitch=true;
     }
     state.set(url,{...data,activeUrl:currentUrl,switched:didSwitch||Boolean(data.switched),successorUnconfirmed:Boolean(data.switched)});success++;
-   }catch{state.set(url,{replyCount:null,activeUrl:url,switched:false,recent365Complete:false});unknown++;}
+   }catch(error){state.set(url,{replyCount:null,activeUrl:url,switched:false,recent365Complete:false,error:String(error?.message||error)});unknown++;}
   }));
  }
  render();status.textContent="手動取得完了："+success+"件取得成功／"+unknown+"件未確認。日時未確認のスレッドは下位に表示します。";
