@@ -168,40 +168,66 @@ const server = http.createServer(async (req, res) => {
       // Bakusai currently renders post numbers in span.res_rotundate (not links),
       // with date and body in sibling .res_header and .res_body elements.
       const extractedPosts = new Map();
-      $('[id="res_block"]').each((_, el) => {
-        const block = $(el);
-        const numberText = block.find('.res_rotundate').first().text().replace(/\s+/g, ' ').trim();
-        const numberMatch = numberText.match(/^#(\d{1,4})$/);
-        if (!numberMatch) return;
-        const postNo = Number(numberMatch[1]);
-        const headerText = block.find('.res_header').first().text().replace(/\s+/g, ' ').trim();
-        const bodyNode = block.find('.res_body').first();
-        if (!bodyNode.length) return;
-        const dateMatch = headerText.match(/20\d{2}[年\/.\-]\s?\d{1,2}[月\/.\-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
-        let excerpt = bodyNode.text().replace(/\s+/g, ' ').trim();
-        excerpt = excerpt.replace(/\[匿名さん\]/g, '').trim();
-        if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
-        extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : null, excerpt: excerpt.slice(0, 220) });
-      });
-      // Newer Bakusai markup stores full replies in article#resNNN .resbody,
-      // while #res_block may contain only the currently selected/preview reply.
-      $('.res_list_article[id^="res"]').each((_, el) => {
-        const article = $(el);
-        const idMatch = (article.attr('id') || '').match(/^res(\d{1,4})$/);
-        if (!idMatch) return;
-        const postNo = Number(idMatch[1]);
-        const dateText = article.find('[itemprop="commentTime"]').first().text().replace(/\s+/g, ' ').trim();
-        const bodyNode = article.find('[itemprop="commentText"], .resbody').first();
-        if (!bodyNode.length) return;
-        let excerpt = bodyNode.text().replace(/\s+/g, ' ').trim();
-        excerpt = excerpt.replace(/\[匿名さん\]/g, '').replace(/返信移動/g, '').trim();
-        if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
-        const dateMatch = dateText.match(/20\d{2}[年\\/.-]\s?\d{1,2}[月\\/.-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
-        const existing = extractedPosts.get(postNo);
-        if (!existing || excerpt.length > existing.excerpt.length) {
-          extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
+      const pageFetches = [];
+      const baseThreadUrl = new URL(target.toString());
+      baseThreadUrl.search = "";
+      baseThreadUrl.hash = "";
+      const pageCount = replyCount !== null && replyCount > 0 ? Math.ceil(replyCount / 50) : 1;
+      // Bakusai exposes replies in 50-post pages. Walk newest pages backwards,
+      // stopping only after the rolling-365-day boundary is actually crossed.
+      const maxPagesToFetch = Math.min(pageCount, 20);
+      const pageNumbers = Array.from({ length: maxPagesToFetch }, (_, i) => pageCount - i);
+      if (!pageNumbers.includes(1) && pageCount <= 20) pageNumbers.push(1);
+      const parsePostsFromPage = pageHtml => {
+        const page$ = cheerio.load(pageHtml);
+        page$('[id="res_block"]').each((_, el) => {
+          const block = page$(el);
+          const numberText = block.find('.res_rotundate').first().text().replace(/\\s+/g, ' ').trim();
+          const numberMatch = numberText.match(/^#(\\d{1,4})$/);
+          if (!numberMatch) return;
+          const postNo = Number(numberMatch[1]);
+          const headerText = block.find('.res_header').first().text().replace(/\\s+/g, ' ').trim();
+          const bodyNode = block.find('.res_body').first();
+          if (!bodyNode.length) return;
+          const dateMatch = headerText.match(/20\\d{2}[年\\/.\\-]\\s?\\d{1,2}[月\\/.\\-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
+          let excerpt = bodyNode.text().replace(/\\s+/g, ' ').trim().replace(/\\[匿名さん\\]/g, '').trim();
+          if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
+          const existing = extractedPosts.get(postNo);
+          if (!existing || excerpt.length > existing.excerpt.length) extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
+        });
+        page$('.res_list_article[id^="res"]').each((_, el) => {
+          const article = page$(el);
+          const idMatch = (article.attr('id') || '').match(/^res(\\d{1,4})$/);
+          if (!idMatch) return;
+          const postNo = Number(idMatch[1]);
+          const dateText = article.find('[itemprop="commentTime"]').first().text().replace(/\\s+/g, ' ').trim();
+          const bodyNode = article.find('[itemprop="commentText"], .resbody').first();
+          if (!bodyNode.length) return;
+          let excerpt = bodyNode.text().replace(/\\s+/g, ' ').trim().replace(/\\[匿名さん\\]/g, '').replace(/返信移動/g, '').trim();
+          if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
+          const dateMatch = dateText.match(/20\\d{2}[年\\/.-]\\s?\\d{1,2}[月\\/.-]\\s?\\d{1,2}(?:日)?(?:\\s+\\d{1,2}:\\d{2}(?::\\d{2})?)?/);
+          const existing = extractedPosts.get(postNo);
+          if (!existing || excerpt.length > existing.excerpt.length) extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
+        });
+      };
+      for (const pageNo of pageNumbers) {
+        try {
+          const pageUrl = new URL(baseThreadUrl.toString());
+          pageUrl.pathname = pageUrl.pathname.replace(/\\/$/, '') + (pageNo > 1 ? '/p=' + pageNo : '') + '/tp=1/rw=1/';
+          const pageHtml = await fetchHtml(pageUrl.toString());
+          parsePostsFromPage(pageHtml);
+          const page$ = cheerio.load(pageHtml);
+          const pagePostNos = page$('[id="res_block"]').map((_, el) => {
+            const m = page$(el).find('.res_rotundate').first().text().match(/^#(\\d{1,4})$/);
+            return m ? Number(m[1]) : null;
+          }).get().filter(Number.isFinite);
+          pageFetches.push({ page: pageNo, ok: true, parsed: pagePostNos.length, minPostNo: pagePostNos.length ? Math.min(...pagePostNos) : null, maxPostNo: pagePostNos.length ? Math.max(...pagePostNos) : null });
+          if (pagePostNos.length && Math.min(...pagePostNos) <= 0) break;
+        } catch (error) {
+          pageFetches.push({ page: pageNo, ok: false, error: String(error?.message || error).slice(0, 120) });
+          break;
         }
-      });
+      }
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
       // Count all public posts parsed from the fetched page, not only the 20 shown in the UI.
       // Use Japan-local calendar dates so the 365-day window matches the app audience.
@@ -217,7 +243,7 @@ const server = http.createServer(async (req, res) => {
       const oldestParsedPostDate = datedPublicPosts.length
         ? datedPublicPosts.reduce((oldest, post) => post.date < oldest ? post.date : oldest, datedPublicPosts[0].date)
         : null;
-      const recent365Complete = Boolean(replyCount !== null && replyCount <= extractedPosts.size);
+      const reached365Boundary = Boolean(oldestParsedPostDate && oldestParsedPostDate <= recent365Cutoff);\n      const allPagesFetched = pageFetches.length === pageNumbers.length && pageFetches.every(page => page.ok);\n      const recent365Complete = Boolean(replyCount !== null && (replyCount <= extractedPosts.size || (reached365Boundary && allPagesFetched)));
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
       const postNumberAnchors = $('[class*="res_rotundate"]').filter((_, el) => /^#\d{1,4}$/.test($(el).text().trim())).length;
       const paginationLinks = $('a[href*="tp="]').slice(0, 30).map((_, el) => ({ text: $(el).text().replace(/\s+/g, ' ').trim().slice(0, 50), href: $(el).attr('href') || '' })).get();
@@ -235,7 +261,7 @@ const server = http.createServer(async (req, res) => {
       console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, latestPageFetch, raw471Found: raw471 >= 0, raw471Context, rawBodyMarkers, rawPostMarkers, rawTargetText, paginationLinks, structuralSamples }));
       return send(res, 200, {
         ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
-        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, parsedPublicPosts: extractedPosts.size, recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate, latestPageFetch, paginationLinks, structuralSamples },
+        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, parsedPublicPosts: extractedPosts.size, recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate, latestPageFetch, pageFetches, pageCount, paginationLinks, structuralSamples },
         activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
         latestPostAt,
         recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate,
