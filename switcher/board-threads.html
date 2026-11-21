@@ -45,9 +45,9 @@ footer{padding:24px 0;text-align:center;color:var(--muted);font-size:11px;line-h
 (()=>{
 const API="https://hiroshima-cast-refresh-api.onrender.com/api/bakusai/thread-status";
 const threads=[
-{industry:"mens",store:"salon.do.ni-na",cast:"双葉",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=9542965/",detail:"直近365日・公開投稿19件（削除分除外）"},
-{industry:"mens",store:"チェリーSPA",cast:"一条 ふうか",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=9635267/",detail:"直近365日・公開投稿7件"},
-{industry:"mens",store:"salon.do.ni-na",cast:"愛沢",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10970438/",detail:"直近365日・公開投稿8件"},
+{industry:"mens",store:"salon.do.ni-na",cast:"双葉",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=9542965/",detail:"直近365日・公開投稿数を取得時に集計"},
+{industry:"mens",store:"チェリーSPA",cast:"一条 ふうか",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=9635267/",detail:"直近365日・公開投稿数を取得時に集計"},
+{industry:"mens",store:"salon.do.ni-na",cast:"愛沢",type:"個人スレッド",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=4907/tid=10970438/",detail:"直近365日・公開投稿数を取得時に集計"},
 {industry:"mens",store:"神のエステ",cast:"ましろ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認2投稿（個人投稿数とは別）"},
 {industry:"mens",store:"神のエステ",cast:"みなみ",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認2投稿（個人投稿数とは別）"},
 {industry:"mens",store:"神のエステ",cast:"みどり",type:"店舗スレッド内の言及",url:"https://bakusai.com/thr_res/acode=8/ctgid=136/bid=1037/tid=12994037/",detail:"公開確認1投稿（個人投稿数とは別）"},
@@ -76,7 +76,11 @@ function render(){
  rows.forEach(x=>{
   const s=state.get(x.url)||{};const card=document.createElement("article");card.className="item";
   const title=document.createElement("b");title.textContent=x.store+"｜"+x.cast;
-  const meta=document.createElement("div");meta.className="meta";meta.innerHTML='<span class="pill">'+x.type+'</span>'+x.detail;
+  const meta=document.createElement("div");meta.className="meta";
+  const detailText=x.type==="個人スレッド"
+   ? (s.recent365Count==null ? "直近365日：未取得" : (s.recent365Complete ? "直近365日・公開投稿"+s.recent365Count+"件" : "直近365日・確認済み"+s.recent365Count+"件以上（取得範囲内）"))
+   : x.detail;
+  meta.innerHTML='<span class="pill">'+x.type+'</span>'+detailText;
   const live=document.createElement("div");live.className="meta";const latest=s.latestPostAt?new Date(s.latestPostAt).toLocaleString("ja-JP",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}):"投稿日時未確認";
   live.textContent=(s.replyCount==null?"現在のレス数：未確認":"現在のレス数："+s.replyCount+"件")+"｜最新投稿："+latest+"｜"+(s.switched?"後継スレッドへ自動切替済":s.reached?"999到達・後継未確認":"999レス到達時に自動切替");
   card.append(title,meta,live);
