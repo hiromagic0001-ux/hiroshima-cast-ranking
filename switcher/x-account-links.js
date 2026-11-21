@@ -1,29 +1,30 @@
 /* Shared X-to-cast mappings for Hiroshima Cast Search. User-provided mappings; identity confirmation remains separate. */
 window.HIROSHIMA_X_LINKS = [
-{store:"サロンドニーナ",cast:"峰城",url:"https://x.com/salondo_m?s=11",status:"本人未確認"}
-{store:"サロンドニーナ",cast:"未来（みらい）",url:"https://x.com/mirai__nina?s=11",status:"本人未確認"}
-{store:"BODY spa Hiroshima",cast:"天使（あまつか）",url:"https://x.com/xamatsuka_2x?s=11",status:"本人未確認"}
-{store:"Vivienne",cast:"ひな",url:"https://x.com/hinachansab?s=11",status:"本人未確認"}
-{store:"Lavie＆Spa",cast:"早坂みゆう",url:"https://x.com/miyuu_salon?s=11",status:"本人未確認"}
-{store:"サロンドニーナ",cast:"矢吹",url:"https://x.com/salondonina_y?s=11",status:"本人未確認"}
-{store:"アガットテイク",cast:"花澤メイ",url:"https://x.com/agatetakemay?s=11",status:"本人未確認"}
-{store:"ゆりかご広島",cast:"麗華",url:"https://x.com/reikayurikago?s=11",status:"本人未確認"}
-{store:"7DREAM Este",cast:"奏もも",url:"https://x.com/7dreammomo?s=11",status:"本人未確認"}
-{store:"Vivienne",cast:"美波",url:"https://x.com/vivienne_minami?s=11",status:"本人未確認"}
-{store:"Lavie＆Spa",cast:"さわ",url:"https://x.com/sawa_laviespa?s=11",status:"本人未確認"}
-{store:"Lavie＆Spa",cast:"いちか",url:"https://x.com/ichikatanlavie?s=11",instagram:"ichika_lav",status:"本人未確認"}
-{store:"Lavie＆Spa",cast:"らな",url:"https://x.com/lavie__rana4?s=11",status:"本人未確認"}
-{store:"広島メンズエステ La Paix",cast:"らぺ",url:"https://x.com/paix_la72927?s=11",status:"本人未確認"}
-{store:"Queen",cast:"こころ",url:"https://x.com/queen_kokoro2?s=11",status:"本人未確認"}
-{store:"Lavie＆Spa（ラヴィアンドスパ）",cast:"はづき",url:"https://x.com/q4ba67ewak33529?s=11",status:"本人未確認"}
-{store:"Lavie＆Spa",cast:"めい",url:"https://x.com/mei_l_s?s=11",status:"本人未確認"}
-{store:"広島メンズエステ La Paix",cast:"ふじ香",url:"https://x.com/fujikalapaix?s=11",status:"本人未確認"}
-{store:"La Paix",cast:"世莉（ラペ）",url:"https://x.com/s7l5t15?s=11",accountName:"Lapaix_Seri",status:"本人未確認"}
-{store:"natural",cast:"はな",url:"https://x.com/natural_87_hana?s=11",status:"本人未確認"}
-{store:"natural",cast:"もね",url:"https://x.com/natural_mone?s=11",status:"本人未確認"}
-{store:"natural",cast:"もね",url:"https://x.com/mone_natural?s=11",status:"本人未確認"}
-{store:"natural",cast:"ななせ",url:"https://x.com/mone_natural?s=11",status:"本人未確認"}
+{store:"サロンドニーナ",cast:"峰城",url:"https://x.com/salondo_m?s=11",status:"本人未確認"},
+{store:"サロンドニーナ",cast:"未来（みらい）",url:"https://x.com/mirai__nina?s=11",status:"本人未確認"},
+{store:"BODY spa Hiroshima",cast:"天使（あまつか）",url:"https://x.com/xamatsuka_2x?s=11",status:"本人未確認"},
+{store:"Vivienne",cast:"ひな",url:"https://x.com/hinachansab?s=11",status:"本人未確認"},
+{store:"Lavie＆Spa",cast:"早坂みゆう",url:"https://x.com/miyuu_salon?s=11",status:"本人未確認"},
+{store:"サロンドニーナ",cast:"矢吹",url:"https://x.com/salondonina_y?s=11",status:"本人未確認"},
+{store:"アガットテイク",cast:"花澤メイ",url:"https://x.com/agatetakemay?s=11",status:"本人未確認"},
+{store:"ゆりかご広島",cast:"麗華",url:"https://x.com/reikayurikago?s=11",status:"本人未確認"},
+{store:"7DREAM Este",cast:"奏もも",url:"https://x.com/7dreammomo?s=11",status:"本人未確認"},
+{store:"Vivienne",cast:"美波",url:"https://x.com/vivienne_minami?s=11",status:"本人未確認"},
+{store:"Lavie＆Spa",cast:"さわ",url:"https://x.com/sawa_laviespa?s=11",status:"本人未確認"},
+{store:"Lavie＆Spa",cast:"いちか",url:"https://x.com/ichikatanlavie?s=11",instagram:"ichika_lav",status:"本人未確認"},
+{store:"Lavie＆Spa",cast:"らな",url:"https://x.com/lavie__rana4?s=11",status:"本人未確認"},
+{store:"広島メンズエステ La Paix",cast:"らぺ",url:"https://x.com/paix_la72927?s=11",status:"本人未確認"},
+{store:"Queen",cast:"こころ",url:"https://x.com/queen_kokoro2?s=11",status:"本人未確認"},
+{store:"Lavie＆Spa（ラヴィアンドスパ）",cast:"はづき",url:"https://x.com/q4ba67ewak33529?s=11",status:"本人未確認"},
+{store:"Lavie＆Spa",cast:"めい",url:"https://x.com/mei_l_s?s=11",status:"本人未確認"},
+{store:"広島メンズエステ La Paix",cast:"ふじ香",url:"https://x.com/fujikalapaix?s=11",status:"本人未確認"},
+{store:"La Paix",cast:"世莉（ラペ）",url:"https://x.com/s7l5t15?s=11",accountName:"Lapaix_Seri",status:"本人未確認"},
+{store:"natural",cast:"はな",url:"https://x.com/natural_87_hana?s=11",status:"本人未確認"},
+{store:"natural",cast:"もね",url:"https://x.com/natural_mone?s=11",status:"本人未確認"},
+{store:"natural",cast:"もね",url:"https://x.com/mone_natural?s=11",status:"本人未確認"},
+{store:"natural",cast:"ななせ",url:"https://x.com/mone_natural?s=11",status:"本人未確認"},
 {store:"natural",cast:"みお",url:"https://x.com/mio4859?s=11",status:"本人未確認"}
+
 ];
 
 (()=> {
