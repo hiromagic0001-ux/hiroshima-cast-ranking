@@ -203,6 +203,22 @@ const server = http.createServer(async (req, res) => {
         }
       });
       const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
+      // Count all public posts parsed from the fetched page, not only the 20 shown in the UI.
+      // Use Japan-local calendar dates so the 365-day window matches the app audience.
+      const nowJst = new Date(Date.now() + 9 * 60 * 60 * 1000);
+      const cutoffJst = new Date(nowJst.getTime() - 365 * 24 * 60 * 60 * 1000);
+      const recent365Cutoff = cutoffJst.toISOString().slice(0, 10);
+      const datedPublicPosts = [...extractedPosts.values()].map(post => {
+        const match = String(post.date || "").match(/(20\\d{2})[年\\/.\\-]\\s?(\\d{1,2})[月\\/.\\-]\\s?(\\d{1,2})/);
+        if (!match) return null;
+        return { postNo: post.postNo, date: match[1] + "-" + String(match[2]).padStart(2,"0") + "-" + String(match[3]).padStart(2,"0") };
+      }).filter(Boolean);
+      const recent365Count = datedPublicPosts.filter(post => post.date >= recent365Cutoff).length;
+      const oldestParsedPostDate = datedPublicPosts.length
+        ? datedPublicPosts.reduce((oldest, post) => post.date < oldest ? post.date : oldest, datedPublicPosts[0].date)
+        : null;
+      const recent365Complete = Boolean(oldestParsedPostDate && oldestParsedPostDate <= recent365Cutoff) ||
+        Boolean(replyCount !== null && replyCount <= extractedPosts.size);
       const switched = Boolean(replyCount !== null && replyCount >= 999 && successorUrl);
       const postNumberAnchors = $('[class*="res_rotundate"]').filter((_, el) => /^#\d{1,4}$/.test($(el).text().trim())).length;
       const paginationLinks = $('a[href*="tp="]').slice(0, 30).map((_, el) => ({ text: $(el).text().replace(/\s+/g, ' ').trim().slice(0, 50), href: $(el).attr('href') || '' })).get();
@@ -220,9 +236,10 @@ const server = http.createServer(async (req, res) => {
       console.log(JSON.stringify({ event: "bakusai_fetch_diagnostic", httpStatus: 200, htmlBytes: Buffer.byteLength(html), title, bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, latestPageFetch, raw471Found: raw471 >= 0, raw471Context, rawBodyMarkers, rawPostMarkers, rawTargetText, paginationLinks, structuralSamples }));
       return send(res, 200, {
         ok: true, title, replyCount, threshold: 999, reached: replyCount !== null && replyCount >= 999,
-        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, latestPageFetch, paginationLinks, structuralSamples },
+        diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, parsedPublicPosts: extractedPosts.size, recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate, latestPageFetch, paginationLinks, structuralSamples },
         activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
         latestPostAt,
+        recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate,
         posts,
         postsAvailable: posts.length > 0,
         checkedAt: new Date().toISOString(),
