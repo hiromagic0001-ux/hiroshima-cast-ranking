@@ -209,7 +209,7 @@ const server = http.createServer(async (req, res) => {
       const cutoffJst = new Date(nowJst.getTime() - 365 * 24 * 60 * 60 * 1000);
       const recent365Cutoff = cutoffJst.toISOString().slice(0, 10);
       const datedPublicPosts = [...extractedPosts.values()].map(post => {
-        const match = String(post.date || "").match(/(20\\d{2})[年\\/.\\-]\\s?(\\d{1,2})[月\\/.\\-]\\s?(\\d{1,2})/);
+        const match = String(post.date || "").match(/(20\d{2})\D+(\d{1,2})\D+(\d{1,2})/);
         if (!match) return null;
         return { postNo: post.postNo, date: match[1] + "-" + String(match[2]).padStart(2,"0") + "-" + String(match[3]).padStart(2,"0") };
       }).filter(Boolean);
