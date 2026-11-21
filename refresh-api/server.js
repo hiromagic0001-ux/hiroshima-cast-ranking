@@ -41,6 +41,7 @@ const server = http.createServer(async (req, res) => {
   if (pathname === "/api/bakusai/thread-status" && req.method === "GET") {
     if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const rawUrl = requestUrl.searchParams.get("url") || "";
+    const mentionNames = (requestUrl.searchParams.get("names") || "").split("|").map(value => value.normalize("NFKC").trim()).filter(value => value && value.length <= 30).slice(0, 16);
     let target;
     try { target = new URL(rawUrl); } catch { return send(res, 400, { ok: false, error: "invalid_thread_url" }, origin); }
     if (target.protocol !== "https:" || target.hostname !== "bakusai.com" ||
@@ -239,6 +240,14 @@ const server = http.createServer(async (req, res) => {
         return { postNo: post.postNo, date: match[1] + "-" + String(match[2]).padStart(2,"0") + "-" + String(match[3]).padStart(2,"0") };
       }).filter(Boolean);
       const recent365Count = datedPublicPosts.filter(post => post.date >= recent365Cutoff).length;
+      const recent365Mentions = Object.fromEntries(mentionNames.map(name => {
+        const hits = datedPublicPosts.filter(post => {
+          if (post.date < recent365Cutoff) return false;
+          const excerpt = extractedPosts.get(post.postNo)?.excerpt || "";
+          return excerpt.normalize("NFKC").includes(name);
+        }).sort((a, b) => a.postNo - b.postNo);
+        return [name, { count: hits.length, postNumbers: hits.map(post => post.postNo), samples: hits.slice(0, 5).map(post => ({ postNo: post.postNo, excerpt: (extractedPosts.get(post.postNo)?.excerpt || "").slice(0, 160) })) }];
+      }));
       const oldestParsedPostDate = datedPublicPosts.length
         ? datedPublicPosts.reduce((oldest, post) => post.date < oldest ? post.date : oldest, datedPublicPosts[0].date)
         : null;
@@ -267,7 +276,7 @@ const server = http.createServer(async (req, res) => {
         diagnostics: { htmlBytes: Buffer.byteLength(html), bodyTextLength: bodyText.length, postNumberAnchors, extractedPosts: posts.length, parsedPublicPosts: extractedPosts.size, recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate, latestPageFetch, pageFetches, pageCount, paginationLinks, structuralSamples },
         activeUrl: switched ? successorUrl : target.toString(), successorUrl, switched,
         latestPostAt,
-        recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate,
+        recent365Count, recent365Complete, recent365Cutoff, oldestParsedPostDate, recent365Mentions,
         posts,
         postsAvailable: posts.length > 0,
         checkedAt: new Date().toISOString(),
