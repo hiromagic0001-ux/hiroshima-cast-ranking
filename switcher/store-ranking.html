@@ -48,21 +48,23 @@ document.getElementById("boardRefresh").addEventListener("click",async function(
   const manifest=await manifestResponse.json();
   const byUrl=new Map();
   (manifest.records||[]).forEach(item=>{if(!byUrl.has(item.url))byUrl.set(item.url,[]);byUrl.get(item.url).push(item)});
-  const jobs=Array.from(byUrl.entries()),results=new Map();let failed=0;
-  for(let i=0;i<jobs.length;i+=3){
+  const jobs=Array.from(byUrl.entries()),results=new Map();let failed=0,blocked=false;
+  for(let i=0;i<jobs.length&&!blocked;i+=3){
    const batch=jobs.slice(i,i+3);
    const received=await Promise.all(batch.map(async pair=>{
     const names=Array.from(new Set(pair[1].flatMap(e=>[e.cast,...(e.mentionNames||[])]).filter(Boolean))).slice(0,16);
     try{
      const url="https://hiroshima-cast-refresh-api.onrender.com/api/bakusai/thread-status?url="+encodeURIComponent(pair[0])+"&names="+encodeURIComponent(names.join("|"));
      const response=await fetch(url);if(!response.ok)throw Error("HTTP "+response.status);
-     const value=await response.json();if(!value.ok)throw Error(value.error||"取得失敗");
+     const value=await response.json().catch(()=>({}));if(value.error==="bakusai_access_blocked")return [pair[0],{__blocked:true}];if(!response.ok||!value.ok)throw Error(value.error||"取得失敗");
      return [pair[0],value];
     }catch(error){failed++;return [pair[0],null]}
    }));
-   received.forEach(pair=>{if(pair[1])results.set(pair[0],pair[1])});
+   received.forEach(pair=>{if(pair[1]?.__blocked)blocked=true;else if(pair[1])results.set(pair[0],pair[1])});
+   if(blocked){status.textContent="中断：爆サイ側がアクセスエラーページを返しました。今回の部分結果は保存していません。時間を空けて再確認してください。";break;}
    status.textContent="集計中："+Math.min(i+3,jobs.length)+"/"+jobs.length+" URL｜失敗 "+failed+"件";
   }
+  if(blocked)return;
   const sums=new Map();
   const groupedByStoreUrl=new Map();
   (manifest.records||[]).forEach(item=>{
