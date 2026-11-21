@@ -196,7 +196,7 @@ const server = http.createServer(async (req, res) => {
           let excerpt = bodyNode.text().replace(/\s+/g, ' ').trim().replace(/\[匿名さん\]/g, '').trim();
           if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
           const existing = extractedPosts.get(postNo);
-          if (!existing || excerpt.length > existing.excerpt.length) extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
+          if (!existing || excerpt.length > (existing.fullText?.length || existing.excerpt.length)) extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220), fullText: excerpt });
         });
         page$('.res_list_article[id^="res"]').each((_, el) => {
           const article = page$(el);
@@ -210,7 +210,7 @@ const server = http.createServer(async (req, res) => {
           if (!excerpt || excerpt.includes('この投稿は削除されました')) return;
           const dateMatch = dateText.match(/20\d{2}[年\/.-]\s?\d{1,2}[月\/.-]\s?\d{1,2}(?:日)?(?:\s+\d{1,2}:\d{2}(?::\d{2})?)?/);
           const existing = extractedPosts.get(postNo);
-          if (!existing || excerpt.length > existing.excerpt.length) extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220) });
+          if (!existing || excerpt.length > (existing.fullText?.length || existing.excerpt.length)) extractedPosts.set(postNo, { postNo, date: dateMatch ? dateMatch[0] : (existing?.date || null), excerpt: excerpt.slice(0, 220), fullText: excerpt });
         });
       };
       const fetchPage = async pageNo => {
@@ -239,7 +239,7 @@ const server = http.createServer(async (req, res) => {
         pageFetches.push(...batch);
       }
       pageFetches.sort((a, b) => a.page - b.page);
-      const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20);
+      const posts = [...extractedPosts.values()].sort((a,b) => b.postNo-a.postNo).slice(0,20).map(({ postNo, date, excerpt }) => ({ postNo, date, excerpt }));
       // Count all public posts parsed from the fetched page, not only the 20 shown in the UI.
       // Use Japan-local calendar dates so the 365-day window matches the app audience.
       const nowJst = new Date(Date.now() + 9 * 60 * 60 * 1000);
@@ -256,7 +256,7 @@ const server = http.createServer(async (req, res) => {
         const foldedName = foldKana(name);
         const hits = datedPublicPosts.filter(post => {
           if (post.date < recent365Cutoff) return false;
-          const excerpt = extractedPosts.get(post.postNo)?.excerpt || "";
+          const excerpt = extractedPosts.get(post.postNo)?.fullText || extractedPosts.get(post.postNo)?.excerpt || "";
           return foldKana(excerpt).includes(foldedName);
         }).sort((a, b) => a.postNo - b.postNo);
         return [name, { count: hits.length, postNumbers: hits.map(post => post.postNo), samples: hits.slice(0, 5).map(post => ({ postNo: post.postNo, excerpt: (extractedPosts.get(post.postNo)?.excerpt || "").slice(0, 160) })) }];
