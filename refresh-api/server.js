@@ -220,10 +220,15 @@ const server = http.createServer(async (req, res) => {
           const pageHtml = await fetchHtml(pageUrl.toString());
           parsePostsFromPage(pageHtml);
           const page$ = cheerio.load(pageHtml);
-          const pagePostNos = page$('[id="res_block"]').map((_, el) => {
+          const blockPostNos = page$('[id="res_block"]').map((_, el) => {
             const m = page$(el).find('.res_rotundate').first().text().match(/^#(\d{1,4})$/);
             return m ? Number(m[1]) : null;
           }).get().filter(Number.isFinite);
+          const articlePostNos = page$('.res_list_article[id^="res"]').map((_, el) => {
+            const m = (page$(el).attr('id') || '').match(/^res(\d{1,4})$/);
+            return m ? Number(m[1]) : null;
+          }).get().filter(Number.isFinite);
+          const pagePostNos = [...new Set([...blockPostNos, ...articlePostNos])];
           return { page: pageNo, ok: true, parsed: pagePostNos.length, minPostNo: pagePostNos.length ? Math.min(...pagePostNos) : null, maxPostNo: pagePostNos.length ? Math.max(...pagePostNos) : null };
         } catch (error) {
           return { page: pageNo, ok: false, error: String(error?.message || error).slice(0, 120) };
