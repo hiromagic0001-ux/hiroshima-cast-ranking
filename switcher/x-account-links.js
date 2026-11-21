@@ -29,12 +29,18 @@ window.HIROSHIMA_X_LINKS = [
  const records=window.HIROSHIMA_X_LINKS||[];
  if(!records.length)return;
  const industries=["メンズエステ","デリヘル","ソープランド"];
+ // 各サービスのホスト名から業種を確定し、他業種のアカウントを表示・紐付けしない
+ const host=location.hostname.toLowerCase();
+ const pageIndustry=host==="hiroshima-cast-ranking.onrender.com"?"デリヘル":
+   host==="hiroshima-mens-esthe.onrender.com"?"メンズエステ":
+   host==="hiroshima-soapland.onrender.com"?"ソープランド":null;
+ const visibleRecords=pageIndustry?records.filter(r=>r.industry===pageIndustry):records;
  const norm=s=>String(s||"").replace(/[\s　]/g,"").toLowerCase();
  const cards=[...document.querySelectorAll("article.item")].map(card=>({
   card,cast:card.querySelector(".name")?.textContent?.trim()||"",
   store:card.querySelector(".sub")?.textContent||""
  })).filter(x=>x.cast);
- records.forEach(r=>{
+ visibleRecords.forEach(r=>{
   const target=cards.find(c=>norm(c.cast)===norm(r.cast)&&c.store.includes(r.store));
   if(target&&!target.card.querySelector("[data-x-account-link]")){
    const a=document.createElement("a");a.dataset.xAccountLink="1";a.href=r.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Xアカウント";
@@ -44,21 +50,21 @@ window.HIROSHIMA_X_LINKS = [
  });
  const panel=document.createElement("section");
  panel.style.cssText="margin:0 0 14px;padding:12px;background:#14251f;border:1px solid #52715e;border-radius:12px;color:#f4f7f5";
- const title=document.createElement("strong");title.textContent="Xアカウント｜業種別3分類";
+ const title=document.createElement("strong");title.textContent=pageIndustry?("Xアカウント｜"+pageIndustry):"Xアカウント｜業種別3分類";
  title.style.cssText="display:block;margin-bottom:10px;font-size:14px";panel.append(title);
  const tabs=document.createElement("div");tabs.style.cssText="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-bottom:10px";
  const body=document.createElement("div");panel.append(tabs,body);
- let active=industries[0];
+ let active=pageIndustry||"デリヘル";
  const render=()=>{
   tabs.replaceChildren();body.replaceChildren();
-  industries.forEach(industry=>{
-   const items=records.filter(r=>r.industry===industry);
+  (pageIndustry?[pageIndustry]:industries).forEach(industry=>{
+   const items=visibleRecords.filter(r=>r.industry===industry);
    const btn=document.createElement("button");btn.type="button";
    btn.textContent=industry+"（"+items.length+"）";
    btn.style.cssText="padding:9px 4px;border:1px solid #52715e;border-radius:8px;background:"+(active===industry?"#a5e2bd":"#1b3028")+";color:"+(active===industry?"#10251b":"#e4f4e9")+";font-size:11px;font-weight:700";
    btn.onclick=()=>{active=industry;render()};tabs.append(btn);
   });
-  const items=records.filter(r=>r.industry===active);
+  const items=visibleRecords.filter(r=>r.industry===active);
   if(!items.length){const empty=document.createElement("div");empty.textContent="この業種の登録アカウントは現在0件です。";empty.style.cssText="padding:12px;color:#bdcec4;font-size:12px";body.append(empty);return;}
   items.forEach(r=>{
    const row=document.createElement("div");row.style.cssText="font-size:12px;line-height:1.6;padding:8px 0;border-top:1px solid #385447";
