@@ -244,11 +244,13 @@ const server = http.createServer(async (req, res) => {
         return { postNo: post.postNo, date: match[1] + "-" + String(match[2]).padStart(2,"0") + "-" + String(match[3]).padStart(2,"0") };
       }).filter(Boolean);
       const recent365Count = datedPublicPosts.filter(post => post.date >= recent365Cutoff).length;
+      const foldKana = value => String(value || "").normalize("NFKC").replace(/[ァ-ヶ]/g, character => String.fromCharCode(character.charCodeAt(0) - 0x60));
       const recent365Mentions = Object.fromEntries(mentionNames.map(name => {
+        const foldedName = foldKana(name);
         const hits = datedPublicPosts.filter(post => {
           if (post.date < recent365Cutoff) return false;
           const excerpt = extractedPosts.get(post.postNo)?.excerpt || "";
-          return excerpt.normalize("NFKC").includes(name);
+          return foldKana(excerpt).includes(foldedName);
         }).sort((a, b) => a.postNo - b.postNo);
         return [name, { count: hits.length, postNumbers: hits.map(post => post.postNo), samples: hits.slice(0, 5).map(post => ({ postNo: post.postNo, excerpt: (extractedPosts.get(post.postNo)?.excerpt || "").slice(0, 160) })) }];
       }));
