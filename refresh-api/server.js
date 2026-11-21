@@ -1267,7 +1267,7 @@ const server = http.createServer(async (req, res) => {
   if (storageDataMatch && ["GET", "PUT"].includes(req.method)) {
     if (origin && !ALLOWED_ORIGINS.has(origin)) return send(res, 403, { ok: false, error: "origin_not_allowed" }, origin);
     const key = storageDataMatch[1];
-    const allowedKeys = new Set(["stores", "casts", "source_status", "ranking_state", "refresh_status", "settings"]);
+    const allowedKeys = new Set(["stores", "casts", "source_status", "ranking_state", "refresh_status", "settings", "x_account_links"]);
     if (!allowedKeys.has(key)) return send(res, 400, { ok: false, error: "invalid_key" }, origin);
     const storageUrl = process.env.CAST_STORAGE_URL;
     const storageToken = process.env.CAST_STORAGE_API_TOKEN;
