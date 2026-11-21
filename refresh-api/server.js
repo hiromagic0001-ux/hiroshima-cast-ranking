@@ -124,14 +124,15 @@ const server = http.createServer(async (req, res) => {
         }
       });
       if (replyCount !== null && replyCount >= 999 && !successorUrl) {
+        const ctgid = Number(target.pathname.match(/\/ctgid=(\d+)/)?.[1] || 0);
         const bid = Number(target.pathname.match(/\/bid=(\d+)/)?.[1] || 0);
         const currentId = Number(target.pathname.match(/\/tid=(\d+)/)?.[1] || 0);
         const currentKey = normalizeTitle(title);
         const candidates = [];
         for (let page = 1; page <= 9; page++) {
           const listingUrl = page === 1
-            ? `https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=${bid}/`
-            : `https://bakusai.com/thr_tl/acode=8/ctgid=136/bid=${bid}/p=${page}/`;
+            ? `https://bakusai.com/thr_tl/acode=8/ctgid=${ctgid}/bid=${bid}/`
+            : `https://bakusai.com/thr_tl/acode=8/ctgid=${ctgid}/bid=${bid}/p=${page}/`;
           try {
             const listingHtml = await fetchHtml(listingUrl);
             const listing = cheerio.load(listingHtml);
