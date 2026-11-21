@@ -98,6 +98,10 @@ const server = http.createServer(async (req, res) => {
       }
       const title = $("title").first().text().replace(/\s+/g, " ").trim();
       const bodyText = $("body").text().replace(/\s+/g, " ");
+      if (/アクセスエラー|アクセスが制限/i.test(title + " " + bodyText.slice(0, 1200))) {
+        console.log(JSON.stringify({ event: "bakusai_access_blocked", title, htmlBytes: Buffer.byteLength(html) }));
+        return send(res, 502, { ok: false, error: "bakusai_access_blocked", detail: "爆サイ側からアクセスエラーページが返されました。投稿本文は取得できていません。" }, origin);
+      }
       let replyCount = null;
       $('[class*="res_count"],[class*="rescount"],[class*="thread_count"],[data-res-count]').each((_, el) => {
         const value = $(el).attr("data-res-count") || $(el).text();
