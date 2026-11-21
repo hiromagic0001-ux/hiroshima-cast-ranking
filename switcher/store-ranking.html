@@ -20,7 +20,7 @@ const API="https://hiroshima-cast-refresh-api.onrender.com/api/storage/data/stor
 const labels={delivery:"デリヘル", "men-esthe":"メンズエステ",soap:"ソープランド"};
 const list=document.getElementById("list"),summary=document.getElementById("summary"),q=document.getElementById("q");
 let records=[],category="delivery",boardMetrics=new Map(),castCounts=new Map(),reviewMetrics=new Map();
-const normName=s=>String(s||"").normalize("NFKC").toLowerCase().replace(/[ァ-ヶ]/g,ch=>String.fromCharCode(ch.charCodeAt(0)-0x60)).replace(/[\\s・･.,，、。_‐‑‒–—―ーｰ()（）［］【】「」『』]/g,"");
+const normName=s=>String(s||"").normalize("NFKC").toLowerCase().replace(/[ァ-ヶ]/g,ch=>String.fromCharCode(ch.charCodeAt(0)-0x60)).replace(/[\s・･.,，、。_‐‑‒–—―ーｰ()（）［］【】「」『』]/g,"");
 const storeKey=(name,cat)=>normName(name)+"|"+String(cat||"");
 function explicitNumber(obj,keys){for(const k of keys){const v=obj?.[k];if(v!==null&&v!==undefined&&v!==""&&Number.isFinite(Number(v)))return Number(v)}return null;}
 function reviewText(x){const v=reviewMetrics.get(storeKey(x.name,x.category))||x;const rating=explicitNumber(v,["averageRating","reviewAverage","ratingAverage","avgRating","rating"]);const count=explicitNumber(v,["reviewCount","reviewsCount","口コミ件数","口コミ数"]);return rating!==null&&count!==null?"評価 "+rating+"／5・"+count+"件":count!==null?count+"件（評価未確認）":"未確認";}
